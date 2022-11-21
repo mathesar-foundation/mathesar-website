@@ -8,7 +8,6 @@
     />
     <title>{{ page.title }}</title>
    
-    <script src="https://cdn.tailwindcss.com"></script>
    
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- insert Nunito Sans -->
@@ -22,6 +21,7 @@
     <div class="container mx-auto space-y-12 py-16">
       {% include navigation.html %}
       <div class="parsedown">{{ content }}</div>
+      {% include mailing-list.html %}
     </div>
   </body>
 </html>
