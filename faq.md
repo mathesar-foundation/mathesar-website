@@ -3,8 +3,6 @@ layout: default
 title: FAQ
 ---
 
-{% include test.html %}
-
 ## Frequently asked questions about Mathesar
 
 ### How is Mathesar different from a spreadsheet?

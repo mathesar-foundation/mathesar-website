@@ -1,0 +1,30 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.parsedown {
+    @apply leading-8;
+}
+
+.parsedown h1 {
+    @apply text-4xl;
+}
+
+.parsedown h2 {
+  @apply text-3xl font-medium mb-2; 
+}
+
+.parsedown h3 {
+    @apply text-2xl font-medium mb-2; 
+}
+
+p + h2, p + h3 { 
+    @apply mt-6;
+}
