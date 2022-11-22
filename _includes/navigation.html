@@ -5,25 +5,29 @@
   <div>
     <!--mathesar's navigation-->
     <nav class="flex items-center text-lg border-b-2 border-stone-400">
-      <div class="space-x-4 flex items-center">
-
-        <a href="about.html">About Us</a>
-        <div class="dropdown relative">
-          <button>How it Works</button>
-          <div class="hidden absolute bg-white border p-4 rounded shadow-md">
-            <a class="whitespace-nowrap" href="software-engineer.html">Software Engineer</a>
-            <a class="whitespace-nowrap" href="non-technical-expert.html">Non-Technical Expert</a>
+      <div class="space-x-6 flex items-center">
+        <a class="navigation-item" href="about.html">About Us</a>
+        <div class="dropdown relative navigation-item">
+          <button class="flex items-center">How it works <img src="assets/dropdown-arrow.svg" alt=""></button>
+          <div class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md">
+            <a class="whitespace-nowrap hover:underline" href="software-engineer.html"
+              >Software Engineer</a
+            >
+            <a class="whitespace-nowrap hover:underline" href="non-technical-expert.html"
+              >Non-Technical Expert</a
+            >
           </div>
         </div>
         <!-- a dropdown menu for how it works -->
-
-        <a href="#">Live Demo</a>
-        <a href="faq.html">FAQ</a>
-        <a href="community.html">Community</a>
-        <a href="roadmap.html">Roadmap</a>
+        <a class="navigation-item" href="#">Live Demo</a>
+        <a class="navigation-item" href="faq.html">FAQ</a>
+        <a class="navigation-item" href="community.html">Community</a>
+        <a class="navigation-item" href="roadmap.html">Roadmap</a>
       </div>
       <div class="ml-auto">
-        <a href="free-install.html">Request Free Installation</a>
+        <a class="navigation-item" href="free-install.html"
+          >Request Free Installation</a
+        >
       </div>
     </nav>
   </div>
@@ -43,5 +47,27 @@
       // Toggle the "hidden" class on the dropdown menu
       dropdownMenu.classList.toggle("hidden");
     });
+    //close when click outside
+
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButton.contains(event.target);
+
+      if (!isClickInside) {
+        dropdownButton.nextElementSibling.classList.add("hidden");
+      }
+    });
+  });
+
+
+
+
+
+  //if url is active then add class to navigation item
+  var navigationItems = document.querySelectorAll(".navigation-item");
+
+  navigationItems.forEach(function (navigationItem) {
+    if (navigationItem.href == window.location.href) {
+      navigationItem.classList.add("font-bold");
+    }
   });
 </script>

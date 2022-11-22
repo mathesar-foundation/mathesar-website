@@ -324,7 +324,7 @@
       </svg>
       
     </div>
-    <div class="bg-stone-300 py-16">
+    <div class="bg-stone-300 py-16 space-y-8">
       <div class="container mx-auto space-y-4">
         <div class="text-center">
           <h3 class="text-4xl font-semibold">Mathesar’s approach is unique</h3>
@@ -434,27 +434,20 @@
           </ul>
         </div>
       </div>
+      {% include mailing-list.html %}
     </div>
-    <div class="bg-gray-800 py-16">
-      <div class="container mx-auto space-y-4 text-center">
-        <div class="text-center text-white">
-          <h3 class="text-3xl">Find out when you can start using Mathesar</h3>
-          <p class="text-xl text-gray-300">
-            Mathesar’s Alpha release is coming very soon. Please leave your
-            details here to stay updated
-          </p>
-        </div>
-        <div class="p-2 space-y-2 bg-gray-700 rounded mx-auto w-1/2">
-          <input
-            type="text"
-            placeholder="Your best email address…"
-            class="p-2 rounded text-lg w-full"
-          />
-        </div>
-        <button class="bg-red-600 text-white text-lg p-2 rounded-full w-40">
-          Sign Up
-        </button>
-      </div>
+    <div class="bg-stone-300">
+      <!--a clipped right triangle divider-->
+
+      <svg
+        class="w-full h-16 mx-auto text-gray-800"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon fill="currentColor" points="0,100 100,0 100,100" />
+      </svg>
     </div>
+    {% include footer.html %}
   </body>
 </html>
