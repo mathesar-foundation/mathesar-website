@@ -14,17 +14,17 @@ body {
 }
 
 .parsedown h1 {
-    @apply text-4xl;
+    @apply text-5xl;
 }
 
 .parsedown h2 {
-  @apply text-3xl font-medium mb-2; 
+  @apply text-4xl font-semibold mb-2; 
 }
 
 .parsedown h3 {
-    @apply text-2xl font-medium mb-2; 
+    @apply text-2xl font-semibold mb-2; 
 }
 
 p + h2, p + h3 { 
-    @apply mt-6;
+    @apply mt-8;
 }

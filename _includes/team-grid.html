@@ -1,3 +1,11 @@
-<div>
-    TEAM GRID
+<div class="grid grid-cols-4 gap-4 my-8">
+  {% for member in site.data.members %}
+  <div class="space-y-2">
+    <div class="bg-gray-200 h-40"></div>
+    <div>
+      <h4 class="text-lg font-medium font-medium">{{member.name}}</h4>
+      <p>{{member.role}}</p>
+    </div>
+  </div>
+  {% endfor %}
 </div>
