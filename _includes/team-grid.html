@@ -1,10 +1,14 @@
 <div class="grid grid-cols-4 gap-4 my-8">
   {% for member in site.data.members %}
-  <div class="space-y-2">
-    <div class="bg-gray-200 h-40"></div>
+  <div class="space-y-2 bg-white p-2 rounded border border-stone-200">
+    <div class="bg-gray-200 h-40">PHOTO</div>
     <div>
       <h4 class="text-lg font-medium font-medium">{{member.name}}</h4>
-      <p>{{member.role}}</p>
+      <div class="text-gray-600">{{member.role}}</div>
+    </div>
+    <!--short bio-->
+    <div>
+      <p>{{member.bio}}</p>
     </div>
   </div>
   {% endfor %}
