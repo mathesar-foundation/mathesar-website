@@ -4,18 +4,27 @@ title: Software engineer
 parent: How it works
 ---
 
-## Allow quick access to your database – without disrupting your workflow
-
+{% capture subheader %}
 Use Mathesar’s open source and web-based interface to give your team direct access to Postgres. No technical skills required.
 
 Now you can spend less time creating custom reports and manually updating data.
+{% endcapture %}
+
+{% include page-header.html
+header='Allow quick access to your database – without disrupting your workflow'
+subheader=subheader
+%}
+
+{% capture quote %}
+Business experts relied on me to create reports for them, every single day.
+But shouldn’t developers be focusing more on supporting technical infrastructure? Isn’t that our main function?
+{% endcapture %}
 
 {%
 include quote.html
 excerpt='I experienced collaboration issues everyday.'
 author='Pavish Mathesar’s Frontend Developer'
-quote='Business experts relied on me to create reports for them, every single day.
-But shouldn’t developers be focusing more on supporting technical infrastructure? Isn’t that our main function?'
+quote=quote
 %}
 
 ### Speed up your data workflows – using Mathesar’s open source interface
@@ -138,7 +147,7 @@ Planning
 CRM
 Usage
 
-### Use Mathesar as a flexible tool throughout your project lifecycle.
+### Use Mathesar as a flexible tool throughout your project lifecycle
 
 Migrate your data any time you want to. Or simply go back and forth from the interface.
 

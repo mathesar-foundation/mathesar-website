@@ -3,11 +3,17 @@ layout: default
 title: Community
 ---
 
-## Welcome to the Mathesar community
 
+{% capture subheader %}
 To get in touch with the Mathesar team, please email us at: hello@mathesar.org
 
 We’re especially interested in hearing your feedback, feature suggestions and opportunities for collaboration. Thanks!
+{% endcapture %}
+
+{% include page-header.html
+header='Welcome to the Mathesar community'
+subheader=subheader
+%}
 
 ### Are you interested in helping us build Mathesar?
 

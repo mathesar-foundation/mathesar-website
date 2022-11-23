@@ -3,12 +3,17 @@ layout: default
 title: About
 ---
 
-## What is Mathesar?
-
-Mathesar is a straightforward open source and self-hostable tool. 
+{% capture subheader %}
+Mathesar is a straightforward open source and self-hostable tool.
 The web-based interface helps you and your team work with data more independently. And comfortably.
 
 You can use Mathesar to build data models, enter data, use that data and even understand the impact of your data.
+{% endcapture %}
+
+{% include page-header.html
+header='What is Mathesar?'
+subheader=subheader
+%}
 
 ### Our mission
 

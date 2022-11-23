@@ -3,7 +3,9 @@ layout: default
 title: FAQ
 ---
 
-## Frequently asked questions about Mathesar
+{% include page-header.html
+header='Frequently asked questions about Mathesar'
+%}
 
 ### How is Mathesar different from a spreadsheet?
 
