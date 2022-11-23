@@ -10,9 +10,15 @@ Use Mathesar’s open source and web-based interface to give your team direct ac
 Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
 
+{% capture actions %}
+{% include button.html label="Star us on GitHub" url="" %}
+{% include button.html label="Request a Free Installation" url="" %}
+{% endcapture %}
+
 {% include page-header.html
 header='Allow quick access to your database – without disrupting your workflow'
 subheader=subheader
+actions=actions
 %}
 
 {% capture quote %}

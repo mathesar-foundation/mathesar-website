@@ -17,7 +17,7 @@
   </head>
   <body class="bg-stone-50 text-gray-800">
     <div class="container mx-auto space-y-12 py-16">
-    {% include navigation.html %}
+      {% include navigation.html %}
       <div class="grid grid-cols-8 gap-8">
         <div class="col-span-4 space-y-4">
           <div class="space-y-2">
@@ -39,25 +39,27 @@
             </p>
           </div>
         </div>
-        <div class="border bg-white w-full col-span-4 rounded-lg p-8">
-          
-        </div>
+        <div class="border bg-white w-full col-span-4 rounded-lg p-8"></div>
       </div>
       <div class="grid grid-cols-8 gap-8">
-        <a href="#"
+        <a
+          href="#"
           class="col-span-2 block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg"
         >
           <h4 class="uppercase font-semibold text-white">I'm a Developer</h4>
           <div class="text-stone-200 text-xl">Show me how this works</div>
-      </a>
-        <a href="#"
+        </a>
+        <a
+          href="#"
           class="col-span-2 block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg"
         >
           <h4 class="uppercase font-semibold text-white">
             I'm <span class="underline">not</span> a Developer
           </h4>
-          <div class="text-stone-200 text-xl" href="#">Show me how this works</div>
-          </a>
+          <div class="text-stone-200 text-xl" href="#">
+            Show me how this works
+          </div>
+        </a>
       </div>
       <div>
         <ul class="flex justify-between uppercase font-semibold text-sm">
@@ -91,7 +93,6 @@
       >
         <polygon fill="currentColor" points="0,100 100,0 100,100" />
       </svg>
-      
     </div>
     <div class="bg-gray-800 text-white py-16">
       <div class="container mx-auto text-center space-y-10">
@@ -261,7 +262,6 @@
       >
         <polygon fill="currentColor" points="0,100 100,0 100,100" />
       </svg>
-      
     </div>
     <div class="bg-stone-300 py-16">
       <div class="container mx-auto space-y-4">
@@ -290,7 +290,6 @@
       >
         <polygon fill="currentColor" points="0,100 100,0 100,100" />
       </svg>
-      
     </div>
     <div class="bg-stone-50 py-16">
       <div class="space-y-8">
@@ -321,7 +320,6 @@
       >
         <polygon fill="currentColor" points="0,100 100,0 100,100" />
       </svg>
-      
     </div>
     <div class="bg-stone-300 py-16 space-y-8">
       <div class="container mx-auto space-y-4">
@@ -433,12 +431,10 @@
           </ul>
         </div>
       </div>
-      {% capture cta_content %}
-        {% include mailing-list.html label="Mathesar’s Alpha release is coming very soon. Please leave your details
-      here to stay updated:" placeholder="Your Best Email" %}
-      {% endcapture %}
-
-      {% include cta.html content=cta_content %}
+      {% capture cta_content %} {% include mailing-list.html label="Mathesar’s
+      Alpha release is coming very soon. Please leave your details here to stay
+      updated:" placeholder="Your Best Email" %} {% endcapture %} {% include
+      cta.html content=cta_content %}
     </div>
     <div class="bg-stone-300">
       <!--a clipped right triangle divider-->

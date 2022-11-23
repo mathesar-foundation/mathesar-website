@@ -6,5 +6,7 @@
 
   {% if include.subheader %}
   <div class="text-lg">{{include.subheader}}</div>
+  {% endif %} {% if include.actions %}
+  <div class="space-x-4 flex items-center">{{include.actions}}</div>
   {% endif %}
 </div>

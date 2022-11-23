@@ -10,9 +10,15 @@ So you can enter and slice and filter and structure your data… in just minutes
 No technical skills required.
 {% endcapture %}
 
+{% capture actions %}
+{% include button.html label="Stay Updated on Mathesar’s Release" url="" %}
+{% include button.html label="Request a Free Installation" url="" %}
+{% endcapture %}
+
 {% include page-header.html
 header='Enter quick data and find answers to your questions – independently'
 subheader=subheader
+actions=actions
 %}
 
 ### Too many data tools make simple tasks complicated
