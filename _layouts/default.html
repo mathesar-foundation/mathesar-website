@@ -18,10 +18,21 @@
  
   </head>
   <body class="bg-stone-50 text-gray-800">
-    <div class="container mx-auto space-y-12 py-16">
+    <div class="container mx-auto space-y-10 py-16">
       {% include navigation.html %}
+
+      
       <div class="parsedown">{{ content }}</div>
-      {% include mailing-list.html %}
+
+      {% capture cta_content %}
+        {% include mailing-list.html label="Mathesar’s Alpha release is coming very soon. Please leave your details
+        here to stay updated:" placeholder="Your Best Email" %}
+      {% endcapture %}
+
+      {% include cta.html content=cta_content %}
+
+      
+
     </div>
     {% include footer.html %}
   </body>

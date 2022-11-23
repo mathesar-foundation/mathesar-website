@@ -29,10 +29,10 @@ Sign up for our developer-only mailing list below to get updates on Mathesar’s
 
 You can talk to other Mathesar users through our user-only mailing list. And you’ll stay updated on Mathesar’s upcoming release.
 
-Sign up for our user-only mailing list below.
+{% include mailing-list.html label="Sign up for our user-only mailing list below:" placeholder="Enter Email" %}
 
 ### Stay updated on Mathesar’s upcoming release
 
 You can be among the first to learn about our launch date, development milestones and more.
 
-Sign up for our public announcements mailing list below.
+{% include mailing-list.html label="Sign up for our public announcements mailing list below:" placeholder="Enter Email" %}

@@ -293,7 +293,7 @@
       
     </div>
     <div class="bg-stone-50 py-16">
-      <div class="space-y-4">
+      <div class="space-y-8">
         <div class="text-center">
           <h3 class="text-3xl font-semibold">Use Cases</h3>
           <p class="text-xl text-gray-600">
@@ -302,12 +302,11 @@
           </p>
         </div>
         <div class="grid grid-cols-3 gap-4 text-center">
-          <div class="bg-white h-48">Prototype New Solutions</div>
-          <div class="bg-white h-48">Inventory Management</div>
-          <div class="bg-white h-48">Event Planning</div>
-          <div class="bg-white h-48">Prototype New Solutions</div>
-          <div class="bg-white h-48">Inventory Management</div>
-          <div class="bg-white h-48">Event Planning</div>
+          {% for use_case in site.data.use_cases %}
+          <div class="bg-white rounded-lg h-48 flex flex-col">
+            <div class="m-auto text-xl">{{use_case}}</div>
+          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -434,7 +433,12 @@
           </ul>
         </div>
       </div>
-      {% include mailing-list.html %}
+      {% capture cta_content %}
+        {% include mailing-list.html label="Mathesar’s Alpha release is coming very soon. Please leave your details
+      here to stay updated:" placeholder="Your Best Email" %}
+      {% endcapture %}
+
+      {% include cta.html content=cta_content %}
     </div>
     <div class="bg-stone-300">
       <!--a clipped right triangle divider-->

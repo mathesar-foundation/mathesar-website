@@ -1,5 +1,9 @@
 <div class="border mb-8 bg-stone-200 p-8 rounded space-y-4">
-  <h2>{{include.header}}</h2>
+  <div>
+    <div class="text-sm font-bold text-stone-600 uppercase">{{page.title}}</div>
+    <h2>{{include.header}}</h2>
+  </div>
+
   {% if include.subheader %}
   <div class="text-lg">{{include.subheader}}</div>
   {% endif %}

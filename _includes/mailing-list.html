@@ -1,19 +1,11 @@
-<div class="bg-blue-600 text-center rounded-lg p-16 mx-auto w-3/4 space-y-4">
-  <div>
-    <h3 class="text-white text-3xl font-semibold">
-      Find out when you can start using Mathesar
-    </h3>
-    <p class="text-gray-200 text-xl">
-      Mathesar’s Alpha release is coming very soon. Please leave your details
-      here to stay updated:
-    </p>
-  </div>
+<div class="my-4 space-y-2">
+  <div class="font-semibold">{{include.label}}</div>
   <div class="flex items-center text-lg space-x-2">
-  <input
-    type="text"
-    class="bg-white rounded p-2 flex-grow"
-    placeholder="Your Best Email"
-  />
-  <input type="submit" class="bg-gray-800 text-white p-2 rounded" />
-    </div>
+    <input
+      type="text"
+      class="bg-white rounded p-2 flex-grow border"
+      placeholder="{{include.placeholder}}"
+    />
+    <input type="submit" class="bg-gray-800 text-white p-2 rounded" />
+  </div>
 </div>

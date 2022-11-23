@@ -25,6 +25,14 @@ body {
     @apply text-2xl font-semibold mb-2; 
 }
 
+.parsedown ul {
+    @apply list-disc list-inside my-4;
+}
+
+.parsedown a {
+    @apply text-blue-500;
+}
+
 p + h2, p + h3 { 
     @apply mt-8;
 }
