@@ -4,7 +4,7 @@ title: Free install
 ---
 
 {% capture subheader %}
-Interested in being an early adopter? We could install Mathesar for you. 
+Interested in being an early adopter? We could install Mathesar for you.
 In return, we’d like to regularly hear your honest feedback on Mathesar. This will help us continue to make improvements.
 {% endcapture %}
 
@@ -12,7 +12,7 @@ In return, we’d like to regularly hear your honest feedback on Mathesar. This 
 
 We can set up a Mathesar installation for you on our servers for 1 year. Here are more details:
 
-- We can configure Mathesar to fit your needs 
+- We can configure Mathesar to fit your needs
 - You can invite as many users to collaborate as you’d like
 - We can back-up your Mathesar server and data – helping you restore them, if needed
 - You’ll receive customer support via email

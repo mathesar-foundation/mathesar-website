@@ -37,13 +37,18 @@ body {
     @apply mt-8;
 }
 
-.md-content p {
+.md-content > p {
     @apply my-2;
 }
 
 .md-content p:last-child {
     @apply mb-0;
 }
+
+.md-content hr {
+    @apply my-8;
+}
+
 
 .navigation-item {
     @apply block border-b-2 border-transparent hover:border-red-500;
