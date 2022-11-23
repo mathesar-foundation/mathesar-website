@@ -9,32 +9,40 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.parsedown {
+.md-content {
     @apply leading-8;
 }
 
-.parsedown h1 {
+.md-content h1 {
     @apply text-5xl;
 }
 
-.parsedown h2 {
+.md-content h2 {
   @apply text-4xl font-semibold mb-2; 
 }
 
-.parsedown h3 {
+.md-content h3 {
     @apply text-2xl font-semibold mb-2; 
 }
 
-.parsedown ul {
+.md-content ul {
     @apply list-disc list-inside my-4;
 }
 
-.parsedown a {
+.md-content a {
     @apply text-blue-500;
 }
 
-p + h2, p + h3 { 
+.md-content p + h2, p + h3 { 
     @apply mt-8;
+}
+
+.md-content p {
+    @apply my-2;
+}
+
+.md-content p:last-child {
+    @apply mb-0;
 }
 
 .navigation-item {

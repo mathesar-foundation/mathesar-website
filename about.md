@@ -27,11 +27,11 @@ Mathesar is a tool that our entire team wants to use. We're our own users.
 
 Mathesar is a project of the Center for Complex Interventions, a nonprofit that helps communities translate science into action.
 
-We’re currently funded through the generous support of Reid Hoffman and the Center for Radical Transformation at the Chiba Institute of Technology.
+We’re currently funded through the generous support of **Reid Hoffman** and the **Center for Radical Transformation at the Chiba Institute of Technology**.
 
 ### Here’s the team behind Mathesar
 
-+ Our favorite database hobby projects!
+\+ Our favorite database hobby projects!
 
 {% include team-grid.html %}
 
@@ -41,4 +41,4 @@ We’re currently working towards our first Alpha release. After the launch, we�
 
 This initial development has been funded philanthropically. At the same time, we’re working towards self-sustainability.
 
-We haven’t yet decided on a business model, but one thing we know for certain: Mathesar will always be open-source and self-hostable.
+We haven’t yet decided on a business model, but one thing we know for certain: **Mathesar will always be open-source and self-hostable**.
