@@ -58,30 +58,38 @@ It’s an intuitive interface, at a beginner-friendly level.
 
 But unlike a spreadsheet – you can now work more easily with structured, clean data.
 
-#### INTEGRATES WITH YOUR DATA
+---
 
-### Use Mathesar in tandem with your other tools
-
+{% capture capture_1 %}
 Having your data sources scattered in different places can make analysis difficult.
 
 Mathesar connects to your existing database. The interface can become a central source of truth to analyze your data.
 
 You can have different workflows using the same data – all at the same time.
+{% endcapture %}
 
-#### DATA VALIDATION & CONSISTENCY
+{% include feature.html
+    header='INTEGRATES WITH YOUR DATA'
+    title='Use Mathesar in tandem with your other tools'
+    content=capture_1
+%}
 
-### Work with clean, error-free data
-
+{% capture capture_2 %}
 Duplicates and redundancies are all too common in data entry. This inconsistency can lead to corrupted data – resulting in misguided decisions.
 
 Mathesar allows you to retain strict data structures.
 
 You can easily set up data rules that prevent users from making data errors.
 That’s how you ensure clean, consistent and accurate data records.
+{% endcapture %}
 
-#### DATA EXPLORER
+{% include feature.html
+    header='DATA VALIDATION & CONSISTENCY'
+    title='Work with clean, error-free data'
+    content=capture_2
+%}
 
-### Discover new insights with unique views
+{% capture capture_3 %}
 
 When you want to explore a freeform question about your data – you could face technical obstacles:
 
@@ -92,10 +100,15 @@ You could even lack easy access to your data.
 
 Mathesar lets you create views across multiple tables – in just a few clicks. So you can answer your freeform questions quickly. And gain new insights.
 
-#### DATA RELATIONSHIPS
+{% endcapture %}
 
-### Watch your data sync up and build relationships
+{% include feature.html
+    header='DATA EXPLORER'
+    title='Discover new insights with unique views'
+    content=capture_3
+%}
 
+{% capture capture_4 %}
 You often track the same data – like names, dates, statuses – across many spreadsheets that are not connected.
 
 Someone has to manually update this information, over-and-over. This can become a bad use of a person’s work time.
@@ -104,21 +117,31 @@ With Mathesar, your data records can “speak” and connect to each other. When
 
 So you can adjust and adapt your data records without dedicating too much time.
 
-#### QUICK FILTERS
+{% endcapture %}
 
-### User-friendly filters to answer quick questions
+{% include feature.html
+    header='DATA RELATIONSHIPS'
+    title='Watch your data sync up and build relationships'
+    content=capture_4
+%}
 
+{% capture capture_5 %}
 Sometimes you have one-off questions about your data, but you don’t have a relevant report already available.
 
 Instead of waiting for your technical collaborator – or ticking hundreds of checkboxes in your custom software – simply search through Mathesar.
 
 You can quickly filter words using conditional logic.
+{% endcapture %}
 
-#### RESHAPE YOUR DATA STRUCTURE
+{% include feature.html
+    header='QUICK FILTERS'
+    title='User-friendly filters to answer quick questions'
+    content=capture_5
+%}
 
-### Update your data models – in just minutes
+{% capture capture_6 %}
 
-When your workflow changes, this change should be reflected in your data models.
+        When your workflow changes, this change should be reflected in your data models.
 But manual changes often take hours, even days.
 
 This runs a significant risk of disruption. When your data is paused and not synced-up, you could end up with stale data.
@@ -127,12 +150,24 @@ Mathesar saves you time and lets you update data models – in a click.
 
 So as your workflow evolves, you’re able to adjust your data to accurately. In minutes.
 
-#### OPEN SOURCE & SELF-HOSTED
+{% endcapture %}
 
-### Own your data
+{% include feature.html
+    header='RESHAPE YOUR DATA STRUCTURE'
+    title='Update your data models – in just minutes'
+    content=capture_6
+%}
 
+{% capture capture_7 %}
 Proprietary software companies often look like appealing choices – until you’re locked in their ecosystem.
 If you decide to move away, you could lose valuable data. Your data could even be sold off in private deals.
 Mathesar allows you to self-host on your servers. You’ll
 have full control over your data and can choose who has access.
 Easily migrate from Mathesar – or simply go back and forth – anytime you like.
+{% endcapture %}
+
+{% include feature.html
+    header='OPEN SOURCE & SELF-HOSTED'
+    title='Own your data'
+    content=capture_7
+%}

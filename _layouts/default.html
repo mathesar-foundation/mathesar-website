@@ -36,4 +36,14 @@
     </div>
     {% include footer.html %}
   </body>
+
+  <script>
+    // when feature-card element add flex inverse to odd elements
+    const featureCards = document.querySelectorAll(".feature-card");
+    featureCards.forEach((card, index) => {
+      if (index % 2 !== 0) {
+        card.classList.add("flex-row-reverse");
+      }
+    });
+  </script>
 </html>

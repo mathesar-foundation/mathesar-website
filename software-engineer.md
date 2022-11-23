@@ -40,20 +40,24 @@ schema changes. And let teammates create reports – without depending on you.
 
 Mathesar doesn’t have its own set of abstractions so it won’t make unexpected changes to your database. You can allow your collaborators to quickly enter data and create reports – without depending on you.
 
-#### BUILT ON POSTGRES
+---
 
-### Use Postgres directly
-
+{% capture capture_1 %}
 Mathesar uses and manipulates Postgres schemas, primary keys, foreign keys, constraints and data types.
 
 So any configuration you do in the UI will reflect directly in your Postgres databases.
 Nothing will prevent you from working with the same data in other tools outside of Mathesar.
 
 All the same data integrity safeguards you set up via the Mathesar UI will still apply.
+{% endcapture %}
 
-#### SELF-HOSTED
+{% include feature.html
+    header='BUILT ON POSTGRES'
+    title='Use Postgres directly'
+    content=capture_1
+%}
 
-### Your data is yours
+{% capture capture_2 %}
 
 Proprietary companies can keep you locked in their ecosystem. This can make it difficult to modify your disparate data sources.
 
@@ -61,48 +65,69 @@ If you decide to move away, you could lose data.
 
 Mathesar is self-hosted – giving you full control over your system and your data. You can integrate with other Postgres-friendly tools.
 
-#### NORMALIZED DATA
+{% endcapture %}
 
-### Your collaborators can easily work with normalized data
+{% include feature.html
+    header='SELF-HOSTED'
+    title='Your data is yours'
+    content=capture_2
+%}
 
+{% capture capture_3 %}
 Non-technical people often struggle to work with normalized data. Even database-spreadsheet hybrid applications complicate the normalization process.
 
 Mathesar creates and reflects relationships at the database level.  There are no “relationship column types” and there are no abstractions.
 
 Mathesar uses actual foreign key constraints and provides a UI to understand links easily – no technical skills required.
+{% endcapture %}
 
-#### EASY UX
+{% include feature.html
+    header='NORMALIZED DATA'
+    title='Your collaborators can easily work with normalized data'
+    content=capture_3
+%}
 
-### Reduce dependencies on you – empower collaborators to use your database
-
+{% capture capture_4 %}
 Your colleagues can use Mathesar’s interface to answer their ad-hoc questions quickly.
 
 This can reduce the need for you to create custom reports and update data manually.
+{% endcapture %}
 
-#### OPEN SOURCE
+{% include feature.html
+    header='EASY UX'
+    title='Reduce dependencies on you – empower collaborators to use your database'
+    content=capture_4
+%}
 
-### Developed in collaboration with our community
-
+{% capture capture_5 %}
 Mathesar is free, licensed under GPLv3. There are no paid plans.
 
 Although we’re new, we already have dozens of contributors. If you’re interested, you can also contribute.
 
 We work in public – you can check out what our team is doing on Matrix. And via our mailing lists.
+{% endcapture %}
 
-#### SCHEMA MIGRATIONS
+{% include feature.html
+    header='OPEN SOURCE'
+    title='Developed in collaboration with our community'
+    content=capture_5
+%}
 
-### Perform schema changes – in minutes
-
+{% capture capture_6 %}
 Manually changing your schema can require hours of rote work or custom code.
 This can lead to disruptions – like downtime, stale data and difficulties in meeting your SLA.
 
 Mathesar makes schema and data migrations a one-click solution.
 There are no disruptions – which can help ease your data integration workflow.
+{% endcapture %}
 
-#### DATA EXPLORER
+{% include feature.html
+    header='SCHEMA MIGRATIONS'
+    title='Perform schema changes – in minutes'
+    content=capture_6
+%}
 
-### Build views across multiple tables
-
+{% capture capture_7 %}
 Database joins can be confusing for non-technical users to fully understand.
 
 With Mathesar’s Data Explorer, your collaborators don’t need to understand joins. They can see and use relationships between data – with the joins happening behind the scenes.
@@ -110,6 +135,15 @@ With Mathesar’s Data Explorer, your collaborators don’t need to understand j
 Anyone can build a query through the UI that displays data from across multiple tables.
 
 This can remove the dependency layer on you and allow for more exploration into your database.
+{% endcapture %}
+
+{% include feature.html
+    header='DATA EXPLORER'
+    title='Build views across multiple tables'
+    content=capture_7
+%}
+
+---
 
 ### You and your collaborators can quickly enter data. View it. Slice it
 
@@ -146,12 +180,10 @@ Set up constraints at the column level to ensure data validation and integrity f
 
 You could also use Mathesar for:
 
-Project Management
-Tracking Expenses
-Event
-Planning
-CRM
-Usage
+- Project Management
+- Tracking Expenses
+- Event Planning
+- CRM Usage
 
 ### Use Mathesar as a flexible tool throughout your project lifecycle
 
