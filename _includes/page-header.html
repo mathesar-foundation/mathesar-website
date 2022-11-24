@@ -1,12 +1,13 @@
-<div class="border mb-8 bg-stone-200 p-8 rounded space-y-4">
-  <div>
+<div class="mb-8 rounded space-y-6">
+  <div class="space-y-2">
     <div class="text-sm font-bold text-stone-600 uppercase">{{page.title}}</div>
-    <h2>{{include.header}}</h2>
+    <h2 class="font-bold">{{include.header}}</h2>
   </div>
 
   {% if include.subheader %}
-  <div class="text-lg">{{include.subheader}}</div>
+  <div class="text-xl">{{include.subheader}}</div>
   {% endif %} {% if include.actions %}
   <div class="space-x-4 flex items-center">{{include.actions}}</div>
   {% endif %}
+  <div class="w-64 border-b-2 border-stone-300 py-2"></div>
 </div>

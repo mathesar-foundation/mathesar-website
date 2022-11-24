@@ -10,7 +10,7 @@ body {
 }
 
 .md-content {
-    @apply leading-8;
+    @apply leading-6;
 }
 
 .md-content h1 {
@@ -18,11 +18,11 @@ body {
 }
 
 .md-content h2 {
-  @apply text-4xl font-semibold mb-2; 
+  @apply text-5xl font-semibold mb-2; 
 }
 
-.md-content h3 {
-    @apply text-2xl font-semibold mb-2; 
+.md-content > h3 {
+    @apply text-2xl font-semibold my-8; 
 }
 
 .md-content ul {
@@ -38,7 +38,7 @@ body {
 }
 
 .md-content > p {
-    @apply my-2;
+    @apply mb-4;
 }
 
 .md-content p:last-child {
