@@ -21,6 +21,8 @@ subheader=subheader
 actions=actions
 %}
 
+{% capture highlight_1 %}
+
 ### Too many data tools make simple tasks complicated
 
 You’re often left without clear answers to these important questions:
@@ -29,8 +31,11 @@ You’re often left without clear answers to these important questions:
 - When your workflow changes, how can you quickly update your data structures?
 - How can you see one view of all your different data sources?
 
-{% capture quote %}
+{% endcapture %}
 
+{% include highlight.html content=highlight_1 %}
+
+{% capture quote %}
 “When developers would give me access to software, my immediate instinct was “don’t break anything!”
 
 Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?
@@ -39,7 +44,7 @@ I felt like I was in a piece of software that wasn’t meant for me.
 
 We created Mathesar to be more welcoming. Mathesar sets up data rules that protect people from data errors.
 
-It can open up a playground to explore new ideas.
+It can open up a playground to explore new ideas."
 {% endcapture %}
 
 {%

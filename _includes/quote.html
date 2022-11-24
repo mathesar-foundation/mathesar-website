@@ -5,6 +5,6 @@
       <p class="text-2xl italic">"{{include.excerpt}}"</p>
       <p>- {{include.author}}</p>
     </div>
-    <p class="text-lg italic">"{{include.quote}}"</p>
+    <p class="text-lg italic">{{include.quote | markdownify}}</p>
   </div>
 </div>
