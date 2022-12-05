@@ -1,0 +1,21 @@
+<div
+  class="text-center bg-gray-900 p-10 rounded text-white {{include.theme}} mb-20"
+>
+  <div class="w-1/2 mx-auto space-y-8">
+    <div>
+      <h3 class="font-semibold text-3xl text-white">{{include.header}}</h3>
+      {%if include.subheader %}
+      <p class="text-xl">{{include.subheader}}</p>
+      {% endif %}
+    </div>
+    <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+    <div class="text-xl space-y-6 highlight-content">
+      {{include.content | markdownify}}
+    </div>
+  </div>
+
+  <!--insert link to github issue-->
+  <div class="flex justify-center mt-4">
+    <a href="{{include.url}}">Go to Github Discussion</a>
+  </div>
+</div>

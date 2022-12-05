@@ -10,6 +10,7 @@ In return, we’d like to regularly hear your honest feedback on Mathesar. This 
 
 {% include page-header.html header='Receive a free Mathesar installation on our servers (limited availability)' subheader=subheader actions=actions %}
 
+{% capture highlight %}
 We can set up a Mathesar installation for you on our servers for 1 year. Here are more details:
 
 - We can configure Mathesar to fit your needs
@@ -19,6 +20,9 @@ We can set up a Mathesar installation for you on our servers for 1 year. Here ar
 - We’ll prioritize implementing features or bug-fixes requested by you  (as much as we are able to)
 
 If you’re interested, please fill out the form below.
+{% endcapture %}
+
+{% include highlight.html header='What you’ll get' content=highlight theme='light'%}
 
 {% include free-install-form.html %}
 

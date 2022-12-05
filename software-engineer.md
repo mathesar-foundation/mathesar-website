@@ -163,44 +163,15 @@ While still retaining structure and consistency.
 
 {% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' %}
 
-### Special Use Cases
+{%include usecases.html%}
 
-PROTOTYPE NEW IDEAS
-Quickly fill in any gaps using Mathesar’s interface
-
-Prototype experiences quickly. Swap Mathesar in for the parts you haven’t built yet so you can speed up your workflow.
-
-ADMIN INTERFACE TO EXISTING DATABASES
-Gain different views of your data
-
-Open up access to your existing Postgres database – giving non-technical collaborators the freedom to enter data or explore new insights.
-
-They can query the data across multiple tables.
-
-PUBLISH DATA SETS
-Let other people explore your data freely
-
-Exporting your data into a CSV format often causes your data to lose some integrity.
-Publishing your data using Mathesar’s interface allows you to retain your data’s schema and format.
-
-Members of the public can use the interface to explore your data and find insights.
-
-DATA CONSOLIDATION
-Bring data from different sources into a single format
-
-Import data from multiple sources and consolidate them into a single format.
-Set up constraints at the column level to ensure data validation and integrity for new data.
-
-You could also use Mathesar for:
-
-- Project Management
-- Tracking Expenses
-- Event Planning
-- CRM Usage
-
-### Use Mathesar as a flexible tool throughout your project lifecycle
+{% capture highlight3 %}
 
 Migrate your data any time you want to. Or simply go back and forth from the interface.
 
 - Use Mathesar to set up a backend for your custom application.
 - Mathesar can work as frontend to existing databases, without altering your data.
+
+{% endcapture %}
+
+{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' %}
