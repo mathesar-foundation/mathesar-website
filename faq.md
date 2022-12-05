@@ -7,6 +7,8 @@ title: FAQ
 header='Frequently asked questions about Mathesar'
 %}
 
+{% capture faq_section1 %}
+
 ### How is Mathesar different from a spreadsheet?
 
 Spreadsheets are easy to use, but they’re also easy to mis-use because they're so unstructured.
@@ -54,6 +56,10 @@ Note: NocoDB is a more mature solution than Mathesar and supports features like 
 
 Please see our roadmap for more info on Mathesar’s upcoming features.
 
+{% endcapture %}
+
+{% capture faq_section2 %}
+
 ### How is Mathesar different from Baserow?
 
 They’re both open source tools, but Mathesar’s approach is different from Baserow:
@@ -81,6 +87,10 @@ One thing we’re sure of: Mathesar will always be open-source and self-hostable
 
 Not yet, but we plan on building forms soon after our first Alpha release. Please see our roadmap for more details.
 
+{% endcapture %}
+
+{% capture faq_section3 %}
+
 ### What kind of access control does Mathesar support?
 
 In our alpha release, Mathesar will support Manager, Editor and Viewer permissions for entire databases and schemas.
@@ -94,3 +104,8 @@ You can check out this specification for some of our early thoughts on permissio
 Not yet, but this is on our roadmap.
 
 If you’re curious – here’s some early work on how formulas can integrate into Mathesar’s Data Explorer interface.
+{% endcapture %}
+
+{% include faq_section.html content=faq_section1 section="About" %}
+{% include faq_section.html content=faq_section2 section="About" %}
+{% include faq_section.html content=faq_section3 section="About" %}

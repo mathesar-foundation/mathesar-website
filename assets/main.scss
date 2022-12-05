@@ -115,4 +115,20 @@ p + h3 {
   @apply bg-gray-600;
 }
 
+.faq-section h3 {
+  @apply text-2xl mb-4;
+}
+
+.faq-section p {
+  @apply text-gray-600;
+}
+
+.faq-section p + p {
+  @apply mt-4;
+}
+
+.faq-section p + h3 {
+  @apply mt-8;
+}
+
 
