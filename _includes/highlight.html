@@ -1,11 +1,12 @@
 <div class="text-center bg-gray-800 angled py-40 text-white {{include.theme}} mb-20">
-  <div class="w-1/2 mx-auto space-y-10">
+  <div class="w-1/2 mx-auto space-y-8">
     <div>
       <h3 class="font-semibold text-3xl">{{include.header}}</h3>
       {%if include.subheader %}
       <p class="text-xl">{{include.subheader}}</p>
         {% endif %}
     </div>
+    <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
     <div class="text-xl space-y-4">{{include.content | markdownify}}</div>
   </div>
 </div>

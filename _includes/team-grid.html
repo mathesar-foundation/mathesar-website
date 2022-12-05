@@ -24,13 +24,13 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-4 gap-4 my-8">
+  <div class="grid grid-cols-4 gap-8 my-8">
     {% for member in site.data.members %}
-    <div class="space-y-2 border flex items-center space-x-4">
-      <div class="bg-gray-200 w-40 h-40 shrink-0">PHOTO</div>
+    <div class="space-y-2 flex items-center space-x-4">
+      <div class="bg-gray-400 w-40 h-40 shrink-0">PHOTO</div>
       <div class="space-y-4">
         <div>
-        <h4 class="text-lg font-semibold">{{member.name}}</h4>
+        <h4 class="text-xl font-semibold">{{member.name}}</h4>
         <div>{{member.role}}</div>
         </div>
         <p class="italic border-l-2 pl-2 border-stone-800">{{member.bio}}</p>
