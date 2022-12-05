@@ -123,6 +123,10 @@ p + h3 {
   @apply text-gray-600;
 }
 
+.faq-section ul {
+  @apply list-disc list-inside my-4 space-y-2;
+}
+
 .faq-section p + p {
   @apply mt-4;
 }
