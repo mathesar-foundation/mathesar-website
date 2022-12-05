@@ -16,8 +16,8 @@ section='Open Source Database Interface' content=hero_content
 image='assets/screenshot.png' %}
 
 {% capture actions %}
-{% include button.html label="Stay Updated on Mathesar’s Release" url="" %}
-{% include button.html label="Request a Free Installation" url="" %}
+{% include button.html style="primary" label="Stay Updated on Mathesar’s Release" url="" %}
+{% include button.html style="secondary" label="Request a Free Installation" url="" %}
 {% endcapture %}
 
 {% include page_actions.html content=actions %}

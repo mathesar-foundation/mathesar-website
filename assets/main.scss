@@ -107,4 +107,12 @@ p + h3 {
     @apply text-red-500 mr-4;
 }
 
+.button {
+  @apply bg-blue-600;
+}
+
+.button.secondary {
+  @apply bg-gray-600;
+}
+
 

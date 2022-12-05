@@ -1,5 +1,5 @@
 <div class="angled light px-16 space-y-10">
-  <div class="mx-auto w-1/2 space-y-4">
+  <div class="mx-auto w-1/2 space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
     <div class="flex">
       <p class="text-xl flex-grow">
@@ -9,6 +9,8 @@
       <img class="w-64" src="assets/cci-logo.svg" alt="" />
     </div>
   </div>
+
+  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto w-1/2 space-y-2 text-center">
     <h4 class="text-2xl font-bold">Our team</h4>
@@ -24,14 +26,14 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-4 gap-8 my-8">
+  <div class="grid grid-cols-3 gap-8 my-8 w-3/4 mx-auto">
     {% for member in site.data.members %}
     <div class="space-y-2 flex items-center space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0">PHOTO</div>
+      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
       <div class="space-y-4">
         <div>
-        <h4 class="text-xl font-semibold">{{member.name}}</h4>
-        <div>{{member.role}}</div>
+          <h4 class="text-xl font-semibold">{{member.name}}</h4>
+          <div>{{member.role}}</div>
         </div>
         <p class="italic border-l-2 pl-2 border-stone-800">{{member.bio}}</p>
       </div>
