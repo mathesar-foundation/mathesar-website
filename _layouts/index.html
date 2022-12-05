@@ -22,22 +22,22 @@
 
     <div class="angled dark my-10">
       <div class="w-2/5 mx-auto text-center space-y-10">
-        <div>
-          <h2 class="text-4xl font-semibold">
+        <div class="space-y-4">
+          <h2 class="text-5xl font-semibold">
             Your data is a representation of you.
           </h2>
-          <p class="text-lg text-gray-200">
+          <p class="text-xl">
             Your workflows. Projects. And opportunities.
           </p>
         </div>
 
-   
+        <div class="w-40 border-t-2 border-stone-200 mx-auto"></div>
 
         <div class="space-y-2">
           <h3 class="text-3xl font-semibold">
             But too many data tools limit you from managing your data your way.
           </h3>
-          <p class="text-xl text-gray-200">
+          <p class="text-xl">
             Here are some root causes of this issue:
           </p>
         </div>
@@ -68,19 +68,19 @@
           </li>
         </ul>
 
+        <div class="w-40 border-t-2 border-stone-100 mx-auto"></div>
+
         <div class="space-y-2">
           <h3 class="text-3xl font-semibold">
             You can truly own your data – with Mathesar’s open source interface.
           </h3>
-          <p class="text-xl text-gray-200">
+          <p class="text-xl">
             Give your collaborators freedom to explore and answer data
             questions. Quickly.
           </p>
         </div>
 
-        <!-- svg for red x mark -->
-
-        <!---svg template-->
+       
 
         <ul class="text-left text-lg space-y-6 list-cancel">
           <li class="flex items-start space-x-4">
@@ -111,15 +111,6 @@
     <div class="angled bg-stone-300 my-10">
       <div class="container mx-auto space-y-4">
         <div class="grid grid-cols-8 gap-8 items-center">
-          <div class="col-span-3 space-y-4">
-            <h3 class="text-4xl">
-              Now you can rapidly enter data. And analyze that data. And ensure
-              your data is fully valid.
-            </h3>
-            <p class="text-xl text-gray-600">
-              Using a self-hostable and accessible interface.
-            </p>
-          </div>
           <div class="col-span-5 flex flex-col">
             <img
               class="rounded-lg shadow-lg my-auto"
@@ -127,6 +118,16 @@
               alt=""
             />
           </div>
+          <div class="col-span-3 space-y-4">
+            <h3 class="text-4xl">
+              Now you can rapidly enter data. And analyze that data. And ensure
+              your data is fully valid.
+            </h3>
+            <p class="text-2xl">
+              Using a self-hostable and accessible interface.
+            </p>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -134,12 +135,13 @@
     <div class="bg-stone-50 py-16">
       <div class="space-y-8">
         <div class="text-center">
-          <h3 class="text-3xl font-semibold">Use Cases</h3>
-          <p class="text-xl text-gray-600">
-            Here’s what you could set up in your first 30 mins of using
+          <h3 class="text-4xl font-bold">Use Cases</h3>
+          <p class="text-xl">
+            Here’s what you could set up in your first <span class="font-semibold">30 mins</span> of using
             Mathesar:
           </p>
         </div>
+        <div class="w-40 border-t-2 border-stone-200 mx-auto"></div>
         <div class="grid grid-cols-3 gap-4 text-center">
           {% for use_case in site.data.use_cases %}
           <div class="bg-white rounded-lg h-48 flex flex-col">
@@ -151,11 +153,12 @@
     </div>
 
     <div class="bg-stone-200 angled py-16 space-y-8">
-      <div class="w-1/2 mx-auto space-y-4">
-        <div class="text-center">
-          <h3 class="text-4xl font-semibold">Mathesar’s approach is unique</h3>
-          <p class="text-xl text-gray-600">We’re not reinventing the wheel.</p>
+      <div class="w-1/2 mx-auto space-y-8">
+        <div class="text-center space-y-4">
+          <h3 class="text-4xl font-bold">Mathesar’s approach is unique</h3>
+          <p class="text-2xl">We’re not reinventing the wheel.</p>
         </div>
+        <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
         <div class="text-center space-y-6">
           <h4 class="text-xl font-semibold">
             We’re making your existing database more accessible to you – via a
