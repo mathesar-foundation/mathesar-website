@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: faq
 title: FAQ
 ---
 
-{% include page-header.html
-header='Frequently asked questions about Mathesar'
-%}
+
 
 {% capture faq_section1 %}
 
@@ -56,10 +54,6 @@ Note: NocoDB is a more mature solution than Mathesar and supports features like 
 
 Please see our roadmap for more info on Mathesar’s upcoming features.
 
-{% endcapture %}
-
-{% capture faq_section2 %}
-
 ### How is Mathesar different from Baserow?
 
 They’re both open source tools, but Mathesar’s approach is different from Baserow:
@@ -72,16 +66,6 @@ They’re both open source tools, but Mathesar’s approach is different from Ba
 Note: Baserow is a more mature project than Mathesar and supports features like plugins, real-time collaboration, etc that Mathesar does not currently support.
 
 Please see our roadmap for more info on Mathesar’s upcoming features.
-
-### Is Mathesar a sustainable project?
-
-We’re working towards our first Alpha release. After the launch, we’ll iterate until we have a Version 1.0 ready for wider adoption and community feedback.
-
-We’ve received philanthropic funding for this initial development. And we’re working towards self-sustainability.
-
-We haven’t yet decided on a business model. But we’ll always help support smaller organizations and individuals – and won’t just tailor our features to the needs of enterprises only.
-
-One thing we’re sure of: Mathesar will always be open-source and self-hostable.
 
 ### Can I create and share forms using Mathesar?
 
@@ -104,8 +88,23 @@ You can check out this specification for some of our early thoughts on permissio
 Not yet, but this is on our roadmap.
 
 If you’re curious – here’s some early work on how formulas can integrate into Mathesar’s Data Explorer interface.
+
 {% endcapture %}
 
-{% include faq_section.html content=faq_section1 section="About" %}
-{% include faq_section.html content=faq_section2 section="About" %}
-{% include faq_section.html content=faq_section3 section="About" %}
+{% capture faq_section2 %}
+
+### Is Mathesar a sustainable project?
+
+We’re working towards our first Alpha release. After the launch, we’ll iterate until we have a Version 1.0 ready for wider adoption and community feedback.
+
+We’ve received philanthropic funding for this initial development. And we’re working towards self-sustainability.
+
+We haven’t yet decided on a business model. But we’ll always help support smaller organizations and individuals – and won’t just tailor our features to the needs of enterprises only.
+
+One thing we’re sure of: Mathesar will always be open-source and self-hostable.
+
+{% endcapture %}
+
+{% include faq_section.html content=faq_section1 section="Product Comparisons" %}
+{% include faq_section.html content=faq_section3 section="Features" %}
+{% include faq_section.html content=faq_section2 section="About Mathesar" %}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
+    />
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/main.css" />
+    <!-- insert Nunito Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-stone-50 text-gray-800">
+    <div class="p-16">{% include navigation.html %}</div>
+
+    {% include page-header.html
+        header='Frequently asked questions about Mathesar'
+        %}
+
+    <div class="w-3/4 mx-auto flex items-start space-x-16 relative">
+
+      <div>{{ content }}</div>
+      <div id="table-of-contents" class="w-80 shrink-0 bg-stone-100 p-4 sticky">
+
+      </div>
+    </div>
+
+    {% capture cta_content %} {% include mailing-list.html label="Mathesar’s
+    Alpha release is coming very soon. Please leave your details here to stay
+    updated:" placeholder="Your Best Email" %} {% endcapture %} {% include
+    cta.html content=cta_content %} {% include footer.html %}
+  </body>
+
+  <script>
+    const toc = document.getElementById("table-of-contents");
+    const sections = document.getElementsByClassName("faq-section");
+    
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      const sectionID = section.id;
+      const sectionTitle = section.getElementsByTagName("h4")[0].innerText;
+      const link = document.createElement("a");
+      link.href = `#${sectionID}`;
+      link.innerText = sectionTitle;
+      link.classList.add("block", "hover:text-blue-600", "mb-2", "font-bold", "text-sm");
+      toc.appendChild(link);
+      
+      const subsections = section.getElementsByTagName("h3");
+      for (let j = 0; j < subsections.length; j++) {
+        const subsection = subsections[j];
+        const subsectionID = subsection.id;
+        const subsectionTitle = subsection.innerText;
+        const link = document.createElement("a");
+        link.href = `#${subsectionID}`;
+        link.innerText = subsectionTitle;
+        link.classList.add("block", "hover:text-blue-600", "hover:bg-stone-200","px-2","rounded", "ml-4", "mb-2");
+        toc.appendChild(link);
+        }
+    }
+
+
+    
+    
+
+
+
+    
+  </script>
+</html>
