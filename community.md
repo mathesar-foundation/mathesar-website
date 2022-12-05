@@ -3,9 +3,8 @@ layout: default
 title: Community
 ---
 
-
 {% capture subheader %}
-To get in touch with the Mathesar team, please email us at: hello@mathesar.org
+To get in touch with the Mathesar team, please email us at: [hello@mathesar.org](mailto:hello@mathesar.org)
 
 We’re especially interested in hearing your feedback, feature suggestions and opportunities for collaboration. Thanks!
 {% endcapture %}
@@ -15,6 +14,8 @@ header='Welcome to the Mathesar community'
 subheader=subheader
 %}
 
+{% capture highlight %}
+
 ### Are you interested in helping us build Mathesar?
 
 Here are some helpful links:
@@ -23,16 +24,22 @@ Here are some helpful links:
 - [Mathesar’s GitHub repository](github.com/centerofci/mathesar)
 - [Mathesar’s Wiki](github.com/centerofci/mathesar/wiki)
 
-Sign up for our developer-only mailing list below to get updates on Mathesar’s development.
+Sign up for our developer-only mailing list below to get updates on Mathesar’s development:
+
+{% include button.html style="primary" label="Sign up for our developer-only mailing list" url="https://groups.google.com/g/mathesar-dev" %}
+
+{% endcapture %}
+
+{% include highlight.html header='Help us build Mathesar' content=highlight theme='light'%}
+
+{% capture highlight1 %}
 
 ### Are you interested in using Mathesar?
 
 You can talk to other Mathesar users through our user-only mailing list. And you’ll stay updated on Mathesar’s upcoming release.
 
-{% include mailing-list.html label="Sign up for our user-only mailing list below:" placeholder="Enter Email" %}
+{% include button.html size="sm" style="primary" label="Sign up for our user-only mailing list" url="https://groups.google.com/g/mathesar-users" %}
 
-### Stay updated on Mathesar’s upcoming release
+{% endcapture %}
 
-You can be among the first to learn about our launch date, development milestones and more.
-
-{% include mailing-list.html label="Sign up for our public announcements mailing list below:" placeholder="Enter Email" %}
+{% include highlight.html size="sm" header='Stay updated on Mathesar’s release' content=highlight1 theme='dark'%}

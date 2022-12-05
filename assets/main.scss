@@ -9,6 +9,14 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+p > a {
+  @apply text-blue-600;
+}
+
+p > a:hover {
+  @apply text-blue-800 underline;
+}
+
 .md-content {
   @apply leading-6;
 }
@@ -55,7 +63,7 @@ p + h3 {
 }
 
 .angled {
-  @apply py-24;
+  @apply py-20;
   position: relative;
 }
 
@@ -97,6 +105,10 @@ p + h3 {
   @apply mt-10;
 }
 
+.highlight-content a {
+  @apply text-blue-600;
+}
+
 .list-check > li:before {
     content: "✔";
     @apply text-green-500 mr-4;
@@ -113,6 +125,10 @@ p + h3 {
 
 .button.secondary {
   @apply bg-gray-600;
+}
+
+.button.sm {
+  @apply p-4 text-sm;
 }
 
 .faq-section h3 {
