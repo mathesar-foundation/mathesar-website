@@ -4,26 +4,28 @@ title: Software engineer
 parent: How it works
 ---
 
-{% capture subheader %}
+{% capture hero_content %}
 Use Mathesar’s open source and web-based interface to give your team direct access to Postgres. No technical skills required.
 
 Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
 
+{% include hero.html
+title='Allow quick access to your database – without disrupting your workflow'
+section='Open Source Database Interface' content=hero_content
+image='assets/screenshot.png' %}
+
 {% capture actions %}
-{% include button.html label="Star us on GitHub" url="" %}
-{% include button.html label="Request a Free Installation" url="" %}
+    {% include button.html label="Star us on GitHub" url="" %}
+    {% include button.html label="Request a Free Installation" url="" %}
 {% endcapture %}
 
-{% include page-header.html
-header='Allow quick access to your database – without disrupting your workflow'
-subheader=subheader
-actions=actions
-%}
+{% include page_actions.html content=actions %}
 
 {% capture quote %}
-Business experts relied on me to create reports for them, every single day.
-But shouldn’t developers be focusing more on supporting technical infrastructure? Isn’t that our main function?
+"Business experts relied on me to create reports for them, every single day.
+
+But shouldn’t developers be focusing more on supporting technical infrastructure? Isn’t that our main function?"
 {% endcapture %}
 
 {%
@@ -31,16 +33,23 @@ include quote.html
 excerpt='I experienced collaboration issues everyday.'
 author='Pavish Mathesar’s Frontend Developer'
 quote=quote
+image='assets/pavish.webp'
 %}
 
-### Speed up your data workflows – using Mathesar’s open source interface
+{% capture highlight1 %}
 
 You can ensure data integrity. Perform quick
 schema changes. And let teammates create reports – without depending on you.
 
 Mathesar doesn’t have its own set of abstractions so it won’t make unexpected changes to your database. You can allow your collaborators to quickly enter data and create reports – without depending on you.
 
----
+{% endcapture %}
+
+{% include highlight.html
+    header='Speed up your data workflows – using Mathesar’s open source interface'
+    content=highlight1
+    theme='dark'
+%}
 
 {% capture capture_1 %}
 Mathesar uses and manipulates Postgres schemas, primary keys, foreign keys, constraints and data types.
@@ -145,10 +154,14 @@ This can remove the dependency layer on you and allow for more exploration into 
 
 ---
 
-### You and your collaborators can quickly enter data. View it. Slice it
+{% capture highlight_3 %}
 
 Move data around. Transform and filter it.
 While still retaining structure and consistency.
+
+{% endcapture %}
+
+{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' %}
 
 ### Special Use Cases
 

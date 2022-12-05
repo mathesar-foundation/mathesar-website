@@ -6,51 +6,105 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .md-content {
-    @apply leading-6;
+  @apply leading-6;
 }
 
 .md-content h1 {
-    @apply text-5xl;
+  @apply text-5xl;
 }
 
 .md-content h2 {
-  @apply text-5xl font-semibold mb-2; 
+  @apply text-5xl font-semibold mb-2;
 }
 
 .md-content > h3 {
-    @apply text-2xl font-semibold my-8; 
+  @apply text-2xl font-semibold my-8;
 }
 
 .md-content ul {
-    @apply list-disc list-inside my-4;
+  @apply list-disc list-inside my-4;
 }
 
 .md-content a {
-    @apply text-blue-500;
+  @apply text-blue-500;
 }
 
-.md-content p + h2, p + h3 { 
-    @apply mt-8;
+.md-content p + h2,
+p + h3 {
+  @apply mt-8;
 }
 
 .md-content > p {
-    @apply mb-2;
+  @apply mb-2;
 }
 
 .md-content p:last-child {
-    @apply mb-0;
+  @apply mb-0;
 }
 
 .md-content hr {
-    @apply my-8;
+  @apply my-8;
 }
-
 
 .navigation-item {
-    @apply block border-b-2 border-transparent hover:border-red-500;
-
+  @apply block border-b-2 border-transparent hover:border-red-500;
 }
+
+.angled {
+  @apply py-24;
+  position: relative;
+}
+
+.angled.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.angled.light {
+  @apply bg-stone-200 text-gray-800;
+}
+
+.angled.lighter {
+  @apply bg-stone-50 text-gray-800;
+}
+
+.angled::before {
+  content: "";
+  height: 4rem;
+  width: 100%;
+  background-color: inherit;
+  top: -2rem;
+  left: 0;
+  transform: skew(0deg, -1deg);
+  position: absolute;
+}
+
+.angled::after {
+  content: "";
+  height: 4rem;
+  width: 100%;
+  background-color: inherit;
+  bottom: -3rem;
+  left: 0;
+  transform: skew(0deg, -1deg);
+  position: absolute;
+}
+
+.angled + .angled {
+  @apply mt-10;
+}
+
+.list-check > li:before {
+    content: "✔";
+    @apply text-green-500 mr-4;
+}
+
+.list-cancel > li:before {
+    content: "✖";
+    @apply text-red-500 mr-4;
+}
+
+

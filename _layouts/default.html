@@ -7,34 +7,25 @@
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
     <title>{{ page.title }}</title>
-   
-   
+
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <!-- insert Nunito Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
- 
   </head>
   <body class="bg-stone-50 text-gray-800">
-    <div class="container mx-auto space-y-10 py-16">
-      {% include navigation.html %}
+    <div class="p-16">{% include navigation.html %}</div>
 
-      
-      <div class="md-content w-3/4 mx-auto">{{ content }}</div>
+    
+    {{ content }}
 
-      {% capture cta_content %}
-        {% include mailing-list.html label="Mathesar’s Alpha release is coming very soon. Please leave your details
-        here to stay updated:" placeholder="Your Best Email" %}
-      {% endcapture %}
 
-      {% include cta.html content=cta_content %}
-
-      
-
-    </div>
-    {% include footer.html %}
+    {% capture cta_content %} {% include mailing-list.html label="Mathesar’s
+    Alpha release is coming very soon. Please leave your details here to stay
+    updated:" placeholder="Your Best Email" %} {% endcapture %} {% include
+    cta.html content=cta_content %} {% include footer.html %}
   </body>
 
   <script>

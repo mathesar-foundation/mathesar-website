@@ -1,13 +1,8 @@
-<div class="mb-8 rounded space-y-6">
-  <div class="space-y-2">
-    <div class="text-sm font-bold text-stone-600 uppercase">{{page.title}}</div>
-    <h2 class="font-bold">{{include.header}}</h2>
-  </div>
-
+<div class="rounded space-y-6 mx-auto w-1/2 mb-24">
+  <h2 class="font-bold text-5xl">{{include.header}}</h2>
   {% if include.subheader %}
-  <div class="text-xl">{{include.subheader}}</div>
+  <div class="text-2xl space-y-4">{{include.subheader | markdownify}}</div>
   {% endif %} {% if include.actions %}
   <div class="space-x-4 flex items-center">{{include.actions}}</div>
   {% endif %}
-  <div class="w-64 border-b-2 border-stone-300 py-2"></div>
 </div>

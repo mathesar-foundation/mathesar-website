@@ -16,124 +16,36 @@
     />
   </head>
   <body class="bg-stone-50 text-gray-800">
-    <div class="container mx-auto space-y-12 py-16">
-      {% include navigation.html %}
-      <div class="grid grid-cols-8 gap-8">
-        <div class="col-span-4 space-y-4">
-          <div class="space-y-2">
-            <h4 class="text-sm font-bold text-stone-600 uppercase">
-              Open Source Database Interface
-            </h4>
-            <h2 class="text-6xl font-semibold">
-              Quickly enter and analyze your data – in one open source interface
-            </h2>
-          </div>
-          <div class="text-lg space-y-2">
-            <p>
-              Mathesar is an open source and web-based interface that works on
-              top of your database.
-            </p>
-            <p>
-              You can enter and slice and filter and structure your data… in
-              minutes. No technical skills required.
-            </p>
-          </div>
-        </div>
-        <div class="col-span-4 flex flex-col">
-          <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="">
-        </div>
-      </div>
-      <div class="w-64 border-b-2 border-stone-300 py-2"></div>
-      <div class="grid grid-cols-8 gap-8">
-        <a
-          href="#"
-          class="col-span-2 block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg"
-        >
-          <h4 class="uppercase font-semibold text-white">I'm a Developer</h4>
-          <div class="text-stone-200 text-xl">Show me how this works</div>
-        </a>
-        <a
-          href="#"
-          class="col-span-2 block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg"
-        >
-          <h4 class="uppercase font-semibold text-white">
-            I'm <span class="underline">not</span> a Developer
-          </h4>
-          <div class="text-stone-200 text-xl" href="#">
-            Show me how this works
-          </div>
-        </a>
-      </div>
-      <div>
-        <ul class="flex justify-between uppercase font-semibold text-sm">
-          <li class="flex items-center space-x-2">
-            <img src="assets/postgres-icon.svg" alt="" />
-            <span>Built on Postgres</span>
-          </li>
-          <li class="flex items-center space-x-2">
-            <img src="assets/heart-icon.svg" alt="" />
-            <span>Free & Open Source</span>
-          </li>
-          <li class="flex items-center space-x-2">
-            <img src="assets/rocket-icon.svg" alt="" />
-            <span>Alpha Release Coming Soon</span>
-          </li>
-          <li class="flex items-center space-x-2">
-            <img src="assets/shield-icon.svg" alt="" />
-            <span>Self-Hosted</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="bg-stone-50">
-      <!--a clipped right triangle divider-->
+    <div class="p-16">{% include navigation.html %}</div>
 
-      <svg
-        class="w-full h-16 mx-auto text-gray-800"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="currentColor" points="0,100 100,0 100,100" />
-      </svg>
-    </div>
-    <div class="bg-gray-800 text-white py-16">
-      <div class="container mx-auto text-center space-y-10">
+    {{ content }}
+
+    <div class="angled dark my-10">
+      <div class="w-2/5 mx-auto text-center space-y-10">
         <div>
           <h2 class="text-4xl font-semibold">
             Your data is a representation of you.
           </h2>
-          <p class="text-lg text-gray-400">
+          <p class="text-lg text-gray-200">
             Your workflows. Projects. And opportunities.
           </p>
         </div>
 
-        <div>
-          <h3 class="text-2xl font-semibold">
+   
+
+        <div class="space-y-2">
+          <h3 class="text-3xl font-semibold">
             But too many data tools limit you from managing your data your way.
           </h3>
-          <p class="text-lg text-gray-400">
+          <p class="text-xl text-gray-200">
             Here are some root causes of this issue:
           </p>
         </div>
 
         <!--svg for red X icon-->
 
-        <ul class="text-left text-lg space-y-6 w-1/2 mx-auto">
+        <ul class="text-left text-lg space-y-6 list-check">
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-red-600"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-
             <span>
               Spreadsheets don’t have strict structures – so it’s hard to keep
               your data consistent and valid. This limits your potential to
@@ -141,19 +53,6 @@
             </span>
           </li>
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-red-600"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-
             <span>
               When your data is scattered in different places, it’s hard to get
               one view into everything. Your stored data can’t be modified by
@@ -161,19 +60,6 @@
             </span>
           </li>
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-red-600"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-
             <span>
               Cloud-based solutions tend to restrict your data management. The
               number of rows you can have – limited. The ability to own your
@@ -182,11 +68,11 @@
           </li>
         </ul>
 
-        <div>
-          <h3 class="text-2xl font-semibold">
+        <div class="space-y-2">
+          <h3 class="text-3xl font-semibold">
             You can truly own your data – with Mathesar’s open source interface.
           </h3>
-          <p class="text-lg text-gray-400">
+          <p class="text-xl text-gray-200">
             Give your collaborators freedom to explore and answer data
             questions. Quickly.
           </p>
@@ -196,19 +82,8 @@
 
         <!---svg template-->
 
-        <ul class="text-left text-lg space-y-6 w-1/2 mx-auto">
+        <ul class="text-left text-lg space-y-6 list-cancel">
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-green-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 13.707a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L5 11.586l6.293-6.293a1 1 0 011.414 1.414l-7 7z"
-                clip-rule="evenodd"
-              />
-            </svg>
             <span>
               Mathesar ensures that your data is kept consistent. So you can
               base your decisions – about projects, processes, anything – on
@@ -216,17 +91,6 @@
             </span>
           </li>
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-green-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 13.707a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L5 11.586l6.293-6.293a1 1 0 011.414 1.414l-7 7z"
-                clip-rule="evenodd"
-              />
-            </svg>
             <span>
               You can connect Mathesar to your existing Postgres database. Use
               Mathesar with the many tools that integrate with Postgres – to
@@ -234,17 +98,6 @@
             </span>
           </li>
           <li class="flex items-start space-x-4">
-            <svg
-              class="w-16 mx-auto text-green-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 13.707a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L5 11.586l6.293-6.293a1 1 0 011.414 1.414l-7 7z"
-                clip-rule="evenodd"
-              />
-            </svg>
             <span>
               Your data is never locked in. Self-host on your servers to
               independently manage your data. You can migrate or go back and
@@ -254,19 +107,8 @@
         </ul>
       </div>
     </div>
-    <div class="bg-gray-800">
-      <!--a clipped right triangle divider-->
 
-      <svg
-        class="w-full h-16 mx-auto text-stone-300"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="currentColor" points="0,100 100,0 100,100" />
-      </svg>
-    </div>
-    <div class="bg-stone-300 py-16">
+    <div class="angled bg-stone-300 my-10">
       <div class="container mx-auto space-y-4">
         <div class="grid grid-cols-8 gap-8 items-center">
           <div class="col-span-3 space-y-4">
@@ -279,23 +121,16 @@
             </p>
           </div>
           <div class="col-span-5 flex flex-col">
-            <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="">
+            <img
+              class="rounded-lg shadow-lg my-auto"
+              src="assets/screenshot.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-stone-300">
-      <!--a clipped right triangle divider-->
 
-      <svg
-        class="w-full h-16 mx-auto text-stone-50"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="currentColor" points="0,100 100,0 100,100" />
-      </svg>
-    </div>
     <div class="bg-stone-50 py-16">
       <div class="space-y-8">
         <div class="text-center">
@@ -314,20 +149,9 @@
         </div>
       </div>
     </div>
-    <div class="bg-stone-50">
-      <!--a clipped right triangle divider-->
 
-      <svg
-        class="w-full h-16 mx-auto text-stone-300"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="currentColor" points="0,100 100,0 100,100" />
-      </svg>
-    </div>
-    <div class="bg-stone-300 py-16 space-y-8">
-      <div class="container mx-auto space-y-4">
+    <div class="bg-stone-200 angled py-16 space-y-8">
+      <div class="w-1/2 mx-auto space-y-4">
         <div class="text-center">
           <h3 class="text-4xl font-semibold">Mathesar’s approach is unique</h3>
           <p class="text-xl text-gray-600">We’re not reinventing the wheel.</p>
@@ -338,7 +162,7 @@
             user-friendly interface.
           </h4>
 
-          <ul class="mx-auto text-left w-1/2 space-y-6">
+          <ul class="mx-auto text-left space-y-6">
             <li class="text-lg flex items-start space-x-4">
               <img
                 class="w-12 p-1 shrink-0"

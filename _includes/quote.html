@@ -1,10 +1,14 @@
-<div class="flex justify-end bg-stone-100 my-8 p-12">
-  <div class="bg-gray-200 flex-grow">photo</div>
-  <div class="space-y-4 w-3/4 ml-8">
-    <div class="border-stone-300 pl-4 border-l-4">
-      <p class="text-2xl italic">"{{include.excerpt}}"</p>
-      <p>- {{include.author}}</p>
+<div class="flex justify-end bg-stone-300 my-8 px-16 angled">
+  <div class="w-2/3 mx-auto flex">
+    <div class="bg-gray-200 flex-grow">
+      <img src="{{include.image}}" alt="{{include.author}}" class="w-full h-full object-cover">
     </div>
-    <p class="text-lg italic">{{include.quote | markdownify}}</p>
+    <div class="space-y-4 w-3/4 ml-8">
+      <div class="border-gray-800 pl-4 border-l-4 space-y-2">
+        <p class="text-3xl italic">"{{include.excerpt}}"</p>
+        <p class="text-lg">{{include.author}}</p>
+      </div>
+      <div class="text-lg italic">{{include.quote | markdownify}}</div>
+    </div>
   </div>
 </div>

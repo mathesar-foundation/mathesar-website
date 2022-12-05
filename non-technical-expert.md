@@ -3,27 +3,26 @@ layout: default
 title: Non-technical expert
 parent: How it works
 ---
-{% capture subheader %}
+{% capture hero_content %}
 Mathesar’s web-based interface gives you direct access to Postgres – one of the most popular databases in the world.
 
 So you can enter and slice and filter and structure your data… in just minutes.
 No technical skills required.
 {% endcapture %}
 
+{% include hero.html
+title='Enter quick data and find answers to your questions – independently'
+section='Open Source Database Interface' content=hero_content
+image='assets/screenshot.png' %}
+
 {% capture actions %}
 {% include button.html label="Stay Updated on Mathesar’s Release" url="" %}
 {% include button.html label="Request a Free Installation" url="" %}
 {% endcapture %}
 
-{% include page-header.html
-header='Enter quick data and find answers to your questions – independently'
-subheader=subheader
-actions=actions
-%}
+{% include page_actions.html content=actions %}
 
 {% capture highlight_1 %}
-
-### Too many data tools make simple tasks complicated
 
 You’re often left without clear answers to these important questions:
 
@@ -33,7 +32,7 @@ You’re often left without clear answers to these important questions:
 
 {% endcapture %}
 
-{% include highlight.html content=highlight_1 %}
+{% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark'%}
 
 {% capture quote %}
 “When developers would give me access to software, my immediate instinct was “don’t break anything!”
@@ -54,7 +53,7 @@ author='Ghislaine (Mathesar’s Product Designer)'
 quote=quote
 %}
 
-### Gain flexibility and speed working with your data
+{% capture highlight_2 %}
 
 Protect your team from making data errors. And find quick insights – without waiting.
 
@@ -63,7 +62,9 @@ It’s an intuitive interface, at a beginner-friendly level.
 
 But unlike a spreadsheet – you can now work more easily with structured, clean data.
 
----
+{% endcapture %}
+
+{% include highlight.html header='Gain flexibility and speed working with your data' content=highlight_2 theme='light' %}
 
 {% capture capture_1 %}
 Having your data sources scattered in different places can make analysis difficult.
@@ -145,8 +146,7 @@ You can quickly filter words using conditional logic.
 %}
 
 {% capture capture_6 %}
-
-        When your workflow changes, this change should be reflected in your data models.
+When your workflow changes, this change should be reflected in your data models.
 But manual changes often take hours, even days.
 
 This runs a significant risk of disruption. When your data is paused and not synced-up, you could end up with stale data.
@@ -154,7 +154,6 @@ This runs a significant risk of disruption. When your data is paused and not syn
 Mathesar saves you time and lets you update data models – in a click.
 
 So as your workflow evolves, you’re able to adjust your data to accurately. In minutes.
-
 {% endcapture %}
 
 {% include feature.html

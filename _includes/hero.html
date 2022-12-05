@@ -1,0 +1,13 @@
+<div class="hero space-y-8 px-16">
+    <div class="text-center">
+        <h4 class="uppercase text-sm">{{include.section}}</h4>
+        <h2 class="text-6xl font-bold">{{include.title}}</h2>
+    </div>
+
+    <div class="grid grid-cols-8 gap-8">
+        <div class="col-span-2 text-2xl space-y-4">{{include.content | markdownify}}</div>
+        <div class="col-span-6">
+            <img class="border" src="{{include.image}}" alt="{{include.title}}"> 
+        </div> 
+    </div>
+</div>
