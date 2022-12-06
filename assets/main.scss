@@ -59,7 +59,7 @@ p + h3 {
 }
 
 .navigation-item {
-  @apply block border-b-2 border-transparent hover:border-red-500;
+  @apply block border-b-2 border-transparent hover:border-red-500 transition-colors duration-300;
 }
 
 .angled {
