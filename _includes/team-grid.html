@@ -13,12 +13,13 @@
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto w-1/2 space-y-2 text-center">
-    <h4 class="text-2xl font-bold">Our team</h4>
+    <h4 class="text-3xl font-bold">Our team</h4>
     <p class="text-xl">+ why we're into databases</p>
     <div class="text-lg">
-      The Mathesar team are both open source as well as industry veterans.
-      We've:
-      <ul>
+      <p>The Mathesar team are both open source as well as industry veterans.
+        We've:</p>
+      
+      <ul class="list-disc list-inside">
         <li>Achievement</li>
         <li>Achievement</li>
         <li>Achievement</li>
@@ -26,7 +27,7 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-8 my-8 w-3/4 mx-auto">
+  <div class="grid grid-cols-2 gap-8 my-8 w-3/4 mx-auto">
     {% for member in site.data.members %}
     <div class="space-y-2 flex items-center space-x-4">
       <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
@@ -35,7 +36,7 @@
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
           <div>{{member.role}}</div>
         </div>
-        <p class="italic border-l-2 pl-2 border-stone-800">{{member.bio}}</p>
+        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"{{member.bio}}"</p>
       </div>
     </div>
     {% endfor %}
