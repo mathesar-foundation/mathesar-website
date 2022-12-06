@@ -1,15 +1,15 @@
 <div
-  class="bg-blue-600 text-white text-center rounded-lg p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
+  class="bg-blue-600 text-white text-center rounded-lg p-8 lg:p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
 >
   <div class="space-y-2">
-    <h3 class="text-3xl font-semibold">
+    <h3 class="text-2xl lg:text-3xl font-semibold">
       {{include.title}}
     </h3>
 
-    <div class="text-xl">{{include.content | markdownify}}</div>
+    <div class="text-lg lg:text-xl">{{include.content | markdownify}}</div>
   </div>
 
-  <div class="flex items-center text-lg space-x-2">
+  <div class="lg:flex items-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
     <input
       type="text"
       class="bg-white rounded p-2 flex-grow border"

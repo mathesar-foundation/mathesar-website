@@ -1,18 +1,18 @@
 <div class="angled light px-16 space-y-10">
-  <div class="mx-auto w-1/2 space-y-8">
+  <div class="mx-auto lg:w-1/2 space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
-    <div class="flex">
+    <div class="lg:flex">
       <p class="text-xl flex-grow">
         Mathesar is a project of the Center for Complex Interventions, a
         nonprofit that helps communities translate science into action.
       </p>
-      <img class="w-64" src="assets/cci-logo.svg" alt="" />
+      <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="" />
     </div>
   </div>
 
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
-  <div class="mx-auto w-1/2 space-y-2 text-center">
+  <div class="mx-auto lg:w-1/2 space-y-2 text-center">
     <h4 class="text-3xl font-bold">Our team</h4>
     <p class="text-xl">+ why we're into databases</p>
     <div class="text-lg">
@@ -27,9 +27,9 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-2 gap-8 my-8 w-3/4 mx-auto">
+  <div class="grid lg:grid-cols-2 gap-8 my-8 lg:w-3/4 mx-auto">
     {% for member in site.data.members %}
-    <div class="space-y-2 flex items-center space-x-4">
+    <div class="space-y-2 lg:flex items-center lg:space-x-4">
       <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
       <div class="space-y-4">
         <div>
