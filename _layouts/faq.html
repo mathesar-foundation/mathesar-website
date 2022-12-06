@@ -30,10 +30,12 @@
       </div>
     </div>
 
-    {% capture cta_content %} {% include mailing-list.html label="Mathesar’s
-    Alpha release is coming very soon. Please leave your details here to stay
-    updated:" placeholder="Your Best Email" %} {% endcapture %} {% include
-    cta.html content=cta_content %} {% include footer.html %}
+{% capture cta_content %}
+Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:
+{% endcapture %}
+    
+{% include cta.html content=cta_content title="Find out when you can start using Mathesar" %}
+{% include footer.html %}
   </body>
 
   <script>

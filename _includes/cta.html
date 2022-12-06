@@ -1,10 +1,20 @@
 <div
-  class="bg-blue-600 text-white text-center rounded-lg p-16 mx-auto w-3/4 space-y-4 mt-40 mb-20"
+  class="bg-blue-600 text-white text-center rounded-lg p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
 >
-  <div>
+  <div class="space-y-2">
     <h3 class="text-3xl font-semibold">
-      Find out when you can start using Mathesar
+      {{include.title}}
     </h3>
+
+    <div class="text-xl">{{include.content | markdownify}}</div>
   </div>
-  {{include.content}}
+
+  <div class="flex items-center text-lg space-x-2">
+    <input
+      type="text"
+      class="bg-white rounded p-2 flex-grow border"
+      placeholder="{{include.placeholder}}"
+    />
+    <button class="button secondary p-2 rounded">Sign Up</button>
+  </div>
 </div>
