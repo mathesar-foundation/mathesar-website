@@ -4,10 +4,10 @@ title: About Us
 ---
 
 {% capture subheader %}
-Mathesar is a straightforward open source and self-hostable tool.
-The web-based interface helps you and your team work with data more independently. And comfortably.
+Mathesar is an open source web-based interface to databases for users of all technical skill levels. 
 
-You can use Mathesar to build data models, enter data, use that data and even understand the impact of your data.
+You can use Mathesar to build data models, enter data, use that data and even understand the impact of your data. You host your own Mathesar installation, which gives you ownership, privacy, and control of your data.
+
 {% endcapture %}
 
 {% include page-header.html

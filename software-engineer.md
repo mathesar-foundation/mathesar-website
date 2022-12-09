@@ -23,15 +23,15 @@ image='assets/screenshot.png' %}
 {% include page_actions.html content=actions %}
 
 {% capture quote %}
-"Business experts relied on me to create reports for them, every single day.
-
-But shouldn’t developers be focusing more on supporting technical infrastructure? Isn’t that our main function?"
+"At my previous job, business experts relied on me to **create reports** for them, every single day.
+<br/><br/>
+But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
 {% endcapture %}
 
 {%
 include quote.html
-excerpt='I experienced collaboration issues everyday.'
-author='Pavish Mathesar’s Frontend Developer'
+excerpt='I experienced collaboration issues every day.'
+author='Pavish - Mathesar’s Frontend Developer'
 quote=quote
 image='assets/pavish.webp'
 %}
@@ -156,7 +156,7 @@ This can remove the dependency layer on you and allow for more exploration into 
 
 {% capture highlight_3 %}
 
-Move data around. Transform and filter it.
+Move data around. Transform and filter it.<br/><br/>
 While still retaining structure and consistency.
 
 {% endcapture %}
