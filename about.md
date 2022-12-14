@@ -4,10 +4,9 @@ title: About Us
 ---
 
 {% capture subheader %}
-Mathesar is an open source web-based interface to databases for users of all technical skill levels. 
+Mathesar is a straightforward open source tool that provides a **spreadsheet-like interface** to a PostgreSQL **database**. Our web-based interface helps you and your collaborators work with data more independently and comfortably – **no technical skills needed**.
 
-You can use Mathesar to build data models, enter data, use that data and even understand the impact of your data. You host your own Mathesar installation, which gives you ownership, privacy, and control of your data.
-
+You can use Mathesar to build **data models**, **enter data**, and even **build reports**. You host your own Mathesar installation, which gives you ownership, privacy, and control of your data.
 {% endcapture %}
 
 {% include page-header.html
@@ -16,11 +15,11 @@ subheader=subheader
 %}
 
 {% capture highlight %}
-We’re not trying to create new abstractions. Or make a complex tool that people struggle to get their heads around. We’re aiming to stay true to database ideals.
+Mathesar is a non-profit project. Our goal is to make **understanding and working with data easy for everyone**.
 
-We want to make existing Postgres functionality more accessible – in a user-friendly way.
+Databases have been around for a long time and solve common data problems really well. But, working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.
 
-Mathesar is a tool that our entire team wants to use. We're our own users.
+We want to make existing database functionality more accessible – in a user-friendly way.
 {% endcapture %}
 
 {% include highlight.html header='Our mission' content=highlight theme='dark' %}
