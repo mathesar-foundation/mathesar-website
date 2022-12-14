@@ -27,14 +27,15 @@ We want to make existing database functionality more accessible – in a user-fr
 {% include team-grid.html %}
 
 {% capture highlight1 %}
+Mathesar will always be **100% open-source and self-hostable**.
 
 We’re currently funded through the generous support of **Reid Hoffman** and the **Center for Radical Transformation at the Chiba Institute of Technology**.
 
-We’re currently working towards our first Alpha release. After the launch, we’ll iterate quickly – in collaboration with our early adopters – until we have Version 1.0 ready for wider adoption.
+Our long term goal is to sustain ourselves through offering Mathesar hosting and consulting services.
 
-This initial development has been funded philanthropically. At the same time, we’re working towards self-sustainability.
-
-We haven’t yet decided on a business model, but one thing we know for certain: **Mathesar will always be open-source and self-hostable**.
+We're still working through our business model, but we know two things:<br/>
+(1) we won't adopt the "open core" model where some features are not open source<br/>
+(2) we won't take traditional VC funding that requires us to grow at all costs.
 {% endcapture %}
 
-{% include highlight.html header='Our plans for sustainability' content=highlight1 theme='lighter' %}
+{% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' %}
