@@ -31,11 +31,9 @@ Mathesar will always be **100% open-source and self-hostable**.
 
 We’re currently funded through the generous support of **Reid Hoffman** and the **Center for Radical Transformation at the Chiba Institute of Technology**.
 
-Our long term goal is to sustain ourselves through offering Mathesar hosting and consulting services.
-
-We're still working through our business model, but we know two things:<br/>
-(1) we won't adopt the "open core" model where some features are not open source<br/>
-(2) we won't take traditional VC funding that requires us to grow at all costs.
+Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We **will not**:<br/>
+(1) build features that are not open source<br/>
+(2) take funding that requires us to grow at all costs
 {% endcapture %}
 
 {% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' %}
