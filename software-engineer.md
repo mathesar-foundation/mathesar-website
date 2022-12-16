@@ -68,7 +68,7 @@ All the same data integrity safeguards you set up via the Mathesar UI will still
 
 {% capture capture_2 %}
 
-Proprietary companies can keep you locked in their ecosystem. This can make it difficult to modify your disparate data sources.
+Proprietary products can keep you locked in their ecosystem. This can make it difficult to integrate or migrate your disparate data sources.
 
 If you decide to move away, you could lose data.
 
@@ -113,7 +113,7 @@ Mathesar is free, licensed under GPLv3. There are no paid plans.
 
 Although we’re new, we already have dozens of contributors. If you’re interested, you can also contribute.
 
-We work in public – you can check out what our team is doing on Matrix. And via our mailing lists.
+We work in public – you can check out what our team is doing on GitHub and Matrix. And via our mailing lists.
 {% endcapture %}
 
 {% include feature.html
