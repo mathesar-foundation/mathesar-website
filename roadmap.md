@@ -8,11 +8,11 @@ header='Coming soon: Mathesar’s Alpha release and collaboration abilities'
 %}
 
 {% capture highlight %}
-We’re working towards Mathesar’s initial alpha release in late 2022. Our goal is to have a basic set of features that demonstrate our value: letting users enter and analyze data in quicker, more structured and independent ways.
+Mathesar's alpha release (coming early 2023) has a **basic set of features** that demonstrate our approach to letting users enter and analyze data in quicker, more structured and independent ways.
 
-We’ll make necessary improvements before we get to Version 1.0.
+We have many ideas for new features and we plan to publish new releases **regularly** and **rapidly**.
 
-We aim to frequently release new features – here’s the basic plan:
+We will prioritize new features **based on user requests**. Here are some ideas we're thinking about. Please participate in the **linked GitHub discussion** if you'd like us to work on a feature!
 
 {%include roadmap_card.html
 header='Basic data entry and analysis features'
