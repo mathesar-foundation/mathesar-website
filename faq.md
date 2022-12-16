@@ -3,9 +3,43 @@ layout: faq
 title: FAQ
 ---
 
-
-
 {% capture faq_section1 %}
+
+### Can I create and share forms using Mathesar?
+
+Not yet, but we plan on building forms soon after our first Alpha release. Please see our roadmap for more details.
+
+### What kind of access control does Mathesar support?
+
+In our alpha release, Mathesar will support Manager, Editor and Viewer permissions for entire databases and schemas.
+
+We plan to support more granular permissions – including for individual tables, explorations, rows and columns. Here’s our roadmap for more details.
+
+You can check out this specification for some of our early thoughts on permissions.
+
+### Do you support using formulas?
+
+Not yet, but this is on our roadmap.
+
+If you’re curious – here’s some early work on how formulas can integrate into Mathesar’s Data Explorer interface.
+
+{% endcapture %}
+
+{% capture faq_section2 %}
+
+### Is Mathesar a sustainable project?
+
+We’re working towards our first Alpha release. After the launch, we’ll iterate until we have a Version 1.0 ready for wider adoption and community feedback.
+
+We’ve received philanthropic funding for this initial development. And we’re working towards self-sustainability.
+
+We haven’t yet decided on a business model. But we’ll always help support smaller organizations and individuals – and won’t just tailor our features to the needs of enterprises only.
+
+One thing we’re sure of: Mathesar will always be open-source and self-hostable.
+
+{% endcapture %}
+
+{% capture faq_section3 %}
 
 ### How is Mathesar different from a spreadsheet?
 
@@ -66,45 +100,9 @@ They’re both open source tools, but Mathesar’s approach is different from Ba
 Note: Baserow is a more mature project than Mathesar and supports features like plugins, real-time collaboration, etc that Mathesar does not currently support.
 
 Please see our roadmap for more info on Mathesar’s upcoming features.
-
-### Can I create and share forms using Mathesar?
-
-Not yet, but we plan on building forms soon after our first Alpha release. Please see our roadmap for more details.
-
 {% endcapture %}
 
-{% capture faq_section3 %}
 
-### What kind of access control does Mathesar support?
-
-In our alpha release, Mathesar will support Manager, Editor and Viewer permissions for entire databases and schemas.
-
-We plan to support more granular permissions – including for individual tables, explorations, rows and columns. Here’s our roadmap for more details.
-
-You can check out this specification for some of our early thoughts on permissions.
-
-### Do you support using formulas?
-
-Not yet, but this is on our roadmap.
-
-If you’re curious – here’s some early work on how formulas can integrate into Mathesar’s Data Explorer interface.
-
-{% endcapture %}
-
-{% capture faq_section2 %}
-
-### Is Mathesar a sustainable project?
-
-We’re working towards our first Alpha release. After the launch, we’ll iterate until we have a Version 1.0 ready for wider adoption and community feedback.
-
-We’ve received philanthropic funding for this initial development. And we’re working towards self-sustainability.
-
-We haven’t yet decided on a business model. But we’ll always help support smaller organizations and individuals – and won’t just tailor our features to the needs of enterprises only.
-
-One thing we’re sure of: Mathesar will always be open-source and self-hostable.
-
-{% endcapture %}
-
-{% include faq_section.html content=faq_section1 section="Product Comparisons" %}
-{% include faq_section.html content=faq_section3 section="Features" %}
+{% include faq_section.html content=faq_section1 section="Features" %}
 {% include faq_section.html content=faq_section2 section="About Mathesar" %}
+{% include faq_section.html content=faq_section3 section="Product Comparisons" %}
