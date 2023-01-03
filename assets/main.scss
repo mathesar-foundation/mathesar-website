@@ -79,26 +79,23 @@ p + h3 {
   @apply bg-stone-50 text-gray-800;
 }
 
-.angled::before {
-  content: "";
-  height: 4rem;
-  width: 100%;
-  background-color: inherit;
-  top: -2rem;
-  left: 0;
-  transform: skew(0deg, -1deg);
-  position: absolute;
-}
-
+.angled::before,
 .angled::after {
   content: "";
   height: 4rem;
   width: 100%;
   background-color: inherit;
-  bottom: -3rem;
-  left: 0;
-  transform: skew(0deg, -1deg);
   position: absolute;
+  transform: skew(0deg, -1deg);
+  left: 0;
+}
+
+.angled::before {
+  top: -2rem;
+}
+
+.angled::after {
+  bottom: -2rem;
 }
 
 .angled + .angled {
@@ -114,13 +111,13 @@ p + h3 {
 }
 
 .list-check > li:before {
-    content: "✔";
-    @apply text-green-500 mr-4;
+  content: "✔";
+  @apply text-green-500 mr-4;
 }
 
 .list-cancel > li:before {
-    content: "✖";
-    @apply text-red-500 mr-4;
+  content: "✖";
+  @apply text-red-500 mr-4;
 }
 
 .button {
@@ -154,5 +151,3 @@ p + h3 {
 .faq-section p + h3 {
   @apply mt-8;
 }
-
-
