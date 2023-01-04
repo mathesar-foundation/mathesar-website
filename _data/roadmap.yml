@@ -1,22 +1,22 @@
-- name: Data Types
+- category: Data Types
   features:
     - title: Support for storing files
       discussion_url: https://github.com/centerofci/mathesar/discussions/2188
     - title: Support for list data types
       discussion_url: https://github.com/centerofci/mathesar/discussions/2190
-- name: Tables
+- category: Tables
   features:
     - title: Support exporting tables
       discussion_url:
-- name: Data Explorer
+- category: Data Explorer
   features:
     - title: 
       discussion_url:
-- name: Explorations
+- category: Explorations
   features:
     - title: Make data in explorations editable
       discussion_url:
-- name: General
+- category: General
   features:
     - title: Undo & redo for data editing operations
       discussion_url:
