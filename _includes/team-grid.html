@@ -41,7 +41,7 @@
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
           <div>{{member.role}}</div>
         </div>
-        <p class="italic border-l-2 pl-4 border-stone-800">"{{member.bio}}"</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">{{member.bio | markdownify}}</div>
       </div>
     </div>
     {% endfor %}
