@@ -107,8 +107,13 @@ p + h3 {
 }
 
 .highlight-content a {
-  @apply text-blue-600;
+  @apply text-blue-500;
 }
+
+.dark .highlight-content a {
+  @apply text-blue-400;
+}
+
 
 .highlight-content ul {
   @apply list-disc list-inside my-4;
