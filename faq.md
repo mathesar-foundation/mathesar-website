@@ -7,21 +7,17 @@ title: FAQ
 
 ### Can I create and share forms using Mathesar?
 
-Not yet, but we plan on building forms soon after our first Alpha release. Please see our roadmap for more details.
+Not yet, but they're [on our roadmap](roadmap.html).
 
 ### What kind of access control does Mathesar support?
 
-In our alpha release, Mathesar will support Manager, Editor and Viewer permissions for entire databases and schemas.
+Mathesar currently supports *Manager*, *Editor*, and *Viewer* roles on per-schema and per-database. *Managers* can edit the structure of the database, *Editors* can edit data (but not the database structure), and *Viewers* have read-only permissions.
 
-We plan to support more granular permissions – including for individual tables, explorations, rows and columns. Here’s our roadmap for more details.
+More granular permissions - including row and column level permissions - are [on our roadmap](roadmap.html).
 
-You can check out this specification for some of our early thoughts on permissions.
+### Do you support using formulas to calculate data automatically?
 
-### Do you support using formulas?
-
-Not yet, but this is on our roadmap.
-
-If you’re curious – here’s some early work on how formulas can integrate into Mathesar’s Data Explorer interface.
+Not yet, but we've done some early design work on this and it is [on our roadmap](roadmap.html).
 
 {% endcapture %}
 
