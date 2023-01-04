@@ -18,3 +18,5 @@ No technical skills required.
 {% include hero.html title='Quickly enter and analyze
 your data - in one open source interface' section='Open Source Database Interface' content=hero_content image='assets/screenshot.png'
 actions=hero_actions %}
+
+{% include ribbon.html %}

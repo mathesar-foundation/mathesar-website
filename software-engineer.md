@@ -20,7 +20,7 @@ title='Allow quick access to your database – without disrupting your workflow'
 section='Open Source Database Interface' content=hero_content
 image='assets/screenshot.png' actions=actions %}
 
-{% include page_actions.html content=actions %}
+{% include ribbon.html %}
 
 {% capture quote %}
 "At my previous job, business experts relied on me to **create reports** for them, every single day.

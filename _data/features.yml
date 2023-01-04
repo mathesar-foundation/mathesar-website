@@ -1,0 +1,30 @@
+Mathesar:
+  features:
+    - title: "Built on Postgres"
+      icon: "postgres-icon"
+    - title: "Free & Open Source"
+      icon: "heart-icon"
+    - title: "Alpha Release Coming Soon"
+      icon: "rocket-icon"
+    - title: "Self-hosted"
+      icon: "shield-icon"
+Non-technical expert:
+  features:
+    - title: "Individuals & Organizations"
+      icon: "postgres-icon"
+    - title: "Structure Your Data"
+      icon: "heart-icon"
+    - title: "Own Your Data"
+      icon: "rocket-icon"
+    - title: "Intuitive UX"
+      icon: "shield-icon"
+Software engineer:
+  features:
+    - title: "Direct Postgres Access"
+      icon: "postgres-icon"
+    - title: "Open Source & Self-Hosted"
+      icon: "heart-icon"
+    - title: "Query Across Tables"
+      icon: "rocket-icon"
+    - title: "Intuitive for Any Skill Level"
+      icon: "shield-icon"
