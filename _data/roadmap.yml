@@ -1,24 +1,78 @@
 - category: Data Types
   features:
-    - title: Support for storing files
+    - title: File / attachment data types
       discussion_url: https://github.com/centerofci/mathesar/discussions/2188
-    - title: Support for list data types
+    - title: List data types
       discussion_url: https://github.com/centerofci/mathesar/discussions/2190
+    - title: Location data types
+      discussion_url:
+    - title: Phone number data type
+      discussion_url:
+    - title: Percentage data type
+      discussion_url:
+    - title: Custom JSON editor
+      discussion_url:
+- category: Forms & Sharing
+  features:
+    - title: Create and share forms based on tables
+      discussion_url:
+    - title: Embed tables and explorations in other websites
+      discussion_url:
+    - title: Share tables and explorations publicly
+      discussion_url:
 - category: Tables
   features:
-    - title: Support exporting tables
+    - title: Exporting tables
       discussion_url:
-- category: Data Explorer
-  features:
-    - title: Something about data explorer
+    - title: Importing data into existing tables
       discussion_url:
-- category: Explorations
+    - title: SImporting multiple files at the same time
+      discussion_url:
+    - title: Calculated columns using formulas
+      discussion_url:
+    - title: Allow dynamic default values
+      discussion_url:
+- category: Data Explorer & Explorations
   features:
+    - title: Allow explorations to be filtered, sorted, and grouped
+      discussion_url:
+    - title: Improve filtering options in Data Explorer
+      discussion_url:
+    - title: Use formulas in explorations
+      discussion_url:
     - title: Make data in explorations editable
+      discussion_url:
+    - title: Support dragging & dropping columns in Data Explorer
+      discussion_url:
+    - title: Support natural joins in Data Explorer
+      discussion_url:
+    - title: Include SQL editor in Data Explorer
+      discussion_url:
+- category: Views & Visualizations 
+  features:
+    - title: Calendar views
+      discussion_url:
+    - title: Kanban views
+      discussion_url:
+    - title: Charts & graphs
+      discussion_url:
+- category: Users & Permissions 
+  features:
+    - title: Permissions for individual tables and explorations
+      discussion_url:
+    - title: Row & column level permissions
+      discussion_url:
+    - title: Support Postgres permissions
       discussion_url:
 - category: General
   features:
+    - title: Improved keyboard shortcuts
+      discussion_url:
     - title: Undo & redo for data editing operations
       discussion_url:
     - title: Undo & redo for data structure changes
+      discussion_url:
+    - title: Show dependencies when deleting objects
+      discussion_url:
+    - title: Real-time collaboration
       discussion_url:
