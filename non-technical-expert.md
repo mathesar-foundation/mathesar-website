@@ -20,8 +20,6 @@ title='Enter quick data and find answers to your questions – independently'
 section='Open Source Database Interface' content=hero_content
 image='assets/screenshot.png' actions=actions %}
 
-{% include page_actions.html content=actions %}
-
 {% capture highlight_1 %}
 
 You’re often left without clear answers to these important questions:
