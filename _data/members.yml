@@ -1,24 +1,32 @@
 - name: Kriti Godey
+  image: kriti.jpg
   role: Founder & Backend Developer
   bio: "My husband and I use a database-backed application to track movies. Movies we own, movies we want to watch, movies we’ve watched. I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!”"
 - name: Sean Colsen
+  image: sean.jpg
   role: Frontend Developer
   bio: "I am a software engineer and I love to build things."
 - name: Ghislaine Guerin
+  image: ghislaine.jpg
   role: Product Designer
   bio: "I am a product designer and I love to build things."
 - name: Pavish Kumar Ramani Gopal 
+  image: pavish.jpg
   role: Frontend Developer
   bio: "I am a software engineer and I love to build things."
 - name: Brent Moran
+  image: brent.jpg
   role: Backend Developer
   bio: "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc."
 - name: Mukesh Murali 
+  image: mukesh.jpg
   role: Backend Developer
   bio: “I use calculators for MMORPG games, to find the most efficient item to use for doing something in the game. Since the game has a real-time market, a relational database is really useful for reflecting the price changes across a lot of calculators.”
 - name: Dominykas Mostauskis 
+  image: dom.jpg
   role: Backend Developer
   bio: “Lots of small scraping and reporting projects come to mind. E.g. I scraped the data on a poorly-designed government website for making appointments with doctors. I could query and watch for cancellations, which allowed me to reserve a consultation much sooner.”
 - name: Rajat Vijay 
+  image: rajat.jpg
   role: Frontend Developer
   bio: “I use my database for personal finance management. Budgeting, categorizing investment etc.”
