@@ -23,20 +23,6 @@ Not yet, but we've done some early design work on this and it is [on our roadmap
 
 {% capture faq_section2 %}
 
-### Is Mathesar a sustainable project?
-
-We’re working towards our first Alpha release. After the launch, we’ll iterate until we have a Version 1.0 ready for wider adoption and community feedback.
-
-We’ve received philanthropic funding for this initial development. And we’re working towards self-sustainability.
-
-We haven’t yet decided on a business model. But we’ll always help support smaller organizations and individuals – and won’t just tailor our features to the needs of enterprises only.
-
-One thing we’re sure of: Mathesar will always be open-source and self-hostable.
-
-{% endcapture %}
-
-{% capture faq_section3 %}
-
 ### How is Mathesar different from a spreadsheet?
 
 Spreadsheets are easy to use, but they’re also easy to mis-use because they're so unstructured.
@@ -100,5 +86,4 @@ Please see our roadmap for more info on Mathesar’s upcoming features.
 
 
 {% include faq_section.html content=faq_section1 section="Features" %}
-{% include faq_section.html content=faq_section2 section="About Mathesar" %}
-{% include faq_section.html content=faq_section3 section="Product Comparisons" %}
+{% include faq_section.html content=faq_section2 section="Product Comparisons" %}
