@@ -33,7 +33,7 @@ include quote.html
 excerpt='I experienced collaboration issues every day.'
 author='Pavish - Mathesar’s Frontend Developer'
 quote=quote
-image='assets/pavish.webp'
+image='pavish.jpg'
 %}
 
 {% capture highlight1 %}

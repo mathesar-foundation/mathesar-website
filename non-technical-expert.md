@@ -49,6 +49,7 @@ include quote.html
 excerpt='I felt like a guest in the developers’ space.'
 author='Ghislaine (Mathesar’s Product Designer)'
 quote=quote
+image='ghislaine.jpg'
 %}
 
 {% capture highlight_2 %}
