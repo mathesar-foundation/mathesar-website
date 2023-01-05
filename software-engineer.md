@@ -49,6 +49,7 @@ Mathesar doesn’t have its own set of abstractions so it won’t make unexpecte
     header='Speed up your data workflows – using Mathesar’s open source interface'
     content=highlight1
     theme='dark'
+    separator=false
 %}
 
 {% capture capture_1 %}
@@ -162,7 +163,7 @@ While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' %}
+{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' separator=false %}
 
 {%include usecases.html%}
 
@@ -175,4 +176,4 @@ Migrate your data any time you want to. Or simply go back and forth from the int
 
 {% endcapture %}
 
-{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' %}
+{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' separator=true %}

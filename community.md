@@ -30,7 +30,7 @@ Sign up for our developer-only mailing list below to get updates on Mathesar’s
 
 {% endcapture %}
 
-{% include highlight.html header='Help us build Mathesar' content=highlight theme='light'%}
+{% include highlight.html header='Help us build Mathesar' content=highlight theme='light' separator=true%}
 
 {% capture highlight1 %}
 
@@ -42,4 +42,4 @@ You can talk to other Mathesar users through our user-only mailing list. And you
 
 {% endcapture %}
 
-{% include highlight.html size="sm" header='Stay updated on Mathesar’s release' content=highlight1 theme='dark'%}
+{% include highlight.html size="sm" header='Stay updated on Mathesar’s release' content=highlight1 theme='dark' separator=true%}

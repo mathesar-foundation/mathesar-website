@@ -22,7 +22,7 @@ Databases have been around for a long time and solve common data problems really
 We want to make existing database functionality more accessible – in a user-friendly way.
 {% endcapture %}
 
-{% include highlight.html header='Our mission' content=highlight theme='dark' %}
+{% include highlight.html header='Our mission' content=highlight theme='dark' separator=true %}
 
 {% include team-grid.html %}
 
@@ -39,4 +39,4 @@ Our long term goal is to offer hosting and consulting services around Mathesar t
 - (2) take funding that requires us to grow at all costs
 {% endcapture %}
 
-{% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' %}
+{% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' separator=true %}

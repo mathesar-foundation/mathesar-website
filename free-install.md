@@ -25,7 +25,7 @@ Please note that you'll still incur costs from your hosting provider.
 If you’re interested, please fill out the form below.
 {% endcapture %}
 
-{% include highlight.html header='What you’ll get' content=highlight theme='light'%}
+{% include highlight.html header='What you’ll get' content=highlight theme='light' separator=true%}
 
 {% include free-install-form.html %}
 

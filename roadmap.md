@@ -46,7 +46,7 @@ Note: this roadmap is subject to change, based on user needs.
 
 {% endcapture %}
 
-{% include highlight.html header="Upcoming Features by Category" subheader="Here are some ideas we’re thinking about. Please participate in the linked GitHub discussion if you’d like us to work on a feature!" content=highlight theme='light'%}
+{% include highlight.html separator=true header="Upcoming Features by Category" subheader="Here are some ideas we’re thinking about. Please participate in the linked GitHub discussion if you’d like us to work on a feature!" content=highlight theme='light'%}
 
 {% capture highlight1 %}
 Have any feedback or suggestions for features? You can contact us at:

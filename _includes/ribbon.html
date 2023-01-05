@@ -3,7 +3,7 @@
     class="lg:flex justify-between uppercase font-semibold text-sm max-w-6xl mx-auto"
   >
     {% for feature in site.data.features[page.title].features %}
-    <li class="flex items-center space-x-2">
+    <li class="flex items-center space-x-2 w-max mx-auto">
       <img src="assets/{{feature.icon}}.svg" alt="" />
       <span>{{feature.title}}</span>
     </li>

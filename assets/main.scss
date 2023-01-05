@@ -162,8 +162,7 @@ p + h3 {
 }
 
 .fade-in-image {
-  @apply w-full object-cover object-center relative z-0;
-  height: 28rem;
+  @apply w-full object-cover object-center relative z-0 lg:h-[28rem] h-48;
 }
 
 .fade-in-image img {
