@@ -1,5 +1,5 @@
-<div class="angled light">
-  <div class="max-w-6xl mx-auto space-y-8">
+
+  <div class="max-w-6xl mx-auto space-y-6 mb-24 text-center">
     <div class="max-w-3xl mx-auto text-center space-y-6">
         <h3 class="font-semibold text-3xl">Upcoming Features by Category</h3>
       <p class="text-xl">
@@ -8,7 +8,7 @@
       </p>
     </div>
     {% for category in site.data.roadmap %}
-    <h4 class="text-red-600 uppercase font-semibold text-center">
+    <h4 class="text-red-600 uppercase font-semibold text-lg">
       {{ category.category }}
     </h4>
     <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
@@ -21,4 +21,4 @@
       Note: this roadmap is subject to change, based on user needs.
     </p>
   </div>
-</div>
+
