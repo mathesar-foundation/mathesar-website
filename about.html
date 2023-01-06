@@ -10,7 +10,6 @@
     <title>About Us</title>
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-    <!-- insert Nunito Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -18,9 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body class="bg-stone-50 text-gray-800">
-    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-12">
+    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-8">
   <a href="index.html">
-    <img class="w-40 lg:w-64" src="assets/logo.svg" alt="" />
+    <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
   </a>
   <div>
     <nav
@@ -164,8 +163,9 @@
 
   
     
-<div class="rounded space-y-8 mx-auto p-4 lg:p-0 lg:w-1/2 mb-8 lg:mb-24">
-  <h2 class="font-bold text-3xl lg:text-5xl">What is Mathesar?</h2>
+<div class="max-w-4xl space-y-8 mx-auto p-4 mt-8 lg:p-0 mb-8 lg:mb-24 text-center">
+  <h2 class="font-bold text-3xl lg:text-5xl ">What is Mathesar?</h2>
+  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
   
   <div class="text-lg lg:text-2xl space-y-4">
 <p>Mathesar is a straightforward open source tool that provides a <strong>spreadsheet-like interface</strong> to a PostgreSQL <strong>database</strong>. Our web-based interface helps you and your collaborators work with data more independently and comfortably – <strong>no technical skills needed</strong>.</p>
@@ -173,32 +173,38 @@
 <p>You can use Mathesar to build <strong>data models</strong>, <strong>enter data</strong>, and even <strong>build reports</strong>. You host your own Mathesar installation, which gives you ownership, privacy, and control of your data.</p>
 </div>
    
-  
 </div>
 
-<div class="text-center bg-gray-800 angled py-40 text-white dark mb-20">
-  <div class="lg:w-1/2 px-4 lg:px-0 mx-auto space-y-8">
-    <div>
+<div class="text-center bg-gray-800 angled py-40 text-white dark">
+  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
+    
+    <div class="space-y-4">
       <h3 class="font-semibold text-3xl">Our mission</h3>
       
     </div>
+    
     <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+     
+
     <div class="text-xl space-y-6 highlight-content">
+      
 <p>Mathesar is a non-profit project. Our goal is to make <strong>understanding and working with data easy for everyone</strong>.</p>
 
 <p>Databases have been around for a long time and solve common data problems really well. But, working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.</p>
 
 <p>We want to make existing database functionality more accessible – in a user-friendly way.</p>
-</div>
+
+    </div>
   </div>
 </div>
 
-<div class="angled light px-16 space-y-10">
-  <div class="mx-auto lg:w-1/2 space-y-8">
+<div class="angled light space-y-10">
+  <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
-    <div class="lg:flex">
+    <div class="lg:flex space-x-8">
       <p class="text-xl flex-grow">
-        Mathesar is a project at the <a href="https://centerofci.org">Center for Complex Interventions</a>, a
+        Mathesar is a project at the
+        <a href="https://centerofci.org">Center for Complex Interventions</a>, a
         nonprofit that helps communities translate science into action.
       </p>
       <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="" />
@@ -207,13 +213,15 @@
 
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
-  <div class="mx-auto lg:w-1/2 space-y-2 text-center">
+  <div class="mx-auto max-w-2xl space-y-2 text-center">
     <h4 class="text-3xl font-bold">Our team</h4>
     <p class="text-xl">+ what we personally use databases for</p>
     <div class="text-lg">
-      <p>The Mathesar team are both open source as well as industry veterans.
-        We've:</p>
-      
+      <p>
+        The Mathesar team are both open source as well as industry veterans.
+        We've:
+      </p>
+
       <ul class="list-disc list-inside">
         <li>Achievement</li>
         <li>Achievement</li>
@@ -222,115 +230,193 @@
     </div>
   </div>
 
-  <div class="grid lg:grid-cols-2 gap-8 my-8 lg:w-3/4 mx-auto">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-12 auto-rows-auto">
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/kriti.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Kriti Godey</h4>
           <div>Founder &amp; Backend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"My husband and I use a database-backed application to track movies. Movies we own, movies we want to watch, movies we’ve watched. I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!”"</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“My husband and I use a database-backed application to track movies. Movies we own, movies we want to watch, movies we’ve watched. I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/sean.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Sean Colsen</h4>
           <div>Frontend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"I am a software engineer and I love to build things."</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I use a database for personal finance and budgeting, time tracking, and recipe and grocery management.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/ghislaine.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Ghislaine Guerin</h4>
           <div>Product Designer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"I am a product designer and I love to build things."</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I hope to use a database for keeping track of expenses and creating invoices, meal planning, and managing and analyzing feedback, comments, and insights from user research surveys.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/pavish.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Pavish Kumar Ramani Gopal</h4>
           <div>Frontend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"I am a software engineer and I love to build things."</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, to monitor individual points of team events, and to record daily tasks for household and work.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/brent.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Brent Moran</h4>
           <div>Backend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc."</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I aim to use a database for a country cost-of-living plus taxes plus other concerns data project. Tentative name: ‘Country Comparator’.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/mukesh.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Mukesh Murali</h4>
           <div>Backend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"“I use calculators for MMORPG games, to find the most efficient item to use for doing something in the game. Since the game has a real-time market, a relational database is really useful for reflecting the price changes across a lot of calculators.”"</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I intend to use a database for tracking prices and availability, organizing board game nights, creating MMORPG calculators, cataloging and sharing collections, planning events, organizing photo collections, and storing datasets for machine learning.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/dom.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Dominykas Mostauskis</h4>
           <div>Backend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"“Lots of small scraping and reporting projects come to mind. E.g. I scraped the data on a poorly-designed government website for making appointments with doctors. I could query and watch for cancellations, which allowed me to reserve a consultation much sooner.”"</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I use a database for household finance tracking (as an alternative to YNAB and Splitwise), including double-entry bookkeeping, expense splitting, and budgeting; household inventory management; and household task management.”</p>
+
+        </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-center lg:space-x-4">
-      <div class="bg-gray-400 w-40 h-40 shrink-0"></div>
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
+      <img src="assets/rajat.jpg" class="w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Rajat Vijay</h4>
           <div>Frontend Developer</div>
         </div>
-        <p class="italic text-lg border-l-2 pl-4 border-stone-800">"“I use my database for personal finance management. Budgeting, categorizing investment etc.”"</p>
+        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+          <p>“I use a database for personal finance management, including accounting and tracking expenses.”</p>
+
+        </div>
       </div>
     </div>
     
   </div>
+
+  <div class="mx-auto max-w-2xl space-y-8">
+    <h3 class="text-3xl font-bold text-center">Contributors</h3>
+    <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
+  </div>
 </div>
 
-<div class="text-center bg-gray-800 angled py-40 text-white lighter mb-20">
-  <div class="lg:w-1/2 px-4 lg:px-0 mx-auto space-y-8">
-    <div>
+<script>
+  const repoOwner = "centerofci";
+  const repoName = "mathesar";
+
+  async function getContributors() {
+    try {
+      const response = await fetch(
+        `https://api.github.com/repos/${repoOwner}/${repoName}/contributors`
+      );
+      const contributors = await response.json();
+
+      const listContainer = document.getElementById("contributor-list");
+      listContainer.innerHTML = "";
+
+      for (const contributor of contributors) {
+        const item = document.createElement("li");
+
+        const img = document.createElement("img");
+        //classlist
+        img.classList.add("rounded-full", "w-16", "h-16", "m-2");
+        img.src = contributor.avatar_url;
+        img.alt = contributor.login;
+        img.title = contributor.login;
+        item.appendChild(img);
+
+        listContainer.appendChild(item);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  getContributors();
+</script>
+
+<div class="text-center bg-gray-800 angled py-40 text-white lighter">
+  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
+    
+    <div class="space-y-4">
       <h3 class="font-semibold text-3xl">Our plans for financial sustainability</h3>
       
     </div>
+    
     <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+     
+
     <div class="text-xl space-y-6 highlight-content">
+      
 <p>Mathesar will always be <strong>100% open-source and self-hostable</strong>.</p>
 
 <p>We’re currently funded through the generous support of <strong>Reid Hoffman</strong> and the <strong>Center for Radical Transformation at the Chiba Institute of Technology</strong>.</p>
 
-<p>Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We <strong>will not</strong>:<br />
-(1) build features that are not open source<br />
-(2) take funding that requires us to grow at all costs</p>
+<div class="flex items-center justify-center space-x-8 mx-auto">
+  <img class="w-32" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation" />
+  <img class="w-80" src="assets/Henkaku_Center.png" alt="Henkaku Center" />
 </div>
+
+<p>Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We <strong>will not</strong>:</p>
+
+<ul>
+  <li>(1) build features that are not open source</li>
+  <li>(2) take funding that requires us to grow at all costs</li>
+</ul>
+
+    </div>
   </div>
 </div>
 

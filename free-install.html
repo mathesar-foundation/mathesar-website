@@ -10,7 +10,6 @@
     <title>Free install</title>
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-    <!-- insert Nunito Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -18,9 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
   <body class="bg-stone-50 text-gray-800">
-    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-12">
+    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-8">
   <a href="index.html">
-    <img class="w-40 lg:w-64" src="assets/logo.svg" alt="" />
+    <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
   </a>
   <div>
     <nav
@@ -164,79 +163,93 @@
 
   
     
-<div class="rounded space-y-8 mx-auto p-4 lg:p-0 lg:w-1/2 mb-8 lg:mb-24">
-  <h2 class="font-bold text-3xl lg:text-5xl">Receive a free Mathesar installation on our servers (limited availability)</h2>
+<div class="max-w-4xl space-y-8 mx-auto p-4 mt-8 lg:p-0 mb-8 lg:mb-24 text-center">
+  <h2 class="font-bold text-3xl lg:text-5xl ">We'll help you install Mathesar for free (limited availability)</h2>
+  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
   
   <div class="text-lg lg:text-2xl space-y-4">
-<p>Interested in being an early adopter? We could install Mathesar for you.
+<p>Interested in being an early adopter? We can help you set up your Mathesar installation.
 In return, we’d like to regularly hear your honest feedback on Mathesar. This will help us continue to make improvements.</p>
 </div>
    
-  
 </div>
 
-<div class="text-center bg-gray-800 angled py-40 text-white light mb-20">
-  <div class="lg:w-1/2 px-4 lg:px-0 mx-auto space-y-8">
-    <div>
+<div class="text-center bg-gray-800 angled py-40 text-white light">
+  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
+    
+    <div class="space-y-4">
       <h3 class="font-semibold text-3xl">What you’ll get</h3>
       
     </div>
+    
     <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+     
+
     <div class="text-xl space-y-6 highlight-content">
-<p>We can set up a Mathesar installation for you on our servers for 1 year. Here are more details:</p>
+      
+<p>We can help set up a Mathesar installation for you. Here are more details:</p>
 
 <ul>
+  <li>We’ll help you pick a hosting provider if needed</li>
   <li>We can configure Mathesar to fit your needs</li>
   <li>You can invite as many users to collaborate as you’d like</li>
   <li>We can back-up your Mathesar server and data – helping you restore them, if needed</li>
-  <li>You’ll receive customer support via email</li>
-  <li>We’ll prioritize implementing features or bug-fixes requested by you  (as much as we are able to)</li>
+  <li>You’ll receive support via email</li>
+  <li>We’ll prioritize implementing features or bug-fixes to fix any issues you’re having with Mathesar (within limits)</li>
 </ul>
 
+<p>Please note that you’ll still incur costs from your hosting provider.</p>
+
 <p>If you’re interested, please fill out the form below.</p>
-</div>
+
+    </div>
   </div>
 </div>
 
 <div class="p-8 rounded bg-stone-100 angled dark space-y-8">
-  <h4 class="text-center grid">
+  <h4 class="text-center">
     <span class="text-2xl">Request a free install</span>
   </h4>
-  <form class="w-1/2 mx-auto" action="https://formspree.io/f/moqbgpro" method="POST">
-    <div class="flex flex-col space-y-4">
-      <div class="flex flex-col">
-        <label for="first_name">First Name</label>
-        <input class="border rounded p-1" type="text" id="first_name" name="first_name" />
+  <form class="mx-auto max-w-2xl" action="https://formspree.io/f/moqbgpro" method="POST">
+    <div class="flex flex-col space-y-4 space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col space-y-1">
+          <label for="last_name">Full Name</label>
+          <input class="border p-2 rounded" type="text" id="full_name" name="full_name" />
+        </div>
+        <div class="flex flex-col space-y-1">
+          <label for="email">Email</label>
+          <input class="border p-2 rounded" type="email" id="email" name="email" />
+        </div>
       </div>
-      <div class="flex flex-col">
-        <label for="last_name">Last Name</label>
-        <input class="border rounded p-1" type="text" id="last_name" name="last_name" />
+      <div class="flex flex-col space-y-1">
+        <label for="use_case">What will you use Mathesar for?</label>
+        <textarea class="border p-2 rounded" id="use_case" name="use_case" rows="4"></textarea>
       </div>
-      <div class="flex flex-col">
-        <label for="email">Email</label>
-        <input class="border rounded p-1" type="email" id="email" name="email" />
-      </div>
-      <div class="flex flex-col">
-        <label for="use_case">What are you hoping to use Mathesar for?</label>
-        <textarea class="border rounded p-1" id="use_case" name="use_case" rows="4"></textarea>
-      </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col space-y-1">
         <label for="current_solution">How do you currently solve this problem?</label>
-        <textarea id="current_solution" name="current_solution" rows="4" class="border rounded p-1"></textarea>
+        <textarea class="border p-2 rounded" id="current_solution" name="current_solution" rows="4"></textarea>
       </div>
-      <div class="flex flex-col space-y-4">
-        <label for="other_info">Any other important information we should know?</label>
-        <textarea id="other_info" class="border rounded p-1" name="other_info" rows="4"></textarea>
+      <div class="flex flex-col space-y-1">
+        <label for="hosting_provider">Where do you plan to host Mathesar?</label>
+        If you're not sure, that's okay.
+        <input class="border p-2 rounded" type="text" id="hosting_provider" name="hosting_provider" />
+      </div>
+      <div class="flex flex-col space-y-1 space-y-4">
+        <label for="other_info">Any other information we should know?</label>
+        <textarea class="border p-2 rounded" id="other_info" name="other_info" rows="4"></textarea>
       </div>
     </div>
 
-    <div class="flex flex-col space-y-4 mt-4">
-      <button class="bg-blue-600 p-2 text-white rounded" type="submit">Request Free Install</button>
+    <div class="flex flex-col space-y-1 space-y-4 mt-4">
+      <button class="bg-blue-600 rounded text-xl p-2 text-white w-max mx-auto" type="submit">
+        Request Free Install
+      </button>
     </div>
 
-    <p class="mt-4 text-gray-300">
-      Next: we’ll either reach out to learn more about your use case – or let you know if we’re out of capacity. Thank you.
-
+    <p class="mt-4 text-gray-200 text-lg">
+      Next: we’ll either reach out to learn more about your use case – or let
+      you know if we’re out of capacity. Thank you.
     </p>
   </form>
 </div>
