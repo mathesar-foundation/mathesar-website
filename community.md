@@ -14,6 +14,18 @@ header='Welcome to the Mathesar community'
 subheader=subheader
 %}
 
+{% capture highlight1 %}
+
+### Are you interested in using Mathesar?
+
+You can talk to other Mathesar users through our user-only mailing list. And you’ll stay updated on Mathesar’s upcoming release.
+
+{% include button.html size="sm" style="primary" label="Sign up for our user-only mailing list" url="https://groups.google.com/g/mathesar-users" %}
+
+{% endcapture %}
+
+{% include highlight.html size="sm" header='Stay updated on Mathesar’s release' content=highlight1 theme='dark' separator=true%}
+
 {% capture highlight %}
 
 ### Are you interested in helping us build Mathesar?
@@ -31,15 +43,3 @@ Sign up for our developer-only mailing list below to get updates on Mathesar’s
 {% endcapture %}
 
 {% include highlight.html header='Help us build Mathesar' content=highlight theme='light' separator=true%}
-
-{% capture highlight1 %}
-
-### Are you interested in using Mathesar?
-
-You can talk to other Mathesar users through our user-only mailing list. And you’ll stay updated on Mathesar’s upcoming release.
-
-{% include button.html size="sm" style="primary" label="Sign up for our user-only mailing list" url="https://groups.google.com/g/mathesar-users" %}
-
-{% endcapture %}
-
-{% include highlight.html size="sm" header='Stay updated on Mathesar’s release' content=highlight1 theme='dark' separator=true%}
