@@ -75,6 +75,11 @@ p + h3 {
   @apply bg-gray-900 text-white;
 }
 
+.angled.dark input,
+.angled.dark textarea {
+  @apply text-gray-800;
+}
+
 .angled.light {
   @apply bg-stone-200 text-gray-800;
 }
@@ -114,9 +119,8 @@ p + h3 {
   @apply text-blue-400;
 }
 
-
 .highlight-content ul {
-  @apply list-disc list-inside my-4;
+  @apply list-disc list-inside my-4 max-w-md mx-auto space-y-4;
 }
 
 .list-check > li:before {
