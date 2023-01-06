@@ -1,12 +1,18 @@
-<div class="text-center bg-gray-800 angled py-40 text-white {{include.theme}} mb-20">
-  <div class="lg:w-1/2 px-4 lg:px-0 mx-auto space-y-8">
-    <div>
+<div class="text-center bg-gray-800 angled py-40 text-white {{include.theme}}">
+  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
+    {% if include.header %}
+    <div class="space-y-4">
       <h3 class="font-semibold text-3xl">{{include.header}}</h3>
       {%if include.subheader %}
       <p class="text-xl">{{include.subheader}}</p>
-        {% endif %}
+      {% endif %}
     </div>
+    {% if include.separator %}
     <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-    <div class="text-xl space-y-6 highlight-content">{{include.content | markdownify}}</div>
+    {% endif %} {% endif %}
+
+    <div class="text-xl space-y-6 highlight-content">
+      {{include.content | markdownify}}
+    </div>
   </div>
 </div>

@@ -10,17 +10,15 @@ So you can enter and slice and filter and structure your data… in just minutes
 No technical skills required.
 {% endcapture %}
 
-{% include hero.html
-title='Enter quick data and find answers to your questions – independently'
-section='Open Source Database Interface' content=hero_content
-image='assets/screenshot.png' %}
-
 {% capture actions %}
 {% include button.html style="primary" label="Stay Updated on Mathesar’s Release" url="" %}
 {% include button.html style="secondary" label="Request a Free Installation" url="" %}
 {% endcapture %}
 
-{% include page_actions.html content=actions %}
+{% include hero.html
+title='Enter quick data and find answers to your questions – independently'
+section='Open Source Database Interface' content=hero_content
+image='assets/screenshot.png' actions=actions %}
 
 {% capture highlight_1 %}
 
@@ -51,6 +49,7 @@ include quote.html
 excerpt='I felt like a guest in the developers’ space.'
 author='Ghislaine (Mathesar’s Product Designer)'
 quote=quote
+image='ghislaine.jpg'
 %}
 
 {% capture highlight_2 %}

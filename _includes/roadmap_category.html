@@ -1,0 +1,24 @@
+
+  <div class="max-w-6xl mx-auto space-y-6 mb-24 text-center">
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+        <h3 class="font-semibold text-3xl">Upcoming Features by Category</h3>
+      <p class="text-xl">
+        Here are some ideas we’re thinking about. Please participate in the
+        linked GitHub discussion if you’d like us to work on a feature!
+      </p>
+    </div>
+    {% for category in site.data.roadmap %}
+    <h4 class="text-red-600 uppercase font-semibold text-lg">
+      {{ category.category }}
+    </h4>
+    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+      {% for feature in category.features %} {%include roadmap_card.html
+      header=feature.title subheader=feature.subheader content=feature.content
+      url=feature.discussion_url %} {% endfor %}
+    </div>
+    {% endfor %}
+    <p class="text-center">
+      Note: this roadmap is subject to change, based on user needs.
+    </p>
+  </div>
+

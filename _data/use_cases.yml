@@ -1,10 +1,21 @@
-- Prototype New Solutions
-- Inventory Management
-- Event Planning
-- Project Management
-- Expense Tracking
-- CRM Usage
-- Publish Data Publicly
-
-
-
+- use_case: Prototype New Solutions
+  description: "None"
+  image: "screenshot.png"
+- use_case: Inventory Management
+  description: "None"
+  image: "screenshot.png"
+- use_case: Event Planning
+  description: "None"
+  image: "screenshot.png"
+- use_case: Project Management
+  description: "None"
+  image: "screenshot.png"
+- use_case: Expense Tracking
+  description: "None"
+  image: "screenshot.png"
+- use_case: CRM Usage
+  description: "None"
+  image: "screenshot.png"
+- use_case: Publish Data Publicly
+  description: "None"
+  image: "screenshot.png"

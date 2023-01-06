@@ -1,21 +1,12 @@
 <div
-  class="text-center bg-white p-10 shadow-md rounded {{include.theme}} mb-20"
+  class="h-40 text-center bg-white p-4 shadow-md rounded {{include.theme}} flex justify-center flex-col w-full"
 >
-  <div class="w-1/2 mx-auto space-y-8">
-    <div>
-      <h3 class="font-semibold text-3xl">{{include.header}}</h3>
-      {%if include.subheader %}
-      <p class="text-xl">{{include.subheader}}</p>
-      {% endif %}
-    </div>
-    <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+  <h3 class="font-semibold text-xl">{{include.header}}</h3>
+  <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
       {{include.content | markdownify}}
     </div>
   </div>
 
-  <!--insert link to github issue-->
-  <div class="flex justify-center mt-4">
-    <a href="{{include.url}}">Go to Github Discussion</a>
-  </div>
+  <a class="text-blue-600 hover:underline" href="{{include.url}}">Go to Github Discussion</a>
 </div>

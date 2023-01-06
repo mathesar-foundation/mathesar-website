@@ -1,51 +1,88 @@
 <div class="p-8 rounded bg-stone-100 angled dark space-y-8">
-  <h4 class="text-center grid">
+  <h4 class="text-center">
     <span class="text-2xl">Request a free install</span>
   </h4>
-  <form class="w-1/2 mx-auto" action="https://formspree.io/f/moqbgpro" method="POST">
-    <div class="flex flex-col space-y-4">
-      <div class="flex flex-col">
-        <label for="first_name">First Name</label>
-        <input class="border rounded p-1" type="text" id="first_name" name="first_name" />
+  <form
+    class="mx-auto max-w-2xl"
+    action="https://formspree.io/f/moqbgpro"
+    method="POST"
+  >
+    <div class="flex flex-col space-y-4 space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col space-y-1">
+          <label for="last_name">Full Name</label>
+          <input
+            class="border p-2 rounded"
+            type="text"
+            id="full_name"
+            name="full_name"
+          />
+        </div>
+        <div class="flex flex-col space-y-1">
+          <label for="email">Email</label>
+          <input
+            class="border p-2 rounded"
+            type="email"
+            id="email"
+            name="email"
+          />
+        </div>
       </div>
-      <div class="flex flex-col">
-        <label for="last_name">Last Name</label>
-        <input class="border rounded p-1" type="text" id="last_name" name="last_name" />
+      <div class="flex flex-col space-y-1">
+        <label for="use_case">What will you use Mathesar for?</label>
+        <textarea
+          class="border p-2 rounded"
+          id="use_case"
+          name="use_case"
+          rows="4"
+        ></textarea>
       </div>
-      <div class="flex flex-col">
-        <label for="email">Email</label>
-        <input class="border rounded p-1" type="email" id="email" name="email" />
-      </div>
-      <div class="flex flex-col">
-        <label for="use_case">What are you hoping to use Mathesar for?</label>
-        <textarea class="border rounded p-1" id="use_case" name="use_case" rows="4"></textarea>
-      </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col space-y-1">
         <label for="current_solution"
           >How do you currently solve this problem?</label
         >
         <textarea
+          class="border p-2 rounded"
           id="current_solution"
           name="current_solution"
           rows="4"
-          class="border rounded p-1"
         ></textarea>
       </div>
-      <div class="flex flex-col space-y-4">
-        <label for="other_info"
-          >Any other important information we should know?</label
+      <div class="flex flex-col space-y-1">
+        <label for="hosting_provider"
+          >Where do you plan to host Mathesar?</label
         >
-        <textarea id="other_info" class="border rounded p-1" name="other_info" rows="4"></textarea>
+        If you're not sure, that's okay.
+        <input
+          class="border p-2 rounded"
+          type="text"
+          id="hosting_provider"
+          name="hosting_provider"
+        />
+      </div>
+      <div class="flex flex-col space-y-1 space-y-4">
+        <label for="other_info">Any other information we should know?</label>
+        <textarea
+          class="border p-2 rounded"
+          id="other_info"
+          name="other_info"
+          rows="4"
+        ></textarea>
       </div>
     </div>
 
-    <div class="flex flex-col space-y-4 mt-4">
-      <button class="bg-blue-600 p-2 text-white rounded" type="submit">Request Free Install</button>
+    <div class="flex flex-col space-y-1 space-y-4 mt-4">
+      <button
+        class="bg-blue-600 rounded text-xl p-2 text-white w-max mx-auto"
+        type="submit"
+      >
+        Request Free Install
+      </button>
     </div>
 
-    <p class="mt-4 text-gray-300">
-      Next: we’ll either reach out to learn more about your use case – or let you know if we’re out of capacity. Thank you.
-
+    <p class="mt-4 text-gray-200 text-lg">
+      Next: we’ll either reach out to learn more about your use case – or let
+      you know if we’re out of capacity. Thank you.
     </p>
   </form>
 </div>

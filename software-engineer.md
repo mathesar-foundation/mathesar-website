@@ -10,21 +10,21 @@ Use Mathesar’s open source and web-based interface to give your team direct ac
 Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
 
-{% include hero.html
-title='Allow quick access to your database – without disrupting your workflow'
-section='Open Source Database Interface' content=hero_content
-image='assets/screenshot.png' %}
-
 {% capture actions %}
 {% include button.html style="primary" label="Star us on GitHub" url="" %}
 {% include button.html style="secondary" label="Request a Free Installation" url="" %}
 {% endcapture %}
 
-{% include page_actions.html content=actions %}
+{% include hero.html
+title='Allow quick access to your database – without disrupting your workflow'
+section='Open Source Database Interface' content=hero_content
+image='assets/screenshot.png' actions=actions %}
+
+{% include ribbon.html %}
 
 {% capture quote %}
 "At my previous job, business experts relied on me to **create reports** for them, every single day.
-<br/><br/>
+
 But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
 {% endcapture %}
 
@@ -33,7 +33,7 @@ include quote.html
 excerpt='I experienced collaboration issues every day.'
 author='Pavish - Mathesar’s Frontend Developer'
 quote=quote
-image='assets/pavish.webp'
+image='pavish.jpg'
 %}
 
 {% capture highlight1 %}
@@ -49,6 +49,7 @@ Mathesar doesn’t have its own set of abstractions so it won’t make unexpecte
     header='Speed up your data workflows – using Mathesar’s open source interface'
     content=highlight1
     theme='dark'
+    separator=false
 %}
 
 {% capture capture_1 %}
@@ -156,12 +157,13 @@ This can remove the dependency layer on you and allow for more exploration into 
 
 {% capture highlight_3 %}
 
-Move data around. Transform and filter it.<br/><br/>
+Move data around. Transform and filter it.
+
 While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' %}
+{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' separator=false %}
 
 {%include usecases.html%}
 
@@ -174,4 +176,4 @@ Migrate your data any time you want to. Or simply go back and forth from the int
 
 {% endcapture %}
 
-{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' %}
+{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' separator=true %}

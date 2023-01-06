@@ -22,7 +22,7 @@ Databases have been around for a long time and solve common data problems really
 We want to make existing database functionality more accessible – in a user-friendly way.
 {% endcapture %}
 
-{% include highlight.html header='Our mission' content=highlight theme='dark' %}
+{% include highlight.html header='Our mission' content=highlight theme='dark' separator=true %}
 
 {% include team-grid.html %}
 
@@ -31,9 +31,12 @@ Mathesar will always be **100% open-source and self-hostable**.
 
 We’re currently funded through the generous support of **Reid Hoffman** and the **Center for Radical Transformation at the Chiba Institute of Technology**.
 
-Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We **will not**:<br/>
-(1) build features that are not open source<br/>
-(2) take funding that requires us to grow at all costs
+{% include funder-logos.html %}
+
+Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We **will not**:
+
+- (1) build features that are not open source
+- (2) take funding that requires us to grow at all costs
 {% endcapture %}
 
-{% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' %}
+{% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' separator=true %}

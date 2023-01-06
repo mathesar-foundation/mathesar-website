@@ -58,17 +58,26 @@ p + h3 {
   @apply my-8;
 }
 
+.hero p strong {
+  @apply font-semibold bg-stone-400 bg-opacity-25 px-1;
+}
+
 .navigation-item {
   @apply block border-b-2 border-transparent hover:border-red-500 transition-colors duration-300;
 }
 
 .angled {
-  @apply py-20;
+  @apply py-16;
   position: relative;
 }
 
 .angled.dark {
   @apply bg-gray-900 text-white;
+}
+
+.angled.dark input,
+.angled.dark textarea {
+  @apply text-gray-800;
 }
 
 .angled.light {
@@ -103,11 +112,15 @@ p + h3 {
 }
 
 .highlight-content a {
-  @apply text-blue-600;
+  @apply text-blue-500;
+}
+
+.dark .highlight-content a {
+  @apply text-blue-400;
 }
 
 .highlight-content ul {
-  @apply list-disc list-inside my-4;
+  @apply list-disc list-inside my-4 max-w-md mx-auto space-y-4;
 }
 
 .list-check > li:before {
@@ -150,4 +163,23 @@ p + h3 {
 
 .faq-section p + h3 {
   @apply mt-8;
+}
+
+.fade-in-image {
+  @apply w-full object-cover object-center relative z-0 lg:h-[28rem] h-48;
+}
+
+.fade-in-image img {
+  @apply rounded-lg shadow-lg overflow-hidden;
+}
+
+.fade-in-image::after {
+  --light-color: 255, 255, 255;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(var(--light-color), 0) 0%, rgba(var(--light-color), 0.8) 100%);
 }
