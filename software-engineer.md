@@ -53,27 +53,28 @@ Mathesar doesn’t have its own set of abstractions so it won’t make unexpecte
 %}
 
 {% capture capture_1 %}
-Mathesar uses and manipulates Postgres schemas, primary keys, foreign keys, constraints and data types.
+Mathesar uses and manipulates Postgres **schemas, primary keys, foreign keys, constraints and data types**.
 
-So any configuration you do in the UI will reflect directly in your Postgres databases.
+So any configuration you do in the UI will **reflect directly in your Postgres databases**.
 Nothing will prevent you from working with the same data in other tools outside of Mathesar.
 
-All the same data integrity safeguards you set up via the Mathesar UI will still apply.
+All the same **data integrity safeguards** you set up via the Mathesar UI will still apply.
 {% endcapture %}
 
 {% include feature.html
     header='BUILT ON POSTGRES'
     title='Use Postgres directly'
     content=capture_1
+    image='assets/use-postgres-directly.png'
 %}
 
 {% capture capture_2 %}
 
-Proprietary products can keep you locked in their ecosystem. This can make it difficult to integrate or migrate your disparate data sources.
+**Proprietary products** can keep you locked in their ecosystem. This can make it **difficult to integrate or migrate your disparate data sources**.
 
 If you decide to move away, you could lose data.
 
-Mathesar is self-hosted – giving you full control over your system and your data. You can integrate with other Postgres-friendly tools.
+Mathesar is **self-hosted** – giving you **full control over your system and your data**. You can integrate with other Postgres-friendly tools.
 
 {% endcapture %}
 
@@ -81,68 +82,73 @@ Mathesar is self-hosted – giving you full control over your system and your da
     header='SELF-HOSTED'
     title='Your data is yours'
     content=capture_2
+    image='assets/self-hosted.png'
 %}
 
 {% capture capture_3 %}
-Non-technical people often struggle to work with normalized data. Even database-spreadsheet hybrid applications complicate the normalization process.
+**Non-technical people** often struggle to work with normalized data. Even **database-spreadsheet hybrid applications complicate the normalization process**.
 
-Mathesar creates and reflects relationships at the database level.  There are no “relationship column types” and there are no abstractions.
+Mathesar creates and reflects relationships at the database level.  There are no **“relationship column types”** and there are no **abstractions**.
 
-Mathesar uses actual foreign key constraints and provides a UI to understand links easily – no technical skills required.
+Mathesar uses **actual foreign key constraints** and provides a UI to understand links easily – no technical skills required.
 {% endcapture %}
 
 {% include feature.html
     header='NORMALIZED DATA'
     title='Your collaborators can easily work with normalized data'
     content=capture_3
+    image='assets/foreign-key.png'
 %}
 
 {% capture capture_4 %}
-Your colleagues can use Mathesar’s interface to answer their ad-hoc questions quickly.
+Your colleagues can use Mathesar’s interface to answer their **ad-hoc questions** quickly.
 
-This can reduce the need for you to create custom reports and update data manually.
+This can **reduce the need for you** to create custom reports and update data manually.
 {% endcapture %}
 
 {% include feature.html
     header='EASY UX'
     title='Reduce dependencies on you – empower collaborators to use your database'
     content=capture_4
+    image='assets/collaborators.png'
 %}
 
 {% capture capture_5 %}
-Mathesar is free, licensed under GPLv3. There are no paid plans.
+Mathesar is **free, licensed under GPLv3**. There are **no paid plans**.
 
-Although we’re new, we already have dozens of contributors. If you’re interested, you can also contribute.
+Although we’re new, we already have **dozens of contributors**. If you’re interested, **you can also contribute**.
 
-We work in public – you can check out what our team is doing on GitHub and Matrix. And via our mailing lists.
+**We work in public** – you can check out what our team is doing on [GitHub](https://github.com/centerofci/mathesar) and [Matrix](https://matrix.to/#/#mathesar:matrix.org). And via our [mailing lists](community).
 {% endcapture %}
 
 {% include feature.html
     header='OPEN SOURCE'
     title='Developed in collaboration with our community'
     content=capture_5
+    image='assets/open-source.png'
 %}
 
 {% capture capture_6 %}
-Manually changing your schema can require hours of rote work or custom code.
-This can lead to disruptions – like downtime, stale data and difficulties in meeting your SLA.
+Manually changing your schema can require **hours of rote work** or custom code.
+This can lead to disruptions – like **downtime**, **stale data** and difficulties in meeting your SLA.
 
 Mathesar makes schema and data migrations a one-click solution.
-There are no disruptions – which can help ease your data integration workflow.
+There are **no disruptions** – which can help **ease your data integration workflow**.
 {% endcapture %}
 
 {% include feature.html
     header='SCHEMA MIGRATIONS'
     title='Perform schema changes – in minutes'
     content=capture_6
+    image='assets/migrations.png'
 %}
 
 {% capture capture_7 %}
 Database joins can be confusing for non-technical users to fully understand.
 
-With Mathesar’s Data Explorer, your collaborators don’t need to understand joins. They can see and use relationships between data – with the joins happening behind the scenes.
+With Mathesar’s Data Explorer, your **collaborators don’t need to understand joins**. They can see and use relationships between data – with the joins happening behind the scenes.
 
-Anyone can build a query through the UI that displays data from across multiple tables.
+**Anyone can build a query through the UI** that displays data from across **multiple tables**.
 
 This can remove the dependency layer on you and allow for more exploration into your database.
 {% endcapture %}
@@ -151,6 +157,7 @@ This can remove the dependency layer on you and allow for more exploration into 
     header='DATA EXPLORER'
     title='Build views across multiple tables'
     content=capture_7
+    image='assets/explorer.png'
 %}
 
 ---
