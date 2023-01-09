@@ -117,11 +117,11 @@ Mathesar lets you create views across multiple tables – in just a few clicks. 
 %}
 
 {% capture capture_4 %}
-You often track the same data – like names, dates, statuses – across many spreadsheets that are not connected.
+You often track the same data – like names, dates, statuses – across many **spreadsheets that are not connected**.
 
-Someone has to manually update this information, over-and-over. This can become a bad use of a person’s work time.
+Someone has to **manually update this information**, over-and-over. This can become a bad use of a person’s work time.
 
-With Mathesar, your data records can “speak” and connect to each other. When you make a change to one table – all your other connected tables will automatically update too.
+With Mathesar, your data records can “speak” and connect to each other. When you make a change to one table – all your other **connected tables will automatically update** too.
 
 So you can adjust and adapt your data records without dedicating too much time.
 
@@ -131,47 +131,43 @@ So you can adjust and adapt your data records without dedicating too much time.
     header='DATA RELATIONSHIPS'
     title='Watch your data sync up and build relationships'
     content=capture_4
-    image='assets/relationships.png'
 %}
 
 {% capture capture_5 %}
-Sometimes you have one-off questions about your data, but you don’t have a relevant report already available.
+Sometimes you have **one-off questions about your data**, but you don’t have a relevant report already available.
 
 Instead of waiting for your technical collaborator – or ticking hundreds of checkboxes in your custom software – simply search through Mathesar.
 
-You can quickly filter words using conditional logic.
+You can quickly **filter words using conditional logic**.
 {% endcapture %}
 
 {% include feature.html
     header='QUICK FILTERS'
     title='User-friendly filters to answer quick questions'
     content=capture_5
-    image='assets/filters.png'
 %}
 
 {% capture capture_6 %}
 When your workflow changes, this change should be reflected in your data models.
-But manual changes often take hours, even days.
+But **manual changes often take hours, even days**.
 
-This runs a significant risk of disruption. When your data is paused and not synced-up, you could end up with stale data.
+This runs a significant risk of disruption. When your data is **paused and not synced-up**, you could end up with stale data.
 
-Mathesar saves you time and lets you update data models – in a click.
+Mathesar saves you time and lets you **update data models – in a click**.
 
-So as your workflow evolves, you’re able to adjust your data to accurately. In minutes.
+So as your workflow evolves, you’re able to **adjust your data** too accurately. In minutes.
 {% endcapture %}
 
 {% include feature.html
     header='RESHAPE YOUR DATA STRUCTURE'
     title='Update your data models – in just minutes'
     content=capture_6
-    image='assets/reshape.png'
 %}
 
 {% capture capture_7 %}
-Proprietary software companies often look like appealing choices – until you’re locked in their ecosystem.
+Proprietary software companies often look like appealing choices – **until you’re locked in their ecosystem**.
 If you decide to move away, you could lose valuable data. Your data could even be sold off in private deals.
-Mathesar allows you to self-host on your servers. You’ll
-have full control over your data and can choose who has access.
+Mathesar **allows you to self-host on your servers**. You’ll have full control over your data and can choose who has access.
 Easily migrate from Mathesar – or simply go back and forth – anytime you like.
 {% endcapture %}
 
