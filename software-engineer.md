@@ -178,8 +178,8 @@ While still retaining structure and consistency.
 
 Migrate your data any time you want to. Or simply go back and forth from the interface.
 
-- Use Mathesar to set up a backend for your custom application.
-- Mathesar can work as frontend to existing databases, without altering your data.
+- Use Mathesar to set up a **backend** for your custom application.
+- Mathesar can work as **frontend** to existing databases, without altering your data.
 
 {% endcapture %}
 

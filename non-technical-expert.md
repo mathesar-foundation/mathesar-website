@@ -66,9 +66,9 @@ But unlike a spreadsheet – you can now work more easily with structured, clean
 {% include highlight.html header='Gain flexibility and speed working with your data' content=highlight_2 theme='light' %}
 
 {% capture capture_1 %}
-Having your data sources scattered in different places can make analysis difficult.
+Having your **data sources scattered in different places** can make analysis difficult.
 
-Mathesar connects to your existing database. The interface can become a central source of truth to analyze your data.
+Mathesar connects to your existing database. The interface can become a **central source of truth** to analyze your data.
 
 You can have different workflows using the same data – all at the same time.
 {% endcapture %}
@@ -77,14 +77,15 @@ You can have different workflows using the same data – all at the same time.
     header='INTEGRATES WITH YOUR DATA'
     title='Use Mathesar in tandem with your other tools'
     content=capture_1
+    image='assets/one-source.png'
 %}
 
 {% capture capture_2 %}
-Duplicates and redundancies are all too common in data entry. This inconsistency can lead to corrupted data – resulting in misguided decisions.
+**Duplicates and redundancies** are all too common in data entry. This **inconsistency can lead to corrupted data** – resulting in misguided decisions.
 
 Mathesar allows you to retain strict data structures.
 
-You can easily set up data rules that prevent users from making data errors.
+You can easily **set up data rules** that prevent users from making data errors.
 That’s how you ensure clean, consistent and accurate data records.
 {% endcapture %}
 
@@ -92,16 +93,17 @@ That’s how you ensure clean, consistent and accurate data records.
     header='DATA VALIDATION & CONSISTENCY'
     title='Work with clean, error-free data'
     content=capture_2
+    image='assets/validation.png'
 %}
 
 {% capture capture_3 %}
 
-When you want to explore a freeform question about your data – you could face technical obstacles:
+When you want to **explore a freeform question about your data** – you could face technical obstacles:
 
-“What’s the right way to phrase this question?”
-“Which is the right tool for the job?”
+**“What’s the right way to phrase this question?”**
+**“Which is the right tool for the job?”**
 
-You could even lack easy access to your data.
+You could even **lack easy access to your data**.
 
 Mathesar lets you create views across multiple tables – in just a few clicks. So you can answer your freeform questions quickly. And gain new insights.
 
@@ -111,6 +113,7 @@ Mathesar lets you create views across multiple tables – in just a few clicks. 
     header='DATA EXPLORER'
     title='Discover new insights with unique views'
     content=capture_3
+    image='assets/explorer.png'
 %}
 
 {% capture capture_4 %}
@@ -128,6 +131,7 @@ So you can adjust and adapt your data records without dedicating too much time.
     header='DATA RELATIONSHIPS'
     title='Watch your data sync up and build relationships'
     content=capture_4
+    image='assets/relationships.png'
 %}
 
 {% capture capture_5 %}
@@ -142,6 +146,7 @@ You can quickly filter words using conditional logic.
     header='QUICK FILTERS'
     title='User-friendly filters to answer quick questions'
     content=capture_5
+    image='assets/filters.png'
 %}
 
 {% capture capture_6 %}
@@ -159,6 +164,7 @@ So as your workflow evolves, you’re able to adjust your data to accurately. In
     header='RESHAPE YOUR DATA STRUCTURE'
     title='Update your data models – in just minutes'
     content=capture_6
+    image='assets/reshape.png'
 %}
 
 {% capture capture_7 %}
@@ -173,4 +179,5 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
     header='OPEN SOURCE & SELF-HOSTED'
     title='Own your data'
     content=capture_7
+    image='assets/self-hosted.png'
 %}
