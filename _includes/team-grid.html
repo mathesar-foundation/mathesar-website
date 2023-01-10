@@ -18,14 +18,16 @@
     </div>
   </div>
 
-  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto max-w-2xl space-y-2 text-center">
-    <h4 class="text-3xl font-bold">The core team</h4>
-    <p class="text-xl">+ databases in our personal life</p>
-    <div class="text-lg">
+    <div>
+      <h4 class="text-3xl font-bold">The core team</h4>
+      <p class="text-2xl">+ databases in our personal life</p>
+    </div>
+    <div class="space-y-4 text-lg">
       <p>We're a group of industry veterans with a love of open source. Our core team members have founded startups and worked at a variety of companies – from nonprofits to large multinational companies. We've also led projects in large open source communities like <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and <strong>Ember.js</strong>.
       </p>
+      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
     </div>
   </div>
 
@@ -40,7 +42,7 @@
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
           <div>{{member.role}}</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+        <div class="italic space-y-2 quote">
           {{member.bio | markdownify}}
         </div>
       </div>
