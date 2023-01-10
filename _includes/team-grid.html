@@ -1,13 +1,20 @@
-<div class="angled light space-y-10">
+<section class="angled light space-y-10 px-4">
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
     <div class="lg:flex space-x-8">
       <p class="text-xl flex-grow">
         Mathesar is a project at the
-        <a href="https://centerofci.org">Center for Complex Interventions</a>, a
-        nonprofit that helps communities translate science into action.
+        <a
+          href="https://centerofci.org"
+          aria-labelledby="Center for Complex Interventions"
+          >Center for Complex Interventions</a
+        >, a nonprofit that helps communities translate science into action.
       </p>
-      <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="" />
+      <img
+        class="w-64 mt-8 mx-auto lg:mt-0"
+        src="assets/cci-logo.svg"
+        alt="Center for Complex Interventions logo"
+      />
     </div>
   </div>
 
@@ -31,11 +38,11 @@
   </div>
 
   <div
-    class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-12 auto-rows-auto"
+    class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 grid-flow-row lg:gap-12 auto-rows-auto space-y-4"
   >
     {% for member in site.data.members %}
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/{{member.image}}" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/{{member.image}}" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
@@ -52,8 +59,14 @@
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-3xl font-bold text-center">Contributors</h3>
     <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
+
+    <noscript>
+      <a href="https://github.com/centerofci/mathesar/graphs/contributors"
+        >View list of contributors</a
+      >
+    </noscript>
   </div>
-</div>
+</section>
 
 <script>
   const repoOwner = "centerofci";
