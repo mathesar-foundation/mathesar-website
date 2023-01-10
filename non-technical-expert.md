@@ -131,6 +131,7 @@ So you can adjust and adapt your data records without dedicating too much time.
     header='DATA RELATIONSHIPS'
     title='Watch your data sync up and build relationships'
     content=capture_4
+    image='assets/sync.png'
 %}
 
 {% capture capture_5 %}
@@ -145,6 +146,7 @@ You can quickly **filter words using conditional logic**.
     header='QUICK FILTERS'
     title='User-friendly filters to answer quick questions'
     content=capture_5
+    image='assets/find.png'
 %}
 
 {% capture capture_6 %}
@@ -162,6 +164,7 @@ So as your workflow evolves, you’re able to **adjust your data** too accuratel
     header='RESHAPE YOUR DATA STRUCTURE'
     title='Update your data models – in just minutes'
     content=capture_6
+    image='assets/director.png'
 %}
 
 {% capture capture_7 %}
