@@ -11,8 +11,8 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated on Mathesar’s Release" url="" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="" %}
+{% include button.html style="primary" label="Stay Updated about Mathesar" url="" %}
+{% include button.html style="secondary" label="Open Live Demo" url="" %}
 {% endcapture %}
 
 {% include hero.html
@@ -39,7 +39,7 @@ Causing an error would be so embarassing. You don’t intentionally want to dele
 
 I felt like I was in a piece of software that wasn’t meant for me.
 
-We created Mathesar to be more welcoming. Mathesar sets up data rules that protect people from data errors.
+**We created Mathesar to be more welcoming**. Mathesar sets up data rules that protect people from data errors.
 
 It can open up a playground to explore new ideas."
 {% endcapture %}
