@@ -11,8 +11,8 @@ Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Star us on GitHub" url="" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="" %}
+{% include button.html style="primary" label="Open Live Demo" url="" %}
+{% include button.html style="secondary" label="Star us on GitHub" url="" %}
 {% endcapture %}
 
 {% include hero.html
