@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Community
+title: Community - Mathesar
 ---
 
 {% capture subheader %}

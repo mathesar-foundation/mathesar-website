@@ -5,12 +5,21 @@
   <div>
     <nav
       class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html">Home</a>
+        <a class="navigation-item" href="index.html" aria-current="page"
+          >Home</a
+        >
         <a class="navigation-item" href="about.html">About Us</a>
         <div class="dropdown relative navigation-item">
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="How it works"
+          >
             How it works <img src="assets/dropdown-arrow.svg" alt="" />
           </button>
           <div
@@ -28,10 +37,18 @@
             >
           </div>
         </div>
-        <a class="navigation-item" href="https://demo.mathesar.org/" target="_blank">
+        <a
+          class="navigation-item"
+          href="https://demo.mathesar.org/"
+          target="_blank"
+          aria-label="Live Demo (opens in new tab)"
+        >
           <span>Live Demo</span>
-          <img class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg" alt="Open in new tab" />
+          <img
+            class="inline h-3 align-baseline ml-0.5"
+            src="assets/external-link.svg"
+            alt="Open in new tab"
+          />
         </a>
         <a class="navigation-item" href="faq.html">FAQ</a>
         <a class="navigation-item" href="community.html">Community</a>
@@ -96,31 +113,19 @@
   </div>
 
   <script>
-    // Get all dropdown buttons
     var dropdownButtons = document.querySelectorAll(".dropdown button");
 
-    // Loop through each dropdown button
     dropdownButtons.forEach(function (dropdownButton) {
-      // Add a click event listener to each dropdown button
-      dropdownButton.addEventListener("click", function () {
-        // Get the dropdown menu
-        var dropdownMenu = dropdownButton.nextElementSibling;
-
-        // Toggle the "hidden" class on the dropdown menu
-        dropdownMenu.classList.toggle("hidden");
-      });
-      //close when click outside
-
-      document.addEventListener("click", function (event) {
-        var isClickInside = dropdownButton.contains(event.target);
-
-        if (!isClickInside) {
-          dropdownButton.nextElementSibling.classList.add("hidden");
-        }
-      });
+      dropdownButton.addEventListener("click", toggleDropdown);
     });
 
-    //if url is active then add class to navigation item
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButtons[0].contains(event.target);
+      if (!isClickInside) {
+        hideAllDropdown();
+      }
+    });
+
     var navigationItems = document.querySelectorAll(".navigation-item");
 
     navigationItems.forEach(function (navigationItem) {
@@ -129,18 +134,23 @@
       }
     });
 
-    //if dropdown links are active then add class to dropdown
-    var dropdownToggles = document.querySelectorAll(".dropdown button");
-
-    dropdownToggles.forEach(function (dropdownToggle) {
-      var dropdownLinks =
-        dropdownToggle.nextElementSibling.querySelectorAll("a");
-
-      dropdownLinks.forEach(function (dropdownLink) {
-        if (dropdownLink.href == window.location.href) {
-          dropdownToggle.classList.add("font-bold");
-        }
-      });
+    var dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(function (dropdownLink) {
+      if (dropdownLink.href == window.location.href) {
+        dropdownLink.classList.add("font-bold");
+      }
     });
+
+    function toggleDropdown() {
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.classList.toggle("hidden");
+    }
+
+    function hideAllDropdown() {
+      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      dropdownMenus.forEach(function (dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+      });
+    }
   </script>
 </div>

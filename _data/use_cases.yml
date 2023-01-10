@@ -1,21 +1,18 @@
-- use_case: Prototype New Solutions
-  description: "None"
+- use_case: Manage a collection
+  description:
   image: "screenshot.png"
-- use_case: Inventory Management
-  description: "None"
+- use_case: Plan an event
+  description:
   image: "screenshot.png"
-- use_case: Event Planning
-  description: "None"
+- use_case: Publish a data set
+  description:
   image: "screenshot.png"
-- use_case: Project Management
-  description: "None"
+- use_case: Track a project
+  description:
   image: "screenshot.png"
-- use_case: Expense Tracking
-  description: "None"
+- use_case: Prototype an application
+  description:
   image: "screenshot.png"
-- use_case: CRM Usage
-  description: "None"
-  image: "screenshot.png"
-- use_case: Publish Data Publicly
-  description: "None"
+- use_case: Connect your database
+  description:
   image: "screenshot.png"

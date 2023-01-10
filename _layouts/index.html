@@ -25,7 +25,7 @@
 
     {{ content }}
 
-    <div class="angled dark">
+    <section class="angled dark">
       <div class="p-4 lg:p-0 mx-auto text-center space-y-12 max-w-3xl">
         <div class="space-y-6 w-3/4 mx-auto">
           <h2 class="text-4xl lg:text-5xl font-bold">
@@ -117,9 +117,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="angled bg-stone-300 my-10">
+    <section class="angled bg-stone-300 my-10">
       <div class="container mx-auto space-y-4 max-w-6xl">
         <div class="grid grid-cols-8 gap-8 items-center px-4 lg:px-0">
           <div class="col-span-8 lg:col-span-5 flex flex-col">
@@ -140,9 +140,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-stone-50 py-20">
+    <section class="bg-stone-50 py-20">
       <div class="space-y-8">
         <div class="text-center space-y-2">
           <h3 class="text-4xl font-bold">Use Cases</h3>
@@ -178,25 +178,25 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-stone-200 angled py-16 space-y-8">
-      <div class="max-w-2xl mx-auto space-y-8 px-4 lg:px-0">
+    <section class="bg-stone-200 angled py-16 space-y-8">
+      <div class="max-w-4xl mx-auto space-y-8 px-4 lg:px-0">
         <div class="text-center space-y-4">
           <h3 class="text-4xl font-bold">Mathesar’s approach is unique...</h3>
           <h3 class="text-3xl">We’re not reinventing the wheel</h3>
         </div>
-        <div class="text-center space-y-6">
+        <div class="text-center space-y-10">
           <h4 class="text-3xl font-bold">
             We’re making your existing database more accessible to you – via a
             user-friendly interface.
           </h4>
 
-          <ul class="mx-auto text-left space-y-6">
-            <li class="text-lg flex items-start space-x-4">
+          <ul class="mx-auto text-left gap-12 grid lg:grid-cols-2">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/relationship-icon.png"
                 alt=""
               />
               <div>
@@ -205,10 +205,10 @@
                 have its own set of abstractions.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/time-icon.png"
                 alt=""
               />
               <div>
@@ -220,10 +220,10 @@
                 disruptions.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/view-icon.png"
                 alt=""
               />
               <div>
@@ -234,10 +234,10 @@
                 quick questions.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/wizard-icon.png"
                 alt=""
               />
               <div>
@@ -249,10 +249,10 @@
                 and maintains integrity.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/validation-icon.png"
                 alt=""
               />
               <div>
@@ -261,10 +261,10 @@
                 only data that is valid and consistent.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/sign-icon.png"
                 alt=""
               />
               <div>
@@ -273,10 +273,10 @@
                 icons will guide you along the way.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/postgres-icon.png"
                 alt=""
               />
               <div>
@@ -285,10 +285,10 @@
                 existing tools.
               </div>
             </li>
-            <li class="text-lg flex items-start space-x-4">
+            <li class="text-lg space-y-4">
               <img
-                class="w-12 p-1 shrink-0"
-                src="assets/postgres-icon.svg"
+                class="w-12 h-12"
+                src="assets/chest-icon.png"
                 alt=""
               />
               <div>
@@ -299,10 +299,9 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    {% capture cta_content %} Mathesar’s Alpha release is coming very soon.
-    Please leave your details here to stay updated: {% endcapture %} {% include
+    {% capture cta_content %} Sign up for Mathesar updates.{% endcapture %} {% include
     cta.html content=cta_content title="Find out when you can start using
     Mathesar" %} {% include footer.html %}
 

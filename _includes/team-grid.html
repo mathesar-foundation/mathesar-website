@@ -1,47 +1,48 @@
-<div class="angled light space-y-10">
+<section class="angled light space-y-10 px-4">
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
     <div class="lg:flex space-x-8">
       <p class="text-xl flex-grow">
         Mathesar is a project at the
-        <a href="https://centerofci.org">Center for Complex Interventions</a>, a
-        nonprofit that helps communities translate science into action.
+        <a
+          href="https://centerofci.org"
+          aria-labelledby="Center for Complex Interventions"
+          >Center for Complex Interventions</a
+        >, a nonprofit that helps communities translate science into action.
       </p>
-      <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="" />
+      <img
+        class="w-64 mt-8 mx-auto lg:mt-0"
+        src="assets/cci-logo.svg"
+        alt="Center for Complex Interventions logo"
+      />
     </div>
   </div>
 
-  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto max-w-2xl space-y-2 text-center">
-    <h4 class="text-3xl font-bold">Our team</h4>
-    <p class="text-xl">+ what we personally use databases for</p>
-    <div class="text-lg">
-      <p>
-        The Mathesar team are both open source as well as industry veterans.
-        We've:
+    <div>
+      <h4 class="text-3xl font-bold">The core team</h4>
+      <p class="text-2xl">+ databases in our personal life</p>
+    </div>
+    <div class="space-y-4 text-lg">
+      <p>We're a group of industry veterans with a love of open source. Our core team members have founded startups and worked at a variety of companies – from nonprofits to large multinational companies. We've also led projects in large open source communities like <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and <strong>Ember.js</strong>.
       </p>
-
-      <ul class="list-disc list-inside">
-        <li>Achievement</li>
-        <li>Achievement</li>
-        <li>Achievement</li>
-      </ul>
+      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
     </div>
   </div>
 
   <div
-    class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-12 auto-rows-auto"
+    class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 grid-flow-row lg:gap-12 auto-rows-auto space-y-4"
   >
-    {% for member in site.data.members %}
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/{{member.image}}" class="w-40" alt="" />
+    {% for member in site.data.core_team %}
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/{{member.image}}" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
           <div>{{member.role}}</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+        <div class="italic space-y-2 quote">
           {{member.bio | markdownify}}
         </div>
       </div>
@@ -50,10 +51,16 @@
   </div>
 
   <div class="mx-auto max-w-2xl space-y-8">
-    <h3 class="text-3xl font-bold text-center">Contributors</h3>
+    <h3 class="text-3xl font-bold text-center">Our contributors</h3>
     <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
+
+    <noscript>
+      <a href="https://github.com/centerofci/mathesar/graphs/contributors"
+        >View list of contributors</a
+      >
+    </noscript>
   </div>
-</div>
+</section>
 
 <script>
   const repoOwner = "centerofci";
