@@ -21,26 +21,18 @@
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto max-w-2xl space-y-2 text-center">
-    <h4 class="text-3xl font-bold">Our team</h4>
-    <p class="text-xl">+ what we personally use databases for</p>
+    <h4 class="text-3xl font-bold">The core team</h4>
+    <p class="text-xl">+ databases in our personal life</p>
     <div class="text-lg">
-      <p>
-        The Mathesar team are both open source as well as industry veterans.
-        We've:
+      <p>We're a group of industry veterans with a love of open source. Our core team members have founded startups and worked at a variety of companies – from nonprofits to large multinational companies. We've also led projects in large open source communities like <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and <strong>Ember.js</strong>.
       </p>
-
-      <ul class="list-disc list-inside">
-        <li>Achievement</li>
-        <li>Achievement</li>
-        <li>Achievement</li>
-      </ul>
     </div>
   </div>
 
   <div
     class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 grid-flow-row lg:gap-12 auto-rows-auto space-y-4"
   >
-    {% for member in site.data.members %}
+    {% for member in site.data.core_team %}
     <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
       <img src="assets/{{member.image}}" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
@@ -57,7 +49,7 @@
   </div>
 
   <div class="mx-auto max-w-2xl space-y-8">
-    <h3 class="text-3xl font-bold text-center">Contributors</h3>
+    <h3 class="text-3xl font-bold text-center">Our contributors</h3>
     <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
 
     <noscript>
