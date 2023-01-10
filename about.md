@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Us
+title: About Us - Mathesar
 ---
 
 {% capture subheader %}
