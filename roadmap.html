@@ -7,7 +7,7 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
-    <title>Roadmap</title>
+    <title>Roadmap - Mathesar</title>
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
@@ -24,12 +24,21 @@
   <div>
     <nav
       class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html">Home</a>
+        <a class="navigation-item" href="index.html" aria-current="page"
+          >Home</a
+        >
         <a class="navigation-item" href="about.html">About Us</a>
         <div class="dropdown relative navigation-item">
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="How it works"
+          >
             How it works <img src="assets/dropdown-arrow.svg" alt="" />
           </button>
           <div
@@ -47,10 +56,18 @@
             >
           </div>
         </div>
-        <a class="navigation-item" href="https://demo.mathesar.org/" target="_blank">
+        <a
+          class="navigation-item"
+          href="https://demo.mathesar.org/"
+          target="_blank"
+          aria-label="Live Demo (opens in new tab)"
+        >
           <span>Live Demo</span>
-          <img class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg" alt="Open in new tab" />
+          <img
+            class="inline h-3 align-baseline ml-0.5"
+            src="assets/external-link.svg"
+            alt="Open in new tab"
+          />
         </a>
         <a class="navigation-item" href="faq.html">FAQ</a>
         <a class="navigation-item" href="community.html">Community</a>
@@ -115,31 +132,19 @@
   </div>
 
   <script>
-    // Get all dropdown buttons
     var dropdownButtons = document.querySelectorAll(".dropdown button");
 
-    // Loop through each dropdown button
     dropdownButtons.forEach(function (dropdownButton) {
-      // Add a click event listener to each dropdown button
-      dropdownButton.addEventListener("click", function () {
-        // Get the dropdown menu
-        var dropdownMenu = dropdownButton.nextElementSibling;
-
-        // Toggle the "hidden" class on the dropdown menu
-        dropdownMenu.classList.toggle("hidden");
-      });
-      //close when click outside
-
-      document.addEventListener("click", function (event) {
-        var isClickInside = dropdownButton.contains(event.target);
-
-        if (!isClickInside) {
-          dropdownButton.nextElementSibling.classList.add("hidden");
-        }
-      });
+      dropdownButton.addEventListener("click", toggleDropdown);
     });
 
-    //if url is active then add class to navigation item
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButtons[0].contains(event.target);
+      if (!isClickInside) {
+        hideAllDropdown();
+      }
+    });
+
     var navigationItems = document.querySelectorAll(".navigation-item");
 
     navigationItems.forEach(function (navigationItem) {
@@ -148,19 +153,24 @@
       }
     });
 
-    //if dropdown links are active then add class to dropdown
-    var dropdownToggles = document.querySelectorAll(".dropdown button");
-
-    dropdownToggles.forEach(function (dropdownToggle) {
-      var dropdownLinks =
-        dropdownToggle.nextElementSibling.querySelectorAll("a");
-
-      dropdownLinks.forEach(function (dropdownLink) {
-        if (dropdownLink.href == window.location.href) {
-          dropdownToggle.classList.add("font-bold");
-        }
-      });
+    var dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(function (dropdownLink) {
+      if (dropdownLink.href == window.location.href) {
+        dropdownLink.classList.add("font-bold");
+      }
     });
+
+    function toggleDropdown() {
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.classList.toggle("hidden");
+    }
+
+    function hideAllDropdown() {
+      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      dropdownMenus.forEach(function (dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+      });
+    }
   </script>
 </div>
 </div>
@@ -179,20 +189,20 @@
    
 </div>
 
-<div class="max-w-6xl mx-auto space-y-6 mb-24 text-center">
-    <div class="max-w-3xl mx-auto text-center space-y-6">
-        <h3 class="font-semibold text-3xl">Upcoming Features by Category</h3>
-      <p class="text-xl">
-        Here are some ideas we’re thinking about. Please participate in the
-        linked GitHub discussion if you’d like us to work on a feature!
-      </p>
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Data Types
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+<section class="max-w-6xl mx-auto space-y-6 mb-24 text-center px-8">
+  <div class="max-w-3xl mx-auto text-center space-y-6">
+    <h3 class="font-semibold text-3xl">Upcoming Features by Category</h3>
+    <p class="text-xl">
+      Here are some ideas we’re thinking about. Please participate in the linked
+      GitHub discussion if you’d like us to work on a feature!
+    </p>
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Data Types
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">File / attachment data types</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -259,13 +269,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Forms &amp; Sharing
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Forms &amp; Sharing
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Create and share forms based on tables</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -299,13 +309,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Tables
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Tables
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Exporting tables</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -361,13 +371,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Data Explorer &amp; Explorations
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Data Explorer &amp; Explorations
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Allow explorations to be filtered, sorted, and grouped</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -445,13 +455,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Views &amp; Visualizations
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Views &amp; Visualizations
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Calendar views</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -485,13 +495,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      Users &amp; Permissions
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    Users &amp; Permissions
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Permissions for individual tables and explorations</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -525,13 +535,13 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <h4 class="text-red-600 uppercase font-semibold text-lg">
-      General
-    </h4>
-    <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
-       <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
+  </div>
+  
+  <h4 class="text-red-600 uppercase font-semibold text-lg">
+    General
+  </h4>
+  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+     <div class="h-40 text-center bg-white p-4 shadow-md rounded  flex justify-center flex-col w-full">
   <h3 class="font-semibold text-xl">Improved keyboard shortcuts</h3>
   <div class="mx-auto space-y-4 border">
     <div class="text-xl space-y-6 highlight-content">
@@ -587,14 +597,14 @@
   <a class="text-blue-600 hover:underline" href="">Go to Github Discussion</a>
 </div>
  
-    </div>
-    
-    <p class="text-center">
-      Note: this roadmap is subject to change, based on user needs.
-    </p>
   </div>
+  
+  <p class="text-center">
+    Note: this roadmap is subject to change, based on user needs.
+  </p>
+</section>
 
-<div class="text-center bg-gray-800 angled py-40 text-white dark">
+<section class="text-center bg-gray-800 angled py-40 text-white dark">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
 
@@ -605,7 +615,7 @@
 
     </div>
   </div>
-</div>
+</section>
 
 
    
@@ -621,7 +631,7 @@
     </h3>
 
     <div class="text-lg lg:text-xl">
-<p>Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</p>
+<p>Sign up for Mathesar updates.</p>
 </div>
   </div>
 
@@ -659,25 +669,44 @@
         </a>
         <!--copyright-->
         <div class="text-sm text-gray-100 space-x-3">
-          <span>Center of Complex Interventions © 2022 </span>
+          <a
+            href="https://centerofci.org/"
+            aria-label="Center of Complex Interventions Homepage"
+            >Center of Complex Interventions © 2022</a
+          >
 
-          <a class="text-gray-100 hover:text-gray-600" href="#"
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="privacy.html"
+            aria-label="Privacy Policy"
             >Privacy Policy</a
           >
-          <a class="text-gray-100 hover:text-gray-600" href="#">License</a>
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="license.html"
+            aria-label="License"
+            >License</a
+          >
         </div>
       </div>
-      <div class="ml-auto">
-        <!-- social icons for Github and Twitter -->
+      <nav class="ml-auto">
         <div class="flex space-x-3 text-gray-100">
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://github.com/centerofci/mathesar"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Github"
+          >
             <i class="ri-github-line align-bottom"></i>
           </a>
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://twitter.com/mathesar_org"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Twitter"
+          >
             <i class="ri-twitter-line align-bottom"></i>
           </a>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </footer>

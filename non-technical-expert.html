@@ -7,7 +7,7 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
-    <title>Non-technical expert</title>
+    <title>How it works (non-technical) - Mathesar</title>
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
@@ -24,12 +24,21 @@
   <div>
     <nav
       class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html">Home</a>
+        <a class="navigation-item" href="index.html" aria-current="page"
+          >Home</a
+        >
         <a class="navigation-item" href="about.html">About Us</a>
         <div class="dropdown relative navigation-item">
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="How it works"
+          >
             How it works <img src="assets/dropdown-arrow.svg" alt="" />
           </button>
           <div
@@ -47,10 +56,18 @@
             >
           </div>
         </div>
-        <a class="navigation-item" href="https://demo.mathesar.org/" target="_blank">
+        <a
+          class="navigation-item"
+          href="https://demo.mathesar.org/"
+          target="_blank"
+          aria-label="Live Demo (opens in new tab)"
+        >
           <span>Live Demo</span>
-          <img class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg" alt="Open in new tab" />
+          <img
+            class="inline h-3 align-baseline ml-0.5"
+            src="assets/external-link.svg"
+            alt="Open in new tab"
+          />
         </a>
         <a class="navigation-item" href="faq.html">FAQ</a>
         <a class="navigation-item" href="community.html">Community</a>
@@ -115,31 +132,19 @@
   </div>
 
   <script>
-    // Get all dropdown buttons
     var dropdownButtons = document.querySelectorAll(".dropdown button");
 
-    // Loop through each dropdown button
     dropdownButtons.forEach(function (dropdownButton) {
-      // Add a click event listener to each dropdown button
-      dropdownButton.addEventListener("click", function () {
-        // Get the dropdown menu
-        var dropdownMenu = dropdownButton.nextElementSibling;
-
-        // Toggle the "hidden" class on the dropdown menu
-        dropdownMenu.classList.toggle("hidden");
-      });
-      //close when click outside
-
-      document.addEventListener("click", function (event) {
-        var isClickInside = dropdownButton.contains(event.target);
-
-        if (!isClickInside) {
-          dropdownButton.nextElementSibling.classList.add("hidden");
-        }
-      });
+      dropdownButton.addEventListener("click", toggleDropdown);
     });
 
-    //if url is active then add class to navigation item
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButtons[0].contains(event.target);
+      if (!isClickInside) {
+        hideAllDropdown();
+      }
+    });
+
     var navigationItems = document.querySelectorAll(".navigation-item");
 
     navigationItems.forEach(function (navigationItem) {
@@ -148,19 +153,24 @@
       }
     });
 
-    //if dropdown links are active then add class to dropdown
-    var dropdownToggles = document.querySelectorAll(".dropdown button");
-
-    dropdownToggles.forEach(function (dropdownToggle) {
-      var dropdownLinks =
-        dropdownToggle.nextElementSibling.querySelectorAll("a");
-
-      dropdownLinks.forEach(function (dropdownLink) {
-        if (dropdownLink.href == window.location.href) {
-          dropdownToggle.classList.add("font-bold");
-        }
-      });
+    var dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(function (dropdownLink) {
+      if (dropdownLink.href == window.location.href) {
+        dropdownLink.classList.add("font-bold");
+      }
     });
+
+    function toggleDropdown() {
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.classList.toggle("hidden");
+    }
+
+    function hideAllDropdown() {
+      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      dropdownMenus.forEach(function (dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+      });
+    }
   </script>
 </div>
 </div>
@@ -185,10 +195,10 @@ No technical skills required.</p>
   
   <div class="flex justify-center space-x-4">
 <a href="#" class="button 3 primary p-4 rounded-lg">
-    <span class="text-white text-xl">Stay Updated on Mathesar’s Release</span>
+    <span class="text-white text-xl">Stay Updated about Mathesar</span>
 </a>
 <a href="#" class="button 3 secondary p-4 rounded-lg">
-    <span class="text-white text-xl">Request a Free Installation</span>
+    <span class="text-white text-xl">Open Live Demo</span>
 </a>
 </div>
   
@@ -218,7 +228,7 @@ No technical skills required.</p>
   -->
 </div>
 
-<div class="text-center bg-gray-800 angled py-40 text-white dark">
+<section class="text-center bg-gray-800 angled py-40 text-white dark">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
@@ -240,9 +250,9 @@ No technical skills required.</p>
 
     </div>
   </div>
-</div>
+</section>
 
-<div class="lg:flex bg-stone-300 my-8 px-16 angled">
+<section class="lg:flex bg-stone-300 my-8 px-8 angled">
   <div class="max-w-4xl mx-auto lg:flex lg:space-y-0 space-y-4">
     <img src="assets/ghislaine.jpg" alt="Ghislaine (Mathesar’s Product Designer)" class="h-40 lg:h-64 object-cover mx-auto" />
     <div class="space-y-4 w-3/4 ml-8">
@@ -257,7 +267,7 @@ No technical skills required.</p>
 
 <p>I felt like I was in a piece of software that wasn’t meant for me.</p>
 
-<p>We created Mathesar to be more welcoming. Mathesar sets up data rules that protect people from data errors.</p>
+<p><strong>We created Mathesar to be more welcoming</strong>. Mathesar sets up data rules that protect people from data errors.</p>
 
 <p>It can open up a playground to explore new ideas.”</p>
 
@@ -265,9 +275,9 @@ No technical skills required.</p>
       <p class="font-semibold italic">Ghislaine (Mathesar’s Product Designer)</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="text-center bg-gray-800 angled py-40 text-white light">
+<section class="text-center bg-gray-800 angled py-40 text-white light">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
@@ -288,51 +298,57 @@ It’s an intuitive interface, at a beginner-friendly level.</p>
 
     </div>
   </div>
-</div>
+</section>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/one-source.png" alt="Use Mathesar in tandem with your other tools" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">INTEGRATES WITH YOUR DATA</h4>
     <h3 class="text-3xl mb-4">Use Mathesar in tandem with your other tools</h3>
     <div class="text-lg space-y-2">
-<p>Having your data sources scattered in different places can make analysis difficult.</p>
+<p>Having your <strong>data sources scattered in different places</strong> can make analysis difficult.</p>
 
-<p>Mathesar connects to your existing database. The interface can become a central source of truth to analyze your data.</p>
+<p>Mathesar connects to your existing database. The interface can become a <strong>central source of truth</strong> to analyze your data.</p>
 
 <p>You can have different workflows using the same data – all at the same time.</p>
 </div>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/validation.png" alt="Work with clean, error-free data" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">DATA VALIDATION &amp; CONSISTENCY</h4>
     <h3 class="text-3xl mb-4">Work with clean, error-free data</h3>
     <div class="text-lg space-y-2">
-<p>Duplicates and redundancies are all too common in data entry. This inconsistency can lead to corrupted data – resulting in misguided decisions.</p>
+<p><strong>Duplicates and redundancies</strong> are all too common in data entry. This <strong>inconsistency can lead to corrupted data</strong> – resulting in misguided decisions.</p>
 
 <p>Mathesar allows you to retain strict data structures.</p>
 
-<p>You can easily set up data rules that prevent users from making data errors.
+<p>You can easily <strong>set up data rules</strong> that prevent users from making data errors.
 That’s how you ensure clean, consistent and accurate data records.</p>
 </div>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/explorer.png" alt="Discover new insights with unique views" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">DATA EXPLORER</h4>
     <h3 class="text-3xl mb-4">Discover new insights with unique views</h3>
     <div class="text-lg space-y-2">
-<p>When you want to explore a freeform question about your data – you could face technical obstacles:</p>
+<p>When you want to <strong>explore a freeform question about your data</strong> – you could face technical obstacles:</p>
 
-<p>“What’s the right way to phrase this question?”
-“Which is the right tool for the job?”</p>
+<p><strong>“What’s the right way to phrase this question?”</strong>
+<strong>“Which is the right tool for the job?”</strong></p>
 
-<p>You could even lack easy access to your data.</p>
+<p>You could even <strong>lack easy access to your data</strong>.</p>
 
 <p>Mathesar lets you create views across multiple tables – in just a few clicks. So you can answer your freeform questions quickly. And gain new insights.</p>
 
@@ -340,17 +356,19 @@ That’s how you ensure clean, consistent and accurate data records.</p>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/sync.png" alt="Watch your data sync up and build relationships" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">DATA RELATIONSHIPS</h4>
     <h3 class="text-3xl mb-4">Watch your data sync up and build relationships</h3>
     <div class="text-lg space-y-2">
-<p>You often track the same data – like names, dates, statuses – across many spreadsheets that are not connected.</p>
+<p>You often track the same data – like names, dates, statuses – across many <strong>spreadsheets that are not connected</strong>.</p>
 
-<p>Someone has to manually update this information, over-and-over. This can become a bad use of a person’s work time.</p>
+<p>Someone has to <strong>manually update this information</strong>, over-and-over. This can become a bad use of a person’s work time.</p>
 
-<p>With Mathesar, your data records can “speak” and connect to each other. When you make a change to one table – all your other connected tables will automatically update too.</p>
+<p>With Mathesar, your data records can “speak” and connect to each other. When you make a change to one table – all your other <strong>connected tables will automatically update</strong> too.</p>
 
 <p>So you can adjust and adapt your data records without dedicating too much time.</p>
 
@@ -358,49 +376,54 @@ That’s how you ensure clean, consistent and accurate data records.</p>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/find.png" alt="User-friendly filters to answer quick questions" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">QUICK FILTERS</h4>
     <h3 class="text-3xl mb-4">User-friendly filters to answer quick questions</h3>
     <div class="text-lg space-y-2">
-<p>Sometimes you have one-off questions about your data, but you don’t have a relevant report already available.</p>
+<p>Sometimes you have <strong>one-off questions about your data</strong>, but you don’t have a relevant report already available.</p>
 
 <p>Instead of waiting for your technical collaborator – or ticking hundreds of checkboxes in your custom software – simply search through Mathesar.</p>
 
-<p>You can quickly filter words using conditional logic.</p>
+<p>You can quickly <strong>filter words using conditional logic</strong>.</p>
 </div>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/director.png" alt="Update your data models – in just minutes" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">RESHAPE YOUR DATA STRUCTURE</h4>
     <h3 class="text-3xl mb-4">Update your data models – in just minutes</h3>
     <div class="text-lg space-y-2">
 <p>When your workflow changes, this change should be reflected in your data models.
-But manual changes often take hours, even days.</p>
+But <strong>manual changes often take hours, even days</strong>.</p>
 
-<p>This runs a significant risk of disruption. When your data is paused and not synced-up, you could end up with stale data.</p>
+<p>This runs a significant risk of disruption. When your data is <strong>paused and not synced-up</strong>, you could end up with stale data.</p>
 
-<p>Mathesar saves you time and lets you update data models – in a click.</p>
+<p>Mathesar saves you time and lets you <strong>update data models – in a click</strong>.</p>
 
-<p>So as your workflow evolves, you’re able to adjust your data to accurately. In minutes.</p>
+<p>So as your workflow evolves, you’re able to <strong>adjust your data</strong> too accurately. In minutes.</p>
 </div>
   </div>
 </div>
 
-<div class="feature-card lg:flex gap-8 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
-  <div class="h-80 w-80 shrink-0 bg-gray-200">IMAGE</div>
+<div class="feature-card lg:flex gap-12 max-w-3xl lg:px-0 px-4 mb-20 mx-auto mt-20">
+  <div class="h-80 w-80 shrink-0">
+    <img class="h-full w-full object-cover" src="assets/self-hosted.png" alt="Own your data" />
+  </div>
   <div class="flex-grow">
     <h4 class="text-sm font-bold text-stone-800 uppercase">OPEN SOURCE &amp; SELF-HOSTED</h4>
     <h3 class="text-3xl mb-4">Own your data</h3>
     <div class="text-lg space-y-2">
-<p>Proprietary software companies often look like appealing choices – until you’re locked in their ecosystem.
+<p>Proprietary software companies often look like appealing choices – <strong>until you’re locked in their ecosystem</strong>.
 If you decide to move away, you could lose valuable data. Your data could even be sold off in private deals.
-Mathesar allows you to self-host on your servers. You’ll
-have full control over your data and can choose who has access.
+Mathesar <strong>allows you to self-host on your servers</strong>. You’ll have full control over your data and can choose who has access.
 Easily migrate from Mathesar – or simply go back and forth – anytime you like.</p>
 </div>
   </div>
@@ -420,7 +443,7 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
     </h3>
 
     <div class="text-lg lg:text-xl">
-<p>Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</p>
+<p>Sign up for Mathesar updates.</p>
 </div>
   </div>
 
@@ -458,25 +481,44 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
         </a>
         <!--copyright-->
         <div class="text-sm text-gray-100 space-x-3">
-          <span>Center of Complex Interventions © 2022 </span>
+          <a
+            href="https://centerofci.org/"
+            aria-label="Center of Complex Interventions Homepage"
+            >Center of Complex Interventions © 2022</a
+          >
 
-          <a class="text-gray-100 hover:text-gray-600" href="#"
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="privacy.html"
+            aria-label="Privacy Policy"
             >Privacy Policy</a
           >
-          <a class="text-gray-100 hover:text-gray-600" href="#">License</a>
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="license.html"
+            aria-label="License"
+            >License</a
+          >
         </div>
       </div>
-      <div class="ml-auto">
-        <!-- social icons for Github and Twitter -->
+      <nav class="ml-auto">
         <div class="flex space-x-3 text-gray-100">
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://github.com/centerofci/mathesar"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Github"
+          >
             <i class="ri-github-line align-bottom"></i>
           </a>
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://twitter.com/mathesar_org"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Twitter"
+          >
             <i class="ri-twitter-line align-bottom"></i>
           </a>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </footer>

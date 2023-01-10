@@ -7,7 +7,7 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
-    <title>About Us</title>
+    <title>About Us - Mathesar</title>
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
@@ -24,12 +24,21 @@
   <div>
     <nav
       class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html">Home</a>
+        <a class="navigation-item" href="index.html" aria-current="page"
+          >Home</a
+        >
         <a class="navigation-item" href="about.html">About Us</a>
         <div class="dropdown relative navigation-item">
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="How it works"
+          >
             How it works <img src="assets/dropdown-arrow.svg" alt="" />
           </button>
           <div
@@ -47,10 +56,18 @@
             >
           </div>
         </div>
-        <a class="navigation-item" href="https://demo.mathesar.org/" target="_blank">
+        <a
+          class="navigation-item"
+          href="https://demo.mathesar.org/"
+          target="_blank"
+          aria-label="Live Demo (opens in new tab)"
+        >
           <span>Live Demo</span>
-          <img class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg" alt="Open in new tab" />
+          <img
+            class="inline h-3 align-baseline ml-0.5"
+            src="assets/external-link.svg"
+            alt="Open in new tab"
+          />
         </a>
         <a class="navigation-item" href="faq.html">FAQ</a>
         <a class="navigation-item" href="community.html">Community</a>
@@ -115,31 +132,19 @@
   </div>
 
   <script>
-    // Get all dropdown buttons
     var dropdownButtons = document.querySelectorAll(".dropdown button");
 
-    // Loop through each dropdown button
     dropdownButtons.forEach(function (dropdownButton) {
-      // Add a click event listener to each dropdown button
-      dropdownButton.addEventListener("click", function () {
-        // Get the dropdown menu
-        var dropdownMenu = dropdownButton.nextElementSibling;
-
-        // Toggle the "hidden" class on the dropdown menu
-        dropdownMenu.classList.toggle("hidden");
-      });
-      //close when click outside
-
-      document.addEventListener("click", function (event) {
-        var isClickInside = dropdownButton.contains(event.target);
-
-        if (!isClickInside) {
-          dropdownButton.nextElementSibling.classList.add("hidden");
-        }
-      });
+      dropdownButton.addEventListener("click", toggleDropdown);
     });
 
-    //if url is active then add class to navigation item
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButtons[0].contains(event.target);
+      if (!isClickInside) {
+        hideAllDropdown();
+      }
+    });
+
     var navigationItems = document.querySelectorAll(".navigation-item");
 
     navigationItems.forEach(function (navigationItem) {
@@ -148,19 +153,24 @@
       }
     });
 
-    //if dropdown links are active then add class to dropdown
-    var dropdownToggles = document.querySelectorAll(".dropdown button");
-
-    dropdownToggles.forEach(function (dropdownToggle) {
-      var dropdownLinks =
-        dropdownToggle.nextElementSibling.querySelectorAll("a");
-
-      dropdownLinks.forEach(function (dropdownLink) {
-        if (dropdownLink.href == window.location.href) {
-          dropdownToggle.classList.add("font-bold");
-        }
-      });
+    var dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(function (dropdownLink) {
+      if (dropdownLink.href == window.location.href) {
+        dropdownLink.classList.add("font-bold");
+      }
     });
+
+    function toggleDropdown() {
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.classList.toggle("hidden");
+    }
+
+    function hideAllDropdown() {
+      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      dropdownMenus.forEach(function (dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+      });
+    }
   </script>
 </div>
 </div>
@@ -179,7 +189,7 @@
    
 </div>
 
-<div class="text-center bg-gray-800 angled py-40 text-white dark">
+<section class="text-center bg-gray-800 angled py-40 text-white dark">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
@@ -200,149 +210,150 @@
 
     </div>
   </div>
-</div>
+</section>
 
-<div class="angled light space-y-10">
+<section class="angled light space-y-10 px-4">
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
     <div class="lg:flex space-x-8">
       <p class="text-xl flex-grow">
         Mathesar is a project at the
-        <a href="https://centerofci.org">Center for Complex Interventions</a>, a
-        nonprofit that helps communities translate science into action.
+        <a href="https://centerofci.org" aria-labelledby="Center for Complex Interventions">Center for Complex Interventions</a>, a nonprofit that helps communities translate science into action.
       </p>
-      <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="" />
+      <img class="w-64 mt-8 mx-auto lg:mt-0" src="assets/cci-logo.svg" alt="Center for Complex Interventions logo" />
     </div>
   </div>
 
-  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
   <div class="mx-auto max-w-2xl space-y-2 text-center">
-    <h4 class="text-3xl font-bold">Our team</h4>
-    <p class="text-xl">+ what we personally use databases for</p>
-    <div class="text-lg">
-      <p>
-        The Mathesar team are both open source as well as industry veterans.
-        We've:
+    <div>
+      <h4 class="text-3xl font-bold">The core team</h4>
+      <p class="text-2xl">+ databases in our personal life</p>
+    </div>
+    <div class="space-y-4 text-lg">
+      <p>We're a group of industry veterans with a love of open source. Our core team members have founded startups and worked at a variety of companies – from nonprofits to large multinational companies. We've also led projects in large open source communities like <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and <strong>Ember.js</strong>.
       </p>
-
-      <ul class="list-disc list-inside">
-        <li>Achievement</li>
-        <li>Achievement</li>
-        <li>Achievement</li>
-      </ul>
+      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
     </div>
   </div>
 
-  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-12 auto-rows-auto">
+  <div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 grid-flow-row lg:gap-12 auto-rows-auto space-y-4">
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/kriti.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/kriti.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Kriti Godey</h4>
           <div>Founder &amp; Backend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“My husband and I use a database-backed application to track movies. Movies we own, movies we want to watch, movies we’ve watched. I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!</p>
+        <div class="italic space-y-2 quote">
+          <p>“My husband and I use a database-backed application to <strong>track movies</strong>. Movies we own, movies we want to watch, movies we’ve watched.</p>
+
+<p>I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/sean.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/sean.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Sean Colsen</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+        <div class="italic space-y-2 quote">
           <p>“I use a database for personal finance and budgeting, time tracking, and recipe and grocery management.”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/ghislaine.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/ghislaine.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Ghislaine Guerin</h4>
           <div>Product Designer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
+        <div class="italic space-y-2 quote">
           <p>“I hope to use a database for keeping track of expenses and creating invoices, meal planning, and managing and analyzing feedback, comments, and insights from user research surveys.”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/pavish.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/pavish.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Pavish Kumar Ramani Gopal</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, to monitor individual points of team events, and to record daily tasks for household and work.”</p>
+        <div class="italic space-y-2 quote">
+          <p>“I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, and to record daily tasks for household and work.”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/brent.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/brent.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Brent Moran</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“I aim to use a database for a country cost-of-living plus taxes plus other concerns data project. Tentative name: ‘Country Comparator’.”</p>
+        <div class="italic space-y-2 quote">
+          <p>“I’m using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.</p>
+
+<p>I’m tentatively calling it the <strong>Country Comparator</strong>.”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/mukesh.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/mukesh.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Mukesh Murali</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“I intend to use a database for tracking prices and availability, organizing board game nights, creating MMORPG calculators, cataloging and sharing collections, planning events, organizing photo collections, and storing datasets for machine learning.”</p>
+        <div class="italic space-y-2 quote">
+          <p>“I use calculators <strong>for MMORPG games</strong>, to find the most efficient item to use for doing something in the game.</p>
+
+<p>Since the game has a real-time market, a relational database is really useful for reflecting the price changes across a lot of calculators.”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/dom.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/dom.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Dominykas Mostauskis</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“I use a database for household finance tracking (as an alternative to YNAB and Splitwise), including double-entry bookkeeping, expense splitting, and budgeting; household inventory management; and household task management.”</p>
+        <div class="italic space-y-2 quote">
+          <p>“Mathesar would be a great interface for small <strong>scraping and reporting projects</strong>. e.g. I scraped the data on a poorly-designed government website for making appointments with doctors.</p>
+
+<p>I could query and watch for cancellations, which allowed me to reserve a consultation much sooner”</p>
 
         </div>
       </div>
     </div>
     
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-64">
-      <img src="assets/rajat.jpg" class="w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
+      <img src="assets/rajat.jpg" class="w-24 lg:w-40" alt="" />
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Rajat Vijay</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic border-l-2 pl-4 border-stone-800 space-y-2 quote">
-          <p>“I use a database for personal finance management, including accounting and tracking expenses.”</p>
+        <div class="italic space-y-2 quote">
+          <p>“I use a database for <strong>personal finance management</strong>, including accounting and tracking expenses.”</p>
 
         </div>
       </div>
@@ -351,10 +362,14 @@
   </div>
 
   <div class="mx-auto max-w-2xl space-y-8">
-    <h3 class="text-3xl font-bold text-center">Contributors</h3>
+    <h3 class="text-3xl font-bold text-center">Our contributors</h3>
     <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
+
+    <noscript>
+      <a href="https://github.com/centerofci/mathesar/graphs/contributors">View list of contributors</a>
+    </noscript>
   </div>
-</div>
+</section>
 
 <script>
   const repoOwner = "centerofci";
@@ -391,7 +406,7 @@
   getContributors();
 </script>
 
-<div class="text-center bg-gray-800 angled py-40 text-white lighter">
+<section class="text-center bg-gray-800 angled py-40 text-white lighter">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
@@ -408,9 +423,9 @@
 
 <p>We’re currently funded through the generous support of <strong>Reid Hoffman</strong> and the <strong>Center for Radical Transformation at the Chiba Institute of Technology</strong>.</p>
 
-<div class="flex items-center justify-center space-x-8 mx-auto">
-  <img class="w-32" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation" />
-  <img class="w-80" src="assets/Henkaku_Center.png" alt="Henkaku Center" />
+<div class="lg:flex items-center justify-center lg:space-x-8 mx-auto w-1/2 lg:w-auto text-center">
+  <img class="lg:w-32" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation" />
+  <img class="lg:w-80" src="assets/Henkaku_Center.png" alt="Henkaku Center" />
 </div>
 
 <p>Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We <strong>will not</strong>:</p>
@@ -422,7 +437,7 @@
 
     </div>
   </div>
-</div>
+</section>
 
 
    
@@ -438,7 +453,7 @@
     </h3>
 
     <div class="text-lg lg:text-xl">
-<p>Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</p>
+<p>Sign up for Mathesar updates.</p>
 </div>
   </div>
 
@@ -476,25 +491,44 @@
         </a>
         <!--copyright-->
         <div class="text-sm text-gray-100 space-x-3">
-          <span>Center of Complex Interventions © 2022 </span>
+          <a
+            href="https://centerofci.org/"
+            aria-label="Center of Complex Interventions Homepage"
+            >Center of Complex Interventions © 2022</a
+          >
 
-          <a class="text-gray-100 hover:text-gray-600" href="#"
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="privacy.html"
+            aria-label="Privacy Policy"
             >Privacy Policy</a
           >
-          <a class="text-gray-100 hover:text-gray-600" href="#">License</a>
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="license.html"
+            aria-label="License"
+            >License</a
+          >
         </div>
       </div>
-      <div class="ml-auto">
-        <!-- social icons for Github and Twitter -->
+      <nav class="ml-auto">
         <div class="flex space-x-3 text-gray-100">
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://github.com/centerofci/mathesar"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Github"
+          >
             <i class="ri-github-line align-bottom"></i>
           </a>
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://twitter.com/mathesar_org"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Twitter"
+          >
             <i class="ri-twitter-line align-bottom"></i>
           </a>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </footer>

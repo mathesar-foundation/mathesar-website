@@ -24,12 +24,21 @@
   <div>
     <nav
       class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html">Home</a>
+        <a class="navigation-item" href="index.html" aria-current="page"
+          >Home</a
+        >
         <a class="navigation-item" href="about.html">About Us</a>
         <div class="dropdown relative navigation-item">
-          <button class="flex items-center">
+          <button
+            class="flex items-center"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="How it works"
+          >
             How it works <img src="assets/dropdown-arrow.svg" alt="" />
           </button>
           <div
@@ -47,10 +56,18 @@
             >
           </div>
         </div>
-        <a class="navigation-item" href="https://demo.mathesar.org/" target="_blank">
+        <a
+          class="navigation-item"
+          href="https://demo.mathesar.org/"
+          target="_blank"
+          aria-label="Live Demo (opens in new tab)"
+        >
           <span>Live Demo</span>
-          <img class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg" alt="Open in new tab" />
+          <img
+            class="inline h-3 align-baseline ml-0.5"
+            src="assets/external-link.svg"
+            alt="Open in new tab"
+          />
         </a>
         <a class="navigation-item" href="faq.html">FAQ</a>
         <a class="navigation-item" href="community.html">Community</a>
@@ -115,31 +132,19 @@
   </div>
 
   <script>
-    // Get all dropdown buttons
     var dropdownButtons = document.querySelectorAll(".dropdown button");
 
-    // Loop through each dropdown button
     dropdownButtons.forEach(function (dropdownButton) {
-      // Add a click event listener to each dropdown button
-      dropdownButton.addEventListener("click", function () {
-        // Get the dropdown menu
-        var dropdownMenu = dropdownButton.nextElementSibling;
-
-        // Toggle the "hidden" class on the dropdown menu
-        dropdownMenu.classList.toggle("hidden");
-      });
-      //close when click outside
-
-      document.addEventListener("click", function (event) {
-        var isClickInside = dropdownButton.contains(event.target);
-
-        if (!isClickInside) {
-          dropdownButton.nextElementSibling.classList.add("hidden");
-        }
-      });
+      dropdownButton.addEventListener("click", toggleDropdown);
     });
 
-    //if url is active then add class to navigation item
+    document.addEventListener("click", function (event) {
+      var isClickInside = dropdownButtons[0].contains(event.target);
+      if (!isClickInside) {
+        hideAllDropdown();
+      }
+    });
+
     var navigationItems = document.querySelectorAll(".navigation-item");
 
     navigationItems.forEach(function (navigationItem) {
@@ -148,19 +153,24 @@
       }
     });
 
-    //if dropdown links are active then add class to dropdown
-    var dropdownToggles = document.querySelectorAll(".dropdown button");
-
-    dropdownToggles.forEach(function (dropdownToggle) {
-      var dropdownLinks =
-        dropdownToggle.nextElementSibling.querySelectorAll("a");
-
-      dropdownLinks.forEach(function (dropdownLink) {
-        if (dropdownLink.href == window.location.href) {
-          dropdownToggle.classList.add("font-bold");
-        }
-      });
+    var dropdownLinks = document.querySelectorAll(".dropdown a");
+    dropdownLinks.forEach(function (dropdownLink) {
+      if (dropdownLink.href == window.location.href) {
+        dropdownLink.classList.add("font-bold");
+      }
     });
+
+    function toggleDropdown() {
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.classList.toggle("hidden");
+    }
+
+    function hideAllDropdown() {
+      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      dropdownMenus.forEach(function (dropdownMenu) {
+        dropdownMenu.classList.add("hidden");
+      });
+    }
   </script>
 </div>
 </div>
@@ -211,7 +221,7 @@
     </h3>
 
     <div class="text-lg lg:text-xl">
-<p>Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</p>
+<p>Sign up for Mathesar updates.</p>
 </div>
   </div>
 
@@ -249,25 +259,44 @@
         </a>
         <!--copyright-->
         <div class="text-sm text-gray-100 space-x-3">
-          <span>Center of Complex Interventions © 2022 </span>
+          <a
+            href="https://centerofci.org/"
+            aria-label="Center of Complex Interventions Homepage"
+            >Center of Complex Interventions © 2022</a
+          >
 
-          <a class="text-gray-100 hover:text-gray-600" href="#"
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="privacy.html"
+            aria-label="Privacy Policy"
             >Privacy Policy</a
           >
-          <a class="text-gray-100 hover:text-gray-600" href="#">License</a>
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="license.html"
+            aria-label="License"
+            >License</a
+          >
         </div>
       </div>
-      <div class="ml-auto">
-        <!-- social icons for Github and Twitter -->
+      <nav class="ml-auto">
         <div class="flex space-x-3 text-gray-100">
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://github.com/centerofci/mathesar"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Github"
+          >
             <i class="ri-github-line align-bottom"></i>
           </a>
-          <a href="#" class="hover:text-gray-600 text-2xl transition-colors">
+          <a
+            href="https://twitter.com/mathesar_org"
+            class="hover:text-gray-600 text-2xl transition-colors"
+            aria-label="Visit Mathesar on Twitter"
+          >
             <i class="ri-twitter-line align-bottom"></i>
           </a>
         </div>
-      </div>
+      </nav>
     </div>
   </div>
 </footer>
