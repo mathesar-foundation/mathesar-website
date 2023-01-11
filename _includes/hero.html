@@ -1,37 +1,22 @@
-<div class="hero space-y-8 p-4 lg:p-0 max-w-6xl mx-auto mt-8">
-  <div class="text-center lg:w-3/4 mx-auto">
-    <h4 class="uppercase text-sm">{{include.section}}</h4>
-    <h2 class="text-4xl lg:text-6xl font-bold">{{include.title}}</h2>
+<div class="hero p-4 max-w-screen-xl mx-auto lg:mt-8 lg:grid lg:grid-cols-2 gap-16 space-y-4 lg:space-y-0">
+  <div class="space-y-4">
+    <div class="mx-auto">
+      <h4 class="uppercase text-sm">{{include.section}}</h4>
+      <h2 class="text-4xl lg:text-5xl font-bold">{{include.title}}</h2>
+    </div>
+    <div class="lg:text-xl space-y-2">
+      {{include.content | markdownify}}
+    </div>
+    {% if include.actions %}
+    <div class="lg:flex lg:space-x-4 space-y-2 lg:space-y-0">{{include.actions}}</div>
+    {% endif %}
   </div>
 
-  <div class="lg:text-xl space-y-2 text-center">
-    {{include.content | markdownify}}
-  </div>
-
-  {% if include.actions %}
-  <div class="flex justify-center space-x-4">{{include.actions}}</div>
-  {% endif %}
-
-  <div class="fade-in-image">
+  <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
     <img
       class="border shadow-lg"
       src="{{include.image}}"
       alt="{{include.title}}"
     />
   </div>
-
-  <!--
-  <div class="grid grid-cols-8 gap-8 lg:gap-16">
-    <div class="col-span-8 lg:col-span-3 lg:text-2xl space-y-4">
-      {{include.content | markdownify}}
-    </div>
-    <div class="col-span-8 lg:col-span-5">
-      <img
-        class="border shadow-lg"
-        src="{{include.image}}"
-        alt="{{include.title}}"
-      />
-    </div>
-  </div>
-  -->
 </div>
