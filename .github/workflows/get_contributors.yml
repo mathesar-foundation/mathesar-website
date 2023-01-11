@@ -2,7 +2,6 @@ name: Update project contributor data.
 on:
   schedule:
   - cron: '20 23 * * *'
-  push:
 
 jobs:
   get_contributors:
