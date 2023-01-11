@@ -29,8 +29,6 @@ We want to make existing database functionality more accessible – in a user-fr
 {% capture highlight1 %}
 Mathesar will always be **100% open-source and self-hostable**.
 
-We’re currently funded through the generous support of **Reid Hoffman** and the **Center for Radical Transformation at the Chiba Institute of Technology**.
-
 {% include funder-logos.html %}
 
 Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We **will not**:

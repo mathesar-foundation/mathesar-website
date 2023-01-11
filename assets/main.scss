@@ -120,7 +120,7 @@ p + h3 {
 }
 
 .highlight-content ul {
-  @apply list-disc list-inside my-4 max-w-md mx-auto space-y-4;
+  @apply list-disc list-inside;
 }
 
 .list-check > li:before {
