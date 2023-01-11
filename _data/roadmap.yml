@@ -1,4 +1,5 @@
 - category: Data Types
+  description: Features related to different types of data such as file, lists, location, phone numbers, percentages, and custom JSON editor.
   features:
     - title: File / attachment data types
       discussion_url: https://github.com/centerofci/mathesar/discussions/2188
@@ -13,6 +14,7 @@
     - title: Custom JSON editor
       discussion_url:
 - category: Forms & Sharing
+  description: Features related to creating, sharing and embedding forms, tables and explorations on other websites and making them public.
   features:
     - title: Create and share forms based on tables
       discussion_url:
@@ -21,6 +23,7 @@
     - title: Share tables and explorations publicly
       discussion_url:
 - category: Tables
+  description: Features related to working with tables, such as exporting, importing, calculated columns and dynamic default values.
   features:
     - title: Exporting tables
       discussion_url:
@@ -33,6 +36,7 @@
     - title: Allow dynamic default values
       discussion_url:
 - category: Data Explorer & Explorations
+  description: Features related to exploring and working with data, such as filtering, sorting, editing, and support for natural joins, SQL editor and more.
   features:
     - title: Allow explorations to be filtered, sorted, and grouped
       discussion_url:
@@ -49,6 +53,7 @@
     - title: Include SQL editor in Data Explorer
       discussion_url:
 - category: Views & Visualizations 
+  description: Features related to creating views and visualizations, such as calendar views, Kanban views, and charts & graphs.
   features:
     - title: Calendar views
       discussion_url:
@@ -57,6 +62,7 @@
     - title: Charts & graphs
       discussion_url:
 - category: Users & Permissions 
+  description: Features related to users and permissions, such as permissions for individual tables and explorations, row & column level permissions, and support for Postgres permissions.
   features:
     - title: Permissions for individual tables and explorations
       discussion_url:
@@ -65,6 +71,7 @@
     - title: Support Postgres permissions
       discussion_url:
 - category: General
+  description: Features that don't fit into any of the other categories.
   features:
     - title: Improved keyboard shortcuts
       discussion_url:
