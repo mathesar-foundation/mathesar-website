@@ -15,10 +15,3 @@ subheader=subheader
 %}
 
 {% include roadmap_category.html %}
-
-{% capture highlight1 %}
-Have any feedback or suggestions for features? You can contact us at:
-**[hello@mathesar.org](mailto:hello@mathesar.org)**
-{% endcapture %}
-
-{% include highlight.html content=highlight1 theme='dark'%}
