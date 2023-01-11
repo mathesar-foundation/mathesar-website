@@ -1,0 +1,28 @@
+name: Update project contributor data.
+on:
+  schedule:
+  - cron: '20 23 * * *'
+  push:
+
+jobs:
+  get_contributors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          cd .github/actions/get_contributors/
+          pip install -r requirements.txt
+
+      - name: Update contributors
+        env:
+          MATHESAR_ORG_GITHUB_TOKEN: ${{secrets.MATHESAR_ORG_GITHUB_TOKEN}}
+        run: |
+          cd .github/actions/get_contributors/
+          python get_contributors.py
