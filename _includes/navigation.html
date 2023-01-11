@@ -1,4 +1,4 @@
-<div class=" navigation pt-4 mx-4 border-b-2 border-stone-400">
+<div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-2xl mx-auto space-y-4">
     <a href="index.html">
       <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
@@ -52,7 +52,66 @@
             />
           </a>
           <a class="navigation-item" href="faq.html">FAQ</a>
-          <a class="navigation-item" href="community.html">Community</a>
+
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              Community <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://matrix.to/#/#mathesar:matrix.org"
+                >Matrix
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/community/mailing-lists"
+                >Mailing Lists
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/home"
+              >
+                Wiki
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://github.com/centerofci/mathesar"
+              >
+                Github
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+            </div>
+          </div>
+
           <a class="navigation-item" href="roadmap.html">Roadmap</a>
         </div>
         <div class="ml-auto">
