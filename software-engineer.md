@@ -148,9 +148,9 @@ This can remove the dependency layer on you and allow for more exploration into 
 
 {% capture screenshot_text %}
 
-You and your collaborators can quickly enter data. View it. Slice it.
+### You and your collaborators can quickly enter data. View it. Slice it.
 
-Move data around. Transform and filter it.
+#### Move data around. Transform and filter it.
 
 While still retaining structure and consistency.
 

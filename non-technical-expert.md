@@ -36,9 +36,9 @@ You’re often left without clear answers to these important questions:
 
 {% capture screenshot_text %}
 
-Gain flexibility and speed working with your data.
+### Gain flexibility and speed working with your data
 
-Protect your team from making data errors. And find quick insights – without waiting.
+#### Protect your team from making data errors. And find quick insights – without waiting
 
 If you can work a spreadsheet, you can get the hang of Mathesar.
 

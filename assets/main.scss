@@ -179,3 +179,15 @@ p + h3 {
   height: 50%;
   background: linear-gradient(180deg, rgba(var(--light-color), 0) 0%, rgba(var(--light-color), 0.8) 100%);
 }
+
+.screenshot-content {
+  @apply text-xl;
+}
+
+.screenshot-content h3 {
+  @apply text-3xl font-black;
+}
+
+.screenshot-content h4 {
+  @apply text-2xl font-semibold;
+}

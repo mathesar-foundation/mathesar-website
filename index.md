@@ -25,11 +25,11 @@ actions=hero_actions %}
 
 {% capture content %}
 
-Now you can rapidly enter data.
+### Now you can rapidly enter data.
 
-And analyze that data.
+### And analyze that data.
 
-And ensure your data is fully valid.
+### And ensure your data is fully valid.
 
 Using a self-hostable and accessible interface.
 
