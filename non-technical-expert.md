@@ -11,8 +11,8 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated on Mathesar’s Release" url="" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="" %}
+{% include button.html style="primary" label="Stay Updated on Our Release" external=true url="https://wiki.mathesar.org/en/community/mailing-lists" %}
+{% include button.html style="secondary" label="Request a Free Installation" url="free-install.html" %}
 {% endcapture %}
 
 {% include hero.html

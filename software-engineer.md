@@ -11,8 +11,8 @@ Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Star us on GitHub" url="" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="" %}
+{% include button.html style="primary" label="Star us on GitHub" external=true url="https://github.com/centerofci/mathesar" %}
+{% include button.html style="secondary" label="Request a Free Installation" url="free-install.html" %}
 {% endcapture %}
 
 {% include hero.html
