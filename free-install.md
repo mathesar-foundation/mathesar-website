@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Free install
+title: Request installation - Mathesar
 ---
 
 {% capture subheader %}
