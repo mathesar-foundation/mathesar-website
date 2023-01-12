@@ -1,21 +1,15 @@
 Mathesar:
   - use_case: Manage a collection
-    description:
     image: "screenshot.png"
   - use_case: Plan an event
-    description:
     image: "screenshot.png"
   - use_case: Publish a data set
-    description:
     image: "screenshot.png"
   - use_case: Track a project
-    description:
     image: "screenshot.png"
   - use_case: Prototype an application
-    description:
     image: "screenshot.png"
   - use_case: Connect your database
-    description:
     image: "screenshot.png"
 Software engineer:
   - use_case: Prototype New Ideas
