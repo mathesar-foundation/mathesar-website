@@ -7,16 +7,16 @@
   </div>
 
   <div
-    class="lg:flex items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
   >
-    <form action="https://formspree.io/f/xlevqoza" method="POST">
+    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
       <input
         type="email"
         name="email"
-        class="bg-white rounded p-2 flex-grow border text-black"
+        class="bg-white rounded p-2 w-full border text-black"
         placeholder="{{include.placeholder}}"
       />
-      <button class="button secondary p-2 rounded" type="submit">
+      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
         Sign Up
       </button>
     </form>

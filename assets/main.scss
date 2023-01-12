@@ -119,10 +119,6 @@ p + h3 {
   @apply text-blue-400;
 }
 
-.highlight-content ul {
-  @apply list-disc list-inside;
-}
-
 .list-check > li:before {
   content: "✔";
   @apply text-green-500 mr-4;
