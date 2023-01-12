@@ -77,7 +77,7 @@ Mathesar and Baserow are both open-source tools that provide spreadsheet-like in
 - Mathesar allows you to **connect to your existing Postgres database**, Baserow does not support this feature.
 - Mathesar's UI allows you to set up **relationships that are reflected at the database level**. Our interface also surfaces existing relationships, making it easier to understand how your data fits together.
 - Mathesar's Data Explorer allows you to **build queries across multiple tables**, which is not currently possible with Baserow.
-- Mathesar offers all its functionality **for free**, with no plans to change that, Baserow's open-core model has some features that require payment, even for self-hosted installations.
+- Mathesar offers **all its functionality for free**, with no plans to change that, Baserow's open-core model has some features that require payment, even for self-hosted installations.
 
 It's important to note that Baserow is a more mature project than Mathesar and supports features like formulas, plugins, real-time collaboration, etc. that Mathesar does not currently support. We do plan to build these features, see [our roadmap](roadmap.html) for more details.
 
