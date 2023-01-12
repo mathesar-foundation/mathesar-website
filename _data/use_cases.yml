@@ -11,7 +11,7 @@ Mathesar:
     image: "screenshot.png"
   - use_case: Connect your database
     image: "screenshot.png"
-Software engineer:
+How it works (technical) - Mathesar:
   - use_case: Prototype New Ideas
     description: "Quickly fill in any gaps using Mathesar’s interface"
     image: "screenshot.png"

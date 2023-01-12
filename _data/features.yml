@@ -8,7 +8,7 @@ Mathesar:
       icon: "rocket-icon"
     - title: "Self-hosted"
       icon: "shield-icon"
-Non-technical expert:
+How it works (non-technical) - Mathesar:
   features:
     - title: "Individuals & Organizations"
       icon: "postgres-icon"
@@ -18,7 +18,7 @@ Non-technical expert:
       icon: "rocket-icon"
     - title: "Intuitive UX"
       icon: "shield-icon"
-Software engineer:
+How it works (technical) - Mathesar:
   features:
     - title: "Direct Postgres Access"
       icon: "postgres-icon"
