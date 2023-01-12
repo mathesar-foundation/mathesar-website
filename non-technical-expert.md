@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Non-technical expert
+title: How it works (non-technical) - Mathesar
 parent: How it works
 ---
 {% capture hero_content %}

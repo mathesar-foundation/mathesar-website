@@ -1,6 +1,6 @@
 ---
 layout: legal
-title: License
+title: License - Mathesar
 ---
 
 ## License

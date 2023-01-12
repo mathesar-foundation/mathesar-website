@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Software engineer
+title: How it works (technical) - Mathesar
 parent: How it works
 ---
 

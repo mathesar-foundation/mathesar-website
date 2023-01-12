@@ -1,6 +1,6 @@
 ---
 layout: legal
-title: Privacy
+title: Privacy policy - Mathesar
 ---
 
 ## Privacy

@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: FAQ
+title: FAQ - Mathesar
 ---
 
 {% capture faq_section1 %}
