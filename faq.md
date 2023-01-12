@@ -33,10 +33,11 @@ This lack of structure can leave spreadsheet users without answers to these ques
 - How do I quickly store and visualize the relationships between my data?
 - How do I evolve the structure of my data as my needs change?
 
-These problems can be solved by databases.
+These problems are solved by databases.
 
-Mathesar is about halfway between a database and spreadsheet.
-Like a database, Mathesar’s interface can provide structure – so your team can’t mistakenly enter inaccurate data. This helps ensure that your data is consistent and clean.
+Mathesar combines the benefits of a database and the ease of use of a spreadsheet.
+
+Mathesar’s interface can provide structure – so your team can’t mistakenly enter inaccurate data. This helps ensure that your data is consistent and clean.
 
 And like a spreadsheet, Mathesar has an accessible beginner-friendly interface.
 
