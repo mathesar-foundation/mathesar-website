@@ -10,11 +10,15 @@ body {
 }
 
 p > a {
-  @apply text-blue-600;
+  @apply text-blue-600 bg-blue-200 bg-opacity-25 px-1;
 }
 
 p > a:hover {
   @apply text-blue-800 underline;
+}
+
+.highlighted {
+  @apply bg-stone-400 bg-opacity-25 px-1;
 }
 
 .md-content {
