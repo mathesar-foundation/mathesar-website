@@ -104,7 +104,7 @@ Mathesar is **free, licensed under GPLv3**. There are **no paid plans**.
 
 Although we’re new, we already have **dozens of contributors**. If you’re interested, **you can also contribute**.
 
-**We work in public** – you can check out what our team is doing on [GitHub](https://github.com/centerofci/mathesar) and [Matrix](https://matrix.to/#/#mathesar:matrix.org). And via our [mailing lists](community).
+**We work in public** – you can check out what our team is doing on [GitHub](https://github.com/centerofci/mathesar) and [Matrix](https://wiki.mathesar.org/en/community/matrix). And via our [mailing lists](https://wiki.mathesar.org/en/community/mailing-lists).
 {% endcapture %}
 
 {% include feature.html
