@@ -22,20 +22,6 @@ image='assets/screenshot.png' actions=actions %}
 
 {% include ribbon.html %}
 
-{% capture quote %}
-"At my previous job, business experts relied on me to **create reports** for them, every single day.
-
-But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
-{% endcapture %}
-
-{%
-include quote.html
-excerpt='I experienced collaboration issues every day.'
-author='Pavish - Mathesar’s Frontend Developer'
-quote=quote
-image='pavish.jpg'
-%}
-
 {% capture highlight1 %}
 
 You can ensure data integrity. Perform quick
@@ -160,9 +146,9 @@ This can remove the dependency layer on you and allow for more exploration into 
     image='assets/explorer.png'
 %}
 
----
+{% capture screenshot_text %}
 
-{% capture highlight_3 %}
+You and your collaborators can quickly enter data. View it. Slice it.
 
 Move data around. Transform and filter it.
 
@@ -170,17 +156,29 @@ While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include highlight.html header='You and your collaborators can quickly enter data. View it. Slice it' content=highlight_3 theme='dark' separator=false %}
+{% include screenshot.html theme="dark" content=screenshot_text %}
+
+{% capture quote %}
+"At my previous job, business experts relied on me to **create reports** for them, every single day.
+
+But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
+{% endcapture %}
+
+{%
+include quote.html
+excerpt='I experienced collaboration issues every day.'
+author='Pavish - Mathesar’s Frontend Developer'
+quote=quote
+image='pavish.jpg'
+%}
 
 {%include usecases.html%}
 
 {% capture highlight3 %}
-
-Migrate your data any time you want to. Or simply go back and forth from the interface.
 
 - Use Mathesar to set up a **backend** for your custom application.
 - Mathesar can work as **frontend** to existing databases, without altering your data.
 
 {% endcapture %}
 
-{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='lighter' separator=true %}
+{% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='light' separator=true %}
