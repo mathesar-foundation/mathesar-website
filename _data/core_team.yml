@@ -38,9 +38,7 @@
   image: dom.jpg
   role: Backend Developer
   bio: |+
-    "Mathesar would be a great interface for small **scraping and reporting projects**. e.g. I scraped the data on a poorly-designed government website for making appointments with doctors.
-    
-    I could query and watch for cancellations, which allowed me to reserve a consultation much sooner"
+    "Mathesar would be great for **scraping and reporting**. For example, I scraped a poorly-done government website for making appointments with doctors. That allowed me to query reservation slots, watch for cancellations, and book a consultation much earlier than I otherwise could have."
 - name: Rajat Vijay 
   image: rajat.jpg
   role: Frontend Developer
