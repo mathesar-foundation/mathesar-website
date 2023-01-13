@@ -33,55 +33,55 @@ This lack of structure can leave spreadsheet users without answers to these ques
 - How do I quickly store and visualize the relationships between my data?
 - How do I evolve the structure of my data as my needs change?
 
-These problems can be solved by databases.
+These problems are solved by databases.
 
-Mathesar is about halfway between a database and spreadsheet.
-Like a database, Mathesar’s interface can provide structure – so your team can’t mistakenly enter inaccurate data. This helps ensure that your data is consistent and clean.
+Mathesar combines the benefits of a database and the ease of use of a spreadsheet.
+
+Mathesar’s interface can provide structure – so your team can’t mistakenly enter inaccurate data. This helps ensure that your data is consistent and clean.
 
 And like a spreadsheet, Mathesar has an accessible beginner-friendly interface.
 
 ### How is Mathesar different from Airtable?
+Mathesar is similar to Airtable in that it provides a spreadsheet-like interface for working with data. However, Mathesar offers several advantages over Airtable and other cloud-based solutions:
 
-Airtable is a mature solution and offers more features than Mathesar. That said, Mathesar offers you multiple advantages:
+- **Open source and self-hosted**: Mathesar is open source, which means you can run it on your own servers and have full control over your data.
+- **SQL queries**: Mathesar allows you to connect to your database and run SQL queries, providing more flexibility in how you work with your data.
+- **Postgres ecosystem**: Mathesar can be used alongside any tool that connects to Postgres databases, allowing you to leverage the power of the Postgres ecosystem.
+- **Data ownership**: Mathesar's data is independent of the web interface, so you can keep your database even if you stop using the UI – no migration needed.
+- **Data validation and integrity**: Mathesar allows for stronger data validation and data integrity, ensuring that your data is clean and consistent.
+- **Flexible data models**: Mathesar's data models can be changed with just a few clicks, providing more flexibility than Airtable's reconfiguration process.
+- **Data Explorer**: Mathesar's Data Explorer allows you to create views from multiple tables easily, a feature not currently offered by Airtable or similar cloud-based solutions.
 
-- Mathesar is open source and self-hosted – you can run it on your own servers.
-- You can connect to your Mathesar database and run SQL queries.
-- You can use Mathesar alongside the ecosystem of Postgres tools, i.e. you don’t have to depend on the integrations that Airtable allows for.
-- You can keep your data even if you stop using Mathesar. Your data is separate from the interface and is therefore in your ownership.
-- Mathesar allows you to ensure stronger data **validation** and data **integrity** (clean, consistent data).
-- **Changing** your data models in Mathesar can take you just a few clicks. Whereas Airtable’s reconfiguration process is much more limited.
-- Mathesar’s Data Explorer lets you create **views from multiple tables** easily. Airtable does not currently offer this feature.
+Airtable is a mature solution that has been around for a while and as such offers more features than Mathesar. However, Mathesar's open-source and self-hosted approach still offers several advantages, such as full control over your data and the ability to connect to your database and run SQL queries.
 
 These points also apply to similar cloud-based solutions – including SeaTable, Google Tables and Microsoft Lists.
 
 ### How is Mathesar different from NocoDB?
 
-We firmly believe that the more open-source tools, the better! So we have lots of respect for the NocoDB team’s accomplishments.
+Mathesar and NocoDB are both open source tools that provide an interface to existing databases, but they have some differences in terms of approach and functionality.
 
-Both Mathesar and NocoDB provide an interface to existing databases, but here’s how we take a different approach:
+- Mathesar is **specifically designed for PostgreSQL databases** and allows for a deeper level of support for PostgreSQL features. NocoDB, on the other hand, supports connecting to multiple database backends.
+- Mathesar's UI reflects the features of the underlying database and **doesn't introduce any abstractions**. NocoDB, however, has column types that only work at the UI level, which could limit the flexibility of working with the data in other tools.
+- Mathesar's UI allows you to set up **relationships that are reflected at the database level**. Our interface also surfaces existing relationships, making it easier to understand how your data fits together.
+- Mathesar's Data Explorer lets you build **queries across multiple tables**, a feature not currently offered by NocoDB.
+- Mathesar offers functionality to help you **update your data models in a couple of clicks**.
 
-- Mathesar is a UI to PostgreSQL databases. Whereas NocoDB supports connecting to MySQL, MSSQL, and SQLite DBs. This means that Mathesar can support PostgreSQL features at a richer level.
-- Mathesar’s UI is built directly around the features within Postgres. There are no abstractions that could prevent users from working with the same data in other tools outside Mathesar.
-- Relationships set up in Mathesar’s UI will reflect at the database level Mathesar’s UX can help you understand underlying relationships in your data.
-- Mathesar’s Data Explorer lets you build queries across multiple tables. NocoDB doesn’t currently offer this feature.
-- Changing your data models in Mathesar can take you just a few clicks .Schema migrations in NocoDB involve a manual process.
+It's important to note that NocoDB is a more mature solution than Mathesar and offers features like webhooks, integrations, notifications, etc. that Mathesar does not currently support. We do plan to build these features, see [our roadmap](roadmap.html) for more details.
 
-Note: NocoDB is a more mature solution than Mathesar and supports features like webhooks, integrations, notifications, etc. that Mathesar does not currently support.
-
-Please see our roadmap for more info on Mathesar’s upcoming features.
+The open-source community is strengthened by the presence of tools like NocoDB and we're glad to see them tackling similar issues as Mathesar.
 
 ### How is Mathesar different from Baserow?
 
-They’re both open source tools, but Mathesar’s approach is different from Baserow:
+Mathesar and Baserow are both open-source tools that provide spreadsheet-like interface for working with data, but they have some key differences in terms of functionality and approach:
 
-- You cannot connect an existing database to Baserow – whereas you can connect your Postgres database to Mathesar.
-- Relationships in Baserow do not reflect at the database level. Baserow has its own abstractions so what shows up as a "linked field" is not actually a database relationship. Mathesar has no abstractions. What you see in the UI is what you get in the database.
-- You cannot make views across different tables using Baserow. Whereas Mathesar’s Data Explorer allows you to see one view of different tables in your database.
-- Baserow has some paid premium features, even for self-hosted installations. All of - Mathesar's features are available for free.
+- Mathesar allows you to **connect to your existing Postgres database**, Baserow does not support this feature.
+- Mathesar's UI allows you to set up **relationships that are reflected at the database level**. Our interface also surfaces existing relationships, making it easier to understand how your data fits together.
+- Mathesar's Data Explorer allows you to **build queries across multiple tables**, which is not currently possible with Baserow.
+- Mathesar offers **all its functionality for free**, with no plans to change that, Baserow's open-core model has some features that require payment, even for self-hosted installations.
 
-Note: Baserow is a more mature project than Mathesar and supports features like plugins, real-time collaboration, etc that Mathesar does not currently support.
+It's important to note that Baserow is a more mature project than Mathesar and supports features like formulas, plugins, real-time collaboration, etc. that Mathesar does not currently support. We do plan to build these features, see [our roadmap](roadmap.html) for more details.
 
-Please see our roadmap for more info on Mathesar’s upcoming features.
+Having tools like Baserow in the open-source community strengthens the ecosystem and we are glad to see them working on similar problems as Mathesar.
 {% endcapture %}
 
 

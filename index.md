@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: default
 title: Mathesar
 ---
 
@@ -20,3 +20,28 @@ your data - in one open source interface' section='Open Source Database Interfac
 actions=hero_actions %}
 
 {% include ribbon.html %}
+
+{%include bullet_list.html%}
+
+{% capture content %}
+
+### Now you can rapidly enter data.
+
+### *And* analyze that data.
+
+### *And* ensure your data is fully valid.
+
+Using a self-hostable and accessible interface.
+
+{% endcapture %}
+
+{%include screenshot.html theme="light" content=content %}
+
+{%include usecases.html %}
+
+{%include feature_list.html %}
+
+{%capture cta_content %}
+Mathesar’s Alpha release is coming very soon.
+Please leave your details here to stay updated:
+{% endcapture %}

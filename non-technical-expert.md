@@ -11,14 +11,16 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated about Mathesar" url="" %}
-{% include button.html style="secondary" label="Open Live Demo" url="" %}
+{% include button.html style="primary" label="Stay Updated on Our Release" external=true url="https://wiki.mathesar.org/en/community/mailing-lists" %}
+{% include button.html style="secondary" label="Request a Free Installation" url="free-install.html" %}
 {% endcapture %}
 
 {% include hero.html
 title='Enter quick data and find answers to your questions – independently'
 section='Open Source Database Interface' content=hero_content
 image='assets/screenshot.png' actions=actions %}
+
+{% include ribbon.html %}
 
 {% capture highlight_1 %}
 
@@ -32,38 +34,21 @@ You’re often left without clear answers to these important questions:
 
 {% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark'%}
 
-{% capture quote %}
-“When developers would give me access to software, my immediate instinct was “don’t break anything!”
+{% capture screenshot_text %}
 
-Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?
+### Gain flexibility and speed working with your data
 
-I felt like I was in a piece of software that wasn’t meant for me.
-
-**We created Mathesar to be more welcoming**. Mathesar sets up data rules that protect people from data errors.
-
-It can open up a playground to explore new ideas."
-{% endcapture %}
-
-{%
-include quote.html
-excerpt='I felt like a guest in the developers’ space.'
-author='Ghislaine (Mathesar’s Product Designer)'
-quote=quote
-image='ghislaine.jpg'
-%}
-
-{% capture highlight_2 %}
-
-Protect your team from making data errors. And find quick insights – without waiting.
+#### Protect your team from making data errors. And find quick insights – without waiting
 
 If you can work a spreadsheet, you can get the hang of Mathesar.
+
 It’s an intuitive interface, at a beginner-friendly level.
 
 But unlike a spreadsheet – you can now work more easily with structured, clean data.
 
 {% endcapture %}
 
-{% include highlight.html header='Gain flexibility and speed working with your data' content=highlight_2 theme='light' %}
+{% include screenshot.html theme="light" content=screenshot_text %}
 
 {% capture capture_1 %}
 Having your **data sources scattered in different places** can make analysis difficult.
@@ -179,4 +164,24 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
     title='Own your data'
     content=capture_7
     image='assets/self-hosted.png'
+%}
+
+{% capture quote %}
+“When developers would give me access to software, my immediate instinct was “don’t break anything!”
+
+Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?
+
+I felt like I was in a piece of software that wasn’t meant for me.
+
+We created Mathesar to be more welcoming. Mathesar sets up data rules that protect people from data errors.
+
+It can open up a playground to explore new ideas."
+{% endcapture %}
+
+{%
+include quote.html
+excerpt='I felt like a guest in the developers’ space.'
+author='Ghislaine (Mathesar’s Product Designer)'
+quote=quote
+image='ghislaine.jpg'
 %}
