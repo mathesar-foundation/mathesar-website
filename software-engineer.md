@@ -176,8 +176,9 @@ image='pavish.jpg'
 
 {% capture highlight3 %}
 
-- Use Mathesar to set up a **backend** for your custom application.
-- Mathesar can work as **frontend** to existing databases, without altering your data.
+Use Mathesar to set up a **backend** for your custom application.
+
+Mathesar can work as **frontend** to existing databases, without altering your data.
 
 {% endcapture %}
 

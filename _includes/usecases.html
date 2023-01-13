@@ -12,19 +12,26 @@
       class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0"
     >
       <div
-        class="lg:w-80 shrink-0 gap-1 lg:space-y-1 flex lg:block flex-wrap justify-center"
+        class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center"
       >
         {% for item in site.data.use_cases[page.title] %}
-        <button
-          class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
-          onclick="updateScreenshot('{{item.image}}')"
-        >
-          {{item.use_case}}
-        </button>
+       
+          <button
+            class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
+            onclick="updateScreenshot('{{item.image}}')"
+          >
+            {{item.use_case}}
+          </button>
 
-        {% if item.description %}
-        <div class="use-case-description hidden">{{item.description}}</div>
-        {% endif %} {% endfor %}
+          {% if item.description %}
+          <div
+            class="use-case-description py-4 pl-4 hidden"
+          >
+            {{item.description}}
+          </div>
+          {% endif %}
+      
+        {% endfor %}
       </div>
 
       <div
