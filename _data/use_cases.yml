@@ -1,18 +1,30 @@
-- use_case: Manage a collection
-  description:
-  image: "screenshot.png"
-- use_case: Plan an event
-  description:
-  image: "screenshot.png"
-- use_case: Publish a data set
-  description:
-  image: "screenshot.png"
-- use_case: Track a project
-  description:
-  image: "screenshot.png"
-- use_case: Prototype an application
-  description:
-  image: "screenshot.png"
-- use_case: Connect your database
-  description:
-  image: "screenshot.png"
+Mathesar:
+  - use_case: Manage a collection
+    image: "screenshot.png"
+  - use_case: Plan an event
+    image: "screenshot.png"
+  - use_case: Publish a data set
+    image: "screenshot.png"
+  - use_case: Track a project
+    image: "screenshot.png"
+  - use_case: Prototype an application
+    image: "screenshot.png"
+  - use_case: Connect your database
+    image: "screenshot.png"
+How it works (technical) - Mathesar:
+  - use_case: Prototype New Ideas
+    description: "Quickly fill in any gaps using Mathesar’s interface"
+    image: "screenshot.png"
+  - use_case: Database Admin Interface
+    description: "Gain different views of your data"
+    image: "screenshot.png"
+  - use_case: Publish Data Sets
+    description: "Let other people explore your data freely"
+    image: "screenshot.png"
+  - use_case: Data Consolidation
+    description: "Bring data from different sources into a single format"
+    image: "screenshot.png"
+  - use_case: Project Management
+  - use_case: Tracking Expenses
+  - use_case: Event Planning
+  - use_case: CRM Usage

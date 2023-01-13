@@ -1,4 +1,5 @@
 - category: Data Types
+  description: Improved data type support, including new data types and enhanced support for existing ones.
   features:
     - title: File / attachment data types
       discussion_url: https://github.com/centerofci/mathesar/discussions/2188
@@ -10,9 +11,12 @@
       discussion_url:
     - title: Percentage data type
       discussion_url:
+    - title: Barcode data type
+      discussion_url:
     - title: Custom JSON editor
       discussion_url:
-- category: Forms & Sharing
+- category: Improved Collaboration
+  description: Features that improve collaborating on data with other users or the general public.
   features:
     - title: Create and share forms based on tables
       discussion_url:
@@ -20,7 +24,10 @@
       discussion_url:
     - title: Share tables and explorations publicly
       discussion_url:
-- category: Tables
+    - title: Real-time collaboration
+      discussion_url:
+- category: Table Improvements
+  description: Improved functionality for working with tables.
   features:
     - title: Exporting tables
       discussion_url:
@@ -33,14 +40,11 @@
     - title: Allow dynamic default values
       discussion_url:
 - category: Data Explorer & Explorations
+  description: Improvements to the Data Explorer interface.
   features:
-    - title: Allow explorations to be filtered, sorted, and grouped
-      discussion_url:
     - title: Improve filtering options in Data Explorer
       discussion_url:
-    - title: Use formulas in explorations
-      discussion_url:
-    - title: Make data in explorations editable
+    - title: Add support for calculated columns to the Data Explorer
       discussion_url:
     - title: Support dragging & dropping columns in Data Explorer
       discussion_url:
@@ -48,7 +52,19 @@
       discussion_url:
     - title: Include SQL editor in Data Explorer
       discussion_url:
-- category: Views & Visualizations 
+    - title: AI-assisted explorations using natural language prompts
+      discussion_url:
+- category: Exploration Improvements
+  description: Improved functionality for working with saved explorations.
+  features:
+    - title: Allow explorations to be filtered, sorted, and grouped
+      discussion_url:
+    - title: Allow data in explorations to be edited
+      discussion_url:
+    - title: UI support for database views
+      discussion_url:
+- category: Visualizations 
+  description: Data visualization and representation capabilities beyond standard table/grid views.
   features:
     - title: Calendar views
       discussion_url:
@@ -56,7 +72,17 @@
       discussion_url:
     - title: Charts & graphs
       discussion_url:
+- category: Data Modeling Improvements
+  description: Features that enable easier data re-organization and structural changes.
+  features:
+    - title: Suggest data modeling improvements automatically
+      discussion_url:
+    - title: Ability to convert list data into a related table
+      discussion_url:
+    - title: Visual representation of relationships between data
+      discussion_url:
 - category: Users & Permissions 
+  description: Improved user & permissions management features.
   features:
     - title: Permissions for individual tables and explorations
       discussion_url:
@@ -64,9 +90,25 @@
       discussion_url:
     - title: Support Postgres permissions
       discussion_url:
-- category: General
+    - title: SSO (single sign-on) support
+      discussion_url:
+- category: Improvements for Developers
+  description: Features to help software developers easily extend and integrate Mathesar into their projects.
+  features:
+    - title: API documentation
+      discussion_url:
+    - title: Plugin architecture for new data types
+      discussion_url:
+    - title: API v1
+      discussion_url:
+- category: Workflow Optimization
+  description: Features that improve general workflow and speed up actions
   features:
     - title: Improved keyboard shortcuts
+      discussion_url:
+    - title: Support for touch devices
+      discussion_url:
+    - title: Command palette for common actions
       discussion_url:
     - title: Undo & redo for data editing operations
       discussion_url:
@@ -74,5 +116,9 @@
       discussion_url:
     - title: Show dependencies when deleting objects
       discussion_url:
-    - title: Real-time collaboration
+    - title: Mobile apps
+      discussion_url:
+    - title: Desktop app
+      discussion_url:
+    - title: Project templates
       discussion_url:

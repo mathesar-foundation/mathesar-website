@@ -1,3 +1,11 @@
-<a href="#" class="button {{include.size}} {{include.style}} p-4 rounded-lg">
-    <span class="text-white text-xl">{{include.label}}</span>
+<a href="{{include.url}}" class="button {{include.size}} text-center {{include.style}} p-3 rounded-lg" {% if include.external %} target="_blank" {% endif %}>
+    <span class="text-white text-lg">{{include.label}}</span>
+
+    {% if include.external %}
+    <img
+    class="inline h-3 align-baseline ml-0.5 invert"
+    src="assets/external-link.svg"
+    alt="Open in new tab"
+    />
+    {% endif %}
 </a>

@@ -1,5 +1,5 @@
 <div
-  class="h-40 text-center bg-white p-4 shadow-md rounded {{include.theme}} flex justify-center flex-col w-full"
+  class="h-40 text-center bg-white p-4 shadow-lg border-stone-200 border-t-4 space-y-1 rounded {{include.theme}} flex justify-center flex-col w-full"
 >
   <h3 class="font-semibold text-xl">{{include.header}}</h3>
   <div class="mx-auto space-y-4 border">
@@ -8,5 +8,10 @@
     </div>
   </div>
 
-  <a class="text-blue-600 hover:underline" href="{{include.url}}">Go to Github Discussion</a>
+  <a class="button bg-blue-600 text-sm text-white w-max mx-auto py-1 px-3 rounded hover:bg-blue-500" href="{{include.url}}">View Discussion
+    <img
+    class="inline h-3 align-baseline ml-0.5 invert"
+    src="assets/external-link.svg"
+    alt="Open in new tab"
+  /></a>
 </div>

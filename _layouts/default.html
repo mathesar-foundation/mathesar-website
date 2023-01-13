@@ -11,28 +11,17 @@
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
   </head>
-  <body class="bg-stone-50 text-gray-800">
+  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
     <div>{% include navigation.html %}</div>
 
-  
     {{ content }}
-   
-
-{% capture cta_content %}
-Sign up for Mathesar updates.
-{% endcapture %}
-    
-{% include cta.html content=cta_content title="Find out when you can start using Mathesar" %}
-{% include footer.html %}
-
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
+    {% include cta.html %}
+    {% include footer.html %}
 
   <script>
     // when feature-card element add flex inverse to odd elements

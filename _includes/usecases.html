@@ -1,77 +1,83 @@
-<section class="angled light px-8">
-  <div class="mx-auto space-y-10 max-w-4xl">
-    <h3 class="text-3xl text-center font-bold">Use Cases</h3>
-
-    <div class="grid lg:grid-cols-2 gap-16 text-center">
-      <div class="space-y-4">
-        <div class="bg-stone-400 h-40"></div>
-        <div>
-          <h4 class="text-2xl font-bold">Prototype New Ideas</h4>
-          <p class="text-xl">
-            Quickly fill in any gaps using Mathesar’s interface
-          </p>
-        </div>
-        <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-        <p class="text-lg">
-            Prototype experiences quickly. Swap Mathesar in for the parts you haven’t built yet so you can speed up your workflow.
-        </p>
-      </div>
-      <div class="space-y-4">
-        <div class="bg-stone-400 h-40"></div>
-        <div>
-          <h4 class="text-2xl font-bold">Database Admin Interface</h4>
-          <p class="text-xl">
-            Gain different views of your data
-          </p>
-        </div>
-        <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-        <p class="text-lg">
-            Open up access to your existing Postgres database – giving non-technical collaborators the freedom to enter data or explore new insights.
-            <br/><br/>They can query data across multiple tables.
-        </p>
-      </div>
-      <div class="space-y-4">
-        <div class="bg-stone-400 h-40"></div>
-        <div>
-          <h4 class="text-2xl font-bold">Publish Data Sets</h4>
-          <p class="text-xl">
-            Let other people explore your data freely
-          </p>
-        </div>
-        <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-        <p class="text-lg">
-            Exporting your data as CSVs often causes your data to lose some integrity.<br/> 
-            Publishing your data using Mathesar’s interface allows you to retain your data’s schema and format.<br/><br/>
-            Users can use the interface to explore your data and find insights. 
-        </p>
-      </div>
-      <div class="space-y-4">
-        <div class="bg-stone-400 h-40"></div>
-        <div>
-          <h4 class="text-2xl font-bold">Data Consolidation</h4>
-          <p class="text-xl">
-            Bring data from different sources into a single format
-          </p>
-        </div>
-        <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-        <p class="text-lg">
-            Import data from multiple sources and consolidate them into a single format.<br/> 
-            Set up constraints at the column level to ensure data validation and integrity for new data.
-            
-        </p>
-      </div>
-    </div>
+<section class="bg-stone-50 py-20">
+  <div class="space-y-8">
     <div class="text-center space-y-2">
-      <h4 class="text-xl font-bold">You could also use Mathesar to:</h4>
-      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
-      <ul>
-        <li>Manage a project</li>
-        <li>Track expenses</li>
-        <li>Plan an event</li>
-        <li>Set up a custom CRM</li>
-        <li>...and a lot more!</li>
-      </ul>
-      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
+      <h3 class="text-4xl font-bold">Use Cases</h3>
+      <p class="text-xl">
+        Here's what you could set up in your first
+        <span class="font-semibold">30 mins</span> of using Mathesar:
+      </p>
+    </div>
+    <div class="w-40 border-t-2 border-stone-200 mx-auto"></div>
+    <div
+      class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0"
+    >
+      <div
+        class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center"
+      >
+        {% for item in site.data.use_cases[page.title] %}
+       
+          <button
+            class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
+            onclick="updateScreenshot('{{item.image}}')"
+          >
+            {{item.use_case}}
+          </button>
+
+          {% if item.description %}
+          <div
+            class="use-case-description py-4 pl-4 hidden"
+          >
+            {{item.description}}
+          </div>
+          {% endif %}
+      
+        {% endfor %}
+      </div>
+
+      <div
+        class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
+      >
+        <img
+          class="rounded-lg shadow-lg screenshot"
+          src="assets/{{site.data.use_cases[page.title][0].image}}"
+          alt=""
+        />
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+  window.addEventListener("load", function () {
+    var buttons = document.querySelectorAll(".use-case-button");
+    if (buttons.length > 0) {
+      buttons[0].classList.add("bg-stone-200", "font-semibold");
+      var activeDescription = buttons[0].nextElementSibling;
+      if (activeDescription) {
+        activeDescription.classList.remove("hidden");
+      }
+    }
+  });
+
+  function updateScreenshot(imageUrl) {
+    var buttons = document.querySelectorAll(".use-case-button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("bg-stone-200", "font-semibold");
+      var description = buttons[i].nextElementSibling;
+      if (description) {
+        description.classList.add("hidden");
+      }
+    }
+
+    var button = event.target.closest(".use-case-button");
+    if (button) {
+      button.classList.add("bg-stone-200", "font-semibold");
+      document.querySelector(".screenshot").src = "assets/" + imageUrl;
+
+      var activeDescription = button.nextElementSibling;
+      if (activeDescription) {
+        activeDescription.classList.remove("hidden");
+      }
+    }
+  }
+</script>

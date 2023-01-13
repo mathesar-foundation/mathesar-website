@@ -10,11 +10,15 @@ body {
 }
 
 p > a {
-  @apply text-blue-600;
+  @apply text-blue-600 bg-blue-200 bg-opacity-25 px-1;
 }
 
 p > a:hover {
   @apply text-blue-800 underline;
+}
+
+.highlighted {
+  @apply bg-stone-400 bg-opacity-25 px-1 font-bold;
 }
 
 .md-content {
@@ -119,10 +123,6 @@ p + h3 {
   @apply text-blue-400;
 }
 
-.highlight-content ul {
-  @apply list-disc list-inside my-4 max-w-md mx-auto space-y-4;
-}
-
 .list-check > li:before {
   content: "✔";
   @apply text-green-500 mr-4;
@@ -166,7 +166,7 @@ p + h3 {
 }
 
 .fade-in-image {
-  @apply w-full object-cover object-center relative z-0 lg:h-[28rem] h-48;
+  @apply object-cover object-center relative z-0;
 }
 
 .fade-in-image img {
@@ -180,6 +180,18 @@ p + h3 {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 80%;
   background: linear-gradient(180deg, rgba(var(--light-color), 0) 0%, rgba(var(--light-color), 0.8) 100%);
+}
+
+.screenshot-content {
+  @apply text-xl;
+}
+
+.screenshot-content h3 {
+  @apply text-3xl font-black;
+}
+
+.screenshot-content h4 {
+  @apply text-2xl font-semibold;
 }
