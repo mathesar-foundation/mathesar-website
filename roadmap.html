@@ -982,23 +982,22 @@
     <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
-  <div
-    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
-  >
-    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
-      <input
+  <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
+    <form id="signup-form" class="flex-col" action="https://formspree.io/f/xlevqoza" method="POST">
+      <div>
+        <input
         type="email"
         name="email"
         class="bg-white rounded p-2 w-full border text-black"
         placeholder=""
       />
-      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
-        Sign Up
-      </button>
+      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      </div>
+      <p class="success-text hidden"></p>
+      <p class="error-text hidden"></p>
     </form>
   </div>
 </div>
-
     <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
@@ -1068,26 +1067,101 @@
 </footer>
 
 
-    <script>
-      // when feature-card element add flex inverse to odd elements
-      const featureCards = document.querySelectorAll(".feature-card");
-      featureCards.forEach((card, index) => {
-        if (index % 2 !== 0) {
-          card.classList.add("flex-row-reverse");
-        }
-      });
-    </script>
+  <script>
+    // when feature-card element add flex inverse to odd elements
+    const featureCards = document.querySelectorAll(".feature-card");
+    featureCards.forEach((card, index) => {
+      if (index % 2 !== 0) {
+        card.classList.add("flex-row-reverse");
+      }
+    });
+  </script>
 
-    <script
-      async
-      defer
-      src="https://scripts.simpleanalyticscdn.com/latest.js"
-    ></script>
-    <noscript
-      ><img
-        src="https://queue.simpleanalyticscdn.com/noscript.gif"
-        alt=""
-        referrerpolicy="no-referrer-when-downgrade"
-    /></noscript>
-  </body>
+  <script>
+    // Formspree forms AJAX request script
+
+    function sendFormDataToFormspree(event, form) {
+      const data = new FormData(event.target);
+
+      return fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            form.reset();
+          } else {
+            throw new Error("");
+          }
+        })
+        .catch((error) => {
+          throw new Error("");
+        });
+    }
+
+    function loadingStateManager(formId) {
+      const buttonElement = document.querySelector(
+        `#${formId} button[type="submit"]`
+      );
+      const originalText = buttonElement.innerHTML;
+      return {
+        setLoading: function () {
+          buttonElement.innerHTML = "Loading...";
+          buttonElement.disabled = true;
+        },
+        unsetLoading: function () {
+          buttonElement.innerHTML = originalText;
+          buttonElement.disabled = false;
+        },
+      };
+    }
+
+    function showSuccessText(formId) {
+      const successText = document.querySelector(`#${formId} .success-text`);
+      successText.innerHTML = "Thanks for your submission!";
+      successText.style.display = "block";
+      setTimeout(() => {
+        successText.style.display = "none";
+      }, 5000);
+    }
+
+    function showErrorText(formId) {
+      const errorText = document.querySelector(`#${formId} .error-text`);
+      errorText.innerHTML = "Oops! There was a problem submitting your form";
+      errorText.style.display = "block";
+      setTimeout(() => {
+        errorText.style.display = "none";
+      }, 5000);
+    }
+
+    // Event setup for signup form
+    const signupFormId = "signup-form";
+    const signupForm = document.getElementById(signupFormId);
+    function handleSignupFormSubmit(event) {
+      event.preventDefault();
+      const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+      setLoading();
+      sendFormDataToFormspree(event, signupForm)
+        .then(() => showSuccessText(signupFormId))
+        .catch(() => showErrorText(signupFormId))
+        .finally(unsetLoading);
+    }
+    signupForm.addEventListener("submit", handleSignupFormSubmit);
+
+    // Event setup for free install form
+    const freeInstallFormId = "free-install-form";
+    const freeInstallForm = document.getElementById(freeInstallFormId);
+    function handleFreeInstallFormSubmit(event) {
+      event.preventDefault();
+      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
+      setLoading();
+      sendFormDataToFormspree(event, freeInstallForm)
+        .then(() => showSuccessText(freeInstallFormId))
+        .catch(() => showErrorText(freeInstallFormId))
+        .finally(unsetLoading);
+    }
+    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
+
+  </script>
 </html>

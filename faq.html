@@ -409,23 +409,22 @@
     <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
-  <div
-    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
-  >
-    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
-      <input
+  <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
+    <form id="signup-form" class="flex-col" action="https://formspree.io/f/xlevqoza" method="POST">
+      <div>
+        <input
         type="email"
         name="email"
         class="bg-white rounded p-2 w-full border text-black"
         placeholder=""
       />
-      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
-        Sign Up
-      </button>
+      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      </div>
+      <p class="success-text hidden"></p>
+      <p class="error-text hidden"></p>
     </form>
   </div>
 </div>
-
     
     <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
   <div class="max-w-screen-xl mx-auto space-y-8">
