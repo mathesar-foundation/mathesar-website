@@ -9,15 +9,19 @@
     <div class="text-lg lg:text-xl">{{include.content | markdownify}}</div>
   </div>
 
-  <div class="lg:flex items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form action="https://formspree.io/f/xlevqoza" method="POST">
-      <input
+  <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
+    <form id="signup-form" class="flex-col" action="https://formspree.io/f/xlevqoza" method="POST">
+      <div>
+        <input
         type="email"
         name="email"
         class="bg-white rounded p-2 flex-grow border text-black"
         placeholder="{{include.placeholder}}"
       />
       <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      </div>
+      <p class="success-text hidden"></p>
+      <p class="error-text hidden"></p>
     </form>
   </div>
 </div>

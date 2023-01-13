@@ -43,4 +43,92 @@ Sign up for Mathesar updates.
       }
     });
   </script>
+
+  <script>
+    // Formspree forms AJAX request script
+
+    function sendFormDataToFormspree(event, form) {
+      const data = new FormData(event.target);
+
+      return fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            form.reset();
+          } else {
+            throw new Error("");
+          }
+        })
+        .catch((error) => {
+          throw new Error("");
+        });
+    }
+
+    function loadingStateManager(formId) {
+      const buttonElement = document.querySelector(
+        `#${formId} button[type="submit"]`
+      );
+      const originalText = buttonElement.innerHTML;
+      return {
+        setLoading: function () {
+          buttonElement.innerHTML = "Loading...";
+          buttonElement.disabled = true;
+        },
+        unsetLoading: function () {
+          buttonElement.innerHTML = originalText;
+          buttonElement.disabled = false;
+        },
+      };
+    }
+
+    function showSuccessText(formId) {
+      const successText = document.querySelector(`#${formId} .success-text`);
+      successText.innerHTML = "Thanks for your submission!";
+      successText.style.display = "block";
+      setTimeout(() => {
+        successText.style.display = "none";
+      }, 5000);
+    }
+
+    function showErrorText(formId) {
+      const errorText = document.querySelector(`#${formId} .error-text`);
+      errorText.innerHTML = "Oops! There was a problem submitting your form";
+      errorText.style.display = "block";
+      setTimeout(() => {
+        errorText.style.display = "none";
+      }, 5000);
+    }
+
+    // Event setup for signup form
+    const signupFormId = "signup-form";
+    const signupForm = document.getElementById(signupFormId);
+    function handleSignupFormSubmit(event) {
+      event.preventDefault();
+      const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+      setLoading();
+      sendFormDataToFormspree(event, signupForm)
+        .then(() => showSuccessText(signupFormId))
+        .catch(() => showErrorText(signupFormId))
+        .finally(unsetLoading);
+    }
+    signupForm.addEventListener("submit", handleSignupFormSubmit);
+
+    // Event setup for free install form
+    const freeInstallFormId = "free-install-form";
+    const freeInstallForm = document.getElementById(freeInstallFormId);
+    function handleFreeInstallFormSubmit(event) {
+      event.preventDefault();
+      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
+      setLoading();
+      sendFormDataToFormspree(event, freeInstallForm)
+        .then(() => showSuccessText(freeInstallFormId))
+        .catch(() => showErrorText(freeInstallFormId))
+        .finally(unsetLoading);
+    }
+    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
+
+  </script>
 </html>
