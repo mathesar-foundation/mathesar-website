@@ -11,121 +11,231 @@
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  </head>
-  <body class="bg-stone-50 text-gray-800">
-    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-8">
-  <a href="index.html">
-    <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-  </a>
-  <div>
-    <nav
-      class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
-      role="navigation"
-      aria-label="Main Navigation"
-    >
-      <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html" aria-current="page"
-          >Home</a
-        >
-        <a class="navigation-item" href="about.html">About Us</a>
-        <div class="dropdown relative navigation-item">
-          <button
-            class="flex items-center"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-label="How it works"
-          >
-            How it works <img src="assets/dropdown-arrow.svg" alt="" />
-          </button>
-          <div
-            class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
-          >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="software-engineer.html"
-              >Software Engineer</a
-            >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="non-technical-expert.html"
-              >Non-Technical Expert</a
-            >
-          </div>
-        </div>
-        <a
-          class="navigation-item"
-          href="https://demo.mathesar.org/"
-          target="_blank"
-          aria-label="Live Demo (opens in new tab)"
-        >
-          <span>Live Demo</span>
-          <img
-            class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg"
-            alt="Open in new tab"
-          />
-        </a>
-        <a class="navigation-item" href="faq.html">FAQ</a>
-        <a class="navigation-item" href="community.html">Community</a>
-        <a class="navigation-item" href="roadmap.html">Roadmap</a>
-      </div>
-      <div class="ml-auto">
-        <a class="navigation-item" href="free-install.html"
-          >Request Free Installation</a
-        >
-      </div>
-    </nav>
 
-    <div class="lg:hidden">
-      <div class="dropdown relative navigation-item">
-        <button class="flex items-center w-full">
-          Menu <img src="assets/dropdown-arrow.svg" alt="" />
-        </button>
-        <div
-          class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
-        >
-          <a class="text-lg whitespace-nowrap hover:underline" href="index.html"
+  </head>
+  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+    <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
+  <div class="max-w-screen-xl mx-auto space-y-4">
+    <a href="index.html">
+      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
+    </a>
+    <div>
+      <nav
+        class="items-center text-lg hidden lg:flex"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <div class="space-x-6 flex items-center">
+          <a class="navigation-item" href="index.html" aria-current="page"
             >Home</a
           >
-          <a class="text-lg whitespace-nowrap hover:underline" href="about.html"
-            >About Us</a
-          >
+          <a class="navigation-item" href="about.html">About Us</a>
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="software-engineer.html"
+                >Software Engineer</a
+              >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="non-technical-expert.html"
+                >Non-Technical Expert</a
+              >
+            </div>
+          </div>
           <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="software-engineer.html"
-            >How it works - Software Engineer</a
+            class="navigation-item"
+            href="https://demo.mathesar.org/"
+            target="_blank"
+            aria-label="Live Demo (opens in new tab)"
           >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="non-technical-expert.html"
-          >
-            How it works - Non-Technical Expert</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="#"
-            >Live Demo</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
-            >FAQ</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="community.html"
-            >Community</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="roadmap.html"
-            >Roadmap</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="free-install.html"
+            <span>Live Demo</span>
+            <img
+              class="inline h-3 align-baseline ml-0.5"
+              src="assets/external-link.svg"
+              alt="Open in new tab"
+            />
+          </a>
+          <a class="navigation-item" href="faq.html">FAQ</a>
+
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              Community <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://matrix.to/#/#mathesar:matrix.org"
+                >Matrix
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/community/mailing-lists"
+                >Mailing Lists
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/home"
+              >
+                Wiki
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://github.com/centerofci/mathesar"
+              >
+                Github
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+            </div>
+          </div>
+
+          <a class="navigation-item" href="roadmap.html">Roadmap</a>
+        </div>
+        <div class="ml-auto">
+          <a class="navigation-item" href="free-install.html"
             >Request Free Installation</a
           >
+        </div>
+      </nav>
+
+      <div class="lg:hidden">
+        <div class="dropdown relative navigation-item">
+          <button class="flex items-center w-full">
+            Menu <img src="assets/dropdown-arrow.svg" alt="" />
+          </button>
+          <div
+            class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
+          >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="about.html"
+              >About Us</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="software-engineer.html"
+              >How it works - Software Engineer</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="non-technical-expert.html"
+            >
+              How it works - Non-Technical Expert</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="#"
+              >Live Demo</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
+              >FAQ</a
+            >
+
+            <div class="text-lg whitespace-nowrap"
+              >Community</div
+            >
+            <div class="pl-4">
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://matrix.to/#/#mathesar:matrix.org"
+              >Community - Matrix
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/community/mailing-lists"
+              >Community - Mailing Lists
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/home"
+            >
+            Community - Wiki
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://github.com/centerofci/mathesar"
+            >
+            Community - Github
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+          </div>
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="roadmap.html"
+              >Roadmap</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="free-install.html"
+              >Request Free Installation</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -175,10 +285,9 @@
 </div>
 </div>
 
-  
     
-<div class="max-w-4xl space-y-8 mx-auto p-4 mt-8 lg:p-0 mb-8 lg:mb-24 text-center">
-  <h2 class="font-bold text-3xl lg:text-5xl ">What is Mathesar?</h2>
+<div class="max-w-2xl space-y-8 mx-auto px-4 py-8 mt-8 mb-8 lg:mb-24">
+  <h2 class="font-bold text-3xl lg:text-5xl text-center">What is Mathesar?</h2>
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
   
   <div class="text-lg lg:text-2xl space-y-4">
@@ -189,11 +298,11 @@
    
 </div>
 
-<section class="text-center bg-gray-800 angled py-40 text-white dark">
+<section class="bg-gray-800 angled py-40 text-white dark">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
-      <h3 class="font-semibold text-3xl">Our mission</h3>
+      <h3 class="font-semibold text-3xl text-center">Our mission</h3>
       
     </div>
     
@@ -224,14 +333,19 @@
     </div>
   </div>
 
-
   <div class="mx-auto max-w-2xl space-y-2 text-center">
     <div>
       <h4 class="text-3xl font-bold">The core team</h4>
       <p class="text-2xl">+ databases in our personal life</p>
     </div>
     <div class="space-y-4 text-lg">
-      <p>We're a group of industry veterans with a love of open source. Our core team members have founded startups and worked at a variety of companies – from nonprofits to large multinational companies. We've also led projects in large open source communities like <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and <strong>Ember.js</strong>.
+      <p>
+        We're a group of industry veterans with a love of open source. Our core
+        team members have founded startups and worked at a variety of companies
+        – from nonprofits to large multinational companies. We've also led
+        projects in large open source communities like
+        <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and
+        <strong>Ember.js</strong>.
       </p>
       <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
     </div>
@@ -244,14 +358,12 @@
       <div class="space-y-4">
         <div>
           <h4 class="text-xl font-semibold">Kriti Godey</h4>
-          <div>Founder &amp; Backend Developer</div>
+          <div>Founder &amp; Project Lead</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“My husband and I use a database-backed application to <strong>track movies</strong>. Movies we own, movies we want to watch, movies we’ve watched.</p>
+        <div class="italic space-y-2 quote"><p>“My husband and I use a database-backed application to <strong>track movies</strong>. Movies we own, movies we want to watch, movies we’ve watched.</p>
 
 <p>I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!”</p>
-
-        </div>
+</div>
       </div>
     </div>
     
@@ -262,10 +374,8 @@
           <h4 class="text-xl font-semibold">Sean Colsen</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I use a database for personal finance and budgeting, time tracking, and recipe and grocery management.”</p>
-
-        </div>
+        <div class="italic space-y-2 quote"><p>“I use a database for personal finance and budgeting, time tracking, and recipe and grocery management.”</p>
+</div>
       </div>
     </div>
     
@@ -276,10 +386,8 @@
           <h4 class="text-xl font-semibold">Ghislaine Guerin</h4>
           <div>Product Designer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I hope to use a database for keeping track of expenses and creating invoices, meal planning, and managing and analyzing feedback, comments, and insights from user research surveys.”</p>
-
-        </div>
+        <div class="italic space-y-2 quote"><p>“I hope to use a database for keeping track of expenses and creating invoices, meal planning, and managing and analyzing feedback, comments, and insights from user research surveys.”</p>
+</div>
       </div>
     </div>
     
@@ -290,10 +398,8 @@
           <h4 class="text-xl font-semibold">Pavish Kumar Ramani Gopal</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, and to record daily tasks for household and work.”</p>
-
-        </div>
+        <div class="italic space-y-2 quote"><p>“I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, and to record daily tasks for household and work.”</p>
+</div>
       </div>
     </div>
     
@@ -304,12 +410,10 @@
           <h4 class="text-xl font-semibold">Brent Moran</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I’m using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.</p>
+        <div class="italic space-y-2 quote"><p>“I’m using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.</p>
 
 <p>I’m tentatively calling it the <strong>Country Comparator</strong>.”</p>
-
-        </div>
+</div>
       </div>
     </div>
     
@@ -320,12 +424,10 @@
           <h4 class="text-xl font-semibold">Mukesh Murali</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I use calculators <strong>for MMORPG games</strong>, to find the most efficient item to use for doing something in the game.</p>
+        <div class="italic space-y-2 quote"><p>“I use calculators <strong>for MMORPG games</strong>, to find the most efficient item to use for doing something in the game.</p>
 
 <p>Since the game has a real-time market, a relational database is really useful for reflecting the price changes across a lot of calculators.”</p>
-
-        </div>
+</div>
       </div>
     </div>
     
@@ -336,10 +438,8 @@
           <h4 class="text-xl font-semibold">Dominykas Mostauskis</h4>
           <div>Backend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“Mathesar would be great for <strong>scraping and reporting</strong>. For example, I scraped a poorly-done government website for making appointments with doctors. That allowed me to query reservation slots, watch for cancellations, and book a consultation much earlier than I otherwise could have.”</p>
-
-        </div>
+        <div class="italic space-y-2 quote"><p>“Mathesar would be great for <strong>scraping and reporting</strong>. For example, I scraped a poorly-done government website for making appointments with doctors. That allowed me to query reservation slots, watch for cancellations, and book a consultation much earlier than I otherwise could have.”</p>
+</div>
       </div>
     </div>
     
@@ -350,22 +450,342 @@
           <h4 class="text-xl font-semibold">Rajat Vijay</h4>
           <div>Frontend Developer</div>
         </div>
-        <div class="italic space-y-2 quote">
-          <p>“I use a database for <strong>personal finance management</strong>, including accounting and tracking expenses.”</p>
-
-        </div>
+        <div class="italic space-y-2 quote"><p>“I use a database for <strong>personal finance management</strong>, including accounting and tracking expenses.”</p>
+</div>
       </div>
     </div>
     
   </div>
 
-  <div class="mx-auto max-w-2xl space-y-8">
+  <div class="mx-auto max-w-4xl space-y-8">
     <h3 class="text-3xl font-bold text-center">Our contributors</h3>
-    <ul class="flex flex-wrap justify-center" id="contributor-list"></ul>
+    <div class="flex items-center gap-2 flex-wrap justify-center">
+      
 
-    <noscript>
-      <a href="https://github.com/centerofci/mathesar/graphs/contributors">View list of contributors</a>
-    </noscript>
+      <a href="https://github.com/pavish" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/pavish.png" alt="Pavish Kumar" title="Pavish Kumar" />
+      </a>
+
+      
+
+      <a href="https://github.com/silentninja" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/silentninja.png" alt="Mukesh" title="Mukesh" />
+      </a>
+
+      
+
+      <a href="https://github.com/seancolsen" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/seancolsen.png" alt="Sean Colsen" title="Sean Colsen" />
+      </a>
+
+      
+
+      <a href="https://github.com/mathemancer" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/mathemancer.png" alt="Brent Moran" title="Brent Moran" />
+      </a>
+
+      
+
+      <a href="https://github.com/dmos62" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/dmos62.png" alt="Dominykas Mostauskis" title="Dominykas Mostauskis" />
+      </a>
+
+      
+
+      <a href="https://github.com/kgodey" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/kgodey.png" alt="Kriti Godey" title="Kriti Godey" />
+      </a>
+
+      
+
+      <a href="https://github.com/eito-fis" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/eito-fis.png" alt="Eamon Ito-Fisher" title="Eamon Ito-Fisher" />
+      </a>
+
+      
+
+      <a href="https://github.com/rajatvijay" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/rajatvijay.png" alt="RAJAT VIJAY" title="RAJAT VIJAY" />
+      </a>
+
+      
+
+      <a href="https://github.com/Anish9901" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Anish9901.png" alt="Anish Umale" title="Anish Umale" />
+      </a>
+
+      
+
+      <a href="https://github.com/mr-gabe49" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/mr-gabe49.png" alt="Gabriel Sotomayor" title="Gabriel Sotomayor" />
+      </a>
+
+      
+
+      <a href="https://github.com/Jyuart" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Jyuart.png" alt="Yurii Palaida" title="Yurii Palaida" />
+      </a>
+
+      
+
+      <a href="https://github.com/Jinxiao0302" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Jinxiao0302.png" alt="Jinxiao Li" title="Jinxiao Li" />
+      </a>
+
+      
+
+      <a href="https://github.com/Cronus1007" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Cronus1007.png" alt="Cronus " title="Cronus " />
+      </a>
+
+      
+
+      <a href="https://github.com/ghislaineguerin" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/ghislaineguerin.png" alt="Ghislaine Guerin" title="Ghislaine Guerin" />
+      </a>
+
+      
+
+      <a href="https://github.com/A1O" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/A1O.png" alt="A1O" title="A1O" />
+      </a>
+
+      
+
+      <a href="https://github.com/dhruvkb" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/dhruvkb.png" alt="Dhruv Bhanushali" title="Dhruv Bhanushali" />
+      </a>
+
+      
+
+      <a href="https://github.com/linzhou-zhong" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/linzhou-zhong.png" alt="Linzhou" title="Linzhou" />
+      </a>
+
+      
+
+      <a href="https://github.com/asharonbaltazar" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/asharonbaltazar.png" alt="asharonbaltazar" title="asharonbaltazar" />
+      </a>
+
+      
+
+      <a href="https://github.com/pegnott" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/pegnott.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/ManishShah120" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/ManishShah120.png" alt="Manish Kumar Shah" title="Manish Kumar Shah" />
+      </a>
+
+      
+
+      <a href="https://github.com/rajeshkumarrs" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/rajeshkumarrs.png" alt="Rajesh" title="Rajesh" />
+      </a>
+
+      
+
+      <a href="https://github.com/abhishak3" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/abhishak3.png" alt="Abhishek Pandey" title="Abhishek Pandey" />
+      </a>
+
+      
+
+      <a href="https://github.com/powellc" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/powellc.png" alt="Colin Powell" title="Colin Powell" />
+      </a>
+
+      
+
+      <a href="https://github.com/VFermat" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/VFermat.png" alt="Vitor Grando Eller" title="Vitor Grando Eller" />
+      </a>
+
+      
+
+      <a href="https://github.com/priyang12" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/priyang12.png" alt="Priyang" title="Priyang" />
+      </a>
+
+      
+
+      <a href="https://github.com/vrutik2809" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/vrutik2809.png" alt="Vrutik Prajapati" title="Vrutik Prajapati" />
+      </a>
+
+      
+
+      <a href="https://github.com/yankevn" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/yankevn.png" alt="Kevin Yan" title="Kevin Yan" />
+      </a>
+
+      
+
+      <a href="https://github.com/kid-116" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/kid-116.png" alt="Mehul Todi" title="Mehul Todi" />
+      </a>
+
+      
+
+      <a href="https://github.com/muhsinkamil" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/muhsinkamil.png" alt="Mohamed Muhsin" title="Mohamed Muhsin" />
+      </a>
+
+      
+
+      <a href="https://github.com/andyharley-cci" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/andyharley-cci.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/arvind-1" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/arvind-1.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/HenryRocha" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/HenryRocha.png" alt="Henry Rocha" title="Henry Rocha" />
+      </a>
+
+      
+
+      <a href="https://github.com/obulat" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/obulat.png" alt="Olga Bulat" title="Olga Bulat" />
+      </a>
+
+      
+
+      <a href="https://github.com/gagan2005" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/gagan2005.png" alt="GAGANDEEP SINGH" title="GAGANDEEP SINGH" />
+      </a>
+
+      
+
+      <a href="https://github.com/nk183" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/nk183.png" alt="Naman" title="Naman" />
+      </a>
+
+      
+
+      <a href="https://github.com/FrantisekHarnicar" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/FrantisekHarnicar.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/ratika-12" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/ratika-12.png" alt="Ratika Swami" title="Ratika Swami" />
+      </a>
+
+      
+
+      <a href="https://github.com/nimishbongale" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/nimishbongale.png" alt="Nimish Bongale" title="Nimish Bongale" />
+      </a>
+
+      
+
+      <a href="https://github.com/dependabot[bot]" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/dependabot[bot].png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/shrey27tri01" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/shrey27tri01.png" alt="Shrey Tripathi" title="Shrey Tripathi" />
+      </a>
+
+      
+
+      <a href="https://github.com/Creative1800" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Creative1800.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/IyadElwy" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/IyadElwy.png" alt="Iyad Elwy" title="Iyad Elwy" />
+      </a>
+
+      
+
+      <a href="https://github.com/fkarg" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/fkarg.png" alt="Felix" title="Felix" />
+      </a>
+
+      
+
+      <a href="https://github.com/kwliang1" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/kwliang1.png" alt="Kevin Liang" title="Kevin Liang" />
+      </a>
+
+      
+
+      <a href="https://github.com/steve-lgtm" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/steve-lgtm.png" alt="Štefan Hadbavný" title="Štefan Hadbavný" />
+      </a>
+
+      
+
+      <a href="https://github.com/KAIMonmoy" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/KAIMonmoy.png" alt="Khandker Aftarul Islam (Monmoy)" title="Khandker Aftarul Islam (Monmoy)" />
+      </a>
+
+      
+
+      <a href="https://github.com/LFLATH" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/LFLATH.png" alt="" title="" />
+      </a>
+
+      
+
+      <a href="https://github.com/sahilsaini110" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/sahilsaini110.png" alt="Sahil Saini" title="Sahil Saini" />
+      </a>
+
+      
+
+      <a href="https://github.com/AlekLefebvre" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/AlekLefebvre.png" alt="Alek Lefebvre" title="Alek Lefebvre" />
+      </a>
+
+      
+
+      <a href="https://github.com/ayao451" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/ayao451.png" alt="ayao" title="ayao" />
+      </a>
+
+      
+
+      <a href="https://github.com/ishqelliot" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/ishqelliot.png" alt="Kanishk Sankpal" title="Kanishk Sankpal" />
+      </a>
+
+      
+
+      <a href="https://github.com/Subhojit-Dey1234" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/Subhojit-Dey1234.png" alt="Subhojit-Dey" title="Subhojit-Dey" />
+      </a>
+
+      
+
+      <a href="https://github.com/bohemia420" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/bohemia420.png" alt="Sumit Khanna" title="Sumit Khanna" />
+      </a>
+
+      
+
+      <a href="https://github.com/lakshya-dhariwal" target="_blank">
+        <img class="rounded-full w-16 h-16 m-2" src="https://github.com/lakshya-dhariwal.png" alt="Lakshya Dhariwal" title="Lakshya Dhariwal" />
+      </a>
+
+      
+    </div>
   </div>
 </section>
 
@@ -404,11 +824,11 @@
   getContributors();
 </script>
 
-<section class="text-center bg-gray-800 angled py-40 text-white lighter">
+<section class="bg-gray-800 angled py-40 text-white lighter">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
-      <h3 class="font-semibold text-3xl">Our plans for financial sustainability</h3>
+      <h3 class="font-semibold text-3xl text-center">Our plans for financial sustainability</h3>
       
     </div>
     
@@ -419,58 +839,62 @@
       
 <p>Mathesar will always be <strong>100% open-source and self-hostable</strong>.</p>
 
-<p>We’re currently funded through the generous support of <strong>Reid Hoffman</strong> and the <strong>Center for Radical Transformation at the Chiba Institute of Technology</strong>.</p>
-
-<div class="lg:flex items-center justify-center lg:space-x-8 mx-auto w-1/2 lg:w-auto text-center">
-  <img class="lg:w-32" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation" />
-  <img class="lg:w-80" src="assets/Henkaku_Center.png" alt="Henkaku Center" />
+<div class="space-y-4">
+  <p>We’re currently funded through the generous support of:</p>
+  <div class="flex items-center space-x-8">
+  <figure class="space-y-2">
+    <img class="lg:h-24" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation logo" />
+    <figcaption class="font-bold text-sm">Reid Hoffman</figcaption>
+  </figure>
+  <figure class="space-y-2">
+    <img class="lg:h-24" src="assets/Henkaku_Center.png" alt="Henkaku Center logo" />
+    <figcaption class="font-bold text-sm">
+      CIT Henkaku Center
+    </figcaption>
+  </figure>
+</div>
 </div>
 
-<p>Our long term goal is to offer hosting and consulting services around Mathesar to sustain ourselves. We <strong>will not</strong>:</p>
-
-<ul>
-  <li>(1) build features that are not open source</li>
-  <li>(2) take funding that requires us to grow at all costs</li>
-</ul>
+<p>As we continue to develop Mathesar, our long-term goal is to offer a paid SaaS (Software as a Service) version of Mathesar in order to sustain the project. We remain committed to open source principles and will not create closed-source features or accept funding that would compromise our values.</p>
 
     </div>
   </div>
 </section>
 
 
-   
-
-
-    
-<div
-  class="bg-blue-600 text-white text-center rounded-lg p-8 lg:p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
+    <div
+  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
 >
   <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">
-      Find out when you can start using Mathesar
-    </h3>
-
-    <div class="text-lg lg:text-xl">
-<p>Sign up for Mathesar updates.</p>
-</div>
+    <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
+    <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
-  <div class="lg:flex items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form action="https://formspree.io/f/xlevqoza" method="POST">
+  <div
+    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+  >
+    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
       <input
         type="email"
         name="email"
-        class="bg-white rounded p-2 flex-grow border text-black"
+        class="bg-white rounded p-2 w-full border text-black"
         placeholder=""
       />
-      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
+        Sign Up
+      </button>
     </form>
   </div>
 </div>
 
-<!--footer for mathesar website-->
-<footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
-  <div class="container mx-auto">
+    <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+  <div class="max-w-screen-xl mx-auto space-y-8">
+    <div>
+      To get in touch with the Mathesar team, please email us at:
+      <a class="text-blue-400" href="mailto:hello@mathesar.org"
+        >hello@mathesar.org</a
+      >
+    </div>
     <div class="lg:flex">
       <div class="space-y-4">
         <a href="index.html">
@@ -513,17 +937,17 @@
         <div class="flex space-x-3 text-gray-100">
           <a
             href="https://github.com/centerofci/mathesar"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Github"
           >
-            <i class="ri-github-line align-bottom"></i>
+            <img class="invert" src="assets/github-logo.svg" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Twitter"
           >
-            <i class="ri-twitter-line align-bottom"></i>
+            <img class="invert" src="assets/twitter-logo.svg" alt="" />
           </a>
         </div>
       </nav>
@@ -532,17 +956,26 @@
 </footer>
 
 
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
+    <script>
+      // when feature-card element add flex inverse to odd elements
+      const featureCards = document.querySelectorAll(".feature-card");
+      featureCards.forEach((card, index) => {
+        if (index % 2 !== 0) {
+          card.classList.add("flex-row-reverse");
+        }
+      });
+    </script>
 
-  <script>
-    // when feature-card element add flex inverse to odd elements
-    const featureCards = document.querySelectorAll(".feature-card");
-    featureCards.forEach((card, index) => {
-      if (index % 2 !== 0) {
-        card.classList.add("flex-row-reverse");
-      }
-    });
-  </script>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
+  </body>
 </html>

@@ -11,121 +11,231 @@
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  </head>
-  <body class="bg-stone-50 text-gray-800">
-    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-8">
-  <a href="index.html">
-    <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-  </a>
-  <div>
-    <nav
-      class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
-      role="navigation"
-      aria-label="Main Navigation"
-    >
-      <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html" aria-current="page"
-          >Home</a
-        >
-        <a class="navigation-item" href="about.html">About Us</a>
-        <div class="dropdown relative navigation-item">
-          <button
-            class="flex items-center"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-label="How it works"
-          >
-            How it works <img src="assets/dropdown-arrow.svg" alt="" />
-          </button>
-          <div
-            class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
-          >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="software-engineer.html"
-              >Software Engineer</a
-            >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="non-technical-expert.html"
-              >Non-Technical Expert</a
-            >
-          </div>
-        </div>
-        <a
-          class="navigation-item"
-          href="https://demo.mathesar.org/"
-          target="_blank"
-          aria-label="Live Demo (opens in new tab)"
-        >
-          <span>Live Demo</span>
-          <img
-            class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg"
-            alt="Open in new tab"
-          />
-        </a>
-        <a class="navigation-item" href="faq.html">FAQ</a>
-        <a class="navigation-item" href="community.html">Community</a>
-        <a class="navigation-item" href="roadmap.html">Roadmap</a>
-      </div>
-      <div class="ml-auto">
-        <a class="navigation-item" href="free-install.html"
-          >Request Free Installation</a
-        >
-      </div>
-    </nav>
 
-    <div class="lg:hidden">
-      <div class="dropdown relative navigation-item">
-        <button class="flex items-center w-full">
-          Menu <img src="assets/dropdown-arrow.svg" alt="" />
-        </button>
-        <div
-          class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
-        >
-          <a class="text-lg whitespace-nowrap hover:underline" href="index.html"
+  </head>
+  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+    <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
+  <div class="max-w-screen-xl mx-auto space-y-4">
+    <a href="index.html">
+      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
+    </a>
+    <div>
+      <nav
+        class="items-center text-lg hidden lg:flex"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <div class="space-x-6 flex items-center">
+          <a class="navigation-item" href="index.html" aria-current="page"
             >Home</a
           >
-          <a class="text-lg whitespace-nowrap hover:underline" href="about.html"
-            >About Us</a
-          >
+          <a class="navigation-item" href="about.html">About Us</a>
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="software-engineer.html"
+                >Software Engineer</a
+              >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="non-technical-expert.html"
+                >Non-Technical Expert</a
+              >
+            </div>
+          </div>
           <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="software-engineer.html"
-            >How it works - Software Engineer</a
+            class="navigation-item"
+            href="https://demo.mathesar.org/"
+            target="_blank"
+            aria-label="Live Demo (opens in new tab)"
           >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="non-technical-expert.html"
-          >
-            How it works - Non-Technical Expert</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="#"
-            >Live Demo</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
-            >FAQ</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="community.html"
-            >Community</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="roadmap.html"
-            >Roadmap</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="free-install.html"
+            <span>Live Demo</span>
+            <img
+              class="inline h-3 align-baseline ml-0.5"
+              src="assets/external-link.svg"
+              alt="Open in new tab"
+            />
+          </a>
+          <a class="navigation-item" href="faq.html">FAQ</a>
+
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              Community <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://matrix.to/#/#mathesar:matrix.org"
+                >Matrix
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/community/mailing-lists"
+                >Mailing Lists
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/home"
+              >
+                Wiki
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://github.com/centerofci/mathesar"
+              >
+                Github
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+            </div>
+          </div>
+
+          <a class="navigation-item" href="roadmap.html">Roadmap</a>
+        </div>
+        <div class="ml-auto">
+          <a class="navigation-item" href="free-install.html"
             >Request Free Installation</a
           >
+        </div>
+      </nav>
+
+      <div class="lg:hidden">
+        <div class="dropdown relative navigation-item">
+          <button class="flex items-center w-full">
+            Menu <img src="assets/dropdown-arrow.svg" alt="" />
+          </button>
+          <div
+            class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
+          >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="about.html"
+              >About Us</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="software-engineer.html"
+              >How it works - Software Engineer</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="non-technical-expert.html"
+            >
+              How it works - Non-Technical Expert</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="#"
+              >Live Demo</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
+              >FAQ</a
+            >
+
+            <div class="text-lg whitespace-nowrap"
+              >Community</div
+            >
+            <div class="pl-4">
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://matrix.to/#/#mathesar:matrix.org"
+              >Community - Matrix
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/community/mailing-lists"
+              >Community - Mailing Lists
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/home"
+            >
+            Community - Wiki
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://github.com/centerofci/mathesar"
+            >
+            Community - Github
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+          </div>
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="roadmap.html"
+              >Roadmap</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="free-install.html"
+              >Request Free Installation</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -175,41 +285,14 @@
 </div>
 </div>
 
-  
     
-<div class="hero space-y-8 p-4 lg:p-0 max-w-6xl mx-auto mt-8">
-  <div class="text-center lg:w-3/4 mx-auto">
-    <h4 class="uppercase text-sm">Open Source Database Interface</h4>
-    <h2 class="text-4xl lg:text-6xl font-bold">Enter quick data and find answers to your questions – independently</h2>
-  </div>
-
-  <div class="lg:text-xl space-y-2 text-center">
-    
-<p>Mathesar’s web-based interface gives you direct access to Postgres – one of the most popular databases in the world.</p>
-
-<p>So you can enter and slice and filter and structure your data… in just minutes.
-No technical skills required.</p>
-
-  </div>
-
-  
-  <div class="flex justify-center space-x-4">
-<a href="#" class="button 3 primary p-4 rounded-lg">
-    <span class="text-white text-xl">Stay Updated about Mathesar</span>
-</a>
-<a href="#" class="button 3 secondary p-4 rounded-lg">
-    <span class="text-white text-xl">Open Live Demo</span>
-</a>
-</div>
-  
-
-  <div class="fade-in-image">
-    <img class="border shadow-lg" src="assets/screenshot.png" alt="Enter quick data and find answers to your questions – independently" />
-  </div>
-
-  <!--
-  <div class="grid grid-cols-8 gap-8 lg:gap-16">
-    <div class="col-span-8 lg:col-span-3 lg:text-2xl space-y-4">
+<div class="hero px-4 lg:py-16 py-8 max-w-screen-xl mx-auto lg:mt-8 lg:grid lg:grid-cols-2 gap-[4rem] space-y-4 lg:space-y-0">
+  <div class="space-y-4 max-w-2xl">
+    <div class="mx-auto">
+      <h4 class="uppercase text-sm">Open Source Database Interface</h4>
+      <h2 class="text-4xl lg:text-5xl font-bold">Enter quick data and find answers to your questions – independently</h2>
+    </div>
+    <div class="lg:text-xl space-y-2">
       
 <p>Mathesar’s web-based interface gives you direct access to Postgres – one of the most popular databases in the world.</p>
 
@@ -217,22 +300,60 @@ No technical skills required.</p>
 No technical skills required.</p>
 
     </div>
-    <div class="col-span-8 lg:col-span-5">
-      <img
-        class="border shadow-lg"
-        src="assets/screenshot.png"
-        alt="Enter quick data and find answers to your questions – independently"
-      />
-    </div>
+    
+    <div class="flex lg:flex-row flex-col lg:space-x-4 py-4 space-y-2 lg:space-y-0">
+<a href="https://wiki.mathesar.org/en/community/mailing-lists" class="button 4 text-center primary p-3 rounded-lg" target="_blank">
+    <span class="text-white text-lg">Stay Updated on Our Release</span>
+
+    
+    <img class="inline h-3 align-baseline ml-0.5 invert" src="assets/external-link.svg" alt="Open in new tab" />
+    
+</a>
+<a href="free-install.html" class="button 3 text-center secondary p-3 rounded-lg">
+    <span class="text-white text-lg">Request a Free Installation</span>
+
+    
+</a>
+</div>
+    
   </div>
-  -->
+
+  <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
+    <img class="border shadow-lg" src="assets/screenshot.png" alt="Enter quick data and find answers to your questions – independently" />
+  </div>
 </div>
 
-<section class="text-center bg-gray-800 angled py-40 text-white dark">
+<section class="py-10 angled lighter relative">
+  <ul class="lg:flex justify-between uppercase font-semibold text-sm max-w-6xl mx-auto">
+    
+    <li class="flex items-center space-x-2 w-max mx-auto">
+      <img src="assets/postgres-icon.svg" alt="" />
+      <span>Individuals &amp; Organizations</span>
+    </li>
+    
+    <li class="flex items-center space-x-2 w-max mx-auto">
+      <img src="assets/heart-icon.svg" alt="" />
+      <span>Structure Your Data</span>
+    </li>
+    
+    <li class="flex items-center space-x-2 w-max mx-auto">
+      <img src="assets/rocket-icon.svg" alt="" />
+      <span>Own Your Data</span>
+    </li>
+    
+    <li class="flex items-center space-x-2 w-max mx-auto">
+      <img src="assets/shield-icon.svg" alt="" />
+      <span>Intuitive UX</span>
+    </li>
+    
+  </ul>
+</section>
+
+<section class="bg-gray-800 angled py-40 text-white dark">
   <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
     
     <div class="space-y-4">
-      <h3 class="font-semibold text-3xl">Too many data tools make simple tasks complicated</h3>
+      <h3 class="font-semibold text-3xl text-center">Too many data tools make simple tasks complicated</h3>
       
     </div>
      
@@ -252,50 +373,26 @@ No technical skills required.</p>
   </div>
 </section>
 
-<section class="lg:flex bg-stone-300 my-8 px-8 angled">
-  <div class="max-w-4xl mx-auto lg:flex lg:space-y-0 space-y-4">
-    <img src="assets/ghislaine.jpg" alt="Ghislaine (Mathesar’s Product Designer)" class="h-40 lg:h-64 object-cover mx-auto" />
-    <div class="space-y-4 w-3/4 ml-8">
-      <div class="border-gray-800 pl-4 border-l-4 space-y-2">
-        <p class="text-3xl italic">"I felt like a guest in the developers’ space."</p>
+<section class="angled light bg-stone-300 my-10 screenshot">
+  <div class="container mx-auto space-y-4 max-w-6xl">
+    <div class="grid grid-cols-8 gap-8 items-center px-4 lg:px-0">
+      <div class="col-span-8 lg:col-span-5 flex flex-col">
+        <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="" />
       </div>
-      <div class="text-lg italic space-y-2">
+      <div class="col-span-8 lg:col-span-3 space-y-2 screenshot-content">
         
-<p>“When developers would give me access to software, my immediate instinct was “don’t break anything!”</p>
+<h3 id="gain-flexibility-and-speed-working-with-your-data">Gain flexibility and speed working with your data</h3>
 
-<p>Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?</p>
+<h4 id="protect-your-team-from-making-data-errors-and-find-quick-insights--without-waiting">Protect your team from making data errors. And find quick insights – without waiting</h4>
 
-<p>I felt like I was in a piece of software that wasn’t meant for me.</p>
+<p>If you can work a spreadsheet, you can get the hang of Mathesar.</p>
 
-<p><strong>We created Mathesar to be more welcoming</strong>. Mathesar sets up data rules that protect people from data errors.</p>
-
-<p>It can open up a playground to explore new ideas.”</p>
-
-      </div>
-      <p class="font-semibold italic">Ghislaine (Mathesar’s Product Designer)</p>
-    </div>
-  </div>
-</section>
-
-<section class="text-center bg-gray-800 angled py-40 text-white light">
-  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
-    
-    <div class="space-y-4">
-      <h3 class="font-semibold text-3xl">Gain flexibility and speed working with your data</h3>
-      
-    </div>
-     
-
-    <div class="text-xl space-y-6 highlight-content">
-      
-<p>Protect your team from making data errors. And find quick insights – without waiting.</p>
-
-<p>If you can work a spreadsheet, you can get the hang of Mathesar.
-It’s an intuitive interface, at a beginner-friendly level.</p>
+<p>It’s an intuitive interface, at a beginner-friendly level.</p>
 
 <p>But unlike a spreadsheet – you can now work more easily with structured, clean data.</p>
 
 
+      </div>
     </div>
   </div>
 </section>
@@ -429,40 +526,65 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
   </div>
 </div>
 
+<section class="lg:flex bg-stone-300 my-8 px-8 angled">
+  <div class="max-w-4xl mx-auto lg:flex lg:space-y-0 space-y-4">
+    <img src="assets/ghislaine.jpg" alt="Ghislaine (Mathesar’s Product Designer)" class="h-40 lg:h-64 object-cover mx-auto" />
+    <div class="space-y-4 w-3/4 ml-8">
+      <div class="border-gray-800 pl-4 border-l-4 space-y-2">
+        <p class="text-3xl italic">"I felt like a guest in the developers’ space."</p>
+      </div>
+      <div class="text-lg italic space-y-2">
+        
+<p>“When developers would give me access to software, my immediate instinct was “don’t break anything!”</p>
 
-   
+<p>Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?</p>
+
+<p>I felt like I was in a piece of software that wasn’t meant for me.</p>
+
+<p>We created Mathesar to be more welcoming. Mathesar sets up data rules that protect people from data errors.</p>
+
+<p>It can open up a playground to explore new ideas.”</p>
+
+      </div>
+      <p class="font-semibold italic">Ghislaine (Mathesar’s Product Designer)</p>
+    </div>
+  </div>
+</section>
 
 
-    
-<div
-  class="bg-blue-600 text-white text-center rounded-lg p-8 lg:p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
+    <div
+  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
 >
   <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">
-      Find out when you can start using Mathesar
-    </h3>
-
-    <div class="text-lg lg:text-xl">
-<p>Sign up for Mathesar updates.</p>
-</div>
+    <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
+    <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
-  <div class="lg:flex items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form action="https://formspree.io/f/xlevqoza" method="POST">
+  <div
+    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+  >
+    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
       <input
         type="email"
         name="email"
-        class="bg-white rounded p-2 flex-grow border text-black"
+        class="bg-white rounded p-2 w-full border text-black"
         placeholder=""
       />
-      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
+        Sign Up
+      </button>
     </form>
   </div>
 </div>
 
-<!--footer for mathesar website-->
-<footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
-  <div class="container mx-auto">
+    <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+  <div class="max-w-screen-xl mx-auto space-y-8">
+    <div>
+      To get in touch with the Mathesar team, please email us at:
+      <a class="text-blue-400" href="mailto:hello@mathesar.org"
+        >hello@mathesar.org</a
+      >
+    </div>
     <div class="lg:flex">
       <div class="space-y-4">
         <a href="index.html">
@@ -505,17 +627,17 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
         <div class="flex space-x-3 text-gray-100">
           <a
             href="https://github.com/centerofci/mathesar"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Github"
           >
-            <i class="ri-github-line align-bottom"></i>
+            <img class="invert" src="assets/github-logo.svg" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Twitter"
           >
-            <i class="ri-twitter-line align-bottom"></i>
+            <img class="invert" src="assets/twitter-logo.svg" alt="" />
           </a>
         </div>
       </nav>
@@ -524,17 +646,26 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
 </footer>
 
 
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
+    <script>
+      // when feature-card element add flex inverse to odd elements
+      const featureCards = document.querySelectorAll(".feature-card");
+      featureCards.forEach((card, index) => {
+        if (index % 2 !== 0) {
+          card.classList.add("flex-row-reverse");
+        }
+      });
+    </script>
 
-  <script>
-    // when feature-card element add flex inverse to odd elements
-    const featureCards = document.querySelectorAll(".feature-card");
-    featureCards.forEach((card, index) => {
-      if (index % 2 !== 0) {
-        card.classList.add("flex-row-reverse");
-      }
-    });
-  </script>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
+  </body>
 </html>

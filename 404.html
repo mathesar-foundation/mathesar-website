@@ -11,121 +11,231 @@
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  </head>
-  <body class="bg-stone-50 text-gray-800">
-    <div><div class="space-y-4 navigation p-4 lg:px-16 lg:py-8">
-  <a href="index.html">
-    <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-  </a>
-  <div>
-    <nav
-      class="items-center text-lg border-b-2 border-stone-400 hidden lg:flex"
-      role="navigation"
-      aria-label="Main Navigation"
-    >
-      <div class="space-x-6 flex items-center">
-        <a class="navigation-item" href="index.html" aria-current="page"
-          >Home</a
-        >
-        <a class="navigation-item" href="about.html">About Us</a>
-        <div class="dropdown relative navigation-item">
-          <button
-            class="flex items-center"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-label="How it works"
-          >
-            How it works <img src="assets/dropdown-arrow.svg" alt="" />
-          </button>
-          <div
-            class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
-          >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="software-engineer.html"
-              >Software Engineer</a
-            >
-            <a
-              class="whitespace-nowrap hover:underline"
-              href="non-technical-expert.html"
-              >Non-Technical Expert</a
-            >
-          </div>
-        </div>
-        <a
-          class="navigation-item"
-          href="https://demo.mathesar.org/"
-          target="_blank"
-          aria-label="Live Demo (opens in new tab)"
-        >
-          <span>Live Demo</span>
-          <img
-            class="inline h-3 align-baseline ml-0.5"
-            src="assets/external-link.svg"
-            alt="Open in new tab"
-          />
-        </a>
-        <a class="navigation-item" href="faq.html">FAQ</a>
-        <a class="navigation-item" href="community.html">Community</a>
-        <a class="navigation-item" href="roadmap.html">Roadmap</a>
-      </div>
-      <div class="ml-auto">
-        <a class="navigation-item" href="free-install.html"
-          >Request Free Installation</a
-        >
-      </div>
-    </nav>
 
-    <div class="lg:hidden">
-      <div class="dropdown relative navigation-item">
-        <button class="flex items-center w-full">
-          Menu <img src="assets/dropdown-arrow.svg" alt="" />
-        </button>
-        <div
-          class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
-        >
-          <a class="text-lg whitespace-nowrap hover:underline" href="index.html"
+  </head>
+  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+    <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
+  <div class="max-w-screen-xl mx-auto space-y-4">
+    <a href="index.html">
+      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
+    </a>
+    <div>
+      <nav
+        class="items-center text-lg hidden lg:flex"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <div class="space-x-6 flex items-center">
+          <a class="navigation-item" href="index.html" aria-current="page"
             >Home</a
           >
-          <a class="text-lg whitespace-nowrap hover:underline" href="about.html"
-            >About Us</a
-          >
+          <a class="navigation-item" href="about.html">About Us</a>
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="software-engineer.html"
+                >Software Engineer</a
+              >
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="non-technical-expert.html"
+                >Non-Technical Expert</a
+              >
+            </div>
+          </div>
           <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="software-engineer.html"
-            >How it works - Software Engineer</a
+            class="navigation-item"
+            href="https://demo.mathesar.org/"
+            target="_blank"
+            aria-label="Live Demo (opens in new tab)"
           >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="non-technical-expert.html"
-          >
-            How it works - Non-Technical Expert</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="#"
-            >Live Demo</a
-          >
-          <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
-            >FAQ</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="community.html"
-            >Community</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="roadmap.html"
-            >Roadmap</a
-          >
-          <a
-            class="text-lg whitespace-nowrap hover:underline"
-            href="free-install.html"
+            <span>Live Demo</span>
+            <img
+              class="inline h-3 align-baseline ml-0.5"
+              src="assets/external-link.svg"
+              alt="Open in new tab"
+            />
+          </a>
+          <a class="navigation-item" href="faq.html">FAQ</a>
+
+          <div class="dropdown relative navigation-item">
+            <button
+              class="flex items-center"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="How it works"
+            >
+              Community <img src="assets/dropdown-arrow.svg" alt="" />
+            </button>
+            <div
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+            >
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://matrix.to/#/#mathesar:matrix.org"
+                >Matrix
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/community/mailing-lists"
+                >Mailing Lists
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+              /></a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/home"
+              >
+                Wiki
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://github.com/centerofci/mathesar"
+              >
+                Github
+                <img
+                  class="inline h-3 align-baseline ml-0.5"
+                  src="assets/external-link.svg"
+                  alt="Open in new tab"
+                />
+              </a>
+            </div>
+          </div>
+
+          <a class="navigation-item" href="roadmap.html">Roadmap</a>
+        </div>
+        <div class="ml-auto">
+          <a class="navigation-item" href="free-install.html"
             >Request Free Installation</a
           >
+        </div>
+      </nav>
+
+      <div class="lg:hidden">
+        <div class="dropdown relative navigation-item">
+          <button class="flex items-center w-full">
+            Menu <img src="assets/dropdown-arrow.svg" alt="" />
+          </button>
+          <div
+            class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
+          >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="about.html"
+              >About Us</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="software-engineer.html"
+              >How it works - Software Engineer</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="non-technical-expert.html"
+            >
+              How it works - Non-Technical Expert</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="#"
+              >Live Demo</a
+            >
+            <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
+              >FAQ</a
+            >
+
+            <div class="text-lg whitespace-nowrap"
+              >Community</div
+            >
+            <div class="pl-4">
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://matrix.to/#/#mathesar:matrix.org"
+              >Community - Matrix
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/community/mailing-lists"
+              >Community - Mailing Lists
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+            /></a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://wiki.mathesar.org/en/home"
+            >
+            Community - Wiki
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+            <a
+              target="_blank"
+              class="whitespace-nowrap hover:underline block w-max"
+              href="https://github.com/centerofci/mathesar"
+            >
+            Community - Github
+              <img
+                class="inline h-3 align-baseline ml-0.5"
+                src="assets/external-link.svg"
+                alt="Open in new tab"
+              />
+            </a>
+          </div>
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="roadmap.html"
+              >Roadmap</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="free-install.html"
+              >Request Free Installation</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -175,7 +285,6 @@
 </div>
 </div>
 
-  
     <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
@@ -197,39 +306,39 @@
   <p>The requested page could not be found.</p>
 </div>
 
-   
-
-
-    
-<div
-  class="bg-blue-600 text-white text-center rounded-lg p-8 lg:p-16 mx-auto space-y-4 max-w-screen-md w-3/4 mt-40 mb-20"
+    <div
+  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
 >
   <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">
-      Find out when you can start using Mathesar
-    </h3>
-
-    <div class="text-lg lg:text-xl">
-<p>Sign up for Mathesar updates.</p>
-</div>
+    <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
+    <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
-  <div class="lg:flex items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form action="https://formspree.io/f/xlevqoza" method="POST">
+  <div
+    class="lg:flex items-center w-full justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+  >
+    <form class="flex w-full space-x-2" action="https://formspree.io/f/xlevqoza" method="POST">
       <input
         type="email"
         name="email"
-        class="bg-white rounded p-2 flex-grow border text-black"
+        class="bg-white rounded p-2 w-full border text-black"
         placeholder=""
       />
-      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      <button class="button secondary whitespace-nowrap p-2 rounded" type="submit">
+        Sign Up
+      </button>
     </form>
   </div>
 </div>
 
-<!--footer for mathesar website-->
-<footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
-  <div class="container mx-auto">
+    <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+  <div class="max-w-screen-xl mx-auto space-y-8">
+    <div>
+      To get in touch with the Mathesar team, please email us at:
+      <a class="text-blue-400" href="mailto:hello@mathesar.org"
+        >hello@mathesar.org</a
+      >
+    </div>
     <div class="lg:flex">
       <div class="space-y-4">
         <a href="index.html">
@@ -272,17 +381,17 @@
         <div class="flex space-x-3 text-gray-100">
           <a
             href="https://github.com/centerofci/mathesar"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Github"
           >
-            <i class="ri-github-line align-bottom"></i>
+            <img class="invert" src="assets/github-logo.svg" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
-            class="hover:text-gray-600 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors"
             aria-label="Visit Mathesar on Twitter"
           >
-            <i class="ri-twitter-line align-bottom"></i>
+            <img class="invert" src="assets/twitter-logo.svg" alt="" />
           </a>
         </div>
       </nav>
@@ -291,17 +400,26 @@
 </footer>
 
 
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-</body>
+    <script>
+      // when feature-card element add flex inverse to odd elements
+      const featureCards = document.querySelectorAll(".feature-card");
+      featureCards.forEach((card, index) => {
+        if (index % 2 !== 0) {
+          card.classList.add("flex-row-reverse");
+        }
+      });
+    </script>
 
-  <script>
-    // when feature-card element add flex inverse to odd elements
-    const featureCards = document.querySelectorAll(".feature-card");
-    featureCards.forEach((card, index) => {
-      if (index % 2 !== 0) {
-        card.classList.add("flex-row-reverse");
-      }
-    });
-  </script>
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
+  </body>
 </html>
