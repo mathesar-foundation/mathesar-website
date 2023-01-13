@@ -18,7 +18,7 @@ p > a:hover {
 }
 
 .highlighted {
-  @apply bg-stone-400 bg-opacity-25 px-1;
+  @apply bg-stone-400 bg-opacity-25 px-1 font-bold;
 }
 
 .md-content {
@@ -180,7 +180,7 @@ p + h3 {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 80%;
   background: linear-gradient(180deg, rgba(var(--light-color), 0) 0%, rgba(var(--light-color), 0.8) 100%);
 }
 
