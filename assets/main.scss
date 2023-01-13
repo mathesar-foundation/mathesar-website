@@ -17,10 +17,6 @@ p > a:hover {
   @apply text-blue-800 underline;
 }
 
-.highlighted {
-  @apply bg-stone-400 bg-opacity-25 px-1 font-bold;
-}
-
 .md-content {
   @apply leading-6;
 }
@@ -63,7 +59,7 @@ p + h3 {
 }
 
 .hero p strong {
-  @apply font-semibold bg-stone-400 bg-opacity-25 px-1;
+  @apply font-bold;
 }
 
 .navigation-item {
@@ -125,12 +121,20 @@ p + h3 {
 
 .list-check > li:before {
   content: "✔";
-  @apply text-green-500 mr-4;
+  @apply text-lime-500 mr-4;
+}
+
+.list-check .highlighted {
+  @apply text-lime-200 bg-opacity-25 px-1 font-bold;
 }
 
 .list-cancel > li:before {
   content: "✖";
-  @apply text-red-500 mr-4;
+  @apply text-rose-500 mr-4;  
+}
+
+.list-cancel .highlighted {
+  @apply text-rose-300 bg-opacity-25 px-1 font-bold;
 }
 
 .button {

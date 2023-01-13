@@ -1,10 +1,10 @@
 <div class="hero px-4 lg:py-16 py-8 max-w-screen-xl mx-auto lg:mt-8 lg:grid lg:grid-cols-2 gap-[4rem] space-y-4 lg:space-y-0">
   <div class="space-y-4 max-w-2xl">
     <div class="mx-auto">
-      <h4 class="uppercase text-sm">{{include.section}}</h4>
+      <h4 class="uppercase text-sm mb-2">{{include.section}}</h4>
       <h2 class="text-4xl lg:text-5xl font-bold">{{include.title}}</h2>
     </div>
-    <div class="lg:text-xl space-y-2">
+    <div class="lg:text-xl space-y-2 max-w-lg">
       {{include.content | markdownify}}
     </div>
     {% if include.actions %}
