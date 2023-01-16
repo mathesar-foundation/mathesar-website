@@ -3,20 +3,20 @@
 >
   <div class="space-y-2">
     <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
-    <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
   </div>
 
   <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form id="signup-form" class="flex-col" action="https://formspree.io/f/xlevqoza" method="POST">
-      <div>
+    <form id="signup-form" class="flex-col w-full space-y-2" action="https://formspree.io/f/xlevqoza" method="POST">
+      <div class="flex items-stretch space-x-2 w-full">
         <input
         type="email"
         name="email"
         class="bg-white rounded p-2 w-full border text-black"
         placeholder="{{include.placeholder}}"
       />
-      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+      <button class="button secondary p-2 rounded whitespace-nowrap" type="submit">Sign Up</button>
       </div>
+      <div class="text-sm text-gray-200">Sign up to stay updated on Mathesar's Alpha release and be among the first to try it out. Your privacy is valued and information will only be used for updates.</div>
       <p class="success-text hidden"></p>
       <p class="error-text hidden"></p>
     </form>

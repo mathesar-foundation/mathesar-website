@@ -5,7 +5,7 @@ parent: How it works
 ---
 
 {% capture hero_content %}
-Use Mathesar’s open source and web-based interface to give your team direct access to Postgres. No technical skills required.
+Use Mathesar’s open source and web-based interface to give your team direct access to Postgres. **No technical skills required.**
 
 Now you can spend less time creating custom reports and manually updating data.
 {% endcapture %}
