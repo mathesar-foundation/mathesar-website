@@ -14,13 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;800;900&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body class="bg-stone-50 text-gray-800">
     <div>{% include navigation.html %}</div>
-    <div class="max-w-6xl mx-auto md-content">
-    {{ content }}
+    <div class="max-w-6xl mx-auto md-content py-16 min-h-screen">
+      {{ content }}
     </div>
+    {% include footer.html %}
     <script
       async
       defer
