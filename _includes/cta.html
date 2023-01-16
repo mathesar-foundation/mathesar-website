@@ -22,3 +22,21 @@
     </form>
   </div>
 </div>
+
+
+<script>
+
+const signupFormId = "signup-form";
+const signupForm = document.getElementById(signupFormId);
+function handleSignupFormSubmit(event) {
+  event.preventDefault();
+  const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+  setLoading();
+  sendFormDataToFormspree(event, signupForm)
+    .then(() => showSuccessText(signupFormId))
+    .catch(() => showErrorText(signupFormId))
+    .finally(unsetLoading);
+}
+signupForm.addEventListener("submit", handleSignupFormSubmit);
+
+</script>

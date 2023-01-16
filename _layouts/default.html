@@ -91,33 +91,7 @@
       }, 5000);
     }
 
-    // Event setup for signup form
-    const signupFormId = "signup-form";
-    const signupForm = document.getElementById(signupFormId);
-    function handleSignupFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
-      setLoading();
-      sendFormDataToFormspree(event, signupForm)
-        .then(() => showSuccessText(signupFormId))
-        .catch(() => showErrorText(signupFormId))
-        .finally(unsetLoading);
-    }
-    signupForm.addEventListener("submit", handleSignupFormSubmit);
 
-    // Event setup for free install form
-    const freeInstallFormId = "free-install-form";
-    const freeInstallForm = document.getElementById(freeInstallFormId);
-    function handleFreeInstallFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
-      setLoading();
-      sendFormDataToFormspree(event, freeInstallForm)
-        .then(() => showSuccessText(freeInstallFormId))
-        .catch(() => showErrorText(freeInstallFormId))
-        .finally(unsetLoading);
-    }
-    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
 
   </script>
 </html>

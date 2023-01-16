@@ -72,7 +72,6 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   display: inline-block;
 }
 
-
 .hero p strong {
   @apply font-bold;
 }
@@ -132,6 +131,14 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
 
 .highlight-content a {
   @apply text-blue-500;
+}
+
+.highlight-content ul {
+  @apply list-disc list-inside my-4;
+}
+
+.highlight-content ul li {
+  @apply mb-2;
 }
 
 .dark .highlight-content a {

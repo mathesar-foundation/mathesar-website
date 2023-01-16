@@ -11,7 +11,7 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated on Our Release" external=true url="https://wiki.mathesar.org/en/community/mailing-lists" %}
+{% include button.html style="primary" label="Stay Updated on Our Release" url="#signup-form" %}
 {% include button.html style="secondary" label="Open Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
