@@ -5,14 +5,14 @@ parent: How it works
 ---
 
 {% capture hero_content %}
-Use Mathesar’s open source and web-based interface to give your team direct access to Postgres. **No technical skills required.**
+Use Mathesar’s open source and web-based interface to give your team **direct access to Postgres**. No technical skills required.
 
-Now you can spend less time creating custom reports and manually updating data.
+Now you can spend **less time** creating custom reports and manually updating data.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Star us on GitHub" external=true url="https://github.com/centerofci/mathesar" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="free-install.html" %}
+{% include button.html style="primary" label="Open Live Demo" external=true url="https://demo.mathesar.org" %}
+{% include button.html style="secondary" label="Star us on GitHub" external=true url="https://github.com/centerofci/mathesar" %}
 {% endcapture %}
 
 {% include hero.html

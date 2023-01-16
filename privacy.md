@@ -3,6 +3,6 @@ layout: legal
 title: Privacy policy - Mathesar
 ---
 
-## Privacy
+## Privacy Policy
 
-Privacy content here.
+*Coming soon.*

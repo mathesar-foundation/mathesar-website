@@ -4,15 +4,15 @@ title: How it works (non-technical) - Mathesar
 parent: How it works
 ---
 {% capture hero_content %}
-Mathesar’s web-based interface gives you **direct access to Postgres** – one of the most popular databases in the world.
+Mathesar’s web-based interface gives you **direct access** to Postgres – one of the most popular databases in the world.
 
-So you can enter and slice and filter and structure your data… **in just minutes**.
+So you can **enter and slice and filter and structure** your data… in just minutes.
 No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
 {% include button.html style="primary" label="Stay Updated on Our Release" external=true url="https://wiki.mathesar.org/en/community/mailing-lists" %}
-{% include button.html style="secondary" label="Request a Free Installation" url="free-install.html" %}
+{% include button.html style="secondary" label="Open Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
 {% include hero.html
