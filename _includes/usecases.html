@@ -15,16 +15,19 @@
         class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center"
       >
         {% for item in site.data.use_cases[page.title] %}
-
         <button
-          class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
+          class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
           onclick="updateScreenshot('{{item.image}}')"
+          id="button-{{ forloop.index }}"
         >
           {{item.use_case}}
         </button>
 
         {% if item.description %}
-        <div class="use-case-description py-4 pl-4 hidden">
+        <div
+          class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full"
+          id="description-{{ forloop.index }}"
+        >
           {{item.description}}
         </div>
         {% endif %} {% endfor %}
@@ -49,7 +52,7 @@
 
           <div class="text-xl">{{item.use_case}}</div>
 
-          <div class="use-case-description py-4 pl-4">
+          <div class="py-4 pl-4">
             {{item.description}}
             <img
               class="rounded-lg shadow-lg screenshot"
@@ -66,10 +69,6 @@
 
 <noscript>
   <style>
-    .use-case-description {
-      display: block;
-    }
-
     .js-disabled {
       display: block;
     }
@@ -81,36 +80,30 @@
 </noscript>
 
 <script>
-  window.addEventListener("load", function () {
-    var buttons = document.querySelectorAll(".use-case-button");
-    if (buttons.length > 0) {
-      buttons[0].classList.add("bg-stone-200", "font-semibold");
-      var activeDescription = buttons[0].nextElementSibling;
-      if (activeDescription) {
-        activeDescription.classList.remove("hidden");
-      }
-    }
-  });
+  document
+    .getElementById("button-1")
+    .classList.add("bg-stone-200", "font-bold");
+  document.getElementById("description-1").classList.remove("hidden");
 
-  function updateScreenshot(imageUrl) {
+  function updateScreenshot(image) {
+    document.querySelector(".screenshot").src = "assets/" + image;
+    var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove("bg-stone-200", "font-semibold");
-      var description = buttons[i].nextElementSibling;
+      buttons[i].classList.remove("bg-stone-200", "font-bold");
+      var descriptionId = "description-" + (i + 1);
+      var description = document.getElementById(descriptionId);
       if (description) {
         description.classList.add("hidden");
       }
     }
-
-    var button = event.target.closest(".use-case-button");
-    if (button) {
-      button.classList.add("bg-stone-200", "font-semibold");
-      document.querySelector(".screenshot").src = "assets/" + imageUrl;
-
-      var activeDescription = button.nextElementSibling;
-      if (activeDescription) {
-        activeDescription.classList.remove("hidden");
-      }
+    var buttonId = button.id;
+    var index = buttonId.split("-")[1] - 1;
+    button.classList.add("bg-stone-200", "font-bold");
+    var descriptionId = "description-" + (index + 1);
+    var description = document.getElementById(descriptionId);
+    if (description) {
+      description.classList.remove("hidden");
     }
   }
 </script>
