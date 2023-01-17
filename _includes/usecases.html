@@ -9,29 +9,25 @@
     </div>
     <div class="w-40 border-t-2 border-stone-200 mx-auto"></div>
     <div
-      class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0"
+      class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0 js-enabled"
     >
       <div
         class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center"
       >
         {% for item in site.data.use_cases[page.title] %}
-       
-          <button
-            class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
-            onclick="updateScreenshot('{{item.image}}')"
-          >
-            {{item.use_case}}
-          </button>
 
-          {% if item.description %}
-          <div
-            class="use-case-description py-4 pl-4 hidden"
-          >
-            {{item.description}}
-          </div>
-          {% endif %}
-      
-        {% endfor %}
+        <button
+          class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
+          onclick="updateScreenshot('{{item.image}}')"
+        >
+          {{item.use_case}}
+        </button>
+
+        {% if item.description %}
+        <div class="use-case-description py-4 pl-4 hidden">
+          {{item.description}}
+        </div>
+        {% endif %} {% endfor %}
       </div>
 
       <div
@@ -44,8 +40,45 @@
         />
       </div>
     </div>
+    <noscript>
+      <div class="js-disabled">
+        <div
+          class="lg:max-w-2xl shrink-0 gap-1 flex lg:block flex-wrap justify-center mx-auto"
+        >
+          {% for item in site.data.use_cases[page.title] %}
+
+          <div class="text-xl">{{item.use_case}}</div>
+
+          <div class="use-case-description py-4 pl-4">
+            {{item.description}}
+            <img
+              class="rounded-lg shadow-lg screenshot"
+              src="assets/{{item.image}}"
+              alt=""
+            />
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </noscript>
   </div>
 </section>
+
+<noscript>
+  <style>
+    .use-case-description {
+      display: block;
+    }
+
+    .js-disabled {
+      display: block;
+    }
+
+    .js-enabled {
+      display: none;
+    }
+  </style>
+</noscript>
 
 <script>
   window.addEventListener("load", function () {
