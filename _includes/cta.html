@@ -1,42 +1,67 @@
 <div
-  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
+  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center relative rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
 >
   <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
+    <h3 class="text-2xl lg:text-3xl font-semibold">
+      Find out when you can start using Mathesar
+    </h3>
   </div>
 
-  <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form id="signup-form" class="flex-col w-full space-y-2" action="https://formspree.io/f/xlevqoza" method="POST">
+  <div
+    class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+  >
+    <form
+      id="signup-form"
+      class="flex-col w-full space-y-2"
+      action="https://formspree.io/f/xlevqoza"
+      method="POST"
+    >
       <div class="flex items-stretch space-x-2 w-full">
         <input
-        type="email"
-        name="email"
-        class="bg-white rounded p-2 w-full border text-black"
-        placeholder="{{include.placeholder}}"
-      />
-      <button class="button secondary p-2 rounded whitespace-nowrap" type="submit">Sign Up</button>
+          type="email"
+          name="email"
+          class="bg-white rounded p-2 w-full border text-black"
+          placeholder="{{include.placeholder}}"
+        />
+        <button
+          class="button secondary p-2 rounded whitespace-nowrap"
+          type="submit"
+        >
+          Sign Up
+        </button>
       </div>
-      <div class="text-sm text-gray-200">Sign up to stay updated on Mathesar's Alpha release and be among the first to try it out. Your privacy is valued and information will only be used for updates.</div>
-      <p class="success-text hidden"></p>
-      <p class="error-text hidden"></p>
+      <div class="text-sm text-gray-200">
+        Sign up to stay updated on Mathesar's Alpha release and be among the
+        first to try it out. Your privacy is valued and information will only be
+        used for updates.
+      </div>
+      <div class="h-4">
+        <p
+          class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+        >
+          Success!
+        </p>
+        <p
+          class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+        >
+          Error, please try again later.
+        </p>
+      </div>
     </form>
   </div>
 </div>
 
-
 <script>
-
-const signupFormId = "signup-form";
-const signupForm = document.getElementById(signupFormId);
-function handleSignupFormSubmit(event) {
-  event.preventDefault();
-  const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
-  setLoading();
-  sendFormDataToFormspree(event, signupForm)
-    .then(() => showSuccessText(signupFormId))
-    .catch(() => showErrorText(signupFormId))
-    .finally(unsetLoading);
-}
-signupForm.addEventListener("submit", handleSignupFormSubmit);
-
+  const signupFormId = "signup-form";
+  const signupForm = document.getElementById(signupFormId);
+  function handleSignupFormSubmit(event) {
+    event.preventDefault();
+    const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+    setLoading();
+    sendFormDataToFormspree(event, signupForm)
+      .then(() => showSuccessText(signupFormId))
+      .catch(() => showErrorText(signupFormId))
+      .finally(unsetLoading);
+  }
+  signupForm.addEventListener("submit", handleSignupFormSubmit);
 </script>

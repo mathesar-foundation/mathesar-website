@@ -74,18 +74,18 @@
     function showSuccessText(formId) {
       const successText = document.querySelector(`#${formId} .success-text`);
       successText.innerHTML = "Thanks for your submission!";
-      successText.style.display = "block";
+      successText.classList.remove("hidden");
       setTimeout(() => {
-        successText.style.display = "none";
+        successText.classList.add("hidden");
       }, 5000);
     }
 
     function showErrorText(formId) {
       const errorText = document.querySelector(`#${formId} .error-text`);
       errorText.innerHTML = "Oops! There was a problem submitting your form";
-      errorText.style.display = "block";
+      errorText.classList.remove("hidden");
       setTimeout(() => {
-        errorText.style.display = "none";
+        errorText.classList.add("hidden");
       }, 5000);
     }
 

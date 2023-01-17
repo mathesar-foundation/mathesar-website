@@ -239,7 +239,7 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
 }
 
 .highlight-content ul {
-  @apply list-disc list-inside my-4;
+  @apply space-y-4 max-w-md mx-auto;
 }
 
 .highlight-content ul li {
