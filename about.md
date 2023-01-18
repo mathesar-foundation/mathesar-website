@@ -27,7 +27,7 @@ We want to make existing database functionality more accessible – in a user-fr
 {% include team-grid.html %}
 
 {% capture highlight1 %}
-Mathesar will always be **100% open-source and self-hostable**.
+Mathesar will always be **100% open source and self-hostable**.
 
 {% include funder-logos.html %}
 
