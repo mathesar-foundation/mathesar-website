@@ -1,4 +1,4 @@
-<section class="max-w-6xl mx-auto space-y-8 mb-24 text-center px-8">
+<section class="max-w-6xl mx-auto space-y-8 mb-24 px-8">
   <div class="max-w-3xl mx-auto text-center space-y-4">
     <h3 class="font-semibold text-3xl">Upcoming Features by Category</h3>
     <p class="text-xl">
@@ -10,13 +10,13 @@
     </p>
   </div>
   {% for category in site.data.roadmap %}
-  <div class="max-w-xl mx-auto">
+  <div class="max-w-xl">
     <h4 class="text-red-600 uppercase font-semibold text-lg">
       {{ category.category }}
     </h4>
     <p class="text-lg">{{ category.description }}</p>
   </div>
-  <div class="lg:grid grid-cols-3 gap-4 lg:space-y-0 space-y-2">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {% for feature in category.features %} {%include roadmap_card.html
     header=feature.title subheader=feature.subheader content=feature.content
     url=feature.discussion_url %} {% endfor %}

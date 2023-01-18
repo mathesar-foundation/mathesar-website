@@ -9,14 +9,19 @@
     />
     <title>{{ page.title }}</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
 
   </head>
   <body class="bg-stone-50 text-gray-800">
     <div>{% include navigation.html %}</div>
-    <div class="max-w-6xl mx-auto md-content">
-    {{ content }}
+    <div class="max-w-6xl mx-auto md-content py-16 min-h-screen">
+      {{ content }}
     </div>
+    {% include footer.html %}
     <script
       async
       defer

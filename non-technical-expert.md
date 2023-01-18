@@ -11,7 +11,7 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated on Our Release" external=true url="https://wiki.mathesar.org/en/community/mailing-lists" %}
+{% include button.html style="primary" label="Stay Updated on Our Release" url="#signup-form" %}
 {% include button.html style="secondary" label="Open Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
@@ -24,15 +24,13 @@ image='assets/screenshot.png' actions=actions %}
 
 {% capture highlight_1 %}
 
-You’re often left without clear answers to these important questions:
-
 - How can you be certain that your database doesn’t contain faulty, duplicated data?
 - When your workflow changes, how can you quickly update your data structures?
 - How can you see one view of all your different data sources?
 
 {% endcapture %}
 
-{% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark'%}
+{% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark' subheader='You’re often left without clear answers to these important questions:'%}
 
 {% capture screenshot_text %}
 

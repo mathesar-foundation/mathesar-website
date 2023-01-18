@@ -9,15 +9,17 @@
     />
     <title>{{ page.title }}</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
 
   </head>
   <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
     <div>{% include navigation.html %}</div>
 
-    {{ content }}
-    {% include cta.html %}
-    {% include footer.html %}
+    {{ content }} {% include cta.html %} {% include footer.html %}
 
   <script>
     // when feature-card element add flex inverse to odd elements
@@ -72,48 +74,22 @@
     function showSuccessText(formId) {
       const successText = document.querySelector(`#${formId} .success-text`);
       successText.innerHTML = "Thanks for your submission!";
-      successText.style.display = "block";
+      successText.classList.remove("hidden");
       setTimeout(() => {
-        successText.style.display = "none";
+        successText.classList.add("hidden");
       }, 5000);
     }
 
     function showErrorText(formId) {
       const errorText = document.querySelector(`#${formId} .error-text`);
       errorText.innerHTML = "Oops! There was a problem submitting your form";
-      errorText.style.display = "block";
+      errorText.classList.remove("hidden");
       setTimeout(() => {
-        errorText.style.display = "none";
+        errorText.classList.add("hidden");
       }, 5000);
     }
 
-    // Event setup for signup form
-    const signupFormId = "signup-form";
-    const signupForm = document.getElementById(signupFormId);
-    function handleSignupFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
-      setLoading();
-      sendFormDataToFormspree(event, signupForm)
-        .then(() => showSuccessText(signupFormId))
-        .catch(() => showErrorText(signupFormId))
-        .finally(unsetLoading);
-    }
-    signupForm.addEventListener("submit", handleSignupFormSubmit);
 
-    // Event setup for free install form
-    const freeInstallFormId = "free-install-form";
-    const freeInstallForm = document.getElementById(freeInstallFormId);
-    function handleFreeInstallFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
-      setLoading();
-      sendFormDataToFormspree(event, freeInstallForm)
-        .then(() => showSuccessText(freeInstallFormId))
-        .catch(() => showErrorText(freeInstallFormId))
-        .finally(unsetLoading);
-    }
-    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
 
   </script>
 </html>

@@ -8,10 +8,8 @@
     </div>
   </div>
 
-  <a class="button bg-blue-600 text-sm text-white w-max mx-auto py-1 px-3 rounded hover:bg-blue-500" href="{{include.url}}">View Discussion
-    <img
-    class="inline h-3 align-baseline ml-0.5 invert"
-    src="assets/external-link.svg"
-    alt="Open in new tab"
-  /></a>
+  {% if include.url %}
+  <a class="text-blue-600 w-max mx-auto py-1 px-3 rounded hover:underline" href="{{include.url}}">View Discussion
+    </a>
+  {% endif %}
 </div>
