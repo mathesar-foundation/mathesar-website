@@ -9,6 +9,10 @@
     />
     <title>Mathesar</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
 
   </head>
@@ -60,11 +64,6 @@
             aria-label="Live Demo (opens in new tab)"
           >
             <span>Live Demo</span>
-            <img
-              class="inline h-3 align-baseline ml-0.5"
-              src="assets/external-link.svg"
-              alt="Open in new tab"
-            />
           </a>
           <a class="navigation-item" href="faq.html">FAQ</a>
 
@@ -86,43 +85,27 @@
                 href="https://github.com/centerofci/mathesar"
               >
                 GitHub
-                <img
-                  class="inline h-3 align-baseline ml-0.5"
-                  src="assets/external-link.svg"
-                  alt="Open in new tab"
-                />
+                
               </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/matrix"
                 >Matrix (Chat)
-                <img
-                  class="inline h-3 align-baseline ml-0.5"
-                  src="assets/external-link.svg"
-                  alt="Open in new tab"
-              /></a>
+                </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/mailing-lists"
                 >Mailing Lists
-                <img
-                  class="inline h-3 align-baseline ml-0.5"
-                  src="assets/external-link.svg"
-                  alt="Open in new tab"
-              /></a>
+                </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/"
               >
                 Wiki
-                <img
-                  class="inline h-3 align-baseline ml-0.5"
-                  src="assets/external-link.svg"
-                  alt="Open in new tab"
-                />
+                
               </a>
             </div>
           </div>
@@ -165,62 +148,46 @@
             >
               How it works - Non-Technical Expert</a
             >
-            <a class="text-lg whitespace-nowrap hover:underline" href="#"
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="https://demo.mathesar.org/"
+              target="_blank"
+              aria-label="Live Demo (opens in new tab)"
               >Live Demo</a
             >
             <a class="text-lg whitespace-nowrap hover:underline" href="faq.html"
               >FAQ</a
             >
 
-            <div class="text-lg whitespace-nowrap"
-              >Community</div
-            >
+            <div class="text-lg whitespace-nowrap">Community</div>
             <div class="pl-4">
-            <a
-              target="_blank"
-              class="whitespace-nowrap hover:underline block w-max"
-              href="https://matrix.to/#/#mathesar:matrix.org"
-              >Community - Matrix
-              <img
-                class="inline h-3 align-baseline ml-0.5"
-                src="assets/external-link.svg"
-                alt="Open in new tab"
-            /></a>
-            <a
-              target="_blank"
-              class="whitespace-nowrap hover:underline block w-max"
-              href="https://wiki.mathesar.org/en/community/mailing-lists"
-              >Community - Mailing Lists
-              <img
-                class="inline h-3 align-baseline ml-0.5"
-                src="assets/external-link.svg"
-                alt="Open in new tab"
-            /></a>
-            <a
-              target="_blank"
-              class="whitespace-nowrap hover:underline block w-max"
-              href="https://wiki.mathesar.org/en/home"
-            >
-            Community - Wiki
-              <img
-                class="inline h-3 align-baseline ml-0.5"
-                src="assets/external-link.svg"
-                alt="Open in new tab"
-              />
-            </a>
-            <a
-              target="_blank"
-              class="whitespace-nowrap hover:underline block w-max"
-              href="https://github.com/centerofci/mathesar"
-            >
-            Community - Github
-              <img
-                class="inline h-3 align-baseline ml-0.5"
-                src="assets/external-link.svg"
-                alt="Open in new tab"
-              />
-            </a>
-          </div>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://matrix.to/#/#mathesar:matrix.org"
+                >Community - Matrix
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/community/mailing-lists"
+                >Community - Mailing Lists
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://wiki.mathesar.org/en/home"
+              >
+                Community - Wiki
+              </a>
+              <a
+                target="_blank"
+                class="whitespace-nowrap hover:underline block w-max"
+                href="https://github.com/centerofci/mathesar"
+              >
+                Community - Github
+              </a>
+            </div>
             <a
               class="text-lg whitespace-nowrap hover:underline"
               href="roadmap.html"
@@ -299,7 +266,8 @@ your data - in one open source interface</h2>
 
     </div>
     
-    <div class="flex lg:flex-row flex-col lg:space-x-4 py-4 space-y-2 lg:space-y-0">
+    <div class="flex sm:flex-row flex-col sm:items-center sm:space-x-4 py-4 space-y-2 sm:space-y-0">
+      
 <a href="software-engineer.html" class="col-span-2 text-white block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg">
   <div class="uppercase font-semibold">I'm a Developer</div>
   <div class="text-xl">
@@ -317,7 +285,8 @@ your data - in one open source interface</h2>
   </div>
 </a>
 
-</div>
+
+    </div>
     
   </div>
 
@@ -369,10 +338,11 @@ your data - in one open source interface" />
     <ul class="text-left text-lg space-y-6 list-cancel mx-auto max-w-xl">
       <li class="flex flex-start">
         <span>
-          Spreadsheets don’t have strict structures – so it’s <span class="highlighted">hard</span> to keep your
-          data consistent and
+          Spreadsheets don’t have strict structures – so it’s
+          <span class="highlighted">hard</span> to keep your data consistent and
           valid. This <span class="highlighted">limits</span> your potential to
-          reuse. And often leads to <span class="highlighted">faulty</span> data.
+          reuse. And often leads to
+          <span class="highlighted">faulty</span> data.
         </span>
       </li>
       <li class="flex flex-start">
@@ -404,7 +374,7 @@ your data - in one open source interface" />
     </div>
 
     <ul class="text-left text-lg space-y-6 list-check mx-auto mx-auto max-w-xl">
-      <li class="flex flex-start ">
+      <li class="flex flex-start">
         <span>
           Mathesar ensures that your data is kept
           <span class="highlighted">consistent</span>. So you can base your
@@ -421,18 +391,19 @@ your data - in one open source interface" />
       </li>
       <li class="flex flex-start">
         <span>
-          Your data is never locked in.
-          Self-host on your servers to <span class="highlighted">independently</span> manage your data. You can
-          migrate or go back and forth from Mathesar at any time.
+          Your data is never locked in. Self-host on your servers to
+          <span class="highlighted">independently</span> manage your data. You
+          can migrate or go back and forth from Mathesar at any time.
         </span>
       </li>
       <li class="flex flex-start">
         <span>
           Mathesar has an
-          <span class="highlighted">intuitive</span> interface that is similar to
-          a spreadsheet. Empower your friends and colleagues – of all technical
-          skill levels – to enter valid data and get <span class="highlighted">immediate</span> answers to
-          ad-hoc questions.
+          <span class="highlighted">intuitive</span> interface that is similar
+          to a spreadsheet. Empower your friends and colleagues – of all
+          technical skill levels – to enter valid data and get
+          <span class="highlighted">immediate</span> answers to ad-hoc
+          questions.
         </span>
       </li>
     </ul>
@@ -471,97 +442,140 @@ your data - in one open source interface" />
       </p>
     </div>
     <div class="w-40 border-t-2 border-stone-200 mx-auto"></div>
-    <div class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0">
+    <div class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0 js-enabled">
       <div class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center">
         
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Manage a collection
-          </button>
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-1">
+          Manage a collection
+        </button>
 
-          
-      
-        
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Plan an event
-          </button>
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-2">
+          Plan an event
+        </button>
 
-          
-      
-        
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Publish a data set
-          </button>
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-3">
+          Publish a data set
+        </button>
 
-          
-      
-        
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Track a project
-          </button>
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-4">
+          Track a project
+        </button>
 
-          
-      
-        
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Prototype an application
-          </button>
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-5">
+          Prototype an application
+        </button>
 
-          
-      
-        
-       
-          <button class="p-2 use-case-button lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')">
-            Connect your database
-          </button>
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-6">
+          Connect your database
+        </button>
 
-          
-      
-        
+         
       </div>
 
       <div class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center">
         <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
       </div>
     </div>
+    <noscript>
+      <div class="js-disabled">
+        <div class="lg:max-w-2xl shrink-0 gap-1 flex lg:block flex-wrap justify-center mx-auto">
+          
+
+          <div class="text-xl">Manage a collection</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Plan an event</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Publish a data set</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Track a project</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Prototype an application</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Connect your database</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+          </div>
+          
+        </div>
+      </div>
+    </noscript>
   </div>
 </section>
 
-<script>
-  window.addEventListener("load", function () {
-    var buttons = document.querySelectorAll(".use-case-button");
-    if (buttons.length > 0) {
-      buttons[0].classList.add("bg-stone-200", "font-semibold");
-      var activeDescription = buttons[0].nextElementSibling;
-      if (activeDescription) {
-        activeDescription.classList.remove("hidden");
-      }
+<noscript>
+  <style>
+    .js-disabled {
+      display: block;
     }
-  });
 
-  function updateScreenshot(imageUrl) {
+    .js-enabled {
+      display: none;
+    }
+  </style>
+</noscript>
+
+<script>
+  document
+    .getElementById("button-1")
+    .classList.add("bg-stone-200", "font-bold");
+  document.getElementById("description-1").classList.remove("hidden");
+
+  function updateScreenshot(image) {
+    document.querySelector(".screenshot").src = "assets/" + image;
+    var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove("bg-stone-200", "font-semibold");
-      var description = buttons[i].nextElementSibling;
+      buttons[i].classList.remove("bg-stone-200", "font-bold");
+      var descriptionId = "description-" + (i + 1);
+      var description = document.getElementById(descriptionId);
       if (description) {
         description.classList.add("hidden");
       }
     }
-
-    var button = event.target.closest(".use-case-button");
-    if (button) {
-      button.classList.add("bg-stone-200", "font-semibold");
-      document.querySelector(".screenshot").src = "assets/" + imageUrl;
-
-      var activeDescription = button.nextElementSibling;
-      if (activeDescription) {
-        activeDescription.classList.remove("hidden");
-      }
+    var buttonId = button.id;
+    var index = buttonId.split("-")[1] - 1;
+    button.classList.add("bg-stone-200", "font-bold");
+    var descriptionId = "description-" + (index + 1);
+    var description = document.getElementById(descriptionId);
+    if (description) {
+      description.classList.remove("hidden");
     }
   }
 </script>
@@ -647,32 +661,74 @@ your data - in one open source interface" />
   </div>
 </section>
 
-
-    <div
-  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
+ <div
+  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center relative rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
 >
   <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">Find out when you can start using Mathesar</h3>
-    <div class="text-lg lg:text-xl">Mathesar’s Alpha release is coming very soon. Please leave your details here to stay updated:</div>
+    <h3 class="text-2xl lg:text-3xl font-semibold">
+      Find out when you can start using Mathesar
+    </h3>
   </div>
 
-  <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-    <form id="signup-form" class="flex-col" action="https://formspree.io/f/xlevqoza" method="POST">
-      <div>
+  <div
+    class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+  >
+    <form
+      id="signup-form"
+      class="flex-col w-full space-y-2"
+      action="https://formspree.io/f/xlevqoza"
+      method="POST"
+    >
+      <div class="flex items-stretch space-x-2 w-full">
         <input
-        type="email"
-        name="email"
-        class="bg-white rounded p-2 w-full border text-black"
-        placeholder=""
-      />
-      <button class="button secondary p-2 rounded" type="submit">Sign Up</button>
+          type="email"
+          name="email"
+          class="bg-white rounded p-2 w-full border text-black"
+          placeholder=""
+        />
+        <button
+          class="button secondary p-2 rounded whitespace-nowrap"
+          type="submit"
+        >
+          Sign Up
+        </button>
       </div>
-      <p class="success-text hidden"></p>
-      <p class="error-text hidden"></p>
+      <div class="text-sm text-gray-200">
+        Sign up to stay updated on Mathesar's Alpha release and be among the
+        first to try it out. Your privacy is valued and information will only be
+        used for updates.
+      </div>
+      <div class="h-4">
+        <p
+          class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+        >
+          Success!
+        </p>
+        <p
+          class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+        >
+          Error, please try again later.
+        </p>
+      </div>
     </form>
   </div>
 </div>
-    <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+
+<script>
+  const signupFormId = "signup-form";
+  const signupForm = document.getElementById(signupFormId);
+  function handleSignupFormSubmit(event) {
+    event.preventDefault();
+    const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+    setLoading();
+    sendFormDataToFormspree(event, signupForm)
+      .then(() => showSuccessText(signupFormId))
+      .catch(() => showErrorText(signupFormId))
+      .finally(unsetLoading);
+  }
+  signupForm.addEventListener("submit", handleSignupFormSubmit);
+</script>
+ <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
       To get in touch with the Mathesar team, please email us at:
@@ -716,14 +772,14 @@ your data - in one open source interface" />
         <div class="flex space-x-3 text-gray-100">
           <a
             href="https://github.com/centerofci/mathesar"
-            class="hover:opacity-70 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors icon-link"
             aria-label="Visit Mathesar on Github"
           >
             <img class="invert" src="assets/github-logo.svg" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
-            class="hover:opacity-70 text-2xl transition-colors"
+            class="hover:opacity-70 text-2xl transition-colors icon-link"
             aria-label="Visit Mathesar on Twitter"
           >
             <img class="invert" src="assets/twitter-logo.svg" alt="" />
@@ -788,48 +844,22 @@ your data - in one open source interface" />
     function showSuccessText(formId) {
       const successText = document.querySelector(`#${formId} .success-text`);
       successText.innerHTML = "Thanks for your submission!";
-      successText.style.display = "block";
+      successText.classList.remove("hidden");
       setTimeout(() => {
-        successText.style.display = "none";
+        successText.classList.add("hidden");
       }, 5000);
     }
 
     function showErrorText(formId) {
       const errorText = document.querySelector(`#${formId} .error-text`);
       errorText.innerHTML = "Oops! There was a problem submitting your form";
-      errorText.style.display = "block";
+      errorText.classList.remove("hidden");
       setTimeout(() => {
-        errorText.style.display = "none";
+        errorText.classList.add("hidden");
       }, 5000);
     }
 
-    // Event setup for signup form
-    const signupFormId = "signup-form";
-    const signupForm = document.getElementById(signupFormId);
-    function handleSignupFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
-      setLoading();
-      sendFormDataToFormspree(event, signupForm)
-        .then(() => showSuccessText(signupFormId))
-        .catch(() => showErrorText(signupFormId))
-        .finally(unsetLoading);
-    }
-    signupForm.addEventListener("submit", handleSignupFormSubmit);
 
-    // Event setup for free install form
-    const freeInstallFormId = "free-install-form";
-    const freeInstallForm = document.getElementById(freeInstallFormId);
-    function handleFreeInstallFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
-      setLoading();
-      sendFormDataToFormspree(event, freeInstallForm)
-        .then(() => showSuccessText(freeInstallFormId))
-        .catch(() => showErrorText(freeInstallFormId))
-        .finally(unsetLoading);
-    }
-    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
 
   </script>
 </html>
