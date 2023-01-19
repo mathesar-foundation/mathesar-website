@@ -127,19 +127,27 @@ p > a:hover {
 }
 
 .md-content h1 {
-  @apply text-5xl;
+  @apply text-5xl font-black mb-4;
 }
 
 .md-content h2 {
-  @apply text-5xl font-semibold mb-2;
+  @apply text-3xl font-bold mb-3;
 }
 
 .md-content > h3 {
-  @apply text-2xl font-semibold my-8;
+  @apply text-2xl font-bold mb-2;
 }
 
 .md-content ul {
-  @apply list-disc list-inside my-4;
+  @apply list-disc list-inside space-y-4;
+}
+
+.md-content ul + p {
+  @apply mt-4;
+}
+
+.md-content ul + h2, ul + h3 {
+  @apply mt-8;
 }
 
 .md-content a {

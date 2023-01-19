@@ -9,7 +9,7 @@ Last updated: January 19, 2023
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. 
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
 
 ## Interpretation and Definitions
 
@@ -97,21 +97,24 @@ The Company may use Personal Data for the following purposes:
 - **To provide You** with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
 - **To manage Your requests:** To attend and manage Your requests to Us.
 - **For business transfers:** We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.
-- **For other purposes**: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience. 
+- **For other purposes**: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
 
 We may share Your personal information in the following situations:
+
 - **With Service Providers:** We may share Your personal information with Service Providers to monitor and analyze the use of our Service,  to contact You.
 - **For business transfers:** We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
 - **With Affiliates:** We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
-- **With other users:** when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. 
+- **With other users:** when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.
 - **With Your consent**: We may disclose Your personal information for any other purpose with Your consent.
 
 ### Retention of Your Personal Data
+
 The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
 
 The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
 
 ### Transfer of Your Personal Data
+
 Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
 
 Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.
@@ -119,6 +122,7 @@ Your consent to this Privacy Policy followed by Your submission of such informat
 The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
 
 ### Delete Your Personal Data
+
 You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.
 
 Our Service may give You the ability to delete certain information about You from within the Service.
@@ -152,16 +156,18 @@ The Company may disclose Your Personal Data in the good faith belief that such a
 The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
 
 ## Detailed Information on the Processing of Your Personal Data
+
 The Service Providers We use may have access to Your Personal Data. These third-party vendors collect, store, use, process and transfer information about Your activity on Our Service in accordance with their Privacy Policies.
 
 ### Email Marketing
+
 We may use Your Personal Data to contact You with newsletters, marketing or promotional materials and other information that may be of interest to You. You may opt-out of receiving any, or all, of these communications from Us by following the unsubscribe link or instructions provided in any email We send or by contacting Us.
 
 We may use Email Marketing Service Providers to manage and send emails to You.
 
 - **MailerLite**
 
-  Their Privacy Policy can be viewed at [https://www.mailerlite.com/legal/privacy-policy](https://www.mailerlite.com/legal/privacy-policy)
+Their Privacy Policy can be viewed at [https://www.mailerlite.com/legal/privacy-policy](https://www.mailerlite.com/legal/privacy-policy)
 
 ## GDPR Privacy
 
@@ -207,68 +213,77 @@ We collect information that identifies, relates to, describes, references, is ca
 
 Please note that the categories and examples provided in the list below are those defined in the CCPA. This does not mean that all examples of that category of personal information were in fact collected by Us, but reflects our good faith belief to the best of our knowledge that some of that information from the applicable category may be and may have been collected. For example, certain categories of personal information would only be collected if You provided such personal information directly to Us.
 
-#### Category A: Identifiers.
+#### Category A: Identifiers
+
 Examples: A real name, alias, postal address, unique personal identifier, online identifier, Internet Protocol address, email address, account name, driver's license number, passport number, or other similar identifiers.
 
 Collected: Yes.
 
-#### Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e)).
-Examples: A name, signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver's license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. Some personal information included in this category may overlap with other categories. 
+#### Category B: Personal information categories listed in the California Customer Records statute (Cal. Civ. Code § 1798.80(e))
+
+Examples: A name, signature, Social Security number, physical characteristics or description, address, telephone number, passport number, driver's license or state identification card number, insurance policy number, education, employment, employment history, bank account number, credit card number, debit card number, or any other financial information, medical information, or health insurance information. Some personal information included in this category may overlap with other categories.
 
 Collected: Yes.
 
-#### Category C: Protected classification characteristics under California or federal law.
+#### Category C: Protected classification characteristics under California or federal law
+
 Examples: Age (40 years or older), race, color, ancestry, national origin, citizenship, religion or creed, marital status, medical condition, physical or mental disability, sex (including gender, gender identity, gender expression, pregnancy or childbirth and related medical conditions), sexual orientation, veteran or military status, genetic information (including familial genetic information).
 
 Collected: No.
 
-#### Category D: Commercial information.
+#### Category D: Commercial information
+
 Examples: Records and history of products or services purchased or considered.
 
 Collected: No.
 
-#### Category E: Biometric information.
-Examples: Genetic, physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as, fingerprints, faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns, and sleep, health, or exercise data. 
+#### Category E: Biometric information
+
+Examples: Genetic, physiological, behavioral, and biological characteristics, or activity patterns used to extract a template or other identifier or identifying information, such as, fingerprints, faceprints, and voiceprints, iris or retina scans, keystroke, gait, or other physical patterns, and sleep, health, or exercise data.
 
 Collected: No.
 
-#### Category F: Internet or other similar network activity.
+#### Category F: Internet or other similar network activity
 
 Examples: Interaction with our Service or advertisement.
 
 Collected: Yes.
 
-#### Category G: Geolocation data.
+#### Category G: Geolocation data
+
 Examples: Approximate physical location.
 
 Collected: No.
 
-#### Category H: Sensory data.
-Examples: Audio, electronic, visual, thermal, olfactory, or similar information. 
+#### Category H: Sensory data
+
+Examples: Audio, electronic, visual, thermal, olfactory, or similar information.
 
 Collected: No.
 
-#### Category I: Professional or employment-related information.
-Examples: Current or past job history or performance evaluations. 
+#### Category I: Professional or employment-related information
+
+Examples: Current or past job history or performance evaluations.
 
 Collected: No.
 
-#### Category J: Non-public education information (per the Family Educational Rights and Privacy Act (20 U.S.C. Section 1232g, 34 C.F.R. Part 99)).
+#### Category J: Non-public education information (per the Family Educational Rights and Privacy Act (20 U.S.C. Section 1232g, 34 C.F.R. Part 99))
 
-Examples: Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records. 
+Examples: Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records.
 
 Collected: No.
 
 #### Category K: Inferences drawn from other personal information.**
-Examples: Profile reflecting a person's preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes. 
+
+Examples: Profile reflecting a person's preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.
 
 Collected: No.
 
-Under CCPA, personal information does not include: 
+Under CCPA, personal information does not include:
 
 - Publicly available information from government records
 - Deidentified or aggregated consumer information
-- Information excluded from the CCPA's scope, such as: 
+- Information excluded from the CCPA's scope, such as:
   - Health or medical information covered by the Health Insurance Portability and Accountability Act of 1996 (HIPAA) and the California Confidentiality of Medical Information Act (CMIA) or clinical trial data
   - Personal Information covered by certain sector-specific privacy laws, including the Fair Credit Reporting Act (FRCA), the Gramm-Leach-Bliley Act (GLBA) or California Financial Information Privacy Act (FIPA), and the Driver's Privacy Protection Act of 1994
 
@@ -287,7 +302,7 @@ We may use or disclose personal information We collect for "business purposes" o
 
 - To operate our Service and provide You with our Service.
 - To provide You with support and to respond to Your inquiries, including to investigate and address Your concerns and monitor and improve our Service.
-- To fulfill or meet the reason You provided the information. For example, if You share Your contact information to ask a question about our Service, We will use that personal information to respond to Your inquiry. 
+- To fulfill or meet the reason You provided the information. For example, if You share Your contact information to ask a question about our Service, We will use that personal information to respond to Your inquiry.
 - To respond to law enforcement requests and as required by applicable law, court order, or governmental regulations.
 - As described to You when collecting Your personal information or as otherwise set forth in the CCPA.
 - For internal administrative and auditing purposes.
@@ -309,7 +324,7 @@ Please note that the categories listed above are those defined in the CCPA. This
 
 When We disclose personal information for a business purpose or a commercial purpose, We enter a contract that describes the purpose and requires the recipient to both keep that personal information confidential and not use it for any purpose except performing the contract.
 
-### Sale of Personal Information 
+### Sale of Personal Information
 
 As defined in the CCPA, "sell" and "sale" mean selling, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating orally, in writing, or by electronic or other means, a consumer's personal information by the business to a third party for valuable consideration. This means that We may have received some kind of benefit in return for sharing personal information, but not necessarily a monetary benefit.
 
