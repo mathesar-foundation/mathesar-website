@@ -138,24 +138,23 @@ p > a:hover {
   @apply text-2xl font-bold mb-2;
 }
 
+.md-content h4 {
+  @apply text-xl font-bold mb-2;
+}
+
+.md-content h5 {
+  @apply text-lg font-bold mb-2;
+}
+
 .md-content ul {
-  @apply list-disc list-inside space-y-4;
-}
-
-.md-content ul + p {
-  @apply mt-4;
-}
-
-.md-content ul + h2, ul + h3 {
-  @apply mt-8;
+  @apply list-disc list-inside space-y-2 my-4;
 }
 
 .md-content a {
   @apply text-blue-500;
 }
 
-.md-content p + h2,
-p + h3 {
+.md-content p + h2, .md-content p + h3, .md-content p + h4, .md-content p + h5 {
   @apply mt-8;
 }
 
