@@ -37,7 +37,7 @@
         class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
       >
         <img
-          class="rounded-lg shadow-lg screenshot"
+          class="rounded-lg shadow-lg screenshot-image"
           src="assets/{{site.data.use_cases[page.title][0].image}}"
           alt=""
         />
@@ -55,7 +55,7 @@
           <div class="py-4 pl-4">
             {{item.description}}
             <img
-              class="rounded-lg shadow-lg screenshot"
+              class="rounded-lg shadow-lg screenshot-image"
               src="assets/{{item.image}}"
               alt=""
             />
@@ -86,7 +86,9 @@
   document.getElementById("description-1").classList.remove("hidden");
 
   function updateScreenshot(image) {
-    document.querySelector(".screenshot").src = "assets/" + image;
+    console.log(image, "assets/" + image, document.querySelector(".screenshot-image"))
+    document.querySelector(".screenshot-image").src = "assets/" + image;
+
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {

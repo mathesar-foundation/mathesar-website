@@ -25,7 +25,10 @@ How it works (technical) - Mathesar:
     description: "Bring data from different sources into a single format"
     image: "screenshot.png"
   - use_case: Project Management
+    image: "screenshot.png"
   - use_case: Tracking Expenses
+    image: "screenshot.png"
   - use_case: Event Planning
     image: "event-planning.png"
   - use_case: CRM Usage
+    image: "screenshot.png"
