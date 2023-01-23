@@ -3,12 +3,12 @@ Mathesar:
     image: "book-collection.png"
   - use_case: Plan an event
     image: "talks-with-topics.png"
-  - use_case: Publish a data set
-    image: "patent-exploration.png"
   - use_case: Track a project
-    image: "screenshot.png"
+    image: "task-management.png"
   - use_case: Prototype an application
     image: "arxiv-schema.png"
+  - use_case: Publish a data set
+    image: "patent-exploration.png"
   - use_case: Connect your database
     image: "db-page.png"
 How it works (technical) - Mathesar:
