@@ -2,7 +2,7 @@ Mathesar:
   - use_case: Manage a collection
     image: "book-collection.png"
   - use_case: Plan an event
-    image: "event-planning.png"
+    image: "talks-with-topics.png"
   - use_case: Publish a data set
     image: "screenshot.png"
   - use_case: Track a project
