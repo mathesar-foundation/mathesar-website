@@ -36,11 +36,17 @@
       <div
         class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
       >
-        <img
-          class="rounded-lg shadow-lg screenshot-image"
-          src="assets/{{site.data.use_cases[page.title][0].image}}"
-          alt=""
-        />
+        <a
+          class="screenshot-url"
+          href="assets/{{site.data.use_cases[page.title][0].image}}"
+          target="_blank"
+        >
+          <img
+            class="rounded-lg shadow-lg screenshot-image"
+            src="assets/{{site.data.use_cases[page.title][0].image}}"
+            alt=""
+          />
+        </a>
       </div>
     </div>
     <noscript>
@@ -67,6 +73,32 @@
   </div>
 </section>
 
+<div id="screenshotModal" class="modal">
+  <div class="modal-content closeModal">
+    <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+      <svg
+        class="w-6 h-6 text-gray-800"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </button>
+    <img
+      class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+      id="screenshotModalImage"
+    />
+    
+  </div>
+</div>
+
 <noscript>
   <style>
     .js-disabled {
@@ -83,11 +115,21 @@
   document
     .getElementById("button-1")
     .classList.add("bg-stone-200", "font-bold");
-  document.getElementById("description-1").classList.remove("hidden");
+
+  let firstDescription = document.getElementById("description-1");
+
+  if (firstDescription) {
+    firstDescription.classList.remove("hidden");
+  }
 
   function updateScreenshot(image) {
-    console.log(image, "assets/" + image, document.querySelector(".screenshot-image"))
+    console.log(
+      image,
+      "assets/" + image,
+      document.querySelector(".screenshot-image")
+    );
     document.querySelector(".screenshot-image").src = "assets/" + image;
+    document.querySelector(".screenshot-url").href = "assets/" + image;
 
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
@@ -108,4 +150,23 @@
       description.classList.remove("hidden");
     }
   }
+
+  var modal = document.getElementById("screenshotModal");
+
+  var screenshotUrl = document.querySelector(".screenshot-url");
+
+  var closeModalSpan = document.getElementsByClassName("closeModal")[0];
+
+  screenshotUrl.onclick = function (event) {
+    console.log("TEST MODAL");
+    event.preventDefault();
+    modal.style.display = "block";
+    var modalImg = document.getElementById("screenshotModalImage");
+    modalImg.src = this.href;
+  };
+
+  closeModalSpan.onclick = function () {
+    modal.style.display = "none";
+  };
+
 </script>
