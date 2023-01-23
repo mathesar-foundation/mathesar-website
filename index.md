@@ -35,7 +35,7 @@ Using a self-hostable and accessible interface.
 
 {% endcapture %}
 
-{%include screenshot.html theme="light" content=content %}
+{%include screenshot.html theme="light" content=content image="assets/author-record.png" %}
 
 {%include usecases.html %}
 

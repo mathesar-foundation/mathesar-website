@@ -18,7 +18,7 @@ Now you can spend **less time** creating custom reports and manually updating da
 {% include hero.html
 title='Allow quick access to your database – without disrupting your workflow'
 section='Open Source Database Interface' content=hero_content
-image='assets/screenshot.png' actions=actions %}
+image='assets/movie-exploration.png' actions=actions %}
 
 {% include ribbon.html %}
 
@@ -156,7 +156,7 @@ While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include screenshot.html theme="dark" content=screenshot_text %}
+{% include screenshot.html theme="dark" content=screenshot_text image="assets/movie-exploration.png" %}
 
 {% capture quote %}
 "At my previous job, I was constantly pulled away from my core responsibilities as a developer to **create reports** for business experts.

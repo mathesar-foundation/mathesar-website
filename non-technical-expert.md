@@ -46,7 +46,7 @@ But unlike a spreadsheet – you can now work more easily with structured, clean
 
 {% endcapture %}
 
-{% include screenshot.html theme="light" content=screenshot_text %}
+{% include screenshot.html theme="light" content=screenshot_text image="assets/screenshot.png" %}
 
 {% capture capture_1 %}
 Having your **data sources scattered in different places** can make analysis difficult.
