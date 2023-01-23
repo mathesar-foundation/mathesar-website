@@ -19,7 +19,12 @@
   image: pavish.jpg
   role: Frontend Developer
   bio: |+
-    "I intend to use a database for personal income and expense management, to keep a list of anime and their seasons to watch, for travel planning including tracking destinations, accommodations, and travel costs, and to record daily tasks for household and work."
+    "I intend to use a database to maintain a **personal diary**, but with data tracking!
+
+    I'll be logging my daily life: my anime watching habits, exercise routine, work progress, social interactions etc.,
+    I can analyze this data to gain valuable insights into my own behavior and lifestyle.
+    
+    Mathesar is going to make all of this a breeze!"
 - name: Brent Moran
   image: brent.jpg
   role: Backend Developer
