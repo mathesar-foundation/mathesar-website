@@ -159,9 +159,9 @@ While still retaining structure and consistency.
 {% include screenshot.html theme="dark" content=screenshot_text %}
 
 {% capture quote %}
-"At my previous job, business experts relied on me to **create reports** for them, every single day.
+"At my previous job, I was constantly pulled away from my core responsibilities as a developer to **create reports** for business experts.
 
-But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
+With Mathesar, they now have the tools to generate their own reports, allowing developers to focus on what we do best: **supporting and enhancing the technical infrastructure**."
 {% endcapture %}
 
 {%
