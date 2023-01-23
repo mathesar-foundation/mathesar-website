@@ -8,9 +8,9 @@ Mathesar:
   - use_case: Track a project
     image: "screenshot.png"
   - use_case: Prototype an application
-    image: "screenshot.png"
+    image: "arxiv-schema.png"
   - use_case: Connect your database
-    image: "screenshot.png"
+    image: "db-page.png"
 How it works (technical) - Mathesar:
   - use_case: Prototype New Ideas
     description: "Quickly fill in any gaps using Mathesar’s interface"
