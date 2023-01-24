@@ -19,10 +19,10 @@ How it works (technical) - Mathesar:
   - use_case: Publish Data Sets
     image: "patent-exploration.png"
   - use_case: Data Consolidation
-    image: "screenshot.png"
+    image: "data-import.png"
   - use_case: Project Management
-    image: "task-management.png"
+    image: "team-record-page.png"
   - use_case: Event Planning
     image: "talks-with-topics.png"
   - use_case: Customized CRM
-    image: "screenshot.png"
+    image: "crm-table.png"
