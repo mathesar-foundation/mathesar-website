@@ -73,31 +73,7 @@
   </div>
 </section>
 
-<div id="screenshotModal" class="modal">
-  <div class="modal-content closeModal">
-    <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
-      <svg
-        class="w-6 h-6 text-gray-800"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M6 18L18 6M6 6l12 12"
-        ></path>
-      </svg>
-    </button>
-    <img
-      class="rounded-lg shadow-lg bg-white p-4 w-10/12"
-      id="screenshotModalImage"
-    />
-    
-  </div>
-</div>
+
 
 <noscript>
   <style>
@@ -151,22 +127,6 @@
     }
   }
 
-  var modal = document.getElementById("screenshotModal");
-
-  var screenshotUrl = document.querySelector(".screenshot-url");
-
-  var closeModalSpan = document.getElementsByClassName("closeModal")[0];
-
-  screenshotUrl.onclick = function (event) {
-    console.log("TEST MODAL");
-    event.preventDefault();
-    modal.style.display = "block";
-    var modalImg = document.getElementById("screenshotModalImage");
-    modalImg.src = this.href;
-  };
-
-  closeModalSpan.onclick = function () {
-    modal.style.display = "none";
-  };
+  
 
 </script>
