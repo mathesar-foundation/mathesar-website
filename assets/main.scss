@@ -359,3 +359,16 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
+.screenshot-url {
+  @apply block relative;
+}
+
+.screenshot-url::after {
+  content: "Zoom In";
+  @apply absolute top-0 right-0 bottom-0 left-0 bg-gray-900 bg-opacity-40 hidden;
+}
+
+.screenshot-url:hover::after {
+  @apply flex items-center justify-center text-white text-2xl font-bold;
+}
