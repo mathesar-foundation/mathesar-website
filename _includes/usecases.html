@@ -36,11 +36,17 @@
       <div
         class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
       >
-        <img
-          class="rounded-lg shadow-lg screenshot"
-          src="assets/{{site.data.use_cases[page.title][0].image}}"
-          alt=""
-        />
+        <a
+          class="screenshot-url"
+          href="assets/{{site.data.use_cases[page.title][0].image}}"
+          target="_blank"
+        >
+          <img
+            class="rounded-lg shadow-lg screenshot-image"
+            src="assets/{{site.data.use_cases[page.title][0].image}}"
+            alt=""
+          />
+        </a>
       </div>
     </div>
     <noscript>
@@ -55,7 +61,7 @@
           <div class="py-4 pl-4">
             {{item.description}}
             <img
-              class="rounded-lg shadow-lg screenshot"
+              class="rounded-lg shadow-lg screenshot-image"
               src="assets/{{item.image}}"
               alt=""
             />
@@ -66,6 +72,8 @@
     </noscript>
   </div>
 </section>
+
+
 
 <noscript>
   <style>
@@ -83,10 +91,22 @@
   document
     .getElementById("button-1")
     .classList.add("bg-stone-200", "font-bold");
-  document.getElementById("description-1").classList.remove("hidden");
+
+  let firstDescription = document.getElementById("description-1");
+
+  if (firstDescription) {
+    firstDescription.classList.remove("hidden");
+  }
 
   function updateScreenshot(image) {
-    document.querySelector(".screenshot").src = "assets/" + image;
+    console.log(
+      image,
+      "assets/" + image,
+      document.querySelector(".screenshot-image")
+    );
+    document.querySelector(".screenshot-image").src = "assets/" + image;
+    document.querySelector(".screenshot-url").href = "assets/" + image;
+
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
@@ -106,4 +126,7 @@
       description.classList.remove("hidden");
     }
   }
+
+  
+
 </script>

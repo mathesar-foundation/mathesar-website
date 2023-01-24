@@ -1,30 +1,35 @@
 Mathesar:
   - use_case: Manage a collection
-    image: "screenshot.png"
+    image: "book-collection.png"
   - use_case: Plan an event
-    image: "screenshot.png"
-  - use_case: Publish a data set
-    image: "screenshot.png"
+    image: "talks-with-topics.png"
   - use_case: Track a project
-    image: "screenshot.png"
+    image: "task-management.png"
   - use_case: Prototype an application
-    image: "screenshot.png"
+    image: "arxiv-schema.png"
+  - use_case: Publish a data set
+    image: "patent-exploration.png"
   - use_case: Connect your database
-    image: "screenshot.png"
+    image: "db-page.png"
 How it works (technical) - Mathesar:
-  - use_case: Prototype New Ideas
-    description: "Quickly fill in any gaps using Mathesar’s interface"
-    image: "screenshot.png"
-  - use_case: Database Admin Interface
-    description: "Gain different views of your data"
-    image: "screenshot.png"
-  - use_case: Publish Data Sets
-    description: "Let other people explore your data freely"
-    image: "screenshot.png"
-  - use_case: Data Consolidation
+  - use_case: Prototyping applications
+    description: "Create quick CRUD applications or augment existing interfaces"
+    image: "arxiv-schema.png"
+  - use_case: Database admin interface
+    description: "Give collaborators access to an existing database"
+    image: "company-table.png"
+  - use_case: Data consolidation
     description: "Bring data from different sources into a single format"
-    image: "screenshot.png"
-  - use_case: Project Management
-  - use_case: Tracking Expenses
-  - use_case: Event Planning
-  - use_case: CRM Usage
+    image: "data-import.png"
+  - use_case: Project management
+    description: "Create custom workflows based on the needs of your project"
+    image: "team-record-page.png"
+  - use_case: Event planning
+    description: "See different views of your event's data easily"
+    image: "talks-with-topics.png"
+  - use_case: Customized CRM
+    description: "Set up data models that work for you"
+    image: "crm-table.png"
+  - use_case: Publishing data sets
+    description: "Share data sets with others without losing the data's structure"
+    image: "patent-exploration.png"

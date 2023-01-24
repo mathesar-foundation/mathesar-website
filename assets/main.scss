@@ -341,3 +341,30 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
 .screenshot-content h4 {
   @apply text-2xl font-semibold;
 }
+
+/* The Modal (background) */
+.modal {
+  @apply fixed inset-0 z-50 overflow-hidden bg-gray-900 bg-opacity-80 left-0 top-0 w-full h-full hidden;
+}
+
+/* Modal Content */
+.modal-content {
+  @apply m-auto block flex flex-col justify-center items-center h-full w-full;
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.screenshot-url {
+  @apply block relative;
+}
+
+.screenshot-url::after {
+  content: "Click to enlarge";
+  @apply absolute bottom-[-1.5rem] text-sm font-semibold text-gray-400;
+}

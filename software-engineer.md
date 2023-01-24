@@ -18,7 +18,7 @@ Now you can spend **less time** creating custom reports and manually updating da
 {% include hero.html
 title='Allow quick access to your database – without disrupting your workflow'
 section='Open Source Database Interface' content=hero_content
-image='assets/screenshot.png' actions=actions %}
+image='assets/movie-exploration.png' actions=actions %}
 
 {% include ribbon.html %}
 
@@ -156,12 +156,14 @@ While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include screenshot.html theme="dark" content=screenshot_text %}
+{% include screenshot.html theme="dark" content=screenshot_text image="assets/authors-filter.png" %}
 
 {% capture quote %}
-"At my previous job, I was constantly pulled away from my core responsibilities as a developer to **create reports** for business experts.
+"At my previous job, business experts relied on me to **create reports** for them, every single day.
 
-With Mathesar, they now have the tools to generate their own reports, allowing developers to focus on what we do best: **supporting and enhancing the technical infrastructure**."
+But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?
+
+With Mathesar, they would have had the tools to generate their own reports, allowing developers to focus on what we do best."
 {% endcapture %}
 
 {%

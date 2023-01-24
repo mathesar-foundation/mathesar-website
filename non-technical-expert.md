@@ -16,9 +16,9 @@ No technical skills required.
 {% endcapture %}
 
 {% include hero.html
-title='Enter quick data and find answers to your questions – independently'
+title='Enter data quickly and find answers to your questions – independently'
 section='Open Source Database Interface' content=hero_content
-image='assets/screenshot.png' actions=actions %}
+image='assets/leads-explorer.png' actions=actions %}
 
 {% include ribbon.html %}
 
@@ -46,7 +46,7 @@ But unlike a spreadsheet – you can now work more easily with structured, clean
 
 {% endcapture %}
 
-{% include screenshot.html theme="light" content=screenshot_text %}
+{% include screenshot.html theme="light" content=screenshot_text image="assets/crm-table-zoomed.png" %}
 
 {% capture capture_1 %}
 Having your **data sources scattered in different places** can make analysis difficult.
