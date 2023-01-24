@@ -12,23 +12,17 @@ Mathesar:
   - use_case: Connect your database
     image: "db-page.png"
 How it works (technical) - Mathesar:
-  - use_case: Prototype New Ideas
-    description: "Quickly fill in any gaps using Mathesar’s interface"
-    image: "screenshot.png"
+  - use_case: Prototype Applications
+    image: "arxiv-schema.png"
   - use_case: Database Admin Interface
-    description: "Gain different views of your data"
-    image: "screenshot.png"
+    image: "company-table.png"
   - use_case: Publish Data Sets
-    description: "Let other people explore your data freely"
-    image: "screenshot.png"
+    image: "patent-exploration.png"
   - use_case: Data Consolidation
-    description: "Bring data from different sources into a single format"
     image: "screenshot.png"
   - use_case: Project Management
-    image: "screenshot.png"
-  - use_case: Tracking Expenses
-    image: "screenshot.png"
+    image: "task-management.png"
   - use_case: Event Planning
-    image: "event-planning.png"
-  - use_case: CRM Usage
+    image: "talks-with-topics.png"
+  - use_case: Customized CRM
     image: "screenshot.png"
