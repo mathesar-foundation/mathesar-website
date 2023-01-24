@@ -161,9 +161,9 @@ While still retaining structure and consistency.
 {% capture quote %}
 "At my previous job, business experts relied on me to **create reports** for them, every single day.
 
-But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?"
+But shouldn’t developers be focusing more on **supporting technical infrastructure**? Isn’t that our main function?
 
-With Mathesar, they would have had the tools to generate their own reports, allowing developers to focus on what we do best.
+With Mathesar, they would have had the tools to generate their own reports, allowing developers to focus on what we do best."
 {% endcapture %}
 
 {%
