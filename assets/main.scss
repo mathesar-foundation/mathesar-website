@@ -365,7 +365,7 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
 }
 
 .screenshot-url::after {
-  content: "Zoom In";
+  content: "Click to enlarge";
   @apply absolute top-0 right-0 bottom-0 left-0 bg-gray-900 bg-opacity-40 hidden;
 }
 
