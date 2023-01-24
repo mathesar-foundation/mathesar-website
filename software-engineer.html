@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-
   </head>
-  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+
+  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <a href="index.html">
@@ -285,7 +285,7 @@
   </div>
 
   <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
-    <img class="border shadow-lg" src="assets/screenshot.png" alt="Allow quick access to your database – without disrupting your workflow" />
+    <img class="border shadow-lg" src="assets/movie-exploration.png" alt="Allow quick access to your database – without disrupting your workflow" />
   </div>
 </div>
 
@@ -461,7 +461,9 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
   <div class="container mx-auto space-y-4 max-w-6xl">
     <div class="grid grid-cols-8 gap-8 items-center px-4 lg:px-0">
       <div class="col-span-8 lg:col-span-5 flex flex-col">
-        <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="" />
+        <a href="assets/authors-filter.png" class="screenshot-url" target="_blank">
+          <img class="rounded-lg shadow-lg my-auto" src="assets/authors-filter.png" alt="" />
+        </a>
       </div>
       <div class="col-span-8 lg:col-span-3 space-y-2 screenshot-content">
         
@@ -486,9 +488,11 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
       </div>
       <div class="text-lg space-y-2">
         
-<p>“At my previous job, I was constantly pulled away from my core responsibilities as a developer to <strong>create reports</strong> for business experts.</p>
+<p>“At my previous job, business experts relied on me to <strong>create reports</strong> for them, every single day.</p>
 
-<p>With Mathesar, they now have the tools to generate their own reports, allowing developers to focus on what we do best: <strong>supporting and enhancing the technical infrastructure</strong>.”</p>
+<p>But shouldn’t developers be focusing more on <strong>supporting technical infrastructure</strong>? Isn’t that our main function?</p>
+
+<p>With Mathesar, they would have had the tools to generate their own reports, allowing developers to focus on what we do best.”</p>
 
       </div>
       <p class="font-semibold">Pavish - Mathesar’s Frontend Developer</p>
@@ -509,66 +513,75 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
     <div class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0 js-enabled">
       <div class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center">
         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-1">
-          Prototype New Ideas
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('arxiv-schema.png')" id="button-1">
+          Prototyping applications
         </button>
 
         
         <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-1">
-          Quickly fill in any gaps using Mathesar’s interface
+          Create quick CRUD applications or augment existing interfaces
         </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-2">
-          Database Admin Interface
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('company-table.png')" id="button-2">
+          Database admin interface
         </button>
 
         
         <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-2">
-          Gain different views of your data
+          Give collaborators access to an existing database
         </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-3">
-          Publish Data Sets
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('data-import.png')" id="button-3">
+          Data consolidation
         </button>
 
         
         <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-3">
-          Let other people explore your data freely
+          Bring data from different sources into a single format
         </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-4">
-          Data Consolidation
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('team-record-page.png')" id="button-4">
+          Project management
         </button>
 
         
         <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-4">
-          Bring data from different sources into a single format
+          Create custom workflows based on the needs of your project
         </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('')" id="button-5">
-          Project Management
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('talks-with-topics.png')" id="button-5">
+          Event planning
         </button>
 
+        
+        <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-5">
+          See different views of your event's data easily
+        </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('')" id="button-6">
-          Tracking Expenses
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('crm-table.png')" id="button-6">
+          Customized CRM
         </button>
 
+        
+        <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-6">
+          Set up data models that work for you
+        </div>
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('')" id="button-7">
-          Event Planning
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('patent-exploration.png')" id="button-7">
+          Publishing data sets
         </button>
 
-         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('')" id="button-8">
-          CRM Usage
-        </button>
-
+        
+        <div class="use-case-description text-center lg:text-left py-4 pl-4 hidden order-last w-full" id="description-7">
+          Share data sets with others without losing the data's structure
+        </div>
          
       </div>
 
       <div class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center">
-        <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+        <a class="screenshot-url" href="assets/arxiv-schema.png" target="_blank">
+          <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
+        </a>
       </div>
     </div>
     <noscript>
@@ -576,67 +589,59 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
         <div class="lg:max-w-2xl shrink-0 gap-1 flex lg:block flex-wrap justify-center mx-auto">
           
 
-          <div class="text-xl">Prototype New Ideas</div>
+          <div class="text-xl">Prototyping applications</div>
 
           <div class="py-4 pl-4">
-            Quickly fill in any gaps using Mathesar’s interface
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            Create quick CRUD applications or augment existing interfaces
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
           </div>
           
 
-          <div class="text-xl">Database Admin Interface</div>
+          <div class="text-xl">Database admin interface</div>
 
           <div class="py-4 pl-4">
-            Gain different views of your data
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            Give collaborators access to an existing database
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/company-table.png" alt="" />
           </div>
           
 
-          <div class="text-xl">Publish Data Sets</div>
-
-          <div class="py-4 pl-4">
-            Let other people explore your data freely
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
-          </div>
-          
-
-          <div class="text-xl">Data Consolidation</div>
+          <div class="text-xl">Data consolidation</div>
 
           <div class="py-4 pl-4">
             Bring data from different sources into a single format
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/data-import.png" alt="" />
           </div>
           
 
-          <div class="text-xl">Project Management</div>
+          <div class="text-xl">Project management</div>
 
           <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot" src="assets/" alt="" />
+            Create custom workflows based on the needs of your project
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/team-record-page.png" alt="" />
           </div>
           
 
-          <div class="text-xl">Tracking Expenses</div>
+          <div class="text-xl">Event planning</div>
 
           <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot" src="assets/" alt="" />
+            See different views of your event's data easily
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/talks-with-topics.png" alt="" />
           </div>
           
 
-          <div class="text-xl">Event Planning</div>
+          <div class="text-xl">Customized CRM</div>
 
           <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot" src="assets/" alt="" />
+            Set up data models that work for you
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/crm-table.png" alt="" />
           </div>
           
 
-          <div class="text-xl">CRM Usage</div>
+          <div class="text-xl">Publishing data sets</div>
 
           <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot" src="assets/" alt="" />
+            Share data sets with others without losing the data's structure
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/patent-exploration.png" alt="" />
           </div>
           
         </div>
@@ -661,10 +666,22 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
   document
     .getElementById("button-1")
     .classList.add("bg-stone-200", "font-bold");
-  document.getElementById("description-1").classList.remove("hidden");
+
+  let firstDescription = document.getElementById("description-1");
+
+  if (firstDescription) {
+    firstDescription.classList.remove("hidden");
+  }
 
   function updateScreenshot(image) {
-    document.querySelector(".screenshot").src = "assets/" + image;
+    console.log(
+      image,
+      "assets/" + image,
+      document.querySelector(".screenshot-image")
+    );
+    document.querySelector(".screenshot-image").src = "assets/" + image;
+    document.querySelector(".screenshot-url").href = "assets/" + image;
+
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
@@ -684,6 +701,9 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
       description.classList.remove("hidden");
     }
   }
+
+  
+
 </script>
 
 <section class="bg-gray-800 angled py-40 text-white light">
@@ -836,6 +856,32 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
 </footer>
 
 
+    <div id="screenshotModal" class="modal">
+      <div class="modal-content closeModal">
+        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <img
+          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          id="screenshotModalImage"
+        />
+      </div>
+    </div>
+  </body>
+
   <script>
     // when feature-card element add flex inverse to odd elements
     const featureCards = document.querySelectorAll(".feature-card");
@@ -903,8 +949,24 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
         errorText.classList.add("hidden");
       }, 5000);
     }
+  </script>
 
+  <script>
+    var modal = document.getElementById("screenshotModal");
+    var screenshotUrls = document.querySelectorAll(".screenshot-url");
+    var closeModalSpan = document.getElementsByClassName("closeModal")[0];
 
+    for (var i = 0; i < screenshotUrls.length; i++) {
+      screenshotUrls[i].onclick = function (event) {
+        event.preventDefault();
+        modal.style.display = "block";
+        var modalImg = document.getElementById("screenshotModalImage");
+        modalImg.src = this.href;
+      };
+    }
 
+    closeModalSpan.onclick = function () {
+      modal.style.display = "none";
+    };
   </script>
 </html>

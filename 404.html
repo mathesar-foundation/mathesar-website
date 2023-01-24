@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-
   </head>
-  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+
+  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <a href="index.html">
@@ -396,6 +396,32 @@
 </footer>
 
 
+    <div id="screenshotModal" class="modal">
+      <div class="modal-content closeModal">
+        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <img
+          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          id="screenshotModalImage"
+        />
+      </div>
+    </div>
+  </body>
+
   <script>
     // when feature-card element add flex inverse to odd elements
     const featureCards = document.querySelectorAll(".feature-card");
@@ -463,8 +489,24 @@
         errorText.classList.add("hidden");
       }, 5000);
     }
+  </script>
 
+  <script>
+    var modal = document.getElementById("screenshotModal");
+    var screenshotUrls = document.querySelectorAll(".screenshot-url");
+    var closeModalSpan = document.getElementsByClassName("closeModal")[0];
 
+    for (var i = 0; i < screenshotUrls.length; i++) {
+      screenshotUrls[i].onclick = function (event) {
+        event.preventDefault();
+        modal.style.display = "block";
+        var modalImg = document.getElementById("screenshotModalImage");
+        modalImg.src = this.href;
+      };
+    }
 
+    closeModalSpan.onclick = function () {
+      modal.style.display = "none";
+    };
   </script>
 </html>

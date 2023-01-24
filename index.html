@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-
   </head>
-  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+
+  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <a href="index.html">
@@ -291,7 +291,7 @@ your data - in one open source interface</h2>
   </div>
 
   <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
-    <img class="border shadow-lg" src="assets/screenshot.png" alt="Quickly enter and analyze
+    <img class="border shadow-lg" src="assets/books-table.png" alt="Quickly enter and analyze
 your data - in one open source interface" />
   </div>
 </div>
@@ -414,7 +414,9 @@ your data - in one open source interface" />
   <div class="container mx-auto space-y-4 max-w-6xl">
     <div class="grid grid-cols-8 gap-8 items-center px-4 lg:px-0">
       <div class="col-span-8 lg:col-span-5 flex flex-col">
-        <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="" />
+        <a href="assets/author-record.png" class="screenshot-url" target="_blank">
+          <img class="rounded-lg shadow-lg my-auto" src="assets/author-record.png" alt="" />
+        </a>
       </div>
       <div class="col-span-8 lg:col-span-3 space-y-2 screenshot-content">
         
@@ -445,32 +447,32 @@ your data - in one open source interface" />
     <div class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0 js-enabled">
       <div class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center">
         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-1">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('book-collection.png')" id="button-1">
           Manage a collection
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-2">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('talks-with-topics.png')" id="button-2">
           Plan an event
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-3">
-          Publish a data set
-        </button>
-
-         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-4">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('task-management.png')" id="button-3">
           Track a project
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-5">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('arxiv-schema.png')" id="button-4">
           Prototype an application
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('screenshot.png')" id="button-6">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('patent-exploration.png')" id="button-5">
+          Publish a data set
+        </button>
+
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('db-page.png')" id="button-6">
           Connect your database
         </button>
 
@@ -478,7 +480,9 @@ your data - in one open source interface" />
       </div>
 
       <div class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center">
-        <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+        <a class="screenshot-url" href="assets/book-collection.png" target="_blank">
+          <img class="rounded-lg shadow-lg screenshot-image" src="assets/book-collection.png" alt="" />
+        </a>
       </div>
     </div>
     <noscript>
@@ -490,7 +494,7 @@ your data - in one open source interface" />
 
           <div class="py-4 pl-4">
             
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/book-collection.png" alt="" />
           </div>
           
 
@@ -498,15 +502,7 @@ your data - in one open source interface" />
 
           <div class="py-4 pl-4">
             
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
-          </div>
-          
-
-          <div class="text-xl">Publish a data set</div>
-
-          <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/talks-with-topics.png" alt="" />
           </div>
           
 
@@ -514,7 +510,7 @@ your data - in one open source interface" />
 
           <div class="py-4 pl-4">
             
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/task-management.png" alt="" />
           </div>
           
 
@@ -522,7 +518,15 @@ your data - in one open source interface" />
 
           <div class="py-4 pl-4">
             
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
+          </div>
+          
+
+          <div class="text-xl">Publish a data set</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/patent-exploration.png" alt="" />
           </div>
           
 
@@ -530,7 +534,7 @@ your data - in one open source interface" />
 
           <div class="py-4 pl-4">
             
-            <img class="rounded-lg shadow-lg screenshot" src="assets/screenshot.png" alt="" />
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/db-page.png" alt="" />
           </div>
           
         </div>
@@ -555,10 +559,22 @@ your data - in one open source interface" />
   document
     .getElementById("button-1")
     .classList.add("bg-stone-200", "font-bold");
-  document.getElementById("description-1").classList.remove("hidden");
+
+  let firstDescription = document.getElementById("description-1");
+
+  if (firstDescription) {
+    firstDescription.classList.remove("hidden");
+  }
 
   function updateScreenshot(image) {
-    document.querySelector(".screenshot").src = "assets/" + image;
+    console.log(
+      image,
+      "assets/" + image,
+      document.querySelector(".screenshot-image")
+    );
+    document.querySelector(".screenshot-image").src = "assets/" + image;
+    document.querySelector(".screenshot-url").href = "assets/" + image;
+
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
@@ -578,6 +594,9 @@ your data - in one open source interface" />
       description.classList.remove("hidden");
     }
   }
+
+  
+
 </script>
 
 <section class="angled light">
@@ -789,6 +808,32 @@ your data - in one open source interface" />
 </footer>
 
 
+    <div id="screenshotModal" class="modal">
+      <div class="modal-content closeModal">
+        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <img
+          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          id="screenshotModalImage"
+        />
+      </div>
+    </div>
+  </body>
+
   <script>
     // when feature-card element add flex inverse to odd elements
     const featureCards = document.querySelectorAll(".feature-card");
@@ -856,8 +901,24 @@ your data - in one open source interface" />
         errorText.classList.add("hidden");
       }, 5000);
     }
+  </script>
 
+  <script>
+    var modal = document.getElementById("screenshotModal");
+    var screenshotUrls = document.querySelectorAll(".screenshot-url");
+    var closeModalSpan = document.getElementsByClassName("closeModal")[0];
 
+    for (var i = 0; i < screenshotUrls.length; i++) {
+      screenshotUrls[i].onclick = function (event) {
+        event.preventDefault();
+        modal.style.display = "block";
+        var modalImg = document.getElementById("screenshotModalImage");
+        modalImg.src = this.href;
+      };
+    }
 
+    closeModalSpan.onclick = function () {
+      modal.style.display = "none";
+    };
   </script>
 </html>

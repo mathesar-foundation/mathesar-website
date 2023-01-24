@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
-
   </head>
-  <body class="bg-stone-50 text-gray-800 overflow-x-hidden">
+
+  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <a href="index.html">
@@ -253,7 +253,7 @@
   <div class="space-y-4 max-w-2xl">
     <div class="mx-auto">
       <h4 class="uppercase text-sm mb-2">Open Source Database Interface</h4>
-      <h2 class="text-4xl lg:text-5xl font-bold">Enter quick data and find answers to your questions – independently</h2>
+      <h2 class="text-4xl lg:text-5xl font-bold">Enter data quickly and find answers to your questions – independently</h2>
     </div>
     <div class="lg:text-xl space-y-2 max-w-lg">
       
@@ -284,7 +284,7 @@ No technical skills required.</p>
   </div>
 
   <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
-    <img class="border shadow-lg" src="assets/screenshot.png" alt="Enter quick data and find answers to your questions – independently" />
+    <img class="border shadow-lg" src="assets/leads-explorer.png" alt="Enter data quickly and find answers to your questions – independently" />
   </div>
 </div>
 
@@ -342,7 +342,9 @@ No technical skills required.</p>
   <div class="container mx-auto space-y-4 max-w-6xl">
     <div class="grid grid-cols-8 gap-8 items-center px-4 lg:px-0">
       <div class="col-span-8 lg:col-span-5 flex flex-col">
-        <img class="rounded-lg shadow-lg my-auto" src="assets/screenshot.png" alt="" />
+        <a href="assets/crm-table-zoomed.png" class="screenshot-url" target="_blank">
+          <img class="rounded-lg shadow-lg my-auto" src="assets/crm-table-zoomed.png" alt="" />
+        </a>
       </div>
       <div class="col-span-8 lg:col-span-3 space-y-2 screenshot-content">
         
@@ -644,6 +646,32 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
 </footer>
 
 
+    <div id="screenshotModal" class="modal">
+      <div class="modal-content closeModal">
+        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <img
+          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          id="screenshotModalImage"
+        />
+      </div>
+    </div>
+  </body>
+
   <script>
     // when feature-card element add flex inverse to odd elements
     const featureCards = document.querySelectorAll(".feature-card");
@@ -711,8 +739,24 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
         errorText.classList.add("hidden");
       }, 5000);
     }
+  </script>
 
+  <script>
+    var modal = document.getElementById("screenshotModal");
+    var screenshotUrls = document.querySelectorAll(".screenshot-url");
+    var closeModalSpan = document.getElementsByClassName("closeModal")[0];
 
+    for (var i = 0; i < screenshotUrls.length; i++) {
+      screenshotUrls[i].onclick = function (event) {
+        event.preventDefault();
+        modal.style.display = "block";
+        var modalImg = document.getElementById("screenshotModalImage");
+        modalImg.src = this.href;
+      };
+    }
 
+    closeModalSpan.onclick = function () {
+      modal.style.display = "none";
+    };
   </script>
 </html>
