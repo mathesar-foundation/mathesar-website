@@ -156,7 +156,7 @@ While still retaining structure and consistency.
 
 {% endcapture %}
 
-{% include screenshot.html theme="dark" content=screenshot_text image="assets/movie-exploration.png" %}
+{% include screenshot.html theme="dark" content=screenshot_text image="assets/authors-filter.png" %}
 
 {% capture quote %}
 "At my previous job, I was constantly pulled away from my core responsibilities as a developer to **create reports** for business experts.
