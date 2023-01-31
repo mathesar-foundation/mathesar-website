@@ -42,3 +42,5 @@ jobs:
           # GITHUB_TOKEN secret is set up automatically
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          cname: mathesar.org
+  
