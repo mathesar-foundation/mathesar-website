@@ -246,7 +246,7 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
 }
 
 .highlight-content ul {
-  @apply space-y-4 max-w-md mx-auto;
+  @apply space-y-4 max-w-md mx-auto list-disc list-inside;
 }
 
 .highlight-content ul li {

@@ -27,7 +27,7 @@ image='assets/movie-exploration.png' actions=actions %}
 You can ensure data integrity. Perform quick
 schema changes. And let teammates create reports – without depending on you.
 
-Mathesar doesn’t have its own set of abstractions so it won’t make unexpected changes to your database. You can allow your collaborators to quickly enter data and create reports – without depending on you.
+Mathesar doesn’t have its own set of abstractions so it won’t make unexpected changes to your database.
 
 {% endcapture %}
 

@@ -167,7 +167,7 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
 {% capture quote %}
 “When developers would give me access to software, my immediate instinct was “don’t break anything!”
 
-Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?
+Causing an error would be so embarrassing. You don’t intentionally want to delete something but stuff happens, right?
 
 I felt like I was in a piece of software that wasn’t meant for me.
 

@@ -17,7 +17,7 @@ subheader=subheader
 {% capture highlight %}
 Mathesar is a non-profit project. Our goal is to make **understanding and working with data easy for everyone**.
 
-Databases have been around for a long time and solve common data problems really well. But, working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.
+Databases have been around for a long time and solve common data problems really well. But working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.
 
 We want to make existing database functionality more accessible – in a user-friendly way.
 {% endcapture %}
