@@ -138,9 +138,8 @@ But **manual changes often take hours, even days**.
 
 This runs a significant risk of disruption. When your data is **paused and not synced-up**, you could end up with stale data.
 
-Mathesar saves you time and lets you **update data models – in a click**.
-
-So as your workflow evolves, you’re able to **adjust your data** too accurately. In minutes.
+Mathesar's unique re-structure feature saves you time. **You can update data models - in a click**.
+**Ensure accurate data, without disruptions.**
 {% endcapture %}
 
 {% include feature.html
@@ -153,7 +152,9 @@ So as your workflow evolves, you’re able to **adjust your data** too accuratel
 {% capture capture_7 %}
 Proprietary software companies often look like appealing choices – **until you’re locked in their ecosystem**.
 If you decide to move away, you could lose valuable data. Your data could even be sold off in private deals.
+
 Mathesar **allows you to self-host on your servers**. You’ll have full control over your data and can choose who has access.
+
 Easily migrate from Mathesar – or simply go back and forth – anytime you like.
 {% endcapture %}
 
