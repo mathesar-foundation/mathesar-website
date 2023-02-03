@@ -24,9 +24,9 @@ image='assets/leads-explorer.png' actions=actions %}
 
 {% capture highlight_1 %}
 
-- How can you be certain that your database doesn’t contain faulty, duplicated data?
-- When your workflow changes, how can you quickly update your data structures?
-- How can you see one view of all your different data sources?
+- How can you be certain that your database doesn’t contain **faulty**, duplicated data?
+- When your workflow changes, how can you **quickly update** your data structures?
+- How can you see **one view** of all your different data sources?
 
 {% endcapture %}
 
@@ -139,7 +139,8 @@ But **manual changes often take hours, even days**.
 This runs a significant risk of disruption. When your data is **paused and not synced-up**, you could end up with stale data.
 
 Mathesar's unique re-structure feature saves you time. **You can update data models - in a click**.
-**Ensure accurate data, without disruptions.**
+
+Ensure accurate data, without disruptions.
 {% endcapture %}
 
 {% include feature.html

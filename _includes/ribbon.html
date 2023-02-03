@@ -4,8 +4,8 @@
   >
     {% for feature in site.data.features[page.title].features %}
     <li class="flex items-center space-x-2 w-max mx-auto">
-      <img src="assets/{{feature.icon}}.svg" alt="" />
-      <span>{{feature.title}}</span>
+      <img src="assets/{{feature.icon}}.png" class="h-12" alt="" />
+      <span class="font-bold">{{feature.title}}</span>
     </li>
     {% endfor %}
   </ul>
