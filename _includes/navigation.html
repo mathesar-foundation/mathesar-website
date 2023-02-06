@@ -74,7 +74,7 @@
               Community <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 target="_blank"
@@ -201,15 +201,29 @@
 
   <script>
     var dropdownButtons = document.querySelectorAll(".dropdown button");
+    var currentlyOpenDropdown;
 
     dropdownButtons.forEach(function (dropdownButton) {
-      dropdownButton.addEventListener("click", toggleDropdown);
+      dropdownButton.addEventListener("click", function () {
+        if (currentlyOpenDropdown) {
+          currentlyOpenDropdown.classList.toggle("hidden");
+        }
+        currentlyOpenDropdown = this.nextElementSibling;
+        currentlyOpenDropdown.classList.toggle("hidden");
+      });
     });
 
     document.addEventListener("click", function (event) {
-      var isClickInside = dropdownButtons[0].contains(event.target);
-      if (!isClickInside) {
-        hideAllDropdown();
+      var isClickInside = false;
+      dropdownButtons.forEach(function (dropdownButton) {
+        if (dropdownButton.contains(event.target)) {
+          isClickInside = true;
+        }
+      });
+
+      if (!isClickInside && currentlyOpenDropdown) {
+        currentlyOpenDropdown.classList.toggle("hidden");
+        currentlyOpenDropdown = null;
       }
     });
 
@@ -234,9 +248,9 @@
     }
 
     function hideAllDropdown() {
-      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      var dropdownMenus = document.querySelectorAll(".dropdown-menu");
       dropdownMenus.forEach(function (dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.toggle("hidden");
       });
     }
   </script>
