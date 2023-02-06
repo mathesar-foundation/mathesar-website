@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,18 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
+
+    <meta property="og:title" content="About Us - Mathesar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://centerofci.github.io//about.html">
+
+    <meta property="og:image" content="https://centerofci.github.io//image.png" />
+    <meta
+      property="og:description"
+      content="Mathesar is an open source and web-based interface that works on top of your database."
+    />
+    <meta property="og:site_name" content="Mathesar" />
+
     <title>About Us - Mathesar</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -19,9 +31,25 @@
   <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
-    <a href="index.html">
-      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-    </a>
+    <div class="flex items-center justify-between">
+      <a href="index.html">
+        <img class="w-40 lg:w-56" src="assets/logo.svg" alt="Mathesar's Logo" />
+      </a>
+      <a
+        href="https://github.com/centerofci/mathesar"
+        class="hover:opacity-70 transition-colors bg-stone-200 shadow-md invert py-2 px-3 mt-[-1rem] lg:mt-[-2rem] flex items-center space-x-2 text-xs lg:text-lg font-semibold"
+        aria-label="Visit Mathesar on Github"
+        target="_blank"
+      >
+        <span class="text-gray-900">View on GitHub</span>
+        <img
+          src="assets/github-logo.svg"
+          alt="Github Logo"
+          class="align-bottom opacity-90"
+          alt="Github Logo"
+        />
+      </a>
+    </div>
     <div>
       <nav
         class="items-center text-lg hidden lg:flex"
@@ -40,7 +68,7 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+              How it Works <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
@@ -77,7 +105,7 @@
               Community <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 target="_blank"
@@ -85,27 +113,25 @@
                 href="https://github.com/centerofci/mathesar"
               >
                 GitHub
-                
               </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/matrix"
                 >Matrix (Chat)
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/mailing-lists"
                 >Mailing Lists
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/"
               >
                 Wiki
-                
               </a>
             </div>
           </div>
@@ -113,7 +139,7 @@
           <a class="navigation-item" href="roadmap.html">Roadmap</a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item" href="free-install.html"
+          <a class="navigation-item font-semibold" href="free-install.html"
             >Request Free Installation</a
           >
         </div>
@@ -146,7 +172,7 @@
               class="text-lg whitespace-nowrap hover:underline"
               href="non-technical-expert.html"
             >
-              How it works - Non-Technical Expert</a
+              How it Works - Non-Technical Expert</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
@@ -206,15 +232,29 @@
 
   <script>
     var dropdownButtons = document.querySelectorAll(".dropdown button");
+    var currentlyOpenDropdown;
 
     dropdownButtons.forEach(function (dropdownButton) {
-      dropdownButton.addEventListener("click", toggleDropdown);
+      dropdownButton.addEventListener("click", function () {
+        if (currentlyOpenDropdown) {
+          currentlyOpenDropdown.classList.toggle("hidden");
+        }
+        currentlyOpenDropdown = this.nextElementSibling;
+        currentlyOpenDropdown.classList.toggle("hidden");
+      });
     });
 
     document.addEventListener("click", function (event) {
-      var isClickInside = dropdownButtons[0].contains(event.target);
-      if (!isClickInside) {
-        hideAllDropdown();
+      var isClickInside = false;
+      dropdownButtons.forEach(function (dropdownButton) {
+        if (dropdownButton.contains(event.target)) {
+          isClickInside = true;
+        }
+      });
+
+      if (!isClickInside && currentlyOpenDropdown) {
+        currentlyOpenDropdown.classList.toggle("hidden");
+        currentlyOpenDropdown = null;
       }
     });
 
@@ -239,9 +279,9 @@
     }
 
     function hideAllDropdown() {
-      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      var dropdownMenus = document.querySelectorAll(".dropdown-menu");
       dropdownMenus.forEach(function (dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.toggle("hidden");
       });
     }
   </script>
@@ -250,7 +290,8 @@
 
     
 <div class="max-w-2xl space-y-8 mx-auto px-4 py-16 page-header">
-  <h2 class="font-bold text-3xl lg:text-5xl text-center">What is Mathesar?</h2>
+  <h2 class="font-bold text-3xl lg:text-5xl text-center space-y-2"><p>What is Mathesar?</p>
+</h2>
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
   
   <div class="text-lg lg:text-2xl space-y-4">
@@ -276,7 +317,7 @@
       
 <p>Mathesar is a non-profit project. Our goal is to make <strong>understanding and working with data easy for everyone</strong>.</p>
 
-<p>Databases have been around for a long time and solve common data problems really well. But, working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.</p>
+<p>Databases have been around for a long time and solve common data problems really well. But working with databases often requires custom software. Or complex tooling that people struggle to get their heads around.</p>
 
 <p>We want to make existing database functionality more accessible – in a user-friendly way.</p>
 
@@ -788,11 +829,11 @@ I can analyze this data to gain valuable insights into my own behavior and lifes
   <p>We’re currently funded through the generous support of:</p>
   <div class="flex items-center space-x-8">
   <figure class="space-y-2">
-    <img class="lg:h-24" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation logo" />
+    <img class="lg:h-24 h-20" src="assets/Reid_Hoffman_Foundation.png" alt="Reid Hoffman Foundation logo" />
     <figcaption class="font-bold text-sm">Reid Hoffman</figcaption>
   </figure>
   <figure class="space-y-2">
-    <img class="lg:h-24" src="assets/Henkaku_Center.png" alt="Henkaku Center logo" />
+    <img class="lg:h-24 h-20" src="assets/Henkaku_Center.png" alt="Henkaku Center logo" />
     <figcaption class="font-bold text-sm">
       CIT Henkaku Center
     </figcaption>
@@ -806,57 +847,58 @@ I can analyze this data to gain valuable insights into my own behavior and lifes
   </div>
 </section>
 
- <div
-  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center relative rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
->
-  <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">
-      Stay updated on Mathesar's release
-    </h3>
-  </div>
-
+ <div class="px-4 mx-auto max-w-2xl">
   <div
-    class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+    class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4"
   >
-    <form
-      id="signup-form"
-      class="flex-col w-full space-y-2"
-      action="https://formspree.io/f/xlevqoza"
-      method="POST"
+    <div class="space-y-2">
+      <h3 class="text-2xl lg:text-3xl font-semibold">
+        Stay updated on Mathesar's release
+      </h3>
+    </div>
+
+    <div
+      class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
     >
-      <div class="flex items-stretch space-x-2 w-full">
-        <input
-          type="email"
-          name="email"
-          class="bg-white rounded p-2 w-full border text-black"
-          placeholder=""
-        />
-        <button
-          class="button secondary p-2 rounded whitespace-nowrap"
-          type="submit"
-        >
-          Sign Up
-        </button>
-      </div>
-      <div class="text-sm text-gray-200">
-        We'll send you occasional updates about Mathesar. No spam.
-      </div>
-      <div class="h-4">
-        <p
-          class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
-        >
-          Success!
-        </p>
-        <p
-          class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
-        >
-          Error, please try again later.
-        </p>
-      </div>
-    </form>
+      <form
+        id="signup-form"
+        class="flex-col w-full space-y-2"
+        action="https://formspree.io/f/xlevqoza"
+        method="POST"
+      >
+        <div class="flex items-stretch space-x-2 w-full">
+          <input
+            type="email"
+            name="email"
+            class="bg-white rounded p-2 w-full border text-black"
+            placeholder="Please enter your email address"
+          />
+          <button
+            class="button secondary p-2 rounded whitespace-nowrap"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="text-sm text-gray-200">
+          We'll send you occasional updates about Mathesar. No spam.
+        </div>
+        <div class="h-4">
+          <p
+            class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+          >
+            Success!
+          </p>
+          <p
+            class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+          >
+            Error, please try again later.
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-
 <script>
   const signupFormId = "signup-form";
   const signupForm = document.getElementById(signupFormId);
@@ -871,7 +913,7 @@ I can analyze this data to gain valuable insights into my own behavior and lifes
   }
   signupForm.addEventListener("submit", handleSignupFormSubmit);
 </script>
- <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+ <footer class="bg-gray-900 text-white py-8 px-4">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
       To get in touch with the Mathesar team, please email us at:
@@ -936,9 +978,9 @@ I can analyze this data to gain valuable insights into my own behavior and lifes
 
     <div id="screenshotModal" class="modal">
       <div class="modal-content closeModal">
-        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+        <button class="closeModal bg-gray-200 p-1 text-xs rounded ml-auto">
           <svg
-            class="w-6 h-6 text-gray-800"
+            class="w-4 h-4 text-gray-800"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -953,7 +995,7 @@ I can analyze this data to gain valuable insights into my own behavior and lifes
           </svg>
         </button>
         <img
-          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          class="rounded-lg shadow-lg bg-white w-full lg:w-10/12"
           id="screenshotModalImage"
         />
       </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,25 @@
   <body class="bg-stone-50 text-gray-800">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
-    <a href="index.html">
-      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-    </a>
+    <div class="flex items-center justify-between">
+      <a href="index.html">
+        <img class="w-40 lg:w-56" src="assets/logo.svg" alt="Mathesar's Logo" />
+      </a>
+      <a
+        href="https://github.com/centerofci/mathesar"
+        class="hover:opacity-70 transition-colors bg-stone-200 shadow-md invert py-2 px-3 mt-[-1rem] lg:mt-[-2rem] flex items-center space-x-2 text-xs lg:text-lg font-semibold"
+        aria-label="Visit Mathesar on Github"
+        target="_blank"
+      >
+        <span class="text-gray-900">View on GitHub</span>
+        <img
+          src="assets/github-logo.svg"
+          alt="Github Logo"
+          class="align-bottom opacity-90"
+          alt="Github Logo"
+        />
+      </a>
+    </div>
     <div>
       <nav
         class="items-center text-lg hidden lg:flex"
@@ -40,7 +56,7 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+              How it Works <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
@@ -77,7 +93,7 @@
               Community <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 target="_blank"
@@ -85,27 +101,25 @@
                 href="https://github.com/centerofci/mathesar"
               >
                 GitHub
-                
               </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/matrix"
                 >Matrix (Chat)
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/mailing-lists"
                 >Mailing Lists
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/"
               >
                 Wiki
-                
               </a>
             </div>
           </div>
@@ -113,7 +127,7 @@
           <a class="navigation-item" href="roadmap.html">Roadmap</a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item" href="free-install.html"
+          <a class="navigation-item font-semibold" href="free-install.html"
             >Request Free Installation</a
           >
         </div>
@@ -146,7 +160,7 @@
               class="text-lg whitespace-nowrap hover:underline"
               href="non-technical-expert.html"
             >
-              How it works - Non-Technical Expert</a
+              How it Works - Non-Technical Expert</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
@@ -206,15 +220,29 @@
 
   <script>
     var dropdownButtons = document.querySelectorAll(".dropdown button");
+    var currentlyOpenDropdown;
 
     dropdownButtons.forEach(function (dropdownButton) {
-      dropdownButton.addEventListener("click", toggleDropdown);
+      dropdownButton.addEventListener("click", function () {
+        if (currentlyOpenDropdown) {
+          currentlyOpenDropdown.classList.toggle("hidden");
+        }
+        currentlyOpenDropdown = this.nextElementSibling;
+        currentlyOpenDropdown.classList.toggle("hidden");
+      });
     });
 
     document.addEventListener("click", function (event) {
-      var isClickInside = dropdownButtons[0].contains(event.target);
-      if (!isClickInside) {
-        hideAllDropdown();
+      var isClickInside = false;
+      dropdownButtons.forEach(function (dropdownButton) {
+        if (dropdownButton.contains(event.target)) {
+          isClickInside = true;
+        }
+      });
+
+      if (!isClickInside && currentlyOpenDropdown) {
+        currentlyOpenDropdown.classList.toggle("hidden");
+        currentlyOpenDropdown = null;
       }
     });
 
@@ -239,9 +267,9 @@
     }
 
     function hideAllDropdown() {
-      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      var dropdownMenus = document.querySelectorAll(".dropdown-menu");
       dropdownMenus.forEach(function (dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.toggle("hidden");
       });
     }
   </script>
@@ -758,7 +786,7 @@ Under GDPR (General Data Protection Regulation), You can be referred to as the D
 </ul>
 
     </div>
-    <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+    <footer class="bg-gray-900 text-white py-8 px-4">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
       To get in touch with the Mathesar team, please email us at:

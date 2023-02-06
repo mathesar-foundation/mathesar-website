@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,18 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
+
+    <meta property="og:title" content="Mathesar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://centerofci.github.io//">
+
+    <meta property="og:image" content="https://centerofci.github.io//image.png" />
+    <meta
+      property="og:description"
+      content="Mathesar is an open source and web-based interface that works on top of your database."
+    />
+    <meta property="og:site_name" content="Mathesar" />
+
     <title>Mathesar</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -19,9 +31,25 @@
   <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
-    <a href="index.html">
-      <img class="w-40 lg:w-56" src="assets/logo.svg" alt="" />
-    </a>
+    <div class="flex items-center justify-between">
+      <a href="index.html">
+        <img class="w-40 lg:w-56" src="assets/logo.svg" alt="Mathesar's Logo" />
+      </a>
+      <a
+        href="https://github.com/centerofci/mathesar"
+        class="hover:opacity-70 transition-colors bg-stone-200 shadow-md invert py-2 px-3 mt-[-1rem] lg:mt-[-2rem] flex items-center space-x-2 text-xs lg:text-lg font-semibold"
+        aria-label="Visit Mathesar on Github"
+        target="_blank"
+      >
+        <span class="text-gray-900">View on GitHub</span>
+        <img
+          src="assets/github-logo.svg"
+          alt="Github Logo"
+          class="align-bottom opacity-90"
+          alt="Github Logo"
+        />
+      </a>
+    </div>
     <div>
       <nav
         class="items-center text-lg hidden lg:flex"
@@ -40,7 +68,7 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it works <img src="assets/dropdown-arrow.svg" alt="" />
+              How it Works <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
@@ -77,7 +105,7 @@
               Community <img src="assets/dropdown-arrow.svg" alt="" />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 target="_blank"
@@ -85,27 +113,25 @@
                 href="https://github.com/centerofci/mathesar"
               >
                 GitHub
-                
               </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/matrix"
                 >Matrix (Chat)
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/en/community/mailing-lists"
                 >Mailing Lists
-                </a>
+              </a>
               <a
                 target="_blank"
                 class="whitespace-nowrap hover:underline block w-max"
                 href="https://wiki.mathesar.org/"
               >
                 Wiki
-                
               </a>
             </div>
           </div>
@@ -113,7 +139,7 @@
           <a class="navigation-item" href="roadmap.html">Roadmap</a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item" href="free-install.html"
+          <a class="navigation-item font-semibold" href="free-install.html"
             >Request Free Installation</a
           >
         </div>
@@ -146,7 +172,7 @@
               class="text-lg whitespace-nowrap hover:underline"
               href="non-technical-expert.html"
             >
-              How it works - Non-Technical Expert</a
+              How it Works - Non-Technical Expert</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
@@ -206,15 +232,29 @@
 
   <script>
     var dropdownButtons = document.querySelectorAll(".dropdown button");
+    var currentlyOpenDropdown;
 
     dropdownButtons.forEach(function (dropdownButton) {
-      dropdownButton.addEventListener("click", toggleDropdown);
+      dropdownButton.addEventListener("click", function () {
+        if (currentlyOpenDropdown) {
+          currentlyOpenDropdown.classList.toggle("hidden");
+        }
+        currentlyOpenDropdown = this.nextElementSibling;
+        currentlyOpenDropdown.classList.toggle("hidden");
+      });
     });
 
     document.addEventListener("click", function (event) {
-      var isClickInside = dropdownButtons[0].contains(event.target);
-      if (!isClickInside) {
-        hideAllDropdown();
+      var isClickInside = false;
+      dropdownButtons.forEach(function (dropdownButton) {
+        if (dropdownButton.contains(event.target)) {
+          isClickInside = true;
+        }
+      });
+
+      if (!isClickInside && currentlyOpenDropdown) {
+        currentlyOpenDropdown.classList.toggle("hidden");
+        currentlyOpenDropdown = null;
       }
     });
 
@@ -239,9 +279,9 @@
     }
 
     function hideAllDropdown() {
-      var dropdownMenus = document.querySelectorAll(".dropdown .hidden");
+      var dropdownMenus = document.querySelectorAll(".dropdown-menu");
       dropdownMenus.forEach(function (dropdownMenu) {
-        dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.toggle("hidden");
       });
     }
   </script>
@@ -254,7 +294,7 @@
     <div class="mx-auto">
       <h4 class="uppercase text-sm mb-2">Open Source Database Interface</h4>
       <h2 class="text-4xl lg:text-5xl font-bold">Quickly enter and analyze
-your data - in one open source interface</h2>
+your data – in one open source interface</h2>
     </div>
     <div class="lg:text-xl space-y-2 max-w-lg">
       
@@ -275,7 +315,7 @@ your data - in one open source interface</h2>
     <i class="ri-arrow-right-line align-bottom"></i>
   </div>
 </a>
-<a href="non-technical-expert.html" class="col-span-2 text-white block hover:shadow-md transition-colors hover:bg-blue-800 bg-blue-600 p-4 rounded-lg">
+<a href="non-technical-expert.html" class="col-span-2 text-white block hover:shadow-md transition-colors hover:bg-gray-900 bg-gray-800 p-4 rounded-lg">
   <div class="uppercase font-semibold">
     I'm <span class="underline">not</span> a Developer
   </div>
@@ -292,7 +332,7 @@ your data - in one open source interface</h2>
 
   <div class="fade-in-image lg:w-[72rem] lg:h-[32rem]">
     <img class="border shadow-lg" src="assets/books-table.png" alt="Quickly enter and analyze
-your data - in one open source interface" />
+your data – in one open source interface" />
   </div>
 </div>
 
@@ -300,23 +340,23 @@ your data - in one open source interface" />
   <ul class="lg:flex justify-between uppercase font-semibold text-sm max-w-6xl mx-auto">
     
     <li class="flex items-center space-x-2 w-max mx-auto">
-      <img src="assets/postgres-icon.svg" alt="" />
-      <span>Built on Postgres</span>
+      <img src="assets/postgres-icon.png" class="h-12" alt="" />
+      <span class="font-bold">Built on Postgres</span>
     </li>
     
     <li class="flex items-center space-x-2 w-max mx-auto">
-      <img src="assets/heart-icon.svg" alt="" />
-      <span>Free &amp; Open Source</span>
+      <img src="assets/os-icon.png" class="h-12" alt="" />
+      <span class="font-bold">Free &amp; Open Source</span>
     </li>
     
     <li class="flex items-center space-x-2 w-max mx-auto">
-      <img src="assets/rocket-icon.svg" alt="" />
-      <span>Alpha Release Coming Soon</span>
+      <img src="assets/rocket-icon.png" class="h-12" alt="" />
+      <span class="font-bold">Alpha Release Coming Soon</span>
     </li>
     
     <li class="flex items-center space-x-2 w-max mx-auto">
-      <img src="assets/shield-icon.svg" alt="" />
-      <span>Self-hosted</span>
+      <img src="assets/lock-icon.png" class="h-12" alt="" />
+      <span class="font-bold">Self-hosted</span>
     </li>
     
   </ul>
@@ -324,12 +364,12 @@ your data - in one open source interface" />
 
 <section class="angled dark">
   <div class="p-4 lg:p-0 mx-auto text-center space-y-12 max-w-2xl">
-    <div class="space-y-4 mx-auto">
+    <div class="space-y-4 mx-auto max-w-xl">
       <h2 class="text-4xl lg:text-5xl font-bold">
         Your data is a representation of <u>you</u>
       </h2>
       <h3 class="text-2xl">Your workflows. Projects. And opportunities.</h3>
-      <h3 class="text-2xl">
+      <h3 class="text-2xl font-bold text-blue-200">
         But too many data tools limit you from managing your data
         <u>your way</u>.
       </h3>
@@ -363,7 +403,7 @@ your data - in one open source interface" />
       </li>
     </ul>
 
-    <div class="space-y-6 mx-auto">
+    <div class="space-y-6 mx-auto max-w-xl">
       <h3 class="text-2xl lg:text-3xl font-bold">
         You can truly own your data – with Mathesar’s open source interface.
       </h3>
@@ -447,23 +487,23 @@ your data - in one open source interface" />
     <div class="lg:flex lg:justify-center lg:px-20 lg:space-x-8 px-4 mx-auto space-y-2 lg:space-y-0 js-enabled">
       <div class="lg:w-80 shrink-0 gap-1 flex lg:block flex-wrap justify-center">
         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('book-collection.png')" id="button-1">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('arxiv-schema.png')" id="button-1">
+          Prototype an application
+        </button>
+
+         
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('book-collection.png')" id="button-2">
           Manage a collection
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('talks-with-topics.png')" id="button-2">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('talks-with-topics.png')" id="button-3">
           Plan an event
         </button>
 
          
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('task-management.png')" id="button-3">
+        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('task-management.png')" id="button-4">
           Track a project
-        </button>
-
-         
-        <button class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100" onclick="updateScreenshot('arxiv-schema.png')" id="button-4">
-          Prototype an application
         </button>
 
          
@@ -480,14 +520,22 @@ your data - in one open source interface" />
       </div>
 
       <div class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center">
-        <a class="screenshot-url" href="assets/book-collection.png" target="_blank">
-          <img class="rounded-lg shadow-lg screenshot-image" src="assets/book-collection.png" alt="" />
+        <a class="screenshot-url" href="assets/arxiv-schema.png" target="_blank">
+          <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
         </a>
       </div>
     </div>
     <noscript>
       <div class="js-disabled">
         <div class="lg:max-w-2xl shrink-0 gap-1 flex lg:block flex-wrap justify-center mx-auto">
+          
+
+          <div class="text-xl">Prototype an application</div>
+
+          <div class="py-4 pl-4">
+            
+            <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
+          </div>
           
 
           <div class="text-xl">Manage a collection</div>
@@ -511,14 +559,6 @@ your data - in one open source interface" />
           <div class="py-4 pl-4">
             
             <img class="rounded-lg shadow-lg screenshot-image" src="assets/task-management.png" alt="" />
-          </div>
-          
-
-          <div class="text-xl">Prototype an application</div>
-
-          <div class="py-4 pl-4">
-            
-            <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
           </div>
           
 
@@ -603,7 +643,7 @@ your data - in one open source interface" />
   <div class="max-w-4xl mx-auto space-y-12 px-4">
     <div class="text-center space-y-4 max-w-2xl mx-auto">
       <h3 class="text-4xl font-bold">Mathesar’s approach is unique...</h3>
-      <p class="text-3xl">We’re not reinventing the wheel</p>
+      <p class="text-3xl">We’re not reinventing the wheel.</p>
       <p class="text-3xl">
         We’re making your existing database more accessible to you – via a
         user-friendly interface.
@@ -612,7 +652,7 @@ your data - in one open source interface" />
     <div class="text-center space-y-8">
       <ul class="mx-auto text-left gap-12 grid lg:grid-cols-2">
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/relationship-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/relationship-icon.png" alt="Relationship Icon" />
           <div>
             <span class="font-bold">Set up relationships in the UI</span> - and
             these will reflect at the database level. Mathesar doesn’t have its
@@ -620,7 +660,7 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/time-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/time-icon.png" alt="Time Icon" />
           <div>
             <span class="font-bold">Cut down on days spent re-organizing your data models</span>
             - reconfigure schema in just minutes. So whenever your workflow
@@ -629,7 +669,7 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/view-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/view-icon.png" alt="View Icon" />
           <div>
             <span class="font-bold">Create one view from across <u>multiple</u> tables</span>
             – easily. Explore your data to gain new insights. And answer quick
@@ -637,7 +677,7 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/wizard-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/magic-icon.png" alt="Wizard Icon" />
           <div>
             <span class="font-bold">Let Mathesar automatically guess the type of data in your
               columns</span>
@@ -646,7 +686,7 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/validation-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/validation-icon.png" alt="Validation Icon" />
           <div>
             <span class="font-bold">De-duplicate your data</span> – the
             user-friendly interface ensures that your collaborators input only
@@ -654,7 +694,7 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/sign-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/lightbulb-icon.png" alt="Sign Icon" />
           <div>
             <span class="font-bold">Straightforward UX</span> – your team don’t
             need to know anything about database concepts. ‘Help’ icons will
@@ -662,14 +702,14 @@ your data - in one open source interface" />
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/postgres-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/postgres-icon.png" alt="Postgres Icon" />
           <div>
             <span class="font-bold">Postgres interface</span> – no disruptions
             to your workflow since Mathesar works on top of your existing tools.
           </div>
         </li>
         <li class="text-lg space-y-4">
-          <img class="w-12 h-12" src="assets/chest-icon.png" alt="" />
+          <img class="h-12 mx-auto lg:m-0" src="assets/chest-icon.png" alt="Chest Icon" />
           <div>
             <span class="font-bold">No paid plans</span> – everyone gets access
             to the full feature set.
@@ -680,57 +720,58 @@ your data - in one open source interface" />
   </div>
 </section>
 
- <div
-  class="bg-blue-600 max-w-2xl mt-24 mb-16 text-white text-center relative rounded-lg p-12 lg:mx-auto mx-4 space-y-4"
->
-  <div class="space-y-2">
-    <h3 class="text-2xl lg:text-3xl font-semibold">
-      Stay updated on Mathesar's release
-    </h3>
-  </div>
-
+ <div class="px-4 mx-auto max-w-2xl">
   <div
-    class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
+    class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4"
   >
-    <form
-      id="signup-form"
-      class="flex-col w-full space-y-2"
-      action="https://formspree.io/f/xlevqoza"
-      method="POST"
+    <div class="space-y-2">
+      <h3 class="text-2xl lg:text-3xl font-semibold">
+        Stay updated on Mathesar's release
+      </h3>
+    </div>
+
+    <div
+      class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
     >
-      <div class="flex items-stretch space-x-2 w-full">
-        <input
-          type="email"
-          name="email"
-          class="bg-white rounded p-2 w-full border text-black"
-          placeholder=""
-        />
-        <button
-          class="button secondary p-2 rounded whitespace-nowrap"
-          type="submit"
-        >
-          Sign Up
-        </button>
-      </div>
-      <div class="text-sm text-gray-200">
-        We'll send you occasional updates about Mathesar. No spam.
-      </div>
-      <div class="h-4">
-        <p
-          class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
-        >
-          Success!
-        </p>
-        <p
-          class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
-        >
-          Error, please try again later.
-        </p>
-      </div>
-    </form>
+      <form
+        id="signup-form"
+        class="flex-col w-full space-y-2"
+        action="https://formspree.io/f/xlevqoza"
+        method="POST"
+      >
+        <div class="flex items-stretch space-x-2 w-full">
+          <input
+            type="email"
+            name="email"
+            class="bg-white rounded p-2 w-full border text-black"
+            placeholder="Please enter your email address"
+          />
+          <button
+            class="button secondary p-2 rounded whitespace-nowrap"
+            type="submit"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="text-sm text-gray-200">
+          We'll send you occasional updates about Mathesar. No spam.
+        </div>
+        <div class="h-4">
+          <p
+            class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+          >
+            Success!
+          </p>
+          <p
+            class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+          >
+            Error, please try again later.
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-
 <script>
   const signupFormId = "signup-form";
   const signupForm = document.getElementById(signupFormId);
@@ -745,7 +786,7 @@ your data - in one open source interface" />
   }
   signupForm.addEventListener("submit", handleSignupFormSubmit);
 </script>
- <footer class="bg-gray-900 text-white py-8 px-4 lg:px-0">
+ <footer class="bg-gray-900 text-white py-8 px-4">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
       To get in touch with the Mathesar team, please email us at:
@@ -810,9 +851,9 @@ your data - in one open source interface" />
 
     <div id="screenshotModal" class="modal">
       <div class="modal-content closeModal">
-        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+        <button class="closeModal bg-gray-200 p-1 text-xs rounded ml-auto">
           <svg
-            class="w-6 h-6 text-gray-800"
+            class="w-4 h-4 text-gray-800"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -827,7 +868,7 @@ your data - in one open source interface" />
           </svg>
         </button>
         <img
-          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          class="rounded-lg shadow-lg bg-white w-full lg:w-10/12"
           id="screenshotModalImage"
         />
       </div>
