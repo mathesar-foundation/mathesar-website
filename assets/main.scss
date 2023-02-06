@@ -253,6 +253,10 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   @apply mb-2;
 }
 
+.dark .highlight-content strong {
+  @apply font-bold text-blue-200;
+}
+
 .dark .highlight-content a {
   @apply text-blue-400;
 }
