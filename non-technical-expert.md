@@ -30,7 +30,7 @@ image='assets/leads-explorer.png' actions=actions %}
 
 {% endcapture %}
 
-{% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark' subheader='You’re often left without clear answers to these important questions:'%}
+{% include highlight.html header='Too many data tools make simple tasks complicated' content=highlight_1 theme='dark' subheader='You’re often left <strong>without</strong> clear answers to these important questions:'%}
 
 {% capture screenshot_text %}
 
