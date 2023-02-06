@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,18 @@
       name="keywords"
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+    <meta property="og:image" content="{{ site.url }}/image.png" />
+    <meta
+      property="og:description"
+      content="Mathesar is an open source and web-based interface that works on top of your database."
+    />
+    <meta property="og:site_name" content="Mathesar" />
+
     <title>{{ page.title }}</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -23,9 +35,9 @@
 
     <div id="screenshotModal" class="modal">
       <div class="modal-content closeModal">
-        <button class="closeModal bg-gray-200 p-2 rounded ml-auto">
+        <button class="closeModal bg-gray-200 p-1 text-xs rounded ml-auto">
           <svg
-            class="w-6 h-6 text-gray-800"
+            class="w-4 h-4 text-gray-800"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -40,7 +52,7 @@
           </svg>
         </button>
         <img
-          class="rounded-lg shadow-lg bg-white p-4 w-10/12"
+          class="rounded-lg shadow-lg bg-white w-full lg:w-10/12"
           id="screenshotModalImage"
         />
       </div>

@@ -24,9 +24,9 @@ image='assets/leads-explorer.png' actions=actions %}
 
 {% capture highlight_1 %}
 
-- How can you be certain that your database doesn’t contain faulty, duplicated data?
-- When your workflow changes, how can you quickly update your data structures?
-- How can you see one view of all your different data sources?
+- How can you be certain that your database doesn’t contain **faulty**, duplicated data?
+- When your workflow changes, how can you **quickly update** your data structures?
+- How can you see **one view** of all your different data sources?
 
 {% endcapture %}
 
@@ -138,9 +138,9 @@ But **manual changes often take hours, even days**.
 
 This runs a significant risk of disruption. When your data is **paused and not synced-up**, you could end up with stale data.
 
-Mathesar saves you time and lets you **update data models – in a click**.
+Mathesar's unique re-structure feature saves you time. **You can update data models - in a click**.
 
-So as your workflow evolves, you’re able to **adjust your data** too accurately. In minutes.
+Ensure accurate data, without disruptions.
 {% endcapture %}
 
 {% include feature.html
@@ -153,7 +153,9 @@ So as your workflow evolves, you’re able to **adjust your data** too accuratel
 {% capture capture_7 %}
 Proprietary software companies often look like appealing choices – **until you’re locked in their ecosystem**.
 If you decide to move away, you could lose valuable data. Your data could even be sold off in private deals.
+
 Mathesar **allows you to self-host on your servers**. You’ll have full control over your data and can choose who has access.
+
 Easily migrate from Mathesar – or simply go back and forth – anytime you like.
 {% endcapture %}
 
@@ -167,7 +169,7 @@ Easily migrate from Mathesar – or simply go back and forth – anytime you lik
 {% capture quote %}
 “When developers would give me access to software, my immediate instinct was “don’t break anything!”
 
-Causing an error would be so embarassing. You don’t intentionally want to delete something but stuff happens, right?
+Causing an error would be so embarrassing. You don’t intentionally want to delete something but stuff happens, right?
 
 I felt like I was in a piece of software that wasn’t meant for me.
 
