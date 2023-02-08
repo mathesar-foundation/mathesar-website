@@ -11,7 +11,7 @@ Mathesar:
 How it works (non-technical) - Mathesar:
   features:
     - title: "Individuals & Organizations"
-      icon: "postgres-icon"
+      icon: "user-org-icon"
     - title: "Structure Your Data"
       icon: "relationship-icon"
     - title: "Own Your Data"
