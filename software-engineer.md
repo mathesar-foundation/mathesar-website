@@ -185,3 +185,5 @@ Mathesar can work as **frontend** to existing databases, without altering your d
 {% endcapture %}
 
 {% include highlight.html header='Use Mathesar as a flexible tool throughout your project lifecycle' content=highlight3 theme='light' separator=true %}
+
+{% include cta.html %}

@@ -35,3 +35,5 @@ As we continue to develop Mathesar, our long-term goal is to offer a paid SaaS (
 {% endcapture %}
 
 {% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' separator=true %}
+
+{% include cta.html %}

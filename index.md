@@ -45,3 +45,5 @@ Using a self-hostable and accessible interface.
 Mathesar’s Alpha release is coming very soon.
 Please leave your details here to stay updated:
 {% endcapture %}
+
+{% include cta.html %}

@@ -1,0 +1,57 @@
+<section class="angled dark space-y-8 mb-20">
+	<h4 class="text-center">
+		<span class="text-2xl">Stay updated on Mathesar's release</span>
+	  </h4>
+  <form
+    id="signup-form"
+    class="mx-auto max-w-2xl text-lg"
+    action="https://formspree.io/f/xlevqoza"
+    method="POST"
+  >
+    <div class="flex items-stretch space-x-2 w-full">
+      <input
+        type="email"
+        name="email"
+        class="bg-white rounded p-2 w-full border text-black"
+        placeholder="Please enter your email address"
+      />
+      <button
+        class="button primary p-2 rounded whitespace-nowrap"
+        type="submit"
+      >
+        Sign Up
+      </button>
+    </div>
+    <div class="text-sm text-gray-200 mt-8">
+      We'll send you occasional email updates about Mathesar. You can opt out at
+      any time.
+    </div>
+    <div class="h-4">
+      <p
+        class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+      >
+        Success!
+      </p>
+      <p
+        class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+      >
+        Error, please try again later.
+      </p>
+    </div>
+  </form>
+</section>
+
+<script>
+  const signupFormId = "signup-form";
+  const signupForm = document.getElementById(signupFormId);
+  function handleSignupFormSubmit(event) {
+    event.preventDefault();
+    const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+    setLoading();
+    sendFormDataToFormspree(event, signupForm)
+      .then(() => showSuccessText(signupFormId))
+      .catch(() => showErrorText(signupFormId))
+      .finally(unsetLoading);
+  }
+  signupForm.addEventListener("submit", handleSignupFormSubmit);
+</script>
