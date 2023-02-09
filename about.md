@@ -31,7 +31,7 @@ Mathesar will always be **100% open source and self-hostable**.
 
 {% include funder-logos.html %}
 
-As we continue to develop Mathesar, our long-term goal is to offer a paid SaaS (Software as a Service) version of Mathesar in order to sustain the project. We remain committed to open source principles and will not create closed-source features or accept funding that would compromise our values.
+Our long-term goal is to offer a hosted version of Mathesar in order to sustain the project. We remain committed to [open source principles](https://opensource.org/osd) and will not create closed-source features or accept funding that would compromise our values.
 {% endcapture %}
 
 {% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' separator=true %}
