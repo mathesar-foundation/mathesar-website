@@ -10,7 +10,7 @@
 
     <meta property="og:title" content="Roadmap - Mathesar" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://centerofci.github.io//roadmap.html">
+    <meta property="og:url" content="https://centerofci.github.io//roadmap.html" />
 
     <meta property="og:image" content="https://centerofci.github.io//image.png" />
     <meta
@@ -28,7 +28,9 @@
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
   </head>
 
-  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
+  <body
+    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col"
+  >
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
@@ -287,8 +289,7 @@
   </script>
 </div>
 </div>
-
-    
+    <div class="flex-grow">
 <div class="max-w-2xl space-y-8 mx-auto px-4 py-16 page-header">
   <h2 class="font-bold text-3xl lg:text-5xl text-center space-y-2"><p>Mathesar’s Roadmap</p>
 </h2>
@@ -1074,36 +1075,19 @@
   
 </section>
 
- <div class="px-4 mx-auto max-w-2xl">
-  <div
-    class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4"
-  >
+<div class="px-4 mx-auto max-w-2xl">
+  <div class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4">
     <div class="space-y-2">
       <h3 class="text-2xl lg:text-3xl font-semibold">
         Stay updated on Mathesar's release
       </h3>
     </div>
 
-    <div
-      class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
-    >
-      <form
-        id="signup-form"
-        class="flex-col w-full space-y-2"
-        action="https://formspree.io/f/xlevqoza"
-        method="POST"
-      >
+    <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
+      <form id="signup-form" class="flex-col w-full space-y-2" action="https://formspree.io/f/xlevqoza" method="POST">
         <div class="flex items-stretch space-x-2 w-full">
-          <input
-            type="email"
-            name="email"
-            class="bg-white rounded p-2 w-full border text-black"
-            placeholder="Please enter your email address"
-          />
-          <button
-            class="button secondary p-2 rounded whitespace-nowrap"
-            type="submit"
-          >
+          <input type="email" name="email" class="bg-white rounded p-2 w-full border text-black" placeholder="Please enter your email address" />
+          <button class="button secondary p-2 rounded whitespace-nowrap" type="submit">
             Sign Up
           </button>
         </div>
@@ -1111,14 +1095,10 @@
           We'll send you occasional email updates about Mathesar. You can opt out at any time.
         </div>
         <div class="h-4">
-          <p
-            class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
-          >
+          <p class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full">
             Success!
           </p>
-          <p
-            class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
-          >
+          <p class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full">
             Error, please try again later.
           </p>
         </div>
@@ -1140,7 +1120,9 @@
   }
   signupForm.addEventListener("submit", handleSignupFormSubmit);
 </script>
- <footer class="bg-gray-900 text-white py-8 px-4">
+
+</div>
+    <footer class="bg-gray-900 text-white py-8 px-4">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
       To get in touch with the Mathesar team, please email us at:
@@ -1178,6 +1160,12 @@
             aria-label="Privacy Policy"
             >Privacy Policy</a
           >
+
+          <a
+            class="text-gray-100 hover:text-gray-600"
+            href="mailing-list.html"
+            aria-label="Mailing List"
+            >Mailing List</a>
         </div>
       </div>
       <nav class="ml-auto">
@@ -1201,7 +1189,6 @@
     </div>
   </div>
 </footer>
-
 
     <div id="screenshotModal" class="modal">
       <div class="modal-content closeModal">
@@ -1230,8 +1217,12 @@
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>
     <noscript>
-      <img src="https://sa.mathesar.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript> 
+      <img
+        src="https://sa.mathesar.org/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 
   <script>
