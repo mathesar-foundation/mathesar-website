@@ -1,9 +1,7 @@
 <section class="py-10 angled lighter relative">
-  <ul
-    class="lg:flex justify-between uppercase font-semibold text-sm max-w-6xl mx-auto"
-  >
+  <ul class="grid w-max mx-auto lg:grid-cols-4 gap-4">
     {% for feature in site.data.features[page.title].features %}
-    <li class="flex items-center space-x-2 w-max mx-auto">
+    <li class="flex items-center space-x-2 w-max lg:mx-auto">
       <img src="assets/{{feature.icon}}.png" class="h-12" alt="" />
       <span class="font-bold">{{feature.title}}</span>
     </li>
