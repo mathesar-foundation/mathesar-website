@@ -10,7 +10,7 @@
 
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 
     <meta property="og:image" content="{{ site.url }}/image.png" />
     <meta
@@ -28,11 +28,12 @@
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
   </head>
 
-  <body class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll">
+  <body
+    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col"
+  >
     <div>{% include navigation.html %}</div>
-
-    {{ content }} {% include cta.html %} {% include footer.html %}
-
+    <div class="flex-grow">{{ content }}</div>
+    {% include footer.html %}
     <div id="screenshotModal" class="modal">
       <div class="modal-content closeModal">
         <button class="closeModal bg-gray-200 p-1 text-xs rounded ml-auto">
@@ -60,8 +61,12 @@
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>
     <noscript>
-      <img src="https://sa.mathesar.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript> 
+      <img
+        src="https://sa.mathesar.org/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 
   <script>

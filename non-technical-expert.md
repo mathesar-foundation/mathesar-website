@@ -185,3 +185,5 @@ author='Ghislaine (Mathesar’s Product Designer)'
 quote=quote
 image='ghislaine.jpg'
 %}
+
+{% include cta.html %}

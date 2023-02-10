@@ -35,3 +35,5 @@ Our long-term goal is to offer a hosted version of Mathesar in order to sustain 
 {% endcapture %}
 
 {% include highlight.html header='Our plans for financial sustainability' content=highlight1 theme='lighter' separator=true %}
+
+{% include cta.html %}
