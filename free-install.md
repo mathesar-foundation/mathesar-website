@@ -17,5 +17,3 @@ In return, we’d like to regularly hear your honest feedback on Mathesar. This 
 {% include page-header.html header=header subheader=subheader actions=actions %}
 
 {% include free-install-form.html %}
-
-Kindly note: the number of installations that we can offer is limited.

@@ -1,0 +1,48 @@
+<form
+  id="signup-form"
+  class="mx-auto max-w-2xl text-lg"
+  action="https://formspree.io/f/xlevqoza"
+  method="POST"
+>
+  <div class="flex items-stretch space-x-2 w-full">
+    <input
+      type="email"
+      name="email"
+      class="bg-white rounded p-2 w-full border text-black"
+      placeholder="Please enter your email address"
+    />
+    <button
+      class="button primary p-2 rounded whitespace-nowrap text-white"
+      type="submit"
+    >
+      Sign Up
+    </button>
+  </div>
+  <div class="h-4 mt-2">
+    <p
+      class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
+    >
+      Success!
+    </p>
+    <p
+      class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
+    >
+      Error, please try again later.
+    </p>
+  </div>
+</form>
+
+<script>
+  const signupFormId = "signup-form";
+  const signupForm = document.getElementById(signupFormId);
+  function handleSignupFormSubmit(event) {
+    event.preventDefault();
+    const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
+    setLoading();
+    sendFormDataToFormspree(event, signupForm)
+      .then(() => showSuccessText(signupFormId))
+      .catch(() => showErrorText(signupFormId))
+      .finally(unsetLoading);
+  }
+  signupForm.addEventListener("submit", handleSignupFormSubmit);
+</script>
