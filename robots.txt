@@ -1,1 +1,1 @@
-Sitemap: https://mathesar.org/pages/centerofci/mathesar-website/sitemap.xml
+Sitemap: https://mathesar.org/sitemap.xml
