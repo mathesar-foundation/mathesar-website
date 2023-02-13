@@ -150,6 +150,10 @@
   profile_image: https://github.com/gagan2005.png
   profile_url: https://github.com/gagan2005
   username: gagan2005
+- name: null
+  profile_image: https://github.com/dependabot[bot].png
+  profile_url: https://github.com/dependabot[bot]
+  username: dependabot[bot]
 - name: Naman
   profile_image: https://github.com/nk183.png
   profile_url: https://github.com/nk183
@@ -170,10 +174,6 @@
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
-- name: null
-  profile_image: https://github.com/dependabot[bot].png
-  profile_url: https://github.com/dependabot[bot]
-  username: dependabot[bot]
 - name: Shrey Tripathi
   profile_image: https://github.com/shrey27tri01.png
   profile_url: https://github.com/shrey27tri01
