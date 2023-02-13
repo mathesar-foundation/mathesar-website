@@ -24,4 +24,4 @@ More info coming soon!
 
 Run `bundle exec jekyll serve`
 
-Browse to `http://localhost:4000/mathesar-website/`
+Browse to `http://localhost:4000/`
