@@ -1,9 +1,9 @@
 <section class="py-10 angled lighter relative">
   <ul class="flex flex-col lg:flex-row w-max mx-auto gap-4 lg:gap-8">
     {% for feature in site.data.features[page.title].features %}
-    <li class="flex items-center space-x-2 uppercase text-sm w-max lg:mx-auto">
+    <li class="flex items-center space-x-2 uppercase w-max lg:mx-auto">
       <img src="assets/{{feature.icon}}.png" class="h-10" alt="" />
-      <span class="font-bold">{{feature.title}}</span>
+      <div class="font-bold whitespace-nowrap text-sm">{{feature.title}}</div>
     </li>
     {% endfor %}
   </ul>
