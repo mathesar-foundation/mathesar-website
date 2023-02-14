@@ -12,7 +12,7 @@ Now you can spend **less time** creating custom reports and manually updating da
 
 {% capture actions %}
 {% include button.html style="primary" label="Open Live Demo" external=true url="https://demo.mathesar.org" %}
-{% include button.html style="secondary" label="Star us on GitHub" external=true url="https://github.com/centerofci/mathesar" %}
+{% include button.html style="secondary" label="Stay Updated on Our Release" url="#signup-form" %}
 {% endcapture %}
 
 {% include hero.html
