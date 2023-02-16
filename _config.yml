@@ -29,7 +29,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /image.png
+      image: /assets/mathesar-image.png
 baseurl: ""
 url: "https://mathesar.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mathesar_org
