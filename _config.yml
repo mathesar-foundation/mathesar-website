@@ -19,8 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mathesar
-description: Mathesar is an open source and web-based interface that works on top of your database.
+tagline: Open source UI for Postgres databases
+description: Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.
 repository: "centerofci/mathesar-website"
+twitter:
+  username: mathesar_org
+  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /image.png
 baseurl: ""
 url: "https://mathesar.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mathesar_org
