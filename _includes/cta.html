@@ -1,10 +1,10 @@
 <div class="px-4 mx-auto max-w-2xl">
   <div
-    class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4"
+    class="bg-blue-600 mt-24 mb-16 text-white text-center relative rounded-lg p-4 lg:p-12 space-y-4"
   >
     <div class="space-y-2">
       <h3 class="text-2xl lg:text-3xl font-semibold">
-        Stay updated on Mathesar's release
+        Stay updated on our open source and SaaS development
       </h3>
     </div>
 
@@ -13,7 +13,7 @@
     >
       <form
         id="signup-form"
-        class="flex-col w-full space-y-2"
+        class="flex-col w-full space-y-4"
         action="https://formspree.io/f/xlevqoza"
         method="POST"
       >
@@ -24,15 +24,33 @@
             class="bg-white rounded p-2 w-full border text-black"
             placeholder="Your email here"
           />
-          <button
-            class="button secondary p-2 rounded whitespace-nowrap"
+          
+        </div>
+
+        <div class="text-sm space-y-2">
+          <p class="font-semibold">Which version of Mathesar are you most interested in?</p>
+          <div class="ml-4">
+            <input id="self-hosted-version" type="checkbox" />
+            <label for="self-hosted-version"
+              >Self-hosted version (open source)</label
+            >
+          </div>
+          <div class="ml-4">
+            <input id="saas-version" type="checkbox" />
+            <label for="saas-version">Cloud-hosted version (SaaS)</label>
+          </div>
+        </div>
+
+        <button
+            class="button secondary py-2 px-8 rounded whitespace-nowrap"
             type="submit"
           >
             Sign Up
           </button>
-        </div>
-        <div class="text-sm text-gray-200">
-          We'll send you occasional email updates about Mathesar. You can opt out at any time.
+
+        <div class="text-sm text-gray-200 italic">
+          We'll send you occasional email updates about Mathesar. You can opt
+          out at any time.
         </div>
         <div class="h-4">
           <p

@@ -19,6 +19,10 @@ More granular permissions - including row and column level permissions - are [on
 
 Not yet, but we've done some early design work on this and it is [on our roadmap](roadmap.html).
 
+### Is a SaaS hosted version of Mathesar available?
+
+Not yet. We plan to release the SaaS hosted version in late 2023. If you would like to receive early access, you can sign up for our announcements [mailing list](mailing-list.html) here.
+
 {% endcapture %}
 
 {% capture faq_section2 %}
@@ -42,6 +46,7 @@ Mathesar’s interface can provide structure – so your team can’t mistakenly
 And like a spreadsheet, Mathesar has an accessible beginner-friendly interface.
 
 ### How is Mathesar different from Airtable?
+
 Mathesar is similar to Airtable in that it provides a spreadsheet-like interface for working with data. However, Mathesar offers several advantages over Airtable and other cloud-based solutions:
 
 - **Open source and self-hosted**: Mathesar is open source, which means you can run it on your own servers and have full control over your data.
@@ -82,8 +87,8 @@ Mathesar and Baserow are both open source tools that provide spreadsheet-like in
 It's important to note that Baserow is a more mature project than Mathesar and supports features like formulas, plugins, real-time collaboration, etc. that Mathesar does not currently support. We do plan to build these features, see [our roadmap](roadmap.html) for more details.
 
 Having tools like Baserow strengthens the ecosystem and we are glad to see them working on similar problems as Mathesar.
-{% endcapture %}
 
+{% endcapture %}
 
 {% include faq_section.html content=faq_section1 section="Features" %}
 {% include faq_section.html content=faq_section2 section="Product Comparisons" %}
