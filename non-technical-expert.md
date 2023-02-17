@@ -186,4 +186,4 @@ quote=quote
 image='ghislaine.jpg'
 %}
 
-{% include cta.html %}
+{% include cta.html heading="Stay updated on Mathesar's SaaS Release" %}
