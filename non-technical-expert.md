@@ -11,7 +11,7 @@ No technical skills required.
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Stay Updated on Our SaaS Release" url="#signup-form" %}
+{% include button.html style="primary" label="Stay updated on our cloud release" url="#signup-form" %}
 {% include button.html style="secondary" label="Play with Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
@@ -186,4 +186,4 @@ quote=quote
 image='ghislaine.jpg'
 %}
 
-{% include cta.html heading="Stay updated on Mathesar's SaaS Release" %}
+{% include cta.html heading="Stay updated on Mathesar's cloud release" %}

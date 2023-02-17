@@ -4,9 +4,9 @@ Mathesar:
       icon: "postgres-icon"
     - title: "Free & Open Source"
       icon: "os-icon"
-    - title: "Self-hosted on Your Server"
+    - title: "Self-hosted on Your server"
       icon: "lock-icon"
-    - title: "SaaS Version Coming Late 2023"
+    - title: "Cloud version coming late 2023"
       icon: "rocket-icon"
 How it works (non-technical) - Mathesar:
   features:
@@ -26,5 +26,5 @@ How it works (technical) - Mathesar:
       icon: "os-icon"
     - title: "Intuitive for Any Skill Level"
       icon: "lightbulb-icon"
-    - title: "SaaS Version Coming Late 2023"
+    - title: "Cloud version coming late 2023"
       icon: "rocket-icon"
