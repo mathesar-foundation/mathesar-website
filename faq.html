@@ -318,6 +318,10 @@
 
     <h4 class="uppercase text-red-600 text-sm font-bold mb-4">Features</h4>
     
+<h3 id="is-a-cloud-version-of-mathesar-available">Is a cloud version of Mathesar available?</h3>
+
+<p>Not yet. We plan to release the cloud version in late 2023. If you would like to receive early access, you can sign up for our <a href="mailing-list.html">announcements mailing list</a> here.</p>
+
 <h3 id="can-i-create-and-share-forms-using-mathesar">Can I create and share forms using Mathesar?</h3>
 
 <p>Not yet, but they’re <a href="roadmap.html">on our roadmap</a>.</p>
@@ -361,6 +365,7 @@
 <p>And like a spreadsheet, Mathesar has an accessible beginner-friendly interface.</p>
 
 <h3 id="how-is-mathesar-different-from-airtable">How is Mathesar different from Airtable?</h3>
+
 <p>Mathesar is similar to Airtable in that it provides a spreadsheet-like interface for working with data. However, Mathesar offers several advantages over Airtable and other cloud-based solutions:</p>
 
 <ul>
@@ -408,6 +413,7 @@
 
 <p>Having tools like Baserow strengthens the ecosystem and we are glad to see them working on similar problems as Mathesar.</p>
 
+
  
 
 </div>
@@ -420,20 +426,24 @@
 
     <div class="px-4 mx-auto max-w-2xl">
   <div
-    class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4"
+    class="bg-blue-600 mt-24 mb-16 text-white text-center relative rounded-lg p-4 lg:p-12 space-y-4"
   >
     <div class="space-y-2">
       <h3 class="text-2xl lg:text-3xl font-semibold">
-        Stay updated on Mathesar's release
+         Stay updated
+        on our open source and cloud development 
       </h3>
     </div>
-
+    <div class="text-sm text-gray-200 italic">
+      We'll send you occasional email updates about Mathesar. You can opt
+      out at any time.
+    </div>
     <div
       class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
     >
       <form
         id="signup-form"
-        class="flex-col w-full space-y-2"
+        class="flex-col w-full space-y-4"
         action="https://formspree.io/f/xlevqoza"
         method="POST"
       >
@@ -444,16 +454,40 @@
             class="bg-white rounded p-2 w-full border text-black"
             placeholder="Your email here"
           />
-          <button
-            class="button secondary p-2 rounded whitespace-nowrap"
-            type="submit"
-          >
-            Sign Up
-          </button>
         </div>
-        <div class="text-sm text-gray-200">
-          We'll send you occasional email updates about Mathesar. You can opt out at any time.
+
+        <div class="text-sm text-left space-y-2">
+          <p class="font-semibold">
+            Which version(s) of Mathesar are you most interested in?
+          </p>
+
+          <div class="flex lg:flex-row flex-col lg:items-center lg:space-x-4">
+            <div class="flex items-center space-x-2">
+              <input id="self_hosted_version" name="self_hosted_version" type="checkbox" />
+              <label for="self_hosted_version"
+                >Self-hosted version</label
+              >
+            </div>
+            <div class="flex items-center space-x-2">
+              <input id="cloud_version" name="cloud_version" type="checkbox" />
+              <label for="cloud_version">Cloud version</label>
+            </div>
+          </div>
+
+          
         </div>
+        <div class="flex items-center justify-start">
+        <button
+          class="button secondary py-2 px-8 rounded whitespace-nowrap"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </div>
+
+        
+
+        
         <div class="h-4">
           <p
             class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"

@@ -362,13 +362,13 @@ your data – in one open source interface" />
     </li>
     
     <li class="flex items-center space-x-2 uppercase w-max lg:mx-auto">
-      <img src="assets/rocket-icon.png" class="h-10" alt="" />
-      <div class="font-bold whitespace-nowrap text-sm">Alpha Release Coming Soon</div>
+      <img src="assets/lock-icon.png" class="h-10" alt="" />
+      <div class="font-bold whitespace-nowrap text-sm">Self-hosted on Your server</div>
     </li>
     
     <li class="flex items-center space-x-2 uppercase w-max lg:mx-auto">
-      <img src="assets/lock-icon.png" class="h-10" alt="" />
-      <div class="font-bold whitespace-nowrap text-sm">Self-hosted</div>
+      <img src="assets/rocket-icon.png" class="h-10" alt="" />
+      <div class="font-bold whitespace-nowrap text-sm">Cloud version coming late 2023</div>
     </li>
     
   </ul>
@@ -733,24 +733,50 @@ your data – in one open source interface" />
 </section>
 
 <div class="px-4 mx-auto max-w-2xl">
-  <div class="bg-blue-600  mt-24 mb-16 text-white text-center relative rounded-lg p-12 space-y-4">
+  <div class="bg-blue-600 mt-24 mb-16 text-white text-center relative rounded-lg p-4 lg:p-12 space-y-4">
     <div class="space-y-2">
       <h3 class="text-2xl lg:text-3xl font-semibold">
-        Stay updated on Mathesar's release
+         Stay updated
+        on our open source and cloud development 
       </h3>
     </div>
-
+    <div class="text-sm text-gray-200 italic">
+      We'll send you occasional email updates about Mathesar. You can opt
+      out at any time.
+    </div>
     <div class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2">
-      <form id="signup-form" class="flex-col w-full space-y-2" action="https://formspree.io/f/xlevqoza" method="POST">
+      <form id="signup-form" class="flex-col w-full space-y-4" action="https://formspree.io/f/xlevqoza" method="POST">
         <div class="flex items-stretch space-x-2 w-full">
           <input type="email" name="email" class="bg-white rounded p-2 w-full border text-black" placeholder="Your email here" />
-          <button class="button secondary p-2 rounded whitespace-nowrap" type="submit">
-            Sign Up
-          </button>
         </div>
-        <div class="text-sm text-gray-200">
-          We'll send you occasional email updates about Mathesar. You can opt out at any time.
+
+        <div class="text-sm text-left space-y-2">
+          <p class="font-semibold">
+            Which version(s) of Mathesar are you most interested in?
+          </p>
+
+          <div class="flex lg:flex-row flex-col lg:items-center lg:space-x-4">
+            <div class="flex items-center space-x-2">
+              <input id="self_hosted_version" name="self_hosted_version" type="checkbox" />
+              <label for="self_hosted_version">Self-hosted version</label>
+            </div>
+            <div class="flex items-center space-x-2">
+              <input id="cloud_version" name="cloud_version" type="checkbox" />
+              <label for="cloud_version">Cloud version</label>
+            </div>
+          </div>
+
+          
         </div>
+        <div class="flex items-center justify-start">
+        <button class="button secondary py-2 px-8 rounded whitespace-nowrap" type="submit">
+          Sign Up
+        </button>
+      </div>
+
+        
+
+        
         <div class="h-4">
           <p class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full">
             Success!
