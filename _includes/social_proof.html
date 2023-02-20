@@ -1,0 +1,26 @@
+<div class="angled lighter py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900">What people are saying</h2>
+      <p class="mt-4 text-gray-500 text-lg">
+        Here's what some of our users have to say about Mathesar:
+      </p>
+    </div>
+    <div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      {% for quote in site.data.quotes[page.title].quotes %}
+      <div class="bg-white rounded-lg shadow px-6 py-6 space-y-2">
+        <img
+          src="https://api.dicebear.com/5.x/avataaars-neutral/svg?seed={{ quote.name }}"
+          alt="avatar"
+          class="rounded-full h-16 w-16 object-cover mx-auto"
+        />
+        <p class="text-lg font-medium text-gray-900">{{ quote.quote }}</p>
+        <div class="mt-4">
+          <p class="text-base font-bold text-stone-800">{{ quote.name }}</p>
+          <p class="text-sm text-gray-500">{{ quote.role }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

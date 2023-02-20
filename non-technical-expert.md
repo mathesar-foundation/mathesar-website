@@ -186,4 +186,6 @@ quote=quote
 image='ghislaine.jpg'
 %}
 
+{% include social_proof.html %}
+
 {% include cta.html %}

@@ -46,4 +46,6 @@ Mathesar’s Alpha release is coming very soon.
 Please leave your details here to stay updated:
 {% endcapture %}
 
+{% include social_proof.html %}
+
 {% include cta.html %}
