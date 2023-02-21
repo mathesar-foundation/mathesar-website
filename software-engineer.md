@@ -11,8 +11,8 @@ Now you can spend **less time** creating custom reports and manually updating da
 {% endcapture %}
 
 {% capture actions %}
-{% include button.html style="primary" label="Play with Live Demo" external=true url="https://demo.mathesar.org" %}
-{% include button.html style="secondary" label="Sign up for our Mailing List" url="#signup-form" %}
+{% include button.html style="primary" label="Install Mathesar" external=true url="https://docs.mathesar.org" %}
+{% include button.html style="secondary" label="Play with Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
 {% include hero.html
