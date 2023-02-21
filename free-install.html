@@ -42,7 +42,7 @@
   <body
     class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col"
   >
-    <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400">
+    <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400 relative">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
       <a href="index.html">
@@ -50,11 +50,12 @@
       </a>
       <a
         href="https://github.com/centerofci/mathesar"
-        class="hover:opacity-70 transition-colors bg-stone-200 shadow-md invert py-2 px-3 mt-[-1rem] lg:mt-[-2rem] flex items-center space-x-2 text-xs lg:text-lg font-semibold"
+        class="hover:opacity-70 transition-colors bg-stone-200 shadow-md invert py-2 sm:px-3 pr-2 absolute right-0 top-0 flex items-center space-x-2 text-xs lg:text-lg font-semibold"
         aria-label="Visit Mathesar on Github"
         target="_blank"
       >
-        <span class="text-gray-900">Star us on GitHub</span>
+        <span class="text-gray-900 sm:block hidden">Star us on</span>
+        <span class="text-gray-900">GitHub</span>
         <img
           src="assets/github-logo.svg"
           alt="Github Logo"
