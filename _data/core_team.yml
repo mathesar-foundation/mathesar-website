@@ -9,7 +9,9 @@
   image: sean.jpg
   role: Frontend Developer
   bio: |+
-    "I use a database for personal finance and budgeting, time tracking, and recipe and grocery management."
+    "I have an older relative who has been compiling **family genealogy** data for years through an arduous process of paper forms in the mail. I'd like to digitize it for future generations! Spreadsheets are a poor fit because of the data's highly relational nature. And the family wants to maintain privacy, making existing solutions unappealing.
+    
+    With Mathesar, our family will eventually be able to collaboratively manage this data and visualize it in new and exciting ways!"
 - name: Ghislaine Guerin
   image: ghislaine.jpg
   role: Product Designer
