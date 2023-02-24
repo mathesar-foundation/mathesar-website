@@ -214,6 +214,10 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   @apply bg-stone-100 text-gray-800;
 }
 
+.angled.accent {
+  @apply bg-blue-500 text-white;
+}
+
 .angled::before,
 .angled::after {
   content: "";
