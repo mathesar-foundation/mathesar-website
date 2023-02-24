@@ -37,11 +37,11 @@
   </div>
 
   <div
-    class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-12 auto-rows-auto"
+    class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-8 auto-rows-auto"
   >
     {% for member in site.data.core_team %}
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 lg:h-64 h-auto">
-      <img src="assets/{{member.image}}" class="w-24 lg:w-40" alt="" />
+    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-auto">
+      <img src="assets/{{member.image}}" class="w-24 lg:w-40 lg:mt-4" alt="" />
       <div class="space-y-2">
         <div>
           <h4 class="text-xl font-semibold">{{member.name}}</h4>
