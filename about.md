@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Us - Mathesar
+description: Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.
 ---
 
 {% capture subheader %}

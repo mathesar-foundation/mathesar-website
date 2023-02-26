@@ -2,6 +2,7 @@
 layout: default
 title: How it works (technical) - Mathesar
 parent: How it works
+description: Use Mathesar's open source and web-based interface to give your team direct access to Postgres. No technical skills required. Now you can spend less time creating custom reports and manually updating data.
 ---
 
 {% capture hero_content %}

@@ -1,6 +1,7 @@
 ---
 layout: faq
 title: FAQ - Mathesar
+description: Frequently asked questions about Mathesar
 ---
 
 {% capture faq_section1 %}

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Roadmap - Mathesar
+description: Mathesar's roadmap – a list of features we plan to build and release
 ---
 
 {% capture subheader %}

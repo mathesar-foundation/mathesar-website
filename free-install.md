@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Request installation - Mathesar
+description: We'll help you install Mathesar for free (limited slots available)
 ---
 
 {% capture header %}
