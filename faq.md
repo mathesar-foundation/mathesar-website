@@ -1,6 +1,8 @@
 ---
 layout: faq
 title: FAQ - Mathesar
+description: Frequently asked questions about Mathesar
+image: /assets/og-faq.png
 ---
 
 {% capture faq_section1 %}
