@@ -2,6 +2,7 @@
 layout: default
 title: Request installation - Mathesar
 description: We'll help you install Mathesar for free (limited slots available)
+image: /assets/og-free-install.png
 ---
 
 {% capture header %}

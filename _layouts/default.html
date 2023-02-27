@@ -12,6 +12,10 @@
     <meta name="description" content="{{ page.description | strip_html }}" />
     {% endif %}
 
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}" />
+    {% endif %}
+
     {% seo %}
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 
