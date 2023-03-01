@@ -8,6 +8,14 @@
       content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
     />
 
+    {% if page.description %}
+    <meta name="description" content="{{ page.description | strip_html }}" />
+    {% endif %}
+
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}" />
+    {% endif %}
+
     {% seo %}
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 

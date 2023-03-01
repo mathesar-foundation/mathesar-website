@@ -1,16 +1,42 @@
 <form
   id="signup-form"
-  class="mx-auto max-w-2xl text-lg px-8"
+  class="mx-auto max-w-2xl text-lg px-8 space-y-4"
   action="https://formspree.io/f/xlevqoza"
   method="POST"
 >
-  <div class="flex flex-col lg:flex-row gap-2 w-full grid-cols-2 grid-flow-row-dense" >
+  <div
+    class="flex flex-col lg:flex-row gap-2 w-full grid-cols-2 grid-flow-row-dense"
+  >
     <input
       type="email"
       name="email"
       class="bg-white rounded p-2 w-full border text-black"
       placeholder="Your email here"
     />
+  </div>
+  <div class="space-y-2 p-4 text-center rounded bg-stone-100 rounded-lg">
+    <p class="font-semibold">
+      Which version(s) of Mathesar are you most interested in?
+    </p>
+
+    <div
+      class="flex lg:flex-row flex-col justify-center lg:items-center lg:space-x-4"
+    >
+      <div class="flex items-center space-x-2 lg:m-0 mx-auto">
+        <input
+          id="self_hosted_version"
+          name="self_hosted_version"
+          type="checkbox"
+        />
+        <label for="self_hosted_version">Self-hosted version</label>
+      </div>
+      <div class="flex items-center space-x-2 lg:m-0 mx-auto">
+        <input id="cloud_version" name="cloud_version" type="checkbox" />
+        <label for="cloud_version">Cloud version</label>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center">
     <button
       class="button primary py-2 px-12 w-full rounded whitespace-nowrap text-white w-max mx-auto"
       type="submit"
