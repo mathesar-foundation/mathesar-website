@@ -50,4 +50,6 @@
   image: rajat.jpg
   role: Frontend Developer
   bio: |+
-    "I use a database for **personal finance management**, including accounting and tracking expenses."
+    "I collect data about my health from various tracking tools like continuos glucose monitors, sleep tracking rings, activity tracking chip in my shoes, and body composition analysis devices. 
+    
+    I plan to use Mathesar to log all of these data in a single database in a normalized manner and draw correlations between them. For example: What kind food gave me the maximum push during my workouts?"
