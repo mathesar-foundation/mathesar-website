@@ -660,7 +660,7 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
       </div>
 
       <div class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center">
-        <a class="screenshot-url" href="assets/arxiv-schema.png" target="_blank">
+        <a class="screenshot-url use-case-screenshot" href="assets/arxiv-schema.png" target="_blank">
           <img class="rounded-lg shadow-lg screenshot-image" src="assets/arxiv-schema.png" alt="" />
         </a>
       </div>
@@ -760,8 +760,10 @@ There are <strong>no disruptions</strong> – which can help <strong>ease your d
       "assets/" + image,
       document.querySelector(".screenshot-image")
     );
-    document.querySelector(".screenshot-image").src = "assets/" + image;
-    document.querySelector(".screenshot-url").href = "assets/" + image;
+    var useCaseScreenshotElement = document.querySelector(".use-case-screenshot.screenshot-url");
+    var useCaseImageUrl = "assets/" + image;
+    useCaseScreenshotElement.href = useCaseImageUrl;
+    useCaseScreenshotElement.querySelector(".screenshot-image").src = useCaseImageUrl;
 
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
