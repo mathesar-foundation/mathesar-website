@@ -17,8 +17,9 @@
         {% for item in site.data.use_cases[page.title] %}
         <button
           class="use-case-button p-2 lg:text-lg lg:block lg:w-full rounded-lg text-left hover:bg-stone-100"
-          onclick="updateScreenshot('{{item.image}}')"
+          onclick="updateScreenshot(event)"
           id="button-{{ forloop.index }}"
+          data-screenshot="{{ forloop.index }}"
         >
           {{item.use_case}}
         </button>
@@ -36,17 +37,22 @@
       <div
         class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
       >
-        <a
-          class="screenshot-url"
-          href="assets/{{site.data.use_cases[page.title][0].image}}"
-          target="_blank"
-        >
-          <img
-            class="rounded-lg shadow-lg screenshot-image"
-            src="assets/{{site.data.use_cases[page.title][0].image}}"
-            alt=""
-          />
-        </a>
+        {% for item in site.data.use_cases[page.title] %}
+
+        <div class="hidden screenshot-container screenshot-{{ forloop.index }}">
+          <a
+            class="screenshot-url"
+            href="assets/{{item.image}}"
+            target="_blank"
+          >
+            <img
+              class="rounded-lg shadow-lg screenshot-image"
+              src="assets/{{item.image}}"
+              alt=""
+            />
+          </a>
+        </div>
+        {% endfor %}
       </div>
     </div>
     <noscript>
@@ -73,8 +79,6 @@
   </div>
 </section>
 
-
-
 <noscript>
   <style>
     .js-disabled {
@@ -88,6 +92,15 @@
 </noscript>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var firstScreenshotContainer = document.querySelector(
+      ".screenshot-container"
+    );
+    if (firstScreenshotContainer) {
+      firstScreenshotContainer.classList.remove("hidden");
+    }
+  });
+
   document
     .getElementById("button-1")
     .classList.add("bg-stone-200", "font-bold");
@@ -98,15 +111,7 @@
     firstDescription.classList.remove("hidden");
   }
 
-  function updateScreenshot(image) {
-    console.log(
-      image,
-      "assets/" + image,
-      document.querySelector(".screenshot-image")
-    );
-    document.querySelector(".screenshot-image").src = "assets/" + image;
-    document.querySelector(".screenshot-url").href = "assets/" + image;
-
+  function updateScreenshot(event) {
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
     for (var i = 0; i < buttons.length; i++) {
@@ -120,13 +125,16 @@
     var buttonId = button.id;
     var index = buttonId.split("-")[1] - 1;
     button.classList.add("bg-stone-200", "font-bold");
-    var descriptionId = "description-" + (index + 1);
-    var description = document.getElementById(descriptionId);
-    if (description) {
-      description.classList.remove("hidden");
+    var screenshotIndex = button.dataset.screenshot;
+    var screenshotContainer = document.querySelector(
+      ".screenshot-" + screenshotIndex
+    );
+    var screenshotContainers = document.querySelectorAll(
+      ".screenshot-container"
+    );
+    for (var i = 0; i < screenshotContainers.length; i++) {
+      screenshotContainers[i].classList.add("hidden");
     }
+    screenshotContainer.classList.remove("hidden");
   }
-
-  
-
 </script>
