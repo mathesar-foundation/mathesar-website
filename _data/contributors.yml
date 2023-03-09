@@ -118,6 +118,10 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
+- name: Anshuman Maurya
+  profile_image: https://github.com/IamEzio.png
+  profile_url: https://github.com/IamEzio
+  username: IamEzio
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
@@ -162,10 +166,6 @@
   profile_image: https://github.com/nk183.png
   profile_url: https://github.com/nk183
   username: nk183
-- name: Anshuman Maurya
-  profile_image: https://github.com/IamEzio.png
-  profile_url: https://github.com/IamEzio
-  username: IamEzio
 - name: "Franti\u0161ek Harni\u010D\xE1r"
   profile_image: https://github.com/FrantisekHarnicar.png
   profile_url: https://github.com/FrantisekHarnicar
@@ -230,6 +230,10 @@
   profile_image: https://github.com/AlekLefebvre.png
   profile_url: https://github.com/AlekLefebvre
   username: AlekLefebvre
+- name: Florian Apolloner
+  profile_image: https://github.com/apollo13.png
+  profile_url: https://github.com/apollo13
+  username: apollo13
 - name: Kanishk Sankpal
   profile_image: https://github.com/ishqelliot.png
   profile_url: https://github.com/ishqelliot
