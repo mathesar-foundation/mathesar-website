@@ -37,7 +37,7 @@
         class="bg-gray-800 p-8 max-w-6xl rounded-lg shadow-lg flex flex-col justify-center"
       >
         <a
-          class="screenshot-url"
+          class="screenshot-url use-case-screenshot"
           href="assets/{{site.data.use_cases[page.title][0].image}}"
           target="_blank"
         >
@@ -104,8 +104,10 @@
       "assets/" + image,
       document.querySelector(".screenshot-image")
     );
-    document.querySelector(".screenshot-image").src = "assets/" + image;
-    document.querySelector(".screenshot-url").href = "assets/" + image;
+    var useCaseScreenshotElement = document.querySelector(".use-case-screenshot.screenshot-url");
+    var useCaseImageUrl = "assets/" + image;
+    useCaseScreenshotElement.href = useCaseImageUrl;
+    useCaseScreenshotElement.querySelector(".screenshot-image").src = useCaseImageUrl;
 
     var button = event.target.closest("button");
     var buttons = document.querySelectorAll(".use-case-button");
