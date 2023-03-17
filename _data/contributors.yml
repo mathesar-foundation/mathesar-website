@@ -234,6 +234,10 @@
   profile_image: https://github.com/AlekLefebvre.png
   profile_url: https://github.com/AlekLefebvre
   username: AlekLefebvre
+- name: Charvi Mehra
+  profile_image: https://github.com/charvimehradu.png
+  profile_url: https://github.com/charvimehradu
+  username: charvimehradu
 - name: Florian Apolloner
   profile_image: https://github.com/apollo13.png
   profile_url: https://github.com/apollo13
@@ -258,3 +262,7 @@
   profile_image: https://github.com/lakshya-dhariwal.png
   profile_url: https://github.com/lakshya-dhariwal
   username: lakshya-dhariwal
+- name: Sukshan Jadhao
+  profile_image: https://github.com/Sukshan.png
+  profile_url: https://github.com/Sukshan
+  username: Sukshan
