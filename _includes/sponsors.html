@@ -1,0 +1,27 @@
+<div class="max-w-screen-lg mx-auto flex flex-wrap justify-center gap-8 mb-20">
+  {% for sponsor in site.data.sponsors %}
+  <div class="flex flex-col items-center">
+    <a
+      href="{{ sponsor.profile_url }}"
+      class="icon-link"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        class="w-32 sm:w-40 h-32 sm:h-40 object-contain rounded-lg mb-2"
+        src="{{ sponsor.profile_image }}"
+        alt="{{ sponsor.name }} logo"
+      />
+    </a>
+    <div class="text-center">
+      <a
+        href="{{ sponsor.profile_url }}"
+        target="_blank"
+        rel="noopener"
+        class="text-gray-900 font-bold hover:text-gray-700"
+        >{{ sponsor.name }}</a
+      >
+    </div>
+  </div>
+  {% endfor %}
+</div>
