@@ -106,6 +106,10 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
+- name: Anshuman Maurya
+  profile_image: https://github.com/IamEzio.png
+  profile_url: https://github.com/IamEzio
+  username: IamEzio
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
@@ -118,10 +122,6 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
-- name: Anshuman Maurya
-  profile_image: https://github.com/IamEzio.png
-  profile_url: https://github.com/IamEzio
-  username: IamEzio
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
@@ -194,6 +194,10 @@
   profile_image: https://github.com/Creative1800.png
   profile_url: https://github.com/Creative1800
   username: Creative1800
+- name: Hemant Chaudhary
+  profile_image: https://github.com/hemant-hc.png
+  profile_url: https://github.com/hemant-hc
+  username: hemant-hc
 - name: Felix
   profile_image: https://github.com/fkarg.png
   profile_url: https://github.com/fkarg
@@ -262,10 +266,6 @@
   profile_image: https://github.com/hgupta12.png
   profile_url: https://github.com/hgupta12
   username: hgupta12
-- name: Hemant Chaudhary
-  profile_image: https://github.com/hemant-hc.png
-  profile_url: https://github.com/hemant-hc
-  username: hemant-hc
 - name: Lakshya Dhariwal
   profile_image: https://github.com/lakshya-dhariwal.png
   profile_url: https://github.com/lakshya-dhariwal
