@@ -54,14 +54,14 @@
   profile_image: https://github.com/ghislaineguerin.png
   profile_url: https://github.com/ghislaineguerin
   username: ghislaineguerin
-- name: A1O
-  profile_image: https://github.com/A1O.png
-  profile_url: https://github.com/A1O
-  username: A1O
 - name: Akash Gupta
   profile_image: https://github.com/Hatilar420.png
   profile_url: https://github.com/Hatilar420
   username: Hatilar420
+- name: A1O
+  profile_image: https://github.com/A1O.png
+  profile_url: https://github.com/A1O
+  username: A1O
 - name: Dhruv Bhanushali
   profile_image: https://github.com/dhruvkb.png
   profile_url: https://github.com/dhruvkb
@@ -202,6 +202,10 @@
   profile_image: https://github.com/Creative1800.png
   profile_url: https://github.com/Creative1800
   username: Creative1800
+- name: Aritra Majumder
+  profile_image: https://github.com/Aritra8438.png
+  profile_url: https://github.com/Aritra8438
+  username: Aritra8438
 - name: Felix
   profile_image: https://github.com/fkarg.png
   profile_url: https://github.com/fkarg
@@ -222,10 +226,6 @@
   profile_image: https://github.com/steve-lgtm.png
   profile_url: https://github.com/steve-lgtm
   username: steve-lgtm
-- name: Aritra Majumder
-  profile_image: https://github.com/Aritra8438.png
-  profile_url: https://github.com/Aritra8438
-  username: Aritra8438
 - name: Charvi Mehra
   profile_image: https://github.com/charvimehradu.png
   profile_url: https://github.com/charvimehradu
@@ -242,6 +242,10 @@
   profile_image: https://github.com/sahilsaini110.png
   profile_url: https://github.com/sahilsaini110
   username: sahilsaini110
+- name: Ziad
+  profile_image: https://github.com/Ziad-I.png
+  profile_url: https://github.com/Ziad-I
+  username: Ziad-I
 - name: Sukshan Jadhao
   profile_image: https://github.com/Sukshan.png
   profile_url: https://github.com/Sukshan
