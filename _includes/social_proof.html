@@ -1,26 +1,127 @@
-<div class="angled lighter py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="angled lighter py-12 space-y-12">
+  <div class="w-full mx-auto">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-900">What people are saying</h2>
-      <p class="mt-4 text-gray-500 text-lg">
+      <p class="mt-2 text-gray-500 text-lg">
         Here's what some of our users have to say about Mathesar:
       </p>
     </div>
-    <div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-      {% for quote in site.data.quotes[page.title].quotes %}
-      <div class="bg-white rounded-lg shadow px-6 py-6 space-y-2">
-        <img
-          src="https://api.dicebear.com/5.x/avataaars-neutral/svg?seed={{ quote.name }}"
-          alt="avatar"
-          class="rounded-full h-16 w-16 object-cover mx-auto"
-        />
-        <p class="text-lg font-medium text-gray-900">{{ quote.quote }}</p>
-        <div class="mt-4">
-          <p class="text-base font-bold text-stone-800">{{ quote.name }}</p>
-          <p class="text-sm text-gray-500">{{ quote.role }}</p>
+    <div class="relative">
+      <div class="mt-10 overflow-x-auto no-scrollbar">
+        <div class="scrollbar-hidden inline-flex gap-10 px-4">
+          {% for quote in site.data.quotes[page.title].quotes %}
+          <div
+            class="bg-white rounded-lg shadow px-6 py-6 space-y-2 w-80 {{quote.source}}"
+          >
+            {% if quote.quote %}
+            <p class="text-lg font-medium text-gray-900 break-words">
+              {{ quote.quote }}
+            </p>
+            {% endif %}
+
+            <div class="mt-4">
+              <p
+                class="text-base font-bold text-stone-800 text-{{quote.source}}"
+              >
+                {{ quote.name }}
+              </p>
+              {% if quote.role %}
+              <p class="text-sm text-gray-500">{{ quote.role }}</p>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
-      {% endfor %}
+      <div
+        class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10"
+      ></div>
+    </div>
+  </div>
+
+  <div class="w-full mx-auto">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Published In</h2>
+      <p class="mt-2 text-gray-500 text-lg">
+        Check out where Mathesar has been featured:
+      </p>
+    </div>
+    <div class="relative">
+      <div class="mt-10 overflow-x-auto no-scrollbar">
+        <div
+          class="scrollbar-hidden inline-flex gap-10 px-4 justify-center w-full"
+        >
+          {% for link in site.data.links[page.title].links %}
+          <div class="bg-white rounded-lg shadow p-2 space-y-2 w-80">
+            {%if link.image %}
+            <img
+              src="{{ link.image }}"
+              alt="{{ link.title }}"
+              class="w-full h-32 border object-cover rounded-lg"
+            />
+            {% endif %}
+            <div>
+              {% if link.title %}
+              <h3 class="text-lg font-bold text-gray-900">{{ link.title }}</h3>
+              {% endif %} {% if link.description %}
+              <p class="text-gray-500">{{ link.description }}</p>
+            </div>
+            {% endif %} {% if link.url %}
+            <a href="{{ link.url }}" class="text-blue-600 hover:text-blue-800 mt-2 block">
+              Read more
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div
+        class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10"
+      ></div>
+      <div
+        class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10"
+      ></div>
     </div>
   </div>
 </div>
+
+<style>
+  .linkedin {
+    background-color: #ffffff;
+    border: 1px solid #0077b5;
+  }
+
+  .text-linkedin {
+    color: #0077b5;
+  }
+
+  .hackernews {
+    background-color: rgb(246, 246, 239);
+    border: 1px solid #ff6600;
+  }
+
+  .text-hackernews {
+    color: #ff6600;
+  }
+
+  .reddit {
+    background-color: #ffffff;
+    border: 1px solid #ff4500;
+  }
+
+  .text-reddit {
+    color: #ff4500;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+</style>

@@ -376,3 +376,4 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   content: "Click to enlarge";
   @apply absolute bottom-[-1.5rem] text-sm font-semibold text-gray-400;
 }
+
