@@ -126,6 +126,10 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
+- name: Tafreed Ahmad
+  profile_image: https://github.com/TafreedAhmad.png
+  profile_url: https://github.com/TafreedAhmad
+  username: TafreedAhmad
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
@@ -278,6 +282,10 @@
   profile_image: https://github.com/bohemia420.png
   profile_url: https://github.com/bohemia420
   username: bohemia420
+- name: null
+  profile_image: https://github.com/github-merge-queue[bot].png
+  profile_url: https://github.com/github-merge-queue[bot]
+  username: github-merge-queue[bot]
 - name: null
   profile_image: https://github.com/hgupta12.png
   profile_url: https://github.com/hgupta12
