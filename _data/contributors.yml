@@ -82,6 +82,10 @@
   profile_image: https://github.com/ManishShah120.png
   profile_url: https://github.com/ManishShah120
   username: ManishShah120
+- name: Hemant Chaudhary
+  profile_image: https://github.com/hemant-hc.png
+  profile_url: https://github.com/hemant-hc
+  username: hemant-hc
 - name: Aagman Bhatt
   profile_image: https://github.com/aagman945.png
   profile_url: https://github.com/aagman945
@@ -110,10 +114,6 @@
   profile_image: https://github.com/IamEzio.png
   profile_url: https://github.com/IamEzio
   username: IamEzio
-- name: Hemant Chaudhary
-  profile_image: https://github.com/hemant-hc.png
-  profile_url: https://github.com/hemant-hc
-  username: hemant-hc
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
@@ -198,6 +198,10 @@
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
+- name: null
+  profile_image: https://github.com/github-merge-queue[bot].png
+  profile_url: https://github.com/github-merge-queue[bot]
+  username: github-merge-queue[bot]
 - name: Shrey Tripathi
   profile_image: https://github.com/shrey27tri01.png
   profile_url: https://github.com/shrey27tri01
@@ -218,10 +222,6 @@
   profile_image: https://github.com/Wali-Muhammad123.png
   profile_url: https://github.com/Wali-Muhammad123
   username: Wali-Muhammad123
-- name: null
-  profile_image: https://github.com/github-merge-queue[bot].png
-  profile_url: https://github.com/github-merge-queue[bot]
-  username: github-merge-queue[bot]
 - name: Linh
   profile_image: https://github.com/dauinh.png
   profile_url: https://github.com/dauinh
