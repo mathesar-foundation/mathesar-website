@@ -7,8 +7,8 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar px-80">
-        <div class="scrollbar-hidden flex gap-10 px-4 justify-center">
+      <div class="mt-10 overflow-x-auto no-scrollbar">
+        <div class="scrollbar-hidden inline-flex gap-10 px-4">
           {% for quote in site.data.quotes[page.title].quotes %}
           <div
             class="bg-white rounded-lg shadow px-6 py-6 space-y-2 shrink-0 w-80 {{quote.source}}"
@@ -23,22 +23,19 @@
               <p
                 class="text-base font-bold text-stone-800 text-{{quote.source}}"
               >
-                {{ quote.name }}
+                {{ quote.username }}
               </p>
               {% if quote.role %}
               <p class="text-sm text-gray-500">{{ quote.role }}</p>
               {% endif %}
             </div>
+            {% if quote.source %}
+            <p class="text-xs text-gray-400">Source: {{ quote.source }}</p>
+            {% endif %}
           </div>
           {% endfor %}
         </div>
       </div>
-      <div
-        class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10"
-      ></div>
-      <div
-        class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10"
-      ></div>
     </div>
   </div>
 
@@ -50,43 +47,34 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar ">
-        <div
-          class="scrollbar-hidden inline-flex gap-10 px-80 justify-center w-full"
-        >
+      <div class="mt-10 overflow-x-auto no-scrollbar">
+        <div class="scrollbar-hidden inline-flex gap-10 px-4 w-full">
           {% for link in site.data.links[page.title].links %}
-          <div class="bg-white rounded-lg shadow p-2 space-y-2 w-80 shrink-0">
+          <div class="bg-white rounded-lg shadow py-1 px-2 gap-4 w-80 shrink-0 flex items-center">
             {%if link.image %}
             <img
               src="{{ link.image }}"
               alt="{{ link.title }}"
-              class="w-full h-32 border object-cover rounded-lg"
+              class="w-12 h-12 border object-cover rounded-lg"
             />
             {% endif %}
             <div>
               {% if link.title %}
-              <h3 class="text-lg font-bold text-gray-900">{{ link.title }}</h3>
-              {% endif %} {% if link.description %}
-              <p class="text-gray-500">{{ link.description }}</p>
-            </div>
-            {% endif %} {% if link.url %}
-            <a
-              href="{{ link.url }}"
-              class="text-blue-600 hover:text-blue-800 mt-2 block"
-            >
-              Read more
-            </a>
+              <h3 class="text-lg font-bold text-gray-900">
+                {% if link.url %}
+                  <a href="{{ link.url }}" class="text-blue-600 hover:text-blue-800">
+                    {{ link.title }}
+                  </a>
+                {% else %}
+                  {{ link.title }}
+                {% endif %}
+              </h3>
             {% endif %}
+            </div>
           </div>
           {% endfor %}
         </div>
       </div>
-      <div
-        class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent z-10"
-      ></div>
-      <div
-        class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent z-10"
-      ></div>
     </div>
   </div>
 </div>
