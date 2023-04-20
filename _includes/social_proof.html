@@ -7,8 +7,8 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar">
-        <div class="scrollbar-hidden inline-flex gap-10 px-4">
+      <div class="mt-10 overflow-x-auto no-scrollbar text-center">
+        <div class="scrollbar-hidden inline-flex text-left gap-10 px-4">
           {% for quote in site.data.quotes[page.title].quotes %}
           <div
             class="bg-white rounded-lg shadow px-6 py-6 space-y-2 shrink-0 w-80 {{quote.source}}"
@@ -39,6 +39,8 @@
     </div>
   </div>
 
+  {% if site.data.links[page.title].links | size > 0 %}
+
   <div class="w-full mx-auto">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-900">Published In</h2>
@@ -47,10 +49,12 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar">
-        <div class="scrollbar-hidden inline-flex gap-10 px-4 w-full">
+      <div class="mt-10 overflow-x-auto no-scrollbar text-center">
+        <div class="scrollbar-hidden inline-flex mx-auto gap-10 px-4 w-full text-left">
           {% for link in site.data.links[page.title].links %}
-          <div class="bg-white rounded-lg shadow py-1 px-2 gap-4 w-80 shrink-0 flex items-center">
+          <div
+            class="bg-white rounded-lg shadow py-1 px-2 gap-4 w-80 shrink-0 flex items-center"
+          >
             {%if link.image %}
             <img
               src="{{ link.image }}"
@@ -62,14 +66,15 @@
               {% if link.title %}
               <h3 class="text-lg font-bold text-gray-900">
                 {% if link.url %}
-                  <a href="{{ link.url }}" class="text-blue-600 hover:text-blue-800">
-                    {{ link.title }}
-                  </a>
-                {% else %}
+                <a
+                  href="{{ link.url }}"
+                  class="text-blue-600 hover:text-blue-800"
+                >
                   {{ link.title }}
-                {% endif %}
+                </a>
+                {% else %} {{ link.title }} {% endif %}
               </h3>
-            {% endif %}
+              {% endif %}
             </div>
           </div>
           {% endfor %}
@@ -77,6 +82,7 @@
       </div>
     </div>
   </div>
+  {% endif %}
 </div>
 
 <style>
