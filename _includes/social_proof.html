@@ -7,11 +7,11 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar">
-        <div class="scrollbar-hidden inline-flex gap-10 px-4">
+      <div class="mt-10 overflow-x-auto no-scrollbar px-80">
+        <div class="scrollbar-hidden flex gap-10 px-4 justify-center">
           {% for quote in site.data.quotes[page.title].quotes %}
           <div
-            class="bg-white rounded-lg shadow px-6 py-6 space-y-2 w-80 {{quote.source}}"
+            class="bg-white rounded-lg shadow px-6 py-6 space-y-2 shrink-0 w-80 {{quote.source}}"
           >
             {% if quote.quote %}
             <p class="text-lg font-medium text-gray-900 break-words">
@@ -50,12 +50,12 @@
       </p>
     </div>
     <div class="relative">
-      <div class="mt-10 overflow-x-auto no-scrollbar">
+      <div class="mt-10 overflow-x-auto no-scrollbar ">
         <div
-          class="scrollbar-hidden inline-flex gap-10 px-4 justify-center w-full"
+          class="scrollbar-hidden inline-flex gap-10 px-80 justify-center w-full"
         >
           {% for link in site.data.links[page.title].links %}
-          <div class="bg-white rounded-lg shadow p-2 space-y-2 w-80">
+          <div class="bg-white rounded-lg shadow p-2 space-y-2 w-80 shrink-0">
             {%if link.image %}
             <img
               src="{{ link.image }}"
@@ -70,7 +70,10 @@
               <p class="text-gray-500">{{ link.description }}</p>
             </div>
             {% endif %} {% if link.url %}
-            <a href="{{ link.url }}" class="text-blue-600 hover:text-blue-800 mt-2 block">
+            <a
+              href="{{ link.url }}"
+              class="text-blue-600 hover:text-blue-800 mt-2 block"
+            >
               Read more
             </a>
             {% endif %}
