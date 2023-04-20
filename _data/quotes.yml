@@ -15,6 +15,19 @@ Mathesar:
       source: "linkedin"
 How it works (non-technical) - Mathesar:
   quotes:
+    - username: "debarshri"
+      quote: "Interesting how there are some airtable inspired UI elements combined with postgres. Super interesting, will definitely use it."
+      source: "hackernews"
+    - username: "cadbox1"
+      quote: "Nice work! It looks like Sequel Pro for Postgres. This might be the first free, user-friendly interface for Postgres out there."
+      source: "hackernews"
+    - username: "Reif Hoffman"
+      role: "Entrepreneur. Product and Business Strategist. Investor. Podcaster."
+      quote: "Mathesar provides a user-friendly, spreadsheet-like interface to PostgreSQL databases for both non-technical and technical users. Congrats to the teams on their exciting launch. Proud to back this amazing effort!"
+      source: "linkedin"
+
+How it works (technical) - Mathesar:
+  quotes:
     - username: "vladsanchez"
       quote: "So happy to realize your stack includes Python, Postgres, Typescript and Svelte because I once flirted with such idea for a personal project. I'm inspired."
       source: "hackernews"
@@ -24,15 +37,3 @@ How it works (non-technical) - Mathesar:
     - username: "winrid"
       quote: "Was just thinking about how it looks like a fancy Django Admin Then I saw - its actually built on Django! Neat. :)"
       source: "hackernews"
-
-How it works (technical) - Mathesar:
-  quotes:
-      - username: "vladsanchez"
-        quote: "So happy to realize your stack includes Python, Postgres, Typescript and Svelte because I once flirted with such idea for a personal project. I'm inspired."
-        source: "hackernews"
-      - username: "cadbox1"
-        quote: "Nice work! It looks like Sequel Pro for Postgres. This might be the first free, user-friendly interface for Postgres out there."
-        source: "hackernews"
-      - username: "winrid"
-        quote: "Was just thinking about how it looks like a fancy Django Admin Then I saw - its actually built on Django! Neat. :)"
-        source: "hackernews"
