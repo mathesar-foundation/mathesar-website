@@ -58,6 +58,10 @@
   profile_image: https://github.com/ghislaineguerin.png
   profile_url: https://github.com/ghislaineguerin
   username: ghislaineguerin
+- name: Aritra Majumder
+  profile_image: https://github.com/Aritra8438.png
+  profile_url: https://github.com/Aritra8438
+  username: Aritra8438
 - name: Akash Gupta
   profile_image: https://github.com/Hatilar420.png
   profile_url: https://github.com/Hatilar420
@@ -170,14 +174,14 @@
   profile_image: https://github.com/obulat.png
   profile_url: https://github.com/obulat
   username: obulat
-- name: GAGANDEEP SINGH
-  profile_image: https://github.com/gagan2005.png
-  profile_url: https://github.com/gagan2005
-  username: gagan2005
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: GAGANDEEP SINGH
+  profile_image: https://github.com/gagan2005.png
+  profile_url: https://github.com/gagan2005
+  username: gagan2005
 - name: Naman
   profile_image: https://github.com/nk183.png
   profile_url: https://github.com/nk183
@@ -202,10 +206,6 @@
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
-- name: Aritra Majumder
-  profile_image: https://github.com/Aritra8438.png
-  profile_url: https://github.com/Aritra8438
-  username: Aritra8438
 - name: null
   profile_image: https://github.com/github-merge-queue[bot].png
   profile_url: https://github.com/github-merge-queue[bot]
