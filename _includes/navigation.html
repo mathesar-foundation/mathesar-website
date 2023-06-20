@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
       <a href="index.html">
-        <img class="w-40 lg:w-56" src="assets/logo.svg" alt="Mathesar's Logo" />
+        <img class="w-40 lg:w-56" src="{{ '/assets/logo.svg' | relative_url }}" alt="Mathesar's Logo" />
       </a>
       <a
         href="https://github.com/centerofci/mathesar"
@@ -13,7 +13,7 @@
         <span class="text-gray-900 sm:block hidden">Star us on</span>
         <span class="text-gray-900">GitHub</span>
         <img
-          src="assets/github-logo.svg"
+          src="{{ '/assets/github-logo.svg' | relative_url }}"
           alt="Github Logo"
           class="align-bottom opacity-90"
           alt="Github Logo"
@@ -27,7 +27,7 @@
         aria-label="Main Navigation"
       >
         <div class="space-x-6 flex items-center">
-          <a class="navigation-item" href="about.html">About Us</a>
+          <a class="navigation-item" href="{{ 'about.html' | relative_url }}">About Us</a>
           <div class="dropdown relative navigation-item">
             <button
               class="flex items-center"
@@ -35,26 +35,34 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it Works <img src="assets/dropdown-arrow.svg" alt="" />
+              How it Works <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
             >
               <a
                 class="whitespace-nowrap hover:underline"
-                href="software-engineer.html"
+                href="{{ 'software-engineer.html' | relative_url }}"
                 >Software Engineer</a
               >
               <a
                 class="whitespace-nowrap hover:underline"
-                href="non-technical-expert.html"
+                href="{{ 'non-technical-expert.html' | relative_url }}"
                 >Non-Technical Expert</a
               >
-              <a class="whitespace-nowrap hover:underline" href="faq.html"
+              <a class="whitespace-nowrap hover:underline" href="{{ 'faq.html' | relative_url }}"
                 >FAQ</a
               >
             </div>
           </div>
+          <a
+            class="navigation-item"
+            href="{{ 'blog.html' | relative_url }}"
+            target="_blank"
+            aria-label="Blog"
+          >
+            <span>Blog</span>
+          </a>
           <a
             class="navigation-item"
             href="https://demo.mathesar.org/"
@@ -78,19 +86,19 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              Community <img src="assets/dropdown-arrow.svg" alt="" />
+              Community <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 class="whitespace-nowrap hover:underline block w-max"
-                href="roadmap.html"
+                href="{{ 'roadmap.html' | relative_url }}"
                 >Roadmap</a
               >
               <a
                 class="whitespace-nowrap hover:underline block w-max"
-                href="mailing-list.html"
+                href="{{ 'mailing-list.html' | relative_url }}"
                 >Email updates</a
               >
               <a
@@ -133,12 +141,12 @@
               </a>
             </div>
           </div>
-          <a class="navigation-item" href="sponsor.html" aria-label="Sponsor">
+          <a class="navigation-item" href="{{ 'sponsor.html' | relative_url }}" aria-label="Sponsor">
             <span>Sponsor</span>
           </a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item font-semibold" href="free-install.html"
+          <a class="navigation-item font-semibold" href="{{ 'free-install.html' | relative_url }}"
             >Request Free Installation</a
           >
         </div>
@@ -147,36 +155,41 @@
       <div class="lg:hidden">
         <div class="dropdown relative navigation-item">
           <button class="flex items-center w-full">
-            Menu <img src="assets/dropdown-arrow.svg" alt="" />
+            Menu <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
           </button>
           <div
             class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
           >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="index.html"
+              href="{{ 'index.html' | relative_url }}"
               >Home</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="about.html"
+              href="{{ 'about.html' | relative_url }}"
               >About Us</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="software-engineer.html"
+              href="{{ 'software-engineer.html' | relative_url }}"
               >How it works - Software Engineer</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="non-technical-expert.html"
+              href="{{ 'non-technical-expert.html' | relative_url }}"
             >
               How it Works - Non-Technical Expert</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="sponsors.html"
+              href="{{ 'sponsors.html' | relative_url }}"
               >Sponsors</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="{{ 'blog.html' | relative_url }}"
+              >Blog</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
@@ -220,12 +233,12 @@
             </div>
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="roadmap.html"
+              href="{{ 'roadmap.html' | relative_url }}"
               >Roadmap</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="free-install.html"
+              href="{{ 'free-install.html' | relative_url }}"
               >Request Free Installation</a
             >
           </div>

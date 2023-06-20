@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
+    />
+
+    {% seo %}
+    <meta
+      name="twitter:description"
+      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+    />
+
+    <title>{{ page.title }}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+	<link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | relative_url }}" />
+
+  </head>
+
+  
+  <body class="bg-stone-50 text-gray-800">
+    <div>{% include navigation.html %}</div>
+    <div class="max-w-2xl mx-auto py-16 min-h-screen">
+      <article class="space-y-4">
+        <header class="text-center space-y-2">
+          <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
+          <p class="text-gray-600">
+            Posted on {{ page.date | date_to_string }} by {{ page.author }}
+          </p>
+
+          <!--post tags-->
+          {% if page.tags %}
+          <ul class="tags flex items-center space-x-2 justify-center">
+            {% for tag in page.tags %}
+            <li class="list-none bg-stone-200 rounded w-max px-1"><a href="/tags/{{ tag | slugify }}/">{{ tag }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </header>
+
+        <div class="md-content">{{ content }}</div>
+
+        <footer>
+          <p>Posted by {{ page.author }}</p>
+        </footer>
+      </article>
+    </div>
+    {% include footer.html %}
+    <script async defer src="https://sa.mathesar.org/latest.js"></script>
+    <script async src="https://sa.mathesar.org/auto-events.js"></script>
+    <noscript>
+      <img
+        src="https://sa.mathesar.org/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
+  </body>
+</html>
