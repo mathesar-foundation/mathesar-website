@@ -34,6 +34,10 @@
   profile_image: https://github.com/Anish9901.png
   profile_url: https://github.com/Anish9901
   username: Anish9901
+- name: Aritra Majumder
+  profile_image: https://github.com/Aritra8438.png
+  profile_url: https://github.com/Aritra8438
+  username: Aritra8438
 - name: Gabriel Sotomayor
   profile_image: https://github.com/mr-gabe49.png
   profile_url: https://github.com/mr-gabe49
@@ -50,14 +54,14 @@
   profile_image: https://github.com/Jinxiao0302.png
   profile_url: https://github.com/Jinxiao0302
   username: Jinxiao0302
-- name: 'Cronus '
-  profile_image: https://github.com/Cronus1007.png
-  profile_url: https://github.com/Cronus1007
-  username: Cronus1007
 - name: Ghislaine Guerin
   profile_image: https://github.com/ghislaineguerin.png
   profile_url: https://github.com/ghislaineguerin
   username: ghislaineguerin
+- name: 'Cronus '
+  profile_image: https://github.com/Cronus1007.png
+  profile_url: https://github.com/Cronus1007
+  username: Cronus1007
 - name: Akash Gupta
   profile_image: https://github.com/Hatilar420.png
   profile_url: https://github.com/Hatilar420
@@ -70,6 +74,10 @@
   profile_image: https://github.com/dhruvkb.png
   profile_url: https://github.com/dhruvkb
   username: dhruvkb
+- name: Anshuman Maurya
+  profile_image: https://github.com/IamEzio.png
+  profile_url: https://github.com/IamEzio
+  username: IamEzio
 - name: Linzhou
   profile_image: https://github.com/linzhou-zhong.png
   profile_url: https://github.com/linzhou-zhong
@@ -114,10 +122,6 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
-- name: Anshuman Maurya
-  profile_image: https://github.com/IamEzio.png
-  profile_url: https://github.com/IamEzio
-  username: IamEzio
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
@@ -170,14 +174,18 @@
   profile_image: https://github.com/obulat.png
   profile_url: https://github.com/obulat
   username: obulat
-- name: GAGANDEEP SINGH
-  profile_image: https://github.com/gagan2005.png
-  profile_url: https://github.com/gagan2005
-  username: gagan2005
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: GAGANDEEP SINGH
+  profile_image: https://github.com/gagan2005.png
+  profile_url: https://github.com/gagan2005
+  username: gagan2005
+- name: CJ
+  profile_image: https://github.com/dev-cj.png
+  profile_url: https://github.com/dev-cj
+  username: dev-cj
 - name: Naman
   profile_image: https://github.com/nk183.png
   profile_url: https://github.com/nk183
@@ -202,10 +210,6 @@
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
-- name: Aritra Majumder
-  profile_image: https://github.com/Aritra8438.png
-  profile_url: https://github.com/Aritra8438
-  username: Aritra8438
 - name: null
   profile_image: https://github.com/github-merge-queue[bot].png
   profile_url: https://github.com/github-merge-queue[bot]
@@ -291,6 +295,10 @@
   profile_url: https://github.com/bohemia420
   username: bohemia420
 - name: null
+  profile_image: https://github.com/varshadr.png
+  profile_url: https://github.com/varshadr
+  username: varshadr
+- name: Harshit Gupta
   profile_image: https://github.com/hgupta12.png
   profile_url: https://github.com/hgupta12
   username: hgupta12
