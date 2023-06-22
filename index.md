@@ -41,6 +41,8 @@ Using a self-hostable and accessible interface.
 
 {%include feature_list.html %}
 
+{% include latest-posts.html %}
+
 {%capture cta_content %}
 Mathesar’s Alpha release is coming very soon.
 Please leave your details here to stay updated:

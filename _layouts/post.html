@@ -39,7 +39,7 @@
           {% if page.tags %}
           <ul class="tags flex items-center space-x-2 justify-center">
             {% for tag in page.tags %}
-            <li class="list-none bg-stone-200 rounded w-max px-1"><a href="/tags/{{ tag | slugify }}/">{{ tag }}</a></li>
+            <li class="list-none bg-stone-200 rounded w-max px-1">{{ tag }}</li>
             {% endfor %}
           </ul>
           {% endif %}
