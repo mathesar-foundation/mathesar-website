@@ -178,6 +178,10 @@
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Sujai Kumar Gupta
+  profile_image: https://github.com/thesujai.png
+  profile_url: https://github.com/thesujai
+  username: thesujai
 - name: GAGANDEEP SINGH
   profile_image: https://github.com/gagan2005.png
   profile_url: https://github.com/gagan2005
@@ -190,6 +194,10 @@
   profile_image: https://github.com/nk183.png
   profile_url: https://github.com/nk183
   username: nk183
+- name: Tushar Rastogi
+  profile_image: https://github.com/tush-rastogi.png
+  profile_url: https://github.com/tush-rastogi
+  username: tush-rastogi
 - name: DanyaalMahmood
   profile_image: https://github.com/DanyaalMahmood.png
   profile_url: https://github.com/DanyaalMahmood
@@ -282,10 +290,6 @@
   profile_image: https://github.com/Subhojit-Dey1234.png
   profile_url: https://github.com/Subhojit-Dey1234
   username: Subhojit-Dey1234
-- name: Tushar Rastogi
-  profile_image: https://github.com/tush-rastogi.png
-  profile_url: https://github.com/tush-rastogi
-  username: tush-rastogi
 - name: Alek Lefebvre
   profile_image: https://github.com/AlekLefebvre.png
   profile_url: https://github.com/AlekLefebvre
@@ -314,7 +318,3 @@
   profile_image: https://github.com/lakshya-dhariwal.png
   profile_url: https://github.com/lakshya-dhariwal
   username: lakshya-dhariwal
-- name: Sujai Kumar Gupta
-  profile_image: https://github.com/thesujai.png
-  profile_url: https://github.com/thesujai
-  username: thesujai
