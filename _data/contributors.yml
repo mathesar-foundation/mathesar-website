@@ -178,6 +178,10 @@
   profile_image: https://github.com/obulat.png
   profile_url: https://github.com/obulat
   username: obulat
+- name: Serafeim Papastefanos
+  profile_image: https://github.com/spapas.png
+  profile_url: https://github.com/spapas
+  username: spapas
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
@@ -274,10 +278,6 @@
   profile_image: https://github.com/sahilsaini1107.png
   profile_url: https://github.com/sahilsaini1107
   username: sahilsaini1107
-- name: Serafeim Papastefanos
-  profile_image: https://github.com/spapas.png
-  profile_url: https://github.com/spapas
-  username: spapas
 - name: Ziad
   profile_image: https://github.com/Ziad-I.png
   profile_url: https://github.com/Ziad-I
