@@ -46,8 +46,57 @@
   </head>
 
   <body
-    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col"
+    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col relative"
   >
+  <div
+  id="survey-banner"
+  class="sticky top-0 bg-blue-600 text-white p-3 flex justify-between items-center z-50"
+>
+  <div class="text-lg space-x-2">
+    <span class="font-bold">Help shape Mathesar!</span>
+    <span>Share your thoughts in our quick survey: </span>
+
+    <a
+      href="https://forms.gle/yjxiEQr9QzTT5GCSA"
+      target="_blank"
+      class="underline text-white"
+      >Take it here</a
+    >
+  </div>
+  <button
+    id="close-banner"
+    class="bg-zinc-800 hover:bg-zinc-700 p-2 rounded-lg"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4 text-white"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+  if (sessionStorage.getItem("survey-banner-closed") === "true") {
+    document.getElementById("survey-banner").style.display = "none";
+  }
+
+  document
+    .getElementById("close-banner")
+    .addEventListener("click", function () {
+      document.getElementById("survey-banner").style.display = "none";
+      sessionStorage.setItem("survey-banner-closed", "true");
+    });
+</script>
+
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400 relative">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
@@ -341,6 +390,7 @@
   </script>
 </div>
 </div>
+
     <div class="flex-grow"><div class="max-w-2xl mx-auto py-20 space-y-2 px-8">
   <img class="w-40" src="assets/404.png" alt="404 sign">
   <h2 class="text-4xl font-bold">404: Page Not Found</h2>
