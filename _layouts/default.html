@@ -29,9 +29,11 @@
   </head>
 
   <body
-    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col"
+    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col relative"
   >
+  {% include survey_banner.html %}
     <div>{% include navigation.html %}</div>
+
     <div class="flex-grow">{{ content }}</div>
     {% include footer.html %}
     <div id="screenshotModal" class="modal">
