@@ -22,14 +22,14 @@
   profile_image: https://github.com/kgodey.png
   profile_url: https://github.com/kgodey
   username: kgodey
-- name: Eamon Ito-Fisher
-  profile_image: https://github.com/eito-fis.png
-  profile_url: https://github.com/eito-fis
-  username: eito-fis
 - name: RAJAT VIJAY
   profile_image: https://github.com/rajatvijay.png
   profile_url: https://github.com/rajatvijay
   username: rajatvijay
+- name: Eamon Ito-Fisher
+  profile_image: https://github.com/eito-fis.png
+  profile_url: https://github.com/eito-fis
+  username: eito-fis
 - name: Anish Umale
   profile_image: https://github.com/Anish9901.png
   profile_url: https://github.com/Anish9901
@@ -306,6 +306,10 @@
   profile_image: https://github.com/AlekLefebvre.png
   profile_url: https://github.com/AlekLefebvre
   username: AlekLefebvre
+- name: Evyn
+  profile_image: https://github.com/ejenk0.png
+  profile_url: https://github.com/ejenk0
+  username: ejenk0
 - name: Fidal Mathew
   profile_image: https://github.com/FidalMathew.png
   profile_url: https://github.com/FidalMathew
