@@ -9,7 +9,7 @@ image: /assets/og-faq.png
 
 ### Is a cloud version of Mathesar available?
 
-Not yet. We plan to release the cloud version in late 2023. If you would like to receive early access, you can sign up for our [announcements mailing list](mailing-list.html) here.
+Not yet. We plan to release the cloud version at some point in the near future. If you would like to receive early access, you can sign up for our [announcements mailing list](mailing-list.html) here.
 
 ### Can I create and share forms using Mathesar?
 

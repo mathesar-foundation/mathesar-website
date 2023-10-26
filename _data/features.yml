@@ -6,7 +6,7 @@ Mathesar:
       icon: "os-icon"
     - title: "Self-hosted on Your server"
       icon: "lock-icon"
-    - title: "Cloud version coming late 2023"
+    - title: "Cloud version planned"
       icon: "rocket-icon"
 How it works (non-technical) - Mathesar:
   features:
@@ -26,5 +26,5 @@ How it works (technical) - Mathesar:
       icon: "os-icon"
     - title: "Intuitive for Any Skill Level"
       icon: "lightbulb-icon"
-    - title: "Cloud version coming late 2023"
+    - title: "Cloud version planned"
       icon: "rocket-icon"

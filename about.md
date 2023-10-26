@@ -33,7 +33,7 @@ Mathesar will always be **100% open source and self-hostable**.
 
 {% include funder-logos.html %}
 
-In late 2023, we will release a **cloud hosted** version of Mathesar with paid plans. This will help us fund the project in the long-term.
+We plan to release a **cloud hosted** version of Mathesar with paid plans at some point in the near future. This will help us fund the project in the long-term.
 
 We remain committed to [open source principles](https://opensource.org/osd) and will not create closed-source features or accept funding that would compromise our values.
 {% endcapture %}
