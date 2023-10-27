@@ -170,6 +170,10 @@
   profile_image: https://github.com/arvind-1.png
   profile_url: https://github.com/arvind-1
   username: arvind-1
+- name: Fidal Mathew
+  profile_image: https://github.com/FidalMathew.png
+  profile_url: https://github.com/FidalMathew
+  username: FidalMathew
 - name: Henry Rocha
   profile_image: https://github.com/HenryRocha.png
   profile_url: https://github.com/HenryRocha
@@ -310,10 +314,6 @@
   profile_image: https://github.com/ejenk0.png
   profile_url: https://github.com/ejenk0
   username: ejenk0
-- name: Fidal Mathew
-  profile_image: https://github.com/FidalMathew.png
-  profile_url: https://github.com/FidalMathew
-  username: FidalMathew
 - name: Florian Apolloner
   profile_image: https://github.com/apollo13.png
   profile_url: https://github.com/apollo13
