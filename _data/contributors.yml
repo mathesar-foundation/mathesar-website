@@ -66,6 +66,10 @@
   profile_image: https://github.com/Cronus1007.png
   profile_url: https://github.com/Cronus1007
   username: Cronus1007
+- name: Varsha
+  profile_image: https://github.com/varshadr.png
+  profile_url: https://github.com/varshadr
+  username: varshadr
 - name: Akash Gupta
   profile_image: https://github.com/Hatilar420.png
   profile_url: https://github.com/Hatilar420
@@ -74,10 +78,6 @@
   profile_image: https://github.com/A1O.png
   profile_url: https://github.com/A1O
   username: A1O
-- name: Varsha
-  profile_image: https://github.com/varshadr.png
-  profile_url: https://github.com/varshadr
-  username: varshadr
 - name: Dhruv Bhanushali
   profile_image: https://github.com/dhruvkb.png
   profile_url: https://github.com/dhruvkb
@@ -230,6 +230,10 @@
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
+- name: Shreyas
+  profile_image: https://github.com/Shraeyas.png
+  profile_url: https://github.com/Shraeyas
+  username: Shraeyas
 - name: null
   profile_image: https://github.com/github-merge-queue[bot].png
   profile_url: https://github.com/github-merge-queue[bot]
