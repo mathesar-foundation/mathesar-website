@@ -34,22 +34,3 @@
     "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.
     
     I'm tentatively calling it the **Country Comparator**."
-- name: Mukesh Murali 
-  image: mukesh.jpg
-  role: Backend Developer
-  bio: |+
-    "I use calculators **for MMORPG games**, to find the most efficient item to use for doing something in the game. 
-    
-    Since the game has a real-time market, a relational database is really useful for reflecting the price changes across a lot of calculators."
-- name: Dominykas Mostauskis 
-  image: dom.jpg
-  role: Backend Developer
-  bio: |+
-    "Mathesar would be great for **scraping and reporting**. For example, I scraped a poorly-done government website for making appointments with doctors. That allowed me to query reservation slots, watch for cancellations, and book a consultation much earlier than I otherwise could have."
-- name: Rajat Vijay 
-  image: rajat.jpg
-  role: Frontend Developer
-  bio: |+
-    "I **collect data about my health** from various tracking tools like continuos glucose monitors, sleep tracking rings, activity tracking chip in my shoes, and body composition analysis devices. 
-    
-    I plan to use Mathesar to log all of these data in a single database in a normalized manner and draw correlations between them. For example: What kind food of gives me the maximum push during my workouts?"
