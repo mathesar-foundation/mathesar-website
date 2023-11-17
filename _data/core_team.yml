@@ -7,7 +7,7 @@
     I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!"
 - name: Sean Colsen
   image: sean.jpg
-  role: Frontend Developer
+  role: Engineer
   bio: |+
     "I have an older relative who has been compiling **family genealogy** data for years through an arduous process of paper forms in the mail. I'd like to digitize it for future generations! Spreadsheets are a poor fit because of the data's highly relational nature. And the family wants to maintain privacy, making existing solutions unappealing.
     
@@ -19,7 +19,7 @@
     "As someone who really enjoys cooking at home, I'm thinking Mathesar would be a great for **storing all my recipes** in one place. Being able to search and filter my recipes based on ingredients and cooking time would be really cool. I'm excited to give it a try!"
 - name: Pavish Kumar Ramani Gopal 
   image: pavish.jpg
-  role: Frontend Developer
+  role: Engineer
   bio: |+
     "I intend to use a database to maintain a **personal diary**, but with data tracking!
 
@@ -29,13 +29,13 @@
     Mathesar is going to make all of this a breeze!"
 - name: Brent Moran
   image: brent.jpg
-  role: Backend Developer
+  role: Engineer
   bio: |+
     "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.
     
     I'm tentatively calling it the **Country Comparator**."
 - name: Anish Umale
   image: anish.jpg
-  role: Backend Developer
+  role: Engineer
   bio: |+
     "I am trying to use databases to enable people to make better choices about which credit card to get. In the current market, there are many credit cards with various benefits, eligibility requirements, etc., which are hard to track and frequently change. Mathesar would allow me to make these frequent changes quickly and without much hassle. Additionally, with future plans of embedding, this data could be shared via a website, which could be helpful for potential credit card holders."
