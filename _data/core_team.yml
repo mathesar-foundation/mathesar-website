@@ -34,3 +34,8 @@
     "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.
     
     I'm tentatively calling it the **Country Comparator**."
+- name: Anish Umale
+  image: anish.jpg
+  role: Backend Developer
+  bio: |+
+    "I am trying to use databases for allowing people to make better choices about which credit card they should get, In the current market there exist a lot of credit cards with a lot of different benefits, eligibility, etc which is hard to track and does change frequently. Mathesar would allow me to make these frequent changes quickly without much hassle also with the future plans of embedding this data could be shared via a website that could be helpful for a potential credit card holder"
