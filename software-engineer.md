@@ -171,7 +171,7 @@ With Mathesar, they would have had the tools to generate their own reports, allo
 {%
 include quote.html
 excerpt='I experienced collaboration issues every day.'
-author='Pavish - Mathesar’s Frontend Developer'
+author='Pavish - Engineer, Mathesar'
 quote=quote
 image='pavish.jpg'
 %}
