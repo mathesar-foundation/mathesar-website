@@ -38,4 +38,4 @@
   image: anish.jpg
   role: Engineer
   bio: |+
-    "I am trying to use databases to enable people to make better choices about which credit card to get. In the current market, there are many credit cards with various benefits, eligibility requirements, etc., which are hard to track and frequently change. Mathesar would allow me to make these frequent changes quickly and without much hassle. Additionally, with future plans of embedding, this data could be shared via a website, which could be helpful for potential credit card holders."
+    "I'm using a database to enable people to make better choices about which credit card to get. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
