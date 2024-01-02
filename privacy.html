@@ -282,11 +282,16 @@
 
     dropdownButtons.forEach(function (dropdownButton) {
       dropdownButton.addEventListener("click", function () {
-        if (currentlyOpenDropdown) {
+        if (currentlyOpenDropdown === this.nextElementSibling) {
+          currentlyOpenDropdown.classList.toggle("hidden");
+          currentlyOpenDropdown = null;
+        } else {
+          if (currentlyOpenDropdown) {
+            currentlyOpenDropdown.classList.toggle("hidden");
+          }
+          currentlyOpenDropdown = this.nextElementSibling;
           currentlyOpenDropdown.classList.toggle("hidden");
         }
-        currentlyOpenDropdown = this.nextElementSibling;
-        currentlyOpenDropdown.classList.toggle("hidden");
       });
     });
 
