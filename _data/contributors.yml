@@ -282,10 +282,6 @@
   profile_image: https://github.com/charvimehradu.png
   profile_url: https://github.com/charvimehradu
   username: charvimehradu
-- name: Subhojit-Dey
-  profile_image: https://github.com/Subhojit-Dey1234.png
-  profile_url: https://github.com/Subhojit-Dey1234
-  username: Subhojit-Dey1234
 - name: shaikh sufiyan
   profile_image: https://github.com/SEGRR.png
   profile_url: https://github.com/SEGRR
@@ -294,6 +290,10 @@
   profile_image: https://github.com/raisachatterjee.png
   profile_url: https://github.com/raisachatterjee
   username: raisachatterjee
+- name: Subhojit-Dey
+  profile_image: https://github.com/Subhojit-Dey1234.png
+  profile_url: https://github.com/Subhojit-Dey1234
+  username: Subhojit-Dey1234
 - name: Sukshan Jadhao
   profile_image: https://github.com/Sukshan.png
   profile_url: https://github.com/Sukshan
@@ -310,18 +310,18 @@
   profile_image: https://github.com/sahilsaini1107.png
   profile_url: https://github.com/sahilsaini1107
   username: sahilsaini1107
-- name: Deepjyoti Deka
-  profile_image: https://github.com/deka014.png
-  profile_url: https://github.com/deka014
-  username: deka014
-- name: Khandker Aftarul Islam (Monmoy)
-  profile_image: https://github.com/KAIMonmoy.png
-  profile_url: https://github.com/KAIMonmoy
-  username: KAIMonmoy
 - name: null
   profile_image: https://github.com/LFLATH.png
   profile_url: https://github.com/LFLATH
   username: LFLATH
+- name: Khandker Aftarul Islam (Monmoy)
+  profile_image: https://github.com/KAIMonmoy.png
+  profile_url: https://github.com/KAIMonmoy
+  username: KAIMonmoy
+- name: Deepjyoti Deka
+  profile_image: https://github.com/deka014.png
+  profile_url: https://github.com/deka014
+  username: deka014
 - name: Abhinav Sehgal
   profile_image: https://github.com/sehgxl.png
   profile_url: https://github.com/sehgxl
@@ -338,6 +338,10 @@
   profile_image: https://github.com/AnkurPrabhu.png
   profile_url: https://github.com/AnkurPrabhu
   username: AnkurPrabhu
+- name: Taher Patrawala
+  profile_image: https://github.com/Taherpatrawala.png
+  profile_url: https://github.com/Taherpatrawala
+  username: Taherpatrawala
 - name: Sumit Khanna
   profile_image: https://github.com/bohemia420.png
   profile_url: https://github.com/bohemia420
