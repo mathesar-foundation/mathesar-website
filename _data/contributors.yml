@@ -171,6 +171,10 @@
   profile_url: https://github.com/muhsinkamil
   username: muhsinkamil
 - name: null
+  profile_image: https://github.com/dependabot[bot].png
+  profile_url: https://github.com/dependabot[bot]
+  username: dependabot[bot]
+- name: null
   profile_image: https://github.com/andyharley-cci.png
   profile_url: https://github.com/andyharley-cci
   username: andyharley-cci
@@ -198,10 +202,6 @@
   profile_image: https://github.com/thesujai.png
   profile_url: https://github.com/thesujai
   username: thesujai
-- name: null
-  profile_image: https://github.com/dependabot[bot].png
-  profile_url: https://github.com/dependabot[bot]
-  username: dependabot[bot]
 - name: Serafeim Papastefanos
   profile_image: https://github.com/spapas.png
   profile_url: https://github.com/spapas
