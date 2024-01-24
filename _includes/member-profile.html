@@ -1,0 +1,11 @@
+<div class="flex flex-col items-center {% if include.size == 'large' %} w-48 {% else %} w-36 {% endif %}">
+  <img 
+    src="assets/{{ include.member.image }}" 
+    alt="{{ include.member.name }}" 
+    class="{% if include.size == 'large' %} w-40 h-40 {% else %} w-32 h-32 {% endif %}"
+  />
+  <div class="mt-4 text-center">
+    <h4 class="font-semibold">{{ include.member.name }}</h4>
+    <div class="text-sm">{{ include.member.title }}</div>
+  </div>
+</div>
