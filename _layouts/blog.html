@@ -23,35 +23,23 @@
     <link rel="stylesheet" type="text/css" href="assets/main.css" />
   </head>
   <body class="bg-stone-50 text-gray-800">
+    {% include survey_banner.html %}
     <div>{% include navigation.html %}</div>
 
     {{ content }}
-    <div class="max-w-2xl mx-auto min-h-screen blog px-4">
-      <ul class="space-y-8">
-        {% for post in site.posts %}
-        <li class="space-y-4 text-lg">
-          <h2 class="text-3xl hover:text-blue-600">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h2>
-          <p class="text-gray-600">
-            Posted on {{ post.date | date_to_string }} by {{ post.author }}
-          </p>
 
-          <p>{{ post.excerpt }}</p>
-
-          {% if post.tags %}
-          <ul class="tags flex items-center space-x-2">
-            {% for tag in post.tags %}
-            <li class="list-none bg-stone-200 rounded w-max px-1 text-sm">
-              {{ tag }}
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
+    <div class="angled lighter">
+      <div
+        class="max-w-2xl mx-auto min-h-screen blog px-4 flex items-start leading-snug"
+      >
+        <ul class="space-y-8">
+          {% for post in site.posts %}
+          {% include blog_card.html post=post %}
+          {% endfor %}
+        </ul>
+      </div>
     </div>
+    {% include cta.html %}
     {% include footer.html %}
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>

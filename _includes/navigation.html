@@ -1,7 +1,7 @@
 <div class="navigation pt-4 mx-4 border-b-2 border-stone-400 relative">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
-      <a href="index.html">
+      <a href="{{ 'index.html' | relative_url }}">
         <img class="w-40 lg:w-56" src="{{ '/assets/logo.svg' | relative_url }}" alt="Mathesar's Logo" />
       </a>
       <a
@@ -38,7 +38,7 @@
               How it Works <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-10"
             >
               <a
                 class="whitespace-nowrap hover:underline"

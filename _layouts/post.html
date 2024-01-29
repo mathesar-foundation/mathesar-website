@@ -20,38 +20,62 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
 
-	<link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | relative_url }}" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ '/assets/main.css' | relative_url }}"
+    />
   </head>
 
-  
   <body class="bg-stone-50 text-gray-800">
+    {% include survey_banner.html %}
     <div>{% include navigation.html %}</div>
-    <div class="max-w-2xl mx-auto py-16 min-h-screen">
-      <article class="space-y-4">
-        <header class="text-center space-y-2">
-          <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
-          <p class="text-gray-600">
-            Posted on {{ page.date | date_to_string }} by {{ page.author }}
-          </p>
+    <div class="max-w-6xl mx-auto my-16 min-h-screen flex items-start relative ">
+      <aside class="bg-stone-100 p-4 w-[20rem] sticky top-16 shrink-0 z-auto">
+        <h2 class="text-sm uppercase font-bold mb-4">Blog Posts</h2>
+        <ul class="space-y-1">
+          {% for post in site.posts %}
+          <li>
+            <a
+              href="{{ post.url }}"
+              class="block hover:text-blue-600 hover:bg-stone-200 rounded p-1 transition duration-300 ease-in-out"
+              >{{ post.title }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
 
-          <!--post tags-->
-          {% if page.tags %}
-          <ul class="tags flex items-center space-x-2 justify-center">
-            {% for tag in page.tags %}
-            <li class="list-none bg-stone-200 rounded w-max px-1">{{ tag }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-        </header>
+        
+      </aside>
+      <div class="px-8 h-full">
+        <article class="space-y-8">
+          <header class="space-y-2 leading-snug">
+            <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
+            <p class="text-gray-600 text-sm">
+              Posted on {{ page.date | date_to_string }} by {{ page.author }}
+            </p>
 
-        <div class="md-content">{{ content }}</div>
+            <!--post tags-->
+            {% if page.tags %}
+            <ul class="tags flex items-center space-x-2">
+              {% for tag in page.tags %}
+              <li class="list-none bg-red-500 bg-opacity-80 text-white rounded w-max px-1">
+                {{ tag }}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </header>
 
-        <footer>
-          <p>Posted by {{ page.author }}</p>
-        </footer>
-      </article>
+          <div class="prose prose-slate prose-h1:font-bold prose-headings:text-gray-800">{{ content }}</div>
+
+          <footer>
+            <p>Posted by {{ page.author }}</p>
+          </footer>
+        </article>
+      </div>
     </div>
+    {% include cta.html %}
     {% include footer.html %}
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>

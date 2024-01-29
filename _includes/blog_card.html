@@ -1,0 +1,24 @@
+{% assign size = include.size | default: 'regular' %}
+
+<li class="{% if size == 'small' %}space-y-2 bg-stone-50 rounded p-4{% else %}space-y-4 text-lg bg-stone-50 rounded p-8{% endif %}">
+  <div>
+    <h2 class="{% if size == 'small' %}text-xl hover:text-blue-600 font-semibold{% else %}lg:text-4xl hover:text-blue-600 font-semibold{% endif %}">
+      <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+    </h2>
+    <p class="text-gray-500 {% if size == 'small' %}text-xs{% else %}text-sm{% endif %}">
+      Posted on {{ include.post.date | date_to_string }} by {{ include.post.author }}
+    </p>
+  </div>
+
+  <p class="{% if size == 'small' %}truncate{% endif %}">{{ include.post.excerpt }}</p>
+
+  {% if include.post.tags %}
+  <ul class="tags flex items-center {% if size == 'small' %}space-x-1{% else %}space-x-2{% endif %}">
+    {% for tag in include.post.tags %}
+    <li class="{% if size == 'small' %}list-none bg-red-500 bg-opacity-80 text-white rounded px-1 text-xs{% else %}list-none bg-red-500 bg-opacity-80 text-white rounded w-max px-1 text-sm{% endif %}">
+      {{ tag }}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>
