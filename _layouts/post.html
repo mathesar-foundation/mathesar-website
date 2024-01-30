@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="keywords"
-      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
-    />
-
-    {% seo %}
-    <meta
-      name="twitter:description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
-    />
-
-    <title>{{ page.title }}</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ '/assets/main.css' | relative_url }}"
-    />
-  </head>
+  {% include head.html %}
 
   <body class="bg-stone-50 text-gray-800">
     {% include survey_banner.html %}
@@ -55,23 +30,11 @@
               Posted on {{ page.date | date_to_string }} by {{ page.author }}
             </p>
 
-            <!--post tags-->
-            {% if page.tags %}
-            <ul class="tags flex items-center space-x-2">
-              {% for tag in page.tags %}
-              <li class="list-none bg-red-500 bg-opacity-80 text-white rounded w-max px-1">
-                {{ tag }}
-              </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
+            {% include tag_cloud.html %}
           </header>
 
           <div class="prose prose-slate prose-h1:font-bold prose-headings:text-gray-800">{{ content }}</div>
 
-          <footer>
-            <p>Posted by {{ page.author }}</p>
-          </footer>
         </article>
       </div>
     </div>

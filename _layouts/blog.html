@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="keywords"
-      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
-    />
-
-    {% seo %}
-    <meta
-      name="twitter:description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
-    />
-
-    <title>{{ page.title }}</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-
-    <link rel="stylesheet" type="text/css" href="assets/main.css" />
-  </head>
+  {% include head.html %}
   <body class="bg-stone-50 text-gray-800">
     {% include survey_banner.html %}
     <div>{% include navigation.html %}</div>

@@ -9,16 +9,8 @@
       Posted on {{ include.post.date | date_to_string }} by {{ include.post.author }}
     </p>
   </div>
-
+  {% include tag_cloud.html %}
   <p class="{% if size == 'small' %}truncate{% endif %}">{{ include.post.excerpt }}</p>
 
-  {% if include.post.tags %}
-  <ul class="tags flex items-center {% if size == 'small' %}space-x-1{% else %}space-x-2{% endif %}">
-    {% for tag in include.post.tags %}
-    <li class="{% if size == 'small' %}list-none bg-red-500 bg-opacity-80 text-white rounded px-1 text-xs{% else %}list-none bg-red-500 bg-opacity-80 text-white rounded w-max px-1 text-sm{% endif %}">
-      {{ tag }}
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+  
 </li>

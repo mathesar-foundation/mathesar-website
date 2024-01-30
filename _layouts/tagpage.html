@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="post">
+  {% assign tag = "Tag: " | append: page.tag %} {% include page-header.html
+  header=tag %}
+  <div class="angled lighter">
+    <div
+      class="max-w-2xl mx-auto min-h-screen blog px-4 leading-snug"
+    >
+      <ul class="space-y-8">
+        {% for post in site.tags[page.tag] %}
+        {% include blog_card.html post=post %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
