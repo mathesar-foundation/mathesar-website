@@ -1,74 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body class="bg-stone-50 text-gray-800">
-    {% include survey_banner.html %}
-    <div>{% include navigation.html %}</div>
+---
+layout: default
+---
 
-    {% include page-header.html header='Frequently Asked Questions' %}
+{% include page-header.html header='Frequently Asked Questions' %}
 
-    <div
-      class="max-w-4xl relative mx-auto flex-col-reverse flex flex-col sm:flex-row items-start sm:space-x-16"
-    >
-      <div class="lg:p-0 p-4">{{ content }}</div>
-      <div
-        id="table-of-contents"
-        class="lg:sticky top-0 right-0 w-full sm:w-80 shrink-0 bg-stone-100 p-4"
-      ></div>
-    </div>
+<div
+  class="max-w-4xl relative mx-auto flex-col-reverse flex flex-col sm:flex-row items-start sm:space-x-16"
+>
+  <div class="lg:p-0 p-4">{{ content }}</div>
+  <div
+    id="table-of-contents"
+    class="lg:sticky top-16 right-0 w-full sm:w-80 shrink-0 bg-stone-100 p-4"
+  ></div>
+</div>
 
-    {% include cta.html %}
-    
-    {% include footer.html %}
+<script>
+  const toc = document.querySelector("#table-of-contents");
+  const sections = document.querySelectorAll(".faq-section");
+  const fragment = document.createDocumentFragment();
 
-    <script async defer src="https://sa.mathesar.org/latest.js"></script>
-    <script async src="https://sa.mathesar.org/auto-events.js"></script>
-    <noscript>
-      <img src="https://sa.mathesar.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript> 
-  </body>
+  for (const section of sections) {
+    const sectionID = section.id;
+    const sectionTitle = section.querySelector("h4").innerText;
+    const link = document.createElement("a");
+    link.href = `#${sectionID}`;
+    link.textContent = sectionTitle;
+    link.classList.add(
+      "block",
+      "hover:text-blue-600",
+      "mb-2",
+      "font-bold",
+      "text-sm",
+      "text-red-600"
+    );
+    fragment.appendChild(link);
 
-  <script>
-    const toc = document.querySelector("#table-of-contents");
-    const sections = document.querySelectorAll(".faq-section");
-    const fragment = document.createDocumentFragment();
-
-    for (const section of sections) {
-      const sectionID = section.id;
-      const sectionTitle = section.querySelector("h4").innerText;
+    const subsections = section.querySelectorAll("h3");
+    for (const subsection of subsections) {
+      const subsectionID = subsection.id;
+      const subsectionTitle = subsection.innerText;
       const link = document.createElement("a");
-      link.href = `#${sectionID}`;
-      link.textContent = sectionTitle;
+      link.href = `#${subsectionID}`;
+      link.textContent = subsectionTitle;
       link.classList.add(
         "block",
         "hover:text-blue-600",
-        "mb-2",
-        "font-bold",
-        "text-sm",
-        "text-red-600"
+        "hover:bg-stone-200",
+        "px-2",
+        "rounded",
+        "ml-4",
+        "mb-2"
       );
       fragment.appendChild(link);
-
-      const subsections = section.querySelectorAll("h3");
-      for (const subsection of subsections) {
-        const subsectionID = subsection.id;
-        const subsectionTitle = subsection.innerText;
-        const link = document.createElement("a");
-        link.href = `#${subsectionID}`;
-        link.textContent = subsectionTitle;
-        link.classList.add(
-          "block",
-          "hover:text-blue-600",
-          "hover:bg-stone-200",
-          "px-2",
-          "rounded",
-          "ml-4",
-          "mb-2"
-        );
-        fragment.appendChild(link);
-      }
     }
+  }
 
-    toc.appendChild(fragment);
-  </script>
-</html>
+  toc.appendChild(fragment);
+</script>

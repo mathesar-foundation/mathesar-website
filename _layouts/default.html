@@ -10,30 +10,7 @@
 
     <div class="flex-grow">{{ content }}</div>
     {% include footer.html %}
-    <div id="screenshotModal" class="modal">
-      <div class="modal-content closeModal">
-        <button class="closeModal bg-gray-200 p-1 text-xs rounded ml-auto">
-          <svg
-            class="w-4 h-4 text-gray-800"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
-        </button>
-        <img
-          class="rounded-lg shadow-lg bg-white w-full lg:w-10/12"
-          id="screenshotModalImage"
-        />
-      </div>
-    </div>
+   
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>
     <noscript>
@@ -45,15 +22,7 @@
     </noscript>
   </body>
 
-  <script>
-    // when feature-card element add flex inverse to odd elements
-    const featureCards = document.querySelectorAll(".feature-card");
-    featureCards.forEach((card, index) => {
-      if (index % 2 !== 0) {
-        card.classList.add("flex-row-reverse");
-      }
-    });
-  </script>
+
 
   <script>
     // Formspree forms AJAX request script
@@ -114,22 +83,5 @@
     }
   </script>
 
-  <script>
-    var modal = document.getElementById("screenshotModal");
-    var screenshotUrls = document.querySelectorAll(".screenshot-url");
-    var closeModalSpan = document.getElementsByClassName("closeModal")[0];
 
-    for (var i = 0; i < screenshotUrls.length; i++) {
-      screenshotUrls[i].onclick = function (event) {
-        event.preventDefault();
-        modal.style.display = "block";
-        var modalImg = document.getElementById("screenshotModalImage");
-        modalImg.src = this.href;
-      };
-    }
-
-    closeModalSpan.onclick = function () {
-      modal.style.display = "none";
-    };
-  </script>
 </html>

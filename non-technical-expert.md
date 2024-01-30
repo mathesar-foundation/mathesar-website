@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 title: How it works (non-technical) - Mathesar
 parent: How it works
 description: Mathesar's web-based interface gives you direct access to Postgres – one of the most popular databases in the world. So you can enter and slice and filter and structure your data… in just minutes. No technical skills required.
