@@ -21,6 +21,8 @@ actions=hero_actions %}
 
 {% include ribbon.html %}
 
+{% include latest-posts.html %}
+
 {%include bullet_list.html%}
 
 {% capture content %}
@@ -40,8 +42,6 @@ Using a self-hostable and accessible interface.
 {%include usecases.html %}
 
 {%include feature_list.html %}
-
-{% include latest-posts.html %}
 
 {%capture cta_content %}
 Mathesar’s Alpha release is coming very soon.

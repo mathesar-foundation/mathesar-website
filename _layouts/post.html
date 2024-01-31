@@ -1,38 +1,38 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
 
-<div class="max-w-6xl mx-auto my-16 min-h-screen flex items-start relative">
-  <aside class="bg-stone-100 p-4 w-[20rem] sticky top-16 shrink-0 z-auto">
-    <h2 class="text-sm uppercase font-bold mb-4">Blog Posts</h2>
-    <ul class="space-y-1">
-      {% for post in site.posts %}
-      <li>
-        <a
-          href="{{ post.url }}"
-          class="block hover:text-blue-600 hover:bg-stone-200 rounded p-1 transition duration-300 ease-in-out"
-          >{{ post.title }}</a
+<div class="mb-32">
+  <div class="max-w-4xl mx-auto my-16 min-h-screen flex items-start">
+
+
+    <div class="px-8 h-full">
+      <article class="space-y-8">
+        <header class="space-y-2 leading-snug">
+          <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
+          <p class="text-gray-600 text-sm">
+            Posted on {{ page.date | date_to_string }} by 
+            <a href="/authors/{{ page.author }}">{{ author.name }}</a>
+            
+          </p>
+
+          {% include tag_cloud.html %}
+        </header>
+
+        <img src="{{page.image}}" alt="" class="w-full shadow-sm" />
+
+        <div
+          class="prose max-w-none prose-slate prose-h1:font-bold prose-headings:text-gray-800"
         >
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
-  <div class="px-8 h-full">
-    <article class="space-y-8">
-      <header class="space-y-2 leading-snug">
-        <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
-        <p class="text-gray-600 text-sm">
-          Posted on {{ page.date | date_to_string }} by {{ page.author }}
-        </p>
-
-        {% include tag_cloud.html %}
-      </header>
-
-      <div
-        class="prose prose-slate prose-h1:font-bold prose-headings:text-gray-800"
-      >
-        {{ content }}
-      </div>
-    </article>
+          {{ content }}
+        </div>
+      </article>
+    </div>
   </div>
+
+  
 </div>
+{% include latest-posts.html %}
+
+

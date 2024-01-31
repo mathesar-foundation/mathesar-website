@@ -9,6 +9,7 @@ layout: default
     <div
       class="max-w-2xl mx-auto min-h-screen blog px-4 leading-snug"
     >
+    <h2 class="text-2xl font-semibold mb-2">Posts tagged with {{ page.tag }}:</h2>
       <ul class="space-y-8">
         {% for post in site.tags[page.tag] %}
         {% include blog_card.html post=post %}

@@ -1,16 +1,14 @@
 <section class="angled lighter">
-  <div class=" space-y-12 px-4">
+  <div class="space-y-8 px-4">
     <div class="text-center space-y-4 max-w-2xl mx-auto mx-auto">
-      <h3 class="text-4xl font-bold">Latest Blog Posts</h3>
-      <p class="text-2xl">
-        Stay updated with the latest news and announcements from the Mathesar
-        team.
-      </p>
+      <h3 class="text-4xl font-bold">Our Blog</h3>
     </div>
     
     <ul class="latest-posts-list mx-auto gap-4 flex justify-center">
       {% for post in site.posts limit:3 %}
-      {% include blog_card.html post=post size='small' %}
+        {% if post.url != page.url %}
+          {% include blog_card.html post=post size='small' %}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>

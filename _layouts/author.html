@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign author = site.data.authors[page.author] %}
+
+<div class="post">
+  {% assign header = "Author: " | append: author.name %}
+  {% include page-header.html header=header %}
+  <div class="angled lighter">
+    <div class="max-w-2xl mx-auto min-h-screen blog px-4 leading-snug">
+      <div class="author-details space-y-4">
+        <img src="{{ author.image }}" alt="{{ author.name }}" class="rounded-full w-32 h-32 object-cover">
+        <h1 class="text-4xl font-bold">{{ author.name }}</h1>
+        <p>{{ author.bio | markdownify }}</p>
+        <a href="{{ author.website }}" class="text-blue-600 hover:underline">Visit Website</a>
+      </div>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-2">Posts by {{ author.name }}:</h2>
+      <ul class="space-y-8">
+        {% for post in site.posts %}
+          {% if post.author == page.author %}
+            
+			{% include blog_card.html post=post %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
