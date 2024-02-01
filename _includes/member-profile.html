@@ -1,11 +1,21 @@
-<div class="flex flex-col items-center {% if include.size == 'large' %} w-48 {% else %} w-36 {% endif %}">
-  <img 
-    src="assets/{{ include.member.image }}" 
-    alt="{{ include.member.name }}" 
-    class="{% if include.size == 'large' %} w-40 h-40 {% else %} w-32 h-32 {% endif %}"
-  />
-  <div class="mt-4 text-center">
-    <h4 class="font-semibold">{{ include.member.name }}</h4>
-    <div class="text-sm">{{ include.member.title }}</div>
+{% assign size = include.size | default: 'small' %}
+{% assign layout = include.layout | default: 'vertical' %}
+
+<div class="max-w-2xl mx-auto {% if layout == 'vertical' %}space-y-2{% else %}lg:flex items-start lg:space-x-4{% endif %} h-auto">
+  <img src="assets/{{member.image}}" class="{% if size == 'small' %}w-24{% else %}w-40 lg:mt-2{% endif %}" alt="" />
+  <div class="space-y-2">
+    <div class="{% if layout == 'vertical' %}text-center{% endif %}">
+      <h4 class="text-xl font-semibold">{{include.member.name}}</h4>
+      <div >
+        {% if include.member.role %}
+          {{include.member.role}}
+        {% elsif include.member.title %}
+          {{include.member.title}}
+        {% endif %}
+      </div>
+    </div>
+    {% if include.member.bio %}
+    <div class="italic space-y-2 quote">{{include.member.bio | markdownify}}</div>
+    {% endif %}
   </div>
 </div>

@@ -2,40 +2,11 @@
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
     <div class="lg:flex space-x-8">
+      <img src="assets/mathesar-foundation-logo.png" class="w-1/2" alt="" />
       <p class="text-xl flex-grow text-center">
         Mathesar is maintained by the Mathesar Foundation, a 501(c)(3) nonprofit
         based out of the US.
       </p>
-    </div>
-  </div>
-
-  <div class="mx-auto space-y-8">
-    <h3 class="text-3xl font-bold text-center">Our Board Members</h3>
-    <div
-      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
-    >
-      {% for member in site.data.board_members %} {% include member-profile.html
-      member=member size="large" %} {% endfor %}
-    </div>
-
-    <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-
-    <h3 class="text-2xl font-bold text-center">Advisory Board</h3>
-    <div
-      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
-    >
-      {% for member in site.data.advisory_board %} {% include
-      member-profile.html member=member size="medium" %} {% endfor %}
-    </div>
-
-    <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
-
-    <h3 class="text-2xl font-bold text-center">Other Foundation Staff</h3>
-    <div
-      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
-    >
-      {% for member in site.data.foundation_staff %} {% include
-      member-profile.html member=member size="medium" %} {% endfor %}
     </div>
   </div>
 </section>
@@ -43,7 +14,7 @@
 <section class="angled light space-y-10 px-4">
   <div class="mx-auto max-w-2xl space-y-2 text-center">
     <div>
-      <h4 class="text-3xl font-bold">Maintainers</h4>
+      <h3 class="text-3xl font-bold">Maintainers</h3>
       <p class="text-xl">+ databases in our personal life</p>
     </div>
     <div class="space-y-4 text-lg">
@@ -60,23 +31,38 @@
   </div>
 
   <div
-    class="max-w-6xl mx-auto grid lg:grid-cols-2 grid-flow-row gap-8 auto-rows-auto"
+  class="max-w-6xl mx-auto {% if site.data.core_team.size == 1 %}grid-cols-1{% else %}grid lg:grid-cols-2{% endif %} grid-flow-row gap-8 auto-rows-auto"
   >
-    {% for member in site.data.core_team %}
-    <div class="space-y-2 lg:flex items-start lg:space-x-4 h-auto">
-      <img src="assets/{{member.image}}" class="w-24 lg:w-40 lg:mt-4" alt="" />
-      <div class="space-y-2">
-        <div>
-          <h4 class="text-xl font-semibold">{{member.name}}</h4>
-          <div>{{member.role}}</div>
-        </div>
-        <div class="italic space-y-2 quote">{{member.bio | markdownify}}</div>
-      </div>
-    </div>
-    {% endfor %}
+    {% for member in site.data.core_team %} {% include member-profile.html
+    member=member size="large" layout="horizontal" %} {% endfor %}
   </div>
 
-  <div class="mx-auto max-w-4xl space-y-8">
+  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+
+  <div class="mx-auto max-w-2xl space-y-2 text-center">
+    <div>
+      <h3 class="text-3xl font-bold">Other Staff</h3>
+    </div>
+  </div>
+
+  <div
+  class="max-w-6xl mx-auto {% if site.data.foundation_staff.size == 1 %}grid-cols-1{% else %}grid lg:grid-cols-2{% endif %} grid-flow-row gap-8 auto-rows-auto"
+  >
+    {% for member in site.data.foundation_staff %} {% include
+    member-profile.html member=member size="large" layout="horizontal" %} {% endfor %}
+  </div>
+
+  <div class="mx-auto space-y-8">
+    <h3 class="text-2xl font-bold text-center">Our Board Members</h3>
+    <div
+      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
+    >
+      {% for member in site.data.board_members %} {% include member-profile.html
+      member=member size="large" %} {% endfor %}
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-6xl space-y-8">
     <h3 class="text-2xl font-bold text-center">Our contributors</h3>
     <div class="flex items-center gap-2 flex-wrap justify-center">
       {% for contributor in site.data.contributors %}

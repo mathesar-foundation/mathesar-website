@@ -1,3 +1,7 @@
 - name: Kriti Godey
   image: kriti.jpg
-  title: Title
+  role: Founder & Project Lead
+  bio: |+
+    "My husband and I use a database-backed application to **track movies**. Movies we own, movies we want to watch, movies we’ve watched.
+    
+    I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!"
