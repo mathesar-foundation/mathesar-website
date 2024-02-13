@@ -2,7 +2,7 @@
 {% assign layout = include.layout | default: 'vertical' %}
 
 <div class="max-w-2xl mx-auto {% if layout == 'vertical' %}space-y-2{% else %}lg:flex items-start lg:space-x-4{% endif %} h-auto">
-  <img src="assets/{{member.image}}" class="{% if size == 'small' %}w-24{% else %}w-40 lg:mt-2{% endif %}" alt="" />
+  <img src="assets/{{member.image}}" class="mx-auto {% if size == 'small' %}w-24{% else %}w-40 lg:mt-2{% endif %}" alt="" />
   <div class="space-y-2">
     <div class="{% if layout == 'vertical' %}text-center{% endif %}">
       <h4 class="text-xl font-semibold">{{include.member.name}}</h4>

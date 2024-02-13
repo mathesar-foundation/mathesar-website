@@ -1,19 +1,21 @@
-<section class="angled lighter space-y-10 px-4">
+
+
+<section class="angled light space-y-12 px-4">
+
   <div class="mx-auto max-w-2xl space-y-8">
     <h3 class="text-4xl font-bold text-center">The people behind Mathesar</h3>
-    <div class="lg:flex space-x-8">
-      <img src="assets/mathesar-foundation-logo.png" class="w-1/2" alt="" />
-      <p class="text-xl flex-grow text-center">
+    <div class="lg:flex lg:space-x-8">
+      
+      <p class="text-xl flex-grow">
         Mathesar is built and maintained by the Mathesar Foundation, a US-based nonprofit.
       </p>
+      <img src="assets/mathesar-foundation-logo.png" class="h-20 mx-auto shrink-0" alt="" />
     </div>
   </div>
-</section>
-
-<section class="angled light space-y-10 px-4">
+  <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
   <div class="mx-auto max-w-2xl space-y-2 text-center">
     <div>
-      <h3 class="text-3xl font-bold">Maintainers</h3>
+      <h3 class="text-3xl font-bold">Our Staff</h3>
       <p class="text-xl">+ databases in our personal life</p>
     </div>
     <div class="space-y-4 text-lg">
@@ -25,7 +27,6 @@
         <strong>Creative Commons</strong>, <strong>CiviCRM</strong>, and
         <strong>Ember.js</strong>.
       </p>
-      <div class="w-20 border-t-2 border-stone-400 mx-auto"></div>
     </div>
   </div>
 
@@ -36,30 +37,10 @@
     member=member size="large" layout="horizontal" %} {% endfor %}
   </div>
 
-  <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
 
-  <div class="mx-auto max-w-2xl space-y-2 text-center">
-    <div>
-      <h3 class="text-3xl font-bold">Other Staff</h3>
-    </div>
-  </div>
+ 
 
-  <div
-  class="max-w-6xl mx-auto {% if site.data.foundation_staff.size == 1 %}grid-cols-1{% else %}grid lg:grid-cols-2{% endif %} grid-flow-row gap-8 auto-rows-auto"
-  >
-    {% for member in site.data.foundation_staff %} {% include
-    member-profile.html member=member size="large" layout="horizontal" %} {% endfor %}
-  </div>
 
-  <div class="mx-auto space-y-8">
-    <h3 class="text-2xl font-bold text-center">Our Board Members</h3>
-    <div
-      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
-    >
-      {% for member in site.data.board_members %} {% include member-profile.html
-      member=member size="large" %} {% endfor %}
-    </div>
-  </div>
 
   <div class="mx-auto max-w-6xl space-y-8">
     <h3 class="text-2xl font-bold text-center">Our contributors</h3>
@@ -76,6 +57,16 @@
       </a>
 
       {% endfor %}
+    </div>
+  </div>
+
+  <div class="mx-auto space-y-8">
+    <h3 class="text-2xl font-bold text-center">Our Board Members</h3>
+    <div
+      class="max-w-4xl mx-auto flex items-start justify-center gap-12 auto-rows-auto"
+    >
+      {% for member in site.data.board_members %} {% include member-profile.html
+      member=member size="large" %} {% endfor %}
     </div>
   </div>
 </section>

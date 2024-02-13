@@ -39,3 +39,10 @@
   role: Engineer
   bio: |+
     "I'm using a database to enable people to make better choices about which credit card to get. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
+- name: Adam Mullinax
+  image: adam.jpg
+  role: Director of Finance
+  bio: |+
+    "Adam is going to be sending us something to put here. Adam is going to be sending us something to put here. Adam is going to be sending us something to put here.
+    
+    Adam is going to be sending us something to put here. Adam is going to be sending us something to put here."
