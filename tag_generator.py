@@ -55,8 +55,15 @@ if not os.path.exists(tag_dir):
 
 for tag in total_tags:
     tag_filename = tag_dir + tag.replace(' ', '_') + '.md'
-    f = open(tag_filename, 'a')
-    write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
-    f.write(write_str)
-    f.close()
-print("Tags generated, count", total_tags.__len__())
+    with open(tag_filename, 'w') as f:  # Changed to 'w' to overwrite existing or write new
+        write_str = '''---
+layout: tagpage
+title: "Tag: {tag}"
+tag: {tag}
+robots: noindex
+permalink: /blog/tag/{permalink}/
+---
+'''.format(tag=tag, permalink=tag.replace(' ', '_').lower())
+        f.write(write_str)
+
+print("Tags generated, count", len(total_tags))

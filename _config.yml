@@ -34,6 +34,7 @@ baseurl: ""
 url: "https://mathesar.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mathesar_org
 github_username:  mathesar
+permalink: /blog/:categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 theme: minima

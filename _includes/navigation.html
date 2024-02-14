@@ -2,7 +2,11 @@
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
       <a href="{{ 'index.html' | relative_url }}">
-        <img class="w-40 lg:w-56" src="{{ '/assets/logo.svg' | relative_url }}" alt="Mathesar's Logo" />
+        <img
+          class="w-40 lg:w-56"
+          src="{{ '/assets/logo.svg' | relative_url }}"
+          alt="Mathesar's Logo"
+        />
       </a>
       <a
         href="https://github.com/centerofci/mathesar"
@@ -22,12 +26,14 @@
     </div>
     <div>
       <nav
-        class="items-center text-lg hidden lg:flex"
+        class="items-center text-lg hidden lg:flex navigation"
         role="navigation"
         aria-label="Main Navigation"
       >
         <div class="space-x-6 flex items-center">
-          <a class="navigation-item" href="{{ 'about.html' | relative_url }}">About Us</a>
+          <a class="navigation-item" href="{{ 'about.html' | relative_url }}"
+            >About Us</a
+          >
           <div class="dropdown relative navigation-item">
             <button
               class="flex items-center"
@@ -35,7 +41,11 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it Works <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
+              How it Works
+              <img
+                src="{{ '/assets/dropdown-arrow.svg' | relative_url }}"
+                alt=""
+              />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-10"
@@ -50,15 +60,16 @@
                 href="{{ 'non-technical-expert.html' | relative_url }}"
                 >Non-Technical Expert</a
               >
-              <a class="whitespace-nowrap hover:underline" href="{{ 'faq.html' | relative_url }}"
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="{{ 'faq.html' | relative_url }}"
                 >FAQ</a
               >
             </div>
           </div>
           <a
             class="navigation-item"
-            href="{{ 'blog.html' | relative_url }}"
-            target="_blank"
+            href="{{ 'blog' | relative_url }}"
             aria-label="Blog"
           >
             <span>Blog</span>
@@ -86,7 +97,11 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              Community <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
+              Community
+              <img
+                src="{{ '/assets/dropdown-arrow.svg' | relative_url }}"
+                alt=""
+              />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
@@ -141,12 +156,18 @@
               </a>
             </div>
           </div>
-          <a class="navigation-item" href="{{ 'sponsor.html' | relative_url }}" aria-label="Sponsor">
+          <a
+            class="navigation-item"
+            href="{{ 'sponsor.html' | relative_url }}"
+            aria-label="Sponsor"
+          >
             <span>Sponsor</span>
           </a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item font-semibold" href="{{ 'free-install.html' | relative_url }}"
+          <a
+            class="navigation-item font-semibold"
+            href="{{ 'free-install.html' | relative_url }}"
             >Request Free Installation</a
           >
         </div>
@@ -155,13 +176,17 @@
       <div class="lg:hidden">
         <div class="dropdown relative navigation-item">
           <button class="flex items-center w-full">
-            Menu <img src="{{ '/assets/dropdown-arrow.svg' | relative_url }}" alt="" />
+            Menu
+            <img
+              src="{{ '/assets/dropdown-arrow.svg' | relative_url }}"
+              alt=""
+            />
           </button>
           <div
             class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
           >
             <a
-              class="text-lg whitespace-nowrap hover:underline"
+              class="text-lg whitespace-nowrap hover:underline "
               href="{{ 'index.html' | relative_url }}"
               >Home</a
             >
@@ -188,7 +213,7 @@
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="{{ 'blog.html' | relative_url }}"
+              href="{{ 'blog' | relative_url }}"
               >Blog</a
             >
             <a
@@ -280,20 +305,38 @@
       }
     });
 
-    var navigationItems = document.querySelectorAll(".navigation-item");
+    document.addEventListener("DOMContentLoaded", function () {
+      var navigationItems = document.querySelectorAll(".navigation a");
 
-    navigationItems.forEach(function (navigationItem) {
-      if (navigationItem.href == window.location.href) {
-        navigationItem.classList.add("font-bold");
-      }
+      navigationItems.forEach(function (navigationItem) {
+        var navHref = navigationItem.getAttribute("href") || "";
+        var locationPath = window.location.pathname;
+
+        navHref = navHref.endsWith("/") ? navHref.slice(0, -1) : navHref;
+        locationPath = locationPath.endsWith("/")
+          ? locationPath.slice(0, -1)
+          : locationPath;
+
+        if (navHref === "." && locationPath === "") navHref = "/";
+
+        var isBlogPage =
+          locationPath.includes("/blog") && navHref.includes("blog");
+
+        if (navHref === locationPath || isBlogPage) {
+          navigationItem.classList.add("font-bold");
+          //look at the parent divs unitl we find the dropdown
+          var parent = navigationItem.parentElement;
+          while (parent) {
+            if (parent.classList.contains("dropdown")) {
+              parent.querySelector("button").classList.add("font-bold");
+              break;
+            }
+            parent = parent.parentElement;
+          }
+        }
+      });
     });
 
-    var dropdownLinks = document.querySelectorAll(".dropdown a");
-    dropdownLinks.forEach(function (dropdownLink) {
-      if (dropdownLink.href == window.location.href) {
-        dropdownLink.classList.add("font-bold");
-      }
-    });
 
     function toggleDropdown() {
       var dropdownMenu = this.nextElementSibling;

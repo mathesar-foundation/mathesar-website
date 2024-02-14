@@ -31,6 +31,7 @@ for key in authors.keys():
 layout: author
 author: {key}
 title: "Author: {authors[key]['name']}"
+permalink: /blog/authors/{key.replace(' ', '_')}/
 ---
 
 """

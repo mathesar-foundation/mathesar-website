@@ -2,6 +2,7 @@
 layout: blog
 title: Blog - Mathesar
 description: Mathesar blog posts
+permalink: /blog/
 ---
 
 {% capture header %}
