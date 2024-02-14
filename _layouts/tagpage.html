@@ -3,13 +3,12 @@ layout: default
 ---
 
 <div class="post">
-  {% assign tag = "Tag: " | append: page.tag %} {% include page-header.html
-  header=tag %}
+  {% assign tag = 'Posts Tagged with "' | append: page.tag | append: '"' %}
+  {% include page-header.html header="Mathesar Blog" subheader=tag %}
   <div class="angled lighter">
     <div
-      class="max-w-2xl mx-auto min-h-screen blog px-4 leading-snug"
-    >
-    <h2 class="text-2xl font-semibold mb-2">Posts tagged with {{ page.tag }}:</h2>
+    class="max-w-4xl mx-auto min-h-screen blog px-4 leading-snug space-y-8"
+  >
       <ul class="space-y-8">
         {% for post in site.tags[page.tag] %}
         {% include blog_card.html post=post %}

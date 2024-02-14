@@ -4,16 +4,16 @@ layout: default
 {% assign author = site.data.authors[page.author] %}
 
 <div class="mb-32">
-  <div class="max-w-4xl mx-auto my-16 min-h-screen flex items-start">
+  <div class="max-w-4xl mx-auto my-16 min-h-screen space-y-8">
 
 
-    <div class="px-8 h-full">
+    <div class="p-8 h-full bg-white rounded">
       <article class="space-y-8">
-        <header class="space-y-2 leading-snug">
+        <header class="space-y-2">
           <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
           <p class="text-gray-600 text-sm">
             Posted on {{ page.date | date_to_string }} by 
-            <a href="/authors/{{ page.author }}">{{ author.name }}</a>
+            <a class="font-bold" href="/authors/{{ page.author }}">{{ author.name }}</a>
             
           </p>
 
@@ -23,13 +23,14 @@ layout: default
         <img src="{{page.image}}" alt="" class="w-full shadow-sm" />
 
         <div
-          class="prose max-w-none prose-slate prose-h1:font-bold prose-headings:text-gray-800"
+          class="prose max-w-none leading-snug prose-slate prose-h1:font-bold prose-headings:text-gray-800"
         >
           {{ content }}
         </div>
       </article>
     </div>
   </div>
+
 
   
 </div>

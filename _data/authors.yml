@@ -1,18 +1,13 @@
 brent_moran:
   name: Brent Moran
+  title: Core Staff at Mathesar
   bio: >
-    "I'm using a database (and planning to use Mathesar) to store and analyze
-    info I collect about various countries. e.g. cost of living, tax rates, population
-    statistics, economic statistics, etc. I'm tentatively calling it the **Country Comparator**."
-  website: http://example.com
+    "Brent is a software engineer who works on the core team at Mathesar. More content to come soon!"
   image: /assets/brent.jpg
 
 kriti_godey:
   name: Kriti Godey
+  title: Core Staff at Mathesar
   bio: >
-    "My husband and I use a database-backed application to **track movies**. Movies
-    we own, movies we want to watch, movies we’ve watched. I had to write a bunch
-    of code for it, but it would have been much faster to build it using Mathesar –
-    if it had existed!"
-  website: http://example.com
+    "Kriti is a software engineer who works on the core team at Mathesar. More content to come soon!"
   image: /assets/kriti.jpg

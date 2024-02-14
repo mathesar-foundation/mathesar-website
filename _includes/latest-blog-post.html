@@ -1,0 +1,19 @@
+{% assign latest_post = site.posts.first %}
+<div class="max-w-screen-xl mt-8 -mb-2 mx-auto px-4">
+  <h4 class="font-bold">New on Our Blog</h4>
+  <a
+    href="{{ latest_post.url }}"
+    class="flex items-center block bg-blue-100 px-2 py-1 rounded space-x-2 hover:bg-blue-200 transition-colors"
+  >
+    <div class="bg-stone-50 w-max rounded-full shrink-0 text-sm px-2 font-bold">
+      {{ latest_post.date | date: "%b %d, %Y" }}
+    </div>
+
+    <h4 class="font-bold whitespace-nowrap truncate lg:overflow-visible">{{ latest_post.title }}</h4>
+
+    <div class="truncate hidden lg:block">
+      {{ latest_post.excerpt | strip_html }}
+    </div>
+
+  </a>
+</div>

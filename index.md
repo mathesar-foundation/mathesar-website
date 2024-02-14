@@ -3,6 +3,8 @@ layout: landing
 title: Mathesar
 ---
 
+{% include latest-blog-post.html %}
+
 {% capture hero_content %}
 Mathesar is an **open source** and web-based interface that works on top of your database.
 
@@ -20,8 +22,6 @@ your data – in one open source interface' section='Open Source Database Interf
 actions=hero_actions %}
 
 {% include ribbon.html %}
-
-{% include latest-posts.html %}
 
 {%include bullet_list.html%}
 
