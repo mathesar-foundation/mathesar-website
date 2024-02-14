@@ -227,6 +227,7 @@ a[href^="https://"]:not(.icon-link):not(.button):not(.avatar-link)::after
   position: absolute;
   transform: skew(0deg, -1deg);
   left: 0;
+  z-index: 1;
 }
 
 .angled::before {

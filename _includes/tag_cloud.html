@@ -1,6 +1,6 @@
 {% if site.tags.size > 0 %}
   <div class="tag-cloud">
-    <ul class="flex items-center space-x-2">
+    <ul class="flex items-center flex-wrap gap-1">
       {% for tag in site.tags %}
         <li class="tag-item">
           <a href="{{ '/tag/' | append: tag[0] | relative_url }}" class="bg-red-500 bg-opacity-80 text-white rounded px-1 cursor-pointer text-sm hover:bg-blue-600">

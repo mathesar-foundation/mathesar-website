@@ -2,7 +2,7 @@
 {% assign author = site.data.authors[include.post.author] %}
 
 <li
-  class="{% if size == 'small' %}space-y-2 bg-white rounded p-4 w-1/3{% else %}space-y-4 text-lg bg-stone-50 rounded p-8{% endif %}"
+  class="mb-4 {% if size == 'small' %}space-y-2 bg-white rounded p-4 lg:w-1/3{% else %}space-y-4 text-lg bg-stone-50 rounded p-8{% endif %}"
 >
   <div class="space-y-2">
     
@@ -20,7 +20,7 @@
   </div>
   {% include tag_cloud.html %}
 
-  <div class="{% if size == 'small' %} h-40 {% else %} h-80 {% endif %} overflow-hidden w-full rounded-lg shadow-lg mb-6 relative">
+  <div class="{% if size == 'small' %} h-40 {% else %} lg:h-80 {% endif %} overflow-hidden w-full rounded-lg shadow-lg mb-6 relative">
     <img
       src="{{include.post.image}}"
       alt=""
