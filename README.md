@@ -31,6 +31,10 @@ This repository is a Jekyll website that powers https://mathesar.org. It is host
 
 ### Running locally
 
-Run `bundle exec jekyll serve`
+1. Run: 
 
-Browse to `http://localhost:4000/`
+    ```
+    bundle exec jekyll serve --port 4000 --livereload
+    ```
+
+1. Browse to http://localhost:4000/
