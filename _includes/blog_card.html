@@ -20,7 +20,7 @@ site.data.authors[include.post.author] %}
   {% include tag_cloud.html %}
 
   <div
-    class="border {% if size == 'small' %} h-40 {% else %} lg:h-80 {% endif %} overflow-hidden w-full rounded-lg mb-6 relative"
+    class="border {% if size == 'small' %} h-40 {% else %} lg:h-80 h-40 {% endif %} overflow-hidden w-full rounded-lg mb-6 relative"
   >
     <div
       class="absolute inset-0 w-full h-full bg-cover bg-center blur-md filter brightness-75"
@@ -31,7 +31,7 @@ site.data.authors[include.post.author] %}
       alt=""
       class="h-full object-cover object-center relative mx-auto"
     />
-    />
+   
   </div>
 
   <div class="{% if size == 'small' %} truncate {% endif %}">
