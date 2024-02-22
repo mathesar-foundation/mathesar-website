@@ -1,6 +1,6 @@
 - name: Kriti Godey
   image: kriti.jpg
-  role: Founder & Project Lead
+  role: CEO & Project Lead
   bio: |+
     "My husband and I use a database-backed application to **track movies**. Movies we own, movies we want to watch, movies we’ve watched.
     
@@ -38,11 +38,9 @@
   image: anish.jpg
   role: Engineer
   bio: |+
-    "I'm using a database to enable people to make better choices about which credit card to get. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
+    "I'm using a database to enable people to make better choices about **which credit card to get**. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
 - name: Adam Mullinax
   image: adam.jpg
-  role: Director of Finance
+  role: Director of Finance and Operations
   bio: |+
-    "Adam is going to be sending us something to put here. Adam is going to be sending us something to put here. Adam is going to be sending us something to put here.
-    
-    Adam is going to be sending us something to put here. Adam is going to be sending us something to put here."
+    "I’ve been slowly starting to build a **small wine collection** and keeping track of all of my notes has been a huge pain. Using a system like Mathesar would allow me to easily maintain the information and compare wines across vintage, varietal, region and producer."

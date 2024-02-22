@@ -31,9 +31,9 @@
   </div>
 
   <div
-  class="max-w-6xl mx-auto {% if site.data.core_team.size == 1 %}grid-cols-1{% else %}grid lg:grid-cols-2{% endif %} grid-flow-row gap-8 auto-rows-auto"
+  class="max-w-6xl mx-auto {% if site.data.staff.size == 1 %}grid-cols-1{% else %}grid lg:grid-cols-2{% endif %} grid-flow-row gap-8 auto-rows-auto"
   >
-    {% for member in site.data.core_team %} {% include member-profile.html
+    {% for member in site.data.staff %} {% include member-profile.html
     member=member size="large" layout="horizontal" %} {% endfor %}
   </div>
 
@@ -65,7 +65,7 @@
     <div
       class="max-w-4xl mx-auto lg:flex items-start justify-center lg:gap-12 auto-rows-auto space-y-4 lg:space-y-0"
     >
-      {% for member in site.data.board_members %} {% include member-profile.html
+      {% for member in site.data.board %} {% include member-profile.html
       member=member size="large" %} {% endfor %}
     </div>
   </div>
