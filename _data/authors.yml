@@ -1,18 +1,18 @@
 brent_moran:
   name: Brent Moran
-  title: Core Staff at Mathesar
+  role: Core Staff at Mathesar
   bio: >
     "Brent is a software engineer who works on the core team at Mathesar. More content to come soon!"
   image: /assets/brent.jpg
 kriti_godey:
   name: Kriti Godey
-  title: Core Staff at Mathesar
+  role: Core Staff at Mathesar
   bio: >
     "Kriti is a software engineer who works on the core team at Mathesar. More content to come soon!"
   image: /assets/kriti.jpg
 sean_colsen:
   name: Sean Colsen
-  title: Core Staff at Mathesar
+  role: Core Staff at Mathesar
   bio: >
     "Sean is a software engineer who works on the core team at Mathesar. More content to come soon!"
   image: /assets/sean.jpg

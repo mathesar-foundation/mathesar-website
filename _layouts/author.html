@@ -8,12 +8,12 @@ layout: default
 
   {% assign subheader = "Posts by " | append: author.name %}
   {% include page-header.html header="Mathesar Blog" subheader=subheader alignment="center" %}
-  <div class="angled lighter">
+  <div class="pb-8">
     <div
       class="max-w-4xl mx-auto min-h-screen blog px-4 leading-snug space-y-8"
     >
       <ul class="space-y-8">
-        {% for post in site.posts %} {% if post.author == page.author %} {%
+        {% for post in site.posts %} {% if post.author_id == page.author %} {%
         include blog_card.html post=post %} {% endif %} {% endfor %}
       </ul>
 

@@ -1,5 +1,5 @@
 {% assign size = include.size | default: 'regular' %} {% assign author =
-site.data.authors[include.post.author] %}
+site.data.authors[include.post.author_id] %}
 
 <li
   class="mb-4 {% if size == 'small' %}space-y-2 rounded p-4 lg:w-1/3{% else %}space-y-4 text-lg  rounded p-8{% endif %} bg-white"
@@ -12,7 +12,7 @@ site.data.authors[include.post.author] %}
     </h2>
     <p class="text-gray-500 text-sm">
       Posted on {{ include.post.date | date_to_string }} by
-      <a class="font-bold" href="/blog/authors/{{ include.post.author }}">
+      <a class="font-bold" href="/blog/authors/{{ include.post.author_id }}">
         {{author.name }}
       </a>
     </p>
