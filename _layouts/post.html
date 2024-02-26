@@ -12,15 +12,13 @@ layout: default
         <header class="space-y-2">
           <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
           <p class="text-gray-600 text-sm">
-            Posted on {{ page.date | date_to_string }} by 
+            Posted on {{ page.date | date: "%b %d, %Y" }} by 
             <a class="font-bold" href="/blog/authors/{{ page.author }}">{{ author.name }}</a>
             
           </p>
 
           {% include tag_cloud.html %}
         </header>
-
-        <img src="{{page.image}}" alt="" class="w-full shadow-sm" />
 
         <div
           class="prose max-w-none leading-snug prose-slate prose-h1:font-bold prose-headings:text-gray-800"
