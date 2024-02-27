@@ -22,6 +22,7 @@ This repository is a Jekyll website that powers https://mathesar.org. It is host
   - [Creating a new blog post](#creating-a-new-blog-post)
   - [Creating Author Pages](#creating-author-pages)
   - [Creating Tag Pages](#creating-tag-pages)
+  - [Updating Author Pages](#updating-author-pages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
