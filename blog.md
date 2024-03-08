@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Blog - Mathesar
+title: Blog
 description: Mathesar blog posts
 permalink: /blog/
 ---

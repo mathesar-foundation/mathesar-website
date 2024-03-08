@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Blog - Mathesar | Tag: announcement"
+title: "Blog - announcement"
 tag: announcement
 robots: noindex
 permalink: /blog/tag/announcement/

@@ -58,7 +58,7 @@ for tag in total_tags:
     with open(tag_filename, 'w') as f:  # Changed to 'w' to overwrite existing or write new
         write_str = '''---
 layout: tagpage
-title: "Blog - Mathesar | Tag: {tag}"
+title: "Blog - {tag}"
 tag: {tag}
 robots: noindex
 permalink: /blog/tag/{permalink}/

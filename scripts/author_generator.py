@@ -30,7 +30,7 @@ for key in authors.keys():
         write_str = f"""---
 layout: author
 author: {key}
-title: "Blog - Mathesar | Author: {authors[key]['name']}"
+title: "Blog - {authors[key]['name']}'s posts"
 permalink: /blog/authors/{key.replace(' ', '_')}/
 ---
 
