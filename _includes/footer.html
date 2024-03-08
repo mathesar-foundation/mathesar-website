@@ -34,14 +34,14 @@
           <div class="space-x-2">
             <a
               class="text-gray-100 hover:text-gray-600"
-              href="privacy.html"
+              href="{{ 'privacy.html' | relative_url }}"
               aria-label="Privacy Policy"
               >Privacy Policy</a
             >
 
             <a
               class="text-gray-100 hover:text-gray-600"
-              href="mailing-list.html"
+              href="{{ 'mailing-list.html' | relative_url }}"
               aria-label="Mailing List"
               >Mailing List</a
             >
@@ -64,7 +64,7 @@
             aria-label="Visit Mathesar on Github"
             target="_blank"
           >
-            <img class="invert" src="assets/github-logo.svg" alt="" />
+            <img class="invert" src="{{ '/assets/github-logo.svg' | relative_url }}" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
@@ -72,7 +72,7 @@
             aria-label="Visit Mathesar on Twitter"
             target="_blank"
           >
-            <img class="invert" src="assets/x-logo.svg" alt="" />
+            <img class="invert" src="{{ '/assets/x-logo.svg' | relative_url }}" alt="" />
           </a>
           <a
             href="https://www.youtube.com/@mathesar_org"
@@ -80,7 +80,7 @@
             aria-label="Visit Mathesar's YouTube Channel"
             target="_blank"
           >
-            <img class="invert" src="assets/youtube-logo.svg" alt="" />
+            <img class="invert" src="{{ '/assets/youtube-logo.svg' | relative_url }}" alt="" />
           </a>
           <a
             href="https://discord.gg/enaKqGn5xx"
@@ -88,7 +88,7 @@
             aria-label="Join Mathesar on Discord"
             target="_blank"
           >
-            <img class="invert" src="assets/discord-logo.svg" alt="" />
+            <img class="invert" src="{{ '/assets/discord-logo.svg' | relative_url }}" alt="" />
           </a>
           <a
             href="https://www.reddit.com/r/mathesar_org/"
@@ -96,8 +96,14 @@
             aria-label="Visit the Mathesar subreddit"
             target="_blank"
           >
-            <img class="invert" src="assets/reddit-logo.svg" alt="" />
+            <img class="invert" src="{{ '/assets/reddit-logo.svg' | relative_url }}" alt="" />
           </a>
+
+          <a href="/feed.xml" class="rss-feed-link" title="Subscribe to RSS Feed">
+
+            <img class="invert" src="{{ '/assets/rss-icon.svg' | relative_url }}" alt="" />
+          </a>
+
         </div>
       </nav>
     </div>

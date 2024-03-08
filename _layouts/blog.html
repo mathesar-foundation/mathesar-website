@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="bg-stone-50 text-gray-800">
+    {% include survey_banner.html %}
+    <div>{% include navigation.html %}</div>
+
+    {{ content }}
+
+    <div class="py-8">
+      <div
+        class="max-w-4xl -mt-12 z-10 relative mx-auto min-h-screen blog px-4 flex items-start leading-snug"
+      >
+        <ul class="space-y-8">
+          {% for post in site.posts %}
+          {% include blog_card.html post=post %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% include cta.html %}
+    {% include footer.html %}
+    <script async defer src="https://sa.mathesar.org/latest.js"></script>
+    <script async src="https://sa.mathesar.org/auto-events.js"></script>
+    <noscript>
+      <img
+        src="https://sa.mathesar.org/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
+  </body>
+</html>

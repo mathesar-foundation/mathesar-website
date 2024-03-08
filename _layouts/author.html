@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% assign author = site.data.authors[page.author] %}
+
+<div class="post">
+  {% assign subheader = "Posts by " | append: author.name %} {% include
+  page-header.html header="Mathesar Blog" subheader=subheader alignment="center"
+  %}
+  <div class="pb-8">
+    <div
+      class="max-w-4xl mx-auto min-h-screen blog px-4 leading-snug space-y-8"
+    >
+      <ul class="space-y-8">
+        {% for post in site.posts %} {% if post.author == page.author %} {%
+        include blog_card.html post=post %} {% endif %} {% endfor %}
+      </ul>
+
+      <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
+      {% include author_details.html author=author %}
+    </div>
+  </div>
+</div>

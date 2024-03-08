@@ -1,35 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="keywords"
-      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
-    />
+---
+layout: default
+---
 
-    {% seo %}
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-
-    <title>{{ page.title }}</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-
-    <link rel="stylesheet" type="text/css" href="assets/main.css" />
-
-  </head>
-  <body class="bg-stone-50 text-gray-800">
-    <div>{% include navigation.html %}</div>
-    <div class="max-w-6xl mx-auto md-content py-16 min-h-screen">
-      {{ content }}
-    </div>
-    {% include footer.html %}
-    <script async defer src="https://sa.mathesar.org/latest.js"></script>
-    <script async src="https://sa.mathesar.org/auto-events.js"></script>
-    <noscript>
-      <img src="https://sa.mathesar.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript> 
-  </body>
-</html>
+<div class="max-w-4xl mx-auto prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 py-16 min-h-screen">{{ content }}</div>
