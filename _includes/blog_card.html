@@ -11,7 +11,7 @@ site.data.authors[include.post.author] %}
       <a href="{{ include.post.url }}">{{ include.post.title }}</a>
     </h2>
     <p class="text-gray-500 text-sm">
-      Posted on {{ include.post.date | date_to_string }} by
+      Posted on {{ include.post.date | date: "%b %d, %Y" }} by
       <a class="font-bold" href="/blog/authors/{{ include.post.author }}">
         {{author.name }}
       </a>
