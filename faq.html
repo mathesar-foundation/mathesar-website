@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="keywords"
-      content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
-    />
-
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta
+	  name="keywords"
+	  content="mathesar, database, data, postgresql, postgres, open source, free, software, data management, data analysis, data visualization"
+	/>
+  
+	
+	<meta name="description" content="Frequently asked questions about Mathesar" />
+	 
+	<meta property="og:image" content="/assets/og-faq.png" />
+	 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>FAQ - Mathesar | Mathesar</title>
 <meta name="generator" content="Jekyll v3.9.2" />
 <meta property="og:title" content="FAQ - Mathesar" />
@@ -28,24 +32,92 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Frequently asked questions about Mathesar","headline":"FAQ - Mathesar","image":"https://mathesar.org/assets/og-faq.png","url":"https://mathesar.org/faq.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <meta name="twitter:description" content="Frequently asked questions about Mathesar" />
-    
-    <title>FAQ - Mathesar</title>
+	<meta
+	  name="twitter:description"
+	  content="Frequently asked questions about Mathesar"
+	/>
+  
+	<title>FAQ - Mathesar</title>
+  
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  
+	<link
+	  rel="stylesheet"
+	  type="text/css"
+	  href="/assets/main.css"
+	/>
+	 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    
-    <link rel="stylesheet" type="text/css" href="assets/main.css" />
 
 
+
+ 
   </head>
-  <body class="bg-stone-50 text-gray-800">
+  
+
+  <body
+    class="bg-stone-50 text-gray-800 overflow-hidden overflow-y-scroll min-h-screen flex flex-col relative"
+  >
+  <div
+  id="survey-banner"
+  class="sticky top-0 bg-blue-600 text-white p-3 flex justify-between items-center z-50"
+>
+  <div class="text-lg space-x-2">
+    <span class="font-bold">Help shape Mathesar!</span>
+    <span>Share your thoughts in our quick survey: </span>
+
+    <a
+      href="https://forms.gle/yjxiEQr9QzTT5GCSA"
+      target="_blank"
+      class="underline text-white"
+      >Take it here</a
+    >
+  </div>
+  <button
+    id="close-banner"
+    class="bg-zinc-800 hover:bg-zinc-700 p-2 rounded-lg"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4 text-white"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="4"
+        d="M6 18L18 6M6 6l12 12"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<script>
+  if (sessionStorage.getItem("survey-banner-closed") === "true") {
+    document.getElementById("survey-banner").style.display = "none";
+  }
+
+  document
+    .getElementById("close-banner")
+    .addEventListener("click", function () {
+      document.getElementById("survey-banner").style.display = "none";
+      sessionStorage.setItem("survey-banner-closed", "true");
+    });
+</script>
+
     <div><div class="navigation pt-4 mx-4 border-b-2 border-stone-400 relative">
   <div class="max-w-screen-xl mx-auto space-y-4">
     <div class="flex items-center justify-between">
-      <a href="index.html">
-        <img class="w-40 lg:w-56" src="assets/logo.svg" alt="Mathesar's Logo" />
+      <a href="/index.html">
+        <img
+          class="w-40 lg:w-56"
+          src="/assets/logo.svg"
+          alt="Mathesar's Logo"
+        />
       </a>
       <a
         href="https://github.com/centerofci/mathesar"
@@ -56,7 +128,7 @@
         <span class="text-gray-900 sm:block hidden">Star us on</span>
         <span class="text-gray-900">GitHub</span>
         <img
-          src="assets/github-logo.svg"
+          src="/assets/github-logo.svg"
           alt="Github Logo"
           class="align-bottom opacity-90"
           alt="Github Logo"
@@ -65,12 +137,14 @@
     </div>
     <div>
       <nav
-        class="items-center text-lg hidden lg:flex"
+        class="items-center text-lg hidden lg:flex navigation"
         role="navigation"
         aria-label="Main Navigation"
       >
         <div class="space-x-6 flex items-center">
-          <a class="navigation-item" href="about.html">About Us</a>
+          <a class="navigation-item" href="/about.html"
+            >About Us</a
+          >
           <div class="dropdown relative navigation-item">
             <button
               class="flex items-center"
@@ -78,22 +152,28 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              How it Works <img src="assets/dropdown-arrow.svg" alt="" />
+              How it Works
+              <img
+                src="/assets/dropdown-arrow.svg"
+                alt=""
+              />
             </button>
             <div
-              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md"
+              class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-10"
             >
               <a
                 class="whitespace-nowrap hover:underline"
-                href="software-engineer.html"
+                href="/software-engineer.html"
                 >Software Engineer</a
               >
               <a
                 class="whitespace-nowrap hover:underline"
-                href="non-technical-expert.html"
+                href="/non-technical-expert.html"
                 >Non-Technical Expert</a
               >
-              <a class="whitespace-nowrap hover:underline" href="faq.html"
+              <a
+                class="whitespace-nowrap hover:underline"
+                href="/faq.html"
                 >FAQ</a
               >
             </div>
@@ -121,19 +201,23 @@
               aria-expanded="false"
               aria-label="How it works"
             >
-              Community <img src="assets/dropdown-arrow.svg" alt="" />
+              Community
+              <img
+                src="/assets/dropdown-arrow.svg"
+                alt=""
+              />
             </button>
             <div
               class="hidden absolute bg-white border mt-1 p-2 rounded shadow-md z-50"
             >
               <a
                 class="whitespace-nowrap hover:underline block w-max"
-                href="roadmap.html"
+                href="/roadmap.html"
                 >Roadmap</a
               >
               <a
                 class="whitespace-nowrap hover:underline block w-max"
-                href="mailing-list.html"
+                href="/mailing-list.html"
                 >Email updates</a
               >
               <a
@@ -176,12 +260,25 @@
               </a>
             </div>
           </div>
-          <a class="navigation-item" href="sponsor.html" aria-label="Sponsor">
+          <a
+            class="navigation-item"
+            href="/blog"
+            aria-label="Blog"
+          >
+            <span>Blog</span>
+          </a>
+          <a
+            class="navigation-item"
+            href="/sponsor.html"
+            aria-label="Sponsor"
+          >
             <span>Sponsor</span>
           </a>
         </div>
         <div class="ml-auto">
-          <a class="navigation-item font-semibold" href="free-install.html"
+          <a
+            class="navigation-item font-semibold"
+            href="/free-install.html"
             >Request Free Installation</a
           >
         </div>
@@ -190,36 +287,45 @@
       <div class="lg:hidden">
         <div class="dropdown relative navigation-item">
           <button class="flex items-center w-full">
-            Menu <img src="assets/dropdown-arrow.svg" alt="" />
+            Menu
+            <img
+              src="/assets/dropdown-arrow.svg"
+              alt=""
+            />
           </button>
           <div
             class="hidden absolute grid bg-white border w-full mt-1 p-2 rounded shadow-md z-50"
           >
             <a
-              class="text-lg whitespace-nowrap hover:underline"
-              href="index.html"
+              class="text-lg whitespace-nowrap hover:underline "
+              href="/index.html"
               >Home</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="about.html"
+              href="/about.html"
               >About Us</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="software-engineer.html"
+              href="/software-engineer.html"
               >How it works - Software Engineer</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="non-technical-expert.html"
+              href="/non-technical-expert.html"
             >
               How it Works - Non-Technical Expert</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="sponsors.html"
+              href="/sponsors.html"
               >Sponsors</a
+            >
+            <a
+              class="text-lg whitespace-nowrap hover:underline"
+              href="/blog"
+              >Blog</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
@@ -263,12 +369,12 @@
             </div>
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="roadmap.html"
+              href="/roadmap.html"
               >Roadmap</a
             >
             <a
               class="text-lg whitespace-nowrap hover:underline"
-              href="free-install.html"
+              href="/free-install.html"
               >Request Free Installation</a
             >
           </div>
@@ -310,20 +416,38 @@
       }
     });
 
-    var navigationItems = document.querySelectorAll(".navigation-item");
+    document.addEventListener("DOMContentLoaded", function () {
+      var navigationItems = document.querySelectorAll(".navigation a");
 
-    navigationItems.forEach(function (navigationItem) {
-      if (navigationItem.href == window.location.href) {
-        navigationItem.classList.add("font-bold");
-      }
+      navigationItems.forEach(function (navigationItem) {
+        var navHref = navigationItem.getAttribute("href") || "";
+        var locationPath = window.location.pathname;
+
+        navHref = navHref.endsWith("/") ? navHref.slice(0, -1) : navHref;
+        locationPath = locationPath.endsWith("/")
+          ? locationPath.slice(0, -1)
+          : locationPath;
+
+        if (navHref === "." && locationPath === "") navHref = "/";
+
+        var isBlogPage =
+          locationPath.includes("/blog") && navHref.includes("blog");
+
+        if (navHref === locationPath || isBlogPage) {
+          navigationItem.classList.add("font-bold");
+          //look at the parent divs unitl we find the dropdown
+          var parent = navigationItem.parentElement;
+          while (parent) {
+            if (parent.classList.contains("dropdown")) {
+              parent.querySelector("button").classList.add("font-bold");
+              break;
+            }
+            parent = parent.parentElement;
+          }
+        }
+      });
     });
 
-    var dropdownLinks = document.querySelectorAll(".dropdown a");
-    dropdownLinks.forEach(function (dropdownLink) {
-      if (dropdownLink.href == window.location.href) {
-        dropdownLink.classList.add("font-bold");
-      }
-    });
 
     function toggleDropdown() {
       var dropdownMenu = this.nextElementSibling;
@@ -340,20 +464,20 @@
 </div>
 </div>
 
-    <div class="max-w-2xl space-y-8 mx-auto px-4 py-16 page-header">
-  <h2 class="font-bold text-3xl lg:text-5xl text-center space-y-2"><p>Frequently Asked Questions</p>
-</h2>
+    <div class="flex-grow"><div class="max-w-2xl space-y-8 mx-auto px-4 py-16 page-header">
+  <h2 class="font-bold text-3xl lg:text-5xl text-center space-y-2">
+    <p>Frequently Asked Questions</p>
+
+  </h2>
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
    
 </div>
 
 
-
-
-    <div
-      class="max-w-4xl relative mx-auto flex-col-reverse flex flex-col sm:flex-row items-start sm:space-x-16"
-    >
-      <div class="lg:p-0 p-4">
+<div
+  class="max-w-4xl relative mx-auto flex-col-reverse flex flex-col sm:flex-row items-start sm:space-x-16"
+>
+  <div class="lg:p-0 p-4">
 <div class="faq-section mb-10" id="Features">
 
     <h4 class="uppercase text-red-600 text-sm font-bold mb-4">Features</h4>
@@ -458,108 +582,56 @@
 
 </div>
 </div>
-      <div
-        id="table-of-contents"
-        class="lg:sticky top-0 right-0 w-full sm:w-80 shrink-0 bg-stone-100 p-4"
-      ></div>
-    </div>
-
-    <div class="bg-blue-600">
   <div
-    class="max-w-2xl mx-auto px-8 text-white text-center relative lg:pt-32 pt-24 lg:pb-20 space-y-4"
-  >
-    <div class="space-y-2">
-      <h3 class="text-2xl lg:text-3xl font-semibold">
-         Stay updated
-        on our open source and cloud development 
-      </h3>
-    </div>
-    <div class="text-sm text-gray-200 italic">
-      We'll send you occasional email updates about Mathesar. You can opt
-      out at any time.
-    </div>
-    <div
-      class="lg:flex lg:flex-col items-center justify-center text-lg space-y-4 lg:space-y-0 lg:space-x-2"
-    >
-      <form
-        id="signup-form"
-        class="flex-col w-full space-y-4"
-        action="https://formspree.io/f/xlevqoza"
-        method="POST"
-      >
-        <div class="flex items-stretch space-x-2 w-full">
-          <input
-            type="email"
-            name="email"
-            class="bg-white rounded p-2 w-full border text-black"
-            placeholder="Your email here"
-          />
-        </div>
-
-        <div class="space-y-2 p-4 rounded bg-blue-500 rounded-lg">
-          <p class="font-semibold">
-            Which version(s) of Mathesar are you most interested in?
-          </p>
-
-          <div class="flex lg:flex-row flex-col justify-center lg:items-center lg:space-x-4">
-            <div class="flex items-center space-x-2 lg:m-0 mx-auto">
-              <input id="self_hosted_version" name="self_hosted_version" type="checkbox" />
-              <label for="self_hosted_version"
-                >Self-hosted version</label
-              >
-            </div>
-            <div class="flex items-center space-x-2 lg:m-0 mx-auto">
-              <input id="cloud_version" name="cloud_version" type="checkbox" />
-              <label for="cloud_version">Cloud version</label>
-            </div>
-          </div>
-
-          
-        </div>
-        <div class="flex items-center justify-center">
-        <button
-          class="button secondary py-2 px-8 rounded whitespace-nowrap"
-          type="submit"
-        >
-          Sign Up
-        </button>
-      </div>
-
-        
-
-        
-        <div class="h-4">
-          <p
-            class="success-text hidden w-max text-green-600 bg-lime-100 py-1 px-4 mx-auto rounded-full"
-          >
-            Success!
-          </p>
-          <p
-            class="error-text hidden w-max text-red-600 bg-rose-100 py-1 px-4 mx-auto rounded-full"
-          >
-            Error, please try again later.
-          </p>
-        </div>
-      </form>
-    </div>
-  </div>
+    id="table-of-contents"
+    class="lg:sticky top-16 right-0 w-full sm:w-80 shrink-0 bg-stone-100 p-4"
+  ></div>
 </div>
-<script>
-  const signupFormId = "signup-form";
-  const signupForm = document.getElementById(signupFormId);
-  function handleSignupFormSubmit(event) {
-    event.preventDefault();
-    const { setLoading, unsetLoading } = loadingStateManager(signupFormId);
-    setLoading();
-    sendFormDataToFormspree(event, signupForm)
-      .then(() => showSuccessText(signupFormId))
-      .catch(() => showErrorText(signupFormId))
-      .finally(unsetLoading);
-  }
-  signupForm.addEventListener("submit", handleSignupFormSubmit);
-</script>
 
-    
+<script>
+  const toc = document.querySelector("#table-of-contents");
+  const sections = document.querySelectorAll(".faq-section");
+  const fragment = document.createDocumentFragment();
+
+  for (const section of sections) {
+    const sectionID = section.id;
+    const sectionTitle = section.querySelector("h4").innerText;
+    const link = document.createElement("a");
+    link.href = `#${sectionID}`;
+    link.textContent = sectionTitle;
+    link.classList.add(
+      "block",
+      "hover:text-blue-600",
+      "mb-2",
+      "font-bold",
+      "text-sm",
+      "text-red-600"
+    );
+    fragment.appendChild(link);
+
+    const subsections = section.querySelectorAll("h3");
+    for (const subsection of subsections) {
+      const subsectionID = subsection.id;
+      const subsectionTitle = subsection.innerText;
+      const link = document.createElement("a");
+      link.href = `#${subsectionID}`;
+      link.textContent = subsectionTitle;
+      link.classList.add(
+        "block",
+        "hover:text-blue-600",
+        "hover:bg-stone-200",
+        "px-2",
+        "rounded",
+        "ml-4",
+        "mb-2"
+      );
+      fragment.appendChild(link);
+    }
+  }
+
+  toc.appendChild(fragment);
+</script>
+</div>
     <footer class="bg-gray-900 text-white py-8 px-4 page-footer">
   <div class="max-w-screen-xl mx-auto space-y-8">
     <div>
@@ -596,14 +668,14 @@
           <div class="space-x-2">
             <a
               class="text-gray-100 hover:text-gray-600"
-              href="privacy.html"
+              href="/privacy.html"
               aria-label="Privacy Policy"
               >Privacy Policy</a
             >
 
             <a
               class="text-gray-100 hover:text-gray-600"
-              href="mailing-list.html"
+              href="/mailing-list.html"
               aria-label="Mailing List"
               >Mailing List</a
             >
@@ -626,7 +698,7 @@
             aria-label="Visit Mathesar on Github"
             target="_blank"
           >
-            <img class="invert" src="assets/github-logo.svg" alt="" />
+            <img class="invert" src="/assets/github-logo.svg" alt="" />
           </a>
           <a
             href="https://twitter.com/mathesar_org"
@@ -634,7 +706,7 @@
             aria-label="Visit Mathesar on Twitter"
             target="_blank"
           >
-            <img class="invert" src="assets/x-logo.svg" alt="" />
+            <img class="invert" src="/assets/x-logo.svg" alt="" />
           </a>
           <a
             href="https://www.youtube.com/@mathesar_org"
@@ -642,7 +714,7 @@
             aria-label="Visit Mathesar's YouTube Channel"
             target="_blank"
           >
-            <img class="invert" src="assets/youtube-logo.svg" alt="" />
+            <img class="invert" src="/assets/youtube-logo.svg" alt="" />
           </a>
           <a
             href="https://discord.gg/enaKqGn5xx"
@@ -650,7 +722,7 @@
             aria-label="Join Mathesar on Discord"
             target="_blank"
           >
-            <img class="invert" src="assets/discord-logo.svg" alt="" />
+            <img class="invert" src="/assets/discord-logo.svg" alt="" />
           </a>
           <a
             href="https://www.reddit.com/r/mathesar_org/"
@@ -658,63 +730,92 @@
             aria-label="Visit the Mathesar subreddit"
             target="_blank"
           >
-            <img class="invert" src="assets/reddit-logo.svg" alt="" />
+            <img class="invert" src="/assets/reddit-logo.svg" alt="" />
           </a>
+
+          <a href="/feed.xml" class="rss-feed-link" title="Subscribe to RSS Feed">
+
+            <img class="invert" src="/assets/rss-icon.svg" alt="" />
+          </a>
+
         </div>
       </nav>
     </div>
   </div>
 </footer>
 
-
+   
     <script async defer src="https://sa.mathesar.org/latest.js"></script>
     <script async src="https://sa.mathesar.org/auto-events.js"></script>
     <noscript>
-      <img src="https://sa.mathesar.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-    </noscript> 
+      <img
+        src="https://sa.mathesar.org/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
   </body>
 
+
+
   <script>
-    const toc = document.querySelector("#table-of-contents");
-    const sections = document.querySelectorAll(".faq-section");
-    const fragment = document.createDocumentFragment();
+    // Formspree forms AJAX request script
 
-    for (const section of sections) {
-      const sectionID = section.id;
-      const sectionTitle = section.querySelector("h4").innerText;
-      const link = document.createElement("a");
-      link.href = `#${sectionID}`;
-      link.textContent = sectionTitle;
-      link.classList.add(
-        "block",
-        "hover:text-blue-600",
-        "mb-2",
-        "font-bold",
-        "text-sm",
-        "text-red-600"
-      );
-      fragment.appendChild(link);
+    function sendFormDataToFormspree(event, form) {
+      const data = new FormData(event.target);
 
-      const subsections = section.querySelectorAll("h3");
-      for (const subsection of subsections) {
-        const subsectionID = subsection.id;
-        const subsectionTitle = subsection.innerText;
-        const link = document.createElement("a");
-        link.href = `#${subsectionID}`;
-        link.textContent = subsectionTitle;
-        link.classList.add(
-          "block",
-          "hover:text-blue-600",
-          "hover:bg-stone-200",
-          "px-2",
-          "rounded",
-          "ml-4",
-          "mb-2"
-        );
-        fragment.appendChild(link);
-      }
+      return fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            form.reset();
+          } else {
+            throw new Error("");
+          }
+        })
+        .catch((error) => {
+          throw new Error("");
+        });
     }
 
-    toc.appendChild(fragment);
+    function loadingStateManager(formId) {
+      const buttonElement = document.querySelector(
+        `#${formId} button[type="submit"]`
+      );
+      const originalText = buttonElement.innerHTML;
+      return {
+        setLoading: function () {
+          buttonElement.innerHTML = "Loading...";
+          buttonElement.disabled = true;
+        },
+        unsetLoading: function () {
+          buttonElement.innerHTML = originalText;
+          buttonElement.disabled = false;
+        },
+      };
+    }
+
+    function showSuccessText(formId) {
+      const successText = document.querySelector(`#${formId} .success-text`);
+      successText.innerHTML = "Thanks for your submission!";
+      successText.classList.remove("hidden");
+      setTimeout(() => {
+        successText.classList.add("hidden");
+      }, 5000);
+    }
+
+    function showErrorText(formId) {
+      const errorText = document.querySelector(`#${formId} .error-text`);
+      errorText.innerHTML = "Oops! There was a problem submitting your form";
+      errorText.classList.remove("hidden");
+      setTimeout(() => {
+        errorText.classList.add("hidden");
+      }, 5000);
+    }
   </script>
+
+
 </html>
