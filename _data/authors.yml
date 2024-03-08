@@ -4,3 +4,9 @@ sean_colsen:
   bio: >
     Sean Colsen is an engineer on the Mathesar Maintainers team, focusing mostly on front end work. As a self-taught coder, he's been building cool stuff with web tech since 2007.
   image: /assets/sean.jpg
+kriti_godey:
+  name: Kriti Godey
+  role: Project Lead at Mathesar
+  bio: >
+    Kriti Godey is the project lead of Mathesar and works on most aspects of the project. She first started working on open source as head of engineering at Creative Commons, and worked at various startups before that.
+  image: /assets/kriti.jpg
