@@ -298,6 +298,10 @@
   profile_image: https://github.com/raisachatterjee.png
   profile_url: https://github.com/raisachatterjee
   username: raisachatterjee
+- name: null
+  profile_image: https://github.com/transifex-integration[bot].png
+  profile_url: https://github.com/transifex-integration[bot]
+  username: transifex-integration[bot]
 - name: Sukshan Jadhao
   profile_image: https://github.com/Sukshan.png
   profile_url: https://github.com/Sukshan
