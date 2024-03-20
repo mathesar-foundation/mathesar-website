@@ -2,7 +2,7 @@
 layout: post
 title: "Mathesar Featured on GitHub's Open Source Friday Live Stream"
 tags: publicity video
-date: 2024-03-15
+date: 2024-03-20
 author: sean_colsen
 description: "Mathesar Featured on GitHub's Open Source Friday Live Stream"
 image: /assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg
