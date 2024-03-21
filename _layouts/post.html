@@ -1,23 +1,23 @@
 ---
 layout: default
 ---
+
 {% assign author = site.data.authors[page.author] %}
 
 <div class="mb-32">
   <div class="max-w-4xl mx-auto my-16 min-h-screen space-y-8">
-
-
     <div class="p-8 mx-4 h-full bg-white rounded">
       <article class="space-y-8">
         <header class="space-y-2">
           <h1 class="text-5xl font-semibold">{{ page.title }}</h1>
           <p class="text-gray-600 text-sm">
-            Posted on {{ page.date | date: "%b %d, %Y" }} by 
-            <a class="font-bold" href="/blog/authors/{{ page.author }}">{{ author.name }}</a>
-            
+            Posted on {{ page.date | date: "%b %d, %Y" }} by
+            <a class="font-bold" href="/blog/authors/{{ page.author }}"
+              >{{ author.name }}</a
+            >
           </p>
 
-          {% include tag_cloud.html %}
+          {% include tag_cloud.html tags=page.tags %}
         </header>
 
         <div
@@ -28,10 +28,5 @@ layout: default
       </article>
     </div>
   </div>
-
-
-  
 </div>
 {% include latest-posts.html %}
-
-
