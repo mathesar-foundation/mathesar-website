@@ -17,7 +17,7 @@ site.data.authors[include.post.author] %}
       </a>
     </p>
   </div>
-  {% include tag_cloud.html %}
+  {% include tag_cloud.html tags=include.post.tags %}
 
   <div
     class="border {% if size == 'small' %} h-40 {% else %} lg:h-80 h-40 {% endif %} overflow-hidden w-full rounded-lg mb-6 relative"

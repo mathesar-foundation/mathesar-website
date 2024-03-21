@@ -1,10 +1,10 @@
-{% if site.tags.size > 0 %}
+{% if include.tags.size > 0 %}
   <div class="tag-cloud">
     <ul class="flex items-center flex-wrap gap-1">
-      {% for tag in site.tags %}
+      {% for tag in include.tags %}
         <li class="tag-item">
           <a href="{{ '/blog/tag/' | append: tag[0] | relative_url }}" class="bg-red-500 bg-opacity-80 text-white rounded px-1 cursor-pointer text-sm hover:bg-blue-600">
-            {{ tag[0] }}
+            {{ tag }}
           </a>
         </li>
       {% endfor %}
