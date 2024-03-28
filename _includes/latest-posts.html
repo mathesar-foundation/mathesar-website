@@ -3,20 +3,18 @@
     <div class="text-center space-y-4 max-w-2xl mx-auto">
       <h3 class="text-4xl font-bold">Recent Blog Posts</h3>
     </div>
-    
-    {% assign post_count = site.posts | where_exp: "post", "post.url != page.url" | size %}
-    {% if post_count > 0 %}
-      <ul class="latest-posts-list mx-auto gap-4 lg:flex justify-center">
-        {% for post in site.posts limit:3 %}
-          {% if post.url != page.url %}
-            {% include blog_card.html post=post size='small' %}
-          {% endif %}
-        {% endfor %}
-      </ul>
+
+    {% assign post_count = site.posts | where_exp: "post", "post.url !=
+    page.url" | size %} {% if post_count > 0 %}
+    <div class="latest-posts-list mx-auto gap-4 lg:flex justify-center">
+      {% for post in site.posts limit:3 %} {% if post.url != page.url %} {%
+      include blog_snippet.html post=post size='small' %} {% endif %} {% endfor
+      %}
+    </div>
     {% else %}
-      <div class="text-center">
-        <p>No recent posts available.</p>
-      </div>
+    <div class="text-center">
+      <p>No recent posts available.</p>
+    </div>
     {% endif %}
   </div>
 </section>
