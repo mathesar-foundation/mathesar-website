@@ -3,7 +3,7 @@ layout: post
 title: "Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration"
 tags: announcement news
 date: 2024-03-28
-author: kriti_godey
+author: mathesar_foundation
 description: "Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration"
 image: /assets/images/2024-03-funding-announcement-image.png
 ---
