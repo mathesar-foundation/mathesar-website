@@ -26,7 +26,7 @@ Mathesar aims to be a new kind of tool that is easy to use for non-technical use
 
 Currently, Mathesar is in its alpha stage, with early adopters testing it out for a variety of use cases. We release new versions every month (here's our [Feb 2024 release](https://docs.mathesar.org/releases/0.1.5/)). We are actively working toward launching a stable beta version in the next few months, prioritizing improvements in security, performance, and usability. Despite being in the early stages, our community is rapidly growing, with numerous committed early adopters, 2200 GitHub stars, and more than 90 contributors to our codebase.
 
----
+### Getting Involved
 
 If you're interested in Mathesar or you'd like to get involved, please check out:
 
