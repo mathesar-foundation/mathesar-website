@@ -6,16 +6,22 @@ image: /assets/og-free-install.png
 ---
 
 {% capture header %}
-We'll help you install Mathesar for free
-
-(limited slots available)
+Installation Support
 {% endcapture %}
 
 {% capture subheader %}
-Interested in being an early adopter? We can help you set up your Mathesar installation.
-In return, we’d like to regularly hear your honest feedback on Mathesar. This will help us continue to make improvements.
+We are no longer offering free installation services for Mathesar.
+
+Thank you to all our early adopters for your interest and valuable feedback, which continue to drive Mathesar's improvement.
 {% endcapture %}
 
 {% include page-header.html header=header subheader=subheader actions=actions %}
 
-{% include free-install-form.html %}
+{% capture highlight %}
+For support and more information, please refer to our community resources:
+
+- [Mathesar Community on Matrix](https://wiki.mathesar.org/en/community/matrix)
+- [Mathesar on GitHub](https://github.com/centerofci/mathesar)
+{% endcapture %}
+
+{% include highlight.html content=highlight theme='lighter' separator=true %}
