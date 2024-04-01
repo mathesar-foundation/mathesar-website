@@ -452,91 +452,35 @@
 </div>
 
     <div class="flex-grow">
-<div class="max-w-2xl space-y-8 mx-auto px-4 py-16 page-header">
+<div class="max-w-2xl space-y-8 mx-auto px-4 lg:px-0 py-16 page-header">
   <h2 class="font-bold text-3xl lg:text-5xl text-center space-y-2">
     
-<p>We’ll help you install Mathesar for free</p>
-
-<p>(limited slots available)</p>
+<p>Installation Support</p>
 
   </h2>
   <div class="w-40 border-t-2 border-stone-400 mx-auto"></div>
   
   <div class="text-lg lg:text-2xl space-y-4 text-left">
     
-<p>Interested in being an early adopter? We can help you set up your Mathesar installation.
-In return, we’d like to regularly hear your honest feedback on Mathesar. This will help us continue to make improvements.</p>
+<p>We’re working hard on Mathesar’s beta version, coming summer 2024. To help us focus, we’ve paused offering help with installation.</p>
+
+<p>Feel free to contact us at <a href="mailto:hello@mathesar.org">hello@mathesar.org</a> for general questions or feedback.</p>
 
   </div>
    
 </div>
 
-<section class="p-8 rounded bg-stone-100 angled dark space-y-8 mb-32">
-  <h4 class="text-center">
-    <span class="text-2xl">Request a free install</span>
-  </h4>
-  <form class="mx-auto max-w-2xl" action="https://formspree.io/f/moqbgpro" method="POST" id="free-install-form">
-    <div class="flex flex-col space-y-4 space-y-4">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="flex flex-col space-y-1">
-          <label for="last_name">Full Name</label>
-          <input class="border p-2 rounded" type="text" id="full_name" name="full_name" />
-        </div>
-        <div class="flex flex-col space-y-1">
-          <label for="email">Email</label>
-          <input class="border p-2 rounded" type="email" id="email" name="email" />
-        </div>
-      </div>
-      <div class="flex flex-col space-y-1">
-        <label for="use_case">What will you use Mathesar for?</label>
-        <textarea class="border p-2 rounded" id="use_case" name="use_case" rows="4"></textarea>
-      </div>
-      <div class="flex flex-col space-y-1">
-        <label for="current_solution">How do you currently solve this problem?</label>
-        <textarea class="border p-2 rounded" id="current_solution" name="current_solution" rows="4"></textarea>
-      </div>
-      <div class="flex flex-col space-y-1">
-        <label for="hosting_provider">Where do you plan to host Mathesar?</label>
-        <p class="text-gray-200 italic">If you're not sure, that's okay.</p> 
-        <input class="border p-2 rounded" type="text" id="hosting_provider" name="hosting_provider" />
-      </div>
-      <div class="flex flex-col space-y-1 space-y-4">
-        <label for="other_info">Any other information we should know?</label>
-        <textarea class="border p-2 rounded" id="other_info" name="other_info" rows="4"></textarea>
-      </div>
+<section class="bg-gray-800 angled py-40 text-white lighter">
+  <div class="max-w-2xl px-4 lg:px-0 mx-auto space-y-8">
+    
+
+    <div class="text-xl space-y-4 highlight-content">
+      
+<p>You can also join our community and talk to us on <a href="https://wiki.mathesar.org/en/community/matrix">Matrix</a> or <a href="https://github.com/centerofci/mathesar">GitHub</a>.</p>
+
     </div>
-
-    <div class="flex justify-end mt-4">
-      <button class="bg-blue-600 rounded text-xl p-2 text-white w-max" type="submit">
-        Request Free Install
-      </button>
-    </div>
-
-    <p class="success-text mt-4 hidden text-center"></p>
-    <p class="error-text mt-4 hidden text-center"></p>
-
-    <p class="mt-4 text-gray-200 text-lg bg-stone-100 bg-opacity-10 p-2 rounded mt-8">
-      Next: we’ll either reach out to learn more about your use case – or let
-      you know if we’re out of capacity. Thank you.
-    </p>
-  </form>
+  </div>
 </section>
-
-<script>
-  // Event setup for free install form
-  const freeInstallFormId = "free-install-form";
-    const freeInstallForm = document.getElementById(freeInstallFormId);
-    function handleFreeInstallFormSubmit(event) {
-      event.preventDefault();
-      const { setLoading, unsetLoading } = loadingStateManager(freeInstallFormId);
-      setLoading();
-      sendFormDataToFormspree(event, freeInstallForm)
-        .then(() => showSuccessText(freeInstallFormId))
-        .catch(() => showErrorText(freeInstallFormId))
-        .finally(unsetLoading);
-    }
-    freeInstallForm.addEventListener("submit", handleFreeInstallFormSubmit);
-</script>
 
 </div>
     <footer class="bg-gray-900 text-white py-8 px-4 page-footer">
