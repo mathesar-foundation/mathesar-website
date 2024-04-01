@@ -10,18 +10,15 @@ Installation Support
 {% endcapture %}
 
 {% capture subheader %}
-We are no longer offering free installation services for Mathesar.
+We're working hard on Mathesar's beta version, coming summer 2024. To help us focus, we've paused offering help with installation. 
 
-Thank you to all our early adopters for your interest and valuable feedback, which continue to drive Mathesar's improvement.
+Feel free to contact us at <hello@mathesar.org> for general questions or feedback.
 {% endcapture %}
 
 {% include page-header.html header=header subheader=subheader actions=actions %}
 
 {% capture highlight %}
-For support and more information, please refer to our community resources:
-
-- [Mathesar Community on Matrix](https://wiki.mathesar.org/en/community/matrix)
-- [Mathesar on GitHub](https://github.com/centerofci/mathesar)
+You can also join our community and talk to us on [Matrix](https://wiki.mathesar.org/en/community/matrix) or [GitHub](https://github.com/centerofci/mathesar).
 {% endcapture %}
 
 {% include highlight.html content=highlight theme='lighter' separator=true %}
