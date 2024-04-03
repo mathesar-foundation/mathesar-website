@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://mathesar.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mathesar.org/" rel="alternate" type="text/html" /><updated>2024-04-02T23:23:55+00:00</updated><id>https://mathesar.org/feed.xml</id><title type="html">Mathesar</title><subtitle>Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.</subtitle><entry><title type="html">Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration</title><link href="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html" rel="alternate" type="text/html" title="Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration" /><published>2024-03-28T00:00:00+00:00</published><updated>2024-03-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html">&lt;p&gt;We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project’s long-term sustainability.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://mathesar.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mathesar.org/" rel="alternate" type="text/html" /><updated>2024-04-03T17:19:44+00:00</updated><id>https://mathesar.org/feed.xml</id><title type="html">Mathesar</title><subtitle>Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.</subtitle><entry><title type="html">Mathesar 0.1.6 Released</title><link href="https://mathesar.org/blog/2024/04/03/release-0-1-6.html" rel="alternate" type="text/html" title="Mathesar 0.1.6 Released" /><published>2024-04-03T00:00:00+00:00</published><updated>2024-04-03T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/04/03/release-0-1-6</id><content type="html" xml:base="https://mathesar.org/blog/2024/04/03/release-0-1-6.html">&lt;p&gt;Mathesar 0.1.6 introduces UI internationalization and brings several improvements for both users and administrators.&lt;/p&gt;
+
+&lt;p&gt;This post gives you a peek at some of the improvements in the release. Please see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.6/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+
+&lt;h3 id=&quot;mathesars-ui-can-now-display-in-japanese&quot;&gt;Mathesar’s UI can now display in Japanese&lt;/h3&gt;
+
+&lt;p&gt;The language setting is stored per-user and can be modified when logging in or when editing a user. This changes the text displayed on buttons and other UI elements within Mathesar. It does not change the display of data within your database (e.g. table names, column names, and cell values). We are hoping to support more languages beyond English and Japanese eventually. Please reach out to us if your are interested in helping to add more translations!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/f100423a-922c-4b6c-ad22-3c16cd06afde&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;text-fields-now-auto-expand-on-the-record-page&quot;&gt;Text fields now auto-expand on the record page&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Before&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;All text inputs on the record page had the same height, regardless of their content.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/e6ded1de-7b81-49f9-9b2e-7a6311a22d4f&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;After&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;All text inputs in record page dynamically adjust to accommodate the content seamlessly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/31e031cc-5c71-447f-9381-c4d6fae03b2d&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;mathesar-can-now-run-on-more-python-versions&quot;&gt;Mathesar can now run on more Python versions&lt;/h3&gt;
+
+&lt;p&gt;Mathesar now officially supports Python versions 3.10 and 3.11, in addition to the existing 3.9 compatibility. This will provide great flexibility while building Mathesar from source on an OS that natively ships with relatively newer versions of Python.&lt;/p&gt;
+
+&lt;h3 id=&quot;mathesar-is-now-tested-against-postgresql-16&quot;&gt;Mathesar is now tested against PostgreSQL 16&lt;/h3&gt;
+
+&lt;p&gt;Mathesar now officially supports, and is tested against, Postgres versions 13, 14, 15 and 16.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-mathesar-from-scratch-no-longer-involves-nodejs&quot;&gt;Installing Mathesar from scratch no longer involves NodeJS&lt;/h3&gt;
+
+&lt;p&gt;We removed NodeJS as a dependency in favour of providing users with pre-built static assest for building Mathesar from source.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.6/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;</content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar 0.1.6 introduces UI internationalization and brings several improvements for both users and administrators.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/016-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/016-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration</title><link href="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html" rel="alternate" type="text/html" title="Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration" /><published>2024-03-28T00:00:00+00:00</published><updated>2024-03-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html">&lt;p&gt;We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project’s long-term sustainability.&lt;/p&gt;
 
 &lt;p&gt;The Mathesar Foundation is a 501(c)(3) nonprofit, spearheaded by CEO and project lead Kriti Godey. Kriti, a seasoned software engineer, brings extensive expertise building open-source communities and leading distributed engineering teams. The board comprises Godey; Samantha Bates Weinstock, an experienced professional in nonprofit and academic spheres, currently overseeing operations for xD, an emerging technologies team at the U.S. Census Bureau; and Ian Alas, an entrepreneurial generalist with a varied background in startup and corporate ventures, presently managing special projects for Reid Hoffman.&lt;/p&gt;
 
