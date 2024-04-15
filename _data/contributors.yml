@@ -2,14 +2,14 @@
   profile_image: https://github.com/pavish.png
   profile_url: https://github.com/pavish
   username: pavish
-- name: Mukesh
-  profile_image: https://github.com/silentninja.png
-  profile_url: https://github.com/silentninja
-  username: silentninja
 - name: Brent Moran
   profile_image: https://github.com/mathemancer.png
   profile_url: https://github.com/mathemancer
   username: mathemancer
+- name: Mukesh
+  profile_image: https://github.com/silentninja.png
+  profile_url: https://github.com/silentninja
+  username: silentninja
 - name: Sean Colsen
   profile_image: https://github.com/seancolsen.png
   profile_url: https://github.com/seancolsen
