@@ -314,30 +314,30 @@
   profile_image: https://github.com/Sukshan.png
   profile_url: https://github.com/Sukshan
   username: Sukshan
-- name: Deepjyoti Deka
-  profile_image: https://github.com/deka014.png
-  profile_url: https://github.com/deka014
-  username: deka014
-- name: Khandker Aftarul Islam (Monmoy)
-  profile_image: https://github.com/KAIMonmoy.png
-  profile_url: https://github.com/KAIMonmoy
-  username: KAIMonmoy
-- name: null
-  profile_image: https://github.com/LFLATH.png
-  profile_url: https://github.com/LFLATH
-  username: LFLATH
-- name: Sahil Saini
-  profile_image: https://github.com/sahilsaini1107.png
-  profile_url: https://github.com/sahilsaini1107
-  username: sahilsaini1107
-- name: Ziad
-  profile_image: https://github.com/Ziad-I.png
-  profile_url: https://github.com/Ziad-I
-  username: Ziad-I
 - name: Kevin Liang
   profile_image: https://github.com/kwliang1.png
   profile_url: https://github.com/kwliang1
   username: kwliang1
+- name: Ziad
+  profile_image: https://github.com/Ziad-I.png
+  profile_url: https://github.com/Ziad-I
+  username: Ziad-I
+- name: Sahil Saini
+  profile_image: https://github.com/sahilsaini1107.png
+  profile_url: https://github.com/sahilsaini1107
+  username: sahilsaini1107
+- name: Deepjyoti Deka
+  profile_image: https://github.com/deka014.png
+  profile_url: https://github.com/deka014
+  username: deka014
+- name: null
+  profile_image: https://github.com/LFLATH.png
+  profile_url: https://github.com/LFLATH
+  username: LFLATH
+- name: Khandker Aftarul Islam (Monmoy)
+  profile_image: https://github.com/KAIMonmoy.png
+  profile_url: https://github.com/KAIMonmoy
+  username: KAIMonmoy
 - name: Abhinav Sehgal
   profile_image: https://github.com/sehgxl.png
   profile_url: https://github.com/sehgxl
@@ -366,6 +366,10 @@
   profile_image: https://github.com/bohemia420.png
   profile_url: https://github.com/bohemia420
   username: bohemia420
+- name: Rahul Soni
+  profile_image: https://github.com/InosRahul.png
+  profile_url: https://github.com/InosRahul
+  username: InosRahul
 - name: Pawan Patil
   profile_image: https://github.com/PawanPatil19.png
   profile_url: https://github.com/PawanPatil19
