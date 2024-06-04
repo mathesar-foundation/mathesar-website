@@ -158,14 +158,14 @@
   profile_image: https://github.com/TafreedAhmad.png
   profile_url: https://github.com/TafreedAhmad
   username: TafreedAhmad
-- name: Kevin Yan
-  profile_image: https://github.com/yankevn.png
-  profile_url: https://github.com/yankevn
-  username: yankevn
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Kevin Yan
+  profile_image: https://github.com/yankevn.png
+  profile_url: https://github.com/yankevn
+  username: yankevn
 - name: Mehul Todi
   profile_image: https://github.com/kid-116.png
   profile_url: https://github.com/kid-116
