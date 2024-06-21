@@ -150,6 +150,10 @@
   profile_image: https://github.com/priyang12.png
   profile_url: https://github.com/priyang12
   username: priyang12
+- name: null
+  profile_image: https://github.com/dependabot[bot].png
+  profile_url: https://github.com/dependabot[bot]
+  username: dependabot[bot]
 - name: Vrutik Prajapati
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
@@ -158,10 +162,6 @@
   profile_image: https://github.com/TafreedAhmad.png
   profile_url: https://github.com/TafreedAhmad
   username: TafreedAhmad
-- name: null
-  profile_image: https://github.com/dependabot[bot].png
-  profile_url: https://github.com/dependabot[bot]
-  username: dependabot[bot]
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
