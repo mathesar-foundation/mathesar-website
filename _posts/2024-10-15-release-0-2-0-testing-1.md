@@ -24,7 +24,7 @@ We welcome all feedback, especially on:
 - Concerns with using Mathesar in production
 - Critical missing features for your use case (details appreciated!)
 
-Share your feedback on **[this GitHub discussion](https://github.com/mathesar-foundation/mathesar/discussions/3956)** or email us at **hello@mathesar.org**. For bug reports or feature requests, feel free to open a [GitHub issue](https://github.com/mathesar-foundation/mathesar/issues/new/choose).
+Share your feedback on **[this GitHub discussion](https://github.com/mathesar-foundation/mathesar/discussions/3956)** or email us at **hello@mathesar.org**.
 
 ## What's new
 
