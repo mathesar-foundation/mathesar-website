@@ -40,7 +40,7 @@ Database administrators can set up access control directly on the database and u
 
 ### Performance improvements and RPC API
 
-We've made major improvements to the responsiveness of the Mathesar UI. Loading data and data entry should be much more snappy, and importing data into Mathsar is around 50 times faster. We've also eliminated the need to manually sync database schema changes to Mathesar.
+We've made major improvements to the responsiveness of the Mathesar UI. Loading data and data entry should be much more snappy, and importing data into Mathesar is around 50 times faster. We've also eliminated the need to manually sync database schema changes to Mathesar.
 
 To achieve these performance benefits, we needed to overhaul our backend architecture and API. We have built out a new RPC API and our frontend UI now primarily uses that API. Most of our REST API endpoints are now deprecated and will be removed soon.
 
