@@ -142,14 +142,14 @@
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
   username: SumeetHaryani
-- name: Vrutik Prajapati
-  profile_image: https://github.com/vrutik2809.png
-  profile_url: https://github.com/vrutik2809
-  username: vrutik2809
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Vrutik Prajapati
+  profile_image: https://github.com/vrutik2809.png
+  profile_url: https://github.com/vrutik2809
+  username: vrutik2809
 - name: Priyang
   profile_image: https://github.com/priyang12.png
   profile_url: https://github.com/priyang12
