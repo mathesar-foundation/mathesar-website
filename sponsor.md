@@ -11,7 +11,7 @@ Sponsor Mathesar
 {% capture subheader %}
 Mathesar is a non-profit project maintained by a small team. Your financial support helps us sustain the project.
 
-You can sponsor Mathesar through [Open Collective](https://opencollective.com/mathesar){:target="_blank" rel="noopener"} or [GitHub Sponsors](https://github.com/sponsors/centerofci){:target="_blank" rel="noopener"}.
+You can sponsor Mathesar through [Open Collective](https://opencollective.com/mathesar){:target="_blank" rel="noopener"} or [GitHub Sponsors](https://github.com/sponsors/mathesar-foundation){:target="_blank" rel="noopener"}.
 
 {% endcapture %}
 
