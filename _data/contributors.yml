@@ -134,14 +134,14 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
-- name: Colin Powell
-  profile_image: https://github.com/powellc.png
-  profile_url: https://github.com/powellc
-  username: powellc
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Colin Powell
+  profile_image: https://github.com/powellc.png
+  profile_url: https://github.com/powellc
+  username: powellc
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
