@@ -3,21 +3,21 @@
   role: CEO & Project Lead
   bio: |+
     "My husband and I use a database-backed application to **track movies**. Movies we own, movies we want to watch, movies we’ve watched.
-    
+
     I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!"
 - name: Sean Colsen
   image: sean.jpg
   role: Engineer
   bio: |+
     "I have an older relative who has been compiling **family genealogy** data for years through an arduous process of paper forms in the mail. I'd like to digitize it for future generations! Spreadsheets are a poor fit because of the data's highly relational nature. And the family wants to maintain privacy, making existing solutions unappealing.
-    
+
     With Mathesar, our family will eventually be able to collaboratively manage this data and visualize it in new and exciting ways!"
 - name: Ghislaine Guerin
   image: ghislaine.jpg
   role: Product Designer
   bio: |+
     "As someone who really enjoys cooking at home, I'm thinking Mathesar would be a great for **storing all my recipes** in one place. Being able to search and filter my recipes based on ingredients and cooking time would be really cool. I'm excited to give it a try!"
-- name: Pavish Kumar Ramani Gopal 
+- name: Pavish Kumar Ramani Gopal
   image: pavish.jpg
   role: Engineer
   bio: |+
@@ -25,14 +25,14 @@
 
     I'll be logging my daily life: my anime watching habits, exercise routine, work progress, social interactions etc.,
     I can analyze this data to gain valuable insights into my own behavior and lifestyle.
-    
+
     Mathesar is going to make all of this a breeze!"
 - name: Brent Moran
   image: brent.jpg
   role: Engineer
   bio: |+
     "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc.
-    
+
     I'm tentatively calling it the **Country Comparator**."
 - name: Anish Umale
   image: anish.jpg
@@ -44,6 +44,11 @@
   role: Director of Growth and Finance
   bio: |+
     "I’ve been slowly starting to build a **small wine collection** and keeping track of all of my notes has been a huge pain. Using a system like Mathesar would allow me to easily maintain the information and compare wines across vintage, varietal, region and producer."
+- name: Zack Krida
+  image: zack.jpg
+  role: Technical Community Advocate
+  bio: |+
+    "I'm using Mathesar as a **training log** for my rock climbing sessions. I'm able to group and keep track of climbs in different areas, along with their difficulty. I previously used a basic spreadsheet for this, but without real relationships connecting my data, I quickly lost track of my progress."
 - name: Tanya Nguyen
   image: tanya.jpg
   role: Chief of Staff
