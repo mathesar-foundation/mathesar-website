@@ -41,7 +41,7 @@
     "I'm using a database to enable people to make better choices about **which credit card to get**. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
 - name: Adam Mullinax
   image: adam.jpg
-  role: Director of Finance and Operations
+  role: Director of Growth and Finance
   bio: |+
     "I’ve been slowly starting to build a **small wine collection** and keeping track of all of my notes has been a huge pain. Using a system like Mathesar would allow me to easily maintain the information and compare wines across vintage, varietal, region and producer."
 - name: Zack Krida
@@ -49,3 +49,13 @@
   role: Technical Community Advocate
   bio: |+
     "I'm using Mathesar as a **training log** for my rock climbing sessions. I'm able to group and keep track of climbs in different areas, along with their difficulty. I previously used a basic spreadsheet for this, but without real relationships connecting my data, I quickly lost track of my progress."
+- name: Tanya Nguyen
+  image: tanya.jpg
+  role: Chief of Staff
+  bio: |+
+    "Mathesar is the perfect place to **organize my home library**. It’s an easy way to keep track of what’s in my collection, maintain notes about my favorite books, and see all the ones I have yet to read."
+- name: Amanda Jayawardene
+  image: amanda.jpg
+  role: Operations Assistant
+  bio: |+
+    "I’m always balancing fitness goals, books I want to read, TV shows I need to catch up on, and ongoing projects. Mathesar would help me keep track of it all in one place, making it easy to stay organized and on top of **my priorities**."
