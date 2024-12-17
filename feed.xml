@@ -1,227 +1,227 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://mathesar.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mathesar.org/" rel="alternate" type="text/html" /><updated>2024-12-16T23:26:35+00:00</updated><id>https://mathesar.org/feed.xml</id><title type="html">Mathesar</title><subtitle>Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.</subtitle><entry><title type="html">Test build Mathesar v0.2.0-testing.1 released</title><link href="https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1.html" rel="alternate" type="text/html" title="Test build Mathesar v0.2.0-testing.1 released" /><published>2024-10-15T00:00:00+00:00</published><updated>2024-10-15T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1</id><content type="html" xml:base="https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1.html">&lt;p&gt;&lt;strong&gt;Mathesar 0.2.0-testing.1&lt;/strong&gt; offers an early preview of improvements we plan to release in our beta version, including dramatically improved UI responsiveness and a new access control system based on Postgres permissions. This is the first step towards launching the Mathesar beta.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://mathesar.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mathesar.org/" rel="alternate" type="text/html" /><updated>2024-12-17T16:25:17+00:00</updated><id>https://mathesar.org/feed.xml</id><title type="html">Mathesar</title><subtitle>Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database. Our web-based interface helps you and your collaborators work with data more independently and comfortably – no technical skills needed.</subtitle><entry><title type="html">Test build Mathesar v0.2.0-testing.1 released</title><link href="https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1.html" rel="alternate" type="text/html" title="Test build Mathesar v0.2.0-testing.1 released" /><published>2024-10-15T00:00:00+00:00</published><updated>2024-10-15T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1</id><content type="html" xml:base="https://mathesar.org/blog/2024/10/15/release-0-2-0-testing-1.html"><![CDATA[<p><strong>Mathesar 0.2.0-testing.1</strong> offers an early preview of improvements we plan to release in our beta version, including dramatically improved UI responsiveness and a new access control system based on Postgres permissions. This is the first step towards launching the Mathesar beta.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/020-testing1-announcement.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/020-testing1-announcement.png" alt="image" /></p>
 
-&lt;h2 id=&quot;we-need-your-help&quot;&gt;We need your help!&lt;/h2&gt;
+<h2 id="we-need-your-help">We need your help!</h2>
 
-&lt;p&gt;We need to hear from as many users as possible about how this new version of Mathesar is working for you. Please try out the build and share your feedback. See our installation instructions for &lt;strong&gt;&lt;a href=&quot;https://docs.mathesar.org/0.2.0-testing.1/installation/docker-compose/&quot;&gt;Docker Compose&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://docs.mathesar.org/0.2.0-testing.1/installation/build-from-source/&quot;&gt;from scratch&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+<p>We need to hear from as many users as possible about how this new version of Mathesar is working for you. Please try out the build and share your feedback. See our installation instructions for <strong><a href="https://docs.mathesar.org/0.2.0-testing.1/installation/docker-compose/">Docker Compose</a></strong> and <strong><a href="https://docs.mathesar.org/0.2.0-testing.1/installation/build-from-source/">from scratch</a></strong>.</p>
 
-&lt;p&gt;Please note that we do not recommend this build for production use. Most features should work, but there are &lt;a href=&quot;https://github.com/mathesar-foundation/mathesar/milestone/78&quot;&gt;some known issues&lt;/a&gt;. You’ll also need to perform a fresh install of Mathesar, upgrades from previous Mathesar releases are not currently supported.&lt;/p&gt;
+<p>Please note that we do not recommend this build for production use. Most features should work, but there are <a href="https://github.com/mathesar-foundation/mathesar/milestone/78">some known issues</a>. You’ll also need to perform a fresh install of Mathesar, upgrades from previous Mathesar releases are not currently supported.</p>
 
-&lt;p&gt;We welcome all feedback, especially on:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;UI speed and responsiveness&lt;/li&gt;
-  &lt;li&gt;Functionality of the new permissions system&lt;/li&gt;
-  &lt;li&gt;Concerns with using Mathesar in production&lt;/li&gt;
-  &lt;li&gt;Critical missing features for your use case (details appreciated!)&lt;/li&gt;
-&lt;/ul&gt;
+<p>We welcome all feedback, especially on:</p>
+<ul>
+  <li>UI speed and responsiveness</li>
+  <li>Functionality of the new permissions system</li>
+  <li>Concerns with using Mathesar in production</li>
+  <li>Critical missing features for your use case (details appreciated!)</li>
+</ul>
 
-&lt;p&gt;Share your feedback on &lt;strong&gt;&lt;a href=&quot;https://github.com/mathesar-foundation/mathesar/discussions/3956&quot;&gt;this GitHub discussion&lt;/a&gt;&lt;/strong&gt; or email us at &lt;strong&gt;hello@mathesar.org&lt;/strong&gt;.&lt;/p&gt;
+<p>Share your feedback on <strong><a href="https://github.com/mathesar-foundation/mathesar/discussions/3956">this GitHub discussion</a></strong> or email us at <strong>hello@mathesar.org</strong>.</p>
 
-&lt;h2 id=&quot;whats-new&quot;&gt;What’s new&lt;/h2&gt;
+<h2 id="whats-new">What’s new</h2>
 
-&lt;p&gt;Here’s a look at some of the improvements in the build. Please see our &lt;a href=&quot;https://docs.mathesar.org/0.2.0-testing.1/releases/0.2.0-testing.1/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+<p>Here’s a look at some of the improvements in the build. Please see our <a href="https://docs.mathesar.org/0.2.0-testing.1/releases/0.2.0-testing.1/">Release Notes</a> for the comprehensive list of all changes and bugfixes.</p>
 
-&lt;h3 id=&quot;access-control-based-on-postgresql-roles-and-privileges&quot;&gt;Access control based on PostgreSQL roles and privileges&lt;/h3&gt;
+<h3 id="access-control-based-on-postgresql-roles-and-privileges">Access control based on PostgreSQL roles and privileges</h3>
 
-&lt;p&gt;We have a brand new access control system based entirely on PostgreSQL database roles and privileges. This gives Mathesar several new capabilities.&lt;/p&gt;
+<p>We have a brand new access control system based entirely on PostgreSQL database roles and privileges. This gives Mathesar several new capabilities.</p>
 
-&lt;p&gt;Database administrators can set up access control directly on the database and use those roles in Mathesar. Mathesar also supports setting up PostgreSQL roles and privileges via the UI, including granular access control at the individual table level.&lt;/p&gt;
+<p>Database administrators can set up access control directly on the database and use those roles in Mathesar. Mathesar also supports setting up PostgreSQL roles and privileges via the UI, including granular access control at the individual table level.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://docs.mathesar.org/0.2.0-testing.1/assets/releases/0.2.0-testing.1/db-settings-collaborators.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://docs.mathesar.org/0.2.0-testing.1/assets/releases/0.2.0-testing.1/db-settings-collaborators.png" alt="image" /></p>
 
-&lt;h3 id=&quot;performance-improvements-and-rpc-api&quot;&gt;Performance improvements and RPC API&lt;/h3&gt;
+<h3 id="performance-improvements-and-rpc-api">Performance improvements and RPC API</h3>
 
-&lt;p&gt;We’ve made major improvements to the responsiveness of the Mathesar UI. Loading data and data entry should be much more snappy, and importing data into Mathesar is around 50 times faster. We’ve also eliminated the need to manually sync database schema changes to Mathesar.&lt;/p&gt;
+<p>We’ve made major improvements to the responsiveness of the Mathesar UI. Loading data and data entry should be much more snappy, and importing data into Mathesar is around 50 times faster. We’ve also eliminated the need to manually sync database schema changes to Mathesar.</p>
 
-&lt;p&gt;To achieve these performance benefits, we needed to overhaul our backend architecture and API. We have built out a new RPC API and our frontend UI now primarily uses that API. Most of our REST API endpoints are now deprecated and will be removed soon.&lt;/p&gt;
+<p>To achieve these performance benefits, we needed to overhaul our backend architecture and API. We have built out a new RPC API and our frontend UI now primarily uses that API. Most of our REST API endpoints are now deprecated and will be removed soon.</p>
 
-&lt;h3 id=&quot;visual-improvements&quot;&gt;Visual improvements&lt;/h3&gt;
+<h3 id="visual-improvements">Visual improvements</h3>
 
-&lt;p&gt;We made several visual improvements to Mathesar to ensure consistency, better usability, and adherence to design guidelines. A before-and-after comparison of the “Create Link” modal can be seen below.&lt;/p&gt;
+<p>We made several visual improvements to Mathesar to ensure consistency, better usability, and adherence to design guidelines. A before-and-after comparison of the “Create Link” modal can be seen below.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://docs.mathesar.org/0.2.0-testing.1/assets/releases/0.2.0-testing.1/create-link-changes.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://docs.mathesar.org/0.2.0-testing.1/assets/releases/0.2.0-testing.1/create-link-changes.png" alt="image" /></p>
 
-&lt;h3 id=&quot;live-demo-changes&quot;&gt;Live demo changes&lt;/h3&gt;
+<h3 id="live-demo-changes">Live demo changes</h3>
 
-&lt;p&gt;We have removed code related to Mathesar’s “live demo” mode since we didn’t think it made sense to include code for our promotional website in the core product.&lt;/p&gt;
+<p>We have removed code related to Mathesar’s “live demo” mode since we didn’t think it made sense to include code for our promotional website in the core product.</p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/0.2.0-testing.1/releases/0.2.0-testing.1/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;
+<p>Here’s the link to our <a href="https://docs.mathesar.org/0.2.0-testing.1/releases/0.2.0-testing.1/">Release Notes</a> again if you’d like to see the full list of all changes and bugfixes.</p>
 
-&lt;p&gt;We look forward to your feedback!&lt;/p&gt;</content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar 0.2.0-testing.1 offers an early preview of improvements we plan to release in our beta version, including dramatically improved UI responsiveness and a new access control system based on Postgres permissions. This is the first step towards launching the Mathesar beta.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/020-testing1-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/020-testing1-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.7 Released</title><link href="https://mathesar.org/blog/2024/05/17/release-0-1-7.html" rel="alternate" type="text/html" title="Mathesar 0.1.7 Released" /><published>2024-05-17T00:00:00+00:00</published><updated>2024-05-17T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/05/17/release-0-1-7</id><content type="html" xml:base="https://mathesar.org/blog/2024/05/17/release-0-1-7.html">&lt;p&gt;Mathesar v0.1.7 was released on April 30. It’s a small release which introduces linked table navigation from the data cell context menu, fixes the regeneration of exploration share URLs, and removes the ‘group’ suffix in the Data Explorer column names.&lt;/p&gt;
+<p>We look forward to your feedback!</p>]]></content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html"><![CDATA[Test build Mathesar v0.2.0-testing.1 released]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/020-testing1-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/020-testing1-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.7 Released</title><link href="https://mathesar.org/blog/2024/05/17/release-0-1-7.html" rel="alternate" type="text/html" title="Mathesar 0.1.7 Released" /><published>2024-05-17T00:00:00+00:00</published><updated>2024-05-17T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/05/17/release-0-1-7</id><content type="html" xml:base="https://mathesar.org/blog/2024/05/17/release-0-1-7.html"><![CDATA[<p>Mathesar v0.1.7 was released on April 30. It’s a small release which introduces linked table navigation from the data cell context menu, fixes the regeneration of exploration share URLs, and removes the ‘group’ suffix in the Data Explorer column names.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/017-announcement.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/017-announcement.png" alt="image" /></p>
 
-&lt;p&gt;This post gives you a peek at some of the improvements in the release. Please see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.7/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+<p>This post gives you a peek at some of the improvements in the release. Please see our <a href="https://docs.mathesar.org/releases/0.1.7/">Release Notes</a> for the comprehensive list of all changes and bugfixes.</p>
 
-&lt;h3 id=&quot;linked-table-navigation-from-cell-context-menu&quot;&gt;Linked Table Navigation from Cell Context Menu&lt;/h3&gt;
+<h3 id="linked-table-navigation-from-cell-context-menu">Linked Table Navigation from Cell Context Menu</h3>
 
-&lt;p&gt;Users can now navigate to linked tables from the cell context menu, providing a more seamless experience when working with linked data.&lt;/p&gt;
+<p>Users can now navigate to linked tables from the cell context menu, providing a more seamless experience when working with linked data.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/845767/3015b1e8-7038-41b3-a9ec-59a4d55780d0&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/845767/3015b1e8-7038-41b3-a9ec-59a4d55780d0" alt="image" /></p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.7/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;</content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar v0.1.7 was released on April 30. It’s a small release which introduces linked table navigation from the data cell context menu, fixes the regeneration of exploration share URLs, and removes the ‘group’ suffix in the Data Explorer column names.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/017-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/017-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.6 Released</title><link href="https://mathesar.org/blog/2024/04/03/release-0-1-6.html" rel="alternate" type="text/html" title="Mathesar 0.1.6 Released" /><published>2024-04-03T00:00:00+00:00</published><updated>2024-04-03T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/04/03/release-0-1-6</id><content type="html" xml:base="https://mathesar.org/blog/2024/04/03/release-0-1-6.html">&lt;p&gt;Mathesar 0.1.6 introduces UI internationalization and brings several improvements for both users and administrators.&lt;/p&gt;
+<p>Here’s the link to our <a href="https://docs.mathesar.org/releases/0.1.7/">Release Notes</a> again if you’d like to see the full list of all changes and bugfixes.</p>]]></content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html"><![CDATA[Mathesar 0.1.7 Released]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/017-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/017-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.6 Released</title><link href="https://mathesar.org/blog/2024/04/03/release-0-1-6.html" rel="alternate" type="text/html" title="Mathesar 0.1.6 Released" /><published>2024-04-03T00:00:00+00:00</published><updated>2024-04-03T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/04/03/release-0-1-6</id><content type="html" xml:base="https://mathesar.org/blog/2024/04/03/release-0-1-6.html"><![CDATA[<p>Mathesar 0.1.6 introduces UI internationalization and brings several improvements for both users and administrators.</p>
 
-&lt;p&gt;This post gives you a peek at some of the improvements in the release. Please see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.6/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+<p>This post gives you a peek at some of the improvements in the release. Please see our <a href="https://docs.mathesar.org/releases/0.1.6/">Release Notes</a> for the comprehensive list of all changes and bugfixes.</p>
 
-&lt;h3 id=&quot;mathesars-ui-can-now-display-in-japanese&quot;&gt;Mathesar’s UI can now display in Japanese&lt;/h3&gt;
+<h3 id="mathesars-ui-can-now-display-in-japanese">Mathesar’s UI can now display in Japanese</h3>
 
-&lt;p&gt;The language setting is stored per-user and can be modified when logging in or when editing a user. This changes the text displayed on buttons and other UI elements within Mathesar. It does not change the display of data within your database (e.g. table names, column names, and cell values). We are hoping to support more languages beyond English and Japanese eventually. Please reach out to us if your are interested in helping to add more translations!&lt;/p&gt;
+<p>The language setting is stored per-user and can be modified when logging in or when editing a user. This changes the text displayed on buttons and other UI elements within Mathesar. It does not change the display of data within your database (e.g. table names, column names, and cell values). We are hoping to support more languages beyond English and Japanese eventually. Please reach out to us if your are interested in helping to add more translations!</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/f100423a-922c-4b6c-ad22-3c16cd06afde&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/52523023/f100423a-922c-4b6c-ad22-3c16cd06afde" alt="image" /></p>
 
-&lt;h3 id=&quot;text-fields-now-auto-expand-on-the-record-page&quot;&gt;Text fields now auto-expand on the record page&lt;/h3&gt;
+<h3 id="text-fields-now-auto-expand-on-the-record-page">Text fields now auto-expand on the record page</h3>
 
-&lt;p&gt;&lt;strong&gt;Before&lt;/strong&gt;&lt;/p&gt;
+<p><strong>Before</strong></p>
 
-&lt;p&gt;All text inputs on the record page had the same height, regardless of their content.&lt;/p&gt;
+<p>All text inputs on the record page had the same height, regardless of their content.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/e6ded1de-7b81-49f9-9b2e-7a6311a22d4f&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/52523023/e6ded1de-7b81-49f9-9b2e-7a6311a22d4f" alt="image" /></p>
 
-&lt;p&gt;&lt;strong&gt;After&lt;/strong&gt;&lt;/p&gt;
+<p><strong>After</strong></p>
 
-&lt;p&gt;All text inputs in record page dynamically adjust to accommodate the content seamlessly.&lt;/p&gt;
+<p>All text inputs in record page dynamically adjust to accommodate the content seamlessly.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/52523023/31e031cc-5c71-447f-9381-c4d6fae03b2d&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/52523023/31e031cc-5c71-447f-9381-c4d6fae03b2d" alt="image" /></p>
 
-&lt;h3 id=&quot;mathesar-can-now-run-on-more-python-versions&quot;&gt;Mathesar can now run on more Python versions&lt;/h3&gt;
+<h3 id="mathesar-can-now-run-on-more-python-versions">Mathesar can now run on more Python versions</h3>
 
-&lt;p&gt;Mathesar now officially supports Python versions 3.10 and 3.11, in addition to the existing 3.9 compatibility. This will provide great flexibility while building Mathesar from source on an OS that natively ships with relatively newer versions of Python.&lt;/p&gt;
+<p>Mathesar now officially supports Python versions 3.10 and 3.11, in addition to the existing 3.9 compatibility. This will provide great flexibility while building Mathesar from source on an OS that natively ships with relatively newer versions of Python.</p>
 
-&lt;h3 id=&quot;mathesar-is-now-tested-against-postgresql-16&quot;&gt;Mathesar is now tested against PostgreSQL 16&lt;/h3&gt;
+<h3 id="mathesar-is-now-tested-against-postgresql-16">Mathesar is now tested against PostgreSQL 16</h3>
 
-&lt;p&gt;Mathesar now officially supports, and is tested against, Postgres versions 13, 14, 15 and 16.&lt;/p&gt;
+<p>Mathesar now officially supports, and is tested against, Postgres versions 13, 14, 15 and 16.</p>
 
-&lt;h3 id=&quot;installing-mathesar-from-scratch-no-longer-involves-nodejs&quot;&gt;Installing Mathesar from scratch no longer involves NodeJS&lt;/h3&gt;
+<h3 id="installing-mathesar-from-scratch-no-longer-involves-nodejs">Installing Mathesar from scratch no longer involves NodeJS</h3>
 
-&lt;p&gt;We removed NodeJS as a dependency in favour of providing users with pre-built static assest for building Mathesar from source.&lt;/p&gt;
+<p>We removed NodeJS as a dependency in favour of providing users with pre-built static assest for building Mathesar from source.</p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.6/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;</content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar 0.1.6 introduces UI internationalization and brings several improvements for both users and administrators.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/016-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/016-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration</title><link href="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html" rel="alternate" type="text/html" title="Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration" /><published>2024-03-28T00:00:00+00:00</published><updated>2024-03-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html">&lt;p&gt;We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project’s long-term sustainability.&lt;/p&gt;
+<p>Here’s the link to our <a href="https://docs.mathesar.org/releases/0.1.6/">Release Notes</a> again if you’d like to see the full list of all changes and bugfixes.</p>]]></content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html"><![CDATA[Mathesar 0.1.6 Released]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/016-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/016-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration</title><link href="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html" rel="alternate" type="text/html" title="Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration" /><published>2024-03-28T00:00:00+00:00</published><updated>2024-03-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/28/mathesar-foundation-announcement.html"><![CDATA[<p>We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project’s long-term sustainability.</p>
 
-&lt;p&gt;The Mathesar Foundation is a 501(c)(3) nonprofit, spearheaded by CEO and project lead Kriti Godey. Kriti, a seasoned software engineer, brings extensive expertise building open-source communities and leading distributed engineering teams. The board comprises Godey; Samantha Bates Weinstock, an experienced professional in nonprofit and academic spheres, currently overseeing operations for xD, an emerging technologies team at the U.S. Census Bureau; and Ian Alas, an entrepreneurial generalist with a varied background in startup and corporate ventures, presently managing special projects for Reid Hoffman.&lt;/p&gt;
+<p>The Mathesar Foundation is a 501(c)(3) nonprofit, spearheaded by CEO and project lead Kriti Godey. Kriti, a seasoned software engineer, brings extensive expertise building open-source communities and leading distributed engineering teams. The board comprises Godey; Samantha Bates Weinstock, an experienced professional in nonprofit and academic spheres, currently overseeing operations for xD, an emerging technologies team at the U.S. Census Bureau; and Ian Alas, an entrepreneurial generalist with a varied background in startup and corporate ventures, presently managing special projects for Reid Hoffman.</p>
 
-&lt;p&gt;We extend our sincere gratitude to Reid Hoffman for his invaluable support in establishing and fostering the growth of the Mathesar Foundation. His encouragement not only serves as a validation of our vision and endeavors but also greatly enhances our capacity to effect positive change. We are excited about the opportunities this grant opens up for us to advance our mission and improve the effectiveness of data in solving other problems.&lt;/p&gt;
+<p>We extend our sincere gratitude to Reid Hoffman for his invaluable support in establishing and fostering the growth of the Mathesar Foundation. His encouragement not only serves as a validation of our vision and endeavors but also greatly enhances our capacity to effect positive change. We are excited about the opportunities this grant opens up for us to advance our mission and improve the effectiveness of data in solving other problems.</p>
 
-&lt;h3 id=&quot;mathesars-goals&quot;&gt;Mathesar’s Goals&lt;/h3&gt;
+<h3 id="mathesars-goals">Mathesar’s Goals</h3>
 
-&lt;p&gt;We believe that the world is a better place when human decisions are grounded in reality and understanding. Data can help with that, but the utility of data is limited by the tools available to work with it. Current data tools come with trade-offs: they lock their users into their ecosystem, don’t let users have full control over their own data, and are often inflexible and difficult to use. &lt;/p&gt;
+<p>We believe that the world is a better place when human decisions are grounded in reality and understanding. Data can help with that, but the utility of data is limited by the tools available to work with it. Current data tools come with trade-offs: they lock their users into their ecosystem, don’t let users have full control over their own data, and are often inflexible and difficult to use. </p>
 
-&lt;p&gt;This problem has been solved at the lower level of the technology stack. Open source databases like PostgreSQL have been mainstays for decades and solve many data problems elegantly, but their power is only accessible by software developers.&lt;/p&gt;
+<p>This problem has been solved at the lower level of the technology stack. Open source databases like PostgreSQL have been mainstays for decades and solve many data problems elegantly, but their power is only accessible by software developers.</p>
 
-&lt;p&gt;Mathesar aims to be a new kind of tool that is easy to use for non-technical users, while also prioritizing technical users’ needs like data normalization, data portability, and interoperability with existing database tooling. By championing openness, interoperability, and community involvement, Mathesar is helping build a more informed, connected, and empowered world.&lt;/p&gt;
+<p>Mathesar aims to be a new kind of tool that is easy to use for non-technical users, while also prioritizing technical users’ needs like data normalization, data portability, and interoperability with existing database tooling. By championing openness, interoperability, and community involvement, Mathesar is helping build a more informed, connected, and empowered world.</p>
 
-&lt;h3 id=&quot;progress-so-far&quot;&gt;Progress So Far&lt;/h3&gt;
+<h3 id="progress-so-far">Progress So Far</h3>
 
-&lt;p&gt;Currently, Mathesar is in its alpha stage, with early adopters testing it out for a variety of use cases. We release new versions every month (see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.5/&quot;&gt;Feb 2024 release&lt;/a&gt;). We are actively working toward launching a stable beta version in the next few months, prioritizing improvements in security, performance, and usability. Despite being in the early stages, our community is rapidly growing, with numerous committed early adopters, 2200 GitHub stars, and more than 90 contributors to our codebase.&lt;/p&gt;
+<p>Currently, Mathesar is in its alpha stage, with early adopters testing it out for a variety of use cases. We release new versions every month (see our <a href="https://docs.mathesar.org/releases/0.1.5/">Feb 2024 release</a>). We are actively working toward launching a stable beta version in the next few months, prioritizing improvements in security, performance, and usability. Despite being in the early stages, our community is rapidly growing, with numerous committed early adopters, 2200 GitHub stars, and more than 90 contributors to our codebase.</p>
 
-&lt;h3 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h3&gt;
+<h3 id="getting-involved">Getting Involved</h3>
 
-&lt;p&gt;If you’re interested in Mathesar or you’d like to get involved, please check out:&lt;/p&gt;
+<p>If you’re interested in Mathesar or you’d like to get involved, please check out:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mathesar.org/&quot;&gt;Our website&lt;/a&gt; to learn more about the product&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mathesar-foundation/mathesar&quot;&gt;Our GitHub repository&lt;/a&gt; to contribute to the project&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mathesar.org/mailing-list.html&quot;&gt;Our mailing list&lt;/a&gt; to stay up to date on Mathesar’s progress&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://mathesar.org/">Our website</a> to learn more about the product</li>
+  <li><a href="https://github.com/mathesar-foundation/mathesar">Our GitHub repository</a> to contribute to the project</li>
+  <li><a href="https://mathesar.org/mailing-list.html">Our mailing list</a> to stay up to date on Mathesar’s progress</li>
+</ul>
 
-&lt;p&gt;If you’d like to work with us or have any questions, please don’t hesitate to email us at &lt;a href=&quot;mailto:hello@mathesar.org&quot;&gt;hello@mathesar.org&lt;/a&gt;.&lt;/p&gt;</content><author><name>Mathesar Foundation</name></author><category term="announcement" /><category term="news" /><summary type="html">We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project’s long-term sustainability.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/2024-03-funding-announcement-image.png" /><media:content medium="image" url="https://mathesar.org/assets/images/2024-03-funding-announcement-image.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar Featured on GitHub’s Open Source Friday Live Stream</title><link href="https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday.html" rel="alternate" type="text/html" title="Mathesar Featured on GitHub’s Open Source Friday Live Stream" /><published>2024-03-15T00:00:00+00:00</published><updated>2024-03-15T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday.html">&lt;p&gt;Today I had the pleasure of joining GitHub’s Open Source Friday live stream to talk about Mathesar with Kedasha Kerr, Developer Advocate from GitHub.&lt;/p&gt;
+<p>If you’d like to work with us or have any questions, please don’t hesitate to email us at <a href="mailto:hello@mathesar.org">hello@mathesar.org</a>.</p>]]></content><author><name>Mathesar Foundation</name></author><category term="announcement" /><category term="news" /><summary type="html"><![CDATA[Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/2024-03-funding-announcement-image.png" /><media:content medium="image" url="https://mathesar.org/assets/images/2024-03-funding-announcement-image.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar Featured on GitHub’s Open Source Friday Live Stream</title><link href="https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday.html" rel="alternate" type="text/html" title="Mathesar Featured on GitHub’s Open Source Friday Live Stream" /><published>2024-03-15T00:00:00+00:00</published><updated>2024-03-15T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday</id><content type="html" xml:base="https://mathesar.org/blog/2024/03/15/live-stream-on-github-open-source-friday.html"><![CDATA[<p>Today I had the pleasure of joining GitHub’s Open Source Friday live stream to talk about Mathesar with Kedasha Kerr, Developer Advocate from GitHub.</p>
 
-&lt;p&gt;Watch the full 45 minute interview below:&lt;/p&gt;
+<p>Watch the full 45 minute interview below:</p>
 
-&lt;iframe width=&quot;100%&quot; style=&quot;aspect-ratio: 16 / 9;&quot; src=&quot;https://www.youtube.com/embed/6jIrO8UfolI?si=bk1kXmmAWEbN5U9w&amp;amp;start=152&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/6jIrO8UfolI?si=bk1kXmmAWEbN5U9w&amp;start=152" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 
-&lt;p&gt;The live demo was a fun way to weave together many of Mathesar’s latest features and see them in action. Afterwards, Kedasha and the audience had some great questions — and even some helpful tips! I always love when someone asks me, &lt;em&gt;“why Svelte instead of React?”&lt;/em&gt; I probably could have done a whole interview just on that topic!&lt;/p&gt;
+<p>The live demo was a fun way to weave together many of Mathesar’s latest features and see them in action. Afterwards, Kedasha and the audience had some great questions — and even some helpful tips! I always love when someone asks me, <em>“why Svelte instead of React?”</em> I probably could have done a whole interview just on that topic!</p>
 
-&lt;p&gt;The sample data featured in the video is available for anyone to play with on our &lt;a href=&quot;https://demo.mathesar.org/&quot;&gt;live demo&lt;/a&gt;.&lt;/p&gt;
+<p>The sample data featured in the video is available for anyone to play with on our <a href="https://demo.mathesar.org/">live demo</a>.</p>
 
-&lt;p&gt;Many thanks to Kedasha for hosting!&lt;/p&gt;</content><author><name>Sean Colsen</name></author><category term="event" /><category term="interview" /><category term="video" /><summary type="html">Today I had the pleasure of joining GitHub’s Open Source Friday live stream to talk about Mathesar with Kedasha Kerr, Developer Advocate from GitHub.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg" /><media:content medium="image" url="https://mathesar.org/assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.5 Released</title><link href="https://mathesar.org/blog/2024/02/28/release-0-1-5.html" rel="alternate" type="text/html" title="Mathesar 0.1.5 Released" /><published>2024-02-28T00:00:00+00:00</published><updated>2024-02-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/02/28/release-0-1-5</id><content type="html" xml:base="https://mathesar.org/blog/2024/02/28/release-0-1-5.html">&lt;p&gt;Mathesar 0.1.5 is a small bug-fix release.&lt;/p&gt;
+<p>Many thanks to Kedasha for hosting!</p>]]></content><author><name>Sean Colsen</name></author><category term="event" /><category term="interview" /><category term="video" /><summary type="html"><![CDATA[Mathesar Featured on GitHub's Open Source Friday Live Stream]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg" /><media:content medium="image" url="https://mathesar.org/assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.5 Released</title><link href="https://mathesar.org/blog/2024/02/28/release-0-1-5.html" rel="alternate" type="text/html" title="Mathesar 0.1.5 Released" /><published>2024-02-28T00:00:00+00:00</published><updated>2024-02-28T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/02/28/release-0-1-5</id><content type="html" xml:base="https://mathesar.org/blog/2024/02/28/release-0-1-5.html"><![CDATA[<p>Mathesar 0.1.5 is a small bug-fix release.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/015-announcement.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/015-announcement.png" alt="image" /></p>
 
-&lt;p&gt;This post gives you a peek at some of the improvements in the release. Please see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.5/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+<p>This post gives you a peek at some of the improvements in the release. Please see our <a href="https://docs.mathesar.org/releases/0.1.5/">Release Notes</a> for the comprehensive list of all changes and bugfixes.</p>
 
-&lt;h3 id=&quot;new-video-walkthrough&quot;&gt;New video walkthrough&lt;/h3&gt;
+<h3 id="new-video-walkthrough">New video walkthrough</h3>
 
-&lt;p&gt;Our &lt;a href=&quot;https://docs.mathesar.org/installation/docker-compose/&quot;&gt;Docker compose installation&lt;/a&gt; now has an accompanying video walkthrough.&lt;/p&gt;
+<p>Our <a href="https://docs.mathesar.org/installation/docker-compose/">Docker compose installation</a> now has an accompanying video walkthrough.</p>
 
-&lt;iframe width=&quot;100%&quot; style=&quot;aspect-ratio: 16 / 9;&quot; src=&quot;https://www.youtube.com/embed/0AFfvrUMkas&quot; title=&quot;Install Mathesar v0.1.4 using docker compose&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/0AFfvrUMkas" title="Install Mathesar v0.1.4 using docker compose" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 
-&lt;h3 id=&quot;sample-data-is-loaded-more-quickly&quot;&gt;Sample data is loaded more quickly&lt;/h3&gt;
+<h3 id="sample-data-is-loaded-more-quickly">Sample data is loaded more quickly</h3>
 
-&lt;p&gt;Mathesar &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.4/&quot;&gt;0.1.4&lt;/a&gt; added the ability to load sample data when creating a new database. We’ve made some performance improvements in this release that significantly speed up that process. This also fixed a bug where adding a new database was timing out in some installation setups.&lt;/p&gt;
+<p>Mathesar <a href="https://docs.mathesar.org/releases/0.1.4/">0.1.4</a> added the ability to load sample data when creating a new database. We’ve made some performance improvements in this release that significantly speed up that process. This also fixed a bug where adding a new database was timing out in some installation setups.</p>
 
-&lt;h3 id=&quot;the-connections-page-is-not-as-wide&quot;&gt;The connections page is not as wide&lt;/h3&gt;
+<h3 id="the-connections-page-is-not-as-wide">The connections page is not as wide</h3>
 
-&lt;p&gt;The database connections page now has a maximum width, making it easier to read on larger screens.&lt;/p&gt;
+<p>The database connections page now has a maximum width, making it easier to read on larger screens.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/dbconnections-new.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/dbconnections-new.png" alt="image" /></p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.5/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;</content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar 0.1.5 is a small bug-fix release.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/015-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/015-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.4 Released</title><link href="https://mathesar.org/blog/2024/01/30/release-0-1-4.html" rel="alternate" type="text/html" title="Mathesar 0.1.4 Released" /><published>2024-01-30T00:00:00+00:00</published><updated>2024-01-30T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/01/30/release-0-1-4</id><content type="html" xml:base="https://mathesar.org/blog/2024/01/30/release-0-1-4.html">&lt;p&gt;Mathesar 0.1.4 brings many user-requested features and bug fixes to improve installation, setup, and usability.&lt;/p&gt;
+<p>Here’s the link to our <a href="https://docs.mathesar.org/releases/0.1.5/">Release Notes</a> again if you’d like to see the full list of all changes and bugfixes.</p>]]></content><author><name>Kriti Godey</name></author><category term="release" /><category term="announcement" /><summary type="html"><![CDATA[Mathesar 0.1.5 Released]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/015-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/015-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mathesar 0.1.4 Released</title><link href="https://mathesar.org/blog/2024/01/30/release-0-1-4.html" rel="alternate" type="text/html" title="Mathesar 0.1.4 Released" /><published>2024-01-30T00:00:00+00:00</published><updated>2024-01-30T00:00:00+00:00</updated><id>https://mathesar.org/blog/2024/01/30/release-0-1-4</id><content type="html" xml:base="https://mathesar.org/blog/2024/01/30/release-0-1-4.html"><![CDATA[<p>Mathesar 0.1.4 brings many user-requested features and bug fixes to improve installation, setup, and usability.</p>
 
-&lt;p&gt;This post gives you a peek at some of the new features in the release. Please see our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.4/&quot;&gt;Release Notes&lt;/a&gt; for the comprehensive list of all changes and bugfixes.&lt;/p&gt;
+<p>This post gives you a peek at some of the new features in the release. Please see our <a href="https://docs.mathesar.org/releases/0.1.4/">Release Notes</a> for the comprehensive list of all changes and bugfixes.</p>
 
-&lt;h3 id=&quot;ui-for-configuring-database-connections&quot;&gt;UI for configuring database connections&lt;/h3&gt;
+<h3 id="ui-for-configuring-database-connections">UI for configuring database connections</h3>
 
-&lt;p&gt;Now you can add, edit, and delete connections to multiple databases from within Mathesar’s UI. Previously this was only possible via editing text-based configuration.&lt;/p&gt;
+<p>Now you can add, edit, and delete connections to multiple databases from within Mathesar’s UI. Previously this was only possible via editing text-based configuration.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/2a51fe95-05bb-487a-bd54-283392039c56&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/2a51fe95-05bb-487a-bd54-283392039c56" alt="image" /></p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/5a7916b7-4ab1-4b08-b7e3-a4823f3bcde5&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/5a7916b7-4ab1-4b08-b7e3-a4823f3bcde5" alt="image" /></p>
 
-&lt;h3 id=&quot;sample-data-loader&quot;&gt;Sample data loader&lt;/h3&gt;
+<h3 id="sample-data-loader">Sample data loader</h3>
 
-&lt;p&gt;When adding a new database connection, you can choose to load sample data into that database. Sample data will be contained within specific schemas and may be useful to help new users play with Mathesar’s features.&lt;/p&gt;
+<p>When adding a new database connection, you can choose to load sample data into that database. Sample data will be contained within specific schemas and may be useful to help new users play with Mathesar’s features.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/a7174f0d-254e-4463-9c74-3663deee91fa&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/a7174f0d-254e-4463-9c74-3663deee91fa" alt="image" /></p>
 
-&lt;h3 id=&quot;postgresql-column-comments&quot;&gt;PostgreSQL column COMMENTs&lt;/h3&gt;
+<h3 id="postgresql-column-comments">PostgreSQL column COMMENTs</h3>
 
-&lt;p&gt;&lt;a href=&quot;https://www.postgresql.org/docs/current/sql-comment.html&quot;&gt;PostgreSQL &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;COMMENT&lt;/code&gt; values&lt;/a&gt; on &lt;em&gt;columns&lt;/em&gt; are now exposed via a read/write “description” field within Mathesar. This feature was previously available for schemas and tables and is now available for columns too.&lt;/p&gt;
+<p><a href="https://www.postgresql.org/docs/current/sql-comment.html">PostgreSQL <code class="language-plaintext highlighter-rouge">COMMENT</code> values</a> on <em>columns</em> are now exposed via a read/write “description” field within Mathesar. This feature was previously available for schemas and tables and is now available for columns too.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/fd75136b-c577-47d0-9ab5-2b9418b980a5&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/fd75136b-c577-47d0-9ab5-2b9418b980a5" alt="image" /></p>
 
-&lt;h3 id=&quot;text-only-imports&quot;&gt;Text-only imports&lt;/h3&gt;
+<h3 id="text-only-imports">Text-only imports</h3>
 
-&lt;p&gt;When importing CSV data, Mathesar now gives you the option to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TEXT&lt;/code&gt; as the database type for all columns. This choice speeds up the import for larger data sets by skipping the process of guessing colum types.&lt;/p&gt;
+<p>When importing CSV data, Mathesar now gives you the option to use <code class="language-plaintext highlighter-rouge">TEXT</code> as the database type for all columns. This choice speeds up the import for larger data sets by skipping the process of guessing colum types.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/6e0b5b1c-2e10-4e1f-8ad3-f4d99d28d8a9&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/6e0b5b1c-2e10-4e1f-8ad3-f4d99d28d8a9" alt="image" /></p>
 
-&lt;h3 id=&quot;reduced-database-privilege-installations&quot;&gt;Reduced database privilege installations&lt;/h3&gt;
+<h3 id="reduced-database-privilege-installations">Reduced database privilege installations</h3>
 
-&lt;p&gt;Mathesar can now be installed as long as the database role used during the installation has at least &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CONNECT&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATE&lt;/code&gt; privileges on the database targeted by the installation. If you want to create a new database for Mathesar’s use, the installation will (naturally) require a role with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CREATEDB&lt;/code&gt; privilege.&lt;/p&gt;
+<p>Mathesar can now be installed as long as the database role used during the installation has at least <code class="language-plaintext highlighter-rouge">CONNECT</code> and <code class="language-plaintext highlighter-rouge">CREATE</code> privileges on the database targeted by the installation. If you want to create a new database for Mathesar’s use, the installation will (naturally) require a role with the <code class="language-plaintext highlighter-rouge">CREATEDB</code> privilege.</p>
 
-&lt;h3 id=&quot;unified-mathesar-docker-image&quot;&gt;Unified Mathesar Docker image&lt;/h3&gt;
+<h3 id="unified-mathesar-docker-image">Unified Mathesar Docker image</h3>
 
-&lt;p&gt;The published Mathesar Docker image now contains a PostgreSQL server. This is used to provide a database backend in cases where Mathesar is started via Docker without being configured to connect to any other database.&lt;/p&gt;
+<p>The published Mathesar Docker image now contains a PostgreSQL server. This is used to provide a database backend in cases where Mathesar is started via Docker without being configured to connect to any other database.</p>
 
-&lt;h3 id=&quot;metadata-storage-within-sqlite&quot;&gt;Metadata storage within SQLite&lt;/h3&gt;
+<h3 id="metadata-storage-within-sqlite">Metadata storage within SQLite</h3>
 
-&lt;p&gt;We’ve added experimental SQLite support for the storage of Mathesar metadata. This will allow brave (or foolish) users to run Mathesar with this lighter-weight DB when installing from scratch on Linux.&lt;/p&gt;
+<p>We’ve added experimental SQLite support for the storage of Mathesar metadata. This will allow brave (or foolish) users to run Mathesar with this lighter-weight DB when installing from scratch on Linux.</p>
 
-&lt;h3 id=&quot;improved-postgresql-compatibility&quot;&gt;Improved PostgreSQL compatibility&lt;/h3&gt;
+<h3 id="improved-postgresql-compatibility">Improved PostgreSQL compatibility</h3>
 
-&lt;p&gt;Mathesar now officially supports, and is tested against, Postgres versions 13, 14, and 15. It’s also possible (but not yet recommended) to run Mathesar using Postgres 16.&lt;/p&gt;
+<p>Mathesar now officially supports, and is tested against, Postgres versions 13, 14, and 15. It’s also possible (but not yet recommended) to run Mathesar using Postgres 16.</p>
 
-&lt;h3 id=&quot;easier-modification-of-sorting-precedence&quot;&gt;Easier modification of sorting precedence&lt;/h3&gt;
+<h3 id="easier-modification-of-sorting-precedence">Easier modification of sorting precedence</h3>
 
-&lt;p&gt;When you have multiple sorting conditions applied to a table, you can now rearrange them via drag and drop to adjust the precedence of the sorting conditions.&lt;/p&gt;
+<p>When you have multiple sorting conditions applied to a table, you can now rearrange them via drag and drop to adjust the precedence of the sorting conditions.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/5cb043db-0ebe-4664-961f-260873010e3b&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/5cb043db-0ebe-4664-961f-260873010e3b" alt="image" /></p>
 
-&lt;h3 id=&quot;cell-values-displayed-within-sidebar&quot;&gt;Cell values displayed within sidebar&lt;/h3&gt;
+<h3 id="cell-values-displayed-within-sidebar">Cell values displayed within sidebar</h3>
 
-&lt;p&gt;The table sidebar features a new “Cell” tab to show the content of cells, simplifying the process of viewing large text cells.&lt;/p&gt;
+<p>The table sidebar features a new “Cell” tab to show the content of cells, simplifying the process of viewing large text cells.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://github.com/mathesar-foundation/mathesar/assets/42411/7dbad400-703a-4436-a494-1ccaf9928be6&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+<p><img src="https://github.com/mathesar-foundation/mathesar/assets/42411/7dbad400-703a-4436-a494-1ccaf9928be6" alt="image" /></p>
 
-&lt;hr /&gt;
+<hr />
 
-&lt;p&gt;Here’s the link to our &lt;a href=&quot;https://docs.mathesar.org/releases/0.1.4/&quot;&gt;Release Notes&lt;/a&gt; again if you’d like to see the full list of all changes and bugfixes.&lt;/p&gt;</content><author><name>Sean Colsen</name></author><category term="release" /><category term="announcement" /><summary type="html">Mathesar 0.1.4 brings many user-requested features and bug fixes to improve installation, setup, and usability.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/014-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/014-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Here’s the link to our <a href="https://docs.mathesar.org/releases/0.1.4/">Release Notes</a> again if you’d like to see the full list of all changes and bugfixes.</p>]]></content><author><name>Sean Colsen</name></author><category term="release" /><category term="announcement" /><summary type="html"><![CDATA[Mathesar 0.1.4 Released]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://mathesar.org/assets/images/014-announcement.png" /><media:content medium="image" url="https://mathesar.org/assets/images/014-announcement.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
