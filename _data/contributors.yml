@@ -218,46 +218,38 @@
   profile_image: https://github.com/HenryRocha.png
   profile_url: https://github.com/HenryRocha
   username: HenryRocha
-- name: Naman
-  profile_image: https://github.com/nk183.png
-  profile_url: https://github.com/nk183
-  username: nk183
-- name: Raunak Kumar Gupta
-  profile_image: https://github.com/raunak-dev-edu.png
-  profile_url: https://github.com/raunak-dev-edu
-  username: raunak-dev-edu
 - name: Nimish Bongale
   profile_image: https://github.com/nimishbongale.png
   profile_url: https://github.com/nimishbongale
   username: nimishbongale
-- name: Tushar Rastogi
-  profile_image: https://github.com/tush-rastogi.png
-  profile_url: https://github.com/tush-rastogi
-  username: tush-rastogi
-- name: DanyaalMahmood
-  profile_image: https://github.com/DanyaalMahmood.png
-  profile_url: https://github.com/DanyaalMahmood
-  username: DanyaalMahmood
 - name: Ratika Swami
   profile_image: https://github.com/ratika-12.png
   profile_url: https://github.com/ratika-12
   username: ratika-12
-- name: "Franti\u0161ek Harni\u010D\xE1r"
-  profile_image: https://github.com/FrantisekHarnicar.png
-  profile_url: https://github.com/FrantisekHarnicar
-  username: FrantisekHarnicar
 - name: Iyad Elwy
   profile_image: https://github.com/IyadElwy.png
   profile_url: https://github.com/IyadElwy
   username: IyadElwy
-- name: null
-  profile_image: https://github.com/Creative1800.png
-  profile_url: https://github.com/Creative1800
-  username: Creative1800
-- name: Shrey Tripathi
-  profile_image: https://github.com/shrey27tri01.png
-  profile_url: https://github.com/shrey27tri01
-  username: shrey27tri01
+- name: "Franti\u0161ek Harni\u010D\xE1r"
+  profile_image: https://github.com/FrantisekHarnicar.png
+  profile_url: https://github.com/FrantisekHarnicar
+  username: FrantisekHarnicar
+- name: DanyaalMahmood
+  profile_image: https://github.com/DanyaalMahmood.png
+  profile_url: https://github.com/DanyaalMahmood
+  username: DanyaalMahmood
+- name: Tushar Rastogi
+  profile_image: https://github.com/tush-rastogi.png
+  profile_url: https://github.com/tush-rastogi
+  username: tush-rastogi
+- name: Raunak Kumar Gupta
+  profile_image: https://github.com/raunak-dev-edu.png
+  profile_url: https://github.com/raunak-dev-edu
+  username: raunak-dev-edu
+- name: Naman
+  profile_image: https://github.com/nk183.png
+  profile_url: https://github.com/nk183
+  username: nk183
 - name: null
   profile_image: https://github.com/github-merge-queue[bot].png
   profile_url: https://github.com/github-merge-queue[bot]
@@ -266,22 +258,22 @@
   profile_image: https://github.com/Shraeyas.png
   profile_url: https://github.com/Shraeyas
   username: Shraeyas
-- name: Felix
-  profile_image: https://github.com/fkarg.png
-  profile_url: https://github.com/fkarg
-  username: fkarg
-- name: Charvi Mehra
-  profile_image: https://github.com/charvimehradu.png
-  profile_url: https://github.com/charvimehradu
-  username: charvimehradu
+- name: Shrey Tripathi
+  profile_image: https://github.com/shrey27tri01.png
+  profile_url: https://github.com/shrey27tri01
+  username: shrey27tri01
 - name: null
-  profile_image: https://github.com/TalhaZaheer1.png
-  profile_url: https://github.com/TalhaZaheer1
-  username: TalhaZaheer1
-- name: Wali Muhammad
-  profile_image: https://github.com/Wali-Muhammad123.png
-  profile_url: https://github.com/Wali-Muhammad123
-  username: Wali-Muhammad123
+  profile_image: https://github.com/Creative1800.png
+  profile_url: https://github.com/Creative1800
+  username: Creative1800
+- name: Ishir Agrawal
+  profile_image: https://github.com/ishir21.png
+  profile_url: https://github.com/ishir21
+  username: ishir21
+- name: "\u0160tefan Hadbavn\xFD"
+  profile_image: https://github.com/steve-lgtm.png
+  profile_url: https://github.com/steve-lgtm
+  username: steve-lgtm
 - name: zack
   profile_image: https://github.com/zackkrida.png
   profile_url: https://github.com/zackkrida
@@ -290,14 +282,22 @@
   profile_image: https://github.com/dauinh.png
   profile_url: https://github.com/dauinh
   username: dauinh
-- name: "\u0160tefan Hadbavn\xFD"
-  profile_image: https://github.com/steve-lgtm.png
-  profile_url: https://github.com/steve-lgtm
-  username: steve-lgtm
-- name: Ishir Agrawal
-  profile_image: https://github.com/ishir21.png
-  profile_url: https://github.com/ishir21
-  username: ishir21
+- name: Wali Muhammad
+  profile_image: https://github.com/Wali-Muhammad123.png
+  profile_url: https://github.com/Wali-Muhammad123
+  username: Wali-Muhammad123
+- name: null
+  profile_image: https://github.com/TalhaZaheer1.png
+  profile_url: https://github.com/TalhaZaheer1
+  username: TalhaZaheer1
+- name: Felix
+  profile_image: https://github.com/fkarg.png
+  profile_url: https://github.com/fkarg
+  username: fkarg
+- name: Charvi Mehra
+  profile_image: https://github.com/charvimehradu.png
+  profile_url: https://github.com/charvimehradu
+  username: charvimehradu
 - name: Subhojit-Dey
   profile_image: https://github.com/Subhojit-Dey1234.png
   profile_url: https://github.com/Subhojit-Dey1234
@@ -306,6 +306,10 @@
   profile_image: https://github.com/SEGRR.png
   profile_url: https://github.com/SEGRR
   username: SEGRR
+- name: S Sharath Lingam
+  profile_image: https://github.com/sharath-1517.png
+  profile_url: https://github.com/sharath-1517
+  username: sharath-1517
 - name: Raisa Chatterjee
   profile_image: https://github.com/raisachatterjee.png
   profile_url: https://github.com/raisachatterjee
@@ -318,10 +322,6 @@
   profile_image: https://github.com/Sukshan.png
   profile_url: https://github.com/Sukshan
   username: Sukshan
-- name: Kevin Liang
-  profile_image: https://github.com/kwliang1.png
-  profile_url: https://github.com/kwliang1
-  username: kwliang1
 - name: Deepjyoti Deka
   profile_image: https://github.com/deka014.png
   profile_url: https://github.com/deka014
@@ -338,6 +338,10 @@
   profile_image: https://github.com/lenikadali.png
   profile_url: https://github.com/lenikadali
   username: lenikadali
+- name: Kevin Liang
+  profile_image: https://github.com/kwliang1.png
+  profile_url: https://github.com/kwliang1
+  username: kwliang1
 - name: null
   profile_image: https://github.com/aniketkulkarni17.png
   profile_url: https://github.com/aniketkulkarni17
@@ -394,14 +398,14 @@
   profile_image: https://github.com/AlekLefebvre.png
   profile_url: https://github.com/AlekLefebvre
   username: AlekLefebvre
-- name: S Sharath Lingam
-  profile_image: https://github.com/sharath-1517.png
-  profile_url: https://github.com/sharath-1517
-  username: sharath-1517
 - name: Evyn
   profile_image: https://github.com/ejenk0.png
   profile_url: https://github.com/ejenk0
   username: ejenk0
+- name: Florian Apolloner
+  profile_image: https://github.com/apollo13.png
+  profile_url: https://github.com/apollo13
+  username: apollo13
 - name: Pawan Patil
   profile_image: https://github.com/PawanPatil19.png
   profile_url: https://github.com/PawanPatil19
@@ -418,7 +422,3 @@
   profile_image: https://github.com/ishqelliot.png
   profile_url: https://github.com/ishqelliot
   username: ishqelliot
-- name: Florian Apolloner
-  profile_image: https://github.com/apollo13.png
-  profile_url: https://github.com/apollo13
-  username: apollo13
