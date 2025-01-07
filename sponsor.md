@@ -2,6 +2,8 @@
 layout: default
 title: Sponsor Mathesar - Mathesar
 description: Sponsor Mathesar
+redirect_from:
+  - /donate/
 ---
 
 {% capture header %}
