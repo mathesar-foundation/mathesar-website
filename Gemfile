@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem 'jekyll-postcss-v2'
   gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-redirect-from'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
