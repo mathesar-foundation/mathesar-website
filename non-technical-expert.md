@@ -14,7 +14,6 @@ No technical skills required.
 
 {% capture actions %}
 {% include button.html style="primary" label="Stay updated on our cloud release" url="#signup-form" %}
-{% include button.html style="secondary" label="Play with Live Demo" external=true url="https://demo.mathesar.org" %}
 {% endcapture %}
 
 {% include hero.html
