@@ -122,6 +122,10 @@
   profile_image: https://github.com/abhishak3.png
   profile_url: https://github.com/abhishak3
   username: abhishak3
+- name: zack
+  profile_image: https://github.com/zackkrida.png
+  profile_url: https://github.com/zackkrida
+  username: zackkrida
 - name: Harsh Singh
   profile_image: https://github.com/dm4p385.png
   profile_url: https://github.com/dm4p385
@@ -142,10 +146,6 @@
   profile_image: https://github.com/powellc.png
   profile_url: https://github.com/powellc
   username: powellc
-- name: zack
-  profile_image: https://github.com/zackkrida.png
-  profile_url: https://github.com/zackkrida
-  username: zackkrida
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
