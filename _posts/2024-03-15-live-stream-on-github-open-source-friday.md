@@ -4,8 +4,8 @@ title: "Mathesar Featured on GitHub's Open Source Friday Live Stream"
 tags: event interview video
 date: 2024-03-15
 author: sean_colsen
-description: "Mathesar Featured on GitHub's Open Source Friday Live Stream"
-image: /assets/images/312196414-f05d6cf4-f0af-4da1-a5c6-3d48d034249b.jpg
+description: "Sean Colsen, one of Mathesar's maintainers was a guest on GitHub's Open Source Friday live stream with Kedasha Kerr."
+image: /images/blog/2024-03-open-source-friday.jpg
 ---
 
 Today I had the pleasure of joining GitHub's Open Source Friday live stream to talk about Mathesar with Kedasha Kerr, Developer Advocate from GitHub.

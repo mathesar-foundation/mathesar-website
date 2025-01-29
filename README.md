@@ -4,25 +4,25 @@
 <p align="center"><b>An intuitive UI for managing data, for users of all technical skill levels. Built on Postgres.</b></p>
 
 <p align="center">
-  <a href="https://github.com/centerofci/mathesar" target="_blank">Mathesar code</a> • <a href="https://mathesar.org?ref=github-website-readme" target="_blank">Website</a> • <a href="https://docs.mathesar.org?ref=github-readme" target="_blank">Docs</a> • <a href="https://wiki.mathesar.org/en/community/matrix" target="_blank">Matrix (chat)</a> • <a href="https://wiki.mathesar.org/" target="_blank">Wiki</a>
+  <a href="https://github.com/mathesar-foundation/mathesar" target="_blank">Mathesar code</a> • <a href="https://mathesar.org?ref=github-website-readme" target="_blank">Website</a> • <a href="https://docs.mathesar.org?ref=github-readme" target="_blank">Docs</a> • <a href="https://wiki.mathesar.org/en/community/matrix" target="_blank">Matrix (chat)</a> • <a href="https://wiki.mathesar.org/" target="_blank">Wiki</a>
 </p>
 
 # Mathesar website
 
-This repository is a Jekyll website that powers https://mathesar.org. It is hosted on GitHub Pages.
+This repository is a SvelteKit website that powers https://mathesar.org. It is hosted on GitHub pages.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [Local setup](#local-setup)
   - [Installation](#installation)
   - [Running locally](#running-locally)
-- [Publishing to the Blog](#publishing-to-the-blog)
-  - [Creating a new blog post](#creating-a-new-blog-post)
-  - [Creating Author Pages](#creating-author-pages)
-  - [Creating Tag Pages](#creating-tag-pages)
-  - [Updating Author Pages](#updating-author-pages)
+  - [Building](#building)
+- [Content editing](#content-editing)
+- [Analytics](#analytics)
+- [Forms](#forms)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -30,81 +30,49 @@ This repository is a Jekyll website that powers https://mathesar.org. It is host
 
 ### Installation
 
-1. [Install Jekyll](https://jekyllrb.com/docs/installation/) (ensure you also install `bundler`)
-2. From repo root directory, run `bundle install`
-3. From repo root directory, run `npm install`
+Running the Mathesar website locally requires Node.js >18. See this [guide](https://nodejs.org/en/download) for the ideal way to manage Node.js versions on your computer.
 
 ### Running locally
 
-1. Run: 
+> [!TIP]
+> The first time you run `npm run dev` the site will be extremely slow. SvelteKit is optimizing
+> images, which will be cached in the `node_modules` directory. Running `npm run build ` once _first_ will populate the cache, in the same manner as `npm run dev` but makes it clearer what is happening.
 
-    ```
-    bundle exec jekyll serve --port 4000 --livereload
-    ```
+1. Clone the repo:
+   ```shell
+   # Or `gh repo clone mathesar-foundation/mathesar-website` using the Github CLI
+   > git clone git@github.com:mathesar-foundation/mathesar-website-beta.git
+   ```
+2. Install dependencies with `npm install`.
+3. Run the local development server:
 
-1. Browse to http://localhost:4000/
+   ```shell
+   npm run dev
 
-## Publishing to the Blog
+   # or start the server and open the app in a new browser tab
+   npm run dev -- --open
+   ```
 
-To publish a new post on the Mathesar blog, follow these steps.
+### Building
 
-### Creating a new blog post
+To create a production version of the app:
 
-1. **Create a new Markdown file in the `_posts` directory.** The file name should follow this format: `YYYY-MM-DD-title-of-the-post.md`.
+```bash
+npm run build
+```
 
-2. **Fill out the front matter for your post.** At the beginning of your Markdown file, include the following:
+You can preview the production build with `npm run preview`.
 
-    ```yaml
-    ---
-    layout: post
-    title:  "Title of Your Post"
-    tags: tag1 tag2 tag3
-    date: YYYY-MM-DD
-    author: author_id
-    description: "Brief description of the post."
-    image: /path/to/featured/image.jpg
-    ---
-    ```
+## Content editing
 
-3. **Write your blog post.** After the front matter, use regular Markdown syntax to write your post.
+Much of the site's contents are stored in `.yml` files in the `_data` directory. This pattern was inherited from our previous Jekyll site to ensure a consistient editing experience. Blog posts live in the `_pages` directory as markdown files.
 
-### Creating Author Pages
+Currently, all other page content is held in the respective `src/routes/{route-nanme/+page.svelte` file for each page. Take care not to break the structure of pages when making content edits.
 
-If author_id does not exist in `_data/authors.yml`:
+## Analytics
 
-1. **Add author details to `_data/authors.yml`.** If your author ID does not exist, create a new entry with your details.
+Lightweight, privacy-concious event and pageview data is collected using [Simple Analytics](https://www.simpleanalytics.com/).
 
-    ```yaml
-    your_author_id:
-      name: Author Name
-      role: Author Role
-      bio: >
-        "A brief bio about the author. This can be a few sentences long."
-      image: /path/to/your/image.jpg
-    ```
+## Forms
 
-### Creating Tag Pages
-
-If you've added new tags:
-
-1. **Run the tag generator script.** From the root directory, execute:
-
-    ```
-    python scripts/tag_generator.py
-    ```
-
-This will generate pages for the new tags.
-
-### Updating Author Pages
-
-If you've added yourself as a new author:
-
-1. **Run the author generator script.** From the root directory, execute:
-
-    ```
-    python scripts/author_generator.py
-    ```
-
-This will generate a page for your author profile.
-
-Remember to run the above scripts if you're introducing new tags or authors to ensure the website accurately reflects these changes.
+We collect newsletter signups using a [Formspree](https://formspree.io/) form in the site's footer.

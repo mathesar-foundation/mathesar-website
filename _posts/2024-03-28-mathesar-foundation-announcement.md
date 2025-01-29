@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration"
+title: "Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation"
 tags: announcement news
 date: 2024-03-28
 author: mathesar_foundation
-description: "Mathesar Foundation Receives $3 Million from the Reid Hoffman Foundation to Advance Data Collaboration"
-image: /assets/images/2024-03-funding-announcement-image.png
+description: "We are excited to announce the establishment of the Mathesar Foundation and a grant of $3 Million from the Reid Hoffman Foundation to advance data collaboration."
+image: /images/blog/2024-03-funding-announcement-image.png
 ---
 
 We are excited to announce the establishment of the Mathesar Foundation to focus on the development and sustainability of the Mathesar open source project, fueled by a generous grant of $3 million from the Reid Hoffman Foundation. With this grant, we will be able to build a stable and featureful version 1.0 of Mathesar, invest in increasing awareness and adoption of the project, and establish a fundraising program to ensure the project's long-term sustainability.
@@ -30,8 +30,8 @@ Currently, Mathesar is in its alpha stage, with early adopters testing it out fo
 
 If you're interested in Mathesar or you'd like to get involved, please check out:
 
--   [Our website](https://mathesar.org/) to learn more about the product
--   [Our GitHub repository](https://github.com/mathesar-foundation/mathesar) to contribute to the project
--   [Our mailing list](https://mathesar.org/mailing-list.html) to stay up to date on Mathesar's progress
+- [Our website](https://mathesar.org/) to learn more about the product
+- [Our GitHub repository](https://github.com/mathesar-foundation/mathesar) to contribute to the project
+- [Our mailing list](https://mathesar.org/mailing-list.html) to stay up to date on Mathesar's progress
 
 If you'd like to work with us or have any questions, please don't hesitate to email us at <hello@mathesar.org>.
