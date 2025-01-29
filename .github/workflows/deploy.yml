@@ -1,45 +1,53 @@
-name: Jekyll Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
- 
-# Build site using jekyll
+    branches: "master"
+
 jobs:
-  jekyll:
+  build_site:
     runs-on: ubuntu-latest
     steps:
-      # checkout code
-      - uses: actions/checkout@v2
-      # Use ruby/setup-ruby to shorten build times
-      # https://github.com/ruby/setup-ruby
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          ruby-version: 3.2 # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      # Install Node as this is needed for PostCSS
-      - name: Setup Node
-        uses: actions/setup-node@v2
+          node-version: 20
+          cache: npm
+
+      - name: Cache node_modules/.cache/imagetools
+        uses: actions/cache@v4
         with:
-          node-version: '14'
-      # Install PostCSS plugins (from your package.json)
-      - run: npm install
-      - name: Build site
-      # use jekyll-action-ts to build
-      # https://github.com/limjh16/jekyll-action-ts
-        uses: limjh16/jekyll-action-ts@v2
+          path: ./node_modules/.cache/imagetools
+          key: ${{ runner.os }}-image-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-image-cache-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: build
+        env:
+          BASE_PATH: "/${{ github.event.repository.name }}"
+        run: npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
         with:
-          enable_cache: true
-          custom_opts: JEKYLL_ENV=production'
-          ### If you need to specify any Jekyll build options, enable the above input
-          ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
-      # use actions-gh-pages to deploy
-      # https://github.com/peaceiris/actions-gh-pages
+          path: "build/"
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          # GITHUB_TOKEN secret is set up automatically
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          cname: mathesar.org
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,2 @@
+Sitemap: https://mathesar.org/sitemap.xml
+User-agent: *
