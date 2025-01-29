@@ -15,9 +15,6 @@
 <svelte:window bind:scrollY />
 
 <svelte:head>
-  <!-- TODO Remove in Production -->
-  <meta name="robots" content="noindex nofollow" />
-
   <title>Mathesar</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

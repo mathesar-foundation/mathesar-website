@@ -7,7 +7,7 @@ const config = {
   preprocess: vitePreprocess(),
   kit: {
     prerender: {
-      handleHttpError: "warn", // @todo remove
+      handleHttpError: "warn",
       entries: ["*", ...Object.keys(redirects)],
     },
     adapter: adapter({
@@ -15,7 +15,6 @@ const config = {
         // @see https://svelte.dev/docs/kit/adapter-static#GitHub-Pages
         base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
       },
-      strict: false, // todo, remove
     }),
   },
 };
