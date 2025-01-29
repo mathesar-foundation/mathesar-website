@@ -131,6 +131,25 @@
           Keep on top of what's going on at the Mathesar Foundation
         </h3>
         <NewsletterSignup />
+
+
+        <!-- Survey CTA Section -->
+        <div class="mt-8 space-y-2 p-4 rounded-lg bg-stormy-100">
+          <h3 class="text-lg text-stormy-800 font-medium">
+            Help shape Mathesar!
+          </h3>
+          <p class="text-sm text-stormy-800">
+            Share your thoughts in our quick survey:
+          </p>
+          <a
+            href="https://forms.gle/yjxiEQr9QzTT5GCSA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full block text-center bg-plum-300/20 text-plum-800 border-2 border-plum-500 hover:bg-plum-400/20 px-4 py-2 rounded-lg font-medium transition-colors duration-300"
+          >
+            Take the Survey →
+          </a>
+        </div>
       </div>
 
       <!-- Footer Bottom -->
