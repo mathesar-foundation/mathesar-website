@@ -1,32 +1,28 @@
 <script lang="ts">
   import type { Picture } from "vite-imagetools";
   import ZoomIn from "iconoir/icons/zoom-in.svg?component";
-  import { onMount, onDestroy } from "svelte";
 
   export let src: Picture;
   export let alt = "";
   export let loading: "lazy" | "eager" | null | undefined = "lazy";
+  export let sizes: string | undefined = undefined;
   export let fetchpriority: "high" | "low" | "auto" | undefined = "auto";
-
   let className = "";
   export let triggerText = "Click to enlarge";
-
   export { className as class };
 
-  let isModalOpen = false;
+  let dialog: HTMLDialogElement;
 
   function openModal() {
-    isModalOpen = true;
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    dialog.showModal();
   }
 
   function closeModal() {
-    isModalOpen = false;
-    document.body.style.overflow = ""; // Restore scrolling
+    dialog.close();
   }
 
   function handleKeydown(event: KeyboardEvent) {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && dialog.open) {
       closeModal();
     }
   }
@@ -41,6 +37,7 @@
       {fetchpriority}
       {alt}
       {loading}
+      {sizes}
       class={`cursor-pointer ${className}`}
     />
     <span
@@ -51,44 +48,41 @@
     </span>
   </button>
 
-  {#if isModalOpen}
-    <dialog
-      aria-modal="true"
-      class="fixed inset-0 bg-black/75 flex justify-center items-center z-[100] p-4 w-full h-screen m-0 top-0 leading-none overflow-hidden"
+  <dialog
+    bind:this={dialog}
+    class="bg-black/75 w-screen h-screen max-w-none inset-0"
+  >
+    <div
+      class="relative lg:max-w-7xl xl:max-w-[70%] mx-auto min-h-screen flex flex-col items-center justify-center"
     >
-      <!-- Clickable overlay -->
-      <!-- svelte-ignore a11y_click_events_have_key_events -->
-      <!-- svelte-ignore a11y_no_static_element_interactions -->
-      <div class="absolute inset-0" on:click={closeModal}></div>
-
-      <div class="relative max-w-full max-h-full overflow-auto shadow-lg">
-        <div class="flex justify-end mb-2">
-          <button
-            class="ml-auto bg-black/60 backdrop-blur-sm text-white rounded-md text-sm md:text-lg py-1 px-2.5 hover:bg-black/80 transition-colors duration-200 block"
-            on:click={closeModal}
-          >
-            Close image
-          </button>
-        </div>
-
-        <div
-          class="flex justify-center items-center h-full rounded-lg overflow-hidden object-contain"
+      <!-- Header -->
+      <div class="flex justify-center items-center z-10">
+        <button
+          class=" bg-black/60 text-white rounded-md text-sm md:text-lg py-1 px-2.5 hover:bg-black/80 transition-colors duration-200"
+          on:click={closeModal}
         >
-          <enhanced:img
-            {src}
-            {fetchpriority}
-            {alt}
-            class="w-full h-full rounded-lg touch-pinch-zoom"
-          />
-        </div>
+          Close image
+        </button>
       </div>
-    </dialog>
-  {/if}
+
+      <!-- Image container -->
+      <div class="flex items-center justify-center min-h-0 relative p-8">
+        <enhanced:img
+          {src}
+          {fetchpriority}
+          {alt}
+          class="enlarged-image max-h-screen w-auto max-w-full object-contain rounded-lg touch-pinch-zoom"
+        />
+      </div>
+    </div>
+  </dialog>
 </div>
 
 <style>
   dialog {
-    /* override browser default */
+    /* Override browser defaults */
     margin: 0 !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
   }
 </style>

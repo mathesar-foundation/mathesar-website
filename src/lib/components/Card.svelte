@@ -13,6 +13,7 @@
       src={card.image}
       alt={card.title}
       class="w-full h-full object-cover rounded-lg"
+      sizes="(min-width: 1024px) 400px, (min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
     />
   </div>
   <div>

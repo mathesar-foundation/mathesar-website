@@ -51,3 +51,7 @@
     transform: translateY(-10px) rotate(var(--rotation));
   }
 }
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}

@@ -153,6 +153,7 @@
               src={module.default}
               alt={selectedSolution?.title}
               class="relative w-full rounded-xl shadow-2xl"
+              sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
             />
           {/if}
         {/each}
