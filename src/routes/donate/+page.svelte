@@ -312,7 +312,7 @@
               </a>
 
               <a
-                href="https://github.com/sponsors/mathesar"
+                href="https://github.com/sponsors/mathesar-foundation"
                 class="group inline-flex items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
                     bg-plum-300/20 text-plum-800
                     border-2 border-plum-500
