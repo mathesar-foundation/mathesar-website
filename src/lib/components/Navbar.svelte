@@ -83,6 +83,7 @@
         <StarsButton count={starCount} />
       </div>
       <TrackedLink
+        analyticsData={{ location: "header" }}
         href="https://docs.mathesar.org"
         class="rounded-lg bg-orange-red-500 hover:shadow-lg hover:shadow-orange-red-500/20 px-2 py-1 lg:px-6 lg:py-2 font-semibold text-white transition-all duration-300"
       >

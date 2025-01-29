@@ -5,6 +5,16 @@
       sa_event?: (eventName: string, eventData?: string) => void;
     }
   }
+
+  // Define possible locations for analytics tracking
+  export type TrackingLocation = "header" | "hero" | "footer" | "page";
+
+  // Define the structure of analytics data
+  export interface AnalyticsData {
+    location: TrackingLocation;
+    className: string;
+    [key: string]: any;
+  }
 </script>
 
 <script lang="ts">
@@ -17,7 +27,11 @@
 
   // Analytics configuration
   export let eventName: string = "link_click";
-  export let analyticsData: Record<string, any> = {};
+  export let analyticsData: Omit<AnalyticsData, "className"> = {
+    location: "page",
+  };
+
+  analyticsData.className = className;
 
   // Optional props
   export let target: "_blank" | "_self" | "_parent" | "_top" = "_self";

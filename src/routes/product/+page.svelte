@@ -3,6 +3,7 @@
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
+  import TrackedLink from "$lib/components/TrackedLink.svelte";
 </script>
 
 <Seo title="How Mathesar Works" image="/og/og-product.png" />
@@ -27,7 +28,8 @@
         </p>
 
         <div class="flex items-center justify-center gap-4 relative z-10">
-          <a
+          <TrackedLink
+            analyticsData={{ location: "hero" }}
             href="https://docs.mathesar.org"
             class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
             text-white
@@ -36,7 +38,7 @@
             active:transform active:scale-[0.98]"
           >
             <span class="relative">Install Mathesar</span>
-          </a>
+          </TrackedLink>
 
           <!-- <a
             href="https://github.com/mathesar-foundation/mathesar"

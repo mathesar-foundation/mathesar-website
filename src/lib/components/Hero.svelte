@@ -1,6 +1,7 @@
 <script lang="ts">
   import SectionCurve from "./SectionCurve.svelte";
   import Stickers from "./Stickers.svelte";
+  import TrackedLink from "./TrackedLink.svelte";
   import Video from "./Video.svelte";
 </script>
 
@@ -30,7 +31,8 @@
           </div>
 
           <div class="text-center mt-8">
-            <a
+            <TrackedLink
+              analyticsData={{ location: "hero" }}
               href="https://docs.mathesar.org"
               class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
                 text-white shadow-lg transition-all duration-300
@@ -38,7 +40,7 @@
                 active:transform active:scale-[0.98]"
             >
               <span class="whitespace-nowrap">Install Mathesar</span>
-            </a>
+            </TrackedLink>
           </div>
         </div>
 
