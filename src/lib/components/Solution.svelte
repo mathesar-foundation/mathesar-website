@@ -115,6 +115,7 @@
                   src={module.default}
                   alt={solution.title}
                   class="w-full h-auto rounded-lg border-2"
+                  sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
                 />
               {/if}
             {/each}
@@ -173,6 +174,7 @@
                     src={module.default}
                     alt={solution.title}
                     class="w-full h-auto rounded-lg border-2"
+                    sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
                   />
                 {/if}
               {/each}
