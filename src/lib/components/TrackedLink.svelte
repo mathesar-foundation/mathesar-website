@@ -2,7 +2,7 @@
 <script lang="ts" context="module">
   declare global {
     interface Window {
-      sa_event?: (eventName: string, eventData?: string) => void;
+      sa_event?: (eventName: string, eventData?: object) => void;
     }
   }
 
@@ -54,7 +54,7 @@
 
     // Track via SimpleAnalytics if available
     if (typeof window.sa_event === "function") {
-      window.sa_event(eventName, JSON.stringify(payload));
+      window.sa_event(eventName, payload);
     }
   }
 
