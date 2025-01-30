@@ -1,5 +1,6 @@
 <script>
   import NewsletterSignup from "./NewsletterSignup.svelte";
+  import OpenNewWindow from "iconoir/icons/open-new-window.svg?component";
 
   import RssFeed from "iconoir/icons/rss-feed.svg?component";
   import Youtube from "iconoir/icons/youtube.svg?component";
@@ -17,6 +18,7 @@
     { name: "Community", path: "/community" },
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
+    { name: "Docs", path: "https://docs.mathesar.org/latest/", isExternal: true },
     { name: "Donate", path: "/donate" },
   ];
 
@@ -80,12 +82,17 @@
           />
         </a>
         <nav class="flex flex-col gap-4">
-          {#each navLinks as { name, path }}
+          {#each navLinks as { name, path, isExternal }}
             <a
               href={path}
-              class="text-white hover:text-salmon-500 transition-colors duration-300"
+              class="text-white hover:text-salmon-500 transition-colors duration-300 flex items-center gap-1"
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
             >
               {name}
+              {#if isExternal}
+                <OpenNewWindow class="w-3" />
+              {/if}
             </a>
           {/each}
         </nav>
@@ -145,9 +152,10 @@
             href="https://forms.gle/yjxiEQr9QzTT5GCSA"
             target="_blank"
             rel="noopener noreferrer"
-            class="w-full block text-center bg-plum-300/20 text-plum-800 border-2 border-plum-500 hover:bg-plum-400/20 px-4 py-2 rounded-lg font-medium transition-colors duration-300"
+            class="w-full block text-center bg-plum-300/20 text-plum-800 border-2 border-plum-500 hover:bg-plum-400/20 px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-1"
           >
-            Take the Survey →
+            Take the Survey
+            <OpenNewWindow class="w-3" />
           </a>
         </div>
       </div>
