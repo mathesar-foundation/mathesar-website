@@ -34,25 +34,25 @@
           <div class="flex flex-col sm:flex-row gap-4 pt-4">
             <a
               href="https://github.com/mathesar-foundation/mathesar"
-              class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
+              class="group inline-flex items-center gap-4 rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
                 text-white
                 shadow-lg transition-all duration-300
                 hover:bg-orange-700 hover:shadow-md
                 active:transform active:scale-[0.98]"
             >
-              <span class="relative">Join Our Community</span>
+              <GitHub class="w-6 text-white" />
+              <span>View on GitHub</span>
             </a>
             <a
-              href="https://github.com/mathesar-foundation/mathesar"
+              href="/community"
               class="group inline-flex items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
-                bg-plum-300/20 text-plum-800
-                border-2 border-plum-500
-                shadow-lg transition-all duration-300
-                hover:bg-plum-400/20 hover:shadow-md
-                active:transform active:scale-[0.98]"
+          bg-plum-300/20 text-plum-800
+          border-2 border-plum-500
+          shadow-lg transition-all duration-300
+          hover:bg-plum-400/20 hover:shadow-md
+          active:transform active:scale-[0.98]"
             >
-              <GitHub class="w-6 text-plum-500" />
-              <span>View on GitHub</span>
+              <span class="relative">Join Our Community</span>
             </a>
           </div>
         </div>
