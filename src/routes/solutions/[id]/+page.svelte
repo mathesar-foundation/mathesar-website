@@ -10,7 +10,7 @@
 </script>
 
 <Seo title={`${solution.title} - Solution`}
-image="/og/og-solutions.png"
+  image={`/og/og-solution-${solution.id}.png`}
 />
 
 <SolutionPageNav {solutions} currentSolutionId={solution.id} />
