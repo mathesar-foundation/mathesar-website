@@ -132,7 +132,7 @@
 
     <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
       <div
-        class="bg-stormy-100 relative px-16 rounded-2xl z-10 mb-20 py-16 -mt-96"
+        class="bg-stormy-100 relative px-8 lg:px-16 rounded-2xl z-10 mb-20 py-8 lg:py-16 -mt-96"
       >
         <div class="grid md:grid-cols-8 gap-20">
           <div class="md:col-span-5 flex items-center">
@@ -179,7 +179,7 @@
                 <enhanced:img
                   src="/src/assets/illustrations/mathesar-foundation.png"
                   alt="Mathesar Foundation"
-                  class="relative w-full rounded-xl shadow-2xl bg-white p-24"
+                  class="relative w-full rounded-xl shadow-2xl bg-white p-8 sm:p-16 lg:p-24"
                 />
               </div>
             </div>
