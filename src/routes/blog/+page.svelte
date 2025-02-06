@@ -18,7 +18,7 @@
 
 <div class="antialiased">
   <div class="pt-20 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
       <h1 class="relative flex flex-col gap-y-2">
         <span
           class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-pumpkin-400"
@@ -52,7 +52,7 @@
   </div>
 
   <div class="relative border border-stormy-50 bg-stormy-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mp-8 lg:pb-16 -mt-36">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mp-8 lg:pb-16 -mt-36">
       <div class="mb-12 relative z-10">
         <BlogPostCard post={featuredPost} />
       </div>

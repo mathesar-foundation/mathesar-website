@@ -16,7 +16,7 @@
         <img
           src={post.image}
           alt=""
-          class="w-full h-full object-cover object-left-top"
+          class="w-full h-full object-cover object-center"
         />
       </div>
 
@@ -53,11 +53,11 @@
           <img
             src={post.image}
             alt=""
-            class="w-full h-full object-cover object-left-top"
+            class="w-full h-full object-cover object-center"
           />
         </div>
 
-        <div class="p-8 md:py-12 md:pr-12">
+        <div class="p-8 md:py-12 md:pr-12 flex flex-col justify-center">
           <div class="flex flex-wrap gap-1.5 mb-6">
             {#each post.tags as tag}
               <span
