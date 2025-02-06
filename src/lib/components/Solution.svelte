@@ -54,7 +54,7 @@
             class="flex items-center justify-center gap-5 lg:gap-8 mb-8 w-full"
           >
             <div
-              class="inline-flex items-center justify-center shrink-0 w-[7rem] h-[7rem] rounded-2xl border-2 border-current"
+              class="inline-flex bg-plum-800 text-pumpkin-400 items-center justify-center shrink-0 w-20 h-20 rounded-2xl"
             >
               {#if iconComponents[solution.meta.icon]}
                 <svelte:component
