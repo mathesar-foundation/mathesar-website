@@ -3,9 +3,26 @@
   import Stickers from "./Stickers.svelte";
   import TrackedLink from "./TrackedLink.svelte";
   import Video from "./Video.svelte";
+  import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 </script>
 
 <div class="relative overflow-x-clip">
+
+  <div class="flex justify-center py-4">
+    <div class="bg-plum-600 shadow-lg rounded-full">
+      <TrackedLink
+        analyticsData={{ location: "hero_banner" }}
+        href="/free-install"
+        class="group inline-flex items-center justify-center gap-2 px-6 py-2 text-white hover:text-white/90 transition-colors duration-300"
+      >
+        <span class="text-sm sm:text-base font-medium whitespace-nowrap">
+          Need help with installation? <span class="underline">Get free support</span>
+        </span>
+        <ArrowRight class="w-5 text-xl text-white/80" />
+      </TrackedLink>
+    </div>
+  </div>
+
   <section class="relative">
     <div>
       <Stickers variant="hero" />
