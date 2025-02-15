@@ -51,45 +51,49 @@
             </div>
 
             <div class="space-y-2">
-              <label for="current_solution" class="block font-medium text-stormy-800">Current Solution</label>
+              <label for="current_solution" class="block font-medium text-stormy-800">
+                What database solution are you currently using?
+              </label>
               <input
                 type="text"
                 id="current_solution"
                 name="current_solution"
-                placeholder="What database solution are you currently using?"
                 class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
               />
             </div>
 
             <div class="space-y-2">
-              <label for="hosting_provider" class="block font-medium text-stormy-800">Hosting Provider</label>
+              <label for="hosting_provider" class="block font-medium text-stormy-800">
+                Where do you plan to host Mathesar?
+              </label>
               <input
                 type="text"
                 id="hosting_provider"
                 name="hosting_provider"
-                placeholder="Where do you plan to host Mathesar?"
                 class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
               />
             </div>
 
             <div class="space-y-2">
-              <label for="use_case" class="block font-medium text-stormy-800">Use Case</label>
+              <label for="use_case" class="block font-medium text-stormy-800">
+                How do you plan to use Mathesar?
+              </label>
               <textarea
                 id="use_case"
                 name="use_case"
                 rows="3"
-                placeholder="How do you plan to use Mathesar?"
                 class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
               ></textarea>
             </div>
 
             <div class="space-y-2">
-              <label for="other_info" class="block font-medium text-stormy-800">Additional Information</label>
+              <label for="other_info" class="block font-medium text-stormy-800">
+                Any other details you'd like to share?
+              </label>
               <textarea
                 id="other_info"
                 name="other_info"
                 rows="3"
-                placeholder="Any other details you'd like to share?"
                 class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
               ></textarea>
             </div>
