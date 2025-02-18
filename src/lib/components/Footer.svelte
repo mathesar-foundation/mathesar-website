@@ -149,7 +149,7 @@
             Share your thoughts in our quick survey:
           </p>
           <a
-            href="https://forms.gle/yjxiEQr9QzTT5GCSA"
+            href="/survey"
             target="_blank"
             rel="noopener noreferrer"
             class="w-full block text-center bg-plum-300/20 text-plum-800 border-2 border-plum-500 hover:bg-plum-400/20 px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-1"
