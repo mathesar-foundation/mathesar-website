@@ -90,6 +90,10 @@
   profile_image: https://github.com/linzhou-zhong.png
   profile_url: https://github.com/linzhou-zhong
   username: linzhou-zhong
+- name: zack
+  profile_image: https://github.com/zackkrida.png
+  profile_url: https://github.com/zackkrida
+  username: zackkrida
 - name: Hiten Vidhani
   profile_image: https://github.com/hitenvidhani.png
   profile_url: https://github.com/hitenvidhani
@@ -110,10 +114,6 @@
   profile_image: https://github.com/hemant-hc.png
   profile_url: https://github.com/hemant-hc
   username: hemant-hc
-- name: zack
-  profile_image: https://github.com/zackkrida.png
-  profile_url: https://github.com/zackkrida
-  username: zackkrida
 - name: Aagman Bhatt
   profile_image: https://github.com/aagmanbhatt.png
   profile_url: https://github.com/aagmanbhatt
