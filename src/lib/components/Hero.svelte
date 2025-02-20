@@ -3,9 +3,11 @@
   import Stickers from "./Stickers.svelte";
   import TrackedLink from "./TrackedLink.svelte";
   import Video from "./Video.svelte";
+  import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 </script>
 
 <div class="relative overflow-x-clip">
+
   <section class="relative">
     <div>
       <Stickers variant="hero" />
