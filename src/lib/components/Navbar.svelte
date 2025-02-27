@@ -11,6 +11,7 @@
 
   import XMark from "iconoir/icons/xmark.svg?component";
   import OpenNewWindow from "iconoir/icons/open-new-window.svg?component";
+  import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 
   const items = [
     { name: "Product", path: "product" },
@@ -20,6 +21,7 @@
     { name: "Blog", path: "blog" },
     { name: "Docs", path: "https://docs.mathesar.org/latest/" },
     { name: "Donate", path: "donate" },
+    { name: "✨ Install Support ✨", path: "free-install" },
   ];
 
   $: currentPath = $page.url.pathname;
@@ -41,23 +43,25 @@
 
 <header class="z-20 w-full transition-all relative duration-300">
   <nav
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center gap-4"
+    class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center"
   >
-    <a href="/" class="shrink-0" aria-label="Mathesar Homepage">
-      <enhanced:img
-        src="/src/assets/logo.png"
-        alt="Mathesar"
-        class="h-5 md:h-6 w-auto"
-      />
-    </a>
+    <div class="flex items-center gap-8">
+      <a href="/" class="shrink-0" aria-label="Mathesar Homepage">
+        <enhanced:img
+          src="/src/assets/logo.png"
+          alt="Mathesar"
+          class="h-5 md:h-6 w-auto -translate-y-[4px]"
+        />
+      </a>
+    </div>
 
-    <div class="hidden lg:flex gap-6 xl:gap-10">
+    <div class="hidden lg:flex gap-3 xl:gap-6 items-center">
       {#each items as item}
         <a
           href={item.path.startsWith("http") ? item.path : `/${item.path}`}
           target={item.path.startsWith("http") ? "_blank" : undefined}
           rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-          class="relative text-[17px] text-md font-medium {currentPath.split(
+          class="relative xl:text-[17px] text-[16px] font-medium {currentPath.split(
             '/',
           )[1] === item.path
             ? 'text-white'
@@ -76,12 +80,12 @@
           ></span>
         </a>
       {/each}
-    </div>
-
-    <div class="flex items-center gap-4 lg:gap-6">
       <div class="hidden sm:block">
         <StarsButton count={starCount} />
       </div>
+    </div>
+
+    <div class="flex items-center gap-4 lg:gap-6 justify-end">
       <TrackedLink
         analyticsData={{ location: "header" }}
         href="https://docs.mathesar.org"
