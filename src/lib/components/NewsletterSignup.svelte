@@ -86,7 +86,7 @@
           {formState === FormState.SUBMITTING ? "Submitting..." : "Subscribe"}
         </button>
       </div>
-      <p class={`text-sm ${themes[theme].textSecondary}`}>
+      <p class={`text-sm ${themes[theme].textSecondary} mt-2 opacity-75 mx-auto leading-relaxed max-w-md`}>
         We'll send you occasional email updates about Mathesar. You can opt out
         at any time.
       </p>
