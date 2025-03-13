@@ -55,68 +55,55 @@
         </div>
       </div>
 
-      <div class="relative z-20 mt-16">
-        <div class="flex flex-col">
+      <div class="relative z-20 mt-24">
+        <div class="flex flex-col items-center">
           <div
-            class="flex items-center justify-center relative z-10 mb-2 min-h-[200px] w-full overflow-visible"
+            class="flex items-center justify-center min-w-[480px] relative z-10 mb-2 min-h-[240px] w-full overflow-visible"
           >
-            <div
-              class="absolute top-24 flex w-full justify-center gap-8 md:gap-24 lg:gap-40"
-            >
-              <div
-                class="w-28 h-28 md:w-48 md:h-48 flex-shrink-0 flex items-center justify-center relative z-10 -rotate-12"
-              >
-                <enhanced:img
-                  src="/src/assets/illustrations/postgres-badge.png"
-                  alt="PostgreSQL"
-                  class="w-24 h-24 md:w-28 md:h-28 animate-float-delayed"
-                />
-              </div>
-
-              <div
-                class="w-32 h-32 md:w-56 md:h-56 flex-shrink-0 flex items-center justify-center relative z-20 rotate-6"
-              >
-                <enhanced:img
-                  src="/src/assets/illustrations/mathesar-badge.png"
-                  alt="Mathesar"
-                  class="w-28 h-28 md:w-44 md:h-44 animate-float"
-                />
-              </div>
-
-              <div
-                class="w-28 h-28 md:w-48 md:h-48 flex-shrink-0 flex items-center justify-center relative z-10 rotate-12"
-              >
-                <enhanced:img
-                  src="/src/assets/illustrations/front-end-badge.png"
-                  alt="Frontend"
-                  class="w-24 h-24 md:w-28 md:h-28 animate-float-slow"
-                />
-              </div>
-            </div>
-
-            <div class="relative flex items-center justify-center -mt-20">
-              <div class="absolute -left-4 w-2/5 -rotate-6 z-0">
+            <div class="relative w-full flex items-center justify-center -mt-20">
+              <div class="absolute -left-16 -rotate-6 z-0 w-1/2">
                 <enhanced:img
                   src="/src/assets/illustrations/postgres-frame.png"
                   alt="PostgreSQL Interface"
                   class="w-full rounded-lg shadow-lg border-2 border-stormy-700/20"
                 />
+                <div class="absolute top-1/2 left-1/4 lg:-left-4">
+                  <enhanced:img
+                    src="/src/assets/illustrations/postgres-badge.png"
+                    alt="PostgreSQL"
+                    class="w-20 h-20 md:w-24 md:h-24 animate-float-delayed"
+                  />
+                </div>
               </div>
 
-              <div class="w-1/2 z-10">
+              <div class="z-10 w-2/3">
                 <enhanced:img
                   src="/src/assets/illustrations/mathesar-frame.png"
                   alt="Mathesar Interface"
                   class="w-full rounded-lg shadow-xl border-2 border-stormy-700/20"
                 />
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <enhanced:img
+                    src="/src/assets/illustrations/mathesar-badge.png"
+                    alt="Mathesar"
+                    class="w-28 h-28 md:w-40 md:h-40 animate-float"
+                  />
+                </div>
               </div>
 
-              <div class="absolute -right-4 w-2/5 rotate-6">
+              <div class="absolute -right-16 rotate-6 z-0 w-1/2">
                 <enhanced:img
                   src="/src/assets/illustrations/front-end-frame.png"
                   alt="Frontend Interface"
                   class="w-full rounded-lg shadow-lg border-2 border-stormy-700/20"
                 />
+                <div class="absolute top-1/2 right-1/4 lg:-right-4">
+                  <enhanced:img
+                    src="/src/assets/illustrations/front-end-badge.png"
+                    alt="Frontend"
+                    class="w-20 h-20 md:w-24 md:h-24 animate-float-slow"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -130,12 +117,12 @@
   </div>
 </div>
 
-<section class="relative pt-20 bg-stormy-50 overflow-x-clip">
-  <div class="flex justify-center">
+<section class="relative bg-stormy-50 overflow-x-clip">
+  <div class="flex justify-center -mt-20 relative z-20">
     <enhanced:img
       src="/src/assets/illustrations/database-badge.png"
       alt="database"
-      class="w-32 md:w-40 animate-float-delayed"
+      class="w-40 md:w-56 animate-float-delayed"
     />
   </div>
 
