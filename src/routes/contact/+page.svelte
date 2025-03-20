@@ -39,11 +39,17 @@
       image: OpenSource,
     },
     {
-      title: "Postgres for Access Control",
+      title: "Easy to Install",
       description:
-        "Mathesar relies on Postgres database permissions for access control, lowering the risk of a second layer of access to your database.",
-      image: Permissions,
+        "Mathesar only takes a few minutes to install, requires minimal additions to existing databases, and doesn't require any code to use.",
+      image: EasyInstall,
     },
+    // {
+    //   title: "Postgres for Access Control",
+    //   description:
+    //     "Mathesar relies on Postgres database permissions for access control, lowering the risk of a second layer of access to your database.",
+    //   image: Permissions,
+    // },
     {
       title: "Self-hosted",
       description:
@@ -53,15 +59,19 @@
   ];
 </script>
 
-<Seo title="Community" image="/og/og-community.png" />
+<Seo title="Contact Us" image="/og/og-community.png" />
 
 <section class="relative pt-24">
-  <Stickers variant="community" />
+  <div class="opacity-60">
+    <Stickers variant="community" />
+  </div>
 
   <div
     class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white antialiased"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-8"
+    >
       <div class="lg:max-w-xl">
         <enhanced:img
           src="/src/assets/illustrations/mathesar-frame.png"
@@ -71,24 +81,23 @@
 
         <h1 class="mb-8">
           <span
-            class="block text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6"
+            class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6"
           >
-            Manage Your Data with Ease.
-            <span class="text-pumpkin-400 inline-block">No Code Required.</span>
+            The simplest way to manage your data.
+            <span class="text-pumpkin-400 inline-block"
+              >No subscription required.</span
+            >
           </span>
           <span
-            class="block text-xl sm:text-2xl text-stormy-200 font-normal leading-relaxed"
+            class="block text-xl sm:text-xl text-white font-normal leading-relaxed"
           >
-            Mathesar is an open-source, spreadsheet-like interface for Postgres
-            that makes database management simple, accessible, and powerful.
+            View, edit, create, and query data, all with no code or technical
+            knowledge. Mathesar makes it easy to quickly empower users to view,
+            edit, and understand the data they need, in an interface they're
+            familiar with.100% open source, free, Postgres-based, and
+            self-hosted.
           </span>
         </h1>
-
-        <p>
-          View, edit, create, and query your data effortlessly—all without
-          technical knowledge. Built directly on Postgres, Mathesar ensures
-          privacy, scalability, and complete control over your data.
-        </p>
       </div>
 
       <div
@@ -97,23 +106,24 @@
         <h2
           class="text-3xl sm:text-4xl font-bold tracking-tight text-stormy-800 mb-4"
         >
-          Get started with Mathesar
+          Get started with Mathesar!
         </h2>
         <p>
-          Our team is here to help you get started with Mathesar. Whether you're
-          exploring alternatives to spreadsheets, managing data in Postgres, or
-          just curious about what we offer, we'd love to hear from you! Fill out
-          the form below, and we'll be in touch.
+          We’re here to help you get the most out of Mathesar. Whether you’ve
+          outgrown your spreadsheet, or are looking for a better way to manage
+          your existing Postgres data, we’d love to connect and show you how
+          Mathesar can support you and your team. Just fill out the form below,
+          and we’ll be in touch shortly!
         </p>
 
         <form
           class="max-w-2xl mx-auto space-y-6"
-          action="https://formspree.io/f/moqbgpro"
+          action="https://formspree.io/f/xvgkgnld"
           method="POST"
         >
           <div class="space-y-4">
             <div class="space-y-2">
-              <label for="full_name" class="block font-medium text-stormy-800"
+              <label for="full_name" class="block text-sm text-stormy-800"
                 >Full Name</label
               >
               <input
@@ -126,7 +136,7 @@
             </div>
 
             <div class="space-y-2">
-              <label for="email" class="block font-medium text-stormy-800"
+              <label for="email" class="block text-sm text-stormy-800"
                 >Work Email</label
               >
               <input
@@ -136,18 +146,30 @@
                 required
                 class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
               />
+            </div>
 
-              <div class="space-y-2">
-                <label for="message" class="block font-medium text-stormy-800">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="3"
-                  class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
-                ></textarea>
-              </div>
+            <div class="space-y-2">
+              <label for="phone" class="block text-sm text-stormy-800"
+                >Phone (optional)</label
+              >
+              <input
+                type="phone"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
+              />
+            </div>
+            <div class="space-y-2">
+              <label for="message" class="block text-sm text-stormy-800">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="3"
+                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
+              ></textarea>
             </div>
           </div>
           <div class="flex justify-center">
@@ -178,7 +200,7 @@
         <span
           class="block text-3xl md:text-4xl sm:text-5xl lg:text-6xl font-bold text-stormy-800"
         >
-          Why choose Mathesar?
+          Built for everyone
         </span>
       </h2>
       <p class="text-lg md:text-xl text-gray-600 mt-6 max-w-4xl mx-auto">
@@ -189,11 +211,14 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 xl:mb-12"
+    >
       {#each cardData as card}
         <Card {card} />
       {/each}
     </div>
   </div>
-  <CTASection />
+
+  <!-- <CTASection /> -->
 </section>
