@@ -18,7 +18,11 @@
     { name: "Community", path: "/community" },
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
-    { name: "Docs", path: "https://docs.mathesar.org/latest/", isExternal: true },
+    {
+      name: "Docs",
+      path: "https://docs.mathesar.org/latest/",
+      isExternal: true,
+    },
     { name: "Donate", path: "/donate" },
   ];
 
@@ -108,7 +112,7 @@
             class="text-white hover:text-salmon-500 transition-colors duration-300"
           >
             hello@mathesar.org
-          </a>
+          </a>.
         </p>
 
         <div class="mt-8">
@@ -138,7 +142,6 @@
           Keep on top of what's going on at the Mathesar Foundation
         </h3>
         <NewsletterSignup />
-
 
         <!-- Survey CTA Section -->
         <div class="mt-8 space-y-2 p-4 rounded-lg bg-stormy-100">
@@ -181,6 +184,12 @@
             class="text-white hover:text-salmon-500 transition-colors duration-300"
           >
             Mailing&nbsp;List
+          </a>
+          <a
+            href="/contact"
+            class="text-white hover:text-salmon-500 transition-colors duration-300"
+          >
+            Contact Us
           </a>
           <a
             aria-label="RSS Feed"
