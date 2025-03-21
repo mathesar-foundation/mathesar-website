@@ -37,6 +37,10 @@
 
       if (response.ok) {
         formState = FormState.SUCCESS;
+
+        if (typeof window.sa_event === "function") {
+          window.sa_event("form_submit", { name: "Contact Form" });
+        }
       } else {
         formState = FormState.ERROR;
       }
