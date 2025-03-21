@@ -13,25 +13,39 @@
   import Permissions from "../../assets/illustrations/permissions.png?w=800&lossless&enhanced";
   import SelfHosting from "../../assets/illustrations/self-hosting.png?w=800&lossless&enhanced";
 
+  const FormState = {
+    IDLE: "IDLE",
+    SUBMITTING: "SUBMITTING",
+    SUCCESS: "SUCCESS",
+    ERROR: "ERROR",
+  } as const;
+
+  let formState: (typeof FormState)[keyof typeof FormState] = FormState.IDLE;
+  let full_name = "";
+  let email = "";
+  let phone = "";
+  let message = "";
+
+  const handleSubmit = async () => {
+    formState = FormState.SUBMITTING;
+    try {
+      const response = await fetch("https://formspree.io/f/xvgkgnld", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ full_name, email, phone, message }),
+      });
+
+      if (response.ok) {
+        formState = FormState.SUCCESS;
+      } else {
+        formState = FormState.ERROR;
+      }
+    } catch {
+      formState = FormState.ERROR;
+    }
+  };
+
   const cardData = [
-    // {
-    //   title: "As Scalable as Postgres",
-    //   description:
-    //     "Mathesar is designed for production databases and scales as easily as Postgres, supporting any size or complexity of data.",
-    //   image: Scalable,
-    // },
-    // {
-    //   title: "Easy to Install",
-    //   description:
-    //     "Mathesar only takes a few minutes to install, requires minimal additions to existing databases, and doesn't require any code to use.",
-    //   image: EasyInstall,
-    // },
-    // {
-    //   title: "No Sharing or 3rd Party Access",
-    //   description:
-    //     "You have complete control of your data – Mathesar cannot share your data or allows third-parties to access it.",
-    //   image: NoSharing,
-    // },
     {
       title: "100% Open Source & Nonprofit",
       description:
@@ -44,12 +58,6 @@
         "Mathesar only takes a few minutes to install, requires minimal additions to existing databases, and doesn't require any code to use.",
       image: EasyInstall,
     },
-    // {
-    //   title: "Postgres for Access Control",
-    //   description:
-    //     "Mathesar relies on Postgres database permissions for access control, lowering the risk of a second layer of access to your database.",
-    //   image: Permissions,
-    // },
     {
       title: "Self-hosted",
       description:
@@ -81,12 +89,10 @@
 
         <h1 class="mb-8">
           <span
-            class="block text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6"
+            class="block text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight !leading-[1.1] text-white mb-6"
           >
-            The simplest way to manage your data.
-            <span class="text-pumpkin-400 inline-block"
-              >No subscription required.</span
-            >
+            Simple data management.
+            <span class="text-pumpkin-400">No subscription required.</span>
           </span>
           <span
             class="block text-xl sm:text-xl text-white font-normal leading-relaxed"
@@ -109,81 +115,107 @@
           Get started with Mathesar!
         </h2>
         <p>
-          We’re here to help you get the most out of Mathesar. Whether you’ve
+          We're here to help you get the most out of Mathesar. Whether you've
           outgrown your spreadsheet, or are looking for a better way to manage
-          your existing Postgres data, we’d love to connect and show you how
+          your existing Postgres data, we'd love to connect and show you how
           Mathesar can support you and your team. Just fill out the form below,
-          and we’ll be in touch shortly!
+          and we'll be in touch shortly!
         </p>
 
-        <form
-          class="max-w-2xl mx-auto space-y-6"
-          action="https://formspree.io/f/xvgkgnld"
-          method="POST"
-        >
-          <div class="space-y-4">
-            <div class="space-y-2">
-              <label for="full_name" class="block text-sm text-stormy-800"
-                >Full Name</label
-              >
-              <input
-                type="text"
-                id="full_name"
-                name="full_name"
-                required
-                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
-              />
-            </div>
-
-            <div class="space-y-2">
-              <label for="email" class="block text-sm text-stormy-800"
-                >Work Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
-              />
-            </div>
-
-            <div class="space-y-2">
-              <label for="phone" class="block text-sm text-stormy-800"
-                >Phone (optional)</label
-              >
-              <input
-                type="phone"
-                id="phone"
-                name="phone"
-                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
-              />
-            </div>
-            <div class="space-y-2">
-              <label for="message" class="block text-sm text-stormy-800">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows="3"
-                class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
-              ></textarea>
-            </div>
+        {#if formState === FormState.SUCCESS}
+          <div
+            class="flex flex-col items-center text-center space-y-2 p-6 border rounded-md bg-stormy-800 border-stormy-700 mt-8"
+          >
+            <h3 class="text-xl font-medium text-white">
+              Thank you for reaching out.
+            </h3>
+            <p class="text-stormy-200 max-w-md">
+              We've received your message and a member of our team will reach
+              out soon. We look forward to helping you get started with
+              Mathesar.
+            </p>
           </div>
-          <div class="flex justify-center">
-            <button
-              type="submit"
-              class="w-full sm:w-auto group inline-flex items-center justify-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
-                text-white shadow-lg transition-all duration-300
-                hover:bg-orange-700 hover:shadow-md
-                active:transform active:scale-[0.98]"
-            >
-              Get Started
-            </button>
-          </div>
-        </form>
+        {:else}
+          <form
+            class="max-w-2xl mx-auto space-y-6"
+            on:submit|preventDefault={handleSubmit}
+          >
+            <div class="space-y-4">
+              <div class="space-y-2">
+                <label for="full_name" class="block text-sm text-stormy-800"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="full_name"
+                  bind:value={full_name}
+                  required
+                  disabled={formState === FormState.SUBMITTING}
+                  class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label for="email" class="block text-sm text-stormy-800"
+                  >Work Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  bind:value={email}
+                  required
+                  disabled={formState === FormState.SUBMITTING}
+                  class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label for="phone" class="block text-sm text-stormy-800"
+                  >Phone (optional)</label
+                >
+                <input
+                  type="phone"
+                  id="phone"
+                  bind:value={phone}
+                  disabled={formState === FormState.SUBMITTING}
+                  class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800"
+                />
+              </div>
+              <div class="space-y-2">
+                <label for="message" class="block text-sm text-stormy-800">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  bind:value={message}
+                  required
+                  disabled={formState === FormState.SUBMITTING}
+                  rows="3"
+                  class="w-full px-4 py-2.5 rounded-md border border-stormy-200 focus:outline-none focus:ring-2 focus:ring-salmon-500 bg-white text-stormy-800 resize-none"
+                ></textarea>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                disabled={formState === FormState.SUBMITTING}
+                class="w-full sm:w-auto group inline-flex items-center justify-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
+                  text-white shadow-lg transition-all duration-300
+                  hover:bg-orange-700 hover:shadow-md
+                  active:transform active:scale-[0.98]"
+              >
+                {formState === FormState.SUBMITTING
+                  ? "Submitting..."
+                  : "Get Started"}
+              </button>
+            </div>
+            {#if formState === FormState.ERROR}
+              <p class="text-sm text-red-500 text-center">
+                Something went wrong. Please try again later.
+              </p>
+            {/if}
+          </form>
+        {/if}
       </div>
     </div>
   </div>
@@ -219,6 +251,4 @@
       {/each}
     </div>
   </div>
-
-  <!-- <CTASection /> -->
 </section>
