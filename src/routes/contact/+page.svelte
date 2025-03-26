@@ -40,6 +40,13 @@
 
         if (typeof window.sa_event === "function") {
           window.sa_event("form_submit", { name: "Contact Form" });
+
+          typeof window.gtag === "function" &&
+            window.gtag("event", "conversion", {
+              send_to: "AW-16943326711/aoZECOOUja8aEPfLmo8_",
+              value: 1.0,
+              currency: "USD",
+            });
         }
       } else {
         formState = FormState.ERROR;
@@ -72,6 +79,23 @@
 </script>
 
 <Seo title="Contact Us" image="/og/og-community.png" />
+
+<svelte:head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=AW-16943326711"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "AW-16943326711");
+  </script>
+</svelte:head>
 
 <section class="relative pt-24">
   <div class="opacity-60">
