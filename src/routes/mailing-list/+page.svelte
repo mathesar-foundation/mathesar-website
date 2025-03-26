@@ -6,18 +6,25 @@
 
 <Seo title="Mailing List" />
 
-<div class="bg-stormy-50 flex-grow">
-  <div class=" pt-8 lg:pt-12">
-    <div
-      class="max-w-3xl mx-auto prose prose-slate text-center prose-h1:font-bold prose-headings:text-gray-800 py-16]"
-    >
-      <h1>Join Our Mailing List</h1>
-      <div class="text-lg lg:text-2xl space-y-4 text-center">
-        <p>Keep on top of what's going on at the Mathesar Foundation</p>
-      </div>
+<div class="antialiased overflow-x-hidden">
+  <section class="relative pt-12 sm:pt-20">
+    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16 sm:mb-32">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-4 sm:mb-6">
+          Join Our <br />
+          <span class="text-pumpkin-400">Mailing List</span>
+        </h1>
 
-      <NewsletterSignup theme="light" />
+        <p class="text-xl sm:text-2xl text-stormy-100 mt-4 sm:mt-6 mb-8 sm:mb-12">
+          Keep on top of what's going on at the Mathesar Foundation
+        </p>
+
+        <div class="max-w-xl mx-auto bg-stormy-50 rounded-xl p-4 sm:p-6 shadow-lg">
+          <NewsletterSignup theme="light" />
+        </div>
+      </div>
     </div>
-    <CTASection />
-  </div>
+  </section>
+
+  <CTASection />
 </div>
