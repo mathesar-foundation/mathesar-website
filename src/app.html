@@ -17,5 +17,16 @@
         referrerpolicy="no-referrer-when-downgrade"
       />
     </noscript>
+    <!-- Add a no-op Google Analytics script in an attempt to appease Google's non-profit ads program,
+     where we've tried to run some ads for Mathesar. -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16943326711"></script>
+    <script>
+      window['ga-disable-AW-16943326711'] = true;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16943326711', { send_page_view: false }));
+    </script>
   </body>
 </html>

@@ -55,7 +55,7 @@
       </a>
     </div>
 
-    <div class="hidden lg:flex gap-3 xl:gap-6 items-center">
+    <div class="hidden lg:flex gap-3 lg:gap-4 2xl:gap-6 items-center">
       {#each items as item}
         <a
           href={item.path.startsWith("http") ? item.path : `/${item.path}`}
