@@ -76,7 +76,7 @@
             prose-ul:text-plum-800 prose-ul:my-6 prose-ul:space-y-2
             prose-ol:text-plum-800 prose-ol:my-6 prose-ol:space-y-2
             prose-blockquote:text-plum-800 prose-blockquote:leading-relaxed
-            prose-code:text-stormy-100 prose-pre:bg-stormy-800
+            prose-code:text-plum-800 prose-pre:bg-stormy-800
             prose-pre:text-plum-800 prose-pre:my-8
             prose-figcaption:text-plum-800
             prose-lead:text-plum-800 prose-lead:leading-relaxed
