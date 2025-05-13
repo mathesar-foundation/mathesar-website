@@ -158,14 +158,14 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
-- name: Tafreed Ahmad
-  profile_image: https://github.com/TafreedAhmad.png
-  profile_url: https://github.com/TafreedAhmad
-  username: TafreedAhmad
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
   username: yankevn
+- name: Tafreed Ahmad
+  profile_image: https://github.com/TafreedAhmad.png
+  profile_url: https://github.com/TafreedAhmad
+  username: TafreedAhmad
 - name: ayao
   profile_image: https://github.com/ayao451.png
   profile_url: https://github.com/ayao451
@@ -178,26 +178,14 @@
   profile_image: https://github.com/smruthi49.png
   profile_url: https://github.com/smruthi49
   username: smruthi49
-- name: Mohamed Muhsin
-  profile_image: https://github.com/muhsinkamil.png
-  profile_url: https://github.com/muhsinkamil
-  username: muhsinkamil
-- name: Sahil Suman
-  profile_image: https://github.com/sahilsuman933.png
-  profile_url: https://github.com/sahilsuman933
-  username: sahilsuman933
-- name: Fidal Mathew
-  profile_image: https://github.com/FidalMathew.png
-  profile_url: https://github.com/FidalMathew
-  username: FidalMathew
 - name: S Sharath Lingam
   profile_image: https://github.com/sharath-1517.png
   profile_url: https://github.com/sharath-1517
   username: sharath-1517
-- name: null
-  profile_image: https://github.com/arvind-1.png
-  profile_url: https://github.com/arvind-1
-  username: arvind-1
+- name: Mohamed Muhsin
+  profile_image: https://github.com/muhsinkamil.png
+  profile_url: https://github.com/muhsinkamil
+  username: muhsinkamil
 - name: null
   profile_image: https://github.com/transifex-integration[bot].png
   profile_url: https://github.com/transifex-integration[bot]
@@ -210,6 +198,18 @@
   profile_image: https://github.com/andyharley-cci.png
   profile_url: https://github.com/andyharley-cci
   username: andyharley-cci
+- name: null
+  profile_image: https://github.com/arvind-1.png
+  profile_url: https://github.com/arvind-1
+  username: arvind-1
+- name: Fidal Mathew
+  profile_image: https://github.com/FidalMathew.png
+  profile_url: https://github.com/FidalMathew
+  username: FidalMathew
+- name: Sahil Suman
+  profile_image: https://github.com/sahilsuman933.png
+  profile_url: https://github.com/sahilsuman933
+  username: sahilsuman933
 - name: CJ
   profile_image: https://github.com/dev-cj.png
   profile_url: https://github.com/dev-cj
