@@ -54,6 +54,10 @@
   profile_image: https://github.com/Jyuart.png
   profile_url: https://github.com/Jyuart
   username: Jyuart
+- name: zack
+  profile_image: https://github.com/zackkrida.png
+  profile_url: https://github.com/zackkrida
+  username: zackkrida
 - name: Anshuman Maurya
   profile_image: https://github.com/IamEzio.png
   profile_url: https://github.com/IamEzio
@@ -62,10 +66,6 @@
   profile_image: https://github.com/Jinxiao0302.png
   profile_url: https://github.com/Jinxiao0302
   username: Jinxiao0302
-- name: zack
-  profile_image: https://github.com/zackkrida.png
-  profile_url: https://github.com/zackkrida
-  username: zackkrida
 - name: Varsha
   profile_image: https://github.com/varshadr.png
   profile_url: https://github.com/varshadr
