@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Mathesar's Kriti Godey: The Long Way into Open Source"
-tags: interview news
+title: "The Long Way into Open Source"
+tags: open-source personal
 date: 2025-05-21
 author: Kriti Godey
-description: "Mathesar's project lead, Kriti, shares her open source story—from newbie to user to maintainer—for the Open Source Initiative's Maintainer Month."
+description: "How I got into open source—from clueless newbie to project lead of Mathesar. Cross-posted from the Open Source Initiative's maintainer stories project."
 image: /images/blog/kriti-maintainer-story.png
 ---
 
-_This piece was originally published on May 20, 2025, as part of the Open Source Initiative’s Maintainer Month. [Learn more](https://opensource.org/maintainers) about how OSI supports open source maintainers, or read the [original post](https://opensource.org/maintainers/kgodey) on their website._
+_This piece is adapted from a longer version originally published as part of the Open Source Initiative’s Maintainer Month project. [Learn more](https://opensource.org/maintainers) about how OSI supports open source maintainers, or read the [original story on the OSI website](https://opensource.org/maintainers/kgodey)._
 
 ---
 
@@ -60,19 +60,10 @@ The strange part is that you rarely hear from the people you help. But sometimes
 
 I still can’t believe I get to do this full time.
 
-## Maintainer Month topics
-
-This year, Maintainer Month is highlighting project security and the implications of AI on open source, so I wanted to add a couple of thoughts:
-
-- **On key security features in Mathesar**: Mathesar connects to production databases, so we can’t afford to be lax on security. In our [recent beta release](https://mathesar.org/blog/2025/01/29/release-0-2-0), we switched Mathesar’s access control system to use PostgreSQL roles and privileges. This massively improves security, since permissions are enforced at the database layer rather than the API layer. We also use Django’s default user system for UI authentication, since Django’s a well-established framework.
-
-- **On the impact of AI on open source**: AI is a tool—its impact depends entirely on how it’s used. I can see it making maintainers’ lives harder—by making low-effort PRs easier to produce, and easier by helping with triage, speeding up repetitive coding tasks, or improving documentation quality. I’m especially interested in its potential to make code and documentation interactive—something contributors can query instead of just read.
-
 ---
 
 If anything here resonated—or if you just want to talk, I’d love to hear from you.
 
 You can find me on GitHub at [@kgodey](https://github.com/kgodey), [LinkedIn](https://www.linkedin.com/in/kritigodey/), or reach me by email at [kriti@mathesar.org](mailto:kriti@mathesar.org).
 
-**[Read stories shared by other maintainers](https://opensource.org/maintainers).**<br />
-_This story was published under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en) by the author._
+_"The Long Way into Open Source" by Kriti Godey is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)._
