@@ -16,6 +16,7 @@
     { name: "Product", path: "/product" },
     { name: "Solutions", path: "/solutions" },
     { name: "Community", path: "/community" },
+    { name: "Roadmap", path: "/roadmap" },
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
     {
