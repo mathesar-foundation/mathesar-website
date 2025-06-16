@@ -10,12 +10,6 @@
   type: staff
   bio: |+
     "I have an older relative who has been compiling **family genealogy** data for years through an arduous process of paper forms in the mail. I'd like to digitize it for future generations! With Mathesar, our family will eventually be able to collaboratively manage this data and visualize it in new and exciting ways!"
-- name: Ghislaine Guerin
-  image: ghislaine.jpg
-  role: Product Designer
-  type: staff
-  bio: |+
-    "As someone who really enjoys cooking at home, I'm thinking Mathesar would be a great for **storing all my recipes** in one place. Being able to search and filter my recipes based on ingredients and cooking time would be really cool. I'm excited to give it a try!"
 - name: Pavish Kumar Ramani Gopal
   image: pavish.jpg
   role: Engineer
@@ -67,6 +61,6 @@
   type: board
   image: ian.jpg
 - name: Samantha Bates Weinstock
-  role: Visiting Researcher, Henkaku Center, Chiba Institute of Technology; Executive Director, US-Japan Innovation Institute 
+  role: Visiting Researcher, Henkaku Center, Chiba Institute of Technology; Executive Director, US-Japan Innovation Institute
   type: board
   image: sam.png
