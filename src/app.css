@@ -55,3 +55,7 @@
 body:has(dialog[open]) {
   overflow: hidden;
 }
+
+pre code {
+  color: white !important;
+}

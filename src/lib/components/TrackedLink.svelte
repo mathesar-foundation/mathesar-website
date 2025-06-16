@@ -3,6 +3,7 @@
   declare global {
     interface Window {
       sa_event?: (eventName: string, eventData?: object) => void;
+      gtag?: (name: string, type: string, payload?: object) => void;
     }
   }
 

@@ -40,7 +40,7 @@ Running the Mathesar website locally requires Node.js >18. See this [guide](http
 1. Clone the repo:
    ```shell
    # Or `gh repo clone mathesar-foundation/mathesar-website` using the Github CLI
-   > git clone git@github.com:mathesar-foundation/mathesar-website-beta.git
+   > git clone git@github.com:mathesar-foundation/mathesar-website.git
    ```
 2. Install dependencies with `npm install`.
 3. Run the local development server:
