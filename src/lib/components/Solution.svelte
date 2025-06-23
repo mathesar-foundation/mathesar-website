@@ -167,7 +167,7 @@
           {#each solution.screenshots as screenshot, index}
             <div class="screenshot-card">
               {#each Object.entries(imageModules) as [_path, module]}
-                {#if _path.includes(`${solution.id}/step-${index + 1}.png`)}
+                {#if _path.includes(`${solution.id}/step-${index + 1}-light.png`)}
                   <EnlargableImage
                     loading="lazy"
                     fetchpriority="high"

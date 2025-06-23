@@ -1,16 +1,11 @@
 <script lang="ts">
-  import CTASection from "$lib/components/CTASection.svelte";
-  import EnlargableImage from "$lib/components/EnlargableImage.svelte";
   import Card from "$lib/components/Card.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
 
-  import Screenshot from "../../assets/solutions/hardware-store-chain/primary-table.png?w=1000&lossless&enhanced";
   import EasyInstall from "../../assets/illustrations/easy-install.png?w=800&lossless&enhanced";
-  import NoSharing from "../../assets/illustrations/no-sharing.png?w=800&lossless&enhanced";
   import OpenSource from "../../assets/illustrations/open-source.png?w=800&lossless&enhanced";
-  import Permissions from "../../assets/illustrations/permissions.png?w=800&lossless&enhanced";
   import SelfHosting from "../../assets/illustrations/self-hosting.png?w=800&lossless&enhanced";
 
   const FormState = {
