@@ -50,14 +50,14 @@
   profile_image: https://github.com/mariusdebeer.png
   profile_url: https://github.com/mariusdebeer
   username: mariusdebeer
-- name: Yurii Palaida
-  profile_image: https://github.com/Jyuart.png
-  profile_url: https://github.com/Jyuart
-  username: Jyuart
 - name: zack
   profile_image: https://github.com/zackkrida.png
   profile_url: https://github.com/zackkrida
   username: zackkrida
+- name: Yurii Palaida
+  profile_image: https://github.com/Jyuart.png
+  profile_url: https://github.com/Jyuart
+  username: Jyuart
 - name: Anshuman Maurya
   profile_image: https://github.com/IamEzio.png
   profile_url: https://github.com/IamEzio
