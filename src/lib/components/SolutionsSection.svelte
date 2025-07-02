@@ -24,7 +24,7 @@
 
   // Load images
   const imageModules = import.meta.glob<SvelteComponent<Picture>>(
-    "/src/assets/solutions/**/primary-table.png",
+    "/src/assets/solutions/**/primary-table-light.png",
     {
       eager: true,
       query: {

@@ -35,5 +35,6 @@
    "@type": "Website",
    "name": "${title} | Mathesar",
    "url": "https//mathesar.org${page.url.pathname.toString()}",
-   "logo": ${image}  }</script>`}
+   "logo": "${image}"
+  }</script>`}
 </svelte:head>

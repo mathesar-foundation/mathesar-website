@@ -8,7 +8,7 @@
   meta:
     icon: "BoxIso"
     bgColor: "bg-plum-900"
-    image: "/solutions/hardware-store-chain/primary-table.png"
+    image: "/solutions/hardware-store-chain/primary-table-light.png"
     theme: "pumpkin"
   screenshots:
     - caption: "Track inventory levels across all store locations."
@@ -45,7 +45,7 @@
   meta:
     icon: "Database"
     bgColor: "bg-plum-900"
-    image: "/solutions/museum/primary-table.png"
+    image: "/solutions/museum/primary-table-light.png"
     theme: "cerulean"
   screenshots:
     - caption: "Find items and add them to a collection."
@@ -82,7 +82,7 @@
   meta:
     icon: "Headset"
     bgColor: "bg-rosy-900"
-    image: "/solutions/bike-shop/primary-table.png"
+    image: "/solutions/bike-shop/primary-table-light.png"
     theme: "seafoam"
   screenshots:
     - caption: "See the full work history of a service request."
@@ -119,7 +119,7 @@
   meta:
     icon: "GraphUp"
     bgColor: "bg-salmon-900"
-    image: "/solutions/makerspace/primary-table.png"
+    image: "/solutions/makerspace/primary-table-light.png"
     theme: "indigo"
   screenshots:
     - caption: "See the makerspace usage history for a given patron."
@@ -154,7 +154,7 @@
   meta:
     icon: "Dollar"
     bgColor: "bg-pumpkin-900"
-    image: "/solutions/nonprofit/primary-table.png"
+    image: "/solutions/nonprofit/primary-table-light.png"
     theme: "emerald"
   screenshots:
     - caption: "View and prioritize grant opportunities in a central dashboard."
@@ -189,7 +189,7 @@
   meta:
     icon: "Clock"
     bgColor: "bg-olivia-900"
-    image: "/solutions/ice-cream-distributor/primary-table.png"
+    image: "/solutions/ice-cream-distributor/primary-table-light.png"
     theme: "sunset"
   screenshots:
     - caption: "Review clock-in and clock-out time for all employees."
