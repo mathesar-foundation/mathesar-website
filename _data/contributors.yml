@@ -42,14 +42,14 @@
   profile_image: https://github.com/Aritra8438.png
   profile_url: https://github.com/Aritra8438
   username: Aritra8438
-- name: Gabriel Sotomayor
-  profile_image: https://github.com/mr-gabe49.png
-  profile_url: https://github.com/mr-gabe49
-  username: mr-gabe49
 - name: zack
   profile_image: https://github.com/zackkrida.png
   profile_url: https://github.com/zackkrida
   username: zackkrida
+- name: Gabriel Sotomayor
+  profile_image: https://github.com/mr-gabe49.png
+  profile_url: https://github.com/mr-gabe49
+  username: mr-gabe49
 - name: Marius de Beer
   profile_image: https://github.com/mariusdebeer.png
   profile_url: https://github.com/mariusdebeer
@@ -186,6 +186,10 @@
   profile_image: https://github.com/ayao451.png
   profile_url: https://github.com/ayao451
   username: ayao451
+- name: null
+  profile_image: https://github.com/transifex-integration[bot].png
+  profile_url: https://github.com/transifex-integration[bot]
+  username: transifex-integration[bot]
 - name: Mohamed Muhsin
   profile_image: https://github.com/muhsinkamil.png
   profile_url: https://github.com/muhsinkamil
@@ -194,10 +198,6 @@
   profile_image: https://github.com/andyharley-cci.png
   profile_url: https://github.com/andyharley-cci
   username: andyharley-cci
-- name: null
-  profile_image: https://github.com/transifex-integration[bot].png
-  profile_url: https://github.com/transifex-integration[bot]
-  username: transifex-integration[bot]
 - name: null
   profile_image: https://github.com/arvind-1.png
   profile_url: https://github.com/arvind-1
