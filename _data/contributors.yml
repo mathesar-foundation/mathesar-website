@@ -42,6 +42,10 @@
   profile_image: https://github.com/Aritra8438.png
   profile_url: https://github.com/Aritra8438
   username: Aritra8438
+- name: zack
+  profile_image: https://github.com/zackkrida.png
+  profile_url: https://github.com/zackkrida
+  username: zackkrida
 - name: Gabriel Sotomayor
   profile_image: https://github.com/mr-gabe49.png
   profile_url: https://github.com/mr-gabe49
@@ -50,10 +54,6 @@
   profile_image: https://github.com/mariusdebeer.png
   profile_url: https://github.com/mariusdebeer
   username: mariusdebeer
-- name: zack
-  profile_image: https://github.com/zackkrida.png
-  profile_url: https://github.com/zackkrida
-  username: zackkrida
 - name: Yurii Palaida
   profile_image: https://github.com/Jyuart.png
   profile_url: https://github.com/Jyuart
@@ -106,6 +106,10 @@
   profile_image: https://github.com/pegnott.png
   profile_url: https://github.com/pegnott
   username: pegnott
+- name: null
+  profile_image: https://github.com/dependabot[bot].png
+  profile_url: https://github.com/dependabot[bot]
+  username: dependabot[bot]
 - name: asharonbaltazar
   profile_image: https://github.com/asharonbaltazar.png
   profile_url: https://github.com/asharonbaltazar
@@ -114,10 +118,6 @@
   profile_image: https://github.com/hemant-hc.png
   profile_url: https://github.com/hemant-hc
   username: hemant-hc
-- name: null
-  profile_image: https://github.com/dependabot[bot].png
-  profile_url: https://github.com/dependabot[bot]
-  username: dependabot[bot]
 - name: Aagman Bhatt
   profile_image: https://github.com/aagmanbhatt.png
   profile_url: https://github.com/aagmanbhatt
@@ -186,6 +186,10 @@
   profile_image: https://github.com/ayao451.png
   profile_url: https://github.com/ayao451
   username: ayao451
+- name: null
+  profile_image: https://github.com/transifex-integration[bot].png
+  profile_url: https://github.com/transifex-integration[bot]
+  username: transifex-integration[bot]
 - name: Mohamed Muhsin
   profile_image: https://github.com/muhsinkamil.png
   profile_url: https://github.com/muhsinkamil
@@ -194,10 +198,6 @@
   profile_image: https://github.com/andyharley-cci.png
   profile_url: https://github.com/andyharley-cci
   username: andyharley-cci
-- name: null
-  profile_image: https://github.com/transifex-integration[bot].png
-  profile_url: https://github.com/transifex-integration[bot]
-  username: transifex-integration[bot]
 - name: null
   profile_image: https://github.com/arvind-1.png
   profile_url: https://github.com/arvind-1
