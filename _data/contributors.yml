@@ -146,10 +146,6 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
-- name: S Sharath Lingam
-  profile_image: https://github.com/sharath-1517.png
-  profile_url: https://github.com/sharath-1517
-  username: sharath-1517
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
@@ -166,26 +162,26 @@
   profile_image: https://github.com/priyang12.png
   profile_url: https://github.com/priyang12
   username: priyang12
-- name: Kevin Yan
-  profile_image: https://github.com/yankevn.png
-  profile_url: https://github.com/yankevn
-  username: yankevn
 - name: Tafreed Ahmad
   profile_image: https://github.com/TafreedAhmad.png
   profile_url: https://github.com/TafreedAhmad
   username: TafreedAhmad
-- name: Mehul Todi
-  profile_image: https://github.com/kid-116.png
-  profile_url: https://github.com/kid-116
-  username: kid-116
-- name: Smruthi
-  profile_image: https://github.com/smruthi49.png
-  profile_url: https://github.com/smruthi49
-  username: smruthi49
+- name: Kevin Yan
+  profile_image: https://github.com/yankevn.png
+  profile_url: https://github.com/yankevn
+  username: yankevn
 - name: ayao
   profile_image: https://github.com/ayao451.png
   profile_url: https://github.com/ayao451
   username: ayao451
+- name: Smruthi
+  profile_image: https://github.com/smruthi49.png
+  profile_url: https://github.com/smruthi49
+  username: smruthi49
+- name: Mehul Todi
+  profile_image: https://github.com/kid-116.png
+  profile_url: https://github.com/kid-116
+  username: kid-116
 - name: null
   profile_image: https://github.com/transifex-integration[bot].png
   profile_url: https://github.com/transifex-integration[bot]
@@ -218,6 +214,10 @@
   profile_image: https://github.com/gagan2005.png
   profile_url: https://github.com/gagan2005
   username: gagan2005
+- name: S Sharath Lingam
+  profile_image: https://github.com/sharath-1517.png
+  profile_url: https://github.com/sharath-1517
+  username: sharath-1517
 - name: Sujai Kumar Gupta
   profile_image: https://github.com/thesujai.png
   profile_url: https://github.com/thesujai
