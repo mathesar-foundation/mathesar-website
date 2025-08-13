@@ -1,14 +1,175 @@
-- title: Testing 2
-  url: https://github.com/zackkrida/mat-do-test/issues/2
+- title: File attachments
+  url: https://github.com/mathesar-foundation/mathesar/issues/4595
   type: Issue
   state: OPEN
-  repo: zackkrida/mat-do-test
-  number: 2
-  status: In Progress
-- title: Testing
-  url: https://github.com/zackkrida/mat-do-test/issues/1
+  repo: mathesar-foundation/mathesar
+  number: 4595
+  status: "\U0001F4CB Planning"
+- title: JSON and JSONB support
+  url: https://github.com/mathesar-foundation/mathesar/issues/4627
   type: Issue
   state: OPEN
-  repo: zackkrida/mat-do-test
-  number: 1
-  status: Todo
+  repo: mathesar-foundation/mathesar
+  number: 4627
+  status: "\u231B Upcoming"
+- title: Publish Mathesar data publicly
+  url: https://github.com/mathesar-foundation/mathesar/issues/4624
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4624
+  status: "\U0001F4A1 Ideas"
+- title: Single sign-on (OIDC)
+  url: https://github.com/mathesar-foundation/mathesar/issues/4578
+  type: Issue
+  state: CLOSED
+  repo: mathesar-foundation/mathesar
+  number: 4578
+  status: "\U0001F680 Shipped"
+- title: Helm chart
+  url: https://github.com/mathesar-foundation/mathesar/issues/4588
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4588
+  status: "\U0001F4CB Planning"
+- title: Mathesar Cloud
+  url: https://github.com/mathesar-foundation/mathesar/issues/4620
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4620
+  status: "\u231B Upcoming"
+- title: DigitalOcean Marketplace app
+  url: https://github.com/mathesar-foundation/mathesar/issues/4587
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4587
+  status: "\U0001F6A7 In Progress"
+- title: Related data in tables
+  url: https://github.com/mathesar-foundation/mathesar/issues/4593
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4593
+  status: "\U0001F4CB Planning"
+- title: Additional export options for tables
+  url: https://github.com/mathesar-foundation/mathesar/issues/4621
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4621
+  status: "\u231B Upcoming"
+- title: Export from data explorer
+  url: https://github.com/mathesar-foundation/mathesar/issues/4619
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4619
+  status: "\u231B Upcoming"
+- title: Import into existing tables
+  url: https://github.com/mathesar-foundation/mathesar/issues/4618
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4618
+  status: "\u231B Upcoming"
+- title: Persist filtering, sorting, and grouping in tables
+  url: https://github.com/mathesar-foundation/mathesar/issues/4622
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4622
+  status: "\u231B Upcoming"
+- title: Conditional formatting
+  url: https://github.com/mathesar-foundation/mathesar/issues/4623
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4623
+  status: "\U0001F4A1 Ideas"
+- title: Embed Mathesar data into other websites
+  url: https://github.com/mathesar-foundation/mathesar/issues/4625
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4625
+  status: "\U0001F4A1 Ideas"
+- title: Location data support
+  url: https://github.com/mathesar-foundation/mathesar/issues/4626
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4626
+  status: "\U0001F4A1 Ideas"
+- title: Simpler self-hosted installs
+  url: https://github.com/mathesar-foundation/mathesar/issues/4628
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4628
+  status: "\U0001F4A1 Ideas"
+- title: Forms (anonymous)
+  url: https://github.com/mathesar-foundation/mathesar/issues/4580
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4580
+  status: "\U0001F6A7 In Progress"
+- title: MCP server
+  url: https://github.com/mathesar-foundation/mathesar/issues/4617
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4617
+  status: "\U0001F6A7 In Progress"
+- title: Railway one-click app
+  url: https://github.com/mathesar-foundation/mathesar/issues/4589
+  type: Issue
+  state: CLOSED
+  repo: mathesar-foundation/mathesar
+  number: 4589
+  status: "\U0001F680 Shipped"
+- title: Standardize UI colors
+  url: https://github.com/mathesar-foundation/mathesar/issues/4550
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4550
+  status: "\U0001F6A7 In Progress"
+- title: Supabase integration
+  url: https://github.com/mathesar-foundation/mathesar/issues/4579
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4579
+  status: "\U0001F4CB Planning"
+- title: Cloudron integration
+  url: https://github.com/mathesar-foundation/mathesar/issues/4590
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4590
+  status: "\U0001F4CB Planning"
+- title: fly.io deployment guide
+  url: https://github.com/mathesar-foundation/mathesar/issues/4591
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4591
+  status: "\U0001F4CB Planning"
+- title: GCP deployment guide
+  url: https://github.com/mathesar-foundation/mathesar/issues/4592
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4592
+  status: "\U0001F4CB Planning"
+- title: User invite emails
+  url: https://github.com/mathesar-foundation/mathesar/issues/4629
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4629
+  status: "\U0001F4CB Planning"
