@@ -5,6 +5,11 @@ export interface Project {
   title: string;
   url: string;
   status: string;
+  milestone: {
+    title: string;
+    url: string;
+    number: number;
+  };
 }
 
 export function getProjects() {

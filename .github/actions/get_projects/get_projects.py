@@ -78,6 +78,11 @@ query {{
               number
               state
               repository {{ nameWithOwner }}
+              milestone {{
+                title
+                number
+                url
+              }}
             }}
           }}
         }}
@@ -112,7 +117,7 @@ for item in items:
     content = item["content"]
     if content is None:
         continue  # skip blank rows
-    
+
     # Skip DraftIssue items that don't have the required fields
     if content["__typename"] == "DraftIssue":
         continue
@@ -121,6 +126,15 @@ for item in items:
     status = "Unknown"
     if item["fieldValueByName"] and item["fieldValueByName"].get("status"):
         status = item["fieldValueByName"]["status"]
+
+    # Extract milestone info
+    milestone = None
+    if content.get("milestone"):
+        milestone = {
+            "title": content["milestone"]["title"],
+            "number": content["milestone"]["number"],
+            "url": content["milestone"]["url"],
+        }
 
     formatted.append(
         {
@@ -131,6 +145,7 @@ for item in items:
             "repo": content["repository"]["nameWithOwner"],
             "number": content["number"],
             "status": status,
+            "milestone": milestone,
         }
     )
 
@@ -138,27 +153,20 @@ yaml_data = yaml.dump(formatted, sort_keys=False)
 
 print(yaml_data)
 
-# # Step 4: Commit to website repo
-# gh = Github(GITHUB_TOKEN)
-# repo = gh.get_repo("mathesar-foundation/mathesar-website")
+# Step 4: Commit to website repo
+gh = Github(GITHUB_TOKEN)
+repo = gh.get_repo("mathesar-foundation/mathesar-website")
 
-# try:
-#     existing = repo.get_contents(OUTPUT_FILE)
-#     repo.update_file(
-#         OUTPUT_FILE,
-#         "Automated update to project file.",
-#         yaml_data,
-#         existing.sha
-#     )
-# except Exception as e:
-#     # If file doesn't exist, create it
-#     if "404" in str(e):
-#         repo.create_file(
-#             OUTPUT_FILE,
-#             "Automated update to project file.",
-#             yaml_data
-#         )
-#     else:
-#         raise e
+try:
+    existing = repo.get_contents(OUTPUT_FILE)
+    repo.update_file(
+        OUTPUT_FILE, "Automated update to project file.", yaml_data, existing.sha
+    )
+except Exception as e:
+    # If file doesn't exist, create it
+    if "404" in str(e):
+        repo.create_file(OUTPUT_FILE, "Automated update to project file.", yaml_data)
+    else:
+        raise e
 
 print("Successfully updated project data!")
