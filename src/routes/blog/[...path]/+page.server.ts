@@ -12,6 +12,7 @@ export const load: PageServerLoad = async ({ params }) => {
     });
   }
 
-  // Grab the 3 most recent posts
-  return { post, recentPosts: posts.slice(0, 3) };
+  // Grab the 3 most recent posts, excluding the current post
+  const otherPosts = posts.filter((p) => p.path !== post.path);
+  return { post, recentPosts: otherPosts.slice(0, 3) };
 };
