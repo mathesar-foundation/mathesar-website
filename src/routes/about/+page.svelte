@@ -5,11 +5,6 @@
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
 
-  // import ProfileCircle from "iconoir/icons/profile-circle.svg?component";
-  import OpenNewWindow from "iconoir/icons/open-new-window.svg?component";
-  import ShieldCheck from "iconoir/icons/shield-check.svg?component";
-  import Community from "iconoir/icons/community.svg?component";
-
   export let data;
   const { staff, contributors } = data;
 
@@ -26,10 +21,7 @@
   ];
 </script>
 
-<Seo 
-  title="About" 
-  image="/og/og-about.png"
-/>
+<Seo title="About" image="/og/og-about.png" />
 
 <div class="antialiased overflow-x-hidden">
   <section class="relative pt-20">
@@ -52,66 +44,6 @@
           databases. Built by a nonprofit, 100% open source.
         </p>
       </div>
-
-      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-        <div class="flex items-start gap-8">
-          <div
-            class="p-3 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-plum-500"
-          >
-            <OpenNewWindow class="text-2xl text-pumpkin-400" />
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-2">Self-Hosted</h3>
-            <p class="text-stormy-200">
-              Your data never has to leave your own infrastructure.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-8">
-          <div
-            class="p-3 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-plum-500"
-          >
-            <ShieldCheck class="text-2xl text-pumpkin-400" />
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-2">
-              Deep Postgres Integration
-            </h3>
-            <p class="text-stormy-200">
-              Directly use schemas, tables, and role-based permissions.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-8">
-          <div
-            class="p-3 w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-plum-500"
-          >
-            <Community class="text-2xl text-pumpkin-400" />
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-white mb-2">Fits Any Workflow</h3>
-            <p class="text-stormy-200">
-              Works harmoniously with your production DB and other Postgres
-              tools.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-16 text-center mb-20">
-        <a
-          href="https://docs.mathesar.org"
-          class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
-            text-white
-            shadow-lg transition-all duration-300
-            hover:bg-orange-red-600 hover:shadow-md
-            active:transform active:scale-[0.98]"
-        >
-          <span class="relative">Install Mathesar</span>
-        </a>
-      </div> -->
     </div>
 
     <div class="relative">
@@ -175,7 +107,9 @@
           <div class="relative z-10 md:col-span-3">
             <div class="relative md:max-w-lg mx-auto flex items-center h-full">
               <div class="relative w-full">
-                <div class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-sapphire-600 via-salmon-500 to-pumpkin-500 rounded-2xl"></div>
+                <div
+                  class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-sapphire-600 via-salmon-500 to-pumpkin-500 rounded-2xl"
+                ></div>
                 <enhanced:img
                   src="/src/assets/illustrations/mathesar-foundation.png"
                   alt="Mathesar Foundation"
