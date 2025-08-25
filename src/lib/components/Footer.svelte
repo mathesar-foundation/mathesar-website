@@ -24,6 +24,7 @@
       isExternal: true,
     },
     { name: "Donate", path: "/donate" },
+    { name: "Public Datasets", path: "/public-datasets" },
   ];
 
   // Social media links
