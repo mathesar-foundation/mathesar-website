@@ -3,6 +3,7 @@
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
+  import OpenNewWindow from "iconoir/icons/open-new-window.svg?component";
 
   const colors = [
     "bg-sapphire-200",
@@ -20,6 +21,8 @@
       description:
         "SEC filings from corporate insiders including officers, directors, and large shareholders. Contains Forms 3, 4, and 5 submissions showing beneficial ownership changes and transactions.",
       url: "https://insider-trading.mathesar.org/",
+      sourceUrl:
+        "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets",
       category: "Financial",
       color: "bg-sapphire-200",
     },
@@ -51,8 +54,7 @@
         </h1>
 
         <p class="text-xl sm:text-2xl text-stormy-100 mt-6 mb-12">
-          The Mathesar Foundation is comitted to sharing and preserving public
-          datasets lorem ipsum
+          The Mathesar Foundation’s commitment to democratizing data.
         </p>
       </div>
     </div>
@@ -87,19 +89,20 @@
               <h2
                 class="text-4xl sm:text-5xl font-bold tracking-tight text-stormy-800 mb-4 leading-tight"
               >
-                Sharing data lorem ipsum
+                Making openness and collaboration the default
               </h2>
               <div class="space-y-4 text-lg text-stormy-800">
                 <p>
-                  At Mathesar Foundation, we believe working with data should be
-                  easy and accessible for everyone. Using databases shouldn't
-                  require technical expertise or expensive, closed-off tools.
-                  Databases are incredibly powerful, but they're often trapped
-                  behind complex interfaces that are hard to use or limit how
-                  people can access and share their data. We want to change that
-                  by building user-friendly tools that unlock the power of
-                  existing databases without sacrificing accessibility,
-                  portability, or extensibility.
+                  At Mathesar Foundation, we believe data should be accessible
+                  for everyone and easy to work with. Information locked in
+                  databases shouldn’t require technical expertise or complex
+                  tools to understand and explore. We developed Mathesar, a
+                  spreadsheet-like tool for data viewing and editing, as the
+                  first step of this commitment. The next is to ensure data is
+                  simple to access, share, and collaborate on. As a preview of
+                  what we're doing, we're releasing a series of hosted public
+                  data sets from multiple sources for you to explore. Have one
+                  you'd like to see? Let us know!
                 </p>
               </div>
             </div>
@@ -128,7 +131,7 @@
                     {featuredDataset.description}
                   </p>
 
-                  <div class="flex items-center justify-between">
+                  <div class="flex flex-wrap items-center justify-between">
                     <span
                       class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-sapphire-100 text-sapphire-800"
                     >
@@ -141,19 +144,16 @@
                       rel="noopener noreferrer"
                     >
                       Explore Dataset
-                      <svg
-                        class="w-4 h-4 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        ></path>
-                      </svg>
+                      <OpenNewWindow class="ml-1 w-3" />
+                    </a>
+
+                    <a
+                      class="block w-full pt-4 text-xs text-gray-600"
+                      href={featuredDataset.sourceUrl}
+                    >
+                      Source: <span class="hover:underline focus:underline"
+                        >{featuredDataset.sourceUrl}</span
+                      >&nbsp;<OpenNewWindow class="w-3 inline" />
                     </a>
                   </div>
                 </div>
@@ -180,7 +180,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {#each datasets as dataset, index}
             <div
-              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stormy-200 overflow-hidden group"
+              class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stormy-200 overflow-hidden group ease-linear"
             >
               <div class="h-2 {dataset.color}"></div>
 
@@ -206,11 +206,11 @@
 
                 <a
                   href={dataset.url}
-                  class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors group-hover:translate-x-1 transform duration-200"
+                  class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors transform duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Access Dataset
+                  Explore Dataset
                   <svg
                     class="w-4 h-4 ml-1"
                     fill="none"
@@ -224,6 +224,15 @@
                       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                     ></path>
                   </svg>
+                </a>
+
+                <a
+                  class="block pt-4 text-xs text-gray-600"
+                  href={dataset.sourceUrl}
+                >
+                  Source: <span class="hover:underline focus:underline"
+                    >{dataset.sourceUrl}</span
+                  >&nbsp;<OpenNewWindow class="w-3 inline" />
                 </a>
               </div>
             </div>
@@ -265,7 +274,7 @@
               </p>
 
               <button
-                class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors group-hover:translate-x-1 transform duration-200"
+                class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors transform duration-200"
               >
                 Submit Request
                 <svg
