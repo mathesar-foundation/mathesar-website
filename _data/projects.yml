@@ -1,11 +1,69 @@
+- title: Forms (anonymous)
+  url: https://github.com/mathesar-foundation/mathesar/issues/4580
+  type: Issue
+  state: CLOSED
+  repo: mathesar-foundation/mathesar
+  number: 4580
+  status: "\U0001F680 Shipped"
+  milestone:
+    title: v0.5.0
+    number: 87
+    url: https://github.com/mathesar-foundation/mathesar/milestone/87
 - title: File attachments
   url: https://github.com/mathesar-foundation/mathesar/issues/4595
   type: Issue
   state: OPEN
   repo: mathesar-foundation/mathesar
   number: 4595
-  status: "\U0001F4CB Planning"
-  milestone: null
+  status: "\U0001F6A7 In Progress"
+  milestone:
+    title: v0.6.0
+    number: 88
+    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+- title: MCP server
+  url: https://github.com/mathesar-foundation/mathesar/issues/4617
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4617
+  status: "\U0001F6A7 In Progress"
+  milestone:
+    title: v0.6.0
+    number: 88
+    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+- title: Render 1-click installation guide
+  url: https://github.com/mathesar-foundation/mathesar/issues/4717
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4717
+  status: "\U0001F6A7 In Progress"
+  milestone:
+    title: v0.6.0
+    number: 88
+    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+- title: Standardize UI colors
+  url: https://github.com/mathesar-foundation/mathesar/issues/4550
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4550
+  status: "\U0001F6A7 In Progress"
+  milestone:
+    title: v0.6.0
+    number: 88
+    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+- title: Railway one-click app
+  url: https://github.com/mathesar-foundation/mathesar/issues/4589
+  type: Issue
+  state: CLOSED
+  repo: mathesar-foundation/mathesar
+  number: 4589
+  status: "\U0001F680 Shipped"
+  milestone:
+    title: v0.4.0
+    number: 86
+    url: https://github.com/mathesar-foundation/mathesar/milestone/86
 - title: JSON and JSONB support
   url: https://github.com/mathesar-foundation/mathesar/issues/4627
   type: Issue
@@ -33,20 +91,20 @@
     title: v0.4.0
     number: 86
     url: https://github.com/mathesar-foundation/mathesar/milestone/86
-- title: Helm chart
-  url: https://github.com/mathesar-foundation/mathesar/issues/4588
-  type: Issue
-  state: OPEN
-  repo: mathesar-foundation/mathesar
-  number: 4588
-  status: "\U0001F4CB Planning"
-  milestone: null
 - title: Mathesar Cloud
   url: https://github.com/mathesar-foundation/mathesar/issues/4620
   type: Issue
   state: OPEN
   repo: mathesar-foundation/mathesar
   number: 4620
+  status: "\u231B Upcoming"
+  milestone: null
+- title: Import into existing tables
+  url: https://github.com/mathesar-foundation/mathesar/issues/4618
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4618
   status: "\u231B Upcoming"
   milestone: null
 - title: DigitalOcean Marketplace app
@@ -82,14 +140,6 @@
   state: OPEN
   repo: mathesar-foundation/mathesar
   number: 4619
-  status: "\u231B Upcoming"
-  milestone: null
-- title: Import into existing tables
-  url: https://github.com/mathesar-foundation/mathesar/issues/4618
-  type: Issue
-  state: OPEN
-  repo: mathesar-foundation/mathesar
-  number: 4618
   status: "\u231B Upcoming"
   milestone: null
 - title: Persist filtering, sorting, and grouping in tables
@@ -132,50 +182,6 @@
   number: 4628
   status: "\U0001F4A1 Ideas"
   milestone: null
-- title: Forms (anonymous)
-  url: https://github.com/mathesar-foundation/mathesar/issues/4580
-  type: Issue
-  state: OPEN
-  repo: mathesar-foundation/mathesar
-  number: 4580
-  status: "\U0001F6A7 In Progress"
-  milestone:
-    title: v0.5.0
-    number: 87
-    url: https://github.com/mathesar-foundation/mathesar/milestone/87
-- title: MCP server
-  url: https://github.com/mathesar-foundation/mathesar/issues/4617
-  type: Issue
-  state: OPEN
-  repo: mathesar-foundation/mathesar
-  number: 4617
-  status: "\U0001F6A7 In Progress"
-  milestone:
-    title: High priority
-    number: 71
-    url: https://github.com/mathesar-foundation/mathesar/milestone/71
-- title: Railway one-click app
-  url: https://github.com/mathesar-foundation/mathesar/issues/4589
-  type: Issue
-  state: CLOSED
-  repo: mathesar-foundation/mathesar
-  number: 4589
-  status: "\U0001F680 Shipped"
-  milestone:
-    title: High priority
-    number: 71
-    url: https://github.com/mathesar-foundation/mathesar/milestone/71
-- title: Standardize UI colors
-  url: https://github.com/mathesar-foundation/mathesar/issues/4550
-  type: Issue
-  state: OPEN
-  repo: mathesar-foundation/mathesar
-  number: 4550
-  status: "\U0001F6A7 In Progress"
-  milestone:
-    title: v0.5.0
-    number: 87
-    url: https://github.com/mathesar-foundation/mathesar/milestone/87
 - title: Supabase integration
   url: https://github.com/mathesar-foundation/mathesar/issues/4579
   type: Issue
@@ -187,6 +193,14 @@
     title: v0.5.0
     number: 87
     url: https://github.com/mathesar-foundation/mathesar/milestone/87
+- title: Helm chart
+  url: https://github.com/mathesar-foundation/mathesar/issues/4588
+  type: Issue
+  state: OPEN
+  repo: mathesar-foundation/mathesar
+  number: 4588
+  status: "\U0001F4CB Planning"
+  milestone: null
 - title: Cloudron integration
   url: https://github.com/mathesar-foundation/mathesar/issues/4590
   type: Issue
@@ -219,6 +233,6 @@
   number: 4629
   status: "\U0001F4CB Planning"
   milestone:
-    title: v0.6.0
-    number: 88
-    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+    title: High priority
+    number: 71
+    url: https://github.com/mathesar-foundation/mathesar/milestone/71
