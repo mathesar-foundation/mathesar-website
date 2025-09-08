@@ -40,12 +40,6 @@
   type: staff
   bio: |+
     "I'm using Mathesar as a **training log** for my rock climbing sessions. I'm able to group and keep track of climbs in different areas, along with their difficulty. I previously used a basic spreadsheet for this, but without real relationships connecting my data, I quickly lost track of my progress."
-- name: Tanya Nguyen
-  image: tanya.jpg
-  role: Chief of Staff
-  type: staff
-  bio: |+
-    "Mathesar is the perfect place to **organize my home library**. It’s an easy way to keep track of what’s in my collection, maintain notes about my favorite books, and see all the ones I have yet to read."
 - name: Amanda Jayawardene
   image: amanda.jpg
   role: Operations Assistant
