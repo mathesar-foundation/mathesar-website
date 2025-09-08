@@ -1,10 +1,10 @@
 - title: Forms (anonymous)
   url: https://github.com/mathesar-foundation/mathesar/issues/4580
   type: Issue
-  state: OPEN
+  state: CLOSED
   repo: mathesar-foundation/mathesar
   number: 4580
-  status: "\U0001F6A7 In Progress"
+  status: "\U0001F680 Shipped"
   milestone:
     title: v0.5.0
     number: 87
@@ -50,9 +50,9 @@
   number: 4550
   status: "\U0001F6A7 In Progress"
   milestone:
-    title: v0.5.0
-    number: 87
-    url: https://github.com/mathesar-foundation/mathesar/milestone/87
+    title: v0.6.0
+    number: 88
+    url: https://github.com/mathesar-foundation/mathesar/milestone/88
 - title: Railway one-click app
   url: https://github.com/mathesar-foundation/mathesar/issues/4589
   type: Issue
@@ -115,9 +115,9 @@
   number: 4587
   status: "\U0001F6A7 In Progress"
   milestone:
-    title: v0.6.0
-    number: 88
-    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+    title: High priority
+    number: 71
+    url: https://github.com/mathesar-foundation/mathesar/milestone/71
 - title: Related data in tables
   url: https://github.com/mathesar-foundation/mathesar/issues/4593
   type: Issue
@@ -233,6 +233,6 @@
   number: 4629
   status: "\U0001F4CB Planning"
   milestone:
-    title: v0.6.0
-    number: 88
-    url: https://github.com/mathesar-foundation/mathesar/milestone/88
+    title: High priority
+    number: 71
+    url: https://github.com/mathesar-foundation/mathesar/milestone/71
