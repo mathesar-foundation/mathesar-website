@@ -94,6 +94,10 @@
   profile_image: https://github.com/linzhou-zhong.png
   profile_url: https://github.com/linzhou-zhong
   username: linzhou-zhong
+- name: null
+  profile_image: https://github.com/dependabot[bot].png
+  profile_url: https://github.com/dependabot[bot]
+  username: dependabot[bot]
 - name: Hiten Vidhani
   profile_image: https://github.com/hitenvidhani.png
   profile_url: https://github.com/hitenvidhani
@@ -106,10 +110,6 @@
   profile_image: https://github.com/pegnott.png
   profile_url: https://github.com/pegnott
   username: pegnott
-- name: null
-  profile_image: https://github.com/dependabot[bot].png
-  profile_url: https://github.com/dependabot[bot]
-  username: dependabot[bot]
 - name: asharonbaltazar
   profile_image: https://github.com/asharonbaltazar.png
   profile_url: https://github.com/asharonbaltazar
