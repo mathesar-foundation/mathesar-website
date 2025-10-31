@@ -40,12 +40,6 @@
   type: staff
   bio: |+
     "I'm using Mathesar as a **training log** for my rock climbing sessions. I'm able to group and keep track of climbs in different areas, along with their difficulty. I previously used a basic spreadsheet for this, but without real relationships connecting my data, I quickly lost track of my progress."
-- name: Amanda Jayawardene
-  image: amanda.jpg
-  role: Operations Assistant
-  type: staff
-  bio: |+
-    "I’m always balancing fitness goals, books I want to read, TV shows I need to catch up on, and ongoing projects. Mathesar would help me keep track of it all in one place, making it easy to stay organized and on top of **my priorities**."
 - name: Kriti Godey
   role: CEO, Mathesar Foundation
   type: board
