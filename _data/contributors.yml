@@ -90,14 +90,14 @@
   profile_image: https://github.com/nikhilhenry.png
   profile_url: https://github.com/nikhilhenry
   username: nikhilhenry
-- name: Linzhou
-  profile_image: https://github.com/linzhou-zhong.png
-  profile_url: https://github.com/linzhou-zhong
-  username: linzhou-zhong
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Linzhou
+  profile_image: https://github.com/linzhou-zhong.png
+  profile_url: https://github.com/linzhou-zhong
+  username: linzhou-zhong
 - name: Hiten
   profile_image: https://github.com/hitenvidhani.png
   profile_url: https://github.com/hitenvidhani
