@@ -20,7 +20,7 @@
       title: "Insider Trading",
       description:
         "SEC filings from corporate insiders including officers, directors, and large shareholders. Contains Forms 3, 4, and 5 submissions showing beneficial ownership changes and transactions.",
-      url: "https://insider-trading.mathesar.org/",
+      url: "/public-datasets/insider-trading",
       sourceUrl:
         "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets",
       category: "Financial",
@@ -178,7 +178,7 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {#each datasets as dataset, index}
+          {#each datasets as dataset}
             <div
               class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-stormy-200 overflow-hidden group ease-linear"
             >
@@ -207,8 +207,6 @@
                 <a
                   href={dataset.url}
                   class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors transform duration-200"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   Explore Dataset
                   <svg
