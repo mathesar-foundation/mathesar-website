@@ -1,0 +1,12 @@
+{
+  "workbench.colorCustomizations": {
+    "[Aylin]": {
+      "list.focusBackground": "#ffa6c4",
+      "list.focusForeground": "#0f0a0b",
+      "list.highlightForeground": "#fff"
+    },
+    "activityBar.background": "#4D1945",
+    "titleBar.activeBackground": "#6B2260",
+    "titleBar.activeForeground": "#FDF8FC"
+  }
+}
