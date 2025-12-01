@@ -5,37 +5,16 @@
   import Stickers from "$lib/components/Stickers.svelte";
   import OpenNewWindow from "iconoir/icons/open-new-window.svg?component";
 
-  const colors = [
-    "bg-sapphire-200",
-    "bg-plum-200",
-    "bg-rosy-200",
-    "bg-salmon-200",
-    "bg-pumpkin-200",
-    "bg-olivia-200",
-  ];
-
-  const datasets = [
-    {
-      slug: "insider-trading",
-      title: "Insider Trading",
-      description:
-        "SEC filings from corporate insiders including officers, directors, and large shareholders. Contains Forms 3, 4, and 5 submissions showing beneficial ownership changes and transactions.",
-      url: "/public-datasets/insider-trading",
-      sourceUrl:
-        "https://www.sec.gov/data-research/sec-markets-data/insider-transactions-data-sets",
-      category: "Financial",
-      color: "bg-sapphire-200",
-    },
-  ];
+  export let data;
+  const { datasets } = data;
 
   const featuredSlug = "insider-trading";
-
-  let featuredDataset = datasets.find(
-    (dataset) => dataset.slug === featuredSlug,
+  $: featuredDataset = datasets.find(
+    (dataset: { slug: string }) => dataset.slug === featuredSlug
   );
 </script>
 
-<Seo title="About" image="/og/og-about.png" />
+<Seo title="Public Datasets" image="/og/og-about.png" />
 
 <div class="antialiased overflow-x-hidden">
   <section class="relative pt-20">
@@ -54,7 +33,7 @@
         </h1>
 
         <p class="text-xl sm:text-2xl text-stormy-100 mt-6 mb-12">
-          The Mathesar Foundation’s commitment to democratizing data.
+          The Mathesar Foundation's commitment to democratizing data.
         </p>
       </div>
     </div>
@@ -95,7 +74,7 @@
                 <p>
                   At Mathesar Foundation, we believe data should be accessible
                   for everyone and easy to work with. Information locked in
-                  databases shouldn’t require technical expertise or complex
+                  databases shouldn't require technical expertise or complex
                   tools to understand and explore. We developed Mathesar, a
                   spreadsheet-like tool for data viewing and editing, as the
                   first step of this commitment. The next is to ensure data is
@@ -138,10 +117,8 @@
                       {featuredDataset.category}
                     </span>
                     <a
-                      href={featuredDataset.url}
+                      href="/public-datasets/{featuredDataset.slug}"
                       class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       Explore Dataset
                       <OpenNewWindow class="ml-1 w-3" />
@@ -205,7 +182,7 @@
                 </p>
 
                 <a
-                  href={dataset.url}
+                  href="/public-datasets/{dataset.slug}"
                   class="inline-flex items-center text-pumpkin-600 hover:text-pumpkin-700 font-medium text-sm transition-colors transform duration-200"
                 >
                   Explore Dataset
