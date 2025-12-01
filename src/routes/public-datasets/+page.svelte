@@ -127,9 +127,11 @@
                     <a
                       class="block w-full pt-4 text-xs text-gray-600"
                       href={featuredDataset.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Source: <span class="hover:underline focus:underline"
-                        >{featuredDataset.sourceUrl}</span
+                        >{featuredDataset.sourceName}</span
                       >&nbsp;<OpenNewWindow class="w-3 inline" />
                     </a>
                   </div>
@@ -204,9 +206,11 @@
                 <a
                   class="block pt-4 text-xs text-gray-600"
                   href={dataset.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Source: <span class="hover:underline focus:underline"
-                    >{dataset.sourceUrl}</span
+                    >{dataset.sourceName}</span
                   >&nbsp;<OpenNewWindow class="w-3 inline" />
                 </a>
               </div>
