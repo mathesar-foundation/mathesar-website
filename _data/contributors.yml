@@ -158,6 +158,10 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
+- name: null
+  profile_image: https://github.com/transifex-integration[bot].png
+  profile_url: https://github.com/transifex-integration[bot]
+  username: transifex-integration[bot]
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
@@ -170,10 +174,6 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
-- name: null
-  profile_image: https://github.com/transifex-integration[bot].png
-  profile_url: https://github.com/transifex-integration[bot]
-  username: transifex-integration[bot]
 - name: Vishal Joshi
   profile_image: https://github.com/vishaljoshi789.png
   profile_url: https://github.com/vishaljoshi789
@@ -182,14 +182,14 @@
   profile_image: https://github.com/priyang12.png
   profile_url: https://github.com/priyang12
   username: priyang12
-- name: Tafreed Ahmad
-  profile_image: https://github.com/TafreedAhmad.png
-  profile_url: https://github.com/TafreedAhmad
-  username: TafreedAhmad
 - name: null
   profile_image: https://github.com/karthikeyan24-kk.png
   profile_url: https://github.com/karthikeyan24-kk
   username: karthikeyan24-kk
+- name: Tafreed Ahmad
+  profile_image: https://github.com/TafreedAhmad.png
+  profile_url: https://github.com/TafreedAhmad
+  username: TafreedAhmad
 - name: Kevin Yan
   profile_image: https://github.com/yankevn.png
   profile_url: https://github.com/yankevn
