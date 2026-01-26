@@ -378,10 +378,10 @@
   profile_image: https://github.com/steve-lgtm.png
   profile_url: https://github.com/steve-lgtm
   username: steve-lgtm
-- name: Deepjyoti Deka
-  profile_image: https://github.com/deka014.png
-  profile_url: https://github.com/deka014
-  username: deka014
+- name: null
+  profile_image: https://github.com/aniketkulkarni17.png
+  profile_url: https://github.com/aniketkulkarni17
+  username: aniketkulkarni17
 - name: Kevin Liang
   profile_image: https://github.com/kwliang1.png
   profile_url: https://github.com/kwliang1
@@ -410,34 +410,6 @@
   profile_image: https://github.com/Subhojit-Dey1234.png
   profile_url: https://github.com/Subhojit-Dey1234
   username: Subhojit-Dey1234
-- name: Khandker Aftarul Islam (Monmoy)
-  profile_image: https://github.com/KAIMonmoy.png
-  profile_url: https://github.com/KAIMonmoy
-  username: KAIMonmoy
-- name: null
-  profile_image: https://github.com/LFLATH.png
-  profile_url: https://github.com/LFLATH
-  username: LFLATH
-- name: Leni Kadali
-  profile_image: https://github.com/lenikadali.png
-  profile_url: https://github.com/lenikadali
-  username: lenikadali
-- name: Quentin Pace
-  profile_image: https://github.com/QuentinPace.png
-  profile_url: https://github.com/QuentinPace
-  username: QuentinPace
-- name: Rahul Soni
-  profile_image: https://github.com/InosRahul.png
-  profile_url: https://github.com/InosRahul
-  username: InosRahul
-- name: Sahil Saini
-  profile_image: https://github.com/sahilsaini1107.png
-  profile_url: https://github.com/sahilsaini1107
-  username: sahilsaini1107
-- name: null
-  profile_image: https://github.com/aniketkulkarni17.png
-  profile_url: https://github.com/aniketkulkarni17
-  username: aniketkulkarni17
 - name: Ziad
   profile_image: https://github.com/Ziad-I.png
   profile_url: https://github.com/Ziad-I
@@ -446,6 +418,34 @@
   profile_image: https://github.com/ShailRT.png
   profile_url: https://github.com/ShailRT
   username: ShailRT
+- name: Sahil Saini
+  profile_image: https://github.com/sahilsaini1107.png
+  profile_url: https://github.com/sahilsaini1107
+  username: sahilsaini1107
+- name: Rahul Soni
+  profile_image: https://github.com/InosRahul.png
+  profile_url: https://github.com/InosRahul
+  username: InosRahul
+- name: Quentin Pace
+  profile_image: https://github.com/QuentinPace.png
+  profile_url: https://github.com/QuentinPace
+  username: QuentinPace
+- name: Leni Kadali
+  profile_image: https://github.com/lenikadali.png
+  profile_url: https://github.com/lenikadali
+  username: lenikadali
+- name: Deepjyoti Deka
+  profile_image: https://github.com/deka014.png
+  profile_url: https://github.com/deka014
+  username: deka014
+- name: Khandker Aftarul Islam (Monmoy)
+  profile_image: https://github.com/KAIMonmoy.png
+  profile_url: https://github.com/KAIMonmoy
+  username: KAIMonmoy
+- name: null
+  profile_image: https://github.com/LFLATH.png
+  profile_url: https://github.com/LFLATH
+  username: LFLATH
 - name: Skyler Kimura
   profile_image: https://github.com/skimura1.png
   profile_url: https://github.com/skimura1
@@ -502,6 +502,10 @@
   profile_image: https://github.com/salim-b.png
   profile_url: https://github.com/salim-b
   username: salim-b
+- name: Pierre Alexandre SCHEMBRI
+  profile_image: https://github.com/paschembri.png
+  profile_url: https://github.com/paschembri
+  username: paschembri
 - name: Pawan Patil
   profile_image: https://github.com/PawanPatil19.png
   profile_url: https://github.com/PawanPatil19
