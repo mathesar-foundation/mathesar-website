@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
@@ -9,6 +10,78 @@
   import Headset from "iconoir/icons/headset-help.svg?component";
   import Code from "iconoir/icons/code.svg?component";
   import Community from "iconoir/icons/community.svg?component";
+
+  let nameInput: HTMLInputElement;
+
+  const focusFormInput = () => {
+    if (window.location.hash === "#outreach-form" && nameInput) {
+      setTimeout(() => nameInput.focus(), 400);
+    }
+  };
+
+  onMount(() => {
+    focusFormInput();
+    window.addEventListener("hashchange", focusFormInput);
+    return () => window.removeEventListener("hashchange", focusFormInput);
+  });
+
+  const FormState = {
+    IDLE: "IDLE",
+    SUBMITTING: "SUBMITTING",
+    SUCCESS: "SUCCESS",
+    ERROR: "ERROR",
+  } as const;
+
+  let formState: (typeof FormState)[keyof typeof FormState] = FormState.IDLE;
+  let full_name = "";
+  let email = "";
+  let team_size = "";
+  let situation = "";
+
+  const teamSizeOptions = [
+    { value: "", label: "Select team size (optional)" },
+    { value: "1-5", label: "1-5 people" },
+    { value: "6-20", label: "6-20 people" },
+    { value: "21-50", label: "21-50 people" },
+    { value: "51-100", label: "51-100 people" },
+    { value: "100+", label: "100+ people" },
+  ];
+
+  const handleSubmit = async () => {
+    formState = FormState.SUBMITTING;
+    try {
+      const response = await fetch("https://formspree.io/f/xvgkgnld", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          full_name,
+          email,
+          team_size: team_size || "Not specified",
+          situation: situation || "Not provided",
+          source: "pricing-page",
+        }),
+      });
+
+      if (response.ok) {
+        formState = FormState.SUCCESS;
+
+        if (typeof window.sa_event === "function") {
+          window.sa_event("form_submit", { name: "Pricing Outreach Form" });
+
+          typeof window.gtag === "function" &&
+            window.gtag("event", "conversion", {
+              send_to: "AW-16943326711/aoZECOOUja8aEPfLmo8_",
+              value: 1.0,
+              currency: "USD",
+            });
+        }
+      } else {
+        formState = FormState.ERROR;
+      }
+    } catch {
+      formState = FormState.ERROR;
+    }
+  };
 
   const sharedFeatures = [
     "Full access to all Mathesar features",
@@ -22,6 +95,23 @@
 </script>
 
 <Seo title="Pricing" image="/og/og-product.png" />
+
+<svelte:head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=AW-16943326711"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "AW-16943326711");
+  </script>
+</svelte:head>
 
 <div class="text-white antialiased">
   <section class="relative pt-14 lg:pt-24 overflow-x-clip">
@@ -119,13 +209,13 @@
           <p class="text-stormy-300 mb-8">Based on your needs</p>
 
           <a
-            href="/contact"
+            href="#outreach-form"
             class="group inline-flex items-center justify-center rounded-lg bg-pumpkin-500 px-6 py-3.5 text-lg font-semibold
             text-stormy-900 shadow-lg transition-all duration-300
             hover:bg-pumpkin-400 hover:shadow-md
             active:transform active:scale-[0.98] mb-8"
           >
-            Contact Us
+            Get in Touch
           </a>
 
           <div class="space-y-4 mb-8">
@@ -190,22 +280,118 @@
         </div>
       </div>
 
-      <div class="mt-12 text-center">
-        <p class="text-stormy-600 mb-6">
-          Ready to discuss your needs?
+    </div>
+  </section>
+
+  <section id="outreach-form" class="relative py-16 lg:py-24 bg-stormy-100 scroll-mt-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl sm:text-4xl font-bold text-stormy-800 mb-4">
+          Interested in managed hosting?
+        </h2>
+        <p class="text-lg text-stormy-600">
+          Tell us a bit about yourself and we'll reach out to discuss your needs.
         </p>
-        <a
-          href="/contact"
-          class="group inline-flex items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
-            bg-plum-300/20 text-plum-800
-            border-2 border-plum-500
-            shadow-lg transition-all duration-300
-            hover:bg-plum-400/20 hover:shadow-md
-            active:transform active:scale-[0.98]"
-        >
-          Get in Touch
-        </a>
       </div>
+
+      {#if formState === FormState.SUCCESS}
+        <div
+          class="flex flex-col items-center text-center space-y-2 p-8 border rounded-2xl bg-stormy-800 border-stormy-700"
+        >
+          <h3 class="text-xl font-medium text-white">
+            Thank you for reaching out!
+          </h3>
+          <p class="text-stormy-200 max-w-md">
+            We've received your message and a member of our team will be in touch soon.
+          </p>
+        </div>
+      {:else}
+        <form
+          class="bg-white rounded-2xl p-8 shadow-sm space-y-5"
+          on:submit|preventDefault={handleSubmit}
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="space-y-2">
+              <label for="full_name" class="block text-sm font-medium text-stormy-700">
+                Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="full_name"
+                bind:this={nameInput}
+                bind:value={full_name}
+                required
+                disabled={formState === FormState.SUBMITTING}
+                placeholder="Your name"
+                class="w-full px-4 py-2.5 rounded-lg border border-stormy-200 bg-white text-stormy-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-pumpkin-500 focus:ring-offset-2 focus:border-pumpkin-400"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label for="email" class="block text-sm font-medium text-stormy-700">
+                Email <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                bind:value={email}
+                required
+                disabled={formState === FormState.SUBMITTING}
+                placeholder="you@company.com"
+                class="w-full px-4 py-2.5 rounded-lg border border-stormy-200 bg-white text-stormy-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-pumpkin-500 focus:ring-offset-2 focus:border-pumpkin-400"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label for="team_size" class="block text-sm font-medium text-stormy-700">
+              Team Size
+            </label>
+            <select
+              id="team_size"
+              bind:value={team_size}
+              disabled={formState === FormState.SUBMITTING}
+              class="w-full px-4 py-2.5 rounded-lg border border-stormy-200 bg-white text-stormy-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-pumpkin-500 focus:ring-offset-2 focus:border-pumpkin-400"
+            >
+              {#each teamSizeOptions as option}
+                <option value={option.value}>{option.label}</option>
+              {/each}
+            </select>
+          </div>
+
+          <div class="space-y-2">
+            <label for="situation" class="block text-sm font-medium text-stormy-700">
+              Tell us about your situation
+            </label>
+            <textarea
+              id="situation"
+              bind:value={situation}
+              disabled={formState === FormState.SUBMITTING}
+              rows="3"
+              placeholder="What are you hoping to accomplish with Mathesar? (optional)"
+              class="w-full px-4 py-2.5 rounded-lg border border-stormy-200 bg-white text-stormy-800 transition-all duration-200 resize-none focus:outline-none focus:ring-2 focus:ring-pumpkin-500 focus:ring-offset-2 focus:border-pumpkin-400"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            disabled={formState === FormState.SUBMITTING}
+            class="w-full group inline-flex items-center justify-center rounded-lg bg-pumpkin-500 px-6 py-3.5 text-lg font-semibold
+              text-stormy-900 shadow-lg transition-all duration-300
+              hover:bg-pumpkin-400 hover:shadow-md
+              active:transform active:scale-[0.98]
+              disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {formState === FormState.SUBMITTING ? "Sending..." : "Get in Touch"}
+          </button>
+
+          {#if formState === FormState.ERROR}
+            <p class="text-sm text-red-500 text-center">
+              Something went wrong. Please try again later.
+            </p>
+          {/if}
+        </form>
+      {/if}
     </div>
   </section>
 </div>
