@@ -15,13 +15,13 @@
 
   const items = [
     { name: "Product", path: "product" },
+    { name: "Pricing", path: "pricing" },
     { name: "Solutions", path: "solutions" },
     { name: "Community", path: "community" },
     { name: "About", path: "about" },
     { name: "Blog", path: "blog" },
     { name: "Docs", path: "https://docs.mathesar.org/latest/" },
     { name: "Donate", path: "donate" },
-    { name: "✨ Install Support ✨", path: "free-install" },
   ];
 
   $: currentPath = $page.url.pathname;
