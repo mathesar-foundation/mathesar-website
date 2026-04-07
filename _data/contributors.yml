@@ -10,14 +10,14 @@
   profile_image: https://github.com/seancolsen.png
   profile_url: https://github.com/seancolsen
   username: seancolsen
-- name: Mukesh
-  profile_image: https://github.com/silentninja.png
-  profile_url: https://github.com/silentninja
-  username: silentninja
 - name: Anish Umale
   profile_image: https://github.com/Anish9901.png
   profile_url: https://github.com/Anish9901
   username: Anish9901
+- name: Mukesh
+  profile_image: https://github.com/silentninja.png
+  profile_url: https://github.com/silentninja
+  username: silentninja
 - name: Kriti Godey
   profile_image: https://github.com/kgodey.png
   profile_url: https://github.com/kgodey
@@ -86,14 +86,14 @@
   profile_image: https://github.com/A1O.png
   profile_url: https://github.com/A1O
   username: A1O
-- name: Dhruv Bhanushali
-  profile_image: https://github.com/dhruvkb.png
-  profile_url: https://github.com/dhruvkb
-  username: dhruvkb
 - name: null
   profile_image: https://github.com/dependabot[bot].png
   profile_url: https://github.com/dependabot[bot]
   username: dependabot[bot]
+- name: Dhruv Bhanushali
+  profile_image: https://github.com/dhruvkb.png
+  profile_url: https://github.com/dhruvkb
+  username: dhruvkb
 - name: Nikhil Henry
   profile_image: https://github.com/nikhilhenry.png
   profile_url: https://github.com/nikhilhenry
