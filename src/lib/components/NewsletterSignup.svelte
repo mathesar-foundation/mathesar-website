@@ -34,6 +34,7 @@
   let formState: (typeof FormState)[keyof typeof FormState] = FormState.IDLE;
   let email = "";
   export let theme = "dark"; // Current theme: 'dark' or 'light'
+  export let sourceComponent = "newsletter-signup";
 
   const handleSubmit = async () => {
     formState = FormState.SUBMITTING;
@@ -42,7 +43,20 @@
       const response = await fetch("https://formspree.io/f/xlevqoza", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          form_type: "newsletter_signup",
+          source_site: "mathesar.org",
+          source_component: sourceComponent,
+          source_page:
+            typeof window === "undefined" ? undefined : window.location.href,
+          referrer:
+            typeof document === "undefined"
+              ? undefined
+              : document.referrer || undefined,
+          subject: "[Mathesar] Newsletter signup",
+          tags: "mathesar,newsletter",
+        }),
       });
       if (response.ok) {
         formState = FormState.SUCCESS;

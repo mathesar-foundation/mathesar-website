@@ -156,7 +156,7 @@
         <h3 class="text-xl text-pumpkin-500 font-medium">
           Keep on top of what's going on at the Mathesar Foundation
         </h3>
-        <NewsletterSignup />
+        <NewsletterSignup sourceComponent="footer" />
 
         <!-- Survey CTA Section -->
         <div class="mt-8 space-y-2 p-4 rounded-lg bg-stormy-100">

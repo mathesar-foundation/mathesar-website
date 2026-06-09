@@ -27,7 +27,24 @@
       const response = await fetch("https://formspree.io/f/xvgkgnld", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ full_name, email, phone, message }),
+        body: JSON.stringify({
+          name: full_name,
+          full_name,
+          email,
+          phone,
+          message,
+          form_type: "contact",
+          source_site: "mathesar.org",
+          source_component: "contact-page",
+          source_page:
+            typeof window === "undefined" ? undefined : window.location.href,
+          referrer:
+            typeof document === "undefined"
+              ? undefined
+              : document.referrer || undefined,
+          subject: "[Mathesar] Contact form",
+          tags: "mathesar,contact",
+        }),
       });
 
       if (response.ok) {
