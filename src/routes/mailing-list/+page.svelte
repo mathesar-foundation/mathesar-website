@@ -20,7 +20,7 @@
         </p>
 
         <div class="max-w-xl mx-auto bg-stormy-50 rounded-xl p-4 sm:p-6 shadow-lg">
-          <NewsletterSignup theme="light" />
+          <NewsletterSignup theme="light" sourceComponent="mailing-list-page" />
         </div>
       </div>
     </div>
