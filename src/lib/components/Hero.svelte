@@ -28,7 +28,7 @@
               class="text-xl lg:text-2xl max-w-2xl mx-auto text-stormy-100 leading-tight"
             >
               An intuitive, open-source UI to view, edit, and query Postgres
-              data—easy to deploy with robust access control.
+              data, with easy deployment and robust access control.
             </p>
           </div>
 

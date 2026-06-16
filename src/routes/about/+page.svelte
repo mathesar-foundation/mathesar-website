@@ -165,7 +165,7 @@
                   to use, interoperable, and extensible, while also giving you
                   complete control over your data. As a nonprofit, we're
                   committed to keeping Mathesar 100% open source and available
-                  to everyone—because better ways to work with data mean better
+                  to everyone because better ways to work with data mean better
                   decisions, and better decisions lead to a better world.
                 </p>
               </div>
@@ -189,7 +189,7 @@
 
       <div class="relative flex flex-col items-start gap-2 mb-12">
         <h2 class="text-6xl font-bold tracking-tight text-stormy-800">
-          Our Staff
+          Our Maintainers
         </h2>
         <h3 class="text-2xl text-stormy-600 tracking-wide">
           + databases in our personal life
@@ -201,8 +201,7 @@
         <span class="text-plum-500">open source</span>. Our core team members
         have founded startups and worked at a variety of companies – from
         nonprofits to large multinational companies. We've also led projects in
-        large open source communities like Creative Commons, CiviCRM, and
-        Ember.js.
+        large open source communities like Creative Commons and WordPress.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">

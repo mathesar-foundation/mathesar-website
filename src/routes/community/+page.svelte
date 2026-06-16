@@ -66,7 +66,7 @@
           </p>
           <p>
             There are no hidden features, no paywalls, and no proprietary
-            restrictions—just software built to be free and accessible to
+            restrictions: just software built to be free and accessible to
             everyone. We believe in the power of open source to drive innovation
             and collaboration, creating tools that benefit everyone.
           </p>
@@ -197,7 +197,7 @@
               <h3 class="text-2xl font-bold text-stormy-900">Matrix Chat</h3>
             </div>
             <p class="text-lg text-stormy-700">
-              Connect with the community in real time—ask questions, share
+              Connect with the community in real time: ask questions, share
               ideas, or just chat.
             </p>
           </div>

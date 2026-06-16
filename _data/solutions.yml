@@ -37,7 +37,7 @@
 
 - id: "museum"
   title: "Museum Database"
-  description: "Manage museum exhibits and item locations with ease. Mathesar allows administrators to track items across locations, ensuring data accuracy and consistency. With an intuitive UI and role-based permissions, your team can quickly update records, review exhibit details, and provide tailored access for stakeholders—keeping operations running smoothly."
+  description: "Manage museum exhibits and item locations with ease. Mathesar allows administrators to track items across locations, ensuring data accuracy and consistency. With an intuitive UI and role-based permissions, your team can quickly update records, review exhibit details, and provide tailored access for stakeholders, keeping operations running smoothly."
   category:
     id: "crud-frontend"
     title: "CRUD Front End"
@@ -78,7 +78,7 @@
   category:
     id: "customer-support"
     title: "Customer Support"
-    description: "Track customer tickets—log issues, update progress, and ensure satisfaction, all in one easy-to-use interface. Mathesar lets you fine-tune permissions and reporting, giving users access to essential customer data without compromising security."
+    description: "Track customer tickets: log issues, update progress, and ensure satisfaction, all in one easy-to-use interface. Mathesar lets you fine-tune permissions and reporting, giving users access to essential customer data without compromising security."
   meta:
     icon: "Headset"
     bgColor: "bg-rosy-900"

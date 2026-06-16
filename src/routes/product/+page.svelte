@@ -222,7 +222,7 @@
             <p class="text-gray-600 mb-6">
               Mathesar provides a simple, spreadsheet-like UI for viewing,
               editing, and organizing your data. You and your team can update
-              information, fix mistakes, and enter new records quickly—no
+              information, fix mistakes, and enter new records quickly, with no
               learning curve required.
             </p>
           </div>

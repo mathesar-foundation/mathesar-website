@@ -1,47 +1,35 @@
 - name: Kriti Godey
   image: kriti.jpg
-  role: CEO & Project Lead
+  role: Project Lead
   type: staff
   bio: |+
-    "My husband and I use a database-backed application to **track movies**. Movies we own, movies we want to watch, movies we’ve watched. I had to write a bunch of code for it, but it would have been much faster to build it using Mathesar – if it had existed!"
-- name: Sean Colsen
-  image: sean.jpg
-  role: Engineer
-  type: staff
-  bio: |+
-    "I have an older relative who has been compiling **family genealogy** data for years through an arduous process of paper forms in the mail. I'd like to digitize it for future generations! With Mathesar, our family will eventually be able to collaboratively manage this data and visualize it in new and exciting ways!"
+    "I use Mathesar to track all sorts of things, from my **Fiestaware collection** to the **books I read**. We also use a shared server to keep track of **collaborating on building Mathesar** itself."
 - name: Pavish Kumar Ramani Gopal
   image: pavish.jpg
-  role: Engineer
+  role: Core Maintainer
   type: staff
   bio: |+
-    "I intend to use a database to maintain a **personal diary**, but with data tracking! I'll be logging my daily life: my anime watching habits, exercise routine, work progress, social interactions etc. I can analyze this data to gain valuable insights into my own behavior and lifestyle. Mathesar is going to make all of this a breeze!"
+    "Mathesar helps me maintain a **personal diary**! My anime watching habits, exercise routine, work progress, social interactions etc. This helps me gain insights into my own behavior and lifestyle."
 - name: Brent Moran
   image: brent.jpg
-  role: Technical Strategy Lead
+  role: Core Maintainer
   type: staff
   bio: |+
-    "I'm using a database (and planning to use Mathesar) to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc. I'm tentatively calling it the **Country Comparator**."
+    "I'm using Mathesar to store and analyze info I collect about various countries. e.g. cost of living, tax rates, population statistics, economic statistics, etc. I'm calling it the **Country Comparator**."
 - name: Anish Umale
   image: anish.jpg
-  role: Engineer
+  role: Core Maintainer
   type: staff
   bio: |+
-    "I'm using a database to enable people to make better choices about **which credit card to get**. In the current market, credit card benefits, eligibility requirements, etc. frequently change. Mathesar allows me to make these frequent changes quickly and without much hassle and share the updated data easily."
-- name: Adam Mullinax
-  image: adam.jpg
-  role: Director of Growth and Finance
-  type: staff
-  bio: |+
-    "I’ve been slowly starting to build a **small wine collection** and keeping track of all of my notes has been a huge pain. Using a system like Mathesar would allow me to easily maintain the information and compare wines across vintage, varietal, region and producer."
+    "I'm using Mathesar to enable better choices about **which credit card to get**. It allows me to update frequent changes such as credit card benefits, eligibility requirements, etc. quickly and share the updated data easily."
 - name: Zack Krida
   image: zack.jpg
-  role: Product and Community Lead
+  role: Core Maintainer
   type: staff
   bio: |+
-    "I'm using Mathesar as a **training log** for my rock climbing sessions. I'm able to group and keep track of climbs in different areas, along with their difficulty. I previously used a basic spreadsheet for this, but without real relationships connecting my data, I quickly lost track of my progress."
+    "I'm using Mathesar as a **training log** for my rock climbing. I'm able to keep track of climbs in different areas, along with their difficulty. I used to use a spreadsheet, but frequently lost track of progress without real relationships connecting my data."
 - name: Kriti Godey
-  role: CEO, Mathesar Foundation
+  role: "Project Lead, Mathesar"
   type: board
   image: kriti.jpg
 - name: Ian Alas
@@ -49,6 +37,6 @@
   type: board
   image: ian.jpg
 - name: Samantha Bates Weinstock
-  role: Visiting Researcher, Henkaku Center, Chiba Institute of Technology; Executive Director, US-Japan Innovation Institute
+  role: Executive Director, US-Japan Innovation Institute
   type: board
   image: sam.png

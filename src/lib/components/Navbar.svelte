@@ -21,7 +21,6 @@
     { name: "Blog", path: "blog" },
     { name: "Docs", path: "https://docs.mathesar.org/latest/" },
     { name: "Donate", path: "donate" },
-    { name: "✨ Install Support ✨", path: "free-install" },
   ];
 
   $: currentPath = $page.url.pathname;
