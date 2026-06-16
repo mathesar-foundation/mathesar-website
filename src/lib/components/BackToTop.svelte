@@ -19,10 +19,12 @@
 <svelte:window on:scroll={handleScroll} />
 
 {#if showBackToTop}
-  <div class="fixed bottom-2 lg:bottom-8 w-full text-center z-40 px-6">
+  <div
+    class="fixed bottom-2 lg:bottom-8 w-full text-center z-40 px-6 pointer-events-none"
+  >
     <button
       on:click={scrollToTop}
-      class=" mx-auto lg:ml-auto lg:mr-0 bg-salmon-500 hover:bg-salmon-400 text-white px-4 py-2 text-xs lg:px-6 lg:py-4 rounded-full shadow-lg transition-all duration-300 z-40 flex items-center gap-2"
+      class="mx-auto lg:ml-auto lg:mr-0 bg-salmon-500 hover:bg-salmon-400 text-white px-4 py-2 text-xs lg:px-6 lg:py-4 rounded-full shadow-lg transition-all duration-300 z-40 flex items-center gap-2 pointer-events-auto"
       aria-label="Back to top"
     >
       <ArrowUp class="w-3 lg:w-5" />
