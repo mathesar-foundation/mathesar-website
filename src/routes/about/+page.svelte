@@ -110,18 +110,7 @@
         </div>
       </div>
 
-      <div class="mt-16 text-center mb-20">
-        <a
-          href="https://docs.mathesar.org"
-          class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold
-            text-white
-            shadow-lg transition-all duration-300
-            hover:bg-orange-red-600 hover:shadow-md
-            active:transform active:scale-[0.98]"
-        >
-          <span class="relative">Install Mathesar</span>
-        </a>
-      </div> -->
+      -->
     </div>
 
     <div class="relative">

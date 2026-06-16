@@ -4,7 +4,6 @@
   import Database from "iconoir/icons/database.svg?component"; // Import Database icon
   import Code from "iconoir/icons/code.svg?component"; // Import Code icon
   import Server from "iconoir/icons/server.svg?component"; // Import Server icon
-  import Github from "iconoir/icons/github.svg?component"; // Import GitHub icon
 
   const benefits = [
     { icon: Database, text: "Built on PostgreSQL" },
@@ -55,7 +54,7 @@
               <span class="relative">Install Mathesar</span>
             </TrackedLink>
             <a
-              href="https://github.com/mathesar-foundation/mathesar"
+              href="https://mathesar.cloud"
               class="group inline-flex items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
                   bg-plum-300/20 text-plum-800
                   border-2 border-plum-500
@@ -63,8 +62,7 @@
                   hover:bg-plum-400/20 hover:shadow-md
                   active:transform active:scale-[0.98]"
             >
-              <Github class="w-6 text-2xl text-plum-500" />
-              <span>View on GitHub</span>
+              <span>Try Cloud for free</span>
             </a>
           </div>
         </div>
