@@ -4,20 +4,14 @@
   import NoOrphan from "$lib/components/NoOrphan.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
+  import { getSolutionImages } from "$lib/solutions/images";
+  import { solutionIcons } from "$lib/solutions/icons";
+  import { getSolutionPresentation } from "$lib/solutions/presentation";
 
   import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 
   export let data;
-  let { solutions } = data;
-
-  const decorativeStyles = {
-    "hardware-store-chain": { rotation: -6, top: -15, right: -10 },
-    museum: { rotation: 4, top: 10, right: -20 },
-    "bike-shop": { rotation: -3, top: -20, right: 15 },
-    makerspace: { rotation: 6, top: 5, right: -15 },
-    nonprofit: { rotation: -5, top: -10, right: 10 },
-    "ice-cream-distributor": { rotation: 3, top: 15, right: -5 },
-  } as const;
+  let { solutions, solutionNavItems } = data;
 </script>
 
 <Seo title="Solutions" image="/og/og-solutions.png" />
@@ -47,27 +41,20 @@
     </div>
   </section>
 
-  <SolutionsNav {solutions} />
+  <SolutionsNav solutions={solutionNavItems} />
 
   <section class="z-20 relative overflow-x-clip">
     <div class="relative site-container">
       <div class="space-y-8 max-w-6xl mx-auto">
         {#each solutions as solution}
+          {@const presentation = getSolutionPresentation(solution.id)}
+          {@const images = getSolutionImages(solution.id)}
+          {@const Icon = solutionIcons[presentation.icon]}
           <div
             id={solution.id}
             class="relative rounded-2xl lg:pl-8 backdrop-blur-sm
             bg-white/[0.98] overflow-hidden
-            {solution.id === 'hardware-store-chain'
-              ? 'before:bg-gradient-to-br before:from-azure-500/20 before:to-azure-600/10'
-              : solution.id === 'museum'
-                ? 'before:bg-gradient-to-br before:from-sapphire-500/20 before:to-sapphire-600/10'
-                : solution.id === 'bike-shop'
-                  ? 'before:bg-gradient-to-br before:from-plum-500/20 before:to-plum-600/10'
-                  : solution.id === 'makerspace'
-                    ? 'before:bg-gradient-to-br before:from-rosy-500/20 before:to-rosy-600/10'
-                    : solution.id === 'nonprofit'
-                      ? 'before:bg-gradient-to-br before:from-salmon-500/20 before:to-salmon-600/10'
-                      : 'before:bg-gradient-to-br before:from-pumpkin-500/20 before:to-pumpkin-600/10'}
+            {presentation.indexCard.beforeGradientClass}
             before:absolute before:inset-0 before:pointer-events-none
             group"
           >
@@ -84,20 +71,10 @@
                 class="pt-6 p-5 lg:p-0 lg:pt-0 flex-1 flex flex-col justify-center"
               >
                 <div class="mb-2 flex items-center gap-2">
-                  <i
-                    class="{solution.meta.icon} text-2xl
-                    {solution.id === 'hardware-store-chain'
-                      ? 'text-sapphire-500'
-                      : solution.id === 'museum'
-                        ? 'text-sapphire-500'
-                        : solution.id === 'bike-shop'
-                          ? 'text-plum-500'
-                          : solution.id === 'makerspace'
-                            ? 'text-rosy-500'
-                            : solution.id === 'nonprofit'
-                              ? 'text-salmon-500'
-                              : 'text-pumpkin-500'}"
-                  ></i>
+                  <svelte:component
+                    this={Icon}
+                    class={`text-2xl w-6 ${presentation.indexCard.iconTextClass}`}
+                  />
                   <span class="text-lg lg:text-xl font-medium text-stormy-800">
                     {solution.title}
                   </span>
@@ -139,43 +116,12 @@
                     <div
                       class="w-full aspect-square rounded-2xl 0 relative flex items-center"
                     >
-                      {#if solution.id === "hardware-store-chain"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/hardware-shop.png"
-                          alt="Hardware shop illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {:else if solution.id === "museum"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/museum-exhibit.png"
-                          alt="Museum exhibit illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {:else if solution.id === "bike-shop"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/bike-shop.png"
-                          alt="Bike shop illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {:else if solution.id === "makerspace"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/library-makerspace.png"
-                          alt="Library makerspace illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {:else if solution.id === "nonprofit"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/non-profit-grant.png"
-                          alt="Library makerspace illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {:else if solution.id === "ice-cream-distributor"}
-                        <enhanced:img
-                          src="/src/assets/illustrations/ice-cream-distributor.png"
-                          alt="Ice cream distributor illustration"
-                          class="w-full h-full object-cover"
-                        />
-                      {/if}
+                      <enhanced:img
+                        src={images.listingIllustration}
+                        alt={images.listingIllustrationAlt}
+                        class="w-full h-full object-cover"
+                        sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, min(100vw - 32px, 640px)"
+                      />
                     </div>
                   </div>
                 </div>

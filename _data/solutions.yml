@@ -5,11 +5,6 @@
     id: "asset-management"
     title: "Asset or Inventory Management"
     description: "Easily manage assets like books, inventory, parts, or equipment in an intuitive interface. Mathesar lets users input and update new assets, track inventory levels, and search for items, with robust permissions ensuring granular access control."
-  meta:
-    icon: "BoxIso"
-    bgColor: "bg-plum-900"
-    image: "/solutions/hardware-store-chain/primary-table-light.png"
-    theme: "pumpkin"
   screenshots:
     - caption: "Track inventory levels across all store locations."
     - caption: "View all related transactions for a single customer."
@@ -42,11 +37,6 @@
     id: "crud-frontend"
     title: "CRUD Front End"
     description: "Enable your team to easily add, update, and search for data in your production database in a spreadsheet-like interface. Mathesar ensures data accuracy and consistency, with robust permissions protecting sensitive information."
-  meta:
-    icon: "Database"
-    bgColor: "bg-plum-900"
-    image: "/solutions/museum/primary-table-light.png"
-    theme: "cerulean"
   screenshots:
     - caption: "Find items and add them to a collection."
     - caption: "Mark items as moved from an exhibit into storage."
@@ -79,11 +69,6 @@
     id: "customer-support"
     title: "Customer Support"
     description: "Track customer tickets: log issues, update progress, and ensure satisfaction, all in one easy-to-use interface. Mathesar lets you fine-tune permissions and reporting, giving users access to essential customer data without compromising security."
-  meta:
-    icon: "Headset"
-    bgColor: "bg-rosy-900"
-    image: "/solutions/bike-shop/primary-table-light.png"
-    theme: "seafoam"
   screenshots:
     - caption: "See the full work history of a service request."
     - caption: "Find open jobs assigned to a specific mechanic."
@@ -116,11 +101,6 @@
     id: "data-dashboard"
     title: "Shareable Data Dashboard"
     description: "Create interactive, real-time dashboards that let users explore database data with filtering, sorting, and exporting options. With read-only permissions enforced at tha database level, you can securely share insights without risking data integrity."
-  meta:
-    icon: "GraphUp"
-    bgColor: "bg-salmon-900"
-    image: "/solutions/makerspace/primary-table-light.png"
-    theme: "indigo"
   screenshots:
     - caption: "See the makerspace usage history for a given patron."
     - caption: "Manage the request queue for each shared resource."
@@ -151,11 +131,6 @@
     id: "grant-tracking"
     title: "Grant Tracking and Management"
     description: "Effortlessly track and manage grant applications to ensure timely prioritization and responses. Allocate grants and tasks to specific team members or groups, and allow the status of each application to be tracked in real time."
-  meta:
-    icon: "Dollar"
-    bgColor: "bg-pumpkin-900"
-    image: "/solutions/nonprofit/primary-table-light.png"
-    theme: "emerald"
   screenshots:
     - caption: "View and prioritize grant opportunities in a central dashboard."
     - caption: "Search for grants by grant type, amount, or date."
@@ -186,11 +161,6 @@
     id: "timesheet-management"
     title: "Timesheet Management"
     description: "Streamline time-tracking for your organization without the overhead of custom app development. Set up workflows that let users log and edit time entries, approve hours, and track overtime, with robust access control through database permissions."
-  meta:
-    icon: "Clock"
-    bgColor: "bg-olivia-900"
-    image: "/solutions/ice-cream-distributor/primary-table-light.png"
-    theme: "sunset"
   screenshots:
     - caption: "Review clock-in and clock-out time for all employees."
     - caption: "Find the right employee to fill gaps in coverage."

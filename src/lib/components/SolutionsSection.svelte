@@ -1,47 +1,27 @@
 <script lang="ts">
-  import type { SvelteComponent } from "svelte";
-  import type { Picture } from "vite-imagetools";
-  import type { Solution } from "$lib/util/getSolutions.server";
+  import type { SolutionContent } from "$lib/solutions/schema";
+  import { getSolutionImages } from "$lib/solutions/images";
+  import { solutionIcons } from "$lib/solutions/icons";
+  import { getSolutionPresentation } from "$lib/solutions/presentation";
   import EnlargableImage from "./EnlargableImage.svelte";
   import SectionCurve from "./SectionCurve.svelte";
 
   import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 
-  export let solutions: Solution[] = [];
+  export let solutions: SolutionContent[] = [];
   let selectedSolution = solutions.length > 0 ? solutions[0] : undefined;
 
-  function selectSolution(solution: Solution) {
+  function selectSolution(solution: SolutionContent) {
     selectedSolution = solution;
   }
 
-  // Import all the icons
-  import BoxIso from "iconoir/icons/box-iso.svg?component";
-  import Database from "iconoir/icons/database.svg?component";
-  import Headset from "iconoir/icons/headset.svg?component";
-  import GraphUp from "iconoir/icons/graph-up.svg?component";
-  import Dollar from "iconoir/icons/dollar.svg?component";
-  import Clock from "iconoir/icons/clock.svg?component";
+  function getSolutionIcon(id: SolutionContent["id"]) {
+    return solutionIcons[getSolutionPresentation(id).icon];
+  }
 
-  // Load images
-  const imageModules = import.meta.glob<SvelteComponent<Picture>>(
-    "/src/assets/solutions/**/primary-table-light.png",
-    {
-      eager: true,
-      query: {
-        enhanced: true,
-      },
-    },
-  );
-
-  // Map icons to their component imports
-  const iconComponents: Record<string, any> = {
-    BoxIso,
-    Database,
-    Headset,
-    GraphUp,
-    Dollar,
-    Clock,
-  };
+  $: selectedImages = selectedSolution
+    ? getSolutionImages(selectedSolution.id)
+    : undefined;
 </script>
 
 <section class="relative">
@@ -80,6 +60,8 @@
       >
         {#each solutions as solution}
           <button
+            type="button"
+            aria-pressed={solution === selectedSolution}
             class="w-[160px] lg:w-auto flex flex-col items-center gap-3 p-3 rounded-lg transition-all border border-transparent flex-1"
             class:bg-stormy-50={solution === selectedSolution}
             on:click={() => selectSolution(solution)}
@@ -93,12 +75,10 @@
               class:text-2xl={solution !== selectedSolution}
               class:text-3xl={solution === selectedSolution}
             >
-              {#if iconComponents[solution.meta.icon]}
-                <svelte:component
-                  this={iconComponents[solution.meta.icon]}
-                  class="transition-all w-full"
-                />
-              {/if}
+              <svelte:component
+                this={getSolutionIcon(solution.id)}
+                class="transition-all w-full"
+              />
             </div>
             <div class="flex-1 flex items-center min-h-[40px]">
               <span
@@ -145,18 +125,16 @@
           class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-sapphire-600 via-salmon-500 to-pumpkin-500 rounded-xl"
         ></div>
 
-        {#each Object.entries(imageModules) as [_path, module]}
-          {#if _path.includes(selectedSolution?.meta.image!)}
-            <EnlargableImage
-              loading="lazy"
-              fetchpriority="high"
-              src={module.default}
-              alt={selectedSolution?.title}
-              class="relative w-full rounded-xl shadow-2xl"
-              sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
-            />
-          {/if}
-        {/each}
+        {#if selectedSolution && selectedImages}
+          <EnlargableImage
+            loading="lazy"
+            fetchpriority="high"
+            src={selectedImages.primary}
+            alt={selectedSolution.title}
+            class="relative w-full rounded-xl shadow-2xl"
+            sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
+          />
+        {/if}
       </div>
     </div>
   </div>
