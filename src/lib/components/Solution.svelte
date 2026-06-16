@@ -1,7 +1,8 @@
 <script lang="ts">
-  import type { SvelteComponent } from "svelte";
-  import type { Picture } from "vite-imagetools";
-  import type { Solution } from "$lib/util/getSolutions.server";
+  import type { SolutionContent } from "$lib/solutions/schema";
+  import { getSolutionImages } from "$lib/solutions/images";
+  import { solutionIcons } from "$lib/solutions/icons";
+  import { getSolutionPresentation } from "$lib/solutions/presentation";
 
   import CTASection from "$lib/components/CTASection.svelte";
   import EnlargableImage from "./EnlargableImage.svelte";
@@ -10,36 +11,11 @@
 
   import CheckCircle from "iconoir/icons/check-circle.svg?component";
 
-  export let solution: Solution;
+  export let solution: SolutionContent;
 
-  // Import all the icons
-  import BoxIso from "iconoir/icons/box-iso.svg?component";
-  import Database from "iconoir/icons/database.svg?component";
-  import Headset from "iconoir/icons/headset.svg?component";
-  import GraphUp from "iconoir/icons/graph-up.svg?component";
-  import Dollar from "iconoir/icons/dollar.svg?component";
-  import Clock from "iconoir/icons/clock.svg?component";
-
-  const iconComponents: Record<string, any> = {
-    BoxIso,
-    Database,
-    Headset,
-    GraphUp,
-    Dollar,
-    Clock,
-  };
-
-  // Load all solution images initially.
-  // This isn't great.
-  const imageModules = import.meta.glob<SvelteComponent<Picture>>(
-    "/src/assets/solutions/**/*.png",
-    {
-      eager: true,
-      query: {
-        enhanced: true,
-      },
-    },
-  );
+  $: presentation = getSolutionPresentation(solution.id);
+  $: images = getSolutionImages(solution.id);
+  $: Icon = solutionIcons[presentation.icon];
 </script>
 
 <div class="text-white antialiased overflow-x-hidden z-10">
@@ -57,12 +33,7 @@
             <div
               class="inline-flex bg-plum-800 text-pumpkin-400 items-center justify-center shrink-0 w-20 h-20 rounded-2xl"
             >
-              {#if iconComponents[solution.meta.icon]}
-                <svelte:component
-                  this={iconComponents[solution.meta.icon]}
-                  class="text-lg w-16"
-                />
-              {/if}
+              <svelte:component this={Icon} class="text-lg w-16" />
             </div>
             <h1 data-hero-heading class="text-balance flex-grow">
               <span
@@ -108,18 +79,14 @@
           {/if}
 
           <div class="mt-5 lg:-mb-28 relative z-10">
-            {#each Object.entries(imageModules) as [_path, module]}
-              {#if _path.includes(solution.meta.image!)}
-                <EnlargableImage
-                  loading="lazy"
-                  fetchpriority="high"
-                  src={module.default}
-                  alt={solution.title}
-                  class="w-full h-auto rounded-lg border-2"
-                  sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
-                />
-              {/if}
-            {/each}
+            <EnlargableImage
+              loading="lazy"
+              fetchpriority="high"
+              src={images.primary}
+              alt={solution.title}
+              class="w-full h-auto rounded-lg border-2"
+              sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
+            />
           </div>
         </div>
 
@@ -167,18 +134,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
           {#each solution.screenshots as screenshot, index}
             <div class="screenshot-card">
-              {#each Object.entries(imageModules) as [_path, module]}
-                {#if _path.includes(`${solution.id}/step-${index + 1}-light.png`)}
-                  <EnlargableImage
-                    loading="lazy"
-                    fetchpriority="high"
-                    src={module.default}
-                    alt={solution.title}
-                    class="w-full h-auto rounded-lg border-2"
-                    sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
-                  />
-                {/if}
-              {/each}
+              <EnlargableImage
+                loading="lazy"
+                fetchpriority="high"
+                src={images.screenshots[index]}
+                alt={solution.title}
+                class="w-full h-auto rounded-lg border-2"
+                sizes="(min-width: 768px) min(800px, 100vw), min(100vw - 32px, 800px)"
+              />
               <p class="mt-4 text-stormy-700 text-center">
                 {screenshot.caption}
               </p>

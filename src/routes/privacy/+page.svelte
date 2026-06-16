@@ -5,9 +5,9 @@
 <Seo title="Privacy Policy" />
 
 <div class="bg-stormy-50 flex-grow">
-  <div
-    class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 section-y"
-  >
+  <section class="site-container section-y" aria-labelledby="privacy-policy">
+    <article class="legal-document-sheet">
+      <div class="legal-document">
     <h1 id="privacy-policy">Privacy Policy</h1>
 
     <p class="font-bold">Last updated: January 27, 2025</p>
@@ -1356,5 +1356,7 @@
     <ul>
       <li>By email: privacy@mathesar.org</li>
     </ul>
-  </div>
+      </div>
+    </article>
+  </section>
 </div>

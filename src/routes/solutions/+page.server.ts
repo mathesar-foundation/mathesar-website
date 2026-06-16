@@ -1,8 +1,8 @@
-import { getContributors } from "$lib/util/getContributors.server";
-import { getSolutions } from "$lib/util/getSolutions.server";
+import { getSolutionNavItems, getSolutions } from "$lib/server/solutions";
 
-export async function load() {
-  const solutions = await getSolutions();
+export function load() {
+  const solutions = getSolutions();
+  const solutionNavItems = getSolutionNavItems(solutions);
 
-  return { solutions };
+  return { solutions, solutionNavItems };
 }

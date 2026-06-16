@@ -6,13 +6,14 @@
   export let data;
 
   $: solution = data.solution;
-  $: solutions = data.solutions;
+  $: solutionNavItems = data.solutionNavItems;
 </script>
 
-<Seo title={`${solution.title} - Solution`}
+<Seo
+  title={`${solution.title} - Solution`}
   image={`/og/og-solution-${solution.id}.png`}
 />
 
-<SolutionPageNav {solutions} currentSolutionId={solution.id} />
+<SolutionPageNav solutions={solutionNavItems} currentSolutionId={solution.id} />
 
 <Solution {solution} />
