@@ -138,6 +138,10 @@
   profile_image: https://github.com/manthan-jsharma.png
   profile_url: https://github.com/manthan-jsharma
   username: manthan-jsharma
+- name: null
+  profile_image: https://github.com/transifex-integration[bot].png
+  profile_url: https://github.com/transifex-integration[bot]
+  username: transifex-integration[bot]
 - name: Abhishek Pandey
   profile_image: https://github.com/abhishak3.png
   profile_url: https://github.com/abhishak3
@@ -154,22 +158,18 @@
   profile_image: https://github.com/VFermat.png
   profile_url: https://github.com/VFermat
   username: VFermat
-- name: Ashwath
-  profile_image: https://github.com/Ashwath-Palanisamy.png
-  profile_url: https://github.com/Ashwath-Palanisamy
-  username: Ashwath-Palanisamy
 - name: Colin Powell
   profile_image: https://github.com/powellc.png
   profile_url: https://github.com/powellc
   username: powellc
+- name: Ashwath
+  profile_image: https://github.com/Ashwath-Palanisamy.png
+  profile_url: https://github.com/Ashwath-Palanisamy
+  username: Ashwath-Palanisamy
 - name: Sumeet Haryani
   profile_image: https://github.com/SumeetHaryani.png
   profile_url: https://github.com/SumeetHaryani
   username: SumeetHaryani
-- name: null
-  profile_image: https://github.com/transifex-integration[bot].png
-  profile_url: https://github.com/transifex-integration[bot]
-  username: transifex-integration[bot]
 - name: Priyang
   profile_image: https://github.com/priyang12.png
   profile_url: https://github.com/priyang12
@@ -182,18 +182,18 @@
   profile_image: https://github.com/vrutik2809.png
   profile_url: https://github.com/vrutik2809
   username: vrutik2809
-- name: Kevin Yan
-  profile_image: https://github.com/yankevn.png
-  profile_url: https://github.com/yankevn
-  username: yankevn
-- name: null
-  profile_image: https://github.com/karthikeyan24-kk.png
-  profile_url: https://github.com/karthikeyan24-kk
-  username: karthikeyan24-kk
 - name: Tafreed Ahmad
   profile_image: https://github.com/TafreedAhmad.png
   profile_url: https://github.com/TafreedAhmad
   username: TafreedAhmad
+- name: null
+  profile_image: https://github.com/karthikeyan24-kk.png
+  profile_url: https://github.com/karthikeyan24-kk
+  username: karthikeyan24-kk
+- name: Kevin Yan
+  profile_image: https://github.com/yankevn.png
+  profile_url: https://github.com/yankevn
+  username: yankevn
 - name: ayao
   profile_image: https://github.com/ayao451.png
   profile_url: https://github.com/ayao451
