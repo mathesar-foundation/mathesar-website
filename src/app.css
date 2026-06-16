@@ -26,6 +26,62 @@
   .card-pad {
     @apply p-5 sm:p-6;
   }
+
+  .legal-document-sheet {
+    @apply mx-auto max-w-[44rem] rounded-lg border border-stormy-200 bg-white px-5 py-6 shadow-sm sm:px-7 sm:py-8 lg:px-9 lg:py-10;
+  }
+
+  .legal-document {
+    @apply prose prose-slate max-w-none text-stormy-700 prose-headings:font-bold prose-headings:text-stormy-900 prose-a:font-semibold prose-a:text-sapphire-600 prose-a:no-underline hover:prose-a:text-sapphire-700 prose-code:text-stormy-900 prose-strong:text-stormy-900 prose-h1:text-[2.125rem] prose-h1:leading-[1.1] prose-h1:tracking-normal prose-h2:text-[1.375rem] prose-h2:leading-tight prose-h3:text-[1.0625rem] prose-h3:leading-snug prose-p:leading-[1.625] prose-li:leading-[1.625] sm:prose-h1:text-[2.5rem] sm:prose-h1:leading-[1.08];
+  }
+
+  .legal-document :where(h2, h3, h4) {
+    scroll-margin-top: 6rem;
+  }
+
+  .legal-document :where(h1) {
+    @apply mb-2;
+  }
+
+  .legal-document :where(h2) {
+    @apply mt-9 border-t border-stormy-200 pt-6;
+  }
+
+  .legal-document :where(h2:first-of-type) {
+    @apply border-t-0 pt-0;
+  }
+
+  .legal-document :where(h3) {
+    @apply mt-5;
+  }
+
+  .legal-document :where(h2 + h3) {
+    @apply mt-4;
+  }
+
+  .legal-document :where(h2 + p, h3 + p) {
+    @apply mt-3;
+  }
+
+  .legal-document :where(p, ul) {
+    @apply my-4;
+  }
+
+  .legal-document :where(h1 + p) {
+    @apply mt-0 mb-6 text-sm font-semibold uppercase tracking-wide text-stormy-500;
+  }
+
+  .legal-document :where(ul) {
+    @apply pl-5;
+  }
+
+  .legal-document :where(li) {
+    @apply my-1.5 pl-1;
+  }
+
+  .legal-document :where(li)::marker {
+    color: #6f238f;
+  }
 }
 
 @layer utilities {
