@@ -226,7 +226,7 @@
         large open source communities like Creative Commons and WordPress.
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-20">
         {#each team as member, i}
           <div
             class="{colors[
@@ -251,15 +251,25 @@
               <h3 class="text-xl font-bold leading-tight text-stormy-800">
                 {member.name}
               </h3>
-              <p class="mt-2 text-sm font-semibold leading-tight text-stormy-700">
+              <p class="mt-2 text-sm text-stormy-600 tracking-widest uppercase">
                 {member.role}
               </p>
             </div>
 
             <div class="flex-1 relative px-6 py-5 bg-white/30 rounded-b-xl">
+              <div
+                class="absolute -top-3 left-1/2 -translate-x-1/2 text-pumpkin-500 text-4xl"
+              >
+                "
+              </div>
               <p class="text-stormy-700 leading-relaxed whitespace-pre-line">
                 {@html member.bio}
               </p>
+              <div
+                class="absolute -bottom-3 left-1/2 -translate-x-1/2 text-pumpkin-500 text-4xl rotate-180"
+              >
+                "
+              </div>
             </div>
           </div>
         {/each}
