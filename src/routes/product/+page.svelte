@@ -14,7 +14,7 @@
     <Stickers variant="product" />
 
     <div class="z-20 relative site-container">
-      <div class="text-center max-w-4xl mx-auto mb-8 lg:mb-12">
+      <div class="relative z-30 text-center max-w-4xl mx-auto mb-12 lg:mb-24">
         <h1
           data-hero-heading
           class="text-balance text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6"
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <div class="relative z-20 mt-8">
+      <div class="relative z-10 mt-12 lg:mt-16 pointer-events-none">
         <div class="flex flex-col">
           <div
             class="flex items-center justify-center relative z-10 mb-2 min-h-[200px] w-full overflow-visible"
