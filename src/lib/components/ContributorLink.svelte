@@ -1,9 +1,10 @@
 <script lang="ts">
   import type { Contributor } from "$lib/util/getContributors.server";
   export let contributor: Contributor;
+  export let sizeClass = "";
 </script>
 
-<a href={contributor.profile_url}>
+<a href={contributor.profile_url} class={sizeClass}>
   <img
     loading="lazy"
     width={90}

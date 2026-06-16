@@ -66,7 +66,7 @@
       </div>
 
       <!-- Image container -->
-      <div class="flex items-center justify-center min-h-0 relative p-8">
+      <div class="flex items-center justify-center min-h-0 relative p-4 sm:p-6">
         <enhanced:img
           {src}
           {fetchpriority}

@@ -1,5 +1,6 @@
 <script lang="ts">
   import SectionCurve from "./SectionCurve.svelte";
+  import NoOrphan from "./NoOrphan.svelte";
   import Stickers from "./Stickers.svelte";
   import TrackedLink from "./TrackedLink.svelte";
   import Video from "./Video.svelte";
@@ -7,32 +8,32 @@
 </script>
 
 <div class="relative overflow-x-clip">
-
   <section class="relative">
     <div>
       <Stickers variant="hero" />
     </div>
 
-    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="py-8 md:py-12 lg:py-16">
+    <div class="z-20 relative site-container">
+      <div class="py-6 md:py-8 lg:py-8">
         <div class="flex-1 mx-auto w-full relative">
-          <div class="space-y-4 md:space-y-8 text-center">
+          <div class="space-y-4 text-center">
             <h1
-              class="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-white"
+              data-hero-heading
+              class="text-balance text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-white"
             >
               <span class="text-pumpkin-400">Secure,</span>
               <span class="text-pumpkin-400">spreadsheet-like</span><br />
-              <span>tool for Postgres data</span>
+              <span><NoOrphan text="tool for Postgres data" /></span>
             </h1>
             <p
-              class="text-xl lg:text-2xl max-w-2xl mx-auto text-stormy-100 leading-tight"
+              class="text-lg lg:text-xl max-w-2xl mx-auto text-stormy-100 leading-snug"
             >
               An intuitive, open-source UI to view, edit, and query Postgres
               data, with easy deployment and robust access control.
             </p>
           </div>
 
-          <div class="text-center mt-8">
+          <div class="text-center mt-5">
             <TrackedLink
               analyticsData={{ location: "hero" }}
               href="https://docs.mathesar.org"
@@ -62,7 +63,7 @@
       </div>
 
       <div class="relative">
-        <div class="max-w-4xl mx-auto">
+        <div class="max-w-3xl 2xl:max-w-4xl mx-auto">
           <div class="relative z-10">
             <div
               class="relative rounded-lg shadow-2xl border-2 border-stormy-900 overflow-hidden"
@@ -84,7 +85,7 @@
     </div>
   </section>
 
-  <div class="-mt-24 lg:-mt-96">
+  <div class="-mt-20 lg:-mt-80">
     <SectionCurve direction="bottom" inverted fillColor="fill-stormy-50" />
   </div>
 </div>

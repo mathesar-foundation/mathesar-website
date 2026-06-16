@@ -1,6 +1,7 @@
 <script lang="ts">
   import BlogPostCard from "$lib/components/BlogPostCard.svelte";
   import CTASection from "$lib/components/CTASection.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
 
@@ -14,10 +15,10 @@
 
 <div class="antialiased">
   <article class="relative">
-    <div class="pt-12 lg:pt-20 relative">
+    <div class="pt-10 lg:pt-14 relative">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between gap-8"
+          class="flex flex-col lg:flex-row items-center justify-between gap-6"
         >
           <div class="flex-1 text-center lg:text-left">
             <!-- <div class="flex flex-wrap gap-1.5 mb-4">
@@ -32,9 +33,10 @@
               {/if}
             </div> -->
             <h1
-              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
+              data-hero-heading
+              class="text-balance text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
             >
-              {post.title}
+              <NoOrphan text={post.title} />
             </h1>
           </div>
 
@@ -64,14 +66,14 @@
     <div class="bg-stormy-50 mx-auto -mt-12 relative z-10">
       <div class="max-w-4xl mx-auto">
         <div
-          class="p-8 prose prose-lg max-w-prose
+          class="p-5 sm:p-6 prose prose-lg max-w-prose
             prose-headings:text-plum-800
             prose-heading:leading-snug
             prose-a:text-salmon-600 hover:prose-a:text-pumpkin-400
-            prose-p:text-plum-800 prose-p:leading-relaxed prose-p:mb-6
+            prose-p:text-plum-800 prose-p:leading-relaxed prose-p:mb-5
             prose-strong:text-plum-800
-            prose-h2:text-3xl prose-h2:font-bold prose-h2:mb-8 prose-h2:mt-12
-            prose-h3:text-2xl prose-h3:font-semibold prose-h3:text-pumpkin-500 prose-h3:mt-8 prose-h3:mb-4
+            prose-h2:text-3xl prose-h2:font-bold prose-h2:mb-6 prose-h2:mt-10
+            prose-h3:text-2xl prose-h3:font-semibold prose-h3:text-pumpkin-500 prose-h3:mt-6 prose-h3:mb-3
             prose-li:text-plum-800 prose-li:leading-relaxed
             prose-ul:text-plum-800 prose-ul:my-6 prose-ul:space-y-2
             prose-ol:text-plum-800 prose-ol:my-6 prose-ol:space-y-2
@@ -86,14 +88,14 @@
             prose-hr:border-stormy-200
             text-xl
             [&>*]:text-plum-800
-            [&>section]:mb-12"
+            [&>section]:mb-8"
         >
           {@html post.content}
         </div>
       </div>
 
-      <div class="max-w-4xl px-8 mx-auto mt-16">
-        <h2 class="text-2xl font-bold text-plum-800 mb-8">Recent Posts</h2>
+      <div class="max-w-4xl px-5 sm:px-6 mx-auto mt-10">
+        <h2 class="text-2xl font-bold text-plum-800 mb-6">Recent Posts</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           {#each recentPosts as post}
             <BlogPostCard {post} mini={true} />

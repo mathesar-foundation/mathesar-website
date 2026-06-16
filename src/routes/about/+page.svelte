@@ -1,5 +1,7 @@
 <script lang="ts">
+  import CTASection from "$lib/components/CTASection.svelte";
   import ContributorLink from "$lib/components/ContributorLink.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import OpenSourceSection from "$lib/components/OpenSourceSection.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
@@ -14,7 +16,17 @@
   const { staff, contributors } = data;
 
   const team = staff.filter((i) => i.type === "staff");
-  const boardMembers = staff.filter((i) => i.type === "board");
+  const boardMembers = staff
+    .filter((i) => i.type === "board")
+    .map((member) => {
+      const [roleTitle, ...organization] = member.role.split(",");
+
+      return {
+        ...member,
+        roleTitle: roleTitle.trim(),
+        roleOrganization: organization.join(",").trim(),
+      };
+    });
 
   const colors = [
     "bg-sapphire-200",
@@ -26,28 +38,26 @@
   ];
 </script>
 
-<Seo 
-  title="About" 
-  image="/og/og-about.png"
-/>
+<Seo title="About" image="/og/og-about.png" />
 
 <div class="antialiased overflow-x-hidden">
-  <section class="relative pt-20">
+  <section class="relative pt-12 lg:pt-14">
     <div class="opacity-75">
       <Stickers variant="about" />
     </div>
 
-    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-32">
+    <div class="z-20 relative site-container">
+      <div class="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
         <h1
-          class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6"
+          data-hero-heading
+          class="text-balance text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6"
         >
           Making databases <br /><span class="text-pumpkin-400"
-            >accessible to everyone</span
+            ><NoOrphan text="accessible to everyone" /></span
           >
         </h1>
 
-        <p class="text-xl sm:text-2xl text-stormy-100 mt-6 mb-12">
+        <p class="text-xl sm:text-2xl text-stormy-100 mt-4 mb-6">
           Mathesar provides a spreadsheet-like interface to PostgreSQL
           databases. Built by a nonprofit, 100% open source.
         </p>
@@ -122,7 +132,7 @@
   <section class="relative bg-stormy-50">
     <div class="relative">
       <svg
-        class="w-full h-48 fill-stormy-50 block relative z-10 -mt-1"
+        class="w-full h-32 fill-stormy-50 block relative z-10 -mt-1"
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
       >
@@ -130,13 +140,15 @@
       </svg>
     </div>
 
-    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="z-20 relative site-container pb-12">
       <div
-        class="bg-stormy-100 relative px-8 lg:px-16 rounded-2xl z-10 mb-20 py-8 lg:py-16 -mt-96"
+        class="bg-stormy-100 relative max-w-[66rem] mx-auto p-6 sm:p-8 lg:py-10 lg:px-10 rounded-2xl z-10 mb-8 lg:mb-10 -mt-72"
       >
-        <div class="grid md:grid-cols-8 gap-20">
-          <div class="md:col-span-5 flex items-center">
-            <div class="relative max-w-2xl">
+        <div
+          class="grid md:grid-cols-[minmax(0,1fr)_17rem] lg:grid-cols-[minmax(0,1fr)_19rem] xl:grid-cols-[38rem_20rem] gap-8 lg:gap-10 xl:gap-12 xl:justify-center items-center"
+        >
+          <div class="flex items-center">
+            <div class="relative max-w-[38rem]">
               <span
                 class="text-stormy-500 text-lg font-medium tracking-wider uppercase"
                 >Our Mission</span
@@ -172,14 +184,22 @@
             </div>
           </div>
 
-          <div class="relative z-10 md:col-span-3">
-            <div class="relative md:max-w-lg mx-auto flex items-center h-full">
-              <div class="relative w-full">
-                <div class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-sapphire-600 via-salmon-500 to-pumpkin-500 rounded-2xl"></div>
+          <div
+            class="relative z-10 flex items-center justify-center md:justify-end"
+          >
+            <div
+              class="relative w-full max-w-[15rem] sm:max-w-[16rem] lg:max-w-[18rem] xl:max-w-[20rem]"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-sapphire-600 via-salmon-500 to-pumpkin-500 rounded-2xl"
+              ></div>
+              <div
+                class="relative w-full rounded-xl shadow-2xl bg-white p-6 sm:p-7 lg:p-8"
+              >
                 <enhanced:img
                   src="/src/assets/illustrations/mathesar-foundation.png"
                   alt="Mathesar Foundation"
-                  class="relative w-full rounded-xl shadow-2xl bg-white p-8 sm:p-16 lg:p-24"
+                  class="w-full h-auto"
                 />
               </div>
             </div>
@@ -187,7 +207,7 @@
         </div>
       </div>
 
-      <div class="relative flex flex-col items-start gap-2 mb-12">
+      <div class="relative flex flex-col items-start gap-2 mb-6 lg:mb-8">
         <h2 class="text-6xl font-bold tracking-tight text-stormy-800">
           Our Maintainers
         </h2>
@@ -196,7 +216,9 @@
         </h3>
       </div>
 
-      <p class="text-xl text-stormy-600 mb-24 leading-relaxed max-w-3xl">
+      <p
+        class="text-xl text-stormy-600 mb-8 lg:mb-10 leading-relaxed max-w-3xl"
+      >
         We're a group of industry veterans with a love of
         <span class="text-plum-500">open source</span>. Our core team members
         have founded startups and worked at a variety of companies – from
@@ -204,7 +226,7 @@
         large open source communities like Creative Commons and WordPress.
       </p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12">
         {#each team as member, i}
           <div
             class="{colors[
@@ -225,29 +247,19 @@
               />
             </div>
 
-            <div class="text-center mb-6">
-              <h3 class="text-2xl font-bold tracking-wide mb-2 text-stormy-800">
+            <div class="text-center px-6 mb-5">
+              <h3 class="text-xl font-bold leading-tight text-stormy-800">
                 {member.name}
               </h3>
-              <p class="text-sm text-stormy-600 tracking-widest uppercase">
+              <p class="mt-2 text-sm font-semibold leading-tight text-stormy-700">
                 {member.role}
               </p>
             </div>
 
-            <div class="flex-1 relative p-8 bg-white/30 rounded-b-lg">
-              <div
-                class="absolute -top-3 left-1/2 -translate-x-1/2 text-pumpkin-500 text-4xl"
-              >
-                "
-              </div>
+            <div class="flex-1 relative px-6 py-5 bg-white/30 rounded-b-xl">
               <p class="text-stormy-700 leading-relaxed whitespace-pre-line">
                 {@html member.bio}
               </p>
-              <div
-                class="absolute -bottom-3 left-1/2 -translate-x-1/2 text-pumpkin-500 text-4xl rotate-180"
-              >
-                "
-              </div>
             </div>
           </div>
         {/each}
@@ -255,21 +267,27 @@
     </div>
   </section>
 
-  <section class="relative py-20 lg:py-32 text-white">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="relative flex flex-col items-center text-center gap-2 mb-12">
+  <section
+    class="relative pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 lg:pb-12 text-white"
+  >
+    <div class="relative site-container">
+      <div
+        class="relative flex flex-col items-center text-center gap-2 mb-6 lg:mb-8"
+      >
         <h2 class="text-6xl font-bold tracking-tight text-white">Our Board</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mt-12 lg:mt-14 max-w-[58rem] mx-auto"
+      >
         {#each boardMembers as member, i}
           <div
             class="{colors[
               i % colors.length
-            ]} rounded-xl flex flex-col h-full group shadow-sm"
+            ]} w-full max-w-[20rem] md:max-w-none mx-auto rounded-xl flex flex-col h-full group shadow-sm"
           >
             <div
-              class="relative w-40 h-40 mx-auto mb-6 -mt-8 transform rotate-3 transition-transform group-hover:rotate-0"
+              class="relative w-36 h-36 mx-auto mb-4 -mt-6 transform rotate-3 transition-transform group-hover:rotate-0"
             >
               <img
                 src={member.image ? `/staff/${member.image}` : ""}
@@ -282,13 +300,20 @@
               />
             </div>
 
-            <div class="text-center p-8">
-              <h3 class="text-2xl font-bold tracking-wide mb-2 text-stormy-800">
+            <div class="text-center px-5 pt-3 pb-5">
+              <h3 class="text-lg font-bold leading-tight text-stormy-800">
                 {member.name}
               </h3>
-              <p class="text-stormy-600 leading-relaxed">
-                {member.role}
+              <p
+                class="mt-2.5 text-sm font-semibold leading-tight text-stormy-700"
+              >
+                {member.roleTitle}
               </p>
+              {#if member.roleOrganization}
+                <p class="mt-1 text-sm leading-snug text-stormy-600">
+                  {member.roleOrganization}
+                </p>
+              {/if}
             </div>
           </div>
         {/each}
@@ -297,4 +322,7 @@
   </section>
 
   <OpenSourceSection {contributors} />
+  <div class="bg-stormy-50">
+    <CTASection />
+  </div>
 </div>

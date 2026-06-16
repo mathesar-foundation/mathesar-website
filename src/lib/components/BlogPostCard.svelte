@@ -57,8 +57,8 @@
           />
         </div>
 
-        <div class="p-8 md:py-12 md:pr-12 flex flex-col justify-center">
-          <div class="flex flex-wrap gap-1.5 mb-6">
+        <div class="p-5 md:p-6 flex flex-col justify-center">
+          <div class="flex flex-wrap gap-1.5 mb-4">
             {#each post.tags as tag}
               <span
                 class="px-2.5 py-0.5 text-xs font-medium rounded-lg border border-stormy-300 text-stormy-800"
@@ -69,7 +69,7 @@
           </div>
 
           <h3
-            class="text-3xl xl:text-4xl font-bold mb-4 line-clamp-3 [&:hover>span]:text-plum-500 group-hover:[&>span]:text-plum-700"
+            class="text-3xl xl:text-4xl font-bold mb-3 line-clamp-3 [&:hover>span]:text-plum-500 group-hover:[&>span]:text-plum-700"
           >
             <span class="text-stormy-800 transition-colors duration-300">
               {post.title}
@@ -78,14 +78,14 @@
 
           {#if post.description}
             <p
-              class="text-stormy-800 text-lg mb-8 line-clamp-3 leading-relaxed"
+              class="text-stormy-800 text-lg mb-5 line-clamp-3 leading-relaxed"
             >
               {post.description}
             </p>
           {/if}
 
           <div
-            class="flex items-center gap-4 text-sm text-stormy-800 border-t border-stormy-200 pt-6"
+            class="flex items-center gap-4 text-sm text-stormy-800 border-t border-stormy-200 pt-4"
           >
             <div
               class="w-12 h-12 rounded-full bg-gradient-to-br from-pumpkin-500 to-pumpkin-600 flex items-center justify-center text-white text-lg"

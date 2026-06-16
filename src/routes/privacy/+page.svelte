@@ -6,7 +6,7 @@
 
 <div class="bg-stormy-50 flex-grow">
   <div
-    class="max-w-3xl mx-auto prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 py-16"
+    class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 section-y"
   >
     <h1 id="privacy-policy">Privacy Policy</h1>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import BlogPostCard from "$lib/components/BlogPostCard.svelte";
   import CTASection from "$lib/components/CTASection.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
 
@@ -11,24 +12,23 @@
   const regularPosts = posts.slice(1);
 </script>
 
-<Seo 
-  title="Mathesar Blog" 
-  image="/og/og-blog.png"
-/>
+<Seo title="Mathesar Blog" image="/og/og-blog.png" />
 
 <div class="antialiased">
-  <div class="pt-20 relative">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-      <h1 class="relative flex flex-col gap-y-2">
+  <div class="pt-12 lg:pt-14 relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <h1 data-hero-heading class="text-balance relative flex flex-col gap-y-2">
         <span
           class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-pumpkin-400"
         >
-          Mathesar Blog
+          <NoOrphan text="Mathesar Blog" />
         </span>
         <span
           class="text-2xl sm:text-3xl lg:text-4xl tracking-tight text-white"
         >
-          The latest news and updates from the Mathesar team.
+          <NoOrphan
+            text="The latest news and updates from the Mathesar team."
+          />
         </span>
       </h1>
 
@@ -52,12 +52,12 @@
   </div>
 
   <div class="relative border border-stormy-50 bg-stormy-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mp-8 lg:pb-16 -mt-36">
-      <div class="mb-12 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 lg:pb-10 -mt-24">
+      <div class="mb-8 relative z-10">
         <BlogPostCard post={featuredPost} />
       </div>
 
-      <div class="grid grid-cols-1 gap-12">
+      <div class="grid grid-cols-1 gap-8">
         {#each regularPosts as post}
           <BlogPostCard {post} />
         {/each}

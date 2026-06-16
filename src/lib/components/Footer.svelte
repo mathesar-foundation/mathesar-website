@@ -15,7 +15,6 @@
   const navLinks = [
     { name: "Product", path: "/product" },
     { name: "Solutions", path: "/solutions" },
-    { name: "Community", path: "/community" },
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
     {
@@ -88,11 +87,11 @@
   ];
 </script>
 
-<footer class="py-24 bg-stormy-950 relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<footer class="py-8 sm:py-9 lg:py-10 bg-stormy-950 relative">
+  <div class="site-container relative">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 xl:gap-12">
       <!-- Logo and Navigation Links -->
-      <div class="space-y-8">
+      <div class="space-y-5">
         <a href="/" aria-label="Mathesar Homepage">
           <enhanced:img
             src="/src/assets/logo.png"
@@ -100,7 +99,7 @@
             class="h-9 w-auto"
           />
         </a>
-        <nav class="flex flex-col gap-4">
+        <nav class="flex flex-col gap-3">
           {#each navLinks as { name, path, isExternal }}
             <a
               href={path}
@@ -118,7 +117,7 @@
       </div>
 
       <!-- Contact Section -->
-      <div class="space-y-6">
+      <div class="space-y-5">
         <h3 class="text-xl text-pumpkin-500 font-medium">Contact Us</h3>
         <p class="text-stormy-200">
           To reach out to the Mathesar team, send us an email at
@@ -130,9 +129,9 @@
           </a>.
         </p>
 
-        <div class="mt-8">
-          <h4 class="text-lg text-pumpkin-500 font-medium mb-4">Find us on</h4>
-          <div class="grid grid-cols-2 gap-4">
+        <div class="mt-5">
+          <h4 class="text-lg text-pumpkin-500 font-medium mb-3">Find us on</h4>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-3">
             {#each socialLinks as { name, path, icon, svg }}
               <a
                 href={path}
@@ -152,14 +151,14 @@
       </div>
 
       <!-- Subscription Section -->
-      <div class="space-y-6">
+      <div class="space-y-5">
         <h3 class="text-xl text-pumpkin-500 font-medium">
           Keep on top of what's going on at the Mathesar Foundation
         </h3>
         <NewsletterSignup sourceComponent="footer" />
 
         <!-- Survey CTA Section -->
-        <div class="mt-8 space-y-2 p-4 rounded-lg bg-stormy-100">
+        <div class="mt-5 space-y-2 p-4 rounded-lg bg-stormy-100">
           <h3 class="text-lg text-stormy-800 font-medium">
             Help shape Mathesar!
           </h3>
@@ -180,13 +179,13 @@
 
       <!-- Footer Bottom -->
       <div
-        class="lg:mt-16 flex flex-col sm:flex-row justify-between items-center gap-6 lg:col-span-3"
+        class="lg:mt-2 flex flex-col sm:flex-row justify-between items-center gap-4 lg:col-span-3 border-t border-stormy-300/15 pt-5"
       >
         <p class="text-plum-200 order-2 md:order-1">
           Mathesar Foundation © {year}. All rights reserved.
         </p>
         <div
-          class="flex flex-col md:flex-row items-start w-full md:w-auto md:items-center gap-4 lg:gap-8"
+          class="flex flex-col md:flex-row items-start w-full md:w-auto md:items-center gap-4 lg:gap-5"
         >
           <a
             href="/privacy"

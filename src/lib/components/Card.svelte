@@ -6,7 +6,7 @@
   };
 </script>
 
-<div class="bg-white/100 rounded-2xl p-6 shadow-sm">
+<div class="bg-white/100 rounded-2xl card-pad shadow-sm">
   <div class="rounded-lg w-full flex items-center justify-center mb-4">
     <enhanced:img
       fetchpriority="high"

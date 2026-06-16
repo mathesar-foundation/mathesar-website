@@ -31,6 +31,7 @@ export const redirects = {
   "/rss": "/rss.xml",
   "/feed": "/rss.xml",
   "/sitemap": "/sitemap.xml",
+  "/community": "/about",
   "/free-install": "/contact",
 
   // Erroneous URL redirect
