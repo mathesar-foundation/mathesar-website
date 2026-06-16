@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "$lib/components/Card.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
@@ -109,30 +110,30 @@
   </script>
 </svelte:head>
 
-<section class="relative pt-24">
+<section class="relative pt-12 lg:pt-14">
   <div class="opacity-60">
     <Stickers variant="community" />
   </div>
 
-  <div
-    class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white antialiased"
-  >
+  <div class="z-20 relative site-container text-white antialiased">
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-8"
+      class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start mb-6"
     >
       <div class="lg:max-w-xl">
         <enhanced:img
           src="/src/assets/illustrations/mathesar-frame.png"
           alt="Mathesar Interface"
-          class="w-full rounded-lg shadow-xl border-2 border-stormy-700/20 mb-8"
+          class="w-full rounded-lg shadow-xl border-2 border-stormy-700/20 mb-5"
         />
 
-        <h1 class="mb-8">
+        <h1 data-hero-heading class="text-balance mb-5">
           <span
-            class="block text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight !leading-[1.1] text-white mb-6"
+            class="block text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight !leading-[1.1] text-white mb-4"
           >
-            Simple data management.
-            <span class="text-pumpkin-400">No subscription required.</span>
+            <NoOrphan text="Simple data management." />
+            <span class="text-pumpkin-400"
+              ><NoOrphan text="No subscription required." /></span
+            >
           </span>
           <span
             class="block text-xl sm:text-xl text-white font-normal leading-relaxed"
@@ -147,10 +148,10 @@
       </div>
 
       <div
-        class="space-y-6 z-10 relative text-lg text-stormy-900/90 bg-stormy-100 rounded-2xl p-8 lg:p-12 border border-white/10"
+        class="space-y-4 z-10 relative text-lg text-stormy-900/90 bg-stormy-100 rounded-2xl p-5 lg:p-6 border border-white/10"
       >
         <h2
-          class="text-3xl sm:text-4xl font-bold tracking-tight text-stormy-800 mb-4"
+          class="text-3xl sm:text-4xl font-bold tracking-tight text-stormy-800 mb-3"
         >
           Get started with Mathesar!
         </h2>
@@ -164,7 +165,7 @@
 
         {#if formState === FormState.SUCCESS}
           <div
-            class="flex flex-col items-center text-center space-y-2 p-6 border rounded-md bg-stormy-800 border-stormy-700 mt-8"
+            class="flex flex-col items-center text-center space-y-2 p-5 border rounded-md bg-stormy-800 border-stormy-700 mt-6"
           >
             <h3 class="text-xl font-medium text-white">
               Thank you for reaching out.
@@ -177,7 +178,7 @@
           </div>
         {:else}
           <form
-            class="max-w-2xl mx-auto space-y-6"
+            class="max-w-2xl mx-auto space-y-5"
             on:submit|preventDefault={handleSubmit}
           >
             <div class="space-y-4">
@@ -265,9 +266,9 @@
   <SectionCurve direction="bottom" inverted />
 </div>
 
-<section class="relative -mt-1 bg-stormy-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-8 lg:mb-16">
+<section class="relative -mt-1 bg-stormy-50 section-y">
+  <div class="site-container">
+    <div class="text-center mb-6 lg:mb-8">
       <h2>
         <span
           class="block text-3xl md:text-4xl sm:text-5xl lg:text-6xl font-bold text-stormy-800"
@@ -275,7 +276,7 @@
           Built for everyone
         </span>
       </h2>
-      <p class="text-lg md:text-xl text-gray-600 mt-6 max-w-4xl mx-auto">
+      <p class="text-lg md:text-xl text-gray-600 mt-4 max-w-4xl mx-auto">
         Mathesar combines simplicity and power in a spreadsheet-like UI that's
         easy for both DB admins and business users to use. It works directly
         with Postgres permissions, schemas, and tables – no extra abstractions
@@ -284,7 +285,7 @@
     </div>
 
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 xl:mb-12"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 xl:mb-8"
     >
       {#each cardData as card}
         <Card {card} />

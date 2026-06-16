@@ -69,10 +69,10 @@
   };
 </script>
 
-<div class="space-y-6 not-prose">
+<div class="space-y-4 not-prose">
   {#if formState === FormState.SUCCESS}
     <div
-      class={`flex flex-col items-center text-center space-y-2 p-6 border rounded-md ${themes[theme].background} ${themes[theme].border}`}
+      class={`flex flex-col items-center text-center space-y-2 p-5 border rounded-md ${themes[theme].background} ${themes[theme].border}`}
     >
       <h3 class={`text-xl font-medium ${themes[theme].textPrimary}`}>
         Thank you for subscribing!

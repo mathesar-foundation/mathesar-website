@@ -16,10 +16,10 @@
 <section class="relative">
   <SectionCurve direction="top" fillColor="fill-stormy-100" />
 
-  <div class="bg-stormy-100 pt-12 pb-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col items-center gap-12">
-        <div class="max-w-2xl text-center space-y-6">
+  <div class="bg-stormy-100 cta-section-y">
+    <div class="site-container">
+      <div class="flex flex-col items-center gap-6">
+        <div class="max-w-2xl text-center section-stack">
           <h2>
             <span
               class="block text-4xl sm:text-5xl lg:text-6xl font-bold text-stormy-800 -mt-1"
@@ -28,11 +28,11 @@
             </span>
           </h2>
 
-          <p class="text-xl text-stormy-800">
+          <p class="text-xl leading-relaxed text-stormy-800">
             Install Mathesar and simplify your workflow instantly.
           </p>
 
-          <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <div class="flex flex-wrap justify-center gap-4 mb-4">
             {#each benefits as benefit}
               <div class="flex items-center gap-2">
                 <svelte:component
@@ -44,7 +44,7 @@
             {/each}
           </div>
 
-          <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+          <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
             <TrackedLink
               href="https://docs.mathesar.org"
               class="group inline-flex items-center rounded-lg bg-orange-red-500 px-6 py-3.5 text-lg font-semibold

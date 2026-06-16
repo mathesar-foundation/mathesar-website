@@ -16,12 +16,10 @@
   const items = [
     { name: "Product", path: "product" },
     { name: "Solutions", path: "solutions" },
-    { name: "Community", path: "community" },
     { name: "About", path: "about" },
+    { name: "Donate", path: "donate" },
     { name: "Blog", path: "blog" },
     { name: "Docs", path: "https://docs.mathesar.org/latest/" },
-    { name: "Donate", path: "donate" },
-    { name: "✨ Install Support ✨", path: "free-install" },
   ];
 
   $: currentPath = $page.url.pathname;
@@ -43,7 +41,7 @@
 
 <header class="z-20 w-full transition-all relative duration-300">
   <nav
-    class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center"
+    class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-16 lg:h-[4.5rem] flex justify-between items-center"
   >
     <div class="flex items-center gap-8">
       <a href="/" class="shrink-0" aria-label="Mathesar Homepage">
@@ -55,13 +53,13 @@
       </a>
     </div>
 
-    <div class="hidden lg:flex gap-2 lg:gap-3 xl:gap-4 2xl:gap-6 items-center">
+    <div class="hidden lg:flex items-center gap-6 xl:gap-7 2xl:gap-8">
       {#each items as item}
         <a
           href={item.path.startsWith("http") ? item.path : `/${item.path}`}
           target={item.path.startsWith("http") ? "_blank" : undefined}
           rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-          class="relative text-base lg:text-base xl:text-lg font-medium {currentPath.split(
+          class="relative whitespace-nowrap text-base lg:text-lg font-medium {currentPath.split(
             '/',
           )[1] === item.path
             ? 'text-white'
@@ -80,12 +78,12 @@
           ></span>
         </a>
       {/each}
-      <div class="hidden sm:block">
-        <StarsButton count={starCount} />
-      </div>
     </div>
 
-    <div class="flex items-center gap-3 lg:gap-4 xl:gap-6 justify-end">
+    <div class="flex items-center gap-3 lg:gap-4 justify-end">
+      <div class="hidden lg:block">
+        <StarsButton count={starCount} />
+      </div>
       <TrackedLink
         analyticsData={{ location: "header" }}
         href="https://docs.mathesar.org"
@@ -139,12 +137,6 @@
         </button>
       </div>
 
-      <div>
-        <div class="flex sm:hidden lg:flex">
-          <StarsButton count={starCount} />
-        </div>
-      </div>
-
       {#each items as item}
         <a
           href={item.path.startsWith("http") ? item.path : `/${item.path}`}
@@ -162,6 +154,10 @@
           {/if}
         </a>
       {/each}
+
+      <div class="flex lg:hidden">
+        <StarsButton count={starCount} />
+      </div>
     </div>
   </div>
 {/if}

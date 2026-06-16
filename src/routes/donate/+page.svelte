@@ -1,4 +1,5 @@
 <script lang="ts">
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
@@ -48,19 +49,20 @@
 <Seo title="Donate" image="/og/og-donate.png" />
 
 <div class="text-white antialiased">
-  <section class="relative pt-14 lg:pt-24 overflow-x-clip">
+  <section class="relative pt-12 lg:pt-14 overflow-x-clip">
     <div class="opacity-50 2xl:opacity-75">
       <Stickers variant="donate" />
     </div>
 
-    <div class="z-20 relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 lg:gap-40">
+    <div class="z-20 relative site-container">
+      <div class="grid lg:grid-cols-2 lg:gap-10">
         <div>
           <h1
-            class="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-8"
+            data-hero-heading
+            class="text-balance text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-5"
           >
             Help us build <span class="text-pumpkin-400 block md:inline-block"
-              >open data tooling</span
+              ><NoOrphan text="open data tooling" /></span
             >
           </h1>
 
@@ -68,10 +70,10 @@
             Support Mathesar via:
           </p>
 
-          <div class="space-y-6 mb-12">
+          <div class="space-y-4 mb-8">
             <a
               href="https://opencollective.com/mathesar"
-              class="group inline-flex lg:w-[500px] w-full items-center gap-4 px-8 py-4 rounded-lg text-lg font-semibold
+              class="group inline-flex lg:w-[500px] w-full items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
                 bg-stormy-800/60 text-white
                 border-2 border-pumpkin-500
                 shadow-lg transition-all duration-300
@@ -79,7 +81,7 @@
                 active:transform active:scale-[0.98]"
             >
               <div
-                class="aspect-square p-3 h-16 w-16 bg-white/10 rounded-lg flex items-center justify-center"
+                class="aspect-square p-3 h-14 w-14 bg-white/10 rounded-lg flex items-center justify-center"
               >
                 <Community
                   class="w-full text-2xl lg:text-4xl text-pumpkin-500"
@@ -97,7 +99,7 @@
 
             <a
               href="https://github.com/sponsors/mathesar-foundation"
-              class="group inline-flex lg:w-[500px] w-full items-center gap-4 px-8 py-4 rounded-lg text-lg font-semibold
+              class="group inline-flex lg:w-[500px] w-full items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
                 bg-stormy-800/60 text-white
                 border-2 border-pumpkin-500
                 shadow-lg transition-all duration-300
@@ -105,7 +107,7 @@
                 active:transform active:scale-[0.98]"
             >
               <div
-                class="aspect-square p-3 h-16 w-16 bg-white/10 rounded-lg flex items-center justify-center"
+                class="aspect-square p-3 h-14 w-14 bg-white/10 rounded-lg flex items-center justify-center"
               >
                 <Github class="w-full text-2xl lg:text-4xl text-pumpkin-500" />
               </div>
@@ -120,7 +122,7 @@
             </a>
           </div>
 
-          <div class="mb-12">
+          <div class="mb-8">
             <h2 class="text-2xl font-bold text-white mb-4">100% Open Source</h2>
             <p class="text-lg text-stormy-200 mb-4 leading-relaxed">
               Mathesar is fully open source, licensed under GPLv3, and built
@@ -128,7 +130,7 @@
               no hidden features or paywalls. We are committed to always being
               100% open source and self-hostable.
             </p>
-            <p class="text-lg text-stormy-200 leading-relaxed mb-12">
+            <p class="text-lg text-stormy-200 leading-relaxed mb-6">
               Thank you for being a part of the community and for your support
               to Mathesar.
             </p>
@@ -136,20 +138,20 @@
         </div>
 
         <div class="flex items-center">
-          <div class="space-y-8">
-            <p class="text-xl text-stormy-100 leading-relaxed mb-8">
+          <div class="space-y-5">
+            <p class="text-xl text-stormy-100 leading-relaxed mb-5">
               At Mathesar Foundation, we believe working with data should be
               easy and accessible for everyone. Better ways to work with data
               mean better decisions, and better decisions lead to a better
               world.
             </p>
 
-            <p class="text-xl text-stormy-200 leading-relaxed mb-8">
+            <p class="text-xl text-stormy-200 leading-relaxed mb-5">
               Your contribution helps us:
             </p>
 
             {#each benefits as benefit}
-              <div class="flex items-start gap-8">
+              <div class="flex items-start gap-4">
                 <div
                   class="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-plum-700"
                 >
@@ -173,18 +175,18 @@
     <SectionCurve direction="bottom" inverted />
   </div>
 
-  <section class="relative -mt-1 py-16 bg-stormy-50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-8 lg:mb-16">
-        <h2 class="text-5xl font-bold text-stormy-900 mb-6">
+  <section class="relative -mt-1 section-y bg-stormy-50">
+    <div class="site-container">
+      <div class="text-center mb-6 lg:mb-8">
+        <h2 class="text-5xl font-bold text-stormy-900 mb-4">
           Mathesar Foundation
         </h2>
       </div>
 
       <div
-        class="bg-stormy-100 relative p-16 rounded-2xl z-10 mb-20 max-w-5xl mx-auto"
+        class="bg-stormy-100 relative p-5 lg:p-6 rounded-2xl z-10 mb-8 lg:mb-10 max-w-5xl mx-auto"
       >
-        <div class="grid md:grid-cols-8 gap-20">
+        <div class="grid md:grid-cols-8 gap-6 lg:gap-8">
           <div class="md:col-span-5 flex items-center">
             <div class="relative max-w-2xl">
               <p class="text-xl text-stormy-800 mb-4">
@@ -202,15 +204,15 @@
               <enhanced:img
                 src="/src/assets/illustrations/mathesar-foundation-horizontal.png"
                 alt="Mathesar Foundation"
-                class="relative w-full rounded-xl shadow-2xl bg-white p-8"
+                class="relative w-full rounded-xl shadow-2xl bg-white p-5"
               />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="max-w-4xl mx-auto space-y-16 mb-20">
-        <div class="flex items-center gap-8">
+      <div class="max-w-4xl mx-auto space-y-8 mb-8 lg:mb-10">
+        <div class="flex items-center gap-4">
           <div class="h-16 w-16 flex-shrink-0 flex items-center justify-center">
             <Coins class="text-5xl text-pumpkin-500" />
           </div>
@@ -225,7 +227,7 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4">
           <div class="h-16 w-16 flex-shrink-0 flex items-center justify-center">
             <CloudCheck class="text-5xl text-pumpkin-500" />
           </div>
@@ -243,11 +245,11 @@
       </div>
 
       <div class="text-center">
-        <h3 class="text-3xl font-bold text-stormy-900 mb-8 lg:mb-16">
+        <h3 class="text-3xl font-bold text-stormy-900 mb-6 lg:mb-8">
           Our Amazing Sponsors
         </h3>
         <div
-          class="flex flex-wrap justify-center gap-12 max-w-5xl mx-auto mb-8 lg:mb-16"
+          class="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto mb-6 lg:mb-8"
         >
           {#each sponsors.filter((s) => s.logo) as sponsor}
             <div class="group text-center">
@@ -271,13 +273,13 @@
     </div>
   </section>
 
-  <section class="relative pt-18 bg-stormy-50">
+  <section class="relative bg-stormy-50">
     <SectionCurve direction="top" fillColor="fill-stormy-100" />
 
-    <div class="bg-stormy-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col items-center gap-12">
-          <div class="max-w-2xl text-center space-y-6">
+    <div class="bg-stormy-100 cta-section-y">
+      <div class="site-container">
+        <div class="flex flex-col items-center gap-6">
+          <div class="max-w-2xl text-center section-stack">
             <h2>
               <span class="block text-xl sm:text-3xl lg:text-4xl text-gray-600">
                 Support our mission
@@ -294,7 +296,7 @@
               Mathesar platform.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+            <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
               <a
                 href="https://opencollective.com/mathesar"
                 class="group inline-flex items-center gap-4 px-6 py-3.5 rounded-lg text-lg font-semibold
@@ -329,7 +331,7 @@
             </div>
           </div>
 
-          <div class="relative -mb-12">
+          <div class="relative -mb-8">
             <enhanced:img
               src="/src/assets/standing-elephant.png"
               alt="Support Mathesar"

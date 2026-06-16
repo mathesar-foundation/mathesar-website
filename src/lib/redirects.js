@@ -31,6 +31,8 @@ export const redirects = {
   "/rss": "/rss.xml",
   "/feed": "/rss.xml",
   "/sitemap": "/sitemap.xml",
+  "/community": "/about",
+  "/free-install": "/contact",
 
   // Erroneous URL redirect
   "/blog/2025/05/21/release-0-3-0": "/blog/2025/06/23/release-0-3-0"

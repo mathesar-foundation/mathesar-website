@@ -52,10 +52,10 @@
   />
   <SectionCurve direction="bottom" />
 
-  <div class="h-30 w-full p-4"></div>
+  <div class="h-14 w-full p-4"></div>
 
-  <div class="mx-auto pt-24 px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-8 lg:mb-16">
+  <div class="site-container pt-10 lg:pt-14">
+    <div class="text-center mb-6 lg:mb-8">
       <h2 class="flex flex-col items-center gap-2">
         <span class="text-4xl sm:text-5xl lg:text-6xl text-stormy-100">
           Simple solutions,
@@ -66,7 +66,7 @@
           minimal hassle
         </span>
       </h2>
-      <p class="text-xl text-stormy-100 mt-6 max-w-3xl mx-auto">
+      <p class="text-xl text-stormy-100 mt-4 max-w-3xl mx-auto">
         A single tool with hundreds of uses. Mathesar makes it simple and
         low-risk for data owners to quickly empower all types of users to view,
         edit, and understand the data they need, in an intuitive interface
@@ -113,13 +113,13 @@
     </div>
 
     <div
-      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-32 max-w-7xl mx-auto mt-12 lg:mt-20"
+      class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-10 max-w-7xl mx-auto mt-8 lg:mt-10"
     >
       <div class="flex flex-col items-start justify-start lg:col-span-2">
         <h3 class="text-3xl font-bold text-white mb-4">
           {selectedSolution?.category.title}
         </h3>
-        <p class="text-xl leading-relaxed tracking-wide mb-6">
+        <p class="text-xl leading-relaxed tracking-wide mb-5">
           {@html selectedSolution?.category.description}
         </p>
         <p>

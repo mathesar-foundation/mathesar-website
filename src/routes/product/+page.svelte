@@ -1,5 +1,6 @@
 <script lang="ts">
   import CTASection from "$lib/components/CTASection.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import SectionCurve from "$lib/components/SectionCurve.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
@@ -9,19 +10,22 @@
 <Seo title="How Mathesar Works" image="/og/og-product.png" />
 
 <div class="text-white antialiased">
-  <section class="relative py-20 overflow-x-clip">
+  <section class="relative py-12 lg:py-14 overflow-x-clip">
     <Stickers variant="product" />
 
-    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-4xl mx-auto mb-18 lg:mb-32">
+    <div class="z-20 relative site-container">
+      <div class="text-center max-w-4xl mx-auto mb-8 lg:mb-12">
         <h1
-          class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6"
+          data-hero-heading
+          class="text-balance text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6"
         >
-          The <span class="text-pumpkin-400">power of Postgres</span>
-          without the complexity
+          The <span class="text-pumpkin-400"
+            ><NoOrphan text="power of Postgres" /></span
+          >
+          <NoOrphan text="without the complexity" />
         </h1>
 
-        <p class="text-xl sm:text-2xl text-stormy-200 mt-6 mb-12">
+        <p class="text-xl sm:text-2xl text-stormy-200 mt-4 mb-6">
           A spreadsheet-like interface that lets users of all technical skill
           levels query, edit, and explore Postgres data directly. Self-host it
           in minutes.
@@ -55,13 +59,13 @@
         </div>
       </div>
 
-      <div class="relative z-20 mt-16">
+      <div class="relative z-20 mt-8">
         <div class="flex flex-col">
           <div
             class="flex items-center justify-center relative z-10 mb-2 min-h-[200px] w-full overflow-visible"
           >
             <div
-              class="absolute top-24 flex w-full justify-center gap-8 md:gap-24 lg:gap-40"
+              class="absolute top-24 flex w-full justify-center gap-6 md:gap-16 lg:gap-24"
             >
               <div
                 class="w-28 h-28 md:w-48 md:h-48 flex-shrink-0 flex items-center justify-center relative z-10 -rotate-12"
@@ -125,12 +129,12 @@
     </div>
   </section>
 
-  <div class="relative -mt-56 z-10">
+  <div class="relative -mt-40 z-10">
     <SectionCurve direction="bottom" inverted />
   </div>
 </div>
 
-<section class="relative pt-20 bg-stormy-50 overflow-x-clip">
+<section class="relative pt-8 sm:pt-10 lg:pt-12 bg-stormy-50 overflow-x-clip">
   <div class="flex justify-center">
     <enhanced:img
       src="/src/assets/illustrations/database-badge.png"
@@ -139,8 +143,8 @@
     />
   </div>
 
-  <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-8 lg:mb-16">
+  <div class="z-20 relative site-container">
+    <div class="text-center mb-4 lg:mb-5">
       <h2>
         <span
           class="block text-4xl sm:text-5xl lg:text-6xl font-bold text-stormy-800"
@@ -153,22 +157,22 @@
           while maintaining full control
         </span>
       </h2>
-      <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
+      <p class="text-xl text-gray-600 mt-3 max-w-3xl mx-auto">
         Mathesar's intuitive UI gives everyone access to the tools they need,
         backed by Postgres permissions to keep your data safe.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
       <div>
         <div
-          class="bg-white/100 rounded-2xl p-8 shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
+          class="bg-white/100 rounded-2xl card-pad shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
         >
           <div class="md:w-1/2 w-auto lg:w-auto">
-            <h3 class="text-2xl font-bold text-stormy-800 mb-4">
+            <h3 class="text-2xl font-bold text-stormy-800 mb-3">
               Deep Postgres Integration
             </h3>
-            <p class="text-gray-600 mb-8">
+            <p class="text-gray-600 mb-4">
               Mathesar works directly with your Postgres database, using its
               native schemas, tables, and role-based permissions. Your team gets
               secure and reliable access control, built right into the database
@@ -187,13 +191,13 @@
 
       <div>
         <div
-          class="bg-white/100 rounded-2xl p-8 shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
+          class="bg-white/100 rounded-2xl card-pad shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
         >
           <div class="md:w-1/2 w-auto lg:w-auto">
-            <h3 class="text-2xl font-bold text-stormy-800 mb-4">
+            <h3 class="text-2xl font-bold text-stormy-800 mb-3">
               Intuitive Exploration and Querying
             </h3>
-            <p class="text-gray-600 mb-8">
+            <p class="text-gray-600 mb-4">
               Mathesar lets anyone explore data with zero knowledge of SQL. Join
               tables, filter, sort, group, and summarize data effortlessly to
               create custom views tailored to your needs.
@@ -210,19 +214,19 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div>
         <div
-          class="bg-white/100 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
+          class="bg-white/100 rounded-2xl card-pad shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
         >
           <div class="md:w-1/2 w-auto lg:w-auto">
             <h3 class="text-xl font-bold text-stormy-800 mb-3">
               Spreadsheet-Like Interface
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-4">
               Mathesar provides a simple, spreadsheet-like UI for viewing,
               editing, and organizing your data. You and your team can update
-              information, fix mistakes, and enter new records quickly—no
+              information, fix mistakes, and enter new records quickly, with no
               learning curve required.
             </p>
           </div>
@@ -238,13 +242,13 @@
 
       <div>
         <div
-          class="bg-white/100 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
+          class="bg-white/100 rounded-2xl card-pad shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
         >
           <div class="md:w-1/2 w-auto lg:w-auto">
             <h3 class="text-xl font-bold text-stormy-800 mb-3">
               Fits Any Workflow
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-4">
               Mathesar works harmoniously with your production database and
               other tools in the ecosystem. Import and export data directly in
               Mathesar's UI, and connect your database to thousands of Postgres
@@ -263,11 +267,11 @@
 
       <div>
         <div
-          class="bg-white/100 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
+          class="bg-white/100 rounded-2xl card-pad shadow-sm flex flex-col md:flex-row lg:flex-col md:gap-4 lg:gap-0 h-full"
         >
           <div class="md:w-1/2 w-auto lg:w-auto">
             <h3 class="text-xl font-bold text-stormy-800 mb-3">Simple Setup</h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-4">
               Installing Mathesar takes just minutes with Docker, and upgrades
               are just as simple. Whether on your own infrastructure or
               integrated into your workflow, Mathesar fits right in with minimal

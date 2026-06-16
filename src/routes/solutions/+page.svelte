@@ -1,6 +1,7 @@
 <script lang="ts">
   import SolutionsNav from "$lib/components/SolutionsNav.svelte";
   import CTASection from "$lib/components/CTASection.svelte";
+  import NoOrphan from "$lib/components/NoOrphan.svelte";
   import Seo from "$lib/components/SEO.svelte";
   import Stickers from "$lib/components/Stickers.svelte";
 
@@ -19,24 +20,24 @@
   } as const;
 </script>
 
-<Seo 
-  title="Solutions" 
-  image="/og/og-solutions.png"
-/>
+<Seo title="Solutions" image="/og/og-solutions.png" />
 
-<div class=" text-white antialiased mb-20">
-  <section class="relative pt-20 overflow-x-clip">
+<div class="text-white antialiased mb-10">
+  <section class="relative pt-12 lg:pt-14 overflow-x-clip">
     <Stickers variant="solutions" />
 
-    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-4xl mx-auto mb-20">
+    <div class="relative z-20 site-container">
+      <div class="text-center max-w-4xl mx-auto mb-8 lg:mb-12">
         <h1
-          class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6"
+          data-hero-heading
+          class="text-balance text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6"
         >
           <span class="text-white">Simple solutions,</span>
-          <span class="text-pumpkin-400">minimal hassle.</span>
+          <span class="text-pumpkin-400"
+            ><NoOrphan text="minimal hassle." /></span
+          >
         </h1>
-        <p class="text-xl sm:text-2xl text-stormy-200 mt-6 mb-12">
+        <p class="text-xl sm:text-2xl text-stormy-200 mt-4 mb-6">
           A single tool with countless uses. Mathesar makes it simple and risk
           free for data owners to quickly and safely empower users to share,
           edit, and sort the data they need in an interface they're familiar
@@ -49,12 +50,12 @@
   <SolutionsNav {solutions} />
 
   <section class="z-20 relative overflow-x-clip">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="space-y-12 max-w-6xl mx-auto">
+    <div class="relative site-container">
+      <div class="space-y-8 max-w-6xl mx-auto">
         {#each solutions as solution}
           <div
             id={solution.id}
-            class="relative rounded-2xl lg:pl-12 backdrop-blur-sm
+            class="relative rounded-2xl lg:pl-8 backdrop-blur-sm
             bg-white/[0.98] overflow-hidden
             {solution.id === 'hardware-store-chain'
               ? 'before:bg-gradient-to-br before:from-azure-500/20 before:to-azure-600/10'
@@ -78,9 +79,9 @@
               shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"
             ></div>
 
-            <div class="relative flex flex-col md:flex-row gap-16">
+            <div class="relative flex flex-col md:flex-row gap-6 lg:gap-8">
               <div
-                class="pt-12 p-6 lg:p-0 lg:pt-0 flex-1 flex flex-col justify-center"
+                class="pt-6 p-5 lg:p-0 lg:pt-0 flex-1 flex flex-col justify-center"
               >
                 <div class="mb-2 flex items-center gap-2">
                   <i
@@ -102,9 +103,9 @@
                   </span>
                 </div>
 
-                <div class="mb-8">
+                <div class="mb-5">
                   <h3
-                    class="text-2xl lg:text-[2.75rem] font-bold text-stormy-900 leading-[1.1] mb-4 tracking-tight"
+                    class="text-2xl lg:text-[2.75rem] font-bold text-stormy-900 leading-[1.1] mb-3 tracking-tight"
                   >
                     {solution.category.title}
                   </h3>

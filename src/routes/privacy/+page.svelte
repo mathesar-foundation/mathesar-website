@@ -6,7 +6,7 @@
 
 <div class="bg-stormy-50 flex-grow">
   <div
-    class="max-w-3xl mx-auto prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 py-16"
+    class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 prose prose-slate prose-h1:font-bold prose-headings:text-gray-800 section-y"
   >
     <h1 id="privacy-policy">Privacy Policy</h1>
 
@@ -400,7 +400,7 @@
       Your information, including Personal Data, is processed at the Company's
       operating offices and in any other places where the parties involved in
       the processing are located. It means that this information may be
-      transferred to — and maintained on — computers located outside of Your
+      transferred to and maintained on computers located outside of Your
       state, province, country or other governmental jurisdiction where the data
       protection laws may differ than those from Your jurisdiction.
     </p>

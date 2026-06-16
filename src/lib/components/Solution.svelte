@@ -5,6 +5,7 @@
 
   import CTASection from "$lib/components/CTASection.svelte";
   import EnlargableImage from "./EnlargableImage.svelte";
+  import NoOrphan from "./NoOrphan.svelte";
   import Stickers from "./Stickers.svelte";
 
   import CheckCircle from "iconoir/icons/check-circle.svg?component";
@@ -42,16 +43,16 @@
 </script>
 
 <div class="text-white antialiased overflow-x-hidden z-10">
-  <section class="relative pt-12 md:pt-24 pb-12">
+  <section class="relative pt-8 md:pt-12 pb-8">
     <Stickers variant="solution" />
 
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative site-container">
       <div
-        class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 items-start pb-16 lg:pb-48"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-start pb-10 lg:pb-28"
       >
         <div class="lg:col-span-2 lg:max-w-3xl">
           <div
-            class="flex items-center justify-center gap-5 lg:gap-8 mb-8 w-full"
+            class="flex items-center justify-center gap-4 lg:gap-5 mb-5 w-full"
           >
             <div
               class="inline-flex bg-plum-800 text-pumpkin-400 items-center justify-center shrink-0 w-20 h-20 rounded-2xl"
@@ -63,11 +64,11 @@
                 />
               {/if}
             </div>
-            <h1 class="flex-grow">
+            <h1 data-hero-heading class="text-balance flex-grow">
               <span
                 class="block text-4xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]"
               >
-                {solution.title}
+                <NoOrphan text={solution.title} />
               </span>
             </h1>
           </div>
@@ -79,12 +80,12 @@
           </p>
 
           {#if solution.mathesarFeatures}
-            <div class="mt-6">
+            <div class="mt-5">
               <p class="text-stormy-200 text-lg lg:text-xl">
                 With features like:
               </p>
               <div
-                class="flex-col flex md:flex-row items-start flex-wrap gap-2 md:gap-3 mt-4"
+                class="flex-col flex md:flex-row items-start flex-wrap gap-2 md:gap-3 mt-3"
               >
                 {#each solution.mathesarFeatures as feature, i}
                   <div
@@ -106,7 +107,7 @@
             </div>
           {/if}
 
-          <div class="mt-8 lg:-mb-48 relative z-10">
+          <div class="mt-5 lg:-mb-28 relative z-10">
             {#each Object.entries(imageModules) as [_path, module]}
               {#if _path.includes(solution.meta.image!)}
                 <EnlargableImage
@@ -122,13 +123,13 @@
           </div>
         </div>
 
-        <div class="space-y-6 relative lg:col-span-1">
-          <h2 class="text-2xl font-bold text-white mb-8">What You Can Do</h2>
+        <div class="space-y-5 relative lg:col-span-1">
+          <h2 class="text-2xl font-bold text-white mb-5">What You Can Do</h2>
           {#if solution.features}
             {#each solution.features as feature}
-              <div class="relative flex items-start gap-6">
+              <div class="relative flex items-start gap-4">
                 <div
-                  class="w-6 h-6border-2 lex items-center justify-center flex-shrink-0"
+                  class="w-6 h-6 flex items-center justify-center flex-shrink-0"
                 >
                   <CheckCircle class="text-base text-pumpkin-500" />
                 </div>
@@ -147,7 +148,7 @@
 
     <div class="absolute bottom-0 inset-x-0">
       <svg
-        class="w-full h-20 lg:h-40 fill-stormy-50 transform rotate-180"
+        class="w-full h-14 lg:h-24 fill-stormy-50 transform rotate-180"
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
       >
@@ -157,13 +158,13 @@
   </section>
 
   <section class="relative overflow-x-hidden bg-stormy-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="site-container">
       <section class="example">
         <h2 class="text-stormy-800 text-5xl tracking-tight font-bold mb-4">
           See it in Action
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
           {#each solution.screenshots as screenshot, index}
             <div class="screenshot-card">
               {#each Object.entries(imageModules) as [_path, module]}
@@ -186,11 +187,11 @@
         </div>
       </section>
 
-      <section class="similar-cases pt-16">
-        <h2 class="text-stormy-800 text-3xl font-bold mb-8">
+      <section class="similar-cases pt-10">
+        <h2 class="text-stormy-800 text-3xl font-bold mb-6">
           Similar Solutions
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-6">
           {#if solution.similarSolutions}
             {#each solution.similarSolutions as similarSolution}
               <div>

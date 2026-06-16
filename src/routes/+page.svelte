@@ -63,9 +63,9 @@
 <div class="text-white antialiased relative z-20 overflow-x-hidden">
   <Hero />
 
-  <section class="relative lg:pt-80 mp-8 lg:pb-32 bg-stormy-50">
-    <div class="z-20 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-8 lg:mb-16 max-w-3xl mx-auto text-center">
+  <section class="relative pt-10 lg:pt-52 lg:pb-16 bg-stormy-50">
+    <div class="z-20 relative site-container">
+      <div class="mb-6 lg:mb-8 max-w-3xl mx-auto text-center">
         <h2>
           <span
             class="block text-3xl md:text-4xl sm:text-5xl lg:text-6xl font-bold text-stormy-800"
@@ -73,7 +73,7 @@
             Built for everyone
           </span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 mt-6">
+        <p class="text-lg md:text-xl text-gray-600 mt-4">
           Mathesar combines simplicity and power in a spreadsheet-like UI that's
           easy for both DB admins and business users to use. It works directly
           with Postgres permissions, schemas, and tables – no extra abstractions
