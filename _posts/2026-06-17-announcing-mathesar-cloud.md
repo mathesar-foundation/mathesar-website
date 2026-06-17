@@ -8,7 +8,7 @@ description: "Mathesar Cloud is now in early beta, with a limited free plan for 
 image: /images/blog/mathesar-cloud/database-power.png
 ---
 
-We're excited to announce that [Mathesar Cloud](https://mathesar.cloud) is now in early public beta!
+We're excited to announce that [Mathesar Cloud](https://mathesar.cloud/site/?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch) is now in early public beta!
 
 Mathesar Cloud is the hosted version of Mathesar, our open-source application for viewing, editing, and querying data in Postgres through a familiar spreadsheet-like interface. With Mathesar Cloud, you can use Mathesar without installing software or managing your own servers.
 
@@ -36,10 +36,10 @@ At this stage, our goal is to get initial users and feedback as we work towards 
 
 The next step is a paid hosted Team version of Mathesar that expands beyond solo use cases with multiple databases, collaborators, and feature parity with self-hosted Mathesar, including control over Postgres roles and permissions. That plan is coming soon; please [sign up for our mailing list](https://mathesar.org/mailing-list) to stay informed.
 
-We really want to make Mathesar work for everyone, regardless of how big or small your needs are. We know that organizations have different priorities around the software they run, and many want to reduce their operational footprint so they can focus on their core work. We offer custom consulting and dedicated hosting options for organizations and clients of all sizes that may benefit from a solution tailor-made for them. [Contact us](https://mathesar.cloud/site/contact) if you're interested in talking about that.
+We really want to make Mathesar work for everyone, regardless of how big or small your needs are. We know that organizations have different priorities around the software they run, and many want to reduce their operational footprint so they can focus on their core work. We offer custom consulting and dedicated hosting options for organizations and clients of all sizes that may benefit from a solution tailor-made for them. [Contact us](https://mathesar.cloud/site/contact?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch) if you're interested in talking about that.
 
 ### Try Mathesar Cloud
 
-If you've wanted to try Mathesar without hosting it yourself, sign up at [mathesar.cloud](https://mathesar.cloud). This is still an early beta, so the product, plans, limits, and onboarding flow will keep evolving as we learn from real use.
+If you've wanted to try Mathesar without hosting it yourself, sign up at [mathesar.cloud](https://mathesar.cloud/site/?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch). This is still an early beta, so the product, plans, limits, and onboarding flow will keep evolving as we learn from real use.
 
 We're interested in hearing what you try, where you get stuck, and what would make Mathesar Cloud useful for your work. Your feedback during the early beta will affect what we work on directly, and we're excited to make Mathesar easier to try, easier to adopt, and more sustainable for the long term. We're also excited to see what you use Cloud for. Email us at [hello@mathesar.cloud](mailto:hello@mathesar.cloud), we would love to hear from you!
