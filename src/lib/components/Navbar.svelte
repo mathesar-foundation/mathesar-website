@@ -20,6 +20,7 @@
     { name: "Donate", path: "donate" },
     { name: "Blog", path: "blog" },
     { name: "Docs", path: "https://docs.mathesar.org/latest/" },
+    { name: "Cloud", path: "https://mathesar.cloud" },
   ];
 
   $: currentPath = $page.url.pathname;

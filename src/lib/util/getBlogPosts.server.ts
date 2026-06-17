@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import markdownit from "markdown-it";
+import { getBlogAuthor } from "./blogAuthors";
 
 export interface BlogPost {
   id: string;
@@ -10,6 +11,9 @@ export interface BlogPost {
   description: string;
   date: string;
   author: string;
+  authorAvatar?: string;
+  authorInitials: string;
+  authorName: string;
   tags: string[];
   image: string;
   path: string;
@@ -48,6 +52,7 @@ export async function getBlogPosts() {
           typeof data.tags === "string"
             ? data.tags.split(" ")
             : data.tags || [];
+        const author = getBlogAuthor(data.author);
 
         // Format the post data
         const post: BlogPost = {
@@ -56,6 +61,9 @@ export async function getBlogPosts() {
           description: data.description,
           date: new Date(data.date).toISOString().split("T")[0],
           author: data.author,
+          authorAvatar: author.avatar,
+          authorInitials: author.initials,
+          authorName: author.name,
           tags,
           path: blogPath,
           image: data.image,

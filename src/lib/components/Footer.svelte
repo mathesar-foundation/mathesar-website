@@ -16,13 +16,18 @@
     { name: "Product", path: "/product" },
     { name: "Solutions", path: "/solutions" },
     { name: "About", path: "/about" },
+    { name: "Donate", path: "/donate" },
     { name: "Blog", path: "/blog" },
     {
       name: "Docs",
       path: "https://docs.mathesar.org/latest/",
       isExternal: true,
     },
-    { name: "Donate", path: "/donate" },
+    {
+      name: "Mathesar Cloud",
+      path: "https://mathesar.cloud",
+      isExternal: true,
+    },
   ];
 
   // Social media links

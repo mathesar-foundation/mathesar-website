@@ -4,7 +4,6 @@
   import Stickers from "./Stickers.svelte";
   import TrackedLink from "./TrackedLink.svelte";
   import Video from "./Video.svelte";
-  import ArrowRight from "iconoir/icons/arrow-right.svg?component";
 </script>
 
 <div class="relative overflow-x-clip">
@@ -33,7 +32,7 @@
             </p>
           </div>
 
-          <div class="text-center mt-5">
+          <div class="mt-5 flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedLink
               analyticsData={{ location: "hero" }}
               href="https://docs.mathesar.org"
@@ -43,6 +42,17 @@
                 active:transform active:scale-[0.98]"
             >
               <span class="whitespace-nowrap">Install Mathesar</span>
+            </TrackedLink>
+            <TrackedLink
+              analyticsData={{ location: "hero" }}
+              href="https://mathesar.cloud"
+              class="group inline-flex items-center justify-center gap-3 rounded-lg border-2 border-pumpkin-300/55 bg-pumpkin-400/10 px-6 py-3.5 text-lg font-semibold
+                text-pumpkin-100
+                transition-all duration-300
+                hover:border-pumpkin-300/75 hover:bg-pumpkin-400/15
+                active:transform active:scale-[0.98]"
+            >
+              <span class="whitespace-nowrap">Try Cloud for free</span>
             </TrackedLink>
           </div>
         </div>

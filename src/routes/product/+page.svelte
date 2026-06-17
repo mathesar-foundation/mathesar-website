@@ -31,7 +31,9 @@
           in minutes.
         </p>
 
-        <div class="flex items-center justify-center gap-4 relative z-10">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10"
+        >
           <TrackedLink
             analyticsData={{ location: "hero" }}
             href="https://docs.mathesar.org"
@@ -42,6 +44,17 @@
             active:transform active:scale-[0.98]"
           >
             <span class="relative">Install Mathesar</span>
+          </TrackedLink>
+          <TrackedLink
+            analyticsData={{ location: "hero" }}
+            href="https://mathesar.cloud"
+            class="group inline-flex items-center justify-center gap-3 rounded-lg border-2 border-pumpkin-300/55 bg-pumpkin-400/10 px-6 py-3.5 text-lg font-semibold
+              text-pumpkin-100
+              transition-all duration-300
+              hover:border-pumpkin-300/75 hover:bg-pumpkin-400/15
+              active:transform active:scale-[0.98]"
+          >
+            <span class="whitespace-nowrap">Try Cloud for free</span>
           </TrackedLink>
 
           <!-- <a
