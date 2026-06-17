@@ -5,7 +5,7 @@ tags: announcement cloud
 date: 2026-06-17
 author: kriti_godey
 description: "Mathesar Cloud is now in early beta, with a limited free plan for using Mathesar without installing software or managing servers."
-image: /images/blog/mathesar-cloud/database-power.png
+image: /images/blog/mathesar-cloud/database-power.webp
 ---
 
 We're excited to announce that [Mathesar Cloud](https://mathesar.cloud/site/?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch) is now in early public beta!
@@ -14,7 +14,7 @@ Mathesar Cloud is the hosted version of Mathesar, our open-source application fo
 
 This early beta is the first step toward offering Mathesar as a hosted service for a wide range of users, from solo hobbyists to larger organizations and enterprises.
 
-![Mathesar Cloud: database power with spreadsheet simplicity.](/images/blog/mathesar-cloud/database-power.png)
+![Mathesar Cloud: database power with spreadsheet simplicity.](/images/blog/mathesar-cloud/database-power-wide.webp)
 
 ## Why we’re launching Mathesar Cloud
 
