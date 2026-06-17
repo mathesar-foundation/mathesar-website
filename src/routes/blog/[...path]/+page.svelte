@@ -11,7 +11,7 @@
   $: recentPosts = data.recentPosts;
 </script>
 
-<Seo title={post.title} description={post.description} />
+<Seo title={post.title} description={post.description} image={post.image} />
 
 <div class="antialiased">
   <article class="relative">

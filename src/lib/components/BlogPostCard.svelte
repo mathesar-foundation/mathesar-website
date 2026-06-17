@@ -12,7 +12,7 @@
 >
   <a href={`/blog/${post.path}`} class="block {!mini && 'h-full'}">
     {#if mini}
-      <div class="aspect-[16/10] w-full overflow-hidden">
+      <div class="aspect-[16/9] w-full overflow-hidden">
         <img
           src={post.image}
           alt=""
@@ -49,7 +49,7 @@
       </div>
     {:else}
       <div class="grid grid-cols-1 md:grid-cols-2 h-full">
-        <div class="w-full h-full">
+        <div class="w-full aspect-[16/9] overflow-hidden md:self-center">
           <img
             src={post.image}
             alt=""
