@@ -16,7 +16,7 @@ This early beta is the first step toward offering Mathesar as a hosted service f
 
 ![Mathesar Cloud: database power with spreadsheet simplicity.](/images/blog/mathesar-cloud/database-power.png)
 
-### Why we’re launching Mathesar Cloud
+## Why we’re launching Mathesar Cloud
 
 Mathesar’s mission is to build better tools for working with data. We believe the full power and control of databases should be accessible to everyone, not just people with technical knowledge or specialized skills.
 
@@ -26,19 +26,19 @@ We’re very proud of what we’ve built so far. But there’s a limit to what w
 
 Mathesar Cloud helps us expand our reach and impact, while also giving our current community a more convenient way to use Mathesar. It also gives the project a path towards long-term sustainability. Any revenue from Cloud will go to Mathesar Foundation, the 501(c)(3) nonprofit that maintains the project. Offering Mathesar as a paid service lets us maintain the project sustainably while staying true to our principles and keeping Mathesar 100% open source, nonprofit, and self-hostable.
 
-### What’s available now
+## What’s available now
 
 We're launching the Mathesar Cloud early beta with a limited free plan that includes a hosted Postgres database and a single user account. It's a starting point: a way for people to try Mathesar with their own data, and a way for us to learn what users need from a hosted version.
 
 At this stage, our goal is to get initial users and feedback as we work towards supporting a much wider range of users over time, from solo hobbyists to enterprises.
 
-### Where we're headed
+## Where we're headed
 
 The next step is a paid hosted Team version of Mathesar that expands beyond solo use cases with multiple databases, collaborators, and feature parity with self-hosted Mathesar, including control over Postgres roles and permissions. That plan is coming soon; please [sign up for our mailing list](https://mathesar.org/mailing-list) to stay informed.
 
 We really want to make Mathesar work for everyone, regardless of how big or small your needs are. We know that organizations have different priorities around the software they run, and many want to reduce their operational footprint so they can focus on their core work. We offer custom consulting and dedicated hosting options for organizations and clients of all sizes that may benefit from a solution tailor-made for them. [Contact us](https://mathesar.cloud/site/contact?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch) if you're interested in talking about that.
 
-### Try Mathesar Cloud
+## Try Mathesar Cloud
 
 If you've wanted to try Mathesar without hosting it yourself, sign up at [mathesar.cloud](https://mathesar.cloud/site/?utm_source=blog&utm_medium=referral&utm_campaign=cloud_launch). This is still an early beta, so the product, plans, limits, and onboarding flow will keep evolving as we learn from real use.
 
